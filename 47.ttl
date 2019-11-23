@@ -1,7 +1,6 @@
 # baseURI: https://www.geolexica.org/concepts/47
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
-# imports: https://www.geolexica.org/api/glossary.csv
 # imports: https://www.geolexica.org/api/rdf-profile
 
 @prefix : <https://www.geolexica.org/concepts/47#> .
@@ -12,7 +11,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://www.geolexica.org/api/glossary.csv#Row-36>
+:term-instance
+  rdf:type skos:Concept ;
   rdfs:label "cluster" ;
   skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
   skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
@@ -53,10 +53,8 @@
   rdf-profile:language_node rdf-profile:Swedish_Node ;
 .
 <https://www.geolexica.org/concepts/47>
-  rdf:type owl:Ontology ;
+  a owl:Ontology ;
   owl:imports <http://purl.org/dc/terms/> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:imports <https://www.geolexica.org/api/glossary.csv> ;
   owl:imports <https://www.geolexica.org/api/rdf-profile> ;
-  skos:note "Term: cluster" ;
 .

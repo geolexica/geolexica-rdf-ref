@@ -1,0 +1,4969 @@
+# baseURI: urn:x-evn-master:term
+# imports: http://edg.topbraid.solutions/1.0/schema/edg
+# imports: http://edg.topbraid.solutions/1.0/schema/requirements-model
+# imports: http://edg.topbraid.solutions/1.0/shapes/core
+# imports: http://edg.topbraid.solutions/1.0/shapes/requirements-model
+# imports: http://topbraid.org/teamworkconstraints
+# imports: urn:x-evn-master:edg_enumerations_singleton
+
+@prefix metadata:  <http://topbraid.org/metadata#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix teamwork:  <http://topbraid.org/teamwork#> .
+@prefix edg:  <http://edg.topbraid.solutions/model/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix term:  <http://www.geolexica.org/api/term#> .
+
+<urn:x-evn-master:term>
+        owl:imports      <http://edg.topbraid.solutions/1.0/shapes/core> ;
+        owl:imports      <http://edg.topbraid.solutions/1.0/schema/edg> ;
+        owl:imports      <http://edg.topbraid.solutions/1.0/shapes/requirements-model> ;
+        owl:imports      <http://edg.topbraid.solutions/1.0/schema/requirements-model> ;
+        owl:imports      <urn:x-evn-master:edg_enumerations_singleton> ;
+        rdfs:label       "term" ;
+        rdf:type         owl:Ontology ;
+        <http://topbraid.org/swa#defaultNamespace>  "http://www.geolexica.org/api/term#" ;
+        metadata:status  metadata:UnderDevelopmentStatus .
+
+term:1147-constraint  rdfs:label  "constraint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1147" .
+
+term:1358-resource  rdfs:label  "resource"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1358" .
+
+term:792-geographic_imagery
+        rdfs:label      "geographic imagery"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "792" .
+
+term:1621-transport_network
+        rdfs:label      "transport network"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1621" .
+
+term:1175-linearly_referenced_location
+        rdfs:label      "linearly referenced location"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1175" .
+
+term:913-terminology_repository
+        rdfs:label      "terminology repository"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "913" .
+
+term:1122-gimbal  rdfs:label  "gimbal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1122" .
+
+term:1574-source  rdfs:label  "source"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1574" .
+
+term:1644-literal  rdfs:label  "literal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1644" .
+
+term:1251-rights_holder
+        rdfs:label      "rights holder"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1251" .
+
+term:813-legend  rdfs:label  "legend"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "813" .
+
+term:1002-image_distortion
+        rdfs:label      "image distortion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1002" .
+
+term:35-capability_test
+        rdfs:label      "capability test"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "35" .
+
+term:1762-free_text  rdfs:label  "free text"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1762" .
+
+term:240-inertial_positioning_system
+        rdfs:label      "inertial positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "240" .
+
+term:1393-heave  rdfs:label  "heave"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1393" .
+
+term:417-source_reference
+        rdfs:label      "source reference"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "417" .
+
+term:889-monosemy  rdfs:label  "monosemy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "889" .
+
+term:1573-restriction
+        rdfs:label      "restriction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1573" .
+
+term:2102-stop_point  rdfs:label  "stop point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2102" .
+
+term:462-topological_complex
+        rdfs:label      "topological complex"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "462" .
+
+term:491-vector  rdfs:label  "vector"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "491" .
+
+term:1578-quality_assessment_result
+        rdfs:label      "quality assessment result"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1578" .
+
+term:1318-spatial_unit_group
+        rdfs:label      "spatial unit group"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1318" .
+
+term:193-gazetteer  rdfs:label  "gazetteer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "193" .
+
+term:214-geometric_object
+        rdfs:label      "geometric object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "214" .
+
+term:1460-irradiance  rdfs:label  "irradiance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1460" .
+
+term:186-file  rdfs:label  "file"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "186" .
+
+term:1568-settlement  rdfs:label  "settlement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1568" .
+
+term:1579-quality_assurance_level
+        rdfs:label      "quality assurance level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1579" .
+
+term:683-service_broker
+        rdfs:label      "service broker"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "683" .
+
+term:330-period  rdfs:label  "period"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "330" .
+
+term:1146-composition
+        rdfs:label      "composition"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1146" .
+
+term:1428-velocity_vector
+        rdfs:label      "velocity vector"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1428" .
+
+term:852-feature_association_concept
+        rdfs:label      "feature association concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "852" .
+
+term:156-engineering_datum
+        rdfs:label      "engineering datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "156" .
+
+term:69-conceptual_schema
+        rdfs:label      "conceptual schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "69" .
+
+term:955-layover  rdfs:label  "layover"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "955" .
+
+term:440-System_Under_Test
+        rdfs:label      "System Under Test"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "440" .
+
+term:50-codelist  rdfs:label  "codelist"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "50" .
+
+term:898-technical_dictionary
+        rdfs:label      "technical dictionary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "898" .
+
+term:396-schema_model
+        rdfs:label      "schema model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "396" .
+
+term:268-lexical_language
+        rdfs:label      "lexical language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "268" .
+
+term:293-metadata_section
+        rdfs:label      "metadata section"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "293" .
+
+term:86-convex_hull  rdfs:label  "convex hull"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "86" .
+
+term:331-periodic_time
+        rdfs:label      "periodic time"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "331" .
+
+term:131-deprecated_term
+        rdfs:label      "deprecated term"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "131" .
+
+term:1401-linear_mode
+        rdfs:label      "linear mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1401" .
+
+term:325-package  rdfs:label  "package"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "325" .
+
+term:34-candidate_route
+        rdfs:label      "candidate route"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "34" .
+
+term:1510-transport_service
+        rdfs:label      "transport service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1510" .
+
+term:1677-SONAR  rdfs:label  "SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1677" .
+
+term:468-topological_solid
+        rdfs:label      "topological solid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "468" .
+
+term:598-affine_coordinate_system
+        rdfs:label      "affine coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "598" .
+
+term:188-framework  rdfs:label  "framework"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "188" .
+
+term:316-open_systems_environment
+        rdfs:label      "open systems environment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "316" .
+
+term:1225-GeoLicence_resolution
+        rdfs:label      "GeoLicence resolution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1225" .
+
+term:1689-homophone  rdfs:label  "homophone"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1689" .
+
+term:108-data_level  rdfs:label  "data level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "108" .
+
+term:1588-namespace  rdfs:label  "namespace"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1588" .
+
+term:656-active_object
+        rdfs:label      "active object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "656" .
+
+term:182-feature_table
+        rdfs:label      "feature table"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "182" .
+
+term:871-validation  rdfs:label  "validation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "871" .
+
+term:1923-fused_image
+        rdfs:label      "fused image"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1923" .
+
+term:1254-sublicence  rdfs:label  "sublicence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1254" .
+
+term:446-temporal_coordinate_system
+        rdfs:label      "temporal coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "446" .
+
+term:157-engineering_viewpoint
+        rdfs:label      "engineering viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "157" .
+
+term:1583-data_property
+        rdfs:label      "data property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1583" .
+
+term:709-image_coordinate_reference_system
+        rdfs:label      "image coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "709" .
+
+term:1407-platform_down_direction
+        rdfs:label      "platform down direction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1407" .
+
+term:1585-individual  rdfs:label  "individual"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1585" .
+
+term:267-layer  rdfs:label  "layer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "267" .
+
+term:678-passive_tracking
+        rdfs:label      "passive tracking"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "678" .
+
+term:1515-facility  rdfs:label  "facility"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1515" .
+
+term:1328-render  rdfs:label  "render"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1328" .
+
+term:51-codespace  rdfs:label  "codespace"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "51" .
+
+term:914-feature_inheritance
+        rdfs:label      "feature inheritance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "914" .
+
+term:30-buffer  rdfs:label  "buffer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "30" .
+
+term:1021-filter_expression_processor
+        rdfs:label      "filter expression processor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1021" .
+
+term:1173-linear_segment
+        rdfs:label      "linear segment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1173" .
+
+term:493-vehicle_classification
+        rdfs:label      "vehicle classification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "493" .
+
+term:1197-responsibility
+        rdfs:label      "responsibility"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1197" .
+
+term:503-ellipsoidal_latitude
+        rdfs:label      "ellipsoidal latitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "503" .
+
+term:428-start_node  rdfs:label  "start node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "428" .
+
+term:1278-error_propagation
+        rdfs:label      "error propagation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1278" .
+
+term:1144-association
+        rdfs:label      "association"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1144" .
+
+term:1697-terminology_register
+        rdfs:label      "terminology register"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1697" .
+
+term:1932-breakline  rdfs:label  "breakline"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1932" .
+
+term:457-tessellation
+        rdfs:label      "tessellation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "457" .
+
+term:507-locale  rdfs:label  "locale"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "507" .
+
+term:1392-hydrophone  rdfs:label  "hydrophone"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1392" .
+
+term:489-value  rdfs:label  "value"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "489" .
+
+term:140-directed_topological_object
+        rdfs:label      "directed topological object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "140" .
+
+term:785-traversal  rdfs:label  "traversal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "785" .
+
+term:1289-boundary_face_string
+        rdfs:label      "boundary face string"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1289" .
+
+term:1273-symbol  rdfs:label  "symbol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1273" .
+
+term:1421-stare  rdfs:label  "stare"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1421" .
+
+term:839-realization  rdfs:label  "realization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "839" .
+
+term:1019-filter_capabilities_XML
+        rdfs:label      "filter capabilities XML"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1019" .
+
+term:1577-quality_assessment_procedure
+        rdfs:label      "quality assessment procedure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1577" .
+
+term:1649-lineage  rdfs:label  "lineage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1649" .
+
+term:1702-addressing  rdfs:label  "addressing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1702" .
+
+term:706-engineering_coordinate_reference_system
+        rdfs:label      "engineering coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "706" .
+
+term:726-generalization
+        rdfs:label      "generalization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "726" .
+
+term:1629-address_position
+        rdfs:label      "address position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1629" .
+
+term:1608-spectral_responsivity
+        rdfs:label      "spectral responsivity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1608" .
+
+term:1299-join_predicate
+        rdfs:label      "join predicate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1299" .
+
+term:1300-land_administration
+        rdfs:label      "land administration"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1300" .
+
+term:403-sequence  rdfs:label  "sequence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "403" .
+
+term:55-composite_curve
+        rdfs:label      "composite curve"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "55" .
+
+term:1172-linear_referencing
+        rdfs:label      "linear referencing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1172" .
+
+term:152-encoding_rule
+        rdfs:label      "encoding rule"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "152" .
+
+term:973-slant_range_direction
+        rdfs:label      "slant range direction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "973" .
+
+term:360-quality_schema
+        rdfs:label      "quality schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "360" .
+
+term:1363-spatial_unit
+        rdfs:label      "spatial unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1363" .
+
+term:1397-intensity  rdfs:label  "intensity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1397" .
+
+term:368-reference_data
+        rdfs:label      "reference data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "368" .
+
+term:1653-linked_geodata
+        rdfs:label      "linked geodata"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1653" .
+
+term:1569-Sound_Navigation_And_Ranging
+        rdfs:label      "Sound Navigation And Ranging"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1569" .
+
+term:1699-addressable_object
+        rdfs:label      "addressable object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1699" .
+
+term:1108-sensor  rdfs:label  "sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1108" .
+
+term:228-homomorphism
+        rdfs:label      "homomorphism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "228" .
+
+term:764-geoid  rdfs:label  "geoid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "764" .
+
+term:1406-phase_history_data
+        rdfs:label      "phase history data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1406" .
+
+term:1230-lease  rdfs:label  "lease"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1230" .
+
+term:774-feature_reference
+        rdfs:label      "feature reference"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "774" .
+
+term:1210-authentication
+        rdfs:label      "authentication"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1210" .
+
+term:189-full_inspection
+        rdfs:label      "full inspection"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "189" .
+
+term:1595-context  rdfs:label  "context"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1595" .
+
+term:901-terminological_dictionary
+        rdfs:label      "terminological dictionary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "901" .
+
+term:7-acceptance_testing
+        rdfs:label      "acceptance testing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "7" .
+
+term:2104-transfer_node
+        rdfs:label      "transfer node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2104" .
+
+term:251-interface  rdfs:label  "interface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "251" .
+
+term:1121-external_coordinate_reference_system
+        rdfs:label      "external coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1121" .
+
+term:78-connected  rdfs:label  "connected"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "78" .
+
+term:39-character  rdfs:label  "character"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "39" .
+
+term:1207-agency  rdfs:label  "agency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1207" .
+
+term:344-portrayal_rule
+        rdfs:label      "portrayal rule"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "344" .
+
+term:477-tuple  rdfs:label  "tuple"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "477" .
+
+term:1936-digital_terrain_model
+        rdfs:label      "digital terrain model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1936" .
+
+term:480-uncertainty  rdfs:label  "uncertainty"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "480" .
+
+term:1293-converter  rdfs:label  "converter"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1293" .
+
+term:61-computational_geometry
+        rdfs:label      "computational geometry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "61" .
+
+term:845-spatio-parametric-temporal_coordinate_reference_system
+        rdfs:label      "spatio-parametric-temporal coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "845" .
+
+term:835-spectral_resolution
+        rdfs:label      "spectral resolution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "835" .
+
+term:1079-Linear_Referencing_System
+        rdfs:label      "Linear Referencing System"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1079" .
+
+term:32-calendar_era  rdfs:label  "calendar era"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "32" .
+
+term:313-object  rdfs:label  "object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "313" .
+
+term:668-integration  rdfs:label  "integration"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "668" .
+
+term:756-graph  rdfs:label  "graph"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "756" .
+
+term:1701-address_alias
+        rdfs:label      "address alias"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1701" .
+
+term:1400-light_detection_and_ranging
+        rdfs:label      "light detection and ranging"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1400" .
+
+term:1323-parameterized_symbol
+        rdfs:label      "parameterized symbol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1323" .
+
+term:36-cardinality  rdfs:label  "cardinality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "36" .
+
+term:276-location  rdfs:label  "location"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "276" .
+
+term:1405-passive_SONAR
+        rdfs:label      "passive SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1405" .
+
+term:1430-e-government
+        rdfs:label      "e-government"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1430" .
+
+term:720-sensor_model
+        rdfs:label      "sensor model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "720" .
+
+term:710-image_datum  rdfs:label  "image datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "710" .
+
+term:1694-submitted_language
+        rdfs:label      "submitted language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1694" .
+
+term:713-spherical_coordinate_system
+        rdfs:label      "spherical coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "713" .
+
+term:886-genus-species_relation
+        rdfs:label      "genus-species relation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "886" .
+
+term:421-spatial_reference
+        rdfs:label      "spatial reference"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "421" .
+
+term:201-geodetic_longitude
+        rdfs:label      "geodetic longitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "201" .
+
+term:905-sexagesimal_degree
+        rdfs:label      "sexagesimal degree"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "905" .
+
+term:2103-transfer  rdfs:label  "transfer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2103" .
+
+term:1123-gyroscope  rdfs:label  "gyroscope"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1123" .
+
+term:688-temporal_sequence
+        rdfs:label      "temporal sequence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "688" .
+
+term:1316-spatial_source
+        rdfs:label      "spatial source"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1316" .
+
+term:1630-child_address
+        rdfs:label      "child address"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1630" .
+
+term:475-traversal_order
+        rdfs:label      "traversal order"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "475" .
+
+term:1617-operation  rdfs:label  "operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1617" .
+
+term:221-grid  rdfs:label  "grid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "221" .
+
+term:558-knowledge_base
+        rdfs:label      "knowledge base"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "558" .
+
+term:866-picture_portrayal
+        rdfs:label      "picture portrayal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "866" .
+
+term:1429-video_phase_history_data
+        rdfs:label      "video phase history data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1429" .
+
+term:1013-sensor_model
+        rdfs:label      "sensor model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1013" .
+
+term:1471-pixel_response_non-uniformity
+        rdfs:label      "pixel response non-uniformity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1471" .
+
+term:736-correctness  rdfs:label  "correctness"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "736" .
+
+term:951-image_formation
+        rdfs:label      "image formation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "951" .
+
+term:466-topological_object
+        rdfs:label      "topological object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "466" .
+
+term:1475-reference_standard
+        rdfs:label      "reference standard"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1475" .
+
+term:1296-feature_type
+        rdfs:label      "feature type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1296" .
+
+term:690-tracking_device
+        rdfs:label      "tracking device"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "690" .
+
+term:1465-measurement_precision
+        rdfs:label      "measurement precision"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1465" .
+
+term:139-directed_solid
+        rdfs:label      "directed solid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "139" .
+
+term:1472-point-spread_function
+        rdfs:label      "point-spread function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1472" .
+
+term:337-point_coverage
+        rdfs:label      "point coverage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "337" .
+
+term:1390-frame  rdfs:label  "frame"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1390" .
+
+term:146-edge  rdfs:label  "edge"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "146" .
+
+term:123-data_type  rdfs:label  "data type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "123" .
+
+term:919-UML_template
+        rdfs:label      "UML template"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "919" .
+
+term:347-position  rdfs:label  "position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "347" .
+
+term:1253-risk  rdfs:label  "risk"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1253" .
+
+term:643-leaf  rdfs:label  "leaf"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "643" .
+
+term:860-imagery  rdfs:label  "imagery"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "860" .
+
+term:1329-symbol_set  rdfs:label  "symbol set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1329" .
+
+term:1647-citation  rdfs:label  "citation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1647" .
+
+term:319-operation  rdfs:label  "operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "319" .
+
+term:1097-product  rdfs:label  "product"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1097" .
+
+term:149-ellipsoid  rdfs:label  "ellipsoid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "149" .
+
+term:1656-address_reference_system
+        rdfs:label      "address reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1656" .
+
+term:1420-squat  rdfs:label  "squat"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1420" .
+
+term:906-GML_application_schema
+        rdfs:label      "GML application schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "906" .
+
+term:843-parametric_datum
+        rdfs:label      "parametric datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "843" .
+
+term:990-Doppler_angle
+        rdfs:label      "Doppler angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "990" .
+
+term:1652-application_ontology
+        rdfs:label      "application ontology"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1652" .
+
+term:425-specification
+        rdfs:label      "specification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "425" .
+
+term:211-geometric_boundary
+        rdfs:label      "geometric boundary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "211" .
+
+term:467-topological_primitive
+        rdfs:label      "topological primitive"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "467" .
+
+term:1226-GeoLicence_infringement
+        rdfs:label      "GeoLicence infringement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1226" .
+
+term:1212-bypass  rdfs:label  "bypass"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1212" .
+
+term:629-vertical_datum
+        rdfs:label      "vertical datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "629" .
+
+term:1442-observation
+        rdfs:label      "observation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1442" .
+
+term:1947-vertical_accuracy
+        rdfs:label      "vertical accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1947" .
+
+term:1678-module  rdfs:label  "module"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1678" .
+
+term:1236-licensing_agent
+        rdfs:label      "licensing agent"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1236" .
+
+term:1590-object_property
+        rdfs:label      "object property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1590" .
+
+term:978-True_Replacement_Model
+        rdfs:label      "True Replacement Model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "978" .
+
+term:107-data_interchange
+        rdfs:label      "data interchange"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "107" .
+
+term:328-performance_indicator
+        rdfs:label      "performance indicator"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "328" .
+
+term:383-resource  rdfs:label  "resource"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "383" .
+
+term:461-topological_boundary
+        rdfs:label      "topological boundary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "461" .
+
+term:215-geometric_primitive
+        rdfs:label      "geometric primitive"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "215" .
+
+term:1367-standalone_quality_report
+        rdfs:label      "standalone quality report"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1367" .
+
+term:119-data_quality_subelement
+        rdfs:label      "data quality subelement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "119" .
+
+term:1696-terminological_entry_identifier
+        rdfs:label      "terminological entry identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1696" .
+
+term:953-image_plane  rdfs:label  "image plane"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "953" .
+
+term:947-ground_range
+        rdfs:label      "ground range"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "947" .
+
+term:248-instantiate  rdfs:label  "instantiate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "248" .
+
+term:1371-quality_assurance
+        rdfs:label      "quality assurance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1371" .
+
+term:379-remote_sensing
+        rdfs:label      "remote sensing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "379" .
+
+term:307-neighbourhood
+        rdfs:label      "neighbourhood"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "307" .
+
+term:1560-field_of_regard
+        rdfs:label      "field of regard"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1560" .
+
+term:2106-transport_mode
+        rdfs:label      "transport mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2106" .
+
+<http://www.geolexica.org/api/term#679-resource_(ICT)>
+        rdfs:label      "resource (ICT)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "679" .
+
+term:429-start_point  rdfs:label  "start point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "429" .
+
+term:380-request  rdfs:label  "request"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "380" .
+
+term:2185-signature  rdfs:label  "signature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2185" .
+
+term:1341-remote_resource
+        rdfs:label      "remote resource"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1341" .
+
+term:1000-ground_sampling_distance
+        rdfs:label      "ground sampling distance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1000" .
+
+term:939-frame_sensor
+        rdfs:label      "frame sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "939" .
+
+term:645-prism  rdfs:label  "prism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "645" .
+
+term:1359-boundary_face
+        rdfs:label      "boundary face"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1359" .
+
+term:410-shell  rdfs:label  "shell"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "410" .
+
+term:1309-computational_viewpoint
+        rdfs:label      "computational viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1309" .
+
+term:137-directed_face
+        rdfs:label      "directed face"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "137" .
+
+term:627-unit  rdfs:label  "unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "627" .
+
+term:8-accuracy  rdfs:label  "accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "8" .
+
+term:1422-swath  rdfs:label  "swath"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1422" .
+
+term:982-georectified
+        rdfs:label      "georectified"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "982" .
+
+term:1609-stray_light
+        rdfs:label      "stray light"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1609" .
+
+term:1383-complex_image
+        rdfs:label      "complex image"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1383" .
+
+term:1174-linearly_located_event
+        rdfs:label      "linearly located event"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1174" .
+
+term:1331-process  rdfs:label  "process"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1331" .
+
+term:340-polygon_coverage
+        rdfs:label      "polygon coverage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "340" .
+
+term:1272-simple_symbol
+        rdfs:label      "simple symbol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1272" .
+
+term:1703-locale  rdfs:label  "locale"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1703" .
+
+term:271-linear_positioning_system
+        rdfs:label      "linear positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "271" .
+
+term:415-slope  rdfs:label  "slope"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "415" .
+
+term:1463-measurement_error
+        rdfs:label      "measurement error"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1463" .
+
+term:232-image_point  rdfs:label  "image point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "232" .
+
+term:481-Uniform_Resource_Identifier
+        rdfs:label      "Uniform Resource Identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "481" .
+
+term:158-enterprise_viewpoint
+        rdfs:label      "enterprise viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "158" .
+
+term:994-fiducial_mark
+        rdfs:label      "fiducial mark"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "994" .
+
+term:1102-quality  rdfs:label  "quality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1102" .
+
+term:359-quality  rdfs:label  "quality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "359" .
+
+term:1229-joint_ownership
+        rdfs:label      "joint ownership"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1229" .
+
+term:82-content_model
+        rdfs:label      "content model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "82" .
+
+term:1449-correction  rdfs:label  "correction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1449" .
+
+term:174-feature_division
+        rdfs:label      "feature division"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "174" .
+
+term:862-measurable_quantity
+        rdfs:label      "measurable quantity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "862" .
+
+term:1302-liminal_spatial_unit
+        rdfs:label      "liminal spatial unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1302" .
+
+term:840-polymorphism
+        rdfs:label      "polymorphism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "840" .
+
+term:178-feature_portrayal_rule_set
+        rdfs:label      "feature portrayal rule set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "178" .
+
+term:999-ground_reference_point
+        rdfs:label      "ground reference point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "999" .
+
+term:1159-compression
+        rdfs:label      "compression"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1159" .
+
+term:510-supersession
+        rdfs:label      "supersession"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "510" .
+
+term:205-geographic_information
+        rdfs:label      "geographic information"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "205" .
+
+term:192-functional_standard
+        rdfs:label      "functional standard"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "192" .
+
+term:203-geographic_feature
+        rdfs:label      "geographic feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "203" .
+
+term:1566-range  rdfs:label  "range"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1566" .
+
+term:261-item_class  rdfs:label  "item class"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "261" .
+
+term:304-multiplicity
+        rdfs:label      "multiplicity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "304" .
+
+term:1930-bare_earth_elevation
+        rdfs:label      "bare earth elevation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1930" .
+
+term:1010-range_resolution
+        rdfs:label      "range resolution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1010" .
+
+term:754-design_coordinate_reference_system
+        rdfs:label      "design coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "754" .
+
+term:1081-linearly_located
+        rdfs:label      "linearly located"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1081" .
+
+term:97-cost_function
+        rdfs:label      "cost function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "97" .
+
+term:103-cycle  rdfs:label  "cycle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "103" .
+
+term:470-tracking  rdfs:label  "tracking"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "470" .
+
+term:622-semi-major_axis
+        rdfs:label      "semi-major axis"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "622" .
+
+term:1156-realization
+        rdfs:label      "realization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1156" .
+
+term:727-instance  rdfs:label  "instance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "727" .
+
+term:348-positional_accuracy
+        rdfs:label      "positional accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "348" .
+
+term:930-calibrated_focal_length
+        rdfs:label      "calibrated focal length"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "930" .
+
+term:1011-range_vector
+        rdfs:label      "range vector"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1011" .
+
+term:1576-supersession
+        rdfs:label      "supersession"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1576" .
+
+term:236-Implementation_Conformance_Statement
+        rdfs:label      "Implementation Conformance Statement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "236" .
+
+term:838-namespace  rdfs:label  "namespace"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "838" .
+
+term:1427-topographic_LIDAR
+        rdfs:label      "topographic LIDAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1427" .
+
+term:269-life_span  rdfs:label  "life span"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "269" .
+
+term:826-GML_schema  rdfs:label  "GML schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "826" .
+
+term:1014-accuracy  rdfs:label  "accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1014" .
+
+term:1377-document  rdfs:label  "document"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1377" .
+
+term:1346-ontology  rdfs:label  "ontology"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1346" .
+
+term:971-slant_plane  rdfs:label  "slant plane"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "971" .
+
+term:1308-observation_result
+        rdfs:label      "observation result"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1308" .
+
+term:91-coordinate_operation
+        rdfs:label      "coordinate operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "91" .
+
+term:915-feature_relationship
+        rdfs:label      "feature relationship"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "915" .
+
+term:854-feature_catalogue
+        rdfs:label      "feature catalogue"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "854" .
+
+term:1362-required_relationship
+        rdfs:label      "required relationship"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1362" .
+
+term:134-direct_evaluation_method
+        rdfs:label      "direct evaluation method"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "134" .
+
+term:1559-Differential_Global_Navigational_Satellite_System
+        rdfs:label      "Differential Global Navigational Satellite System"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1559" .
+
+term:1414-scan  rdfs:label  "scan"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1414" .
+
+term:707-geodetic_coordinate_reference_system
+        rdfs:label      "geodetic coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "707" .
+
+term:1450-dark_current
+        rdfs:label      "dark current"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1450" .
+
+term:1408-point_cloud
+        rdfs:label      "point cloud"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1408" .
+
+term:669-interoperate
+        rdfs:label      "interoperate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "669" .
+
+term:508-register_manager
+        rdfs:label      "register manager"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "508" .
+
+term:1667-white_space
+        rdfs:label      "white space"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1667" .
+
+term:1258-trust  rdfs:label  "trust"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1258" .
+
+term:356-profile  rdfs:label  "profile"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "356" .
+
+term:1940-lever_arm  rdfs:label  "lever arm"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1940" .
+
+term:1306-observation_protocol
+        rdfs:label      "observation protocol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1306" .
+
+term:1603-accuracy_of_measurement
+        rdfs:label      "accuracy of measurement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1603" .
+
+<http://www.geolexica.org/api/term#1228-infringement_(of_a_right)>
+        rdfs:label      "infringement (of a right)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1228" .
+
+term:1687-domain  rdfs:label  "domain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1687" .
+
+term:684-service_oriented_architecture
+        rdfs:label      "service oriented architecture"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "684" .
+
+term:1298-item  rdfs:label  "item"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1298" .
+
+term:187-flattening  rdfs:label  "flattening"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "187" .
+
+term:1443-sampling_feature
+        rdfs:label      "sampling feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1443" .
+
+term:308-network  rdfs:label  "network"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "308" .
+
+term:1376-grid_coordinate_reference_system
+        rdfs:label      "grid coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1376" .
+
+term:220-Gregorian_calendar
+        rdfs:label      "Gregorian calendar"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "220" .
+
+term:195-geocoding  rdfs:label  "geocoding"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "195" .
+
+term:46-closure  rdfs:label  "closure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "46" .
+
+term:1360-land  rdfs:label  "land"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1360" .
+
+term:335-planar_topological_complex
+        rdfs:label      "planar topological complex"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "335" .
+
+term:264-Julian_day_number
+        rdfs:label      "Julian day number"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "264" .
+
+term:406-service_chain
+        rdfs:label      "service chain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "406" .
+
+term:259-isomorphism  rdfs:label  "isomorphism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "259" .
+
+term:1631-child_addressable_object
+        rdfs:label      "child addressable object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1631" .
+
+term:163-exterior  rdfs:label  "exterior"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "163" .
+
+term:168-feature  rdfs:label  "feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "168" .
+
+term:121-data_quality_value_unit
+        rdfs:label      "data quality value unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "121" .
+
+term:932-Correspondence_Model
+        rdfs:label      "Correspondence Model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "932" .
+
+term:912-terminological_record_identifier
+        rdfs:label      "terminological record identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "912" .
+
+term:326-pass_verdict
+        rdfs:label      "pass verdict"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "326" .
+
+term:438-surface_patch
+        rdfs:label      "surface patch"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "438" .
+
+term:2100-looks  rdfs:label  "looks"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2100" .
+
+term:321-ordinal_era  rdfs:label  "ordinal era"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "321" .
+
+term:48-coboundary  rdfs:label  "coboundary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "48" .
+
+term:903-vocabulary  rdfs:label  "vocabulary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "903" .
+
+term:437-surface  rdfs:label  "surface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "437" .
+
+term:436-subregister  rdfs:label  "subregister"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "436" .
+
+term:167-falsification_test
+        rdfs:label      "falsification test"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "167" .
+
+term:857-feature_operation_concept
+        rdfs:label      "feature operation concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "857" .
+
+term:445-temporal_coordinate
+        rdfs:label      "temporal coordinate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "445" .
+
+term:855-feature_concept
+        rdfs:label      "feature concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "855" .
+
+term:534-property  rdfs:label  "property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "534" .
+
+term:1613-generalization
+        rdfs:label      "generalization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1613" .
+
+term:1069-grid_coordinate_system
+        rdfs:label      "grid coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1069" .
+
+term:944-georeferencing
+        rdfs:label      "georeferencing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "944" .
+
+term:662-discrete_change
+        rdfs:label      "discrete change"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "662" .
+
+term:801-identifier  rdfs:label  "identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "801" .
+
+term:1170-attributed_feature
+        rdfs:label      "attributed feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1170" .
+
+term:1280-place  rdfs:label  "place"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1280" .
+
+term:460-Thiessen_polygon
+        rdfs:label      "Thiessen polygon"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "460" .
+
+term:882-general_concept
+        rdfs:label      "general concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "882" .
+
+term:560-measurement  rdfs:label  "measurement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "560" .
+
+term:687-target  rdfs:label  "target"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "687" .
+
+term:170-feature_attribute
+        rdfs:label      "feature attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "170" .
+
+term:408-service_metadata
+        rdfs:label      "service metadata"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "408" .
+
+term:689-timestamp  rdfs:label  "timestamp"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "689" .
+
+term:9-actor  rdfs:label  "actor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "9" .
+
+term:1217-digital_licence
+        rdfs:label      "digital licence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1217" .
+
+term:2108-flattening  rdfs:label  "flattening"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2108" .
+
+term:2105-transport_means
+        rdfs:label      "transport means"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2105" .
+
+term:600-concatenated_operation
+        rdfs:label      "concatenated operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "600" .
+
+term:816-a_priori_classification
+        rdfs:label      "a priori classification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "816" .
+
+term:1378-active_sensor
+        rdfs:label      "active sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1378" .
+
+term:102-curve_segment
+        rdfs:label      "curve segment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "102" .
+
+term:14-application  rdfs:label  "application"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "14" .
+
+term:1615-instance  rdfs:label  "instance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1615" .
+
+term:670-license  rdfs:label  "license"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "670" .
+
+term:85-conversion_rule
+        rdfs:label      "conversion rule"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "85" .
+
+term:911-language  rdfs:label  "language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "911" .
+
+term:420-spatial_operator
+        rdfs:label      "spatial operator"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "420" .
+
+term:72-conformance_assessment_process
+        rdfs:label      "conformance assessment process"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "72" .
+
+term:808-predicate_expression
+        rdfs:label      "predicate expression"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "808" .
+
+term:618-map_projection
+        rdfs:label      "map projection"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "618" .
+
+term:1513-compound_symbol
+        rdfs:label      "compound symbol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1513" .
+
+term:135-direct_position
+        rdfs:label      "direct position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "135" .
+
+term:76-conformance_testing
+        rdfs:label      "conformance testing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "76" .
+
+term:391-routing  rdfs:label  "routing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "391" .
+
+term:509-retirement  rdfs:label  "retirement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "509" .
+
+term:284-mean_sea_level
+        rdfs:label      "mean sea level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "284" .
+
+term:1592-qualified_cardinality
+        rdfs:label      "qualified cardinality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1592" .
+
+term:275-link_position
+        rdfs:label      "link position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "275" .
+
+term:1119-detector  rdfs:label  "detector"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1119" .
+
+term:1007-principal_point_of_autocollimation
+        rdfs:label      "principal point of autocollimation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1007" .
+
+<http://www.geolexica.org/api/term#497-viewpoint_(on_a_system)>
+        rdfs:label      "viewpoint (on a system)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "497" .
+
+term:1432-reference_model
+        rdfs:label      "reference model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1432" .
+
+term:697-schema_document
+        rdfs:label      "schema document"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "697" .
+
+term:342-portrayal  rdfs:label  "portrayal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "342" .
+
+term:559-measurand  rdfs:label  "measurand"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "559" .
+
+term:423-spatiotemporal_domain
+        rdfs:label      "spatiotemporal domain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "423" .
+
+term:1654-public_access
+        rdfs:label      "public access"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1654" .
+
+term:443-technical_standard
+        rdfs:label      "technical standard"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "443" .
+
+term:1342-resolve  rdfs:label  "resolve"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1342" .
+
+term:501-local_datum  rdfs:label  "local datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "501" .
+
+term:881-essential_characteristic
+        rdfs:label      "essential characteristic"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "881" .
+
+term:1605-calibration_validation
+        rdfs:label      "calibration validation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1605" .
+
+term:1394-hydrographic_swath
+        rdfs:label      "hydrographic swath"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1394" .
+
+term:83-continuous_coverage
+        rdfs:label      "continuous coverage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "83" .
+
+term:1698-address  rdfs:label  "address"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1698" .
+
+term:1441-ex-situ  rdfs:label  "ex-situ"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1441" .
+
+term:1018-feature_identifier
+        rdfs:label      "feature identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1018" .
+
+term:885-generic_relation
+        rdfs:label      "generic relation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "885" .
+
+term:147-edge-node_graph
+        rdfs:label      "edge-node graph"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "147" .
+
+term:237-Implementation_eXtra_Information_for_Testing
+        rdfs:label      "Implementation eXtra Information for Testing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "237" .
+
+term:375-registry  rdfs:label  "registry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "375" .
+
+term:1619-transfer_link
+        rdfs:label      "transfer link"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1619" .
+
+term:795-orthoimage  rdfs:label  "orthoimage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "795" .
+
+term:1589-namespace  rdfs:label  "namespace"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1589" .
+
+term:667-identity  rdfs:label  "identity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "667" .
+
+<http://www.geolexica.org/api/term#1921-Place_Identifier_(PI)_linking_mechanism>
+        rdfs:label      "Place Identifier (PI) linking mechanism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1921" .
+
+term:740-navigation_constraint
+        rdfs:label      "navigation constraint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "740" .
+
+term:79-connected_node
+        rdfs:label      "connected node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "79" .
+
+term:887-homonymy  rdfs:label  "homonymy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "887" .
+
+term:1020-filter_expression
+        rdfs:label      "filter expression"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1020" .
+
+term:664-distance_measure
+        rdfs:label      "distance measure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "664" .
+
+term:1642-ubiquitous_geographic_information
+        rdfs:label      "ubiquitous geographic information"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1642" .
+
+term:933-cross-track  rdfs:label  "cross-track"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "933" .
+
+term:279-location_dependent_service
+        rdfs:label      "location dependent service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "279" .
+
+term:256-interval_scale
+        rdfs:label      "interval scale"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "256" .
+
+term:484-universal_face
+        rdfs:label      "universal face"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "484" .
+
+term:861-legend_class
+        rdfs:label      "legend class"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "861" .
+
+term:696-range  rdfs:label  "range"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "696" .
+
+term:433-strong_substitutability
+        rdfs:label      "strong substitutability"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "433" .
+
+term:1587-localName  rdfs:label  "localName"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1587" .
+
+term:1618-access_point
+        rdfs:label      "access point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1618" .
+
+term:1934-checkpoint  rdfs:label  "checkpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1934" .
+
+term:908-designation  rdfs:label  "designation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "908" .
+
+term:483-unit_of_measure
+        rdfs:label      "unit of measure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "483" .
+
+term:789-digital_elevation_model
+        rdfs:label      "digital elevation model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "789" .
+
+term:810-classification_system
+        rdfs:label      "classification system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "810" .
+
+term:112-data_quality_date
+        rdfs:label      "data quality date"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "112" .
+
+term:1596-geographic_context_awareness
+        rdfs:label      "geographic context awareness"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1596" .
+
+term:26-base_standard
+        rdfs:label      "base standard"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "26" .
+
+term:848-classification
+        rdfs:label      "classification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "848" .
+
+term:151-encoding  rdfs:label  "encoding"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "151" .
+
+term:1216-copyleft  rdfs:label  "copyleft"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1216" .
+
+term:910-extension  rdfs:label  "extension"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "910" .
+
+term:1242-party  rdfs:label  "party"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1242" .
+
+term:883-generic_concept
+        rdfs:label      "generic concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "883" .
+
+term:451-term  rdfs:label  "term"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "451" .
+
+term:1616-interface  rdfs:label  "interface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1616" .
+
+<http://www.geolexica.org/api/term#746-version_(temporal)>
+        rdfs:label      "version (temporal)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "746" .
+
+term:1493-journey_segment
+        rdfs:label      "journey segment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1493" .
+
+term:1126-whiskbroom_sensor
+        rdfs:label      "whiskbroom sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1126" .
+
+term:1255-sublicensee
+        rdfs:label      "sublicensee"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1255" .
+
+term:333-physical_quantity
+        rdfs:label      "physical quantity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "333" .
+
+term:1413-return  rdfs:label  "return"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1413" .
+
+term:1452-dark_signal_non_uniformity
+        rdfs:label      "dark signal non uniformity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1452" .
+
+term:299-model  rdfs:label  "model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "299" .
+
+term:244-instance  rdfs:label  "instance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "244" .
+
+term:864-pass  rdfs:label  "pass"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "864" .
+
+term:255-interoperability
+        rdfs:label      "interoperability"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "255" .
+
+term:309-node  rdfs:label  "node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "309" .
+
+term:24-bag  rdfs:label  "bag"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "24" .
+
+term:1658-bearing  rdfs:label  "bearing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1658" .
+
+term:418-spatial_attribute
+        rdfs:label      "spatial attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "418" .
+
+term:498-waypoint  rdfs:label  "waypoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "498" .
+
+term:301-motion  rdfs:label  "motion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "301" .
+
+term:715-vertical_coordinate_reference_system
+        rdfs:label      "vertical coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "715" .
+
+term:1291-catalogue  rdfs:label  "catalogue"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1291" .
+
+term:658-basic_service
+        rdfs:label      "basic service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "658" .
+
+term:369-referenceable_grid
+        rdfs:label      "referenceable grid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "369" .
+
+term:101-curve  rdfs:label  "curve"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "101" .
+
+term:847-calibration  rdfs:label  "calibration"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "847" .
+
+term:1558-parent_addressable_object
+        rdfs:label      "parent addressable object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1558" .
+
+term:1340-Place_Identifier_platform
+        rdfs:label      "Place Identifier platform"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1340" .
+
+term:698-schema  rdfs:label  "schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "698" .
+
+term:1252-rights_management
+        rdfs:label      "rights management"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1252" .
+
+term:3-abstract_test_case
+        rdfs:label      "abstract test case"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "3" .
+
+term:1486-verification
+        rdfs:label      "verification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1486" .
+
+term:1666-spheroid  rdfs:label  "spheroid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1666" .
+
+term:1417-single_beam_SONAR
+        rdfs:label      "single beam SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1417" .
+
+term:141-discrete_coverage
+        rdfs:label      "discrete coverage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "141" .
+
+term:844-spatio-parametric_coordinate_reference_system
+        rdfs:label      "spatio-parametric coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "844" .
+
+term:64-concept  rdfs:label  "concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "64" .
+
+term:1250-right  rdfs:label  "right"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1250" .
+
+term:1145-component  rdfs:label  "component"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1145" .
+
+term:90-coordinate_dimension
+        rdfs:label      "coordinate dimension"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "90" .
+
+term:458-testing_laboratory
+        rdfs:label      "testing laboratory"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "458" .
+
+term:19-attribute  rdfs:label  "attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "19" .
+
+term:735-coordinate_tuple
+        rdfs:label      "coordinate tuple"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "735" .
+
+term:1063-domain_feature
+        rdfs:label      "domain feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1063" .
+
+term:162-executable_test_suite
+        rdfs:label      "executable test suite"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "162" .
+
+term:116-data_quality_overview_element
+        rdfs:label      "data quality overview element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "116" .
+
+term:1685-precision  rdfs:label  "precision"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1685" .
+
+term:486-universe_of_discourse
+        rdfs:label      "universe of discourse"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "486" .
+
+term:190-function  rdfs:label  "function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "190" .
+
+term:56-composite_solid
+        rdfs:label      "composite solid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "56" .
+
+term:1688-homograph  rdfs:label  "homograph"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1688" .
+
+term:859-hierarchical_register
+        rdfs:label      "hierarchical register"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "859" .
+
+term:329-performance_testing
+        rdfs:label      "performance testing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "329" .
+
+term:29-boundary  rdfs:label  "boundary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "29" .
+
+term:825-GML_profile  rdfs:label  "GML profile"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "825" .
+
+term:282-map  rdfs:label  "map"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "282" .
+
+term:223-grid_point  rdfs:label  "grid point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "223" .
+
+term:492-vector_geometry
+        rdfs:label      "vector geometry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "492" .
+
+term:663-discrete_spatiotemporal_object
+        rdfs:label      "discrete spatiotemporal object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "663" .
+
+term:447-temporal_feature_association
+        rdfs:label      "temporal feature association"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "447" .
+
+term:242-information_viewpoint
+        rdfs:label      "information viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "242" .
+
+term:1931-boresight  rdfs:label  "boresight"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1931" .
+
+term:1256-sufficient  rdfs:label  "sufficient"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1256" .
+
+term:708-geodetic_datum
+        rdfs:label      "geodetic datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "708" .
+
+<http://www.geolexica.org/api/term#1223-GeoDRM_extended_(applied_to_resources)>
+        rdfs:label      "GeoDRM extended (applied to resources)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1223" .
+
+term:1224-GeoLicence  rdfs:label  "GeoLicence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1224" .
+
+term:114-data_quality_evaluation_procedure
+        rdfs:label      "data quality evaluation procedure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "114" .
+
+term:755-graphical_language
+        rdfs:label      "graphical language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "755" .
+
+term:937-fiducial_centre
+        rdfs:label      "fiducial centre"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "937" .
+
+term:419-spatial_object
+        rdfs:label      "spatial object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "419" .
+
+term:904-resolution  rdfs:label  "resolution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "904" .
+
+term:28-behaviour  rdfs:label  "behaviour"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "28" .
+
+term:216-geometric_realization
+        rdfs:label      "geometric realization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "216" .
+
+term:1692-reference_language
+        rdfs:label      "reference language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1692" .
+
+term:150-ellipsoidal_height
+        rdfs:label      "ellipsoidal height"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "150" .
+
+term:1388-field_of_view
+        rdfs:label      "field of view"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1388" .
+
+term:485-universal_solid
+        rdfs:label      "universal solid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "485" .
+
+term:312-object  rdfs:label  "object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "312" .
+
+term:1514-deviation  rdfs:label  "deviation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1514" .
+
+term:450-temporal_reference_system
+        rdfs:label      "temporal reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "450" .
+
+term:169-feature_association
+        rdfs:label      "feature association"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "169" .
+
+term:794-metric_traceability
+        rdfs:label      "metric traceability"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "794" .
+
+term:699-UML_application_schema
+        rdfs:label      "UML application schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "699" .
+
+term:1338-Place_Identifier_application
+        rdfs:label      "Place Identifier application"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1338" .
+
+term:815-a_posteriori_classification
+        rdfs:label      "a posteriori classification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "815" .
+
+term:1928-absolute_accuracy
+        rdfs:label      "absolute accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1928" .
+
+term:224-gridded_data
+        rdfs:label      "gridded data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "224" .
+
+term:1502-trip  rdfs:label  "trip"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1502" .
+
+term:1177-locating_feature
+        rdfs:label      "locating feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1177" .
+
+term:387-route  rdfs:label  "route"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "387" .
+
+term:6-abstract_test_suite
+        rdfs:label      "abstract test suite"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "6" .
+
+term:1580-annotation  rdfs:label  "annotation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1580" .
+
+term:884-generic_concept_system
+        rdfs:label      "generic concept system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "884" .
+
+term:376-relationship
+        rdfs:label      "relationship"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "376" .
+
+term:1641-ubiquitous_public_access
+        rdfs:label      "ubiquitous public access"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1641" .
+
+term:1169-attribute_event
+        rdfs:label      "attribute event"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1169" .
+
+term:1433-Web  rdfs:label  "Web"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1433" .
+
+term:991-Doppler_shift
+        rdfs:label      "Doppler shift"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "991" .
+
+term:1222-GeoDRM_enabled
+        rdfs:label      "GeoDRM enabled"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1222" .
+
+term:1607-measurement_accuracy
+        rdfs:label      "measurement accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1607" .
+
+term:27-basic_test  rdfs:label  "basic test"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "27" .
+
+term:1166-geographic_point_location
+        rdfs:label      "geographic point location"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1166" .
+
+term:290-metadata_element
+        rdfs:label      "metadata element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "290" .
+
+term:1670-simple_register
+        rdfs:label      "simple register"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1670" .
+
+term:1165-format  rdfs:label  "format"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1165" .
+
+term:927-azimuth_resolution
+        rdfs:label      "azimuth resolution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "927" .
+
+term:1488-accessibility
+        rdfs:label      "accessibility"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1488" .
+
+term:117-data_quality_result
+        rdfs:label      "data quality result"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "117" .
+
+term:1249-remediation
+        rdfs:label      "remediation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1249" .
+
+term:894-superordinate_concept
+        rdfs:label      "superordinate concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "894" .
+
+term:988-broadside  rdfs:label  "broadside"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "988" .
+
+term:10-admitted_term
+        rdfs:label      "admitted term"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "10" .
+
+term:1326-portrayal_function_set
+        rdfs:label      "portrayal function set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1326" .
+
+term:623-semi-minor_axis
+        rdfs:label      "semi-minor axis"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "623" .
+
+term:1168-static_conversion
+        rdfs:label      "static conversion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1168" .
+
+term:642-foliation  rdfs:label  "foliation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "642" .
+
+term:1396-instantaneous_field_of_view
+        rdfs:label      "instantaneous field of view"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1396" .
+
+term:824-GML_document
+        rdfs:label      "GML document"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "824" .
+
+term:377-relative_position
+        rdfs:label      "relative position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "377" .
+
+term:995-geolocating  rdfs:label  "geolocating"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "995" .
+
+term:1395-image_coordinates
+        rdfs:label      "image coordinates"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1395" .
+
+term:1492-journey  rdfs:label  "journey"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1492" .
+
+term:1220-fair_use  rdfs:label  "fair use"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1220" .
+
+term:519-objective  rdfs:label  "objective"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "519" .
+
+term:432-stereotype  rdfs:label  "stereotype"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "432" .
+
+term:1379-active_sonar
+        rdfs:label      "active sonar"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1379" .
+
+term:807-predicate  rdfs:label  "predicate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "807" .
+
+term:691-user  rdfs:label  "user"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "691" .
+
+term:693-observable_type
+        rdfs:label      "observable type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "693" .
+
+term:916-data_compaction
+        rdfs:label      "data compaction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "916" .
+
+term:105-data_element
+        rdfs:label      "data element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "105" .
+
+term:465-topological_expression
+        rdfs:label      "topological expression"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "465" .
+
+term:1213-chain_of_agency
+        rdfs:label      "chain of agency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1213" .
+
+term:518-object_point
+        rdfs:label      "object point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "518" .
+
+term:202-geographic_data
+        rdfs:label      "geographic data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "202" .
+
+term:907-concept_harmonization
+        rdfs:label      "concept harmonization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "907" .
+
+term:1386-draught  rdfs:label  "draught"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1386" .
+
+term:1330-customer  rdfs:label  "customer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1330" .
+
+term:435-submitting_organization
+        rdfs:label      "submitting organization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "435" .
+
+term:373-registration
+        rdfs:label      "registration"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "373" .
+
+term:1264-feature_portrayal_function
+        rdfs:label      "feature portrayal function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1264" .
+
+term:1384-depression_angle
+        rdfs:label      "depression angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1384" .
+
+term:1474-quantity  rdfs:label  "quantity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1474" .
+
+term:800-transfer_unit
+        rdfs:label      "transfer unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "800" .
+
+term:1424-swipe  rdfs:label  "swipe"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1424" .
+
+term:1945-strip_adjustment
+        rdfs:label      "strip adjustment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1945" .
+
+term:1274-symbol_component
+        rdfs:label      "symbol component"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1274" .
+
+term:965-range_bin  rdfs:label  "range bin"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "965" .
+
+term:1679-capability  rdfs:label  "capability"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1679" .
+
+term:1351-Semantic_Web
+        rdfs:label      "Semantic Web"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1351" .
+
+term:895-subordinate_concept
+        rdfs:label      "subordinate concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "895" .
+
+term:876-delimiting_characteristic
+        rdfs:label      "delimiting characteristic"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "876" .
+
+term:18-attitude  rdfs:label  "attitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "18" .
+
+term:1310-party_member
+        rdfs:label      "party member"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1310" .
+
+term:148-element  rdfs:label  "element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "148" .
+
+term:207-geographic_information_system
+        rdfs:label      "geographic information system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "207" .
+
+term:605-depth  rdfs:label  "depth"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "605" .
+
+term:364-raster  rdfs:label  "raster"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "364" .
+
+term:127-day  rdfs:label  "day"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "127" .
+
+term:909-designator  rdfs:label  "designator"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "909" .
+
+term:397-segment  rdfs:label  "segment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "397" .
+
+term:1440-physiognomy
+        rdfs:label      "physiognomy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1440" .
+
+term:366-record  rdfs:label  "record"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "366" .
+
+term:1244-persistent_protection_mechanism
+        rdfs:label      "persistent protection mechanism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1244" .
+
+term:850-classifier  rdfs:label  "classifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "850" .
+
+term:495-verification_test
+        rdfs:label      "verification test"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "495" .
+
+term:1366-conformance_quality_level
+        rdfs:label      "conformance quality level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1366" .
+
+term:292-metadata_schema
+        rdfs:label      "metadata schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "292" .
+
+term:1602-universal_representation
+        rdfs:label      "universal representation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1602" .
+
+term:63-computational_viewpoint
+        rdfs:label      "computational viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "63" .
+
+term:412-simple_feature
+        rdfs:label      "simple feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "412" .
+
+term:646-trajectory  rdfs:label  "trajectory"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "646" .
+
+term:263-Julian_date  rdfs:label  "Julian date"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "263" .
+
+term:1391-geiger_mode
+        rdfs:label      "geiger mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1391" .
+
+term:71-conformance  rdfs:label  "conformance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "71" .
+
+term:62-computational_topology
+        rdfs:label      "computational topology"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "62" .
+
+term:1233-licence_extents
+        rdfs:label      "licence extents"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1233" .
+
+term:1942-nadir  rdfs:label  "nadir"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1942" .
+
+term:1399-last_return
+        rdfs:label      "last return"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1399" .
+
+term:1686-data_category
+        rdfs:label      "data category"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1686" .
+
+term:478-turn  rdfs:label  "turn"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "478" .
+
+term:66-concept_system
+        rdfs:label      "concept system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "66" .
+
+term:2145-swath  rdfs:label  "swath"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2145" .
+
+term:88-coordinate  rdfs:label  "coordinate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "88" .
+
+term:1221-general_public_licence
+        rdfs:label      "general public licence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1221" .
+
+term:52-complex_feature
+        rdfs:label      "complex feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "52" .
+
+term:1176-located_feature
+        rdfs:label      "located feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1176" .
+
+term:260-item  rdfs:label  "item"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "260" .
+
+term:2107-trip_pattern
+        rdfs:label      "trip pattern"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2107" .
+
+term:455-terminological_record
+        rdfs:label      "terminological record"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "455" .
+
+term:384-response  rdfs:label  "response"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "384" .
+
+term:1640-seamless_mobility
+        rdfs:label      "seamless mobility"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1640" .
+
+term:1690-non-verbal_representation
+        rdfs:label      "non-verbal representation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1690" .
+
+term:632-data_quality_basic_measure
+        rdfs:label      "data quality basic measure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "632" .
+
+term:716-vertical_coordinate_system
+        rdfs:label      "vertical coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "716" .
+
+term:250-integrated_positioning_system
+        rdfs:label      "integrated positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "250" .
+
+term:317-operating_conditions
+        rdfs:label      "operating conditions"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "317" .
+
+term:880-domain_concept
+        rdfs:label      "domain concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "880" .
+
+term:280-main-road_rule
+        rdfs:label      "main-road rule"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "280" .
+
+term:1303-metaquality
+        rdfs:label      "metaquality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1303" .
+
+term:1636-invalidation
+        rdfs:label      "invalidation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1636" .
+
+term:1339-Place_Identifier_matching
+        rdfs:label      "Place Identifier matching"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1339" .
+
+term:958-perspective_centre
+        rdfs:label      "perspective centre"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "958" .
+
+term:300-month  rdfs:label  "month"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "300" .
+
+term:1158-tagged_value
+        rdfs:label      "tagged value"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1158" .
+
+term:1564-multiple_returns
+        rdfs:label      "multiple returns"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1564" .
+
+term:1356-dataset_series
+        rdfs:label      "dataset series"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1356" .
+
+term:74-conformance_quality_level
+        rdfs:label      "conformance quality level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "74" .
+
+term:1481-standardization
+        rdfs:label      "standardization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1481" .
+
+term:1547-framework  rdfs:label  "framework"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1547" .
+
+term:1416-sidescan_SONAR
+        rdfs:label      "sidescan SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1416" .
+
+term:1148-dependency  rdfs:label  "dependency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1148" .
+
+term:239-indirect_evaluation_method
+        rdfs:label      "indirect evaluation method"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "239" .
+
+term:442-tagged_value
+        rdfs:label      "tagged value"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "442" .
+
+term:614-height  rdfs:label  "height"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "614" .
+
+term:218-gravity-related_height
+        rdfs:label      "gravity-related height"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "218" .
+
+term:1208-agent  rdfs:label  "agent"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1208" .
+
+term:572-radiant_energy
+        rdfs:label      "radiant energy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "572" .
+
+term:819-land_cover  rdfs:label  "land cover"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "819" .
+
+term:1263-conditional_feature_portrayal_function
+        rdfs:label      "conditional feature portrayal function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1263" .
+
+term:851-compound_registry
+        rdfs:label      "compound registry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "851" .
+
+term:120-data_quality_value_type
+        rdfs:label      "data quality value type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "120" .
+
+term:659-continuous_change
+        rdfs:label      "continuous change"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "659" .
+
+term:1425-transducer  rdfs:label  "transducer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1425" .
+
+term:1451-dark_current_noise
+        rdfs:label      "dark current noise"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1451" .
+
+term:2144-internal_accuracy
+        rdfs:label      "internal accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2144" .
+
+term:345-portrayal_service
+        rdfs:label      "portrayal service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "345" .
+
+term:45-client  rdfs:label  "client"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "45" .
+
+term:1124-Synthetic_Aperture_Radar
+        rdfs:label      "Synthetic Aperture Radar"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1124" .
+
+term:1012-ScanSAR_mode
+        rdfs:label      "ScanSAR mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1012" .
+
+term:73-conformance_clause
+        rdfs:label      "conformance clause"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "73" .
+
+term:1575-utility_network
+        rdfs:label      "utility network"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1575" .
+
+term:717-base_representation
+        rdfs:label      "base representation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "717" .
+
+term:952-image-identifiable_ground_control_point
+        rdfs:label      "image-identifiable ground control point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "952" .
+
+term:1290-building_unit
+        rdfs:label      "building unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1290" .
+
+term:43-class  rdfs:label  "class"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "43" .
+
+term:1036-relocate  rdfs:label  "relocate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1036" .
+
+term:1279-cross-mapping
+        rdfs:label      "cross-mapping"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1279" .
+
+term:1565-pulse_repetition_frequency
+        rdfs:label      "pulse repetition frequency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1565" .
+
+term:1164-dynamic_conversion
+        rdfs:label      "dynamic conversion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1164" .
+
+term:44-classifier  rdfs:label  "classifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "44" .
+
+term:1042-response_model
+        rdfs:label      "response model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1042" .
+
+term:452-term_equivalent
+        rdfs:label      "term equivalent"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "452" .
+
+term:154-end_node  rdfs:label  "end node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "154" .
+
+term:867-policy  rdfs:label  "policy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "867" .
+
+term:1248-resource  rdfs:label  "resource"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1248" .
+
+term:1434-Web_service
+        rdfs:label      "Web service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1434" .
+
+term:1604-blooming  rdfs:label  "blooming"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1604" .
+
+term:831-platform  rdfs:label  "platform"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "831" .
+
+term:1114-template  rdfs:label  "template"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1114" .
+
+term:1245-principal  rdfs:label  "principal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1245" .
+
+term:67-conceptual_formalism
+        rdfs:label      "conceptual formalism"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "67" .
+
+term:745-vehicle  rdfs:label  "vehicle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "745" .
+
+term:118-data_quality_scope
+        rdfs:label      "data quality scope"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "118" .
+
+term:5-abstract_test_module
+        rdfs:label      "abstract test module"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "5" .
+
+term:1312-property_type
+        rdfs:label      "property type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1312" .
+
+term:160-event  rdfs:label  "event"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "160" .
+
+term:1322-parameterized_feature_portrayal_function
+        rdfs:label      "parameterized feature portrayal function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1322" .
+
+term:206-geographic_information_service
+        rdfs:label      "geographic information service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "206" .
+
+term:896-synonymy  rdfs:label  "synonymy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "896" .
+
+term:11-aggregation  rdfs:label  "aggregation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "11" .
+
+term:888-intension  rdfs:label  "intension"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "888" .
+
+term:680-right  rdfs:label  "right"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "680" .
+
+term:1625-subject_field
+        rdfs:label      "subject field"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1625" .
+
+term:1178-spatial_position
+        rdfs:label      "spatial position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1178" .
+
+term:286-measure  rdfs:label  "measure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "286" .
+
+term:1161-conversion  rdfs:label  "conversion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1161" .
+
+term:266-language_identifier
+        rdfs:label      "language identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "266" .
+
+term:1286-administrative_source
+        rdfs:label      "administrative source"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1286" .
+
+term:891-partitive_relation
+        rdfs:label      "partitive relation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "891" .
+
+term:640-scene  rdfs:label  "scene"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "640" .
+
+term:287-medium  rdfs:label  "medium"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "287" .
+
+term:75-conformance_test_report
+        rdfs:label      "conformance test report"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "75" .
+
+term:213-geometric_dimension
+        rdfs:label      "geometric dimension"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "213" .
+
+term:874-broader_concept
+        rdfs:label      "broader concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "874" .
+
+term:191-functional_language
+        rdfs:label      "functional language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "191" .
+
+term:125-dataset_series
+        rdfs:label      "dataset series"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "125" .
+
+term:1691-reference_environment
+        rdfs:label      "reference environment"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1691" .
+
+term:463-topological_dimension
+        rdfs:label      "topological dimension"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "463" .
+
+term:1655-address_class
+        rdfs:label      "address class"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1655" .
+
+term:49-code  rdfs:label  "code"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "49" .
+
+term:925-aperture_reference_point
+        rdfs:label      "aperture reference point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "925" .
+
+term:104-data  rdfs:label  "data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "104" .
+
+term:644-one_parameter_set_of_geometries
+        rdfs:label      "one parameter set of geometries"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "644" .
+
+term:1344-information_system
+        rdfs:label      "information system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1344" .
+
+term:1234-licence_manager
+        rdfs:label      "licence manager"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1234" .
+
+term:247-instant  rdfs:label  "instant"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "247" .
+
+term:1028-land_use  rdfs:label  "land use"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1028" .
+
+term:395-schema  rdfs:label  "schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "395" .
+
+term:416-solid  rdfs:label  "solid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "416" .
+
+term:1162-conversion_service
+        rdfs:label      "conversion service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1162" .
+
+term:729-coordinate_set
+        rdfs:label      "coordinate set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "729" .
+
+term:2333-quality  rdfs:label  "quality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2333" .
+
+term:1458-in_situ_measurement
+        rdfs:label      "in situ measurement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1458" .
+
+term:346-portrayal_specification
+        rdfs:label      "portrayal specification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "346" .
+
+term:372-register_owner
+        rdfs:label      "register owner"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "372" .
+
+term:1241-owner  rdfs:label  "owner"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1241" .
+
+term:728-type  rdfs:label  "type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "728" .
+
+<http://www.geolexica.org/api/term#1227-infringement_(of_a_licence)>
+        rdfs:label      "infringement (of a licence)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1227" .
+
+term:181-feature_succession
+        rdfs:label      "feature succession"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "181" .
+
+term:703-coordinate_reference_system
+        rdfs:label      "coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "703" .
+
+term:1487-vicarious_calibration
+        rdfs:label      "vicarious calibration"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1487" .
+
+term:1073-linear_element
+        rdfs:label      "linear element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1073" .
+
+term:133-Dijkstra_graph
+        rdfs:label      "Dijkstra graph"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "133" .
+
+term:765-projected_coordinate_reference_system
+        rdfs:label      "projected coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "765" .
+
+term:130-dependency  rdfs:label  "dependency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "130" .
+
+term:13-annotation  rdfs:label  "annotation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "13" .
+
+term:985-active_sensing_system
+        rdfs:label      "active sensing system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "985" .
+
+term:660-coupling  rdfs:label  "coupling"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "660" .
+
+term:1591-property_restriction
+        rdfs:label      "property restriction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1591" .
+
+term:505-zero_meridian
+        rdfs:label      "zero meridian"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "505" .
+
+term:241-information  rdfs:label  "information"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "241" .
+
+term:1695-submitted_language_subregister
+        rdfs:label      "submitted language subregister"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1695" .
+
+term:81-constraint  rdfs:label  "constraint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "81" .
+
+term:1637-ambient_intelligence
+        rdfs:label      "ambient intelligence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1637" .
+
+term:1211-authorization
+        rdfs:label      "authorization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1211" .
+
+term:1334-local_resource
+        rdfs:label      "local resource"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1334" .
+
+term:1301-land_cover_metalanguage
+        rdfs:label      "land cover metalanguage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1301" .
+
+term:175-feature_fusion
+        rdfs:label      "feature fusion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "175" .
+
+term:265-junction  rdfs:label  "junction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "265" .
+
+term:1659-Cartesian_coordinate_system
+        rdfs:label      "Cartesian coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1659" .
+
+term:1938-horizontal_accuracy
+        rdfs:label      "horizontal accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1938" .
+
+term:124-dataset  rdfs:label  "dataset"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "124" .
+
+term:1333-join_tuple  rdfs:label  "join tuple"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1333" .
+
+term:490-value_domain
+        rdfs:label      "value domain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "490" .
+
+term:846-band  rdfs:label  "band"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "846" .
+
+term:2111-georeferenceable
+        rdfs:label      "georeferenceable"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2111" .
+
+term:336-point  rdfs:label  "point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "336" .
+
+term:367-rectified_grid
+        rdfs:label      "rectified grid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "367" .
+
+term:352-prime_meridian
+        rdfs:label      "prime meridian"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "352" .
+
+term:281-maneuvermanœuvre
+        rdfs:label      "maneuver,manœuvre"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "281" .
+
+term:945-grazing_angle
+        rdfs:label      "grazing angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "945" .
+
+term:724-component  rdfs:label  "component"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "724" .
+
+term:893-polysemy  rdfs:label  "polysemy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "893" .
+
+term:136-directed_edge
+        rdfs:label      "directed edge"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "136" .
+
+term:702-compound_coordinate_reference_system
+        rdfs:label      "compound coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "702" .
+
+term:1008-projection_centre
+        rdfs:label      "projection centre"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1008" .
+
+term:289-metadata  rdfs:label  "metadata"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "289" .
+
+term:320-optical_positioning_system
+        rdfs:label      "optical positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "320" .
+
+term:1215-contract  rdfs:label  "contract"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1215" .
+
+term:1246-protection  rdfs:label  "protection"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1246" .
+
+term:1489-accessibility_information
+        rdfs:label      "accessibility information"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1489" .
+
+term:310-non-conformance
+        rdfs:label      "non-conformance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "310" .
+
+term:476-triangulated_irregular_network
+        rdfs:label      "triangulated irregular network"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "476" .
+
+term:246-instance_model
+        rdfs:label      "instance model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "246" .
+
+term:849-classified_object
+        rdfs:label      "classified object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "849" .
+
+term:487-valid_time  rdfs:label  "valid time"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "487" .
+
+term:1563-multibeam_SONAR
+        rdfs:label      "multibeam SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1563" .
+
+term:68-conceptual_model
+        rdfs:label      "conceptual model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "68" .
+
+term:928-beam_width  rdfs:label  "beam width"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "928" .
+
+term:879-domain  rdfs:label  "domain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "879" .
+
+term:1448-calibration_curve
+        rdfs:label      "calibration curve"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1448" .
+
+term:1276-symbol_reference
+        rdfs:label      "symbol reference"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1276" .
+
+term:863-nominal_value
+        rdfs:label      "nominal value"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "863" .
+
+term:407-service_interface
+        rdfs:label      "service interface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "407" .
+
+term:270-line_string  rdfs:label  "line string"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "270" .
+
+term:681-rights_management
+        rdfs:label      "rights management"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "681" .
+
+term:1235-licensee  rdfs:label  "licensee"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1235" .
+
+term:448-temporal_feature_operation
+        rdfs:label      "temporal feature operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "448" .
+
+term:532-attribute  rdfs:label  "attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "532" .
+
+term:1548-knowledge  rdfs:label  "knowledge"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1548" .
+
+term:4-abstract_test_method
+        rdfs:label      "abstract test method"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "4" .
+
+term:122-data_transfer
+        rdfs:label      "data transfer"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "122" .
+
+term:695-polygon  rdfs:label  "polygon"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "695" .
+
+term:603-cylindrical_coordinate_system
+        rdfs:label      "cylindrical coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "603" .
+
+term:1389-first_return
+        rdfs:label      "first return"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1389" .
+
+term:672-loosely_coupled_interface
+        rdfs:label      "loosely coupled interface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "672" .
+
+term:1232-licence  rdfs:label  "licence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1232" .
+
+term:180-feature_substitution
+        rdfs:label      "feature substitution"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "180" .
+
+term:57-composite_surface
+        rdfs:label      "composite surface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "57" .
+
+term:704-datum  rdfs:label  "datum"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "704" .
+
+<http://www.geolexica.org/api/term#96-Coordinated_Universal_Time_(UTC)>
+        rdfs:label      "Coordinated Universal Time (UTC)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "96" .
+
+term:144-domain  rdfs:label  "domain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "144" .
+
+term:166-fail_verdict
+        rdfs:label      "fail verdict"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "166" .
+
+term:238-inconclusive_verdict
+        rdfs:label      "inconclusive verdict"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "238" .
+
+term:1933-check_point
+        rdfs:label      "check point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1933" .
+
+term:272-linear_reference_system
+        rdfs:label      "linear reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "272" .
+
+term:617-linear_coordinate_system
+        rdfs:label      "linear coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "617" .
+
+term:70-conceptual_schema_language
+        rdfs:label      "conceptual schema language"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "70" .
+
+term:254-interior  rdfs:label  "interior"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "254" .
+
+term:1171-feature_event
+        rdfs:label      "feature event"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1171" .
+
+term:1593-source_document
+        rdfs:label      "source document"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1593" .
+
+<http://www.geolexica.org/api/term#1336-Multipurpose_Internet_Mail_Extensions_(MIME)_type>
+        rdfs:label      "Multipurpose Internet Mail Extensions (MIME) type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1336" .
+
+term:1423-sweep_SONAR
+        rdfs:label      "sweep SONAR"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1423" .
+
+term:349-positioning_system
+        rdfs:label      "positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "349" .
+
+term:1693-reference_language_subregister
+        rdfs:label      "reference language subregister"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1693" .
+
+term:972-slant_range  rdfs:label  "slant range"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "972" .
+
+term:665-distance_metric
+        rdfs:label      "distance metric"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "665" .
+
+term:99-coverage  rdfs:label  "coverage"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "99" .
+
+term:12-altitude  rdfs:label  "altitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "12" .
+
+term:17-association  rdfs:label  "association"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "17" .
+
+term:404-server  rdfs:label  "server"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "404" .
+
+term:763-coordinate_transformation
+        rdfs:label      "coordinate transformation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "763" .
+
+<http://www.geolexica.org/api/term#639-resolution_(of_a_sensor)>
+        rdfs:label      "resolution (of a sensor)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "639" .
+
+term:630-transportation_mode
+        rdfs:label      "transportation mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "630" .
+
+term:954-incident_angle
+        rdfs:label      "incident angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "954" .
+
+term:1111-sub-process
+        rdfs:label      "sub-process"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1111" .
+
+term:294-metamodel  rdfs:label  "metamodel"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "294" .
+
+term:1219-expected_risk
+        rdfs:label      "expected risk"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1219" .
+
+term:143-distribution_transparency
+        rdfs:label      "distribution transparency"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "143" .
+
+term:1553-address_component
+        rdfs:label      "address component"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1553" .
+
+term:790-digital_number
+        rdfs:label      "digital number"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "790" .
+
+term:449-temporal_position
+        rdfs:label      "temporal position"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "449" .
+
+term:1470-noise  rdfs:label  "noise"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1470" .
+
+term:1419-SONAR_processing_system
+        rdfs:label      "SONAR processing system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1419" .
+
+term:77-conforming_implementation
+        rdfs:label      "conforming implementation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "77" .
+
+term:744-traveller  rdfs:label  "traveller"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "744" .
+
+term:892-part-whole_relation
+        rdfs:label      "part-whole relation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "892" .
+
+term:1214-chain_of_licence
+        rdfs:label      "chain of licence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1214" .
+
+term:311-northing  rdfs:label  "northing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "311" .
+
+term:1004-internal_coordinate_reference_system
+        rdfs:label      "internal coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1004" .
+
+term:521-principal_point_of_best_symmetry
+        rdfs:label      "principal point of best symmetry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "521" .
+
+term:243-inheritance  rdfs:label  "inheritance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "243" .
+
+term:128-definition  rdfs:label  "definition"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "128" .
+
+term:84-control_body  rdfs:label  "control body"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "84" .
+
+term:983-ground_control_point
+        rdfs:label      "ground control point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "983" .
+
+term:1455-error  rdfs:label  "error"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1455" .
+
+term:1167-geographic_point_location_representation
+        rdfs:label      "geographic point location representation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1167" .
+
+term:1461-keystone_effect
+        rdfs:label      "keystone effect"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1461" .
+
+term:1218-digital_rights_management
+        rdfs:label      "digital rights management"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1218" .
+
+term:129-Delaunay_triangulation
+        rdfs:label      "Delaunay triangulation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "129" .
+
+term:1247-provenance  rdfs:label  "provenance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1247" .
+
+term:37-Cartesian_coordinate_system
+        rdfs:label      "Cartesian coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "37" .
+
+term:1009-range_direction
+        rdfs:label      "range direction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1009" .
+
+term:453-term_instance_classification
+        rdfs:label      "term instance classification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "453" .
+
+term:725-composition  rdfs:label  "composition"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "725" .
+
+term:832-polarization
+        rdfs:label      "polarization"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "832" .
+
+term:1650-metadata  rdfs:label  "metadata"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1650" .
+
+term:1324-portrayal_catalogue
+        rdfs:label      "portrayal catalogue"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1324" .
+
+term:295-method  rdfs:label  "method"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "295" .
+
+term:865-picture_original
+        rdfs:label      "picture original"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "865" .
+
+term:1231-lend  rdfs:label  "lend"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1231" .
+
+term:918-matrix  rdfs:label  "matrix"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "918" .
+
+term:963-pushbroom_sensor
+        rdfs:label      "pushbroom sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "963" .
+
+term:291-metadata_entity
+        rdfs:label      "metadata entity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "291" .
+
+term:733-altitude  rdfs:label  "altitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "733" .
+
+term:1584-datatype  rdfs:label  "datatype"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1584" .
+
+term:386-robustness_testing
+        rdfs:label      "robustness testing"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "386" .
+
+term:506-clarification
+        rdfs:label      "clarification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "506" .
+
+term:306-navigation  rdfs:label  "navigation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "306" .
+
+term:738-error  rdfs:label  "error"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "738" .
+
+term:355-product_specification
+        rdfs:label      "product specification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "355" .
+
+term:113-data_quality_element
+        rdfs:label      "data quality element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "113" .
+
+term:758-geometry_value_pair
+        rdfs:label      "geometry value pair"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "758" .
+
+term:350-precision  rdfs:label  "precision"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "350" .
+
+term:922-adjustable_model_parameters
+        rdfs:label      "adjustable model parameters"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "922" .
+
+term:212-geometric_complex
+        rdfs:label      "geometric complex"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "212" .
+
+term:323-ordinal_temporal_reference_system
+        rdfs:label      "ordinal temporal reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "323" .
+
+term:692-child_element
+        rdfs:label      "child element"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "692" .
+
+term:93-coordinate_system
+        rdfs:label      "coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "93" .
+
+term:1125-stripmap_mode
+        rdfs:label      "stripmap mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1125" .
+
+term:1570-basic_administrative_unit
+        rdfs:label      "basic administrative unit"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1570" .
+
+term:661-digital_item
+        rdfs:label      "digital item"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "661" .
+
+term:842-parametric_coordinate_reference_system
+        rdfs:label      "parametric coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "842" .
+
+term:398-semantic_type
+        rdfs:label      "semantic type"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "398" .
+
+term:2101-thematic_data
+        rdfs:label      "thematic data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2101" .
+
+term:620-polar_coordinate_system
+        rdfs:label      "polar coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "620" .
+
+term:318-operation  rdfs:label  "operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "318" .
+
+term:1237-licensor  rdfs:label  "licensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1237" .
+
+term:115-data_quality_measure
+        rdfs:label      "data quality measure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "115" .
+
+term:392-satellite_positioning_system
+        rdfs:label      "satellite positioning system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "392" .
+
+term:1005-passive_sensor
+        rdfs:label      "passive sensor"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1005" .
+
+term:1402-look_angle  rdfs:label  "look angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1402" .
+
+term:1243-payment_provider
+        rdfs:label      "payment provider"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1243" .
+
+term:677-passive_object
+        rdfs:label      "passive object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "677" .
+
+term:20-attribute  rdfs:label  "attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "20" .
+
+term:155-end_point  rdfs:label  "end point"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "155" .
+
+term:1426-transmitter
+        rdfs:label      "transmitter"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1426" .
+
+term:793-geographic_imagery_scene
+        rdfs:label      "geographic imagery scene"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "793" .
+
+term:1624-concept_field
+        rdfs:label      "concept field"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1624" .
+
+term:441-tag  rdfs:label  "tag"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "441" .
+
+term:111-data_product_specification
+        rdfs:label      "data product specification"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "111" .
+
+term:196-geodetic_coordinate_system
+        rdfs:label      "geodetic coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "196" .
+
+term:1944-relative_accuracy
+        rdfs:label      "relative accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1944" .
+
+term:1380-area_recording
+        rdfs:label      "area recording"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1380" .
+
+term:145-easting  rdfs:label  "easting"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "145" .
+
+term:258-isolated_node
+        rdfs:label      "isolated node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "258" .
+
+<http://www.geolexica.org/api/term#1920-Place_Identifier_(PI)_link>
+        rdfs:label      "Place Identifier (PI) link"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1920" .
+
+term:1675-geographic_coordinates
+        rdfs:label      "geographic coordinates"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1675" .
+
+term:444-technology_viewpoint
+        rdfs:label      "technology viewpoint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "444" .
+
+term:1571-group_party
+        rdfs:label      "group party"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1571" .
+
+term:902-terminological_entry
+        rdfs:label      "terminological entry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "902" .
+
+term:274-link  rdfs:label  "link"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "274" .
+
+term:1456-error_of_measurement
+        rdfs:label      "error of measurement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1456" .
+
+term:499-workflow  rdfs:label  "workflow"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "499" .
+
+term:502-ellipsoidal_coordinate_system
+        rdfs:label      "ellipsoidal coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "502" .
+
+term:1153-metamodel  rdfs:label  "metamodel"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1153" .
+
+term:1257-transaction
+        rdfs:label      "transaction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1257" .
+
+term:535-principal_register
+        rdfs:label      "principal register"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "535" .
+
+term:222-grid_coordinates
+        rdfs:label      "grid coordinates"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "222" .
+
+term:389-route_instruction
+        rdfs:label      "route instruction"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "389" .
+
+term:351-preferred_term
+        rdfs:label      "preferred term"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "351" .
+
+term:1582-class  rdfs:label  "class"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1582" .
+
+term:343-portrayal_catalogue
+        rdfs:label      "portrayal catalogue"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "343" .
+
+term:1006-platform_coordinate_reference_system
+        rdfs:label      "platform coordinate reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1006" .
+
+term:371-register  rdfs:label  "register"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "371" .
+
+term:1240-necessary  rdfs:label  "necessary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1240" .
+
+term:853-feature_attribute_concept
+        rdfs:label      "feature attribute concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "853" .
+
+term:1581-annotation_property
+        rdfs:label      "annotation property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1581" .
+
+term:278-location_based_service
+        rdfs:label      "location based service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "278" .
+
+term:2110-binding  rdfs:label  "binding"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "2110" .
+
+term:1305-observation_procedure
+        rdfs:label      "observation procedure"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1305" .
+
+term:1611-classifier  rdfs:label  "classifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1611" .
+
+term:252-interface  rdfs:label  "interface"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "252" .
+
+term:841-parametric_coordinate_system
+        rdfs:label      "parametric coordinate system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "841" .
+
+term:422-spatial_reference_system
+        rdfs:label      "spatial reference system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "422" .
+
+term:473-transfer_protocol
+        rdfs:label      "transfer protocol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "473" .
+
+term:1372-quality_control
+        rdfs:label      "quality control"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1372" .
+
+term:405-service  rdfs:label  "service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "405" .
+
+term:1512-complex_symbol
+        rdfs:label      "complex symbol"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1512" .
+
+term:1335-locator_attribute
+        rdfs:label      "locator attribute"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1335" .
+
+term:1614-inheritance
+        rdfs:label      "inheritance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1614" .
+
+term:15-application_schema
+        rdfs:label      "application schema"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "15" .
+
+term:685-spacestamp  rdfs:label  "spacestamp"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "685" .
+
+term:1676-lidar  rdfs:label  "lidar"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1676" .
+
+term:900-terminological_data
+        rdfs:label      "terminological data"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "900" .
+
+term:204-geographic_identifier
+        rdfs:label      "geographic identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "204" .
+
+<http://www.geolexica.org/api/term#686-state_(of_an_object)>
+        rdfs:label      "state (of an object)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "686" .
+
+term:1610-smile_distortion
+        rdfs:label      "smile distortion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1610" .
+
+term:1003-impulse_response
+        rdfs:label      "impulse response"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1003" .
+
+term:1638-context-awareness
+        rdfs:label      "context-awareness"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1638" .
+
+term:378-relative_positional_accuracy
+        rdfs:label      "relative positional accuracy"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "378" .
+
+term:996-geopositioning
+        rdfs:label      "geopositioning"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "996" .
+
+term:1683-real_world_effect
+        rdfs:label      "real world effect"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1683" .
+
+term:762-coordinate_conversion
+        rdfs:label      "coordinate conversion"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "762" .
+
+term:1483-traceability_chain
+        rdfs:label      "traceability chain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1483" .
+
+term:363-range  rdfs:label  "range"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "363" .
+
+term:219-geometry_property
+        rdfs:label      "geometry property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "219" .
+
+term:711-meridian  rdfs:label  "meridian"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "711" .
+
+term:975-squint_angle
+        rdfs:label      "squint angle"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "975" .
+
+term:257-inverse_evaluation
+        rdfs:label      "inverse evaluation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "257" .
+
+term:471-transaction_time
+        rdfs:label      "transaction time"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "471" .
+
+term:341-population  rdfs:label  "population"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "341" .
+
+term:315-obsolete_term
+        rdfs:label      "obsolete term"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "315" .
+
+term:385-ring  rdfs:label  "ring"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "385" .
+
+term:217-geometric_set
+        rdfs:label      "geometric set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "217" .
+
+term:1927-ungeoreferenced_grid
+        rdfs:label      "ungeoreferenced grid"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1927" .
+
+term:1157-stereotype  rdfs:label  "stereotype"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1157" .
+
+term:159-evaluation  rdfs:label  "evaluation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "159" .
+
+term:1948-entity  rdfs:label  "entity"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1948" .
+
+term:1594-unqualified_cardinality
+        rdfs:label      "unqualified cardinality"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1594" .
+
+term:138-directed_node
+        rdfs:label      "directed node"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "138" .
+
+term:897-system_of_concepts
+        rdfs:label      "system of concepts"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "897" .
+
+term:434-subcomplex  rdfs:label  "subcomplex"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "434" .
+
+term:868-radiance  rdfs:label  "radiance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "868" .
+
+term:1365-Linear_Referencing_Method
+        rdfs:label      "Linear Referencing Method"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1365" .
+
+term:873-associative_concept_system
+        rdfs:label      "associative concept system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "873" .
+
+term:551-image  rdfs:label  "image"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "551" .
+
+term:41-circular_sequence
+        rdfs:label      "circular sequence"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "41" .
+
+term:1325-portrayal_context
+        rdfs:label      "portrayal context"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1325" .
+
+term:757-geometry_value_object
+        rdfs:label      "geometry value object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "757" .
+
+term:1431-feature_instance
+        rdfs:label      "feature instance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1431" .
+
+term:974-spotlight_mode
+        rdfs:label      "spotlight mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "974" .
+
+term:504-ellipsoidal_longitude
+        rdfs:label      "ellipsoidal longitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "504" .
+
+term:1269-portrayal_function
+        rdfs:label      "portrayal function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1269" .
+
+term:1439-provenance  rdfs:label  "provenance"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1439" .
+
+term:1118-data_compression
+        rdfs:label      "data compression"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1118" .
+
+term:409-set  rdfs:label  "set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "409" .
+
+term:619-pixel  rdfs:label  "pixel"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "619" .
+
+term:968-scan_mode  rdfs:label  "scan mode"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "968" .
+
+term:1468-metrological_traceability_chain
+        rdfs:label      "metrological traceability chain"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1468" .
+
+term:165-face  rdfs:label  "face"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "165" .
+
+term:161-executable_test_case
+        rdfs:label      "executable test case"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "161" .
+
+term:110-data_product
+        rdfs:label      "data product"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "110" .
+
+term:734-constraint  rdfs:label  "constraint"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "734" .
+
+term:390-route_traversal
+        rdfs:label      "route traversal"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "390" .
+
+term:1557-parent_address
+        rdfs:label      "parent address"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1557" .
+
+term:1155-profile  rdfs:label  "profile"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1155" .
+
+term:164-external_function
+        rdfs:label      "external function"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "164" .
+
+term:177-feature_operation
+        rdfs:label      "feature operation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "177" .
+
+term:1275-symbol_definition
+        rdfs:label      "symbol definition"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1275" .
+
+term:273-linear_referencing_system
+        rdfs:label      "linear referencing system"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "273" .
+
+term:1022-identification_convention
+        rdfs:label      "identification convention"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1022" .
+
+term:890-narrower_concept
+        rdfs:label      "narrower concept"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "890" .
+
+term:199-geodetic_height
+        rdfs:label      "geodetic height"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "199" .
+
+term:1612-feature  rdfs:label  "feature"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1612" .
+
+term:1327-portrayal_rule
+        rdfs:label      "portrayal rule"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1327" .
+
+term:1567-receiver  rdfs:label  "receiver"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1567" .
+
+term:875-characteristic
+        rdfs:label      "characteristic"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "875" .
+
+term:1029-literal_value
+        rdfs:label      "literal value"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1029" .
+
+term:1572-level  rdfs:label  "level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1572" .
+
+term:1206-access_control
+        rdfs:label      "access control"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1206" .
+
+term:1562-mean_sea_level
+        rdfs:label      "mean sea level"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1562" .
+
+term:100-coverage_geometry
+        rdfs:label      "coverage geometry"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "100" .
+
+term:31-calendar  rdfs:label  "calendar"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "31" .
+
+term:200-geodetic_latitude
+        rdfs:label      "geodetic latitude"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "200" .
+
+term:322-ordinal_scale
+        rdfs:label      "ordinal scale"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "322" .
+
+term:1935-digital_surface_model
+        rdfs:label      "digital surface model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1935" .
+
+term:960-Physical_Sensor_Model
+        rdfs:label      "Physical Sensor Model"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "960" .
+
+term:1160-compression_service
+        rdfs:label      "compression service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1160" .
+
+term:986-along-track  rdfs:label  "along-track"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "986" .
+
+term:942-geolocation_information
+        rdfs:label      "geolocation information"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "942" .
+
+term:1332-supplier  rdfs:label  "supplier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1332" .
+
+term:474-traversable  rdfs:label  "traversable"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "474" .
+
+term:424-spatiotemporal_object
+        rdfs:label      "spatiotemporal object"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "424" .
+
+<http://www.geolexica.org/api/term#1412-resolution_(of_imagery)>
+        rdfs:label      "resolution (of imagery)"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1412" .
+
+term:856-feature_concept_dictionary
+        rdfs:label      "feature concept dictionary"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "856" .
+
+term:1337-Place_Identifier
+        rdfs:label      "Place Identifier"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1337" .
+
+term:235-implementation
+        rdfs:label      "implementation"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "235" .
+
+term:1435-World_Wide_Web
+        rdfs:label      "World Wide Web"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "1435" .
+
+term:370-refinement  rdfs:label  "refinement"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "370" .
+
+term:153-encoding_service
+        rdfs:label      "encoding service"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "153" .
+
+term:809-property  rdfs:label  "property"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "809" .
+
+term:87-convex_set  rdfs:label  "convex set"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "87" .
+
+term:210-geometric_aggregate
+        rdfs:label      "geometric aggregate"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "210" .
+
+term:411-simple  rdfs:label  "simple"@en ;
+        rdf:type        edg:DataRequirement ;
+        edg:identifier  "411" .
+
+teamwork:Vocabulary  rdfs:subClassOf  owl:Ontology .
+
+<urn:x-evn-master:term>
+        owl:imports  <http://topbraid.org/teamworkconstraints> ;
+        rdf:type     teamwork:Vocabulary ;
+        rdf:type     edg:RequirementsModelProject .
+
+edg:RequirementsModelProject
+        rdfs:subClassOf  teamwork:Vocabulary .

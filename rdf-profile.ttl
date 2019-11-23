@@ -1,29 +1,24 @@
 # baseURI: https://www.geolexica.org/api/rdf-profile
-# imports: file:///geolexica/glossary.csv
 # imports: http://purl.org/dc/terms/
 # imports: http://topbraid.org/schema/schema-single-range
 # imports: http://www.w3.org/2004/02/skos/core
-# imports: https://www.geolexica.org/api/glossary.csv
 
 @prefix : <https://www.geolexica.org/api/rdf-profile#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix glossary: <https://www.geolexica.org/api/terms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <https://www.geolexica.org/concepts/terms#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://www.geolexica.org/api/glossary.csv#glossary>
-  skos:note "This is the Geolexica glossary.csv import. It contains a two-field (attribute/property) list of all the current concept terms in the online gloassary as instance data." ;
-.
 <https://www.geolexica.org/api/rdf-profile>
   a owl:Ontology ;
-  owl:imports <file:///geolexica/glossary.csv> ;
   owl:imports dcterms: ;
   owl:imports <http://topbraid.org/schema/schema-single-range> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:imports <https://www.geolexica.org/api/glossary.csv> ;
 .
 :Arabic_Node
   a :Language_Node ;
@@ -201,8 +196,8 @@
 :German_Node
   a :Language_Node ;
   dcterms:modified "2019-10-19"^^xsd:anyURI ;
-  dcterms:title "Glossaire en français des termes de l’ISO/TC 211" ;
-  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 Glossary of Terms - German" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-ger"^^xsd:anyURI ;
   rdfs:label "German Language Node" ;
   :classification :preferred ;
   :date_accepted "2007-10-15"^^xsd:date ;
@@ -401,13 +396,6 @@
   skos:inScheme :GeolexicaConceptScheme ;
   skos:prefLabel "SIMILARITY TO AUTHORITATIVE SOURCE" ;
 .
-:Source
-  a owl:Class ;
-  rdfs:label "Source" ;
-  rdfs:subClassOf schema:Intangible ;
-  skos:inScheme :GeolexicaConceptScheme ;
-  skos:prefLabel "SOURCE" ;
-.
 :Spanish
   a schema:Language ;
   dcterms:source "https://www.geolexica.org/registers/#language-spa" ;
@@ -476,26 +464,12 @@
   rdfs:label "Sedish Language Code"@en ;
   skos:prefLabel "SWE"@en ;
 .
-:Term
-  a owl:Class ;
-  rdfs:label "Term" ;
-  rdfs:subClassOf schema:Intangible ;
-  skos:note "This class may not be needed due to glossary.csv import." ;
-  skos:prefLabel "TERM" ;
-.
 :Term_Classification
   a owl:Class ;
   rdfs:label "Term classification" ;
   rdfs:subClassOf schema:Intangible ;
   skos:inScheme :GeolexicaConceptScheme ;
   skos:prefLabel "TERM CLASSIFICATION" ;
-.
-:Term_ID
-  a owl:Class ;
-  rdfs:label "TERM ID" ;
-  rdfs:subClassOf schema:Intangible ;
-  skos:note "This class may not be needed due to glossary.csv import." ;
-  skos:prefLabel "TERM ID" ;
 .
 :Valid
   a :Entry_Status ;
