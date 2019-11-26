@@ -4,16 +4,17 @@
 # imports: http://edg.topbraid.solutions/1.0/shapes/core
 # imports: http://edg.topbraid.solutions/1.0/shapes/requirements-model
 # imports: http://topbraid.org/teamworkconstraints
-# imports: https://www.geolexica.org/api/rdf-profile
+# imports: https://www.geolexica.org/api/geolexica-ap
 # imports: urn:x-evn-master:edg_enumerations_singleton
 
 @prefix edg: <http://edg.topbraid.solutions/model/> .
 @prefix metadata: <http://topbraid.org/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdf-profile: <https://www.geolexica.org/api/rdf-profile#> .
+@prefix rdf-profile: <https://www.geolexica.org/api/geolexica-ap#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swa: <http://topbraid.org/swa#> .
 @prefix teamwork: <http://topbraid.org/teamwork#> .
 @prefix term: <http://www.geolexica.org/api/term#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -29,5327 +30,5327 @@ teamwork:Vocabulary
   rdfs:subClassOf owl:Ontology ;
 .
 <http://www.geolexica.org/api/term#10-admitted_term>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "10" ;
   rdfs:label "admitted term"@en ;
 .
 <http://www.geolexica.org/api/term#100-coverage_geometry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "100" ;
   rdfs:label "coverage geometry"@en ;
 .
 <http://www.geolexica.org/api/term#1000-ground_sampling_distance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1000" ;
   rdfs:label "ground sampling distance"@en ;
 .
 <http://www.geolexica.org/api/term#1002-image_distortion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1002" ;
   rdfs:label "image distortion"@en ;
 .
 <http://www.geolexica.org/api/term#1003-impulse_response>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1003" ;
   rdfs:label "impulse response"@en ;
 .
 <http://www.geolexica.org/api/term#1004-internal_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1004" ;
   rdfs:label "internal coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#1005-passive_sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1005" ;
   rdfs:label "passive sensor"@en ;
 .
 <http://www.geolexica.org/api/term#1006-platform_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1006" ;
   rdfs:label "platform coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#1007-principal_point_of_autocollimation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1007" ;
   rdfs:label "principal point of autocollimation"@en ;
 .
 <http://www.geolexica.org/api/term#1008-projection_centre>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1008" ;
   rdfs:label "projection centre"@en ;
 .
 <http://www.geolexica.org/api/term#1009-range_direction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1009" ;
   rdfs:label "range direction"@en ;
 .
 <http://www.geolexica.org/api/term#101-curve>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "101" ;
   rdfs:label "curve"@en ;
 .
 <http://www.geolexica.org/api/term#1010-range_resolution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1010" ;
   rdfs:label "range resolution"@en ;
 .
 <http://www.geolexica.org/api/term#1011-range_vector>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1011" ;
   rdfs:label "range vector"@en ;
 .
 <http://www.geolexica.org/api/term#1012-ScanSAR_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1012" ;
   rdfs:label "ScanSAR mode"@en ;
 .
 <http://www.geolexica.org/api/term#1013-sensor_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1013" ;
   rdfs:label "sensor model"@en ;
 .
 <http://www.geolexica.org/api/term#1014-accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1014" ;
   rdfs:label "accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#1018-feature_identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1018" ;
   rdfs:label "feature identifier"@en ;
 .
 <http://www.geolexica.org/api/term#1019-filter_capabilities_XML>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1019" ;
   rdfs:label "filter capabilities XML"@en ;
 .
 <http://www.geolexica.org/api/term#102-curve_segment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "102" ;
   rdfs:label "curve segment"@en ;
 .
 <http://www.geolexica.org/api/term#1020-filter_expression>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1020" ;
   rdfs:label "filter expression"@en ;
 .
 <http://www.geolexica.org/api/term#1021-filter_expression_processor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1021" ;
   rdfs:label "filter expression processor"@en ;
 .
 <http://www.geolexica.org/api/term#1022-identification_convention>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1022" ;
   rdfs:label "identification convention"@en ;
 .
 <http://www.geolexica.org/api/term#1028-land_use>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1028" ;
   rdfs:label "land use"@en ;
 .
 <http://www.geolexica.org/api/term#1029-literal_value>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1029" ;
   rdfs:label "literal value"@en ;
 .
 <http://www.geolexica.org/api/term#103-cycle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "103" ;
   rdfs:label "cycle"@en ;
 .
 <http://www.geolexica.org/api/term#1036-relocate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1036" ;
   rdfs:label "relocate"@en ;
 .
 <http://www.geolexica.org/api/term#104-data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "104" ;
   rdfs:label "data"@en ;
 .
 <http://www.geolexica.org/api/term#1042-response_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1042" ;
   rdfs:label "response model"@en ;
 .
 <http://www.geolexica.org/api/term#105-data_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "105" ;
   rdfs:label "data element"@en ;
 .
 <http://www.geolexica.org/api/term#1063-domain_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1063" ;
   rdfs:label "domain feature"@en ;
 .
 <http://www.geolexica.org/api/term#1069-grid_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1069" ;
   rdfs:label "grid coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#107-data_interchange>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "107" ;
   rdfs:label "data interchange"@en ;
 .
 <http://www.geolexica.org/api/term#1073-linear_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1073" ;
   rdfs:label "linear element"@en ;
 .
 <http://www.geolexica.org/api/term#1079-Linear_Referencing_System>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1079" ;
   rdfs:label "Linear Referencing System"@en ;
 .
 <http://www.geolexica.org/api/term#108-data_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "108" ;
   rdfs:label "data level"@en ;
 .
 <http://www.geolexica.org/api/term#1081-linearly_located>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1081" ;
   rdfs:label "linearly located"@en ;
 .
 <http://www.geolexica.org/api/term#1097-product>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1097" ;
   rdfs:label "product"@en ;
 .
 <http://www.geolexica.org/api/term#11-aggregation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "11" ;
   rdfs:label "aggregation"@en ;
 .
 <http://www.geolexica.org/api/term#110-data_product>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "110" ;
   rdfs:label "data product"@en ;
 .
 <http://www.geolexica.org/api/term#1102-quality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1102" ;
   rdfs:label "quality"@en ;
 .
 <http://www.geolexica.org/api/term#1108-sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1108" ;
   rdfs:label "sensor"@en ;
 .
 <http://www.geolexica.org/api/term#111-data_product_specification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "111" ;
   rdfs:label "data product specification"@en ;
 .
 <http://www.geolexica.org/api/term#1111-sub-process>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1111" ;
   rdfs:label "sub-process"@en ;
 .
 <http://www.geolexica.org/api/term#1114-template>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1114" ;
   rdfs:label "template"@en ;
 .
 <http://www.geolexica.org/api/term#1118-data_compression>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1118" ;
   rdfs:label "data compression"@en ;
 .
 <http://www.geolexica.org/api/term#1119-detector>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1119" ;
   rdfs:label "detector"@en ;
 .
 <http://www.geolexica.org/api/term#112-data_quality_date>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "112" ;
   rdfs:label "data quality date"@en ;
 .
 <http://www.geolexica.org/api/term#1121-external_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1121" ;
   rdfs:label "external coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#1122-gimbal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1122" ;
   rdfs:label "gimbal"@en ;
 .
 <http://www.geolexica.org/api/term#1123-gyroscope>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1123" ;
   rdfs:label "gyroscope"@en ;
 .
 <http://www.geolexica.org/api/term#1124-Synthetic_Aperture_Radar>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1124" ;
   rdfs:label "Synthetic Aperture Radar"@en ;
 .
 <http://www.geolexica.org/api/term#1125-stripmap_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1125" ;
   rdfs:label "stripmap mode"@en ;
 .
 <http://www.geolexica.org/api/term#1126-whiskbroom_sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1126" ;
   rdfs:label "whiskbroom sensor"@en ;
 .
 <http://www.geolexica.org/api/term#113-data_quality_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "113" ;
   rdfs:label "data quality element"@en ;
 .
 <http://www.geolexica.org/api/term#114-data_quality_evaluation_procedure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "114" ;
   rdfs:label "data quality evaluation procedure"@en ;
 .
 <http://www.geolexica.org/api/term#1144-association>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1144" ;
   rdfs:label "association"@en ;
 .
 <http://www.geolexica.org/api/term#1145-component>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1145" ;
   rdfs:label "component"@en ;
 .
 <http://www.geolexica.org/api/term#1146-composition>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1146" ;
   rdfs:label "composition"@en ;
 .
 <http://www.geolexica.org/api/term#1147-constraint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1147" ;
   rdfs:label "constraint"@en ;
 .
 <http://www.geolexica.org/api/term#1148-dependency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1148" ;
   rdfs:label "dependency"@en ;
 .
 <http://www.geolexica.org/api/term#115-data_quality_measure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "115" ;
   rdfs:label "data quality measure"@en ;
 .
 <http://www.geolexica.org/api/term#1153-metamodel>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1153" ;
   rdfs:label "metamodel"@en ;
 .
 <http://www.geolexica.org/api/term#1155-profile>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1155" ;
   rdfs:label "profile"@en ;
 .
 <http://www.geolexica.org/api/term#1156-realization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1156" ;
   rdfs:label "realization"@en ;
 .
 <http://www.geolexica.org/api/term#1157-stereotype>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1157" ;
   rdfs:label "stereotype"@en ;
 .
 <http://www.geolexica.org/api/term#1158-tagged_value>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1158" ;
   rdfs:label "tagged value"@en ;
 .
 <http://www.geolexica.org/api/term#1159-compression>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1159" ;
   rdfs:label "compression"@en ;
 .
 <http://www.geolexica.org/api/term#116-data_quality_overview_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "116" ;
   rdfs:label "data quality overview element"@en ;
 .
 <http://www.geolexica.org/api/term#1160-compression_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1160" ;
   rdfs:label "compression service"@en ;
 .
 <http://www.geolexica.org/api/term#1161-conversion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1161" ;
   rdfs:label "conversion"@en ;
 .
 <http://www.geolexica.org/api/term#1162-conversion_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1162" ;
   rdfs:label "conversion service"@en ;
 .
 <http://www.geolexica.org/api/term#1164-dynamic_conversion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1164" ;
   rdfs:label "dynamic conversion"@en ;
 .
 <http://www.geolexica.org/api/term#1165-format>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1165" ;
   rdfs:label "format"@en ;
 .
 <http://www.geolexica.org/api/term#1166-geographic_point_location>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1166" ;
   rdfs:label "geographic point location"@en ;
 .
 <http://www.geolexica.org/api/term#1167-geographic_point_location_representation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1167" ;
   rdfs:label "geographic point location representation"@en ;
 .
 <http://www.geolexica.org/api/term#1168-static_conversion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1168" ;
   rdfs:label "static conversion"@en ;
 .
 <http://www.geolexica.org/api/term#1169-attribute_event>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1169" ;
   rdfs:label "attribute event"@en ;
 .
 <http://www.geolexica.org/api/term#117-data_quality_result>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "117" ;
   rdfs:label "data quality result"@en ;
 .
 <http://www.geolexica.org/api/term#1170-attributed_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1170" ;
   rdfs:label "attributed feature"@en ;
 .
 <http://www.geolexica.org/api/term#1171-feature_event>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1171" ;
   rdfs:label "feature event"@en ;
 .
 <http://www.geolexica.org/api/term#1172-linear_referencing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1172" ;
   rdfs:label "linear referencing"@en ;
 .
 <http://www.geolexica.org/api/term#1173-linear_segment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1173" ;
   rdfs:label "linear segment"@en ;
 .
 <http://www.geolexica.org/api/term#1174-linearly_located_event>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1174" ;
   rdfs:label "linearly located event"@en ;
 .
 <http://www.geolexica.org/api/term#1175-linearly_referenced_location>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1175" ;
   rdfs:label "linearly referenced location"@en ;
 .
 <http://www.geolexica.org/api/term#1176-located_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1176" ;
   rdfs:label "located feature"@en ;
 .
 <http://www.geolexica.org/api/term#1177-locating_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1177" ;
   rdfs:label "locating feature"@en ;
 .
 <http://www.geolexica.org/api/term#1178-spatial_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1178" ;
   rdfs:label "spatial position"@en ;
 .
 <http://www.geolexica.org/api/term#118-data_quality_scope>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "118" ;
   rdfs:label "data quality scope"@en ;
 .
 <http://www.geolexica.org/api/term#119-data_quality_subelement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "119" ;
   rdfs:label "data quality subelement"@en ;
 .
 <http://www.geolexica.org/api/term#1197-responsibility>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1197" ;
   rdfs:label "responsibility"@en ;
 .
 <http://www.geolexica.org/api/term#12-altitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "12" ;
   rdfs:label "altitude"@en ;
 .
 <http://www.geolexica.org/api/term#120-data_quality_value_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "120" ;
   rdfs:label "data quality value type"@en ;
 .
 <http://www.geolexica.org/api/term#1206-access_control>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1206" ;
   rdfs:label "access control"@en ;
 .
 <http://www.geolexica.org/api/term#1207-agency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1207" ;
   rdfs:label "agency"@en ;
 .
 <http://www.geolexica.org/api/term#1208-agent>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1208" ;
   rdfs:label "agent"@en ;
 .
 <http://www.geolexica.org/api/term#121-data_quality_value_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "121" ;
   rdfs:label "data quality value unit"@en ;
 .
 <http://www.geolexica.org/api/term#1210-authentication>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1210" ;
   rdfs:label "authentication"@en ;
 .
 <http://www.geolexica.org/api/term#1211-authorization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1211" ;
   rdfs:label "authorization"@en ;
 .
 <http://www.geolexica.org/api/term#1212-bypass>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1212" ;
   rdfs:label "bypass"@en ;
 .
 <http://www.geolexica.org/api/term#1213-chain_of_agency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1213" ;
   rdfs:label "chain of agency"@en ;
 .
 <http://www.geolexica.org/api/term#1214-chain_of_licence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1214" ;
   rdfs:label "chain of licence"@en ;
 .
 <http://www.geolexica.org/api/term#1215-contract>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1215" ;
   rdfs:label "contract"@en ;
 .
 <http://www.geolexica.org/api/term#1216-copyleft>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1216" ;
   rdfs:label "copyleft"@en ;
 .
 <http://www.geolexica.org/api/term#1217-digital_licence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1217" ;
   rdfs:label "digital licence"@en ;
 .
 <http://www.geolexica.org/api/term#1218-digital_rights_management>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1218" ;
   rdfs:label "digital rights management"@en ;
 .
 <http://www.geolexica.org/api/term#1219-expected_risk>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1219" ;
   rdfs:label "expected risk"@en ;
 .
 <http://www.geolexica.org/api/term#122-data_transfer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "122" ;
   rdfs:label "data transfer"@en ;
 .
 <http://www.geolexica.org/api/term#1220-fair_use>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1220" ;
   rdfs:label "fair use"@en ;
 .
 <http://www.geolexica.org/api/term#1221-general_public_licence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1221" ;
   rdfs:label "general public licence"@en ;
 .
 <http://www.geolexica.org/api/term#1222-GeoDRM_enabled>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1222" ;
   rdfs:label "GeoDRM enabled"@en ;
 .
 <http://www.geolexica.org/api/term#1223-GeoDRM_extended_(applied_to_resources)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1223" ;
   rdfs:label "GeoDRM extended (applied to resources)"@en ;
 .
 <http://www.geolexica.org/api/term#1224-GeoLicence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1224" ;
   rdfs:label "GeoLicence"@en ;
 .
 <http://www.geolexica.org/api/term#1225-GeoLicence_resolution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1225" ;
   rdfs:label "GeoLicence resolution"@en ;
 .
 <http://www.geolexica.org/api/term#1226-GeoLicence_infringement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1226" ;
   rdfs:label "GeoLicence infringement"@en ;
 .
 <http://www.geolexica.org/api/term#1227-infringement_(of_a_licence)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1227" ;
   rdfs:label "infringement (of a licence)"@en ;
 .
 <http://www.geolexica.org/api/term#1228-infringement_(of_a_right)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1228" ;
   rdfs:label "infringement (of a right)"@en ;
 .
 <http://www.geolexica.org/api/term#1229-joint_ownership>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1229" ;
   rdfs:label "joint ownership"@en ;
 .
 <http://www.geolexica.org/api/term#123-data_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "123" ;
   rdfs:label "data type"@en ;
 .
 <http://www.geolexica.org/api/term#1230-lease>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1230" ;
   rdfs:label "lease"@en ;
 .
 <http://www.geolexica.org/api/term#1231-lend>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1231" ;
   rdfs:label "lend"@en ;
 .
 <http://www.geolexica.org/api/term#1232-licence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1232" ;
   rdfs:label "licence"@en ;
 .
 <http://www.geolexica.org/api/term#1233-licence_extents>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1233" ;
   rdfs:label "licence extents"@en ;
 .
 <http://www.geolexica.org/api/term#1234-licence_manager>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1234" ;
   rdfs:label "licence manager"@en ;
 .
 <http://www.geolexica.org/api/term#1235-licensee>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1235" ;
   rdfs:label "licensee"@en ;
 .
 <http://www.geolexica.org/api/term#1236-licensing_agent>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1236" ;
   rdfs:label "licensing agent"@en ;
 .
 <http://www.geolexica.org/api/term#1237-licensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1237" ;
   rdfs:label "licensor"@en ;
 .
 <http://www.geolexica.org/api/term#124-dataset>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "124" ;
   rdfs:label "dataset"@en ;
 .
 <http://www.geolexica.org/api/term#1240-necessary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1240" ;
   rdfs:label "necessary"@en ;
 .
 <http://www.geolexica.org/api/term#1241-owner>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1241" ;
   rdfs:label "owner"@en ;
 .
 <http://www.geolexica.org/api/term#1242-party>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1242" ;
   rdfs:label "party"@en ;
 .
 <http://www.geolexica.org/api/term#1243-payment_provider>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1243" ;
   rdfs:label "payment provider"@en ;
 .
 <http://www.geolexica.org/api/term#1244-persistent_protection_mechanism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1244" ;
   rdfs:label "persistent protection mechanism"@en ;
 .
 <http://www.geolexica.org/api/term#1245-principal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1245" ;
   rdfs:label "principal"@en ;
 .
 <http://www.geolexica.org/api/term#1246-protection>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1246" ;
   rdfs:label "protection"@en ;
 .
 <http://www.geolexica.org/api/term#1247-provenance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1247" ;
   rdfs:label "provenance"@en ;
 .
 <http://www.geolexica.org/api/term#1248-resource>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1248" ;
   rdfs:label "resource"@en ;
 .
 <http://www.geolexica.org/api/term#1249-remediation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1249" ;
   rdfs:label "remediation"@en ;
 .
 <http://www.geolexica.org/api/term#125-dataset_series>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "125" ;
   rdfs:label "dataset series"@en ;
 .
 <http://www.geolexica.org/api/term#1250-right>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1250" ;
   rdfs:label "right"@en ;
 .
 <http://www.geolexica.org/api/term#1251-rights_holder>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1251" ;
   rdfs:label "rights holder"@en ;
 .
 <http://www.geolexica.org/api/term#1252-rights_management>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1252" ;
   rdfs:label "rights management"@en ;
 .
 <http://www.geolexica.org/api/term#1253-risk>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1253" ;
   rdfs:label "risk"@en ;
 .
 <http://www.geolexica.org/api/term#1254-sublicence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1254" ;
   rdfs:label "sublicence"@en ;
 .
 <http://www.geolexica.org/api/term#1255-sublicensee>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1255" ;
   rdfs:label "sublicensee"@en ;
 .
 <http://www.geolexica.org/api/term#1256-sufficient>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1256" ;
   rdfs:label "sufficient"@en ;
 .
 <http://www.geolexica.org/api/term#1257-transaction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1257" ;
   rdfs:label "transaction"@en ;
 .
 <http://www.geolexica.org/api/term#1258-trust>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1258" ;
   rdfs:label "trust"@en ;
 .
 <http://www.geolexica.org/api/term#1263-conditional_feature_portrayal_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1263" ;
   rdfs:label "conditional feature portrayal function"@en ;
 .
 <http://www.geolexica.org/api/term#1264-feature_portrayal_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1264" ;
   rdfs:label "feature portrayal function"@en ;
 .
 <http://www.geolexica.org/api/term#1269-portrayal_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1269" ;
   rdfs:label "portrayal function"@en ;
 .
 <http://www.geolexica.org/api/term#127-day>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "127" ;
   rdfs:label "day"@en ;
 .
 <http://www.geolexica.org/api/term#1272-simple_symbol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1272" ;
   rdfs:label "simple symbol"@en ;
 .
 <http://www.geolexica.org/api/term#1273-symbol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1273" ;
   rdfs:label "symbol"@en ;
 .
 <http://www.geolexica.org/api/term#1274-symbol_component>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1274" ;
   rdfs:label "symbol component"@en ;
 .
 <http://www.geolexica.org/api/term#1275-symbol_definition>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1275" ;
   rdfs:label "symbol definition"@en ;
 .
 <http://www.geolexica.org/api/term#1276-symbol_reference>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1276" ;
   rdfs:label "symbol reference"@en ;
 .
 <http://www.geolexica.org/api/term#1278-error_propagation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1278" ;
   rdfs:label "error propagation"@en ;
 .
 <http://www.geolexica.org/api/term#1279-cross-mapping>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1279" ;
   rdfs:label "cross-mapping"@en ;
 .
 <http://www.geolexica.org/api/term#128-definition>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "128" ;
   rdfs:label "definition"@en ;
 .
 <http://www.geolexica.org/api/term#1280-place>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1280" ;
   rdfs:label "place"@en ;
 .
 <http://www.geolexica.org/api/term#1286-administrative_source>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1286" ;
   rdfs:label "administrative source"@en ;
 .
 <http://www.geolexica.org/api/term#1289-boundary_face_string>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1289" ;
   rdfs:label "boundary face string"@en ;
 .
 <http://www.geolexica.org/api/term#129-Delaunay_triangulation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "129" ;
   rdfs:label "Delaunay triangulation"@en ;
 .
 <http://www.geolexica.org/api/term#1290-building_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1290" ;
   rdfs:label "building unit"@en ;
 .
 <http://www.geolexica.org/api/term#1291-catalogue>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1291" ;
   rdfs:label "catalogue"@en ;
 .
 <http://www.geolexica.org/api/term#1293-converter>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1293" ;
   rdfs:label "converter"@en ;
 .
 <http://www.geolexica.org/api/term#1296-feature_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1296" ;
   rdfs:label "feature type"@en ;
 .
 <http://www.geolexica.org/api/term#1298-item>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1298" ;
   rdfs:label "item"@en ;
 .
 <http://www.geolexica.org/api/term#1299-join_predicate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1299" ;
   rdfs:label "join predicate"@en ;
 .
 <http://www.geolexica.org/api/term#13-annotation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "13" ;
   rdfs:label "annotation"@en ;
 .
 <http://www.geolexica.org/api/term#130-dependency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "130" ;
   rdfs:label "dependency"@en ;
 .
 <http://www.geolexica.org/api/term#1300-land_administration>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1300" ;
   rdfs:label "land administration"@en ;
 .
 <http://www.geolexica.org/api/term#1301-land_cover_metalanguage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1301" ;
   rdfs:label "land cover metalanguage"@en ;
 .
 <http://www.geolexica.org/api/term#1302-liminal_spatial_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1302" ;
   rdfs:label "liminal spatial unit"@en ;
 .
 <http://www.geolexica.org/api/term#1303-metaquality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1303" ;
   rdfs:label "metaquality"@en ;
 .
 <http://www.geolexica.org/api/term#1305-observation_procedure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1305" ;
   rdfs:label "observation procedure"@en ;
 .
 <http://www.geolexica.org/api/term#1306-observation_protocol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1306" ;
   rdfs:label "observation protocol"@en ;
 .
 <http://www.geolexica.org/api/term#1308-observation_result>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1308" ;
   rdfs:label "observation result"@en ;
 .
 <http://www.geolexica.org/api/term#1309-computational_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1309" ;
   rdfs:label "computational viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#131-deprecated_term>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "131" ;
   rdfs:label "deprecated term"@en ;
 .
 <http://www.geolexica.org/api/term#1310-party_member>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1310" ;
   rdfs:label "party member"@en ;
 .
 <http://www.geolexica.org/api/term#1312-property_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1312" ;
   rdfs:label "property type"@en ;
 .
 <http://www.geolexica.org/api/term#1316-spatial_source>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1316" ;
   rdfs:label "spatial source"@en ;
 .
 <http://www.geolexica.org/api/term#1318-spatial_unit_group>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1318" ;
   rdfs:label "spatial unit group"@en ;
 .
 <http://www.geolexica.org/api/term#1322-parameterized_feature_portrayal_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1322" ;
   rdfs:label "parameterized feature portrayal function"@en ;
 .
 <http://www.geolexica.org/api/term#1323-parameterized_symbol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1323" ;
   rdfs:label "parameterized symbol"@en ;
 .
 <http://www.geolexica.org/api/term#1324-portrayal_catalogue>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1324" ;
   rdfs:label "portrayal catalogue"@en ;
 .
 <http://www.geolexica.org/api/term#1325-portrayal_context>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1325" ;
   rdfs:label "portrayal context"@en ;
 .
 <http://www.geolexica.org/api/term#1326-portrayal_function_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1326" ;
   rdfs:label "portrayal function set"@en ;
 .
 <http://www.geolexica.org/api/term#1327-portrayal_rule>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1327" ;
   rdfs:label "portrayal rule"@en ;
 .
 <http://www.geolexica.org/api/term#1328-render>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1328" ;
   rdfs:label "render"@en ;
 .
 <http://www.geolexica.org/api/term#1329-symbol_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1329" ;
   rdfs:label "symbol set"@en ;
 .
 <http://www.geolexica.org/api/term#133-Dijkstra_graph>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "133" ;
   rdfs:label "Dijkstra graph"@en ;
 .
 <http://www.geolexica.org/api/term#1330-customer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1330" ;
   rdfs:label "customer"@en ;
 .
 <http://www.geolexica.org/api/term#1331-process>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1331" ;
   rdfs:label "process"@en ;
 .
 <http://www.geolexica.org/api/term#1332-supplier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1332" ;
   rdfs:label "supplier"@en ;
 .
 <http://www.geolexica.org/api/term#1333-join_tuple>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1333" ;
   rdfs:label "join tuple"@en ;
 .
 <http://www.geolexica.org/api/term#1334-local_resource>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1334" ;
   rdfs:label "local resource"@en ;
 .
 <http://www.geolexica.org/api/term#1335-locator_attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1335" ;
   rdfs:label "locator attribute"@en ;
 .
 <http://www.geolexica.org/api/term#1336-Multipurpose_Internet_Mail_Extensions_(MIME)_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1336" ;
   rdfs:label "Multipurpose Internet Mail Extensions (MIME) type"@en ;
 .
 <http://www.geolexica.org/api/term#1337-Place_Identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1337" ;
   rdfs:label "Place Identifier"@en ;
 .
 <http://www.geolexica.org/api/term#1338-Place_Identifier_application>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1338" ;
   rdfs:label "Place Identifier application"@en ;
 .
 <http://www.geolexica.org/api/term#1339-Place_Identifier_matching>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1339" ;
   rdfs:label "Place Identifier matching"@en ;
 .
 <http://www.geolexica.org/api/term#134-direct_evaluation_method>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "134" ;
   rdfs:label "direct evaluation method"@en ;
 .
 <http://www.geolexica.org/api/term#1340-Place_Identifier_platform>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1340" ;
   rdfs:label "Place Identifier platform"@en ;
 .
 <http://www.geolexica.org/api/term#1341-remote_resource>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1341" ;
   rdfs:label "remote resource"@en ;
 .
 <http://www.geolexica.org/api/term#1342-resolve>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1342" ;
   rdfs:label "resolve"@en ;
 .
 <http://www.geolexica.org/api/term#1344-information_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1344" ;
   rdfs:label "information system"@en ;
 .
 <http://www.geolexica.org/api/term#1346-ontology>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1346" ;
   rdfs:label "ontology"@en ;
 .
 <http://www.geolexica.org/api/term#135-direct_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "135" ;
   rdfs:label "direct position"@en ;
 .
 <http://www.geolexica.org/api/term#1351-Semantic_Web>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1351" ;
   rdfs:label "Semantic Web"@en ;
 .
 <http://www.geolexica.org/api/term#1356-dataset_series>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1356" ;
   rdfs:label "dataset series"@en ;
 .
 <http://www.geolexica.org/api/term#1358-resource>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1358" ;
   rdfs:label "resource"@en ;
 .
 <http://www.geolexica.org/api/term#1359-boundary_face>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1359" ;
   rdfs:label "boundary face"@en ;
 .
 <http://www.geolexica.org/api/term#136-directed_edge>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "136" ;
   rdfs:label "directed edge"@en ;
 .
 <http://www.geolexica.org/api/term#1360-land>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1360" ;
   rdfs:label "land"@en ;
 .
 <http://www.geolexica.org/api/term#1362-required_relationship>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1362" ;
   rdfs:label "required relationship"@en ;
 .
 <http://www.geolexica.org/api/term#1363-spatial_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1363" ;
   rdfs:label "spatial unit"@en ;
 .
 <http://www.geolexica.org/api/term#1365-Linear_Referencing_Method>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1365" ;
   rdfs:label "Linear Referencing Method"@en ;
 .
 <http://www.geolexica.org/api/term#1366-conformance_quality_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1366" ;
   rdfs:label "conformance quality level"@en ;
 .
 <http://www.geolexica.org/api/term#1367-standalone_quality_report>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1367" ;
   rdfs:label "standalone quality report"@en ;
 .
 <http://www.geolexica.org/api/term#137-directed_face>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "137" ;
   rdfs:label "directed face"@en ;
 .
 <http://www.geolexica.org/api/term#1371-quality_assurance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1371" ;
   rdfs:label "quality assurance"@en ;
 .
 <http://www.geolexica.org/api/term#1372-quality_control>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1372" ;
   rdfs:label "quality control"@en ;
 .
 <http://www.geolexica.org/api/term#1376-grid_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1376" ;
   rdfs:label "grid coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#1377-document>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1377" ;
   rdfs:label "document"@en ;
 .
 <http://www.geolexica.org/api/term#1378-active_sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1378" ;
   rdfs:label "active sensor"@en ;
 .
 <http://www.geolexica.org/api/term#1379-active_sonar>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1379" ;
   rdfs:label "active sonar"@en ;
 .
 <http://www.geolexica.org/api/term#138-directed_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "138" ;
   rdfs:label "directed node"@en ;
 .
 <http://www.geolexica.org/api/term#1380-area_recording>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1380" ;
   rdfs:label "area recording"@en ;
 .
 <http://www.geolexica.org/api/term#1383-complex_image>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1383" ;
   rdfs:label "complex image"@en ;
 .
 <http://www.geolexica.org/api/term#1384-depression_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1384" ;
   rdfs:label "depression angle"@en ;
 .
 <http://www.geolexica.org/api/term#1386-draught>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1386" ;
   rdfs:label "draught"@en ;
 .
 <http://www.geolexica.org/api/term#1388-field_of_view>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1388" ;
   rdfs:label "field of view"@en ;
 .
 <http://www.geolexica.org/api/term#1389-first_return>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1389" ;
   rdfs:label "first return"@en ;
 .
 <http://www.geolexica.org/api/term#139-directed_solid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "139" ;
   rdfs:label "directed solid"@en ;
 .
 <http://www.geolexica.org/api/term#1390-frame>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1390" ;
   rdfs:label "frame"@en ;
 .
 <http://www.geolexica.org/api/term#1391-geiger_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1391" ;
   rdfs:label "geiger mode"@en ;
 .
 <http://www.geolexica.org/api/term#1392-hydrophone>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1392" ;
   rdfs:label "hydrophone"@en ;
 .
 <http://www.geolexica.org/api/term#1393-heave>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1393" ;
   rdfs:label "heave"@en ;
 .
 <http://www.geolexica.org/api/term#1394-hydrographic_swath>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1394" ;
   rdfs:label "hydrographic swath"@en ;
 .
 <http://www.geolexica.org/api/term#1395-image_coordinates>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1395" ;
   rdfs:label "image coordinates"@en ;
 .
 <http://www.geolexica.org/api/term#1396-instantaneous_field_of_view>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1396" ;
   rdfs:label "instantaneous field of view"@en ;
 .
 <http://www.geolexica.org/api/term#1397-intensity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1397" ;
   rdfs:label "intensity"@en ;
 .
 <http://www.geolexica.org/api/term#1399-last_return>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1399" ;
   rdfs:label "last return"@en ;
 .
 <http://www.geolexica.org/api/term#14-application>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "14" ;
   rdfs:label "application"@en ;
 .
 <http://www.geolexica.org/api/term#140-directed_topological_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "140" ;
   rdfs:label "directed topological object"@en ;
 .
 <http://www.geolexica.org/api/term#1400-light_detection_and_ranging>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1400" ;
   rdfs:label "light detection and ranging"@en ;
 .
 <http://www.geolexica.org/api/term#1401-linear_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1401" ;
   rdfs:label "linear mode"@en ;
 .
 <http://www.geolexica.org/api/term#1402-look_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1402" ;
   rdfs:label "look angle"@en ;
 .
 <http://www.geolexica.org/api/term#1405-passive_SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1405" ;
   rdfs:label "passive SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1406-phase_history_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1406" ;
   rdfs:label "phase history data"@en ;
 .
 <http://www.geolexica.org/api/term#1407-platform_down_direction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1407" ;
   rdfs:label "platform down direction"@en ;
 .
 <http://www.geolexica.org/api/term#1408-point_cloud>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1408" ;
   rdfs:label "point cloud"@en ;
 .
 <http://www.geolexica.org/api/term#141-discrete_coverage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "141" ;
   rdfs:label "discrete coverage"@en ;
 .
 <http://www.geolexica.org/api/term#1412-resolution_(of_imagery)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1412" ;
   rdfs:label "resolution (of imagery)"@en ;
 .
 <http://www.geolexica.org/api/term#1413-return>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1413" ;
   rdfs:label "return"@en ;
 .
 <http://www.geolexica.org/api/term#1414-scan>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1414" ;
   rdfs:label "scan"@en ;
 .
 <http://www.geolexica.org/api/term#1416-sidescan_SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1416" ;
   rdfs:label "sidescan SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1417-single_beam_SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1417" ;
   rdfs:label "single beam SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1419-SONAR_processing_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1419" ;
   rdfs:label "SONAR processing system"@en ;
 .
 <http://www.geolexica.org/api/term#1420-squat>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1420" ;
   rdfs:label "squat"@en ;
 .
 <http://www.geolexica.org/api/term#1421-stare>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1421" ;
   rdfs:label "stare"@en ;
 .
 <http://www.geolexica.org/api/term#1422-swath>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1422" ;
   rdfs:label "swath"@en ;
 .
 <http://www.geolexica.org/api/term#1423-sweep_SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1423" ;
   rdfs:label "sweep SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1424-swipe>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1424" ;
   rdfs:label "swipe"@en ;
 .
 <http://www.geolexica.org/api/term#1425-transducer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1425" ;
   rdfs:label "transducer"@en ;
 .
 <http://www.geolexica.org/api/term#1426-transmitter>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1426" ;
   rdfs:label "transmitter"@en ;
 .
 <http://www.geolexica.org/api/term#1427-topographic_LIDAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1427" ;
   rdfs:label "topographic LIDAR"@en ;
 .
 <http://www.geolexica.org/api/term#1428-velocity_vector>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1428" ;
   rdfs:label "velocity vector"@en ;
 .
 <http://www.geolexica.org/api/term#1429-video_phase_history_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1429" ;
   rdfs:label "video phase history data"@en ;
 .
 <http://www.geolexica.org/api/term#143-distribution_transparency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "143" ;
   rdfs:label "distribution transparency"@en ;
 .
 <http://www.geolexica.org/api/term#1430-e-government>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1430" ;
   rdfs:label "e-government"@en ;
 .
 <http://www.geolexica.org/api/term#1431-feature_instance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1431" ;
   rdfs:label "feature instance"@en ;
 .
 <http://www.geolexica.org/api/term#1432-reference_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1432" ;
   rdfs:label "reference model"@en ;
 .
 <http://www.geolexica.org/api/term#1433-Web>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1433" ;
   rdfs:label "Web"@en ;
 .
 <http://www.geolexica.org/api/term#1434-Web_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1434" ;
   rdfs:label "Web service"@en ;
 .
 <http://www.geolexica.org/api/term#1435-World_Wide_Web>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1435" ;
   rdfs:label "World Wide Web"@en ;
 .
 <http://www.geolexica.org/api/term#1439-provenance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1439" ;
   rdfs:label "provenance"@en ;
 .
 <http://www.geolexica.org/api/term#144-domain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "144" ;
   rdfs:label "domain"@en ;
 .
 <http://www.geolexica.org/api/term#1440-physiognomy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1440" ;
   rdfs:label "physiognomy"@en ;
 .
 <http://www.geolexica.org/api/term#1441-ex-situ>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1441" ;
   rdfs:label "ex-situ"@en ;
 .
 <http://www.geolexica.org/api/term#1442-observation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1442" ;
   rdfs:label "observation"@en ;
 .
 <http://www.geolexica.org/api/term#1443-sampling_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1443" ;
   rdfs:label "sampling feature"@en ;
 .
 <http://www.geolexica.org/api/term#1448-calibration_curve>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1448" ;
   rdfs:label "calibration curve"@en ;
 .
 <http://www.geolexica.org/api/term#1449-correction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1449" ;
   rdfs:label "correction"@en ;
 .
 <http://www.geolexica.org/api/term#145-easting>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "145" ;
   rdfs:label "easting"@en ;
 .
 <http://www.geolexica.org/api/term#1450-dark_current>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1450" ;
   rdfs:label "dark current"@en ;
 .
 <http://www.geolexica.org/api/term#1451-dark_current_noise>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1451" ;
   rdfs:label "dark current noise"@en ;
 .
 <http://www.geolexica.org/api/term#1452-dark_signal_non_uniformity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1452" ;
   rdfs:label "dark signal non uniformity"@en ;
 .
 <http://www.geolexica.org/api/term#1455-error>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1455" ;
   rdfs:label "error"@en ;
 .
 <http://www.geolexica.org/api/term#1456-error_of_measurement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1456" ;
   rdfs:label "error of measurement"@en ;
 .
 <http://www.geolexica.org/api/term#1458-in_situ_measurement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1458" ;
   rdfs:label "in situ measurement"@en ;
 .
 <http://www.geolexica.org/api/term#146-edge>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "146" ;
   rdfs:label "edge"@en ;
 .
 <http://www.geolexica.org/api/term#1460-irradiance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1460" ;
   rdfs:label "irradiance"@en ;
 .
 <http://www.geolexica.org/api/term#1461-keystone_effect>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1461" ;
   rdfs:label "keystone effect"@en ;
 .
 <http://www.geolexica.org/api/term#1463-measurement_error>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1463" ;
   rdfs:label "measurement error"@en ;
 .
 <http://www.geolexica.org/api/term#1465-measurement_precision>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1465" ;
   rdfs:label "measurement precision"@en ;
 .
 <http://www.geolexica.org/api/term#1468-metrological_traceability_chain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1468" ;
   rdfs:label "metrological traceability chain"@en ;
 .
 <http://www.geolexica.org/api/term#147-edge-node_graph>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "147" ;
   rdfs:label "edge-node graph"@en ;
 .
 <http://www.geolexica.org/api/term#1470-noise>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1470" ;
   rdfs:label "noise"@en ;
 .
 <http://www.geolexica.org/api/term#1471-pixel_response_non-uniformity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1471" ;
   rdfs:label "pixel response non-uniformity"@en ;
 .
 <http://www.geolexica.org/api/term#1472-point-spread_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1472" ;
   rdfs:label "point-spread function"@en ;
 .
 <http://www.geolexica.org/api/term#1474-quantity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1474" ;
   rdfs:label "quantity"@en ;
 .
 <http://www.geolexica.org/api/term#1475-reference_standard>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1475" ;
   rdfs:label "reference standard"@en ;
 .
 <http://www.geolexica.org/api/term#148-element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "148" ;
   rdfs:label "element"@en ;
 .
 <http://www.geolexica.org/api/term#1481-standardization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1481" ;
   rdfs:label "standardization"@en ;
 .
 <http://www.geolexica.org/api/term#1483-traceability_chain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1483" ;
   rdfs:label "traceability chain"@en ;
 .
 <http://www.geolexica.org/api/term#1486-verification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1486" ;
   rdfs:label "verification"@en ;
 .
 <http://www.geolexica.org/api/term#1487-vicarious_calibration>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1487" ;
   rdfs:label "vicarious calibration"@en ;
 .
 <http://www.geolexica.org/api/term#1488-accessibility>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1488" ;
   rdfs:label "accessibility"@en ;
 .
 <http://www.geolexica.org/api/term#1489-accessibility_information>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1489" ;
   rdfs:label "accessibility information"@en ;
 .
 <http://www.geolexica.org/api/term#149-ellipsoid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "149" ;
   rdfs:label "ellipsoid"@en ;
 .
 <http://www.geolexica.org/api/term#1492-journey>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1492" ;
   rdfs:label "journey"@en ;
 .
 <http://www.geolexica.org/api/term#1493-journey_segment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1493" ;
   rdfs:label "journey segment"@en ;
 .
 <http://www.geolexica.org/api/term#15-application_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "15" ;
   rdfs:label "application schema"@en ;
 .
 <http://www.geolexica.org/api/term#150-ellipsoidal_height>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "150" ;
   rdfs:label "ellipsoidal height"@en ;
 .
 <http://www.geolexica.org/api/term#1502-trip>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1502" ;
   rdfs:label "trip"@en ;
 .
 <http://www.geolexica.org/api/term#151-encoding>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "151" ;
   rdfs:label "encoding"@en ;
 .
 <http://www.geolexica.org/api/term#1510-transport_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1510" ;
   rdfs:label "transport service"@en ;
 .
 <http://www.geolexica.org/api/term#1512-complex_symbol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1512" ;
   rdfs:label "complex symbol"@en ;
 .
 <http://www.geolexica.org/api/term#1513-compound_symbol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1513" ;
   rdfs:label "compound symbol"@en ;
 .
 <http://www.geolexica.org/api/term#1514-deviation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1514" ;
   rdfs:label "deviation"@en ;
 .
 <http://www.geolexica.org/api/term#1515-facility>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1515" ;
   rdfs:label "facility"@en ;
 .
 <http://www.geolexica.org/api/term#152-encoding_rule>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "152" ;
   rdfs:label "encoding rule"@en ;
 .
 <http://www.geolexica.org/api/term#153-encoding_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "153" ;
   rdfs:label "encoding service"@en ;
 .
 <http://www.geolexica.org/api/term#154-end_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "154" ;
   rdfs:label "end node"@en ;
 .
 <http://www.geolexica.org/api/term#1547-framework>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1547" ;
   rdfs:label "framework"@en ;
 .
 <http://www.geolexica.org/api/term#1548-knowledge>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1548" ;
   rdfs:label "knowledge"@en ;
 .
 <http://www.geolexica.org/api/term#155-end_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "155" ;
   rdfs:label "end point"@en ;
 .
 <http://www.geolexica.org/api/term#1553-address_component>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1553" ;
   rdfs:label "address component"@en ;
 .
 <http://www.geolexica.org/api/term#1557-parent_address>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1557" ;
   rdfs:label "parent address"@en ;
 .
 <http://www.geolexica.org/api/term#1558-parent_addressable_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1558" ;
   rdfs:label "parent addressable object"@en ;
 .
 <http://www.geolexica.org/api/term#1559-Differential_Global_Navigational_Satellite_System>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1559" ;
   rdfs:label "Differential Global Navigational Satellite System"@en ;
 .
 <http://www.geolexica.org/api/term#156-engineering_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "156" ;
   rdfs:label "engineering datum"@en ;
 .
 <http://www.geolexica.org/api/term#1560-field_of_regard>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1560" ;
   rdfs:label "field of regard"@en ;
 .
 <http://www.geolexica.org/api/term#1562-mean_sea_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1562" ;
   rdfs:label "mean sea level"@en ;
 .
 <http://www.geolexica.org/api/term#1563-multibeam_SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1563" ;
   rdfs:label "multibeam SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1564-multiple_returns>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1564" ;
   rdfs:label "multiple returns"@en ;
 .
 <http://www.geolexica.org/api/term#1565-pulse_repetition_frequency>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1565" ;
   rdfs:label "pulse repetition frequency"@en ;
 .
 <http://www.geolexica.org/api/term#1566-range>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1566" ;
   rdfs:label "range"@en ;
 .
 <http://www.geolexica.org/api/term#1567-receiver>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1567" ;
   rdfs:label "receiver"@en ;
 .
 <http://www.geolexica.org/api/term#1568-settlement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1568" ;
   rdfs:label "settlement"@en ;
 .
 <http://www.geolexica.org/api/term#1569-Sound_Navigation_And_Ranging>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1569" ;
   rdfs:label "Sound Navigation And Ranging"@en ;
 .
 <http://www.geolexica.org/api/term#157-engineering_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "157" ;
   rdfs:label "engineering viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#1570-basic_administrative_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1570" ;
   rdfs:label "basic administrative unit"@en ;
 .
 <http://www.geolexica.org/api/term#1571-group_party>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1571" ;
   rdfs:label "group party"@en ;
 .
 <http://www.geolexica.org/api/term#1572-level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1572" ;
   rdfs:label "level"@en ;
 .
 <http://www.geolexica.org/api/term#1573-restriction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1573" ;
   rdfs:label "restriction"@en ;
 .
 <http://www.geolexica.org/api/term#1574-source>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1574" ;
   rdfs:label "source"@en ;
 .
 <http://www.geolexica.org/api/term#1575-utility_network>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1575" ;
   rdfs:label "utility network"@en ;
 .
 <http://www.geolexica.org/api/term#1576-supersession>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1576" ;
   rdfs:label "supersession"@en ;
 .
 <http://www.geolexica.org/api/term#1577-quality_assessment_procedure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1577" ;
   rdfs:label "quality assessment procedure"@en ;
 .
 <http://www.geolexica.org/api/term#1578-quality_assessment_result>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1578" ;
   rdfs:label "quality assessment result"@en ;
 .
 <http://www.geolexica.org/api/term#1579-quality_assurance_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1579" ;
   rdfs:label "quality assurance level"@en ;
 .
 <http://www.geolexica.org/api/term#158-enterprise_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "158" ;
   rdfs:label "enterprise viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#1580-annotation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1580" ;
   rdfs:label "annotation"@en ;
 .
 <http://www.geolexica.org/api/term#1581-annotation_property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1581" ;
   rdfs:label "annotation property"@en ;
 .
 <http://www.geolexica.org/api/term#1582-class>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1582" ;
   rdfs:label "class"@en ;
 .
 <http://www.geolexica.org/api/term#1583-data_property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1583" ;
   rdfs:label "data property"@en ;
 .
 <http://www.geolexica.org/api/term#1584-datatype>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1584" ;
   rdfs:label "datatype"@en ;
 .
 <http://www.geolexica.org/api/term#1585-individual>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1585" ;
   rdfs:label "individual"@en ;
 .
 <http://www.geolexica.org/api/term#1587-localName>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1587" ;
   rdfs:label "localName"@en ;
 .
 <http://www.geolexica.org/api/term#1588-namespace>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1588" ;
   rdfs:label "namespace"@en ;
 .
 <http://www.geolexica.org/api/term#1589-namespace>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1589" ;
   rdfs:label "namespace"@en ;
 .
 <http://www.geolexica.org/api/term#159-evaluation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "159" ;
   rdfs:label "evaluation"@en ;
 .
 <http://www.geolexica.org/api/term#1590-object_property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1590" ;
   rdfs:label "object property"@en ;
 .
 <http://www.geolexica.org/api/term#1591-property_restriction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1591" ;
   rdfs:label "property restriction"@en ;
 .
 <http://www.geolexica.org/api/term#1592-qualified_cardinality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1592" ;
   rdfs:label "qualified cardinality"@en ;
 .
 <http://www.geolexica.org/api/term#1593-source_document>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1593" ;
   rdfs:label "source document"@en ;
 .
 <http://www.geolexica.org/api/term#1594-unqualified_cardinality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1594" ;
   rdfs:label "unqualified cardinality"@en ;
 .
 <http://www.geolexica.org/api/term#1595-context>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1595" ;
   rdfs:label "context"@en ;
 .
 <http://www.geolexica.org/api/term#1596-geographic_context_awareness>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1596" ;
   rdfs:label "geographic context awareness"@en ;
 .
 <http://www.geolexica.org/api/term#160-event>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "160" ;
   rdfs:label "event"@en ;
 .
 <http://www.geolexica.org/api/term#1602-universal_representation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1602" ;
   rdfs:label "universal representation"@en ;
 .
 <http://www.geolexica.org/api/term#1603-accuracy_of_measurement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1603" ;
   rdfs:label "accuracy of measurement"@en ;
 .
 <http://www.geolexica.org/api/term#1604-blooming>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1604" ;
   rdfs:label "blooming"@en ;
 .
 <http://www.geolexica.org/api/term#1605-calibration_validation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1605" ;
   rdfs:label "calibration validation"@en ;
 .
 <http://www.geolexica.org/api/term#1607-measurement_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1607" ;
   rdfs:label "measurement accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#1608-spectral_responsivity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1608" ;
   rdfs:label "spectral responsivity"@en ;
 .
 <http://www.geolexica.org/api/term#1609-stray_light>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1609" ;
   rdfs:label "stray light"@en ;
 .
 <http://www.geolexica.org/api/term#161-executable_test_case>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "161" ;
   rdfs:label "executable test case"@en ;
 .
 <http://www.geolexica.org/api/term#1610-smile_distortion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1610" ;
   rdfs:label "smile distortion"@en ;
 .
 <http://www.geolexica.org/api/term#1611-classifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1611" ;
   rdfs:label "classifier"@en ;
 .
 <http://www.geolexica.org/api/term#1612-feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1612" ;
   rdfs:label "feature"@en ;
 .
 <http://www.geolexica.org/api/term#1613-generalization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1613" ;
   rdfs:label "generalization"@en ;
 .
 <http://www.geolexica.org/api/term#1614-inheritance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1614" ;
   rdfs:label "inheritance"@en ;
 .
 <http://www.geolexica.org/api/term#1615-instance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1615" ;
   rdfs:label "instance"@en ;
 .
 <http://www.geolexica.org/api/term#1616-interface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1616" ;
   rdfs:label "interface"@en ;
 .
 <http://www.geolexica.org/api/term#1617-operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1617" ;
   rdfs:label "operation"@en ;
 .
 <http://www.geolexica.org/api/term#1618-access_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1618" ;
   rdfs:label "access point"@en ;
 .
 <http://www.geolexica.org/api/term#1619-transfer_link>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1619" ;
   rdfs:label "transfer link"@en ;
 .
 <http://www.geolexica.org/api/term#162-executable_test_suite>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "162" ;
   rdfs:label "executable test suite"@en ;
 .
 <http://www.geolexica.org/api/term#1621-transport_network>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1621" ;
   rdfs:label "transport network"@en ;
 .
 <http://www.geolexica.org/api/term#1624-concept_field>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1624" ;
   rdfs:label "concept field"@en ;
 .
 <http://www.geolexica.org/api/term#1625-subject_field>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1625" ;
   rdfs:label "subject field"@en ;
 .
 <http://www.geolexica.org/api/term#1629-address_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1629" ;
   rdfs:label "address position"@en ;
 .
 <http://www.geolexica.org/api/term#163-exterior>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "163" ;
   rdfs:label "exterior"@en ;
 .
 <http://www.geolexica.org/api/term#1630-child_address>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1630" ;
   rdfs:label "child address"@en ;
 .
 <http://www.geolexica.org/api/term#1631-child_addressable_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1631" ;
   rdfs:label "child addressable object"@en ;
 .
 <http://www.geolexica.org/api/term#1636-invalidation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1636" ;
   rdfs:label "invalidation"@en ;
 .
 <http://www.geolexica.org/api/term#1637-ambient_intelligence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1637" ;
   rdfs:label "ambient intelligence"@en ;
 .
 <http://www.geolexica.org/api/term#1638-context-awareness>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1638" ;
   rdfs:label "context-awareness"@en ;
 .
 <http://www.geolexica.org/api/term#164-external_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "164" ;
   rdfs:label "external function"@en ;
 .
 <http://www.geolexica.org/api/term#1640-seamless_mobility>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1640" ;
   rdfs:label "seamless mobility"@en ;
 .
 <http://www.geolexica.org/api/term#1641-ubiquitous_public_access>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1641" ;
   rdfs:label "ubiquitous public access"@en ;
 .
 <http://www.geolexica.org/api/term#1642-ubiquitous_geographic_information>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1642" ;
   rdfs:label "ubiquitous geographic information"@en ;
 .
 <http://www.geolexica.org/api/term#1644-literal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1644" ;
   rdfs:label "literal"@en ;
 .
 <http://www.geolexica.org/api/term#1647-citation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1647" ;
   rdfs:label "citation"@en ;
 .
 <http://www.geolexica.org/api/term#1649-lineage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1649" ;
   rdfs:label "lineage"@en ;
 .
 <http://www.geolexica.org/api/term#165-face>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "165" ;
   rdfs:label "face"@en ;
 .
 <http://www.geolexica.org/api/term#1650-metadata>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1650" ;
   rdfs:label "metadata"@en ;
 .
 <http://www.geolexica.org/api/term#1652-application_ontology>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1652" ;
   rdfs:label "application ontology"@en ;
 .
 <http://www.geolexica.org/api/term#1653-linked_geodata>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1653" ;
   rdfs:label "linked geodata"@en ;
 .
 <http://www.geolexica.org/api/term#1654-public_access>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1654" ;
   rdfs:label "public access"@en ;
 .
 <http://www.geolexica.org/api/term#1655-address_class>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1655" ;
   rdfs:label "address class"@en ;
 .
 <http://www.geolexica.org/api/term#1656-address_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1656" ;
   rdfs:label "address reference system"@en ;
 .
 <http://www.geolexica.org/api/term#1658-bearing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1658" ;
   rdfs:label "bearing"@en ;
 .
 <http://www.geolexica.org/api/term#1659-Cartesian_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1659" ;
   rdfs:label "Cartesian coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#166-fail_verdict>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "166" ;
   rdfs:label "fail verdict"@en ;
 .
 <http://www.geolexica.org/api/term#1666-spheroid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1666" ;
   rdfs:label "spheroid"@en ;
 .
 <http://www.geolexica.org/api/term#1667-white_space>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1667" ;
   rdfs:label "white space"@en ;
 .
 <http://www.geolexica.org/api/term#167-falsification_test>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "167" ;
   rdfs:label "falsification test"@en ;
 .
 <http://www.geolexica.org/api/term#1670-simple_register>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1670" ;
   rdfs:label "simple register"@en ;
 .
 <http://www.geolexica.org/api/term#1675-geographic_coordinates>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1675" ;
   rdfs:label "geographic coordinates"@en ;
 .
 <http://www.geolexica.org/api/term#1676-lidar>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1676" ;
   rdfs:label "lidar"@en ;
 .
 <http://www.geolexica.org/api/term#1677-SONAR>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1677" ;
   rdfs:label "SONAR"@en ;
 .
 <http://www.geolexica.org/api/term#1678-module>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1678" ;
   rdfs:label "module"@en ;
 .
 <http://www.geolexica.org/api/term#1679-capability>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1679" ;
   rdfs:label "capability"@en ;
 .
 <http://www.geolexica.org/api/term#168-feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "168" ;
   rdfs:label "feature"@en ;
 .
 <http://www.geolexica.org/api/term#1683-real_world_effect>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1683" ;
   rdfs:label "real world effect"@en ;
 .
 <http://www.geolexica.org/api/term#1685-precision>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1685" ;
   rdfs:label "precision"@en ;
 .
 <http://www.geolexica.org/api/term#1686-data_category>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1686" ;
   rdfs:label "data category"@en ;
 .
 <http://www.geolexica.org/api/term#1687-domain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1687" ;
   rdfs:label "domain"@en ;
 .
 <http://www.geolexica.org/api/term#1688-homograph>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1688" ;
   rdfs:label "homograph"@en ;
 .
 <http://www.geolexica.org/api/term#1689-homophone>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1689" ;
   rdfs:label "homophone"@en ;
 .
 <http://www.geolexica.org/api/term#169-feature_association>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "169" ;
   rdfs:label "feature association"@en ;
 .
 <http://www.geolexica.org/api/term#1690-non-verbal_representation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1690" ;
   rdfs:label "non-verbal representation"@en ;
 .
 <http://www.geolexica.org/api/term#1691-reference_environment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1691" ;
   rdfs:label "reference environment"@en ;
 .
 <http://www.geolexica.org/api/term#1692-reference_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1692" ;
   rdfs:label "reference language"@en ;
 .
 <http://www.geolexica.org/api/term#1693-reference_language_subregister>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1693" ;
   rdfs:label "reference language subregister"@en ;
 .
 <http://www.geolexica.org/api/term#1694-submitted_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1694" ;
   rdfs:label "submitted language"@en ;
 .
 <http://www.geolexica.org/api/term#1695-submitted_language_subregister>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1695" ;
   rdfs:label "submitted language subregister"@en ;
 .
 <http://www.geolexica.org/api/term#1696-terminological_entry_identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1696" ;
   rdfs:label "terminological entry identifier"@en ;
 .
 <http://www.geolexica.org/api/term#1697-terminology_register>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1697" ;
   rdfs:label "terminology register"@en ;
 .
 <http://www.geolexica.org/api/term#1698-address>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1698" ;
   rdfs:label "address"@en ;
 .
 <http://www.geolexica.org/api/term#1699-addressable_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1699" ;
   rdfs:label "addressable object"@en ;
 .
 <http://www.geolexica.org/api/term#17-association>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "17" ;
   rdfs:label "association"@en ;
 .
 <http://www.geolexica.org/api/term#170-feature_attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "170" ;
   rdfs:label "feature attribute"@en ;
 .
 <http://www.geolexica.org/api/term#1701-address_alias>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1701" ;
   rdfs:label "address alias"@en ;
 .
 <http://www.geolexica.org/api/term#1702-addressing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1702" ;
   rdfs:label "addressing"@en ;
 .
 <http://www.geolexica.org/api/term#1703-locale>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1703" ;
   rdfs:label "locale"@en ;
 .
 <http://www.geolexica.org/api/term#174-feature_division>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "174" ;
   rdfs:label "feature division"@en ;
 .
 <http://www.geolexica.org/api/term#175-feature_fusion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "175" ;
   rdfs:label "feature fusion"@en ;
 .
 <http://www.geolexica.org/api/term#1762-free_text>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1762" ;
   rdfs:label "free text"@en ;
 .
 <http://www.geolexica.org/api/term#177-feature_operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "177" ;
   rdfs:label "feature operation"@en ;
 .
 <http://www.geolexica.org/api/term#178-feature_portrayal_rule_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "178" ;
   rdfs:label "feature portrayal rule set"@en ;
 .
 <http://www.geolexica.org/api/term#18-attitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "18" ;
   rdfs:label "attitude"@en ;
 .
 <http://www.geolexica.org/api/term#180-feature_substitution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "180" ;
   rdfs:label "feature substitution"@en ;
 .
 <http://www.geolexica.org/api/term#181-feature_succession>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "181" ;
   rdfs:label "feature succession"@en ;
 .
 <http://www.geolexica.org/api/term#182-feature_table>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "182" ;
   rdfs:label "feature table"@en ;
 .
 <http://www.geolexica.org/api/term#186-file>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "186" ;
   rdfs:label "file"@en ;
 .
 <http://www.geolexica.org/api/term#187-flattening>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "187" ;
   rdfs:label "flattening"@en ;
 .
 <http://www.geolexica.org/api/term#188-framework>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "188" ;
   rdfs:label "framework"@en ;
 .
 <http://www.geolexica.org/api/term#189-full_inspection>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "189" ;
   rdfs:label "full inspection"@en ;
 .
 <http://www.geolexica.org/api/term#19-attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "19" ;
   rdfs:label "attribute"@en ;
 .
 <http://www.geolexica.org/api/term#190-function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "190" ;
   rdfs:label "function"@en ;
 .
 <http://www.geolexica.org/api/term#191-functional_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "191" ;
   rdfs:label "functional language"@en ;
 .
 <http://www.geolexica.org/api/term#192-functional_standard>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "192" ;
   rdfs:label "functional standard"@en ;
 .
 <http://www.geolexica.org/api/term#1920-Place_Identifier_(PI)_link>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1920" ;
   rdfs:label "Place Identifier (PI) link"@en ;
 .
 <http://www.geolexica.org/api/term#1921-Place_Identifier_(PI)_linking_mechanism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1921" ;
   rdfs:label "Place Identifier (PI) linking mechanism"@en ;
 .
 <http://www.geolexica.org/api/term#1923-fused_image>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1923" ;
   rdfs:label "fused image"@en ;
 .
 <http://www.geolexica.org/api/term#1927-ungeoreferenced_grid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1927" ;
   rdfs:label "ungeoreferenced grid"@en ;
 .
 <http://www.geolexica.org/api/term#1928-absolute_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1928" ;
   rdfs:label "absolute accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#193-gazetteer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "193" ;
   rdfs:label "gazetteer"@en ;
 .
 <http://www.geolexica.org/api/term#1930-bare_earth_elevation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1930" ;
   rdfs:label "bare earth elevation"@en ;
 .
 <http://www.geolexica.org/api/term#1931-boresight>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1931" ;
   rdfs:label "boresight"@en ;
 .
 <http://www.geolexica.org/api/term#1932-breakline>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1932" ;
   rdfs:label "breakline"@en ;
 .
 <http://www.geolexica.org/api/term#1933-check_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1933" ;
   rdfs:label "check point"@en ;
 .
 <http://www.geolexica.org/api/term#1934-checkpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1934" ;
   rdfs:label "checkpoint"@en ;
 .
 <http://www.geolexica.org/api/term#1935-digital_surface_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1935" ;
   rdfs:label "digital surface model"@en ;
 .
 <http://www.geolexica.org/api/term#1936-digital_terrain_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1936" ;
   rdfs:label "digital terrain model"@en ;
 .
 <http://www.geolexica.org/api/term#1938-horizontal_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1938" ;
   rdfs:label "horizontal accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#1940-lever_arm>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1940" ;
   rdfs:label "lever arm"@en ;
 .
 <http://www.geolexica.org/api/term#1942-nadir>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1942" ;
   rdfs:label "nadir"@en ;
 .
 <http://www.geolexica.org/api/term#1944-relative_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1944" ;
   rdfs:label "relative accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#1945-strip_adjustment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1945" ;
   rdfs:label "strip adjustment"@en ;
 .
 <http://www.geolexica.org/api/term#1947-vertical_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1947" ;
   rdfs:label "vertical accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#1948-entity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "1948" ;
   rdfs:label "entity"@en ;
 .
 <http://www.geolexica.org/api/term#195-geocoding>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "195" ;
   rdfs:label "geocoding"@en ;
 .
 <http://www.geolexica.org/api/term#196-geodetic_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "196" ;
   rdfs:label "geodetic coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#199-geodetic_height>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "199" ;
   rdfs:label "geodetic height"@en ;
 .
 <http://www.geolexica.org/api/term#20-attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "20" ;
   rdfs:label "attribute"@en ;
 .
 <http://www.geolexica.org/api/term#200-geodetic_latitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "200" ;
   rdfs:label "geodetic latitude"@en ;
 .
 <http://www.geolexica.org/api/term#201-geodetic_longitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "201" ;
   rdfs:label "geodetic longitude"@en ;
 .
 <http://www.geolexica.org/api/term#202-geographic_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "202" ;
   rdfs:label "geographic data"@en ;
 .
 <http://www.geolexica.org/api/term#203-geographic_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "203" ;
   rdfs:label "geographic feature"@en ;
 .
 <http://www.geolexica.org/api/term#204-geographic_identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "204" ;
   rdfs:label "geographic identifier"@en ;
 .
 <http://www.geolexica.org/api/term#205-geographic_information>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "205" ;
   rdfs:label "geographic information"@en ;
 .
 <http://www.geolexica.org/api/term#206-geographic_information_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "206" ;
   rdfs:label "geographic information service"@en ;
 .
 <http://www.geolexica.org/api/term#207-geographic_information_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "207" ;
   rdfs:label "geographic information system"@en ;
 .
 <http://www.geolexica.org/api/term#210-geometric_aggregate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "210" ;
   rdfs:label "geometric aggregate"@en ;
 .
 <http://www.geolexica.org/api/term#2100-looks>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2100" ;
   rdfs:label "looks"@en ;
 .
 <http://www.geolexica.org/api/term#2101-thematic_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2101" ;
   rdfs:label "thematic data"@en ;
 .
 <http://www.geolexica.org/api/term#2102-stop_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2102" ;
   rdfs:label "stop point"@en ;
 .
 <http://www.geolexica.org/api/term#2103-transfer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2103" ;
   rdfs:label "transfer"@en ;
 .
 <http://www.geolexica.org/api/term#2104-transfer_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2104" ;
   rdfs:label "transfer node"@en ;
 .
 <http://www.geolexica.org/api/term#2105-transport_means>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2105" ;
   rdfs:label "transport means"@en ;
 .
 <http://www.geolexica.org/api/term#2106-transport_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2106" ;
   rdfs:label "transport mode"@en ;
 .
 <http://www.geolexica.org/api/term#2107-trip_pattern>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2107" ;
   rdfs:label "trip pattern"@en ;
 .
 <http://www.geolexica.org/api/term#2108-flattening>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2108" ;
   rdfs:label "flattening"@en ;
 .
 <http://www.geolexica.org/api/term#211-geometric_boundary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "211" ;
   rdfs:label "geometric boundary"@en ;
 .
 <http://www.geolexica.org/api/term#2110-binding>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2110" ;
   rdfs:label "binding"@en ;
 .
 <http://www.geolexica.org/api/term#2111-georeferenceable>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2111" ;
   rdfs:label "georeferenceable"@en ;
 .
 <http://www.geolexica.org/api/term#212-geometric_complex>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "212" ;
   rdfs:label "geometric complex"@en ;
 .
 <http://www.geolexica.org/api/term#213-geometric_dimension>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "213" ;
   rdfs:label "geometric dimension"@en ;
 .
 <http://www.geolexica.org/api/term#214-geometric_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "214" ;
   rdfs:label "geometric object"@en ;
 .
 <http://www.geolexica.org/api/term#2144-internal_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2144" ;
   rdfs:label "internal accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#2145-swath>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2145" ;
   rdfs:label "swath"@en ;
 .
 <http://www.geolexica.org/api/term#215-geometric_primitive>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "215" ;
   rdfs:label "geometric primitive"@en ;
 .
 <http://www.geolexica.org/api/term#216-geometric_realization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "216" ;
   rdfs:label "geometric realization"@en ;
 .
 <http://www.geolexica.org/api/term#217-geometric_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "217" ;
   rdfs:label "geometric set"@en ;
 .
 <http://www.geolexica.org/api/term#218-gravity-related_height>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "218" ;
   rdfs:label "gravity-related height"@en ;
 .
 <http://www.geolexica.org/api/term#2185-signature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2185" ;
   rdfs:label "signature"@en ;
 .
 <http://www.geolexica.org/api/term#219-geometry_property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "219" ;
   rdfs:label "geometry property"@en ;
 .
 <http://www.geolexica.org/api/term#220-Gregorian_calendar>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "220" ;
   rdfs:label "Gregorian calendar"@en ;
 .
 <http://www.geolexica.org/api/term#221-grid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "221" ;
   rdfs:label "grid"@en ;
 .
 <http://www.geolexica.org/api/term#222-grid_coordinates>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "222" ;
   rdfs:label "grid coordinates"@en ;
 .
 <http://www.geolexica.org/api/term#223-grid_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "223" ;
   rdfs:label "grid point"@en ;
 .
 <http://www.geolexica.org/api/term#224-gridded_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "224" ;
   rdfs:label "gridded data"@en ;
 .
 <http://www.geolexica.org/api/term#228-homomorphism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "228" ;
   rdfs:label "homomorphism"@en ;
 .
 <http://www.geolexica.org/api/term#232-image_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "232" ;
   rdfs:label "image point"@en ;
 .
 <http://www.geolexica.org/api/term#2333-quality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "2333" ;
   rdfs:label "quality"@en ;
 .
 <http://www.geolexica.org/api/term#235-implementation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "235" ;
   rdfs:label "implementation"@en ;
 .
 <http://www.geolexica.org/api/term#236-Implementation_Conformance_Statement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "236" ;
   rdfs:label "Implementation Conformance Statement"@en ;
 .
 <http://www.geolexica.org/api/term#237-Implementation_eXtra_Information_for_Testing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "237" ;
   rdfs:label "Implementation eXtra Information for Testing"@en ;
 .
 <http://www.geolexica.org/api/term#238-inconclusive_verdict>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "238" ;
   rdfs:label "inconclusive verdict"@en ;
 .
 <http://www.geolexica.org/api/term#239-indirect_evaluation_method>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "239" ;
   rdfs:label "indirect evaluation method"@en ;
 .
 <http://www.geolexica.org/api/term#24-bag>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "24" ;
   rdfs:label "bag"@en ;
 .
 <http://www.geolexica.org/api/term#240-inertial_positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "240" ;
   rdfs:label "inertial positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#241-information>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "241" ;
   rdfs:label "information"@en ;
 .
 <http://www.geolexica.org/api/term#242-information_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "242" ;
   rdfs:label "information viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#243-inheritance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "243" ;
   rdfs:label "inheritance"@en ;
 .
 <http://www.geolexica.org/api/term#244-instance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "244" ;
   rdfs:label "instance"@en ;
 .
 <http://www.geolexica.org/api/term#246-instance_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "246" ;
   rdfs:label "instance model"@en ;
 .
 <http://www.geolexica.org/api/term#247-instant>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "247" ;
   rdfs:label "instant"@en ;
 .
 <http://www.geolexica.org/api/term#248-instantiate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "248" ;
   rdfs:label "instantiate"@en ;
 .
 <http://www.geolexica.org/api/term#250-integrated_positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "250" ;
   rdfs:label "integrated positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#251-interface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "251" ;
   rdfs:label "interface"@en ;
 .
 <http://www.geolexica.org/api/term#252-interface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "252" ;
   rdfs:label "interface"@en ;
 .
 <http://www.geolexica.org/api/term#254-interior>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "254" ;
   rdfs:label "interior"@en ;
 .
 <http://www.geolexica.org/api/term#255-interoperability>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "255" ;
   rdfs:label "interoperability"@en ;
 .
 <http://www.geolexica.org/api/term#256-interval_scale>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "256" ;
   rdfs:label "interval scale"@en ;
 .
 <http://www.geolexica.org/api/term#257-inverse_evaluation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "257" ;
   rdfs:label "inverse evaluation"@en ;
 .
 <http://www.geolexica.org/api/term#258-isolated_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "258" ;
   rdfs:label "isolated node"@en ;
 .
 <http://www.geolexica.org/api/term#259-isomorphism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "259" ;
   rdfs:label "isomorphism"@en ;
 .
 <http://www.geolexica.org/api/term#26-base_standard>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "26" ;
   rdfs:label "base standard"@en ;
 .
 <http://www.geolexica.org/api/term#260-item>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "260" ;
   rdfs:label "item"@en ;
 .
 <http://www.geolexica.org/api/term#261-item_class>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "261" ;
   rdfs:label "item class"@en ;
 .
 <http://www.geolexica.org/api/term#263-Julian_date>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "263" ;
   rdfs:label "Julian date"@en ;
 .
 <http://www.geolexica.org/api/term#264-Julian_day_number>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "264" ;
   rdfs:label "Julian day number"@en ;
 .
 <http://www.geolexica.org/api/term#265-junction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "265" ;
   rdfs:label "junction"@en ;
 .
 <http://www.geolexica.org/api/term#266-language_identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "266" ;
   rdfs:label "language identifier"@en ;
 .
 <http://www.geolexica.org/api/term#267-layer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "267" ;
   rdfs:label "layer"@en ;
 .
 <http://www.geolexica.org/api/term#268-lexical_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "268" ;
   rdfs:label "lexical language"@en ;
 .
 <http://www.geolexica.org/api/term#269-life_span>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "269" ;
   rdfs:label "life span"@en ;
 .
 <http://www.geolexica.org/api/term#27-basic_test>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "27" ;
   rdfs:label "basic test"@en ;
 .
 <http://www.geolexica.org/api/term#270-line_string>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "270" ;
   rdfs:label "line string"@en ;
 .
 <http://www.geolexica.org/api/term#271-linear_positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "271" ;
   rdfs:label "linear positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#272-linear_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "272" ;
   rdfs:label "linear reference system"@en ;
 .
 <http://www.geolexica.org/api/term#273-linear_referencing_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "273" ;
   rdfs:label "linear referencing system"@en ;
 .
 <http://www.geolexica.org/api/term#274-link>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "274" ;
   rdfs:label "link"@en ;
 .
 <http://www.geolexica.org/api/term#275-link_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "275" ;
   rdfs:label "link position"@en ;
 .
 <http://www.geolexica.org/api/term#276-location>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "276" ;
   rdfs:label "location"@en ;
 .
 <http://www.geolexica.org/api/term#278-location_based_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "278" ;
   rdfs:label "location based service"@en ;
 .
 <http://www.geolexica.org/api/term#279-location_dependent_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "279" ;
   rdfs:label "location dependent service"@en ;
 .
 <http://www.geolexica.org/api/term#28-behaviour>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "28" ;
   rdfs:label "behaviour"@en ;
 .
 <http://www.geolexica.org/api/term#280-main-road_rule>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "280" ;
   rdfs:label "main-road rule"@en ;
 .
 <http://www.geolexica.org/api/term#281-maneuvermanœuvre>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "281" ;
   rdfs:label "maneuver,manœuvre"@en ;
 .
 <http://www.geolexica.org/api/term#282-map>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "282" ;
   rdfs:label "map"@en ;
 .
 <http://www.geolexica.org/api/term#284-mean_sea_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "284" ;
   rdfs:label "mean sea level"@en ;
 .
 <http://www.geolexica.org/api/term#286-measure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "286" ;
   rdfs:label "measure"@en ;
 .
 <http://www.geolexica.org/api/term#287-medium>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "287" ;
   rdfs:label "medium"@en ;
 .
 <http://www.geolexica.org/api/term#289-metadata>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "289" ;
   rdfs:label "metadata"@en ;
 .
 <http://www.geolexica.org/api/term#29-boundary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "29" ;
   rdfs:label "boundary"@en ;
 .
 <http://www.geolexica.org/api/term#290-metadata_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "290" ;
   rdfs:label "metadata element"@en ;
 .
 <http://www.geolexica.org/api/term#291-metadata_entity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "291" ;
   rdfs:label "metadata entity"@en ;
 .
 <http://www.geolexica.org/api/term#292-metadata_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "292" ;
   rdfs:label "metadata schema"@en ;
 .
 <http://www.geolexica.org/api/term#293-metadata_section>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "293" ;
   rdfs:label "metadata section"@en ;
 .
 <http://www.geolexica.org/api/term#294-metamodel>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "294" ;
   rdfs:label "metamodel"@en ;
 .
 <http://www.geolexica.org/api/term#295-method>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "295" ;
   rdfs:label "method"@en ;
 .
 <http://www.geolexica.org/api/term#299-model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "299" ;
   rdfs:label "model"@en ;
 .
 <http://www.geolexica.org/api/term#3-abstract_test_case>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "3" ;
   rdfs:label "abstract test case"@en ;
 .
 <http://www.geolexica.org/api/term#30-buffer>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "30" ;
   rdfs:label "buffer"@en ;
 .
 <http://www.geolexica.org/api/term#300-month>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "300" ;
   rdfs:label "month"@en ;
 .
 <http://www.geolexica.org/api/term#301-motion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "301" ;
   rdfs:label "motion"@en ;
 .
 <http://www.geolexica.org/api/term#304-multiplicity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "304" ;
   rdfs:label "multiplicity"@en ;
 .
 <http://www.geolexica.org/api/term#306-navigation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "306" ;
   rdfs:label "navigation"@en ;
 .
 <http://www.geolexica.org/api/term#307-neighbourhood>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "307" ;
   rdfs:label "neighbourhood"@en ;
 .
 <http://www.geolexica.org/api/term#308-network>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "308" ;
   rdfs:label "network"@en ;
 .
 <http://www.geolexica.org/api/term#309-node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "309" ;
   rdfs:label "node"@en ;
 .
 <http://www.geolexica.org/api/term#31-calendar>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "31" ;
   rdfs:label "calendar"@en ;
 .
 <http://www.geolexica.org/api/term#310-non-conformance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "310" ;
   rdfs:label "non-conformance"@en ;
 .
 <http://www.geolexica.org/api/term#311-northing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "311" ;
   rdfs:label "northing"@en ;
 .
 <http://www.geolexica.org/api/term#312-object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "312" ;
   rdfs:label "object"@en ;
 .
 <http://www.geolexica.org/api/term#313-object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "313" ;
   rdfs:label "object"@en ;
 .
 <http://www.geolexica.org/api/term#315-obsolete_term>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "315" ;
   rdfs:label "obsolete term"@en ;
 .
 <http://www.geolexica.org/api/term#316-open_systems_environment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "316" ;
   rdfs:label "open systems environment"@en ;
 .
 <http://www.geolexica.org/api/term#317-operating_conditions>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "317" ;
   rdfs:label "operating conditions"@en ;
 .
 <http://www.geolexica.org/api/term#318-operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "318" ;
   rdfs:label "operation"@en ;
 .
 <http://www.geolexica.org/api/term#319-operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "319" ;
   rdfs:label "operation"@en ;
 .
 <http://www.geolexica.org/api/term#32-calendar_era>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "32" ;
   rdfs:label "calendar era"@en ;
 .
 <http://www.geolexica.org/api/term#320-optical_positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "320" ;
   rdfs:label "optical positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#321-ordinal_era>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "321" ;
   rdfs:label "ordinal era"@en ;
 .
 <http://www.geolexica.org/api/term#322-ordinal_scale>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "322" ;
   rdfs:label "ordinal scale"@en ;
 .
 <http://www.geolexica.org/api/term#323-ordinal_temporal_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "323" ;
   rdfs:label "ordinal temporal reference system"@en ;
 .
 <http://www.geolexica.org/api/term#325-package>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "325" ;
   rdfs:label "package"@en ;
 .
 <http://www.geolexica.org/api/term#326-pass_verdict>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "326" ;
   rdfs:label "pass verdict"@en ;
 .
 <http://www.geolexica.org/api/term#328-performance_indicator>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "328" ;
   rdfs:label "performance indicator"@en ;
 .
 <http://www.geolexica.org/api/term#329-performance_testing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "329" ;
   rdfs:label "performance testing"@en ;
 .
 <http://www.geolexica.org/api/term#330-period>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "330" ;
   rdfs:label "period"@en ;
 .
 <http://www.geolexica.org/api/term#331-periodic_time>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "331" ;
   rdfs:label "periodic time"@en ;
 .
 <http://www.geolexica.org/api/term#333-physical_quantity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "333" ;
   rdfs:label "physical quantity"@en ;
 .
 <http://www.geolexica.org/api/term#335-planar_topological_complex>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "335" ;
   rdfs:label "planar topological complex"@en ;
 .
 <http://www.geolexica.org/api/term#336-point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "336" ;
   rdfs:label "point"@en ;
 .
 <http://www.geolexica.org/api/term#337-point_coverage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "337" ;
   rdfs:label "point coverage"@en ;
 .
 <http://www.geolexica.org/api/term#34-candidate_route>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "34" ;
   rdfs:label "candidate route"@en ;
 .
 <http://www.geolexica.org/api/term#340-polygon_coverage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "340" ;
   rdfs:label "polygon coverage"@en ;
 .
 <http://www.geolexica.org/api/term#341-population>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "341" ;
   rdfs:label "population"@en ;
 .
 <http://www.geolexica.org/api/term#342-portrayal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "342" ;
   rdfs:label "portrayal"@en ;
 .
 <http://www.geolexica.org/api/term#343-portrayal_catalogue>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "343" ;
   rdfs:label "portrayal catalogue"@en ;
 .
 <http://www.geolexica.org/api/term#344-portrayal_rule>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "344" ;
   rdfs:label "portrayal rule"@en ;
 .
 <http://www.geolexica.org/api/term#345-portrayal_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "345" ;
   rdfs:label "portrayal service"@en ;
 .
 <http://www.geolexica.org/api/term#346-portrayal_specification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "346" ;
   rdfs:label "portrayal specification"@en ;
 .
 <http://www.geolexica.org/api/term#347-position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "347" ;
   rdfs:label "position"@en ;
 .
 <http://www.geolexica.org/api/term#348-positional_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "348" ;
   rdfs:label "positional accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#349-positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "349" ;
   rdfs:label "positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#35-capability_test>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "35" ;
   rdfs:label "capability test"@en ;
 .
 <http://www.geolexica.org/api/term#350-precision>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "350" ;
   rdfs:label "precision"@en ;
 .
 <http://www.geolexica.org/api/term#351-preferred_term>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "351" ;
   rdfs:label "preferred term"@en ;
 .
 <http://www.geolexica.org/api/term#352-prime_meridian>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "352" ;
   rdfs:label "prime meridian"@en ;
 .
 <http://www.geolexica.org/api/term#355-product_specification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "355" ;
   rdfs:label "product specification"@en ;
 .
 <http://www.geolexica.org/api/term#356-profile>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "356" ;
   rdfs:label "profile"@en ;
 .
 <http://www.geolexica.org/api/term#359-quality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "359" ;
   rdfs:label "quality"@en ;
 .
 <http://www.geolexica.org/api/term#36-cardinality>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "36" ;
   rdfs:label "cardinality"@en ;
 .
 <http://www.geolexica.org/api/term#360-quality_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "360" ;
   rdfs:label "quality schema"@en ;
 .
 <http://www.geolexica.org/api/term#363-range>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "363" ;
   rdfs:label "range"@en ;
 .
 <http://www.geolexica.org/api/term#364-raster>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "364" ;
   rdfs:label "raster"@en ;
 .
 <http://www.geolexica.org/api/term#366-record>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "366" ;
   rdfs:label "record"@en ;
 .
 <http://www.geolexica.org/api/term#367-rectified_grid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "367" ;
   rdfs:label "rectified grid"@en ;
 .
 <http://www.geolexica.org/api/term#368-reference_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "368" ;
   rdfs:label "reference data"@en ;
 .
 <http://www.geolexica.org/api/term#369-referenceable_grid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "369" ;
   rdfs:label "referenceable grid"@en ;
 .
 <http://www.geolexica.org/api/term#37-Cartesian_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "37" ;
   rdfs:label "Cartesian coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#370-refinement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "370" ;
   rdfs:label "refinement"@en ;
 .
 <http://www.geolexica.org/api/term#371-register>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "371" ;
   rdfs:label "register"@en ;
 .
 <http://www.geolexica.org/api/term#372-register_owner>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "372" ;
   rdfs:label "register owner"@en ;
 .
 <http://www.geolexica.org/api/term#373-registration>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "373" ;
   rdfs:label "registration"@en ;
 .
 <http://www.geolexica.org/api/term#375-registry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "375" ;
   rdfs:label "registry"@en ;
 .
 <http://www.geolexica.org/api/term#376-relationship>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "376" ;
   rdfs:label "relationship"@en ;
 .
 <http://www.geolexica.org/api/term#377-relative_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "377" ;
   rdfs:label "relative position"@en ;
 .
 <http://www.geolexica.org/api/term#378-relative_positional_accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "378" ;
   rdfs:label "relative positional accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#379-remote_sensing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "379" ;
   rdfs:label "remote sensing"@en ;
 .
 <http://www.geolexica.org/api/term#380-request>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "380" ;
   rdfs:label "request"@en ;
 .
 <http://www.geolexica.org/api/term#383-resource>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "383" ;
   rdfs:label "resource"@en ;
 .
 <http://www.geolexica.org/api/term#384-response>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "384" ;
   rdfs:label "response"@en ;
 .
 <http://www.geolexica.org/api/term#385-ring>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "385" ;
   rdfs:label "ring"@en ;
 .
 <http://www.geolexica.org/api/term#386-robustness_testing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "386" ;
   rdfs:label "robustness testing"@en ;
 .
 <http://www.geolexica.org/api/term#387-route>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "387" ;
   rdfs:label "route"@en ;
 .
 <http://www.geolexica.org/api/term#389-route_instruction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "389" ;
   rdfs:label "route instruction"@en ;
 .
 <http://www.geolexica.org/api/term#39-character>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "39" ;
   rdfs:label "character"@en ;
 .
 <http://www.geolexica.org/api/term#390-route_traversal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "390" ;
   rdfs:label "route traversal"@en ;
 .
 <http://www.geolexica.org/api/term#391-routing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "391" ;
   rdfs:label "routing"@en ;
 .
 <http://www.geolexica.org/api/term#392-satellite_positioning_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "392" ;
   rdfs:label "satellite positioning system"@en ;
 .
 <http://www.geolexica.org/api/term#395-schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "395" ;
   rdfs:label "schema"@en ;
 .
 <http://www.geolexica.org/api/term#396-schema_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "396" ;
   rdfs:label "schema model"@en ;
 .
 <http://www.geolexica.org/api/term#397-segment>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "397" ;
   rdfs:label "segment"@en ;
 .
 <http://www.geolexica.org/api/term#398-semantic_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "398" ;
   rdfs:label "semantic type"@en ;
 .
 <http://www.geolexica.org/api/term#4-abstract_test_method>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "4" ;
   rdfs:label "abstract test method"@en ;
 .
 <http://www.geolexica.org/api/term#403-sequence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "403" ;
   rdfs:label "sequence"@en ;
 .
 <http://www.geolexica.org/api/term#404-server>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "404" ;
   rdfs:label "server"@en ;
 .
 <http://www.geolexica.org/api/term#405-service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "405" ;
   rdfs:label "service"@en ;
 .
 <http://www.geolexica.org/api/term#406-service_chain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "406" ;
   rdfs:label "service chain"@en ;
 .
 <http://www.geolexica.org/api/term#407-service_interface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "407" ;
   rdfs:label "service interface"@en ;
 .
 <http://www.geolexica.org/api/term#408-service_metadata>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "408" ;
   rdfs:label "service metadata"@en ;
 .
 <http://www.geolexica.org/api/term#409-set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "409" ;
   rdfs:label "set"@en ;
 .
 <http://www.geolexica.org/api/term#41-circular_sequence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "41" ;
   rdfs:label "circular sequence"@en ;
 .
 <http://www.geolexica.org/api/term#410-shell>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "410" ;
   rdfs:label "shell"@en ;
 .
 <http://www.geolexica.org/api/term#411-simple>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "411" ;
   rdfs:label "simple"@en ;
 .
 <http://www.geolexica.org/api/term#412-simple_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "412" ;
   rdfs:label "simple feature"@en ;
 .
 <http://www.geolexica.org/api/term#415-slope>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "415" ;
   rdfs:label "slope"@en ;
 .
 <http://www.geolexica.org/api/term#416-solid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "416" ;
   rdfs:label "solid"@en ;
 .
 <http://www.geolexica.org/api/term#417-source_reference>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "417" ;
   rdfs:label "source reference"@en ;
 .
 <http://www.geolexica.org/api/term#418-spatial_attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "418" ;
   rdfs:label "spatial attribute"@en ;
 .
 <http://www.geolexica.org/api/term#419-spatial_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "419" ;
   rdfs:label "spatial object"@en ;
 .
 <http://www.geolexica.org/api/term#420-spatial_operator>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "420" ;
   rdfs:label "spatial operator"@en ;
 .
 <http://www.geolexica.org/api/term#421-spatial_reference>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "421" ;
   rdfs:label "spatial reference"@en ;
 .
 <http://www.geolexica.org/api/term#422-spatial_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "422" ;
   rdfs:label "spatial reference system"@en ;
 .
 <http://www.geolexica.org/api/term#423-spatiotemporal_domain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "423" ;
   rdfs:label "spatiotemporal domain"@en ;
 .
 <http://www.geolexica.org/api/term#424-spatiotemporal_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "424" ;
   rdfs:label "spatiotemporal object"@en ;
 .
 <http://www.geolexica.org/api/term#425-specification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "425" ;
   rdfs:label "specification"@en ;
 .
 <http://www.geolexica.org/api/term#428-start_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "428" ;
   rdfs:label "start node"@en ;
 .
 <http://www.geolexica.org/api/term#429-start_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "429" ;
   rdfs:label "start point"@en ;
 .
 <http://www.geolexica.org/api/term#43-class>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "43" ;
   rdfs:label "class"@en ;
 .
 <http://www.geolexica.org/api/term#432-stereotype>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "432" ;
   rdfs:label "stereotype"@en ;
 .
 <http://www.geolexica.org/api/term#433-strong_substitutability>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "433" ;
   rdfs:label "strong substitutability"@en ;
 .
 <http://www.geolexica.org/api/term#434-subcomplex>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "434" ;
   rdfs:label "subcomplex"@en ;
 .
 <http://www.geolexica.org/api/term#435-submitting_organization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "435" ;
   rdfs:label "submitting organization"@en ;
 .
 <http://www.geolexica.org/api/term#436-subregister>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "436" ;
   rdfs:label "subregister"@en ;
 .
 <http://www.geolexica.org/api/term#437-surface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "437" ;
   rdfs:label "surface"@en ;
 .
 <http://www.geolexica.org/api/term#438-surface_patch>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "438" ;
   rdfs:label "surface patch"@en ;
 .
 <http://www.geolexica.org/api/term#44-classifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "44" ;
   rdfs:label "classifier"@en ;
 .
 <http://www.geolexica.org/api/term#440-System_Under_Test>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "440" ;
   rdfs:label "System Under Test"@en ;
 .
 <http://www.geolexica.org/api/term#441-tag>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "441" ;
   rdfs:label "tag"@en ;
 .
 <http://www.geolexica.org/api/term#442-tagged_value>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "442" ;
   rdfs:label "tagged value"@en ;
 .
 <http://www.geolexica.org/api/term#443-technical_standard>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "443" ;
   rdfs:label "technical standard"@en ;
 .
 <http://www.geolexica.org/api/term#444-technology_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "444" ;
   rdfs:label "technology viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#445-temporal_coordinate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "445" ;
   rdfs:label "temporal coordinate"@en ;
 .
 <http://www.geolexica.org/api/term#446-temporal_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "446" ;
   rdfs:label "temporal coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#447-temporal_feature_association>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "447" ;
   rdfs:label "temporal feature association"@en ;
 .
 <http://www.geolexica.org/api/term#448-temporal_feature_operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "448" ;
   rdfs:label "temporal feature operation"@en ;
 .
 <http://www.geolexica.org/api/term#449-temporal_position>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "449" ;
   rdfs:label "temporal position"@en ;
 .
 <http://www.geolexica.org/api/term#45-client>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "45" ;
   rdfs:label "client"@en ;
 .
 <http://www.geolexica.org/api/term#450-temporal_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "450" ;
   rdfs:label "temporal reference system"@en ;
 .
 <http://www.geolexica.org/api/term#451-term>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "451" ;
   rdfs:label "term"@en ;
 .
 <http://www.geolexica.org/api/term#452-term_equivalent>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "452" ;
   rdfs:label "term equivalent"@en ;
 .
 <http://www.geolexica.org/api/term#453-term_instance_classification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "453" ;
   rdfs:label "term instance classification"@en ;
 .
 <http://www.geolexica.org/api/term#455-terminological_record>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "455" ;
   rdfs:label "terminological record"@en ;
 .
 <http://www.geolexica.org/api/term#457-tessellation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "457" ;
   rdfs:label "tessellation"@en ;
 .
 <http://www.geolexica.org/api/term#458-testing_laboratory>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "458" ;
   rdfs:label "testing laboratory"@en ;
 .
 <http://www.geolexica.org/api/term#46-closure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "46" ;
   rdfs:label "closure"@en ;
 .
 <http://www.geolexica.org/api/term#460-Thiessen_polygon>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "460" ;
   rdfs:label "Thiessen polygon"@en ;
 .
 <http://www.geolexica.org/api/term#461-topological_boundary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "461" ;
   rdfs:label "topological boundary"@en ;
 .
 <http://www.geolexica.org/api/term#462-topological_complex>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "462" ;
   rdfs:label "topological complex"@en ;
 .
 <http://www.geolexica.org/api/term#463-topological_dimension>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "463" ;
   rdfs:label "topological dimension"@en ;
 .
 <http://www.geolexica.org/api/term#465-topological_expression>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "465" ;
   rdfs:label "topological expression"@en ;
 .
 <http://www.geolexica.org/api/term#466-topological_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "466" ;
   rdfs:label "topological object"@en ;
 .
 <http://www.geolexica.org/api/term#467-topological_primitive>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "467" ;
   rdfs:label "topological primitive"@en ;
 .
 <http://www.geolexica.org/api/term#468-topological_solid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "468" ;
   rdfs:label "topological solid"@en ;
 .
 <http://www.geolexica.org/api/term#470-tracking>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "470" ;
   rdfs:label "tracking"@en ;
 .
 <http://www.geolexica.org/api/term#471-transaction_time>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "471" ;
   rdfs:label "transaction time"@en ;
 .
 <http://www.geolexica.org/api/term#473-transfer_protocol>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "473" ;
   rdfs:label "transfer protocol"@en ;
 .
 <http://www.geolexica.org/api/term#474-traversable>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "474" ;
   rdfs:label "traversable"@en ;
 .
 <http://www.geolexica.org/api/term#475-traversal_order>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "475" ;
   rdfs:label "traversal order"@en ;
 .
 <http://www.geolexica.org/api/term#476-triangulated_irregular_network>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "476" ;
   rdfs:label "triangulated irregular network"@en ;
 .
 <http://www.geolexica.org/api/term#477-tuple>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "477" ;
   rdfs:label "tuple"@en ;
 .
 <http://www.geolexica.org/api/term#478-turn>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "478" ;
   rdfs:label "turn"@en ;
 .
 <http://www.geolexica.org/api/term#48-coboundary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "48" ;
   rdfs:label "coboundary"@en ;
 .
 <http://www.geolexica.org/api/term#480-uncertainty>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "480" ;
   rdfs:label "uncertainty"@en ;
 .
 <http://www.geolexica.org/api/term#481-Uniform_Resource_Identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "481" ;
   rdfs:label "Uniform Resource Identifier"@en ;
 .
 <http://www.geolexica.org/api/term#483-unit_of_measure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "483" ;
   rdfs:label "unit of measure"@en ;
 .
 <http://www.geolexica.org/api/term#484-universal_face>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "484" ;
   rdfs:label "universal face"@en ;
 .
 <http://www.geolexica.org/api/term#485-universal_solid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "485" ;
   rdfs:label "universal solid"@en ;
 .
 <http://www.geolexica.org/api/term#486-universe_of_discourse>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "486" ;
   rdfs:label "universe of discourse"@en ;
 .
 <http://www.geolexica.org/api/term#487-valid_time>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "487" ;
   rdfs:label "valid time"@en ;
 .
 <http://www.geolexica.org/api/term#489-value>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "489" ;
   rdfs:label "value"@en ;
 .
 <http://www.geolexica.org/api/term#49-code>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "49" ;
   rdfs:label "code"@en ;
 .
 <http://www.geolexica.org/api/term#490-value_domain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "490" ;
   rdfs:label "value domain"@en ;
 .
 <http://www.geolexica.org/api/term#491-vector>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "491" ;
   rdfs:label "vector"@en ;
 .
 <http://www.geolexica.org/api/term#492-vector_geometry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "492" ;
   rdfs:label "vector geometry"@en ;
 .
 <http://www.geolexica.org/api/term#493-vehicle_classification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "493" ;
   rdfs:label "vehicle classification"@en ;
 .
 <http://www.geolexica.org/api/term#495-verification_test>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "495" ;
   rdfs:label "verification test"@en ;
 .
 <http://www.geolexica.org/api/term#497-viewpoint_(on_a_system)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "497" ;
   rdfs:label "viewpoint (on a system)"@en ;
 .
 <http://www.geolexica.org/api/term#498-waypoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "498" ;
   rdfs:label "waypoint"@en ;
 .
 <http://www.geolexica.org/api/term#499-workflow>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "499" ;
   rdfs:label "workflow"@en ;
 .
 <http://www.geolexica.org/api/term#5-abstract_test_module>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "5" ;
   rdfs:label "abstract test module"@en ;
 .
 <http://www.geolexica.org/api/term#50-codelist>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "50" ;
   rdfs:label "codelist"@en ;
 .
 <http://www.geolexica.org/api/term#501-local_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "501" ;
   rdfs:label "local datum"@en ;
 .
 <http://www.geolexica.org/api/term#502-ellipsoidal_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "502" ;
   rdfs:label "ellipsoidal coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#503-ellipsoidal_latitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "503" ;
   rdfs:label "ellipsoidal latitude"@en ;
 .
 <http://www.geolexica.org/api/term#504-ellipsoidal_longitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "504" ;
   rdfs:label "ellipsoidal longitude"@en ;
 .
 <http://www.geolexica.org/api/term#505-zero_meridian>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "505" ;
   rdfs:label "zero meridian"@en ;
 .
 <http://www.geolexica.org/api/term#506-clarification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "506" ;
   rdfs:label "clarification"@en ;
 .
 <http://www.geolexica.org/api/term#507-locale>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "507" ;
   rdfs:label "locale"@en ;
 .
 <http://www.geolexica.org/api/term#508-register_manager>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "508" ;
   rdfs:label "register manager"@en ;
 .
 <http://www.geolexica.org/api/term#509-retirement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "509" ;
   rdfs:label "retirement"@en ;
 .
 <http://www.geolexica.org/api/term#51-codespace>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "51" ;
   rdfs:label "codespace"@en ;
 .
 <http://www.geolexica.org/api/term#510-supersession>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "510" ;
   rdfs:label "supersession"@en ;
 .
 <http://www.geolexica.org/api/term#518-object_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "518" ;
   rdfs:label "object point"@en ;
 .
 <http://www.geolexica.org/api/term#519-objective>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "519" ;
   rdfs:label "objective"@en ;
 .
 <http://www.geolexica.org/api/term#52-complex_feature>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "52" ;
   rdfs:label "complex feature"@en ;
 .
 <http://www.geolexica.org/api/term#521-principal_point_of_best_symmetry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "521" ;
   rdfs:label "principal point of best symmetry"@en ;
 .
 <http://www.geolexica.org/api/term#532-attribute>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "532" ;
   rdfs:label "attribute"@en ;
 .
 <http://www.geolexica.org/api/term#534-property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "534" ;
   rdfs:label "property"@en ;
 .
 <http://www.geolexica.org/api/term#535-principal_register>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "535" ;
   rdfs:label "principal register"@en ;
 .
 <http://www.geolexica.org/api/term#55-composite_curve>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "55" ;
   rdfs:label "composite curve"@en ;
 .
 <http://www.geolexica.org/api/term#551-image>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "551" ;
   rdfs:label "image"@en ;
 .
 <http://www.geolexica.org/api/term#558-knowledge_base>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "558" ;
   rdfs:label "knowledge base"@en ;
 .
 <http://www.geolexica.org/api/term#559-measurand>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "559" ;
   rdfs:label "measurand"@en ;
 .
 <http://www.geolexica.org/api/term#56-composite_solid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "56" ;
   rdfs:label "composite solid"@en ;
 .
 <http://www.geolexica.org/api/term#560-measurement>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "560" ;
   rdfs:label "measurement"@en ;
 .
 <http://www.geolexica.org/api/term#57-composite_surface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "57" ;
   rdfs:label "composite surface"@en ;
 .
 <http://www.geolexica.org/api/term#572-radiant_energy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "572" ;
   rdfs:label "radiant energy"@en ;
 .
 <http://www.geolexica.org/api/term#598-affine_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "598" ;
   rdfs:label "affine coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#6-abstract_test_suite>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "6" ;
   rdfs:label "abstract test suite"@en ;
 .
 <http://www.geolexica.org/api/term#600-concatenated_operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "600" ;
   rdfs:label "concatenated operation"@en ;
 .
 <http://www.geolexica.org/api/term#603-cylindrical_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "603" ;
   rdfs:label "cylindrical coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#605-depth>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "605" ;
   rdfs:label "depth"@en ;
 .
 <http://www.geolexica.org/api/term#61-computational_geometry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "61" ;
   rdfs:label "computational geometry"@en ;
 .
 <http://www.geolexica.org/api/term#614-height>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "614" ;
   rdfs:label "height"@en ;
 .
 <http://www.geolexica.org/api/term#617-linear_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "617" ;
   rdfs:label "linear coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#618-map_projection>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "618" ;
   rdfs:label "map projection"@en ;
 .
 <http://www.geolexica.org/api/term#619-pixel>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "619" ;
   rdfs:label "pixel"@en ;
 .
 <http://www.geolexica.org/api/term#62-computational_topology>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "62" ;
   rdfs:label "computational topology"@en ;
 .
 <http://www.geolexica.org/api/term#620-polar_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "620" ;
   rdfs:label "polar coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#622-semi-major_axis>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "622" ;
   rdfs:label "semi-major axis"@en ;
 .
 <http://www.geolexica.org/api/term#623-semi-minor_axis>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "623" ;
   rdfs:label "semi-minor axis"@en ;
 .
 <http://www.geolexica.org/api/term#627-unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "627" ;
   rdfs:label "unit"@en ;
 .
 <http://www.geolexica.org/api/term#629-vertical_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "629" ;
   rdfs:label "vertical datum"@en ;
 .
 <http://www.geolexica.org/api/term#63-computational_viewpoint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "63" ;
   rdfs:label "computational viewpoint"@en ;
 .
 <http://www.geolexica.org/api/term#630-transportation_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "630" ;
   rdfs:label "transportation mode"@en ;
 .
 <http://www.geolexica.org/api/term#632-data_quality_basic_measure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "632" ;
   rdfs:label "data quality basic measure"@en ;
 .
 <http://www.geolexica.org/api/term#639-resolution_(of_a_sensor)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "639" ;
   rdfs:label "resolution (of a sensor)"@en ;
 .
 <http://www.geolexica.org/api/term#64-concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "64" ;
   rdfs:label "concept"@en ;
 .
 <http://www.geolexica.org/api/term#640-scene>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "640" ;
   rdfs:label "scene"@en ;
 .
 <http://www.geolexica.org/api/term#642-foliation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "642" ;
   rdfs:label "foliation"@en ;
 .
 <http://www.geolexica.org/api/term#643-leaf>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "643" ;
   rdfs:label "leaf"@en ;
 .
 <http://www.geolexica.org/api/term#644-one_parameter_set_of_geometries>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "644" ;
   rdfs:label "one parameter set of geometries"@en ;
 .
 <http://www.geolexica.org/api/term#645-prism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "645" ;
   rdfs:label "prism"@en ;
 .
 <http://www.geolexica.org/api/term#646-trajectory>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "646" ;
   rdfs:label "trajectory"@en ;
 .
 <http://www.geolexica.org/api/term#656-active_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "656" ;
   rdfs:label "active object"@en ;
 .
 <http://www.geolexica.org/api/term#658-basic_service>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "658" ;
   rdfs:label "basic service"@en ;
 .
 <http://www.geolexica.org/api/term#659-continuous_change>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "659" ;
   rdfs:label "continuous change"@en ;
 .
 <http://www.geolexica.org/api/term#66-concept_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "66" ;
   rdfs:label "concept system"@en ;
 .
 <http://www.geolexica.org/api/term#660-coupling>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "660" ;
   rdfs:label "coupling"@en ;
 .
 <http://www.geolexica.org/api/term#661-digital_item>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "661" ;
   rdfs:label "digital item"@en ;
 .
 <http://www.geolexica.org/api/term#662-discrete_change>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "662" ;
   rdfs:label "discrete change"@en ;
 .
 <http://www.geolexica.org/api/term#663-discrete_spatiotemporal_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "663" ;
   rdfs:label "discrete spatiotemporal object"@en ;
 .
 <http://www.geolexica.org/api/term#664-distance_measure>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "664" ;
   rdfs:label "distance measure"@en ;
 .
 <http://www.geolexica.org/api/term#665-distance_metric>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "665" ;
   rdfs:label "distance metric"@en ;
 .
 <http://www.geolexica.org/api/term#667-identity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "667" ;
   rdfs:label "identity"@en ;
 .
 <http://www.geolexica.org/api/term#668-integration>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "668" ;
   rdfs:label "integration"@en ;
 .
 <http://www.geolexica.org/api/term#669-interoperate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "669" ;
   rdfs:label "interoperate"@en ;
 .
 <http://www.geolexica.org/api/term#67-conceptual_formalism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "67" ;
   rdfs:label "conceptual formalism"@en ;
 .
 <http://www.geolexica.org/api/term#670-license>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "670" ;
   rdfs:label "license"@en ;
 .
 <http://www.geolexica.org/api/term#672-loosely_coupled_interface>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "672" ;
   rdfs:label "loosely coupled interface"@en ;
 .
 <http://www.geolexica.org/api/term#677-passive_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "677" ;
   rdfs:label "passive object"@en ;
 .
 <http://www.geolexica.org/api/term#678-passive_tracking>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "678" ;
   rdfs:label "passive tracking"@en ;
 .
 <http://www.geolexica.org/api/term#679-resource_(ICT)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "679" ;
   rdfs:label "resource (ICT)"@en ;
 .
 <http://www.geolexica.org/api/term#68-conceptual_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "68" ;
   rdfs:label "conceptual model"@en ;
 .
 <http://www.geolexica.org/api/term#680-right>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "680" ;
   rdfs:label "right"@en ;
 .
 <http://www.geolexica.org/api/term#681-rights_management>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "681" ;
   rdfs:label "rights management"@en ;
 .
 <http://www.geolexica.org/api/term#683-service_broker>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "683" ;
   rdfs:label "service broker"@en ;
 .
 <http://www.geolexica.org/api/term#684-service_oriented_architecture>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "684" ;
   rdfs:label "service oriented architecture"@en ;
 .
 <http://www.geolexica.org/api/term#685-spacestamp>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "685" ;
   rdfs:label "spacestamp"@en ;
 .
 <http://www.geolexica.org/api/term#686-state_(of_an_object)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "686" ;
   rdfs:label "state (of an object)"@en ;
 .
 <http://www.geolexica.org/api/term#687-target>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "687" ;
   rdfs:label "target"@en ;
 .
 <http://www.geolexica.org/api/term#688-temporal_sequence>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "688" ;
   rdfs:label "temporal sequence"@en ;
 .
 <http://www.geolexica.org/api/term#689-timestamp>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "689" ;
   rdfs:label "timestamp"@en ;
 .
 <http://www.geolexica.org/api/term#69-conceptual_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "69" ;
   rdfs:label "conceptual schema"@en ;
 .
 <http://www.geolexica.org/api/term#690-tracking_device>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "690" ;
   rdfs:label "tracking device"@en ;
 .
 <http://www.geolexica.org/api/term#691-user>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "691" ;
   rdfs:label "user"@en ;
 .
 <http://www.geolexica.org/api/term#692-child_element>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "692" ;
   rdfs:label "child element"@en ;
 .
 <http://www.geolexica.org/api/term#693-observable_type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "693" ;
   rdfs:label "observable type"@en ;
 .
 <http://www.geolexica.org/api/term#695-polygon>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "695" ;
   rdfs:label "polygon"@en ;
 .
 <http://www.geolexica.org/api/term#696-range>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "696" ;
   rdfs:label "range"@en ;
 .
 <http://www.geolexica.org/api/term#697-schema_document>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "697" ;
   rdfs:label "schema document"@en ;
 .
 <http://www.geolexica.org/api/term#698-schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "698" ;
   rdfs:label "schema"@en ;
 .
 <http://www.geolexica.org/api/term#699-UML_application_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "699" ;
   rdfs:label "UML application schema"@en ;
 .
 <http://www.geolexica.org/api/term#7-acceptance_testing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "7" ;
   rdfs:label "acceptance testing"@en ;
 .
 <http://www.geolexica.org/api/term#70-conceptual_schema_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "70" ;
   rdfs:label "conceptual schema language"@en ;
 .
 <http://www.geolexica.org/api/term#702-compound_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "702" ;
   rdfs:label "compound coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#703-coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "703" ;
   rdfs:label "coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#704-datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "704" ;
   rdfs:label "datum"@en ;
 .
 <http://www.geolexica.org/api/term#706-engineering_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "706" ;
   rdfs:label "engineering coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#707-geodetic_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "707" ;
   rdfs:label "geodetic coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#708-geodetic_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "708" ;
   rdfs:label "geodetic datum"@en ;
 .
 <http://www.geolexica.org/api/term#709-image_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "709" ;
   rdfs:label "image coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#71-conformance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "71" ;
   rdfs:label "conformance"@en ;
 .
 <http://www.geolexica.org/api/term#710-image_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "710" ;
   rdfs:label "image datum"@en ;
 .
 <http://www.geolexica.org/api/term#711-meridian>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "711" ;
   rdfs:label "meridian"@en ;
 .
 <http://www.geolexica.org/api/term#713-spherical_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "713" ;
   rdfs:label "spherical coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#715-vertical_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "715" ;
   rdfs:label "vertical coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#716-vertical_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "716" ;
   rdfs:label "vertical coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#717-base_representation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "717" ;
   rdfs:label "base representation"@en ;
 .
 <http://www.geolexica.org/api/term#72-conformance_assessment_process>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "72" ;
   rdfs:label "conformance assessment process"@en ;
 .
 <http://www.geolexica.org/api/term#720-sensor_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "720" ;
   rdfs:label "sensor model"@en ;
 .
 <http://www.geolexica.org/api/term#724-component>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "724" ;
   rdfs:label "component"@en ;
 .
 <http://www.geolexica.org/api/term#725-composition>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "725" ;
   rdfs:label "composition"@en ;
 .
 <http://www.geolexica.org/api/term#726-generalization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "726" ;
   rdfs:label "generalization"@en ;
 .
 <http://www.geolexica.org/api/term#727-instance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "727" ;
   rdfs:label "instance"@en ;
 .
 <http://www.geolexica.org/api/term#728-type>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "728" ;
   rdfs:label "type"@en ;
 .
 <http://www.geolexica.org/api/term#729-coordinate_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "729" ;
   rdfs:label "coordinate set"@en ;
 .
 <http://www.geolexica.org/api/term#73-conformance_clause>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "73" ;
   rdfs:label "conformance clause"@en ;
 .
 <http://www.geolexica.org/api/term#733-altitude>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "733" ;
   rdfs:label "altitude"@en ;
 .
 <http://www.geolexica.org/api/term#734-constraint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "734" ;
   rdfs:label "constraint"@en ;
 .
 <http://www.geolexica.org/api/term#735-coordinate_tuple>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "735" ;
   rdfs:label "coordinate tuple"@en ;
 .
 <http://www.geolexica.org/api/term#736-correctness>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "736" ;
   rdfs:label "correctness"@en ;
 .
 <http://www.geolexica.org/api/term#738-error>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "738" ;
   rdfs:label "error"@en ;
 .
 <http://www.geolexica.org/api/term#74-conformance_quality_level>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "74" ;
   rdfs:label "conformance quality level"@en ;
 .
 <http://www.geolexica.org/api/term#740-navigation_constraint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "740" ;
   rdfs:label "navigation constraint"@en ;
 .
 <http://www.geolexica.org/api/term#744-traveller>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "744" ;
   rdfs:label "traveller"@en ;
 .
 <http://www.geolexica.org/api/term#745-vehicle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "745" ;
   rdfs:label "vehicle"@en ;
 .
 <http://www.geolexica.org/api/term#746-version_(temporal)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "746" ;
   rdfs:label "version (temporal)"@en ;
 .
 <http://www.geolexica.org/api/term#75-conformance_test_report>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "75" ;
   rdfs:label "conformance test report"@en ;
 .
 <http://www.geolexica.org/api/term#754-design_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "754" ;
   rdfs:label "design coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#755-graphical_language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "755" ;
   rdfs:label "graphical language"@en ;
 .
 <http://www.geolexica.org/api/term#756-graph>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "756" ;
   rdfs:label "graph"@en ;
 .
 <http://www.geolexica.org/api/term#757-geometry_value_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "757" ;
   rdfs:label "geometry value object"@en ;
 .
 <http://www.geolexica.org/api/term#758-geometry_value_pair>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "758" ;
   rdfs:label "geometry value pair"@en ;
 .
 <http://www.geolexica.org/api/term#76-conformance_testing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "76" ;
   rdfs:label "conformance testing"@en ;
 .
 <http://www.geolexica.org/api/term#762-coordinate_conversion>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "762" ;
   rdfs:label "coordinate conversion"@en ;
 .
 <http://www.geolexica.org/api/term#763-coordinate_transformation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "763" ;
   rdfs:label "coordinate transformation"@en ;
 .
 <http://www.geolexica.org/api/term#764-geoid>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "764" ;
   rdfs:label "geoid"@en ;
 .
 <http://www.geolexica.org/api/term#765-projected_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "765" ;
   rdfs:label "projected coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#77-conforming_implementation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "77" ;
   rdfs:label "conforming implementation"@en ;
 .
 <http://www.geolexica.org/api/term#774-feature_reference>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "774" ;
   rdfs:label "feature reference"@en ;
 .
 <http://www.geolexica.org/api/term#78-connected>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "78" ;
   rdfs:label "connected"@en ;
 .
 <http://www.geolexica.org/api/term#785-traversal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "785" ;
   rdfs:label "traversal"@en ;
 .
 <http://www.geolexica.org/api/term#789-digital_elevation_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "789" ;
   rdfs:label "digital elevation model"@en ;
 .
 <http://www.geolexica.org/api/term#79-connected_node>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "79" ;
   rdfs:label "connected node"@en ;
 .
 <http://www.geolexica.org/api/term#790-digital_number>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "790" ;
   rdfs:label "digital number"@en ;
 .
 <http://www.geolexica.org/api/term#792-geographic_imagery>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "792" ;
   rdfs:label "geographic imagery"@en ;
 .
 <http://www.geolexica.org/api/term#793-geographic_imagery_scene>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "793" ;
   rdfs:label "geographic imagery scene"@en ;
 .
 <http://www.geolexica.org/api/term#794-metric_traceability>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "794" ;
   rdfs:label "metric traceability"@en ;
 .
 <http://www.geolexica.org/api/term#795-orthoimage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "795" ;
   rdfs:label "orthoimage"@en ;
 .
 <http://www.geolexica.org/api/term#8-accuracy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "8" ;
   rdfs:label "accuracy"@en ;
 .
 <http://www.geolexica.org/api/term#800-transfer_unit>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "800" ;
   rdfs:label "transfer unit"@en ;
 .
 <http://www.geolexica.org/api/term#801-identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "801" ;
   rdfs:label "identifier"@en ;
 .
 <http://www.geolexica.org/api/term#807-predicate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "807" ;
   rdfs:label "predicate"@en ;
 .
 <http://www.geolexica.org/api/term#808-predicate_expression>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "808" ;
   rdfs:label "predicate expression"@en ;
 .
 <http://www.geolexica.org/api/term#809-property>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "809" ;
   rdfs:label "property"@en ;
 .
 <http://www.geolexica.org/api/term#81-constraint>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "81" ;
   rdfs:label "constraint"@en ;
 .
 <http://www.geolexica.org/api/term#810-classification_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "810" ;
   rdfs:label "classification system"@en ;
 .
 <http://www.geolexica.org/api/term#813-legend>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "813" ;
   rdfs:label "legend"@en ;
 .
 <http://www.geolexica.org/api/term#815-a_posteriori_classification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "815" ;
   rdfs:label "a posteriori classification"@en ;
 .
 <http://www.geolexica.org/api/term#816-a_priori_classification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "816" ;
   rdfs:label "a priori classification"@en ;
 .
 <http://www.geolexica.org/api/term#819-land_cover>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "819" ;
   rdfs:label "land cover"@en ;
 .
 <http://www.geolexica.org/api/term#82-content_model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "82" ;
   rdfs:label "content model"@en ;
 .
 <http://www.geolexica.org/api/term#824-GML_document>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "824" ;
   rdfs:label "GML document"@en ;
 .
 <http://www.geolexica.org/api/term#825-GML_profile>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "825" ;
   rdfs:label "GML profile"@en ;
 .
 <http://www.geolexica.org/api/term#826-GML_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "826" ;
   rdfs:label "GML schema"@en ;
 .
 <http://www.geolexica.org/api/term#83-continuous_coverage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "83" ;
   rdfs:label "continuous coverage"@en ;
 .
 <http://www.geolexica.org/api/term#831-platform>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "831" ;
   rdfs:label "platform"@en ;
 .
 <http://www.geolexica.org/api/term#832-polarization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "832" ;
   rdfs:label "polarization"@en ;
 .
 <http://www.geolexica.org/api/term#835-spectral_resolution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "835" ;
   rdfs:label "spectral resolution"@en ;
 .
 <http://www.geolexica.org/api/term#838-namespace>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "838" ;
   rdfs:label "namespace"@en ;
 .
 <http://www.geolexica.org/api/term#839-realization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "839" ;
   rdfs:label "realization"@en ;
 .
 <http://www.geolexica.org/api/term#84-control_body>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "84" ;
   rdfs:label "control body"@en ;
 .
 <http://www.geolexica.org/api/term#840-polymorphism>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "840" ;
   rdfs:label "polymorphism"@en ;
 .
 <http://www.geolexica.org/api/term#841-parametric_coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "841" ;
   rdfs:label "parametric coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#842-parametric_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "842" ;
   rdfs:label "parametric coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#843-parametric_datum>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "843" ;
   rdfs:label "parametric datum"@en ;
 .
 <http://www.geolexica.org/api/term#844-spatio-parametric_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "844" ;
   rdfs:label "spatio-parametric coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#845-spatio-parametric-temporal_coordinate_reference_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "845" ;
   rdfs:label "spatio-parametric-temporal coordinate reference system"@en ;
 .
 <http://www.geolexica.org/api/term#846-band>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "846" ;
   rdfs:label "band"@en ;
 .
 <http://www.geolexica.org/api/term#847-calibration>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "847" ;
   rdfs:label "calibration"@en ;
 .
 <http://www.geolexica.org/api/term#848-classification>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "848" ;
   rdfs:label "classification"@en ;
 .
 <http://www.geolexica.org/api/term#849-classified_object>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "849" ;
   rdfs:label "classified object"@en ;
 .
 <http://www.geolexica.org/api/term#85-conversion_rule>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "85" ;
   rdfs:label "conversion rule"@en ;
 .
 <http://www.geolexica.org/api/term#850-classifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "850" ;
   rdfs:label "classifier"@en ;
 .
 <http://www.geolexica.org/api/term#851-compound_registry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "851" ;
   rdfs:label "compound registry"@en ;
 .
 <http://www.geolexica.org/api/term#852-feature_association_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "852" ;
   rdfs:label "feature association concept"@en ;
 .
 <http://www.geolexica.org/api/term#853-feature_attribute_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "853" ;
   rdfs:label "feature attribute concept"@en ;
 .
 <http://www.geolexica.org/api/term#854-feature_catalogue>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "854" ;
   rdfs:label "feature catalogue"@en ;
 .
 <http://www.geolexica.org/api/term#855-feature_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "855" ;
   rdfs:label "feature concept"@en ;
 .
 <http://www.geolexica.org/api/term#856-feature_concept_dictionary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "856" ;
   rdfs:label "feature concept dictionary"@en ;
 .
 <http://www.geolexica.org/api/term#857-feature_operation_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "857" ;
   rdfs:label "feature operation concept"@en ;
 .
 <http://www.geolexica.org/api/term#859-hierarchical_register>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "859" ;
   rdfs:label "hierarchical register"@en ;
 .
 <http://www.geolexica.org/api/term#86-convex_hull>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "86" ;
   rdfs:label "convex hull"@en ;
 .
 <http://www.geolexica.org/api/term#860-imagery>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "860" ;
   rdfs:label "imagery"@en ;
 .
 <http://www.geolexica.org/api/term#861-legend_class>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "861" ;
   rdfs:label "legend class"@en ;
 .
 <http://www.geolexica.org/api/term#862-measurable_quantity>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "862" ;
   rdfs:label "measurable quantity"@en ;
 .
 <http://www.geolexica.org/api/term#863-nominal_value>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "863" ;
   rdfs:label "nominal value"@en ;
 .
 <http://www.geolexica.org/api/term#864-pass>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "864" ;
   rdfs:label "pass"@en ;
 .
 <http://www.geolexica.org/api/term#865-picture_original>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "865" ;
   rdfs:label "picture original"@en ;
 .
 <http://www.geolexica.org/api/term#866-picture_portrayal>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "866" ;
   rdfs:label "picture portrayal"@en ;
 .
 <http://www.geolexica.org/api/term#867-policy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "867" ;
   rdfs:label "policy"@en ;
 .
 <http://www.geolexica.org/api/term#868-radiance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "868" ;
   rdfs:label "radiance"@en ;
 .
 <http://www.geolexica.org/api/term#87-convex_set>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "87" ;
   rdfs:label "convex set"@en ;
 .
 <http://www.geolexica.org/api/term#871-validation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "871" ;
   rdfs:label "validation"@en ;
 .
 <http://www.geolexica.org/api/term#873-associative_concept_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "873" ;
   rdfs:label "associative concept system"@en ;
 .
 <http://www.geolexica.org/api/term#874-broader_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "874" ;
   rdfs:label "broader concept"@en ;
 .
 <http://www.geolexica.org/api/term#875-characteristic>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "875" ;
   rdfs:label "characteristic"@en ;
 .
 <http://www.geolexica.org/api/term#876-delimiting_characteristic>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "876" ;
   rdfs:label "delimiting characteristic"@en ;
 .
 <http://www.geolexica.org/api/term#879-domain>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "879" ;
   rdfs:label "domain"@en ;
 .
 <http://www.geolexica.org/api/term#88-coordinate>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "88" ;
   rdfs:label "coordinate"@en ;
 .
 <http://www.geolexica.org/api/term#880-domain_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "880" ;
   rdfs:label "domain concept"@en ;
 .
 <http://www.geolexica.org/api/term#881-essential_characteristic>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "881" ;
   rdfs:label "essential characteristic"@en ;
 .
 <http://www.geolexica.org/api/term#882-general_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "882" ;
   rdfs:label "general concept"@en ;
 .
 <http://www.geolexica.org/api/term#883-generic_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "883" ;
   rdfs:label "generic concept"@en ;
 .
 <http://www.geolexica.org/api/term#884-generic_concept_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "884" ;
   rdfs:label "generic concept system"@en ;
 .
 <http://www.geolexica.org/api/term#885-generic_relation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "885" ;
   rdfs:label "generic relation"@en ;
 .
 <http://www.geolexica.org/api/term#886-genus-species_relation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "886" ;
   rdfs:label "genus-species relation"@en ;
 .
 <http://www.geolexica.org/api/term#887-homonymy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "887" ;
   rdfs:label "homonymy"@en ;
 .
 <http://www.geolexica.org/api/term#888-intension>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "888" ;
   rdfs:label "intension"@en ;
 .
 <http://www.geolexica.org/api/term#889-monosemy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "889" ;
   rdfs:label "monosemy"@en ;
 .
 <http://www.geolexica.org/api/term#890-narrower_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "890" ;
   rdfs:label "narrower concept"@en ;
 .
 <http://www.geolexica.org/api/term#891-partitive_relation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "891" ;
   rdfs:label "partitive relation"@en ;
 .
 <http://www.geolexica.org/api/term#892-part-whole_relation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "892" ;
   rdfs:label "part-whole relation"@en ;
 .
 <http://www.geolexica.org/api/term#893-polysemy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "893" ;
   rdfs:label "polysemy"@en ;
 .
 <http://www.geolexica.org/api/term#894-superordinate_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "894" ;
   rdfs:label "superordinate concept"@en ;
 .
 <http://www.geolexica.org/api/term#895-subordinate_concept>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "895" ;
   rdfs:label "subordinate concept"@en ;
 .
 <http://www.geolexica.org/api/term#896-synonymy>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "896" ;
   rdfs:label "synonymy"@en ;
 .
 <http://www.geolexica.org/api/term#897-system_of_concepts>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "897" ;
   rdfs:label "system of concepts"@en ;
 .
 <http://www.geolexica.org/api/term#898-technical_dictionary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "898" ;
   rdfs:label "technical dictionary"@en ;
 .
 <http://www.geolexica.org/api/term#9-actor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "9" ;
   rdfs:label "actor"@en ;
 .
 <http://www.geolexica.org/api/term#90-coordinate_dimension>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "90" ;
   rdfs:label "coordinate dimension"@en ;
 .
 <http://www.geolexica.org/api/term#900-terminological_data>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "900" ;
   rdfs:label "terminological data"@en ;
 .
 <http://www.geolexica.org/api/term#901-terminological_dictionary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "901" ;
   rdfs:label "terminological dictionary"@en ;
 .
 <http://www.geolexica.org/api/term#902-terminological_entry>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "902" ;
   rdfs:label "terminological entry"@en ;
 .
 <http://www.geolexica.org/api/term#903-vocabulary>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "903" ;
   rdfs:label "vocabulary"@en ;
 .
 <http://www.geolexica.org/api/term#904-resolution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "904" ;
   rdfs:label "resolution"@en ;
 .
 <http://www.geolexica.org/api/term#905-sexagesimal_degree>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "905" ;
   rdfs:label "sexagesimal degree"@en ;
 .
 <http://www.geolexica.org/api/term#906-GML_application_schema>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "906" ;
   rdfs:label "GML application schema"@en ;
 .
 <http://www.geolexica.org/api/term#907-concept_harmonization>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "907" ;
   rdfs:label "concept harmonization"@en ;
 .
 <http://www.geolexica.org/api/term#908-designation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "908" ;
   rdfs:label "designation"@en ;
 .
 <http://www.geolexica.org/api/term#909-designator>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "909" ;
   rdfs:label "designator"@en ;
 .
 <http://www.geolexica.org/api/term#91-coordinate_operation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "91" ;
   rdfs:label "coordinate operation"@en ;
 .
 <http://www.geolexica.org/api/term#910-extension>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "910" ;
   rdfs:label "extension"@en ;
 .
 <http://www.geolexica.org/api/term#911-language>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "911" ;
   rdfs:label "language"@en ;
 .
 <http://www.geolexica.org/api/term#912-terminological_record_identifier>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "912" ;
   rdfs:label "terminological record identifier"@en ;
 .
 <http://www.geolexica.org/api/term#913-terminology_repository>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "913" ;
   rdfs:label "terminology repository"@en ;
 .
 <http://www.geolexica.org/api/term#914-feature_inheritance>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "914" ;
   rdfs:label "feature inheritance"@en ;
 .
 <http://www.geolexica.org/api/term#915-feature_relationship>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "915" ;
   rdfs:label "feature relationship"@en ;
 .
 <http://www.geolexica.org/api/term#916-data_compaction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "916" ;
   rdfs:label "data compaction"@en ;
 .
 <http://www.geolexica.org/api/term#918-matrix>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "918" ;
   rdfs:label "matrix"@en ;
 .
 <http://www.geolexica.org/api/term#919-UML_template>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "919" ;
   rdfs:label "UML template"@en ;
 .
 <http://www.geolexica.org/api/term#922-adjustable_model_parameters>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "922" ;
   rdfs:label "adjustable model parameters"@en ;
 .
 <http://www.geolexica.org/api/term#925-aperture_reference_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "925" ;
   rdfs:label "aperture reference point"@en ;
 .
 <http://www.geolexica.org/api/term#927-azimuth_resolution>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "927" ;
   rdfs:label "azimuth resolution"@en ;
 .
 <http://www.geolexica.org/api/term#928-beam_width>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "928" ;
   rdfs:label "beam width"@en ;
 .
 <http://www.geolexica.org/api/term#93-coordinate_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "93" ;
   rdfs:label "coordinate system"@en ;
 .
 <http://www.geolexica.org/api/term#930-calibrated_focal_length>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "930" ;
   rdfs:label "calibrated focal length"@en ;
 .
 <http://www.geolexica.org/api/term#932-Correspondence_Model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "932" ;
   rdfs:label "Correspondence Model"@en ;
 .
 <http://www.geolexica.org/api/term#933-cross-track>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "933" ;
   rdfs:label "cross-track"@en ;
 .
 <http://www.geolexica.org/api/term#937-fiducial_centre>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "937" ;
   rdfs:label "fiducial centre"@en ;
 .
 <http://www.geolexica.org/api/term#939-frame_sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "939" ;
   rdfs:label "frame sensor"@en ;
 .
 <http://www.geolexica.org/api/term#942-geolocation_information>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "942" ;
   rdfs:label "geolocation information"@en ;
 .
 <http://www.geolexica.org/api/term#944-georeferencing>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "944" ;
   rdfs:label "georeferencing"@en ;
 .
 <http://www.geolexica.org/api/term#945-grazing_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "945" ;
   rdfs:label "grazing angle"@en ;
 .
 <http://www.geolexica.org/api/term#947-ground_range>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "947" ;
   rdfs:label "ground range"@en ;
 .
 <http://www.geolexica.org/api/term#951-image_formation>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "951" ;
   rdfs:label "image formation"@en ;
 .
 <http://www.geolexica.org/api/term#952-image-identifiable_ground_control_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "952" ;
   rdfs:label "image-identifiable ground control point"@en ;
 .
 <http://www.geolexica.org/api/term#953-image_plane>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "953" ;
   rdfs:label "image plane"@en ;
 .
 <http://www.geolexica.org/api/term#954-incident_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "954" ;
   rdfs:label "incident angle"@en ;
 .
 <http://www.geolexica.org/api/term#955-layover>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "955" ;
   rdfs:label "layover"@en ;
 .
 <http://www.geolexica.org/api/term#958-perspective_centre>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "958" ;
   rdfs:label "perspective centre"@en ;
 .
 <http://www.geolexica.org/api/term#96-Coordinated_Universal_Time_(UTC)>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "96" ;
   rdfs:label "Coordinated Universal Time (UTC)"@en ;
 .
 <http://www.geolexica.org/api/term#960-Physical_Sensor_Model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "960" ;
   rdfs:label "Physical Sensor Model"@en ;
 .
 <http://www.geolexica.org/api/term#963-pushbroom_sensor>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "963" ;
   rdfs:label "pushbroom sensor"@en ;
 .
 <http://www.geolexica.org/api/term#965-range_bin>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "965" ;
   rdfs:label "range bin"@en ;
 .
 <http://www.geolexica.org/api/term#968-scan_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "968" ;
   rdfs:label "scan mode"@en ;
 .
 <http://www.geolexica.org/api/term#97-cost_function>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "97" ;
   rdfs:label "cost function"@en ;
 .
 <http://www.geolexica.org/api/term#971-slant_plane>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "971" ;
   rdfs:label "slant plane"@en ;
 .
 <http://www.geolexica.org/api/term#972-slant_range>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "972" ;
   rdfs:label "slant range"@en ;
 .
 <http://www.geolexica.org/api/term#973-slant_range_direction>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "973" ;
   rdfs:label "slant range direction"@en ;
 .
 <http://www.geolexica.org/api/term#974-spotlight_mode>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "974" ;
   rdfs:label "spotlight mode"@en ;
 .
 <http://www.geolexica.org/api/term#975-squint_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "975" ;
   rdfs:label "squint angle"@en ;
 .
 <http://www.geolexica.org/api/term#978-True_Replacement_Model>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "978" ;
   rdfs:label "True Replacement Model"@en ;
 .
 <http://www.geolexica.org/api/term#982-georectified>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "982" ;
   rdfs:label "georectified"@en ;
 .
 <http://www.geolexica.org/api/term#983-ground_control_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "983" ;
   rdfs:label "ground control point"@en ;
 .
 <http://www.geolexica.org/api/term#985-active_sensing_system>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "985" ;
   rdfs:label "active sensing system"@en ;
 .
 <http://www.geolexica.org/api/term#986-along-track>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "986" ;
   rdfs:label "along-track"@en ;
 .
 <http://www.geolexica.org/api/term#988-broadside>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "988" ;
   rdfs:label "broadside"@en ;
 .
 <http://www.geolexica.org/api/term#99-coverage>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "99" ;
   rdfs:label "coverage"@en ;
 .
 <http://www.geolexica.org/api/term#990-Doppler_angle>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "990" ;
   rdfs:label "Doppler angle"@en ;
 .
 <http://www.geolexica.org/api/term#991-Doppler_shift>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "991" ;
   rdfs:label "Doppler shift"@en ;
 .
 <http://www.geolexica.org/api/term#994-fiducial_mark>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "994" ;
   rdfs:label "fiducial mark"@en ;
 .
 <http://www.geolexica.org/api/term#995-geolocating>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "995" ;
   rdfs:label "geolocating"@en ;
 .
 <http://www.geolexica.org/api/term#996-geopositioning>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "996" ;
   rdfs:label "geopositioning"@en ;
 .
 <http://www.geolexica.org/api/term#999-ground_reference_point>
-  a edg:DataRequirement ;
+  rdf:type edg:DataRequirement ;
   edg:identifier "999" ;
   rdfs:label "ground reference point"@en ;
 .
 <urn:x-evn-master:term>
-  a edg:RequirementsModelProject ;
-  a teamwork:Vocabulary ;
-  a owl:Ontology ;
+  rdf:type edg:RequirementsModelProject ;
+  rdf:type teamwork:Vocabulary ;
+  rdf:type owl:Ontology ;
   metadata:status metadata:UnderDevelopmentStatus ;
-  <http://topbraid.org/swa#defaultNamespace> "http://www.geolexica.org/api/term#" ;
+  swa:defaultNamespace "http://www.geolexica.org/api/term#" ;
   rdfs:label "term" ;
   owl:imports <http://edg.topbraid.solutions/1.0/schema/edg> ;
   owl:imports <http://edg.topbraid.solutions/1.0/schema/requirements-model> ;
   owl:imports <http://edg.topbraid.solutions/1.0/shapes/core> ;
   owl:imports <http://edg.topbraid.solutions/1.0/shapes/requirements-model> ;
   owl:imports <http://topbraid.org/teamworkconstraints> ;
-  owl:imports <https://www.geolexica.org/api/rdf-profile> ;
+  owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
   owl:imports <urn:x-evn-master:edg_enumerations_singleton> ;
 .

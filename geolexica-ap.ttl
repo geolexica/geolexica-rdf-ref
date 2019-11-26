@@ -1,0 +1,767 @@
+# baseURI: https://www.geolexica.org/api/geolexica-ap
+# imports: http://purl.org/dc/terms/
+# imports: http://topbraid.org/schema/schema-single-range
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix : <https://www.geolexica.org/api/geolexica-ap#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix glossary: <https://www.geolexica.org/api/terms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <https://www.geolexica.org/concepts/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.geolexica.org/api/geolexica-ap>
+  rdf:type owl:Ontology ;
+  owl:imports dcterms: ;
+  owl:imports <http://topbraid.org/schema/schema-single-range> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+:Arabic_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "المهندس/ محمد بن سعد دلبوح"@ar ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+  rdfs:label "Arabic Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Arabic_code ;
+  :release :release1 ;
+.
+:Arabic_code
+  rdf:type :Language_Code ;
+  rdfs:label "Arabic Language Code"@en ;
+  skos:prefLabel "ARA"@en ;
+  skos:prefLabel "تجميع"@ar ;
+.
+:Bahasa_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2018-10-30"^^xsd:anyURI ;
+  dcterms:title "(Type here in Operating Language)" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+  rdfs:label "Bahasa Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Bahasa_code ;
+  :release :release1 ;
+.
+:Bahasa_code
+  rdf:type :Language_Code ;
+  rdfs:label "Bahasa Language Code"@en ;
+  skos:prefLabel "MSA"@en ;
+.
+:Chinese
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-chn" ;
+  rdfs:label "CHN" ;
+  skos:altLabel "注册" ;
+  skos:prefLabel "CHN" ;
+.
+:Chinese_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "注册"@zh ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-chn"^^xsd:anyURI ;
+  rdfs:label "Chinese Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2017-10-19"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Chinese_code ;
+.
+:Chinese_code
+  rdf:type :Language_Code ;
+  rdfs:label "Chinese Language Code"@en ;
+  skos:prefLabel "CHN"@en ;
+  skos:prefLabel "注册"@zh ;
+.
+:Danish_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2019-08-08"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 Glossary of Terms - Dansk" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+  rdfs:label "Danish Language Node" ;
+  skos:prefLabel "DAN"@en ;
+  :language_code :Danish_code ;
+.
+:Danish_code
+  rdf:type :Language_Code ;
+  rdfs:label "Danish Language Code"@en ;
+  skos:prefLabel "DAN"@en ;
+.
+:Dansk
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-dan" ;
+  rdfs:label "DAN" ;
+  skos:altLabel "dan" ;
+  skos:prefLabel "DAN" ;
+.
+:Dutch_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 meertalig woordenboek - Nederlands" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-dut"^^xsd:anyURI ;
+  rdfs:label "Dutch Language Node" ;
+  :language_code :Dutch_code ;
+.
+:Dutch_code
+  rdf:type :Language_Code ;
+  rdfs:label "Dutch Language Code"@en ;
+  skos:prefLabel "DUT"@en ;
+.
+:English
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-eng" ;
+  rdfs:label "ENG" ;
+  skos:prefLabel "ENG" ;
+.
+:English_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2019-10-16"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 Glossary of Terms - English" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+  rdfs:label "English Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2019-10-16"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :English_code ;
+  :release :release1 ;
+.
+:English_code
+  rdf:type :Language_Code ;
+  rdfs:label "English Language Code"@en ;
+  skos:prefLabel "ENG"@en ;
+.
+:Entry_Status
+  rdf:type owl:Class ;
+  rdfs:label "Entry Status" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "ENTRY STATUS" ;
+.
+:Finnish_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 Monikielinen termistö - Suomi" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+  rdfs:label "Finnish Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2017-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Finnish_code ;
+.
+:Finnish_code
+  rdf:type :Language_Code ;
+  rdfs:label "Finnish Language Code"@en ;
+  skos:prefLabel "FIN"@en ;
+  skos:prefLabel "Suomi"@fi ;
+.
+:French
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-fra" ;
+  rdfs:label "FRA" ;
+  skos:altLabel "fra" ;
+  skos:prefLabel "FRA" ;
+.
+:French_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2019-10-16"^^xsd:anyURI ;
+  dcterms:title "Glossaire en français des termes de l’ISO/TC 211" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+  rdfs:label "French Language Node" ;
+  :date_accepted "2007-10-15" ;
+  :language_code :French_code ;
+.
+:French_code
+  rdf:type :Language_Code ;
+  rdfs:label "French Language Code"@en ;
+  skos:prefLabel "FRA"@en ;
+.
+:GeolexicaConceptScheme
+  rdf:type skos:ConceptScheme ;
+  rdfs:label "Geolexica Concept Scheme" ;
+  skos:prefLabel "Geolexica Concept Scheme" ;
+.
+:German
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-ger" ;
+  rdfs:label "GER" ;
+  skos:altLabel "ger" ;
+  skos:prefLabel "GER" ;
+.
+:German_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2019-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211 Glossary of Terms - German" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-ger"^^xsd:anyURI ;
+  rdfs:label "German Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_node :German_code ;
+  :release :release1 ;
+.
+:German_code
+  rdf:type :Language_Code ;
+  rdfs:label "German Language Code"@en ;
+  skos:prefLabel "GER"@en ;
+.
+:Glossary_Release
+  rdf:type owl:Class ;
+  rdfs:label "Glossary Release" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "GLOSSARY RELEASE" ;
+.
+:ISO_19132_2007
+  rdf:type :ISO_Standard_Reference ;
+  dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+  rdfs:comment "ISO 19132:2007 defines a reference model and a conceptual framework for location-based services (LBS)." ;
+  rdfs:label "ISO 19132:2007 Standard" ;
+  skos:prefLabel "ISO 19132:2007 STANDARD" ;
+.
+:ISO_19132_2007_Link
+  rdf:type :ISO_Standard_Link ;
+  dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+  rdfs:label "ISO 19132:2007 URL" ;
+  skos:note "This is a URL link to ISO 19132:2007." ;
+  skos:prefLabel "ISO 19132:2007 URL" ;
+.
+:ISO_Standard_Link
+  rdf:type owl:Class ;
+  rdfs:comment "This class captures reference instances to ISO Standard(s) represented in this concept scheme." ;
+  rdfs:label "ISO Reference URL" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "ISO REFERENCE URL" ;
+.
+:ISO_Standard_Reference
+  rdf:type owl:Class ;
+  rdfs:comment "This class captures reference instances to ISO Standard(s) represented in this concept scheme." ;
+  rdfs:label "ISO Standard Reference" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "ISO STANDARD REFERENCE" ;
+.
+:Japanese
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-jpn" ;
+  rdfs:label "JPN" ;
+  skos:altLabel "日本語" ;
+  skos:prefLabel "JPN" ;
+.
+:Japanese_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC211関連JIS用語集" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+  rdfs:label "Japanese Language Node" ;
+  :language_code :Japanese_code ;
+.
+:Japanese_code
+  rdf:type :Language_Code ;
+  rdfs:label "Japanese Language Code"@en ;
+  skos:prefLabel "JPN"@en ;
+  skos:prefLabel "日本語"@jp ;
+.
+:Korean
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-kor" ;
+  rdfs:label "KOR" ;
+  skos:altLabel "한국어" ;
+  skos:prefLabel "KOR" ;
+.
+:Korean_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC211 지리정보 - 용어 표준" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+  rdfs:label "Korean Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2009-12-29"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Korean_code ;
+  :release :release1 ;
+.
+:Korean_code
+  rdf:type :Language_Code ;
+  rdfs:label "Korean Language Code" ;
+  skos:prefLabel "KOR"@en ;
+  skos:prefLabel "한국어"@kr ;
+.
+:Language_Code
+  rdf:type owl:Class ;
+  rdfs:label "Language Code" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:note "Class instances here are the capitalized three-letter language codes in English and given language text.." ;
+  skos:prefLabel "Language Code" ;
+.
+:Language_Node
+  rdf:type owl:Class ;
+  rdfs:label "Language node" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "Language Label" ;
+.
+:Malaysian
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-msa" ;
+  rdfs:label "MSA" ;
+  skos:altLabel "bahasa" ;
+  skos:prefLabel "MSA" ;
+.
+:Not_Valid
+  rdf:type :Entry_Status ;
+  rdfs:label "Not valid" ;
+  skos:prefLabel "notValid" ;
+.
+:Polski
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-fin" ;
+  rdfs:label "POL" ;
+  skos:altLabel "polski" ;
+  skos:prefLabel "POL" ;
+.
+:Polski_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "Słownik terminologiczny ISO/TC 211 - Polski" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+  rdfs:label "Polish Language Node" ;
+  :language_code :Polski_code ;
+.
+:Polski_code
+  rdf:type :Language_Code ;
+  rdfs:label "Polish Language Code"@en ;
+  skos:prefLabel "POL"@en ;
+.
+:Retired
+  rdf:type :Entry_Status ;
+  rdfs:label "Retired" ;
+  skos:prefLabel "retired" ;
+.
+:Review_Decision
+  rdf:type owl:Class ;
+  rdfs:label "Review Decision" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "REVIEW DECISION" ;
+.
+:Review_Indicator
+  rdf:type owl:Class ;
+  rdfs:label "Review Indicator" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "REVIEW INDICATOR" ;
+.
+:Review_Type
+  rdf:type owl:Class ;
+  rdfs:label "Review Type" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "REVIEW TYPE" ;
+.
+:Russian
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-fin" ;
+  rdfs:label "RUS" ;
+  skos:altLabel "rus" ;
+  skos:prefLabel "RUS" ;
+.
+:Russian_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-16"^^xsd:anyURI ;
+  dcterms:title "Словарь терминов ISO/TC 211 - Российская Федерация" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+  rdfs:label "Russian Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Russian_code ;
+.
+:Russian_code
+  rdf:type :Language_Code ;
+  rdfs:label "Russian Language Code"@en ;
+  skos:prefLabel "RUS"@en ;
+.
+:Similarity
+  rdf:type owl:Class ;
+  rdfs:label "Similarity to Authoritative Source" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "SIMILARITY TO AUTHORITATIVE SOURCE" ;
+.
+:Spanish
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-spa" ;
+  rdfs:label "SPA" ;
+  skos:altLabel "spa" ;
+  skos:prefLabel "SPA" ;
+.
+:Spanish_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2019-01-23"^^xsd:anyURI ;
+  dcterms:title "Glosario de terminos de ISO/TC211" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+  rdfs:label "Spanish Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Spanish_code ;
+  :release :release1 ;
+.
+:Spanish_code
+  rdf:type :Language_Code ;
+  rdfs:label "Spanish Language Code"@en ;
+  skos:prefLabel "SPA"@en ;
+.
+:Status
+  rdf:type owl:Class ;
+  rdfs:label "Status" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "STATUS" ;
+.
+:Suomi
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-fin" ;
+  rdfs:label "FIN" ;
+  skos:altLabel "suomi" ;
+  skos:prefLabel "FIN" ;
+  :language_code "FIN"@en ;
+.
+:Superceded
+  rdf:type :Entry_Status ;
+  rdfs:label "Superceded" ;
+  skos:prefLabel "superceded" ;
+.
+:Svenska
+  rdf:type schema:Language ;
+  dcterms:source "https://www.geolexica.org/registers/#language-swe" ;
+  rdfs:label "SWE" ;
+  skos:altLabel "svenska" ;
+  skos:prefLabel "SWE" ;
+.
+:Swedish_Node
+  rdf:type :Language_Node ;
+  dcterms:modified "2017-10-19"^^xsd:anyURI ;
+  dcterms:title "ISO/TC 211:s flerspråkiga ordlista - Svenska" ;
+  schema:mainEntityOfPage "https://www.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+  rdfs:label "Swedish Language Node" ;
+  :classification :preferred ;
+  :date_accepted "2007-10-15"^^xsd:date ;
+  :entry_status :Valid ;
+  :language_code :Swedish_code ;
+  :release :release1 ;
+.
+:Swedish_code
+  rdf:type :Language_Code ;
+  rdfs:label "Sedish Language Code"@en ;
+  skos:prefLabel "SWE"@en ;
+.
+:Term_Classification
+  rdf:type owl:Class ;
+  rdfs:label "Term classification" ;
+  rdfs:subClassOf schema:Intangible ;
+  skos:inScheme :GeolexicaConceptScheme ;
+  skos:prefLabel "TERM CLASSIFICATION" ;
+.
+:Valid
+  rdf:type :Entry_Status ;
+  rdfs:label "Valid" ;
+  skos:prefLabel "valid" ;
+.
+:admitted
+  rdf:type :Term_Classification ;
+  rdfs:label "Admitted" ;
+  skos:prefLabel "admitted" ;
+.
+:authoritative_source
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Authoritative Source" ;
+  owl:sameAs dcterms:source ;
+  skos:altLabel "Source" ;
+  skos:prefLabel "AUTHORITATIVE SOURCE" ;
+.
+:classification
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "classification" ;
+  skos:altLabel "Term Classification" ;
+  skos:prefLabel "Classification" ;
+.
+:context_added
+  rdf:type :Similarity ;
+  rdfs:label "Context added" ;
+  skos:hiddenLabel "3" ;
+  skos:prefLabel "context added" ;
+.
+:country_code
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Country Code" ;
+  skos:prefLabel "COUNTRY CODE" ;
+.
+:date_accepted
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Date Accepted" ;
+  skos:prefLabel "DATE ACCEPTED" ;
+.
+:date_amended
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Date Amended" ;
+  skos:prefLabel "DATE AMENDED" ;
+.
+:definition
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "definition" ;
+  owl:sameAs skos:definition ;
+  skos:prefLabel "Definition" ;
+.
+:deprecated
+  rdf:type :Term_Classification ;
+  rdfs:label "deprecated" ;
+  skos:prefLabel "deprecated" ;
+.
+:empty_field
+  rdf:type :Review_Indicator ;
+  rdfs:label "Empty field" ;
+  skos:prefLabel "empty field" ;
+.
+:entry_status
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Entry Status" ;
+  skos:prefLabel "Entry Status" ;
+.
+:example_n
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Example" ;
+  skos:prefLabel "Example" ;
+.
+:final
+  rdf:type :Status ;
+  rdfs:label "Final" ;
+  skos:prefLabel "final" ;
+.
+:generalisation
+  rdf:type :Similarity ;
+  rdfs:label "Generalisation" ;
+  skos:hiddenLabel "4" ;
+  skos:prefLabel "generalisation" ;
+.
+:glossary_release
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Glossary Release" ;
+  skos:altLabel "RELEASE" ;
+  skos:prefLabel "GLOSSARY RELEASE" ;
+.
+:hasInfo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Info" ;
+  skos:prefLabel "INFO" ;
+.
+:hasReview
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review" ;
+  skos:prefLabel "REVIEW" ;
+.
+:identical
+  rdf:type :Similarity ;
+  rdfs:label "Identical" ;
+  skos:hiddenLabel "1" ;
+  skos:prefLabel "identical" ;
+.
+:language_code
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "3 Letter Language Code" ;
+  skos:note "Code should be three (3) capitalized letters in Latin Alphabet." ;
+  skos:prefLabel "3 LETTER LANGUAGE CODE" ;
+.
+:language_node
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "3 Letter Language Code" ;
+  skos:note "Code should be three (3) capitalized letters in Latin Alphabet." ;
+  skos:prefLabel "3 LETTER LANGUAGE CODE" ;
+.
+:lineage_source
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Lineage Source" ;
+  skos:prefLabel "LINEAGE SOURCE" ;
+.
+:link
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Link" ;
+  skos:prefLabel "LINK" ;
+.
+:notAccepted
+  rdf:type :Review_Decision ;
+  rdfs:label "Not Accepted" ;
+  skos:prefLabel "notAccepted" ;
+.
+:note_n
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Note" ;
+  skos:prefLabel "NOTE" ;
+.
+:pending
+  rdf:type :Status ;
+  rdfs:label "Pending" ;
+  skos:prefLabel "pending" ;
+.
+:preferred
+  rdf:type :Term_Classification ;
+  rdfs:label "Preferred" ;
+  skos:prefLabel "preferred" ;
+.
+:ref
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Reference" ;
+  skos:prefLabel "REFERENCE" ;
+.
+:release
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Glossary Release" ;
+  skos:altLabel "RELEASE" ;
+  skos:prefLabel "GLOSSARY RELEASE" ;
+.
+:release1
+  rdf:type :Glossary_Release ;
+  rdfs:label "Release 1" ;
+  skos:hiddenLabel "1" ;
+  skos:prefLabel "release1" ;
+.
+:release1_retired
+  rdf:type :Glossary_Release ;
+  rdfs:label "Release 1 Retired" ;
+  skos:hiddenLabel "-1" ;
+  skos:prefLabel "release1_retired" ;
+.
+:release2
+  rdf:type :Glossary_Release ;
+  rdfs:label "Release 2" ;
+  skos:hiddenLabel "-2" ;
+  skos:prefLabel "release2" ;
+.
+:release2_retired
+  rdf:type :Glossary_Release ;
+  rdfs:label "Release 2 Retired" ;
+  skos:hiddenLabel "-2" ;
+  skos:prefLabel "release2_retired" ;
+.
+:restyled
+  rdf:type :Similarity ;
+  rdfs:label "Restyled" ;
+  skos:hiddenLabel "2" ;
+  skos:prefLabel "restyled" ;
+.
+:retirement
+  rdf:type :Review_Type ;
+  rdfs:label "Retirement" ;
+  skos:prefLabel "retirement" ;
+.
+:review_date
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Review Date" ;
+  skos:prefLabel "REVIEW DATE" ;
+.
+:review_decision
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Decision" ;
+  skos:prefLabel "REVIEW DECISION" ;
+.
+:review_decision_event
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Decision Event" ;
+  skos:prefLabel "REVIEW DECISION EVENT" ;
+.
+:review_decision_notes
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Decision Notes" ;
+  skos:prefLabel "REVIEW DECISION NOTES" ;
+.
+:review_indicator
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Indicator" ;
+  skos:prefLabel "REVIEW INDICATOR" ;
+.
+:review_status
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Status" ;
+  skos:prefLabel "REVIEW STATUS" ;
+.
+:review_type
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Review Type" ;
+  skos:prefLabel "REVIEW TYPE" ;
+.
+:similarity_lineage_source
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Similarity to Lineage Source" ;
+  skos:prefLabel "SIMILARITY TO LINEAGE SOURCE" ;
+.
+:similarity_source
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Similarity to Source" ;
+  skos:prefLabel "SIMILARITY TO SOURCE" ;
+.
+:specialisation
+  rdf:type :Similarity ;
+  rdfs:label "Specialisation" ;
+  skos:hiddenLabel "5" ;
+  skos:prefLabel "specialisation" ;
+.
+:status
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Status" ;
+  skos:altLabel "Entry Status" ;
+  skos:prefLabel "Status" ;
+.
+:supersession
+  rdf:type :Review_Type ;
+  rdfs:label "Supersession" ;
+  skos:prefLabel "supersession" ;
+.
+:tentative
+  rdf:type :Status ;
+  rdfs:label "Tentative" ;
+  skos:prefLabel "tentative" ;
+.
+:term
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "term" ;
+  skos:prefLabel "TERM" ;
+.
+:termID
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Term ID" ;
+  skos:prefLabel "TERM ID" ;
+.
+:term_abbreviation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Term Abbrevation" ;
+  skos:prefLabel "TERM ABBREVIATION" ;
+.
+:term_synonym
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Term Synonyms" ;
+  skos:prefLabel "TERM SYNONYMS" ;
+.
+:under_review
+  rdf:type :Review_Indicator ;
+  rdfs:label "Under Review in Source Document" ;
+  skos:prefLabel "Under Review in Source Document" ;
+.
+:unspecified
+  rdf:type :Similarity ;
+  rdfs:label "Unspecified" ;
+  skos:hiddenLabel "6" ;
+  skos:prefLabel "unspecified" ;
+.
+:withdrawn
+  rdf:type :Review_Decision ;
+  rdfs:label "Withdrawn" ;
+  skos:prefLabel "withdrawn" ;
+.

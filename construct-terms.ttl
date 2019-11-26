@@ -1,12 +1,12 @@
 # baseURI: https://www.geolexica.org/concepts/terms
-# imports: https://www.geolexica.org/api/rdf-profile
+# imports: https://www.geolexica.org/api/geolexica-ap
 
 @prefix : <https://www.geolexica.org/concepts/terms#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix glossary: <file:///_geolexica/glossary.csv#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdf-profile: <https://www.geolexica.org/api/rdf-profile#> .
+@prefix rdf-profile: <https://www.geolexica.org/api/geolexica-ap#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -3201,10 +3201,7 @@ glossary:Row-998
 glossary:Row-999
   glossary:term "bearing" ;
 .
-<https://www.geolexica.org/api/rdf-profile>
-  a owl:Ontology ;
-.
 <https://www.geolexica.org/concepts/terms>
-  a owl:Ontology ;
-  owl:imports <https://www.geolexica.org/api/rdf-profile> ;
+  rdf:type owl:Ontology ;
+  owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
 .
