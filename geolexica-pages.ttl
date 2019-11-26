@@ -1,9 +1,9 @@
-# baseURI: https://www.geolexica.org/concepts/47
+# baseURI: https://www.geolexica.org/concepts/infopage
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: https://www.geolexica.org/api/rdf-profile
 
-@prefix : <https://www.geolexica.org/concepts/47#> .
+@prefix : <https://www.geolexica.org/concepts/infopage#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdf-profile: <https://www.geolexica.org/api/rdf-profile#> .
@@ -11,8 +11,15 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://www.geolexica.org/concepts/infopage>
+  a owl:Ontology ;
+  owl:imports <http://purl.org/dc/terms/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <https://www.geolexica.org/api/rdf-profile> ;
+  skos:changeNote "Changed file name from 47.ttl to geolexica-pages.ttl; it now reflect a template form." ;
+.
 :term-instance
-  rdf:type skos:Concept ;
+  a skos:Concept ;
   rdfs:label "cluster" ;
   skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
   skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
@@ -51,10 +58,4 @@
   rdf-profile:language_node rdf-profile:Russian_Node ;
   rdf-profile:language_node rdf-profile:Spanish_Node ;
   rdf-profile:language_node rdf-profile:Swedish_Node ;
-.
-<https://www.geolexica.org/concepts/47>
-  a owl:Ontology ;
-  owl:imports <http://purl.org/dc/terms/> ;
-  owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:imports <https://www.geolexica.org/api/rdf-profile> ;
 .
