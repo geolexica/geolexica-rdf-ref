@@ -1,1095 +1,1280 @@
 {
-  "@graph" : [ {
-    "@id" : "http://teamwork.topbraidlive.org/ontologyprojects#Ontology",
-    "subClassOf" : "teamwork:Vocabulary"
-  }, {
-    "@id" : "teamwork:Vocabulary",
-    "subClassOf" : "owl:Ontology"
-  }, {
-    "@id" : "./",
-    "@type" : "owl:Ontology",
-    "status" : "metadata:UnderDevelopmentStatus",
-    "defaultNamespace" : "https://www.geolexica.org/com/geolexica-ap#",
-    "label" : "geolexica-ap",
-    "imports" : [ "http://topbraid.org/schema/schema-single-range", "http://purl.org/dc/terms/", "http://datashapes.org/graphql", "http://www.w3.org/2004/02/skos/core" ]
-  }, {
-    "@id" : "#Arabic_Node",
-    "modified" : "2017-10-19",
-    "title" : {
-      "@language" : "ar",
-      "@value" : "المهندس/ محمد بن سعد دلبوح"
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "glossary": "https://www.geolexica.org/api/terms#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "terms": "https://www.geolexica.org/concepts/terms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_date",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Review Date",
+      "skos:prefLabel": "REVIEW DATE"
     },
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-ara",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "@type": "owl:Class",
+      "rdfs:label": "Similarity to Authoritative Source",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "SIMILARITY TO AUTHORITATIVE SOURCE"
     },
-    "label" : "Arabic Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Arabic_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#Arabic_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Danish_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Danish Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DAN"
+      }
     },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Arabic Language Code"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Finnish_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "ISO/TC 211 Monikielinen termistö - Suomi",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2017-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Finnish_code"
+      },
+      "rdfs:label": "Finnish Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-fin"
+      }
     },
-    "prefLabel" : [ {
-      "@language" : "ar",
-      "@value" : "تجميع"
-    }, {
-      "@language" : "en",
-      "@value" : "ARA"
-    } ]
-  }, {
-    "@id" : "#Bahasa_Node",
-    "modified" : "2018-10-30",
-    "title" : "(Type here in Operating Language)",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-msa",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_status",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Status",
+      "skos:prefLabel": "REVIEW STATUS"
     },
-    "label" : "Bahasa Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Bahasa_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#Bahasa_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Glossary_Release",
+      "@type": "owl:Class",
+      "rdfs:label": "Glossary Release",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "GLOSSARY RELEASE"
     },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Bahasa Language Code"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Malaysian",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-msa",
+      "rdfs:label": "MSA",
+      "skos:altLabel": "bahasa",
+      "skos:prefLabel": "MSA"
     },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "MSA"
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#date_accepted",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Date Accepted",
+      "skos:prefLabel": "DATE ACCEPTED"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#link",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Link",
+      "skos:prefLabel": "LINK"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#country_code",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Country Code",
+      "skos:prefLabel": "COUNTRY CODE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Korean",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-kor",
+      "rdfs:label": "KOR",
+      "skos:altLabel": "한국어",
+      "skos:prefLabel": "KOR"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Spanish_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Spanish Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "SPA"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Valid",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Entry_Status",
+      "rdfs:label": "Valid",
+      "skos:prefLabel": "valid"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#ISO_19132_2007",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#ISO_Standard_Reference",
+      "dcterms:source": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.iso.org/standard/40601.html"
+      },
+      "rdfs:comment": "ISO 19132:2007 defines a reference model and a conceptual framework for location-based services (LBS).",
+      "rdfs:label": "ISO 19132:2007 Standard",
+      "skos:prefLabel": "ISO 19132:2007 STANDARD"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#English",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-eng",
+      "rdfs:label": "ENG",
+      "skos:prefLabel": "ENG"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#note_n",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Note",
+      "skos:prefLabel": "NOTE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_type",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Type",
+      "skos:prefLabel": "REVIEW TYPE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#date_amended",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Date Amended",
+      "skos:prefLabel": "DATE AMENDED"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#final",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Status",
+      "rdfs:label": "Final",
+      "skos:prefLabel": "final"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_decision_notes",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Decision Notes",
+      "skos:prefLabel": "REVIEW DECISION NOTES"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#English_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "English Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "ENG"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#tentative",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Status",
+      "rdfs:label": "Tentative",
+      "skos:prefLabel": "tentative"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#entry_status",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Entry Status",
+      "skos:prefLabel": "Entry Status"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#language_code",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "3 Letter Language Code",
+      "skos:note": "Code should be three (3) capitalized letters in Latin Alphabet.",
+      "skos:prefLabel": "3 LETTER LANGUAGE CODE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Not_Valid",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Entry_Status",
+      "rdfs:label": "Not valid",
+      "skos:prefLabel": "notValid"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Arabic_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Arabic Language Code"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "ARA"
+        },
+        {
+          "@language": "ar",
+          "@value": "تجميع"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Dutch_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "ISO/TC 211 meertalig woordenboek - Nederlands",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Dutch_code"
+      },
+      "rdfs:label": "Dutch Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-dut"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Polski_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Polish Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "POL"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#term",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "term",
+      "skos:prefLabel": "TERM"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#language_node",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "3 Letter Language Code",
+      "skos:note": "Code should be three (3) capitalized letters in Latin Alphabet.",
+      "skos:prefLabel": "3 LETTER LANGUAGE CODE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#release2",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Glossary_Release",
+      "rdfs:label": "Release 2",
+      "skos:hiddenLabel": "-2",
+      "skos:prefLabel": "release2"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#release1",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Glossary_Release",
+      "rdfs:label": "Release 1",
+      "skos:hiddenLabel": "1",
+      "skos:prefLabel": "release1"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Svenska",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-swe",
+      "rdfs:label": "SWE",
+      "skos:altLabel": "svenska",
+      "skos:prefLabel": "SWE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Japanese",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-jpn",
+      "rdfs:label": "JPN",
+      "skos:altLabel": "日本語",
+      "skos:prefLabel": "JPN"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#status",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Status",
+      "skos:altLabel": "Entry Status",
+      "skos:prefLabel": "Status"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Polski",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-fin",
+      "rdfs:label": "POL",
+      "skos:altLabel": "polski",
+      "skos:prefLabel": "POL"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#identical",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Identical",
+      "skos:hiddenLabel": "1",
+      "skos:prefLabel": "identical"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#termID",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Term ID",
+      "skos:prefLabel": "TERM ID"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_decision",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Decision",
+      "skos:prefLabel": "REVIEW DECISION"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Japanese_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Japanese Language Code"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "jp",
+          "@value": "日本語"
+        },
+        {
+          "@language": "en",
+          "@value": "JPN"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#lineage_source",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Lineage Source",
+      "skos:prefLabel": "LINEAGE SOURCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#hasReview",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review",
+      "skos:prefLabel": "REVIEW"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#unspecified",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Unspecified",
+      "skos:hiddenLabel": "6",
+      "skos:prefLabel": "unspecified"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#ISO_19132_2007_Link",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#ISO_Standard_Link",
+      "dcterms:source": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.iso.org/standard/40601.html"
+      },
+      "rdfs:label": "ISO 19132:2007 URL",
+      "skos:note": "This is a URL link to ISO 19132:2007.",
+      "skos:prefLabel": "ISO 19132:2007 URL"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Bahasa_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Bahasa Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "MSA"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Dansk",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-dan",
+      "rdfs:label": "DAN",
+      "skos:altLabel": "dan",
+      "skos:prefLabel": "DAN"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Chinese_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Chinese Language Code"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "zh",
+          "@value": "注册"
+        },
+        {
+          "@language": "en",
+          "@value": "CHN"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Korean_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "ISO/TC211 지리정보 - 용어 표준",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2009-12-29"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Korean_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "Korean Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-kor"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Japanese_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "ISO/TC211関連JIS用語集",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Japanese_code"
+      },
+      "rdfs:label": "Japanese Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-jpn"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Retired",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Entry_Status",
+      "rdfs:label": "Retired",
+      "skos:prefLabel": "retired"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Russian_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Russian Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "RUS"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_decision_event",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Decision Event",
+      "skos:prefLabel": "REVIEW DECISION EVENT"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#release1_retired",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Glossary_Release",
+      "rdfs:label": "Release 1 Retired",
+      "skos:hiddenLabel": "-1",
+      "skos:prefLabel": "release1_retired"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#German_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2019-10-19"
+      },
+      "dcterms:title": "ISO/TC 211 Glossary of Terms - German",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_node": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#German_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "German Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-ger"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#empty_field",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Indicator",
+      "rdfs:label": "Empty field",
+      "skos:prefLabel": "empty field"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#French_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "French Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRA"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": "Geolexica Concept Scheme",
+      "skos:prefLabel": "Geolexica Concept Scheme"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Entry_Status",
+      "@type": "owl:Class",
+      "rdfs:label": "Entry Status",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "ENTRY STATUS"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Polski_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "Słownik terminologiczny ISO/TC 211 - Polski",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Polski_code"
+      },
+      "rdfs:label": "Polish Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-pol"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#similarity_lineage_source",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Similarity to Lineage Source",
+      "skos:prefLabel": "SIMILARITY TO LINEAGE SOURCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Status",
+      "@type": "owl:Class",
+      "rdfs:label": "Status",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "STATUS"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Term_Classification",
+      "@type": "owl:Class",
+      "rdfs:label": "Term classification",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "TERM CLASSIFICATION"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Danish_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2019-08-08"
+      },
+      "dcterms:title": "ISO/TC 211 Glossary of Terms - Dansk",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Danish_code"
+      },
+      "rdfs:label": "Danish Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-dan"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DAN"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Russian_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-16"
+      },
+      "dcterms:title": "Словарь терминов ISO/TC 211 - Российская Федерация",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Russian_code"
+      },
+      "rdfs:label": "Russian Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-rus"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#review_indicator",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Review Indicator",
+      "skos:prefLabel": "REVIEW INDICATOR"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#generalisation",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Generalisation",
+      "skos:hiddenLabel": "4",
+      "skos:prefLabel": "generalisation"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Russian",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-fin",
+      "rdfs:label": "RUS",
+      "skos:altLabel": "rus",
+      "skos:prefLabel": "RUS"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#notAccepted",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Decision",
+      "rdfs:label": "Not Accepted",
+      "skos:prefLabel": "notAccepted"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Superceded",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Entry_Status",
+      "rdfs:label": "Superceded",
+      "skos:prefLabel": "superceded"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap",
+      "@type": "owl:Ontology",
+      "owl:imports": [
+        {
+          "@id": "http://www.w3.org/2004/02/skos/core"
+        },
+        {
+          "@id": "dcterms:"
+        },
+        {
+          "@id": "http://www.w3.org/2008/05/skos-xl"
+        },
+        {
+          "@id": "http://topbraid.org/schema/schema-single-range"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Suomi",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-fin",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@language": "en",
+        "@value": "FIN"
+      },
+      "rdfs:label": "FIN",
+      "skos:altLabel": "suomi",
+      "skos:prefLabel": "FIN"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#similarity_source",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Similarity to Source",
+      "skos:prefLabel": "SIMILARITY TO SOURCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#example_n",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Example",
+      "skos:prefLabel": "Example"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#pending",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Status",
+      "rdfs:label": "Pending",
+      "skos:prefLabel": "pending"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#withdrawn",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Decision",
+      "rdfs:label": "Withdrawn",
+      "skos:prefLabel": "withdrawn"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "@type": "owl:Class",
+      "rdfs:label": "Language Code",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:note": "Class instances here are the capitalized three-letter language codes in English and given language text..",
+      "skos:prefLabel": "Language Code"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#French",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-fra",
+      "rdfs:label": "FRA",
+      "skos:altLabel": "fra",
+      "skos:prefLabel": "FRA"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#deprecated",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Term_Classification",
+      "rdfs:label": "deprecated",
+      "skos:prefLabel": "deprecated"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#ISO_Standard_Reference",
+      "@type": "owl:Class",
+      "rdfs:comment": "This class captures reference instances to ISO Standard(s) represented in this concept scheme.",
+      "rdfs:label": "ISO Standard Reference",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "ISO STANDARD REFERENCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#English_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2019-10-16"
+      },
+      "dcterms:title": "ISO/TC 211 Glossary of Terms - English",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2019-10-16"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#English_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "English Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-eng"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "@type": "owl:Class",
+      "rdfs:label": "Language node",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "Language Label"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#classification",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "classification",
+      "skos:altLabel": "Term Classification",
+      "skos:prefLabel": "Classification"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Swedish_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": "ISO/TC 211:s flerspråkiga ordlista - Svenska",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Swedish_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "Swedish Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-swe"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Review_Decision",
+      "@type": "owl:Class",
+      "rdfs:label": "Review Decision",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "REVIEW DECISION"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Spanish",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-spa",
+      "rdfs:label": "SPA",
+      "skos:altLabel": "spa",
+      "skos:prefLabel": "SPA"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Dutch_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dutch Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DUT"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#admitted",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Term_Classification",
+      "rdfs:label": "Admitted",
+      "skos:prefLabel": "admitted"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#retirement",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Type",
+      "rdfs:label": "Retirement",
+      "skos:prefLabel": "retirement"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#glossary_release",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Glossary Release",
+      "skos:altLabel": "RELEASE",
+      "skos:prefLabel": "GLOSSARY RELEASE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#term_synonym",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Term Synonyms",
+      "skos:prefLabel": "TERM SYNONYMS"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Chinese",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-chn",
+      "rdfs:label": "CHN",
+      "skos:altLabel": "注册",
+      "skos:prefLabel": "CHN"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#release",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Glossary Release",
+      "skos:altLabel": "RELEASE",
+      "skos:prefLabel": "GLOSSARY RELEASE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#German",
+      "@type": "schema:Language",
+      "dcterms:source": "https://www.geolexica.org/registers/#language-ger",
+      "rdfs:label": "GER",
+      "skos:altLabel": "ger",
+      "skos:prefLabel": "GER"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Bahasa_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2018-10-30"
+      },
+      "dcterms:title": "(Type here in Operating Language)",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Bahasa_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "Bahasa Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-msa"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Review_Type",
+      "@type": "owl:Class",
+      "rdfs:label": "Review Type",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "REVIEW TYPE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#preferred",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Term_Classification",
+      "rdfs:label": "Preferred",
+      "skos:prefLabel": "preferred"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#ISO_Standard_Link",
+      "@type": "owl:Class",
+      "rdfs:comment": "This class captures reference instances to ISO Standard(s) represented in this concept scheme.",
+      "rdfs:label": "ISO Reference URL",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "ISO REFERENCE URL"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#German_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "German Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GER"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#specialisation",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Specialisation",
+      "skos:hiddenLabel": "5",
+      "skos:prefLabel": "specialisation"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Finnish_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Finnish Language Code"
+      },
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "FIN"
+        },
+        {
+          "@language": "fi",
+          "@value": "Suomi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Swedish_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sedish Language Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "SWE"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#authoritative_source",
+      "@type": "owl:ObjectProperty",
+      "owl:sameAs": {
+        "@id": "dcterms:source"
+      },
+      "rdfs:label": "Authoritative Source",
+      "skos:altLabel": "Source",
+      "skos:prefLabel": "AUTHORITATIVE SOURCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#ref",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Reference",
+      "skos:prefLabel": "REFERENCE"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Review_Indicator",
+      "@type": "owl:Class",
+      "rdfs:label": "Review Indicator",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "skos:inScheme": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#GeolexicaConceptScheme"
+      },
+      "skos:prefLabel": "REVIEW INDICATOR"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#term_abbreviation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Term Abbrevation",
+      "skos:prefLabel": "TERM ABBREVIATION"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Arabic_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": {
+        "@language": "ar",
+        "@value": "المهندس/ محمد بن سعد دلبوح"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Arabic_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "Arabic Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-ara"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Korean_code",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Code",
+      "rdfs:label": "Korean Language Code",
+      "skos:prefLabel": [
+        {
+          "@language": "en",
+          "@value": "KOR"
+        },
+        {
+          "@language": "kr",
+          "@value": "한국어"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#definition",
+      "@type": "owl:ObjectProperty",
+      "owl:sameAs": {
+        "@id": "skos:definition"
+      },
+      "rdfs:label": "definition",
+      "skos:prefLabel": "Definition"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#hasInfo",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "Info",
+      "skos:prefLabel": "INFO"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#supersession",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Type",
+      "rdfs:label": "Supersession",
+      "skos:prefLabel": "supersession"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#under_review",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Review_Indicator",
+      "rdfs:label": "Under Review in Source Document",
+      "skos:prefLabel": "Under Review in Source Document"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Chinese_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2017-10-19"
+      },
+      "dcterms:title": {
+        "@language": "zh",
+        "@value": "注册"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2017-10-19"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Chinese_code"
+      },
+      "rdfs:label": "Chinese Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-chn"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#Spanish_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2019-01-23"
+      },
+      "dcterms:title": "Glosario de terminos de ISO/TC211",
+      "https://www.geolexica.org/api/geolexica-ap#classification": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#preferred"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": {
+        "@type": "xsd:date",
+        "@value": "2007-10-15"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#entry_status": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Valid"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#Spanish_code"
+      },
+      "https://www.geolexica.org/api/geolexica-ap#release": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#release1"
+      },
+      "rdfs:label": "Spanish Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-spa"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#context_added",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Context added",
+      "skos:hiddenLabel": "3",
+      "skos:prefLabel": "context added"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#French_Node",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Language_Node",
+      "dcterms:modified": {
+        "@type": "xsd:anyURI",
+        "@value": "2019-10-16"
+      },
+      "dcterms:title": "Glossaire en français des termes de l’ISO/TC 211",
+      "https://www.geolexica.org/api/geolexica-ap#date_accepted": "2007-10-15",
+      "https://www.geolexica.org/api/geolexica-ap#language_code": {
+        "@id": "https://www.geolexica.org/api/geolexica-ap#French_code"
+      },
+      "rdfs:label": "French Language Node",
+      "schema:mainEntityOfPage": {
+        "@type": "xsd:anyURI",
+        "@value": "https://www.geolexica.org/registers/#language-fra"
+      }
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#restyled",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Similarity",
+      "rdfs:label": "Restyled",
+      "skos:hiddenLabel": "2",
+      "skos:prefLabel": "restyled"
+    },
+    {
+      "@id": "https://www.geolexica.org/api/geolexica-ap#release2_retired",
+      "@type": "https://www.geolexica.org/api/geolexica-ap#Glossary_Release",
+      "rdfs:label": "Release 2 Retired",
+      "skos:hiddenLabel": "-2",
+      "skos:prefLabel": "release2_retired"
     }
-  }, {
-    "@id" : "#Chinese",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-chn",
-    "altLabel" : "注册",
-    "prefLabel" : "CHN"
-  }, {
-    "@id" : "#Chinese_Node",
-    "modified" : "2017-10-19",
-    "title" : {
-      "@language" : "zh",
-      "@value" : "注册"
-    },
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-chn",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Chinese Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2017-10-19",
-    "entry_status" : "#Valid",
-    "language_code" : "#Chinese_code"
-  }, {
-    "@id" : "#Chinese_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Chinese Language Code"
-    },
-    "prefLabel" : [ {
-      "@language" : "zh",
-      "@value" : "注册"
-    }, {
-      "@language" : "en",
-      "@value" : "CHN"
-    } ]
-  }, {
-    "@id" : "#Danish_Node",
-    "modified" : "2019-08-08",
-    "title" : "ISO/TC 211 Glossary of Terms - Dansk",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-dan",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Danish Language Node",
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "DAN"
-    },
-    "language_code" : "#Danish_code"
-  }, {
-    "@id" : "#Danish_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Danish Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "DAN"
-    }
-  }, {
-    "@id" : "#Dansk",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-dan",
-    "altLabel" : "dan",
-    "prefLabel" : "DAN"
-  }, {
-    "@id" : "#Dutch_Node",
-    "modified" : "2017-10-19",
-    "title" : "ISO/TC 211 meertalig woordenboek - Nederlands",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-dut",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Dutch Language Node",
-    "language_code" : "#Dutch_code"
-  }, {
-    "@id" : "#Dutch_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Dutch Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "DUT"
-    }
-  }, {
-    "@id" : "#English",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-eng",
-    "prefLabel" : "ENG"
-  }, {
-    "@id" : "#English_Node",
-    "modified" : "2019-10-16",
-    "title" : "ISO/TC 211 Glossary of Terms - English",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-eng",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "English Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2019-10-16",
-    "entry_status" : "#Valid",
-    "language_code" : "#English_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#English_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "English Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "ENG"
-    }
-  }, {
-    "@id" : "#Entry_Status",
-    "@type" : "owl:Class",
-    "label" : "Entry Status",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "ENTRY STATUS"
-  }, {
-    "@id" : "#Finnish_Node",
-    "modified" : "2017-10-19",
-    "title" : "ISO/TC 211 Monikielinen termistö - Suomi",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-fin",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Finnish Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2017-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Finnish_code"
-  }, {
-    "@id" : "#Finnish_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Finnish Language Code"
-    },
-    "prefLabel" : [ {
-      "@language" : "fi",
-      "@value" : "Suomi"
-    }, {
-      "@language" : "en",
-      "@value" : "FIN"
-    } ]
-  }, {
-    "@id" : "#French",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-fra",
-    "altLabel" : "fra",
-    "prefLabel" : "FRA"
-  }, {
-    "@id" : "#French_Node",
-    "modified" : "2019-10-16",
-    "title" : "Glossaire en français des termes de l’ISO/TC 211",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-fra",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "French Language Node",
-    "https://www.geolexica.org/api/rdf-profile#date_accepted" : "2007-10-15",
-    "language_code" : "#French_code"
-  }, {
-    "@id" : "#French_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "French Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "FRA"
-    }
-  }, {
-    "@id" : "#GeolexicaConceptScheme",
-    "@type" : "skos:ConceptScheme",
-    "prefLabel" : "Geolexica Concept Scheme"
-  }, {
-    "@id" : "#German",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-ger",
-    "altLabel" : "ger",
-    "prefLabel" : "GER"
-  }, {
-    "@id" : "#German_Node",
-    "modified" : "2019-10-19",
-    "title" : "ISO/TC 211 Glossary of Terms - German",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-ger",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "German Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_node" : "#German_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#German_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "German Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "GER"
-    }
-  }, {
-    "@id" : "#Glossary_Release",
-    "@type" : "owl:Class",
-    "label" : "Glossary Release",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "GLOSSARY RELEASE"
-  }, {
-    "@id" : "#ISO_19132_2007",
-    "source" : {
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-      "@value" : "https://www.iso.org/standard/40601.html"
-    },
-    "rdf:type" : {
-      "@id" : "#ISO_Standard_Reference"
-    },
-    "comment" : "ISO 19132:2007 defines a reference model and a conceptual framework for location-based services (LBS).",
-    "label" : "ISO 19132:2007 Standard",
-    "prefLabel" : "ISO 19132:2007 STANDARD"
-  }, {
-    "@id" : "#ISO_19132_2007_Link",
-    "source" : {
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-      "@value" : "https://www.iso.org/standard/40601.html"
-    },
-    "rdf:type" : {
-      "@id" : "#ISO_Standard_Link"
-    },
-    "note" : "This is a URL link to ISO 19132:2007.",
-    "prefLabel" : "ISO 19132:2007 URL"
-  }, {
-    "@id" : "#ISO_Standard_Link",
-    "@type" : "owl:Class",
-    "comment" : "This class captures reference instances to ISO Standard(s) represented in this concept scheme.",
-    "label" : "ISO Reference URL",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "ISO REFERENCE URL"
-  }, {
-    "@id" : "#ISO_Standard_Reference",
-    "@type" : "owl:Class",
-    "comment" : "This class captures reference instances to ISO Standard(s) represented in this concept scheme.",
-    "label" : "ISO Standard Reference",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "ISO STANDARD REFERENCE"
-  }, {
-    "@id" : "#Japanese",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-jpn",
-    "altLabel" : "日本語",
-    "prefLabel" : "JPN"
-  }, {
-    "@id" : "#Japanese_Node",
-    "modified" : "2017-10-19",
-    "title" : "ISO/TC211関連JIS用語集",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-jpn",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Japanese Language Node",
-    "language_code" : "#Japanese_code"
-  }, {
-    "@id" : "#Japanese_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Japanese Language Code"
-    },
-    "prefLabel" : [ {
-      "@language" : "jp",
-      "@value" : "日本語"
-    }, {
-      "@language" : "en",
-      "@value" : "JPN"
-    } ]
-  }, {
-    "@id" : "#Korean",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-kor",
-    "altLabel" : "한국어",
-    "prefLabel" : "KOR"
-  }, {
-    "@id" : "#Korean_Node",
-    "modified" : "2017-10-19",
-    "title" : "ISO/TC211 지리정보 - 용어 표준",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-kor",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Korean Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2009-12-29",
-    "entry_status" : "#Valid",
-    "language_code" : "#Korean_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#Korean_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : "Korean Language Code",
-    "prefLabel" : [ {
-      "@language" : "kr",
-      "@value" : "한국어"
-    }, {
-      "@language" : "en",
-      "@value" : "KOR"
-    } ]
-  }, {
-    "@id" : "#Language_Code",
-    "@type" : "owl:Class",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "note" : "Class instances here are the capitalized three-letter language codes in English and given language text..",
-    "prefLabel" : "Language Code"
-  }, {
-    "@id" : "#Language_Node",
-    "@type" : "owl:Class",
-    "label" : "Language node",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "Language Label"
-  }, {
-    "@id" : "#Malaysian",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-msa",
-    "altLabel" : "bahasa",
-    "prefLabel" : "MSA"
-  }, {
-    "@id" : "#Not_Valid",
-    "rdf:type" : {
-      "@id" : "#Entry_Status"
-    },
-    "label" : "Not valid",
-    "prefLabel" : "notValid"
-  }, {
-    "@id" : "#Polski",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-fin",
-    "altLabel" : "polski",
-    "prefLabel" : "POL"
-  }, {
-    "@id" : "#Polski_Node",
-    "modified" : "2017-10-19",
-    "title" : "Słownik terminologiczny ISO/TC 211 - Polski",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-pol",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Polish Language Node",
-    "language_code" : "#Polski_code"
-  }, {
-    "@id" : "#Polski_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Polish Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "POL"
-    }
-  }, {
-    "@id" : "#Retired",
-    "rdf:type" : {
-      "@id" : "#Entry_Status"
-    },
-    "label" : "Retired",
-    "prefLabel" : "retired"
-  }, {
-    "@id" : "#Review_Decision",
-    "@type" : "owl:Class",
-    "label" : "Review Decision",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "REVIEW DECISION"
-  }, {
-    "@id" : "#Review_Indicator",
-    "@type" : "owl:Class",
-    "label" : "Review Indicator",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "REVIEW INDICATOR"
-  }, {
-    "@id" : "#Review_Type",
-    "@type" : "owl:Class",
-    "label" : "Review Type",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "REVIEW TYPE"
-  }, {
-    "@id" : "#Russian",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-fin",
-    "altLabel" : "rus",
-    "prefLabel" : "RUS"
-  }, {
-    "@id" : "#Russian_Node",
-    "modified" : "2017-10-16",
-    "title" : "Словарь терминов ISO/TC 211 - Российская Федерация",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-rus",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Russian Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Russian_code"
-  }, {
-    "@id" : "#Russian_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Russian Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "RUS"
-    }
-  }, {
-    "@id" : "#Similarity",
-    "@type" : "owl:Class",
-    "label" : "Similarity to Authoritative Source",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "SIMILARITY TO AUTHORITATIVE SOURCE"
-  }, {
-    "@id" : "#Source",
-    "@type" : "owl:Class",
-    "label" : "Source",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "SOURCE"
-  }, {
-    "@id" : "#Spanish",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-spa",
-    "altLabel" : "spa",
-    "prefLabel" : "SPA"
-  }, {
-    "@id" : "#Spanish_Node",
-    "modified" : "2019-01-23",
-    "title" : "Glosario de terminos de ISO/TC211",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-spa",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Spanish Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Spanish_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#Spanish_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Spanish Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "SPA"
-    }
-  }, {
-    "@id" : "#Status",
-    "@type" : "owl:Class",
-    "label" : "Status",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "STATUS"
-  }, {
-    "@id" : "#Suomi",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-fin",
-    "altLabel" : "suomi",
-    "prefLabel" : "FIN",
-    "https://www.geolexica.org/api/rdf-profile#language_code" : {
-      "@language" : "en",
-      "@value" : "FIN"
-    }
-  }, {
-    "@id" : "#Superceded",
-    "rdf:type" : {
-      "@id" : "#Entry_Status"
-    },
-    "label" : "Superceded",
-    "prefLabel" : "superceded"
-  }, {
-    "@id" : "#Svenska",
-    "@type" : "schema:Language",
-    "source" : "https://www.geolexica.org/registers/#language-swe",
-    "altLabel" : "svenska",
-    "prefLabel" : "SWE"
-  }, {
-    "@id" : "#Swedish_Node",
-    "modified" : "2017-10-19",
-    "title" : "ISO/TC 211:s flerspråkiga ordlista - Svenska",
-    "mainEntityOfPage" : "https://www.geolexica.org/registers/#language-swe",
-    "rdf:type" : {
-      "@id" : "#Language_Node"
-    },
-    "label" : "Swedish Language Node",
-    "classification" : "#preferred",
-    "date_accepted" : "2007-10-15",
-    "entry_status" : "#Valid",
-    "language_code" : "#Swedish_code",
-    "release" : "release:1"
-  }, {
-    "@id" : "#Swedish_code",
-    "rdf:type" : {
-      "@id" : "#Language_Code"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Sedish Language Code"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "SWE"
-    }
-  }, {
-    "@id" : "#Term",
-    "@type" : "owl:Class",
-    "label" : "Term Concept",
-    "subClassOf" : "skos:Concept"
-  }, {
-    "@id" : "#Term_Classification",
-    "@type" : "owl:Class",
-    "label" : "Term classification",
-    "subClassOf" : "schema:Intangible",
-    "inScheme" : "#GeolexicaConceptScheme",
-    "prefLabel" : "TERM CLASSIFICATION"
-  }, {
-    "@id" : "#Term_ID",
-    "@type" : "owl:Class",
-    "subClassOf" : "schema:Intangible",
-    "note" : "This class may not be needed due to glossary.csv import.",
-    "prefLabel" : "TERM ID"
-  }, {
-    "@id" : "#Valid",
-    "rdf:type" : {
-      "@id" : "#Entry_Status"
-    },
-    "label" : "Valid",
-    "prefLabel" : "valid"
-  }, {
-    "@id" : "#admitted",
-    "rdf:type" : {
-      "@id" : "#Term_Classification"
-    },
-    "label" : "Admitted",
-    "prefLabel" : "admitted"
-  }, {
-    "@id" : "#authoritative_source",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Authoritative Source",
-    "sameAs" : "dcterms:source",
-    "altLabel" : "Source",
-    "prefLabel" : "AUTHORITATIVE SOURCE"
-  }, {
-    "@id" : "#classification",
-    "@type" : "owl:ObjectProperty",
-    "label" : "classification",
-    "altLabel" : "Term Classification",
-    "prefLabel" : "Classification"
-  }, {
-    "@id" : "#context_added",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Context added",
-    "hiddenLabel" : "3",
-    "prefLabel" : "context added"
-  }, {
-    "@id" : "#country_code",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Country Code",
-    "prefLabel" : "COUNTRY CODE"
-  }, {
-    "@id" : "#date_accepted",
-    "@type" : "owl:DatatypeProperty",
-    "label" : "Date Accepted",
-    "prefLabel" : "DATE ACCEPTED"
-  }, {
-    "@id" : "#date_amended",
-    "@type" : "owl:DatatypeProperty",
-    "label" : "Date Amended",
-    "prefLabel" : "DATE AMENDED"
-  }, {
-    "@id" : "#definition",
-    "@type" : "owl:ObjectProperty",
-    "label" : "definition",
-    "sameAs" : "skos:definition",
-    "prefLabel" : "Definition"
-  }, {
-    "@id" : "#deprecated",
-    "rdf:type" : {
-      "@id" : "#Term_Classification"
-    },
-    "prefLabel" : "deprecated"
-  }, {
-    "@id" : "#empty_field",
-    "rdf:type" : {
-      "@id" : "#Review_Indicator"
-    },
-    "label" : "Empty field",
-    "prefLabel" : "empty field"
-  }, {
-    "@id" : "#entry_status",
-    "@type" : "owl:ObjectProperty",
-    "prefLabel" : "Entry Status"
-  }, {
-    "@id" : "#example_n",
-    "@type" : "owl:ObjectProperty",
-    "prefLabel" : "Example"
-  }, {
-    "@id" : "#final",
-    "rdf:type" : {
-      "@id" : "#Status"
-    },
-    "label" : "Final",
-    "prefLabel" : "final"
-  }, {
-    "@id" : "#generalisation",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Generalisation",
-    "hiddenLabel" : "4",
-    "prefLabel" : "generalisation"
-  }, {
-    "@id" : "#glossary_release",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Glossary Release",
-    "altLabel" : "RELEASE",
-    "prefLabel" : "GLOSSARY RELEASE"
-  }, {
-    "@id" : "#hasInfo",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Info",
-    "prefLabel" : "INFO"
-  }, {
-    "@id" : "#hasReview",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review",
-    "prefLabel" : "REVIEW"
-  }, {
-    "@id" : "#identical",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Identical",
-    "hiddenLabel" : "1",
-    "prefLabel" : "identical"
-  }, {
-    "@id" : "#language_code",
-    "@type" : "owl:ObjectProperty",
-    "label" : "3 Letter Language Code",
-    "note" : "Code should be three (3) capitalized letters in Latin Alphabet.",
-    "prefLabel" : "3 LETTER LANGUAGE CODE"
-  }, {
-    "@id" : "#language_node",
-    "@type" : "owl:ObjectProperty",
-    "label" : "3 Letter Language Code",
-    "note" : "Code should be three (3) capitalized letters in Latin Alphabet.",
-    "prefLabel" : "3 LETTER LANGUAGE CODE"
-  }, {
-    "@id" : "#lineage_source",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Lineage Source",
-    "prefLabel" : "LINEAGE SOURCE"
-  }, {
-    "@id" : "#link",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Link",
-    "prefLabel" : "LINK"
-  }, {
-    "@id" : "#notAccepted",
-    "rdf:type" : {
-      "@id" : "#Review_Decision"
-    },
-    "label" : "Not Accepted",
-    "prefLabel" : "notAccepted"
-  }, {
-    "@id" : "#note_n",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Note",
-    "prefLabel" : "NOTE"
-  }, {
-    "@id" : "#pending",
-    "rdf:type" : {
-      "@id" : "#Status"
-    },
-    "label" : "Pending",
-    "prefLabel" : "pending"
-  }, {
-    "@id" : "#preferred",
-    "rdf:type" : {
-      "@id" : "#Term_Classification"
-    },
-    "label" : "Preferred",
-    "prefLabel" : "preferred"
-  }, {
-    "@id" : "#ref",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Reference",
-    "prefLabel" : "REFERENCE"
-  }, {
-    "@id" : "#release",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Glossary Release",
-    "altLabel" : "RELEASE",
-    "prefLabel" : "GLOSSARY RELEASE"
-  }, {
-    "@id" : "release:1",
-    "rdf:type" : {
-      "@id" : "#Glossary_Release"
-    },
-    "label" : "Release 1",
-    "hiddenLabel" : "1",
-    "prefLabel" : "release1"
-  }, {
-    "@id" : "release:1_retired",
-    "rdf:type" : {
-      "@id" : "#Glossary_Release"
-    },
-    "label" : "Release 1 Retired",
-    "hiddenLabel" : "-1",
-    "prefLabel" : "release1_retired"
-  }, {
-    "@id" : "release:2",
-    "rdf:type" : {
-      "@id" : "#Glossary_Release"
-    },
-    "label" : "Release 2",
-    "hiddenLabel" : "-2",
-    "prefLabel" : "release2"
-  }, {
-    "@id" : "release:2_retired",
-    "rdf:type" : {
-      "@id" : "#Glossary_Release"
-    },
-    "label" : "Release 2 Retired",
-    "hiddenLabel" : "-2",
-    "prefLabel" : "release2_retired"
-  }, {
-    "@id" : "#restyled",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Restyled",
-    "hiddenLabel" : "2",
-    "prefLabel" : "restyled"
-  }, {
-    "@id" : "#retirement",
-    "rdf:type" : {
-      "@id" : "#Review_Type"
-    },
-    "label" : "Retirement",
-    "prefLabel" : "retirement"
-  }, {
-    "@id" : "#review_date",
-    "@type" : "owl:DatatypeProperty",
-    "label" : "Review Date",
-    "prefLabel" : "REVIEW DATE"
-  }, {
-    "@id" : "#review_decision",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Decision",
-    "prefLabel" : "REVIEW DECISION"
-  }, {
-    "@id" : "#review_decision_event",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Decision Event",
-    "prefLabel" : "REVIEW DECISION EVENT"
-  }, {
-    "@id" : "#review_decision_notes",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Decision Notes",
-    "prefLabel" : "REVIEW DECISION NOTES"
-  }, {
-    "@id" : "#review_indicator",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Indicator",
-    "prefLabel" : "REVIEW INDICATOR"
-  }, {
-    "@id" : "#review_status",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Status",
-    "prefLabel" : "REVIEW STATUS"
-  }, {
-    "@id" : "#review_type",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Review Type",
-    "prefLabel" : "REVIEW TYPE"
-  }, {
-    "@id" : "#similarity_lineage_source",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Similarity to Lineage Source",
-    "prefLabel" : "SIMILARITY TO LINEAGE SOURCE"
-  }, {
-    "@id" : "#similarity_source",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Similarity to Source",
-    "prefLabel" : "SIMILARITY TO SOURCE"
-  }, {
-    "@id" : "#specialisation",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Specialisation",
-    "hiddenLabel" : "5",
-    "prefLabel" : "specialisation"
-  }, {
-    "@id" : "#status",
-    "@type" : "owl:ObjectProperty",
-    "altLabel" : "Entry Status",
-    "prefLabel" : "Status"
-  }, {
-    "@id" : "#supersession",
-    "rdf:type" : {
-      "@id" : "#Review_Type"
-    },
-    "label" : "Supersession",
-    "prefLabel" : "supersession"
-  }, {
-    "@id" : "#tentative",
-    "rdf:type" : {
-      "@id" : "#Status"
-    },
-    "label" : "Tentative",
-    "prefLabel" : "tentative"
-  }, {
-    "@id" : "#term",
-    "@type" : "owl:ObjectProperty",
-    "label" : "term",
-    "prefLabel" : "TERM"
-  }, {
-    "@id" : "#termID",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Term ID",
-    "prefLabel" : "TERM ID"
-  }, {
-    "@id" : "#term_abbreviation",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Term Abbrevation",
-    "prefLabel" : "TERM ABBREVIATION"
-  }, {
-    "@id" : "#term_synonym",
-    "@type" : "owl:ObjectProperty",
-    "label" : "Term Synonyms",
-    "prefLabel" : "TERM SYNONYMS"
-  }, {
-    "@id" : "#under_review",
-    "rdf:type" : {
-      "@id" : "#Review_Indicator"
-    },
-    "prefLabel" : "Under Review in Source Document"
-  }, {
-    "@id" : "#unspecified",
-    "rdf:type" : {
-      "@id" : "#Similarity"
-    },
-    "label" : "Unspecified",
-    "hiddenLabel" : "6",
-    "prefLabel" : "unspecified"
-  }, {
-    "@id" : "#withdrawn",
-    "rdf:type" : {
-      "@id" : "#Review_Decision"
-    },
-    "label" : "Withdrawn",
-    "prefLabel" : "withdrawn"
-  }, {
-    "@id" : "urn:x-evn-master:geolexica_ap",
-    "@type" : "owl:Ontology",
-    "status" : "metadata:UnderDevelopmentStatus",
-    "defaultNamespace" : "https://www.geolexica.org/com/geolexica-ap#",
-    "externalGraphURI" : "./",
-    "rdf:type" : [ {
-      "@id" : "teamwork:Vocabulary"
-    }, {
-      "@id" : "http://teamwork.topbraidlive.org/ontologyprojects#Ontology"
-    } ],
-    "label" : "geolexica-ap",
-    "imports" : [ "http://topbraid.org/teamworkconstraints", "http://www.w3.org/2004/02/skos/core", "http://datashapes.org/graphql", "http://purl.org/dc/terms/", "http://topbraid.org/schema/schema-single-range" ]
-  } ],
-  "@context" : {
-    "label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "language_code" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#language_code",
-      "@type" : "@id"
-    },
-    "entry_status" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#entry_status",
-      "@type" : "@id"
-    },
-    "date_accepted" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#date_accepted",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "classification" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#classification",
-      "@type" : "@id"
-    },
-    "mainEntityOfPage" : {
-      "@id" : "http://schema.org/mainEntityOfPage",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "title" : {
-      "@id" : "http://purl.org/dc/terms/title"
-    },
-    "prefLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
-    },
-    "note" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#note"
-    },
-    "altLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
-    },
-    "subClassOf" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
-    "inScheme" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type" : "@id"
-    },
-    "sameAs" : {
-      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
-      "@type" : "@id"
-    },
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source"
-    },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "hiddenLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel"
-    },
-    "release" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#release",
-      "@type" : "@id"
-    },
-    "language_node" : {
-      "@id" : "https://www.geolexica.org/api/rdf-profile#language_node",
-      "@type" : "@id"
-    },
-    "status" : {
-      "@id" : "http://topbraid.org/metadata#status",
-      "@type" : "@id"
-    },
-    "defaultNamespace" : {
-      "@id" : "http://topbraid.org/swa#defaultNamespace"
-    },
-    "imports" : {
-      "@id" : "http://www.w3.org/2002/07/owl#imports",
-      "@type" : "@id"
-    },
-    "externalGraphURI" : {
-      "@id" : "http://topbraid.org/teamwork#externalGraphURI",
-      "@type" : "@id"
-    },
-    "schema" : "http://schema.org/",
-    "metadata" : "http://topbraid.org/metadata#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "owl" : "http://www.w3.org/2002/07/owl#",
-    "teamwork" : "http://topbraid.org/teamwork#",
-    "dcterms" : "http://purl.org/dc/terms/",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
-  }
+  ]
 }

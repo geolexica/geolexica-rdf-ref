@@ -1,25 +1,26 @@
-# baseURI: https://www.geolexica.org/concepts/infopage
+# baseURI: https://www.geolexica.org/api/page
 # imports: http://purl.org/dc/terms/
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: https://www.geolexica.org/api/geolexica-ap
 
-@prefix : <https://www.geolexica.org/concepts/infopage#> .
+@prefix : <https://www.geolexica.org/api/page#> .
+@prefix geolexica-ap: <https://www.geolexica.org/api/geolexica-ap#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdf-profile: <https://www.geolexica.org/api/geolexica-ap#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://www.geolexica.org/concepts/infopage>
+<https://www.geolexica.org/api/page>
   rdf:type owl:Ontology ;
   owl:imports <http://purl.org/dc/terms/> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
-  skos:changeNote "Changed file name from 47.ttl to geolexica-pages.ttl; it now reflect a template form." ;
+  skos:changeNote "Renamed file 47.ttl to geolexica-pages.ttl; template." ;
 .
-:term-instance
-  rdf:type skos:Concept ;
+:term-item
+  rdf:type schema:ItemPage ;
   rdfs:label "cluster" ;
   skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
   skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
@@ -42,20 +43,20 @@
   skos:prefLabel "تجميع"@ar ;
   skos:prefLabel "簇"@zh ;
   skos:prefLabel "클러스터"@kr ;
-  rdf-profile:authoritative_source rdf-profile:ISO_19132_2007_Link ;
-  rdf-profile:language_node rdf-profile:Arabic_Node ;
-  rdf-profile:language_node rdf-profile:Bahasa_Node ;
-  rdf-profile:language_node rdf-profile:Chinese_Node ;
-  rdf-profile:language_node rdf-profile:Danish_Node ;
-  rdf-profile:language_node rdf-profile:Dutch_Node ;
-  rdf-profile:language_node rdf-profile:English_Node ;
-  rdf-profile:language_node rdf-profile:Finnish_Node ;
-  rdf-profile:language_node rdf-profile:French_Node ;
-  rdf-profile:language_node rdf-profile:German_Node ;
-  rdf-profile:language_node rdf-profile:Japanese_Node ;
-  rdf-profile:language_node rdf-profile:Korean_Node ;
-  rdf-profile:language_node rdf-profile:Polski_Node ;
-  rdf-profile:language_node rdf-profile:Russian_Node ;
-  rdf-profile:language_node rdf-profile:Spanish_Node ;
-  rdf-profile:language_node rdf-profile:Swedish_Node ;
+  geolexica-ap:authoritative_source geolexica-ap:ISO_19132_2007_Link ;
+  geolexica-ap:language_node geolexica-ap:Arabic_Node ;
+  geolexica-ap:language_node geolexica-ap:Bahasa_Node ;
+  geolexica-ap:language_node geolexica-ap:Chinese_Node ;
+  geolexica-ap:language_node geolexica-ap:Danish_Node ;
+  geolexica-ap:language_node geolexica-ap:Dutch_Node ;
+  geolexica-ap:language_node geolexica-ap:English_Node ;
+  geolexica-ap:language_node geolexica-ap:Finnish_Node ;
+  geolexica-ap:language_node geolexica-ap:French_Node ;
+  geolexica-ap:language_node geolexica-ap:German_Node ;
+  geolexica-ap:language_node geolexica-ap:Japanese_Node ;
+  geolexica-ap:language_node geolexica-ap:Korean_Node ;
+  geolexica-ap:language_node geolexica-ap:Polski_Node ;
+  geolexica-ap:language_node geolexica-ap:Russian_Node ;
+  geolexica-ap:language_node geolexica-ap:Spanish_Node ;
+  geolexica-ap:language_node geolexica-ap:Swedish_Node ;
 .
