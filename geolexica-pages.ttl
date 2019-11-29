@@ -1,9 +1,9 @@
 # baseURI: https://www.geolexica.org/api/page
-# imports: http://purl.org/dc/terms/
-# imports: http://www.w3.org/2004/02/skos/core
+# imports: https://www.geolexica.org/api/country-codes
 # imports: https://www.geolexica.org/api/geolexica-ap
 
 @prefix : <https://www.geolexica.org/api/page#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geolexica-ap: <https://www.geolexica.org/api/geolexica-ap#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,16 +12,20 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geolexica-ap:date_accepted
+  owl:sameAs dcterms:dateAccepted ;
+.
 <https://www.geolexica.org/api/page>
   rdf:type owl:Ontology ;
-  owl:imports <http://purl.org/dc/terms/> ;
-  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <https://www.geolexica.org/api/country-codes> ;
   owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
-  skos:changeNote "Renamed file 47.ttl to geolexica-pages.ttl; template." ;
 .
 :term-item
   rdf:type schema:ItemPage ;
-  rdfs:label "cluster" ;
+  dcterms:format geolexica-ap:linked_data_api ;
+  dcterms:identifier "geolexica-ap:empty_field" ;
+  rdfs:label "term item" ;
+  skos:altLabel "TERM ITEM" ;
   skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
   skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
   skos:definition "collection of targets potentially heterogeneous (each satisfying a different query criteria) whose locations fall within a small neighbourhood"@en ;
@@ -36,14 +40,47 @@
   skos:prefLabel "cluster"@en ;
   skos:prefLabel "cluster"@es ;
   skos:prefLabel "grappe"@fr ;
-  skos:prefLabel "gugusan"@ms ;
+  skos:prefLabel "gugusan"@my ;
   skos:prefLabel "kluster"@sv ;
   skos:prefLabel "klusteri"@fi ;
   skos:prefLabel "кластер"@ru ;
   skos:prefLabel "تجميع"@ar ;
   skos:prefLabel "簇"@zh ;
   skos:prefLabel "클러스터"@kr ;
-  geolexica-ap:authoritative_source geolexica-ap:ISO_19132_2007_Link ;
+  geolexica-ap:authoritative_source geolexica-ap:ISO_19132_2007 ;
+  geolexica-ap:classification geolexica-ap:preferred ;
+  geolexica-ap:conceptURI geolexica-ap:Concept_URI ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#China> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Finland> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#France> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Germany> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Malaysia> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Republic_of_Korea__the> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Russian_Federation__the> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Saudi_Arabia> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Spain> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Sweden> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#United_Kingdom_of_Great_Britain_and_Northern_Ireland__the> ;
+  geolexica-ap:date_accepted "2019-11-28"^^xsd:date ;
+  geolexica-ap:date_amended "2019-11-28"^^xsd:date ;
+  geolexica-ap:entry_status geolexica-ap:Valid ;
+  geolexica-ap:example_n geolexica-ap:empty_field ;
+  geolexica-ap:glossary_release geolexica-ap:release1 ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#ARA-Arabic> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#CHI-Chinese> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#DAN-Danish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#DUT-Dutch_Flemish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#ENG-English> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#FIN-Finnish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#FRE-French> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#GER-German> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#JPN-Japanese> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#KOR-Korean> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#MAY-Malay> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#POL-Polish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#RUS-Russian> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#SPA-Spanish_Castilian> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#SWE-Swedish> ;
   geolexica-ap:language_node geolexica-ap:Arabic_Node ;
   geolexica-ap:language_node geolexica-ap:Bahasa_Node ;
   geolexica-ap:language_node geolexica-ap:Chinese_Node ;
@@ -59,4 +96,15 @@
   geolexica-ap:language_node geolexica-ap:Russian_Node ;
   geolexica-ap:language_node geolexica-ap:Spanish_Node ;
   geolexica-ap:language_node geolexica-ap:Swedish_Node ;
+  geolexica-ap:lineage_source geolexica-ap:identical ;
+  geolexica-ap:note_n geolexica-ap:empty_field ;
+  geolexica-ap:review_date "2019-11-28"^^xsd:date ;
+  geolexica-ap:review_decision geolexica-ap:accepted ;
+  geolexica-ap:review_decision_date "2019-11-28"^^xsd:date ;
+  geolexica-ap:review_decision_notes geolexica-ap:empty_field ;
+  geolexica-ap:review_indicator geolexica-ap:empty_field ;
+  geolexica-ap:review_type geolexica-ap:supersession ;
+  geolexica-ap:similarity_lineage_source geolexica-ap:identical ;
+  geolexica-ap:similarity_source geolexica-ap:identical ;
+  geolexica-ap:term_synonym geolexica-ap:synonym ;
 .
