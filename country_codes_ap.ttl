@@ -1,10 +1,12 @@
 # baseURI: https://www.geolexica.org/api/country-codes
 # imports: https://www.geolexica.org/api/geolexica-ap
+# imports: https://www.geolexica.org/api/geonames
 
 @prefix : <https://www.geolexica.org/api/country-codes#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix faocountry: <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#> .
 @prefix geolexica-ap: <https://www.geolexica.org/api/geolexica-ap#> .
+@prefix geonames: <https://www.geolexica.org/api/geonames#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -23932,7 +23934,6 @@ faocountry:non_self_governing
   rdfs:label "Non-self-governing territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:other ;
   owl:disjointWith faocountry:self_governing ;
@@ -24061,7 +24062,6 @@ faocountry:other
   rdfs:label "Other territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:non_self_governing ;
   owl:disjointWith faocountry:self_governing ;
@@ -24107,7 +24107,6 @@ faocountry:self_governing
   rdfs:label "Self-governing territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:non_self_governing ;
   owl:disjointWith faocountry:other ;
@@ -24455,5 +24454,11 @@ faocountry:western_Europe
    """ ;
   rdfs:label "country-codes" ;
   owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
+  owl:imports <https://www.geolexica.org/api/geonames> ;
   owl:versionInfo "version 1.1"@en ;
+.
+:ISO_3166_Codes
+  rdf:type owl:Class ;
+  rdfs:label "Other territory" ;
+  rdfs:subClassOf geolexica-ap:Country_Code ;
 .
