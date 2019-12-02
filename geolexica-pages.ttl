@@ -1,0 +1,108 @@
+# baseURI: https://www.geolexica.org/api/page
+# imports: https://www.geolexica.org/api/geolexica-ap
+
+@prefix : <https://www.geolexica.org/api/page#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica-ap: <https://www.geolexica.org/api/geolexica-ap#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geolexica-ap:date_accepted
+  owl:sameAs dcterms:dateAccepted ;
+.
+<https://www.geolexica.org/api/page>
+  rdf:type owl:Ontology ;
+  owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
+.
+:term-item
+  rdf:type schema:ItemPage ;
+  dcterms:format geolexica-ap:linked_data_api ;
+  dcterms:identifier "geolexica-ap:empty_field" ;
+  rdfs:label "term item" ;
+  skos:altLabel "TERM ITEM" ;
+  skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
+  skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
+  skos:definition "collection of targets potentially heterogeneous (each satisfying a different query criteria) whose locations fall within a small neighbourhood"@en ;
+  skos:definition "ensemble de cibles potentiellement hétérogènes (chacun satisfaisant un critère de requête différent) dont la localisation se trouve dans un voisinage proche"@fr ;
+  skos:definition "kokoelma mahdollisesti heterogeenisia (eri hakuehdot täyttäviä) kohteita, jotka sijaitsevat lähekkäin"@fi ;
+  skos:definition "samling av objekt som i något avseende liknar varandra eller ligger tillräckligt nära varandra och som därför behandlas som en enhet"@sv ;
+  skos:definition "совокупность целей, потенциально гетерогенных (каждая цель удовлетворяет своему критерию запроса), попадающих в некоторую малую окрестность"@ru ;
+  skos:definition "مجموعة أهداف غير متجانسة ( كلاً منها يحقق معيار استعلام مختلف) تقع مواضيعها ضمن جوار قريب"@ar ;
+  skos:definition "地点位于一个小区域内的具有潜在的不同类别的目标集合（每个目标都满足不同的查询准则）。"@zh ;
+  skos:definition "그 위치가 소규모 인접군 지역 내에 존재하는 잠재적으로 이질적인(서로 다른 질의 기준을 만족할 수 있는) 대상들의 모음"@kr ;
+  skos:prefLabel "Cluster"@de ;
+  skos:prefLabel "cluster"@en ;
+  skos:prefLabel "cluster"@es ;
+  skos:prefLabel "grappe"@fr ;
+  skos:prefLabel "gugusan"@my ;
+  skos:prefLabel "kluster"@sv ;
+  skos:prefLabel "klusteri"@fi ;
+  skos:prefLabel "кластер"@ru ;
+  skos:prefLabel "تجميع"@ar ;
+  skos:prefLabel "簇"@zh ;
+  skos:prefLabel "클러스터"@kr ;
+  geolexica-ap:authoritative_source geolexica-ap:ISO_19132_2007 ;
+  geolexica-ap:classification geolexica-ap:preferred ;
+  geolexica-ap:conceptURI geolexica-ap:Concept_URI ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#China> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Finland> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#France> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Germany> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Malaysia> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Republic_of_Korea__the> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Russian_Federation__the> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Saudi_Arabia> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Spain> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#Sweden> ;
+  geolexica-ap:country_code <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#United_Kingdom_of_Great_Britain_and_Northern_Ireland__the> ;
+  geolexica-ap:date_accepted "2019-11-28"^^xsd:date ;
+  geolexica-ap:date_amended "2019-11-28"^^xsd:date ;
+  geolexica-ap:entry_status geolexica-ap:Valid ;
+  geolexica-ap:example_n geolexica-ap:empty_field ;
+  geolexica-ap:glossary_release geolexica-ap:release1 ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#ARA-Arabic> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#CHI-Chinese> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#DAN-Danish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#DUT-Dutch_Flemish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#ENG-English> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#FIN-Finnish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#FRE-French> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#GER-German> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#JPN-Japanese> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#KOR-Korean> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#MAY-Malay> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#POL-Polish> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#RUS-Russian> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#SPA-Spanish_Castilian> ;
+  geolexica-ap:language_code <https://www.geolexica.org/api/language-codes#SWE-Swedish> ;
+  geolexica-ap:language_node geolexica-ap:Arabic_Node ;
+  geolexica-ap:language_node geolexica-ap:Bahasa_Node ;
+  geolexica-ap:language_node geolexica-ap:Chinese_Node ;
+  geolexica-ap:language_node geolexica-ap:Danish_Node ;
+  geolexica-ap:language_node geolexica-ap:Dutch_Node ;
+  geolexica-ap:language_node geolexica-ap:English_Node ;
+  geolexica-ap:language_node geolexica-ap:Finnish_Node ;
+  geolexica-ap:language_node geolexica-ap:French_Node ;
+  geolexica-ap:language_node geolexica-ap:German_Node ;
+  geolexica-ap:language_node geolexica-ap:Japanese_Node ;
+  geolexica-ap:language_node geolexica-ap:Korean_Node ;
+  geolexica-ap:language_node geolexica-ap:Polski_Node ;
+  geolexica-ap:language_node geolexica-ap:Russian_Node ;
+  geolexica-ap:language_node geolexica-ap:Spanish_Node ;
+  geolexica-ap:language_node geolexica-ap:Swedish_Node ;
+  geolexica-ap:lineage_source geolexica-ap:identical ;
+  geolexica-ap:note_n geolexica-ap:empty_field ;
+  geolexica-ap:review_date "2019-11-28"^^xsd:date ;
+  geolexica-ap:review_decision geolexica-ap:accepted ;
+  geolexica-ap:review_decision_date "2019-11-28"^^xsd:date ;
+  geolexica-ap:review_decision_notes geolexica-ap:empty_field ;
+  geolexica-ap:review_indicator geolexica-ap:empty_field ;
+  geolexica-ap:review_type geolexica-ap:supersession ;
+  geolexica-ap:similarity_lineage_source geolexica-ap:identical ;
+  geolexica-ap:similarity_source geolexica-ap:identical ;
+  geolexica-ap:term_synonym geolexica-ap:synonym ;
+.
