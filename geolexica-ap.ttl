@@ -3,7 +3,6 @@
 # imports: http://topbraid.org/schema/schema-single-range
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.w3.org/2008/05/skos-xl
-# imports: https://www.geolexica.org/api/country-codes
 # imports: https://www.geolexica.org/api/language-codes
 
 @prefix : <https://www.geolexica.org/api/geolexica-ap#> .
@@ -23,7 +22,6 @@
   owl:imports <http://topbraid.org/schema/schema-single-range> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <http://www.w3.org/2008/05/skos-xl> ;
-  owl:imports <https://www.geolexica.org/api/country-codes> ;
   owl:imports <https://www.geolexica.org/api/language-codes> ;
 .
 :Arabic_Node
@@ -73,7 +71,7 @@
 .
 :Country_Code
   rdf:type owl:Class ;
-  rdfs:comment "Local non-standard code list for Geolexica. Recommended to use schema:Country - faocountry instance data." ;
+  rdfs:comment "Local ISO 3166 code list for Geolexica." ;
   rdfs:label "Country code" ;
   rdfs:subClassOf schema:Intangible ;
   skos:inScheme :GeolexicaConceptScheme ;
@@ -233,7 +231,7 @@
   rdfs:label "Language Code" ;
   rdfs:subClassOf schema:Intangible ;
   skos:inScheme :GeolexicaConceptScheme ;
-  skos:note "Class instances here are the capitalized three-letter language codes in English and given language text.." ;
+  skos:note "ISO 3166 two- and three-letter language codes." ;
   skos:prefLabel "Language Code" ;
 .
 :Language_Node

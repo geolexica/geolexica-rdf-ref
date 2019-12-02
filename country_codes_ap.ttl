@@ -1,8 +1,8 @@
 # baseURI: https://www.geolexica.org/api/country-codes
+# imports: http://topbraid.org/schema/
+# imports: http://www.w3.org/2004/02/skos/core
 # imports: https://www.geolexica.org/api/geolexica-ap
-# prefix: countries
 
-@prefix countries: <https://www.geolexica.org/api/country-codes#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix faocountry: <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/geopolitical.owl#> .
 @prefix geolexica-ap: <https://www.geolexica.org/api/geolexica-ap#> .
@@ -23933,7 +23933,6 @@ faocountry:non_self_governing
   rdfs:label "Non-self-governing territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:other ;
   owl:disjointWith faocountry:self_governing ;
@@ -24062,7 +24061,6 @@ faocountry:other
   rdfs:label "Other territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:non_self_governing ;
   owl:disjointWith faocountry:self_governing ;
@@ -24108,7 +24106,6 @@ faocountry:self_governing
   rdfs:label "Self-governing territory" ;
   rdfs:subClassOf schema:Country ;
   rdfs:subClassOf faocountry:territory ;
-  rdfs:subClassOf geolexica-ap:Country_Code ;
   owl:disjointWith faocountry:disputed ;
   owl:disjointWith faocountry:non_self_governing ;
   owl:disjointWith faocountry:other ;
@@ -24445,16 +24442,1751 @@ faocountry:western_Europe
   faocountry:validUntil 9999 ;
   owl:sameAs <http://aims.fao.org/aos/agrovoc/c_8364> ;
 .
+<http://www.geolexica.org/api/country-code-list#ABW-Aruba>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ABW"@en ;
+  skos:altLabel "AW"@en ;
+  skos:notation "533" ;
+  skos:prefLabel "Aruba"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AFG-Afghanistan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AFG"@en ;
+  skos:altLabel "AF"@en ;
+  skos:notation "4" ;
+  skos:prefLabel "Afghanistan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AGO-Angola>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AGO"@en ;
+  skos:altLabel "AO"@en ;
+  skos:notation "24" ;
+  skos:prefLabel "Angola"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AIA-Anguilla>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AIA"@en ;
+  skos:altLabel "AI"@en ;
+  skos:notation "660" ;
+  skos:prefLabel "Anguilla"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ALB-Albania>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ALB"@en ;
+  skos:altLabel "AL"@en ;
+  skos:notation "8" ;
+  skos:prefLabel "Albania"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AND-Andorra>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AND"@en ;
+  skos:altLabel "AD"@en ;
+  skos:notation "20" ;
+  skos:prefLabel "Andorra"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ARE-United_Arab_Emirates>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ARE"@en ;
+  skos:altLabel "AE"@en ;
+  skos:notation "784" ;
+  skos:prefLabel "United Arab Emirates"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ARG-Argentina>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ARG"@en ;
+  skos:altLabel "AR"@en ;
+  skos:notation "32" ;
+  skos:prefLabel "Argentina"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ARM-Armenia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ARM"@en ;
+  skos:altLabel "AM"@en ;
+  skos:notation "51" ;
+  skos:prefLabel "Armenia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ASM-American_Samoa>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ASM"@en ;
+  skos:altLabel "AS"@en ;
+  skos:notation "16" ;
+  skos:prefLabel "American Samoa"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ATA-Antarctica>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ATA"@en ;
+  skos:altLabel "AQ"@en ;
+  skos:notation "10" ;
+  skos:prefLabel "Antarctica"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ATF-French_Southern_Territories>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ATF"@en ;
+  skos:altLabel "TF"@en ;
+  skos:notation "260" ;
+  skos:prefLabel "French Southern Territories"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ATG-Antigua_and_Barbuda>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ATG"@en ;
+  skos:altLabel "AG"@en ;
+  skos:notation "28" ;
+  skos:prefLabel "Antigua and Barbuda"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AUS-Australia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AUS"@en ;
+  skos:altLabel "AU"@en ;
+  skos:notation "36" ;
+  skos:prefLabel "Australia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AUT-Austria>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AUT"@en ;
+  skos:altLabel "AT"@en ;
+  skos:notation "40" ;
+  skos:prefLabel "Austria"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#AZE-Azerbaijan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "AZE"@en ;
+  skos:altLabel "AZ"@en ;
+  skos:notation "31" ;
+  skos:prefLabel "Azerbaijan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BDI-Burundi>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BDI"@en ;
+  skos:altLabel "BI"@en ;
+  skos:notation "108" ;
+  skos:prefLabel "Burundi"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BEL-Belgium>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BEL"@en ;
+  skos:altLabel "BE"@en ;
+  skos:notation "56" ;
+  skos:prefLabel "Belgium"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BEN-Benin>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BEN"@en ;
+  skos:altLabel "BJ"@en ;
+  skos:notation "204" ;
+  skos:prefLabel "Benin"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BES-Bonaire>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BES"@en ;
+  skos:altLabel "BQ"@en ;
+  skos:notation "535" ;
+  skos:prefLabel "Bonaire"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BFA-Burkina_Faso>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BFA"@en ;
+  skos:altLabel "BF"@en ;
+  skos:notation "854" ;
+  skos:prefLabel "Burkina Faso"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BGD-Bangladesh>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BGD"@en ;
+  skos:altLabel "BD"@en ;
+  skos:notation "50" ;
+  skos:prefLabel "Bangladesh"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BGR-Bulgaria>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BGR"@en ;
+  skos:altLabel "BG"@en ;
+  skos:notation "100" ;
+  skos:prefLabel "Bulgaria"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BHR-Bahrain>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BHR"@en ;
+  skos:altLabel "BH"@en ;
+  skos:notation "48" ;
+  skos:prefLabel "Bahrain"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BHS-Bahamas>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BHS"@en ;
+  skos:altLabel "BS"@en ;
+  skos:notation "44" ;
+  skos:prefLabel "Bahamas"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BIH-Bosnia_and_Herzegovina>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BIH"@en ;
+  skos:altLabel "BA"@en ;
+  skos:notation "70" ;
+  skos:prefLabel "Bosnia and Herzegovina"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BLM-Saint_Barthelemy>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BLM"@en ;
+  skos:altLabel "BL"@en ;
+  skos:notation "652" ;
+  skos:prefLabel "Saint Barthelemy"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BLR-Belarus>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BLR"@en ;
+  skos:altLabel "BY"@en ;
+  skos:notation "112" ;
+  skos:prefLabel "Belarus"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BLZ-Belize>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BLZ"@en ;
+  skos:altLabel "BZ"@en ;
+  skos:notation "84" ;
+  skos:prefLabel "Belize"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BMU-Bermuda>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BMU"@en ;
+  skos:altLabel "BM"@en ;
+  skos:notation "60" ;
+  skos:prefLabel "Bermuda"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BOL-Bolivia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BOL"@en ;
+  skos:altLabel "BO"@en ;
+  skos:notation "68" ;
+  skos:prefLabel "Bolivia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BRA-Brazil>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BRA"@en ;
+  skos:altLabel "BR"@en ;
+  skos:notation "76" ;
+  skos:prefLabel "Brazil"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BRB-Barbados>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BRB"@en ;
+  skos:altLabel "BB"@en ;
+  skos:notation "52" ;
+  skos:prefLabel "Barbados"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BRN-Brunei_Darussalam>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BRN"@en ;
+  skos:altLabel "BN"@en ;
+  skos:notation "96" ;
+  skos:prefLabel "Brunei Darussalam"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BTN-Bhutan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BTN"@en ;
+  skos:altLabel "BT"@en ;
+  skos:notation "64" ;
+  skos:prefLabel "Bhutan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BVT-Bouvet_Island>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BVT"@en ;
+  skos:altLabel "BV"@en ;
+  skos:notation "74" ;
+  skos:prefLabel "Bouvet Island"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#BWA-Botswana>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "BWA"@en ;
+  skos:altLabel "BW"@en ;
+  skos:notation "72" ;
+  skos:prefLabel "Botswana"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CAF-Central_African_Republic>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CAF"@en ;
+  skos:altLabel "CF"@en ;
+  skos:notation "140" ;
+  skos:prefLabel "Central African Republic"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CAN-Canada>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CAN"@en ;
+  skos:altLabel "CA"@en ;
+  skos:notation "124" ;
+  skos:prefLabel "Canada"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CCK-Cocos_(Keeling)_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CCK"@en ;
+  skos:altLabel "CC"@en ;
+  skos:notation "166" ;
+  skos:prefLabel "Cocos (Keeling) Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CHE-Switzerland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CHE"@en ;
+  skos:altLabel "CH"@en ;
+  skos:notation "756" ;
+  skos:prefLabel "Switzerland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CHL-Chile>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CHL"@en ;
+  skos:altLabel "CL"@en ;
+  skos:notation "152" ;
+  skos:prefLabel "Chile"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CHN-China>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CHN"@en ;
+  skos:altLabel "CN"@en ;
+  skos:notation "156" ;
+  skos:prefLabel "China"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CIV-Cote_d'Ivoire>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CIV"@en ;
+  skos:altLabel "CI"@en ;
+  skos:notation "384" ;
+  skos:prefLabel "Cote d'Ivoire"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CMR-Cameroon>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CMR"@en ;
+  skos:altLabel "CM"@en ;
+  skos:notation "120" ;
+  skos:prefLabel "Cameroon"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#COD-Democratic_Republic_of_the_Congo>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "COD"@en ;
+  skos:altLabel "CD"@en ;
+  skos:notation "180" ;
+  skos:prefLabel "Democratic Republic of the Congo"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#COG-Congo>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "COG"@en ;
+  skos:altLabel "CG"@en ;
+  skos:notation "178" ;
+  skos:prefLabel "Congo"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#COK-Cook_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "COK"@en ;
+  skos:altLabel "CK"@en ;
+  skos:notation "184" ;
+  skos:prefLabel "Cook Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#COL-Colombia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "COL"@en ;
+  skos:altLabel "CO"@en ;
+  skos:notation "170" ;
+  skos:prefLabel "Colombia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#COM-Comoros>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "COM"@en ;
+  skos:altLabel "KM"@en ;
+  skos:notation "174" ;
+  skos:prefLabel "Comoros"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CPV-Cape_Verde>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CPV"@en ;
+  skos:altLabel "CV"@en ;
+  skos:notation "132" ;
+  skos:prefLabel "Cape Verde"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CRI-Costa_Rica>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CRI"@en ;
+  skos:altLabel "CR"@en ;
+  skos:notation "188" ;
+  skos:prefLabel "Costa Rica"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CUB-Cuba>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CUB"@en ;
+  skos:altLabel "CU"@en ;
+  skos:notation "192" ;
+  skos:prefLabel "Cuba"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CUW-Curacao>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CUW"@en ;
+  skos:altLabel "CW"@en ;
+  skos:notation "531" ;
+  skos:prefLabel "Curacao"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CXR-Christmas_Island>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CXR"@en ;
+  skos:altLabel "CX"@en ;
+  skos:notation "162" ;
+  skos:prefLabel "Christmas Island"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CYM-Cayman_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CYM"@en ;
+  skos:altLabel "KY"@en ;
+  skos:notation "136" ;
+  skos:prefLabel "Cayman Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CYP-Cyprus>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CYP"@en ;
+  skos:altLabel "CY"@en ;
+  skos:notation "196" ;
+  skos:prefLabel "Cyprus"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#CZE-Czech_Republic>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "CZE"@en ;
+  skos:altLabel "CZ"@en ;
+  skos:notation "203" ;
+  skos:prefLabel "Czech Republic"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DEU-Germany>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DEU"@en ;
+  skos:altLabel "DE"@en ;
+  skos:notation "276" ;
+  skos:prefLabel "Germany"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DJI-Djibouti>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DJI"@en ;
+  skos:altLabel "DJ"@en ;
+  skos:notation "262" ;
+  skos:prefLabel "Djibouti"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DMA-Dominica>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DMA"@en ;
+  skos:altLabel "DM"@en ;
+  skos:notation "212" ;
+  skos:prefLabel "Dominica"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DNK-Denmark>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DNK"@en ;
+  skos:altLabel "DK"@en ;
+  skos:notation "208" ;
+  skos:prefLabel "Denmark"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DOM-Dominican_Republic>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DOM"@en ;
+  skos:altLabel "DO"@en ;
+  skos:notation "214" ;
+  skos:prefLabel "Dominican Republic"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#DZA-Algeria>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "DZA"@en ;
+  skos:altLabel "DZ"@en ;
+  skos:notation "12" ;
+  skos:prefLabel "Algeria"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ECU-Ecuador>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ECU"@en ;
+  skos:altLabel "EC"@en ;
+  skos:notation "218" ;
+  skos:prefLabel "Ecuador"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#EGY-Egypt>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "EGY"@en ;
+  skos:altLabel "EG"@en ;
+  skos:notation "818" ;
+  skos:prefLabel "Egypt"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ERI-Eritrea>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ERI"@en ;
+  skos:altLabel "ER"@en ;
+  skos:notation "232" ;
+  skos:prefLabel "Eritrea"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ESH-Western_Sahara>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ESH"@en ;
+  skos:altLabel "EH"@en ;
+  skos:notation "732" ;
+  skos:prefLabel "Western Sahara"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ESP-Spain>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ESP"@en ;
+  skos:altLabel "ES"@en ;
+  skos:notation "724" ;
+  skos:prefLabel "Spain"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#EST-Estonia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "EST"@en ;
+  skos:altLabel "EE"@en ;
+  skos:notation "233" ;
+  skos:prefLabel "Estonia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ETH-Ethiopia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ETH"@en ;
+  skos:altLabel "ET"@en ;
+  skos:notation "231" ;
+  skos:prefLabel "Ethiopia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FIN-Finland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FIN"@en ;
+  skos:altLabel "FI"@en ;
+  skos:notation "246" ;
+  skos:prefLabel "Finland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FJI-Fiji>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FJI"@en ;
+  skos:altLabel "FJ"@en ;
+  skos:notation "242" ;
+  skos:prefLabel "Fiji"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FLK-Falkland_Islands_(Malvinas)>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FLK"@en ;
+  skos:altLabel "FK"@en ;
+  skos:notation "238" ;
+  skos:prefLabel "Falkland Islands (Malvinas)"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FRA-France>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FRA"@en ;
+  skos:altLabel "FR"@en ;
+  skos:notation "250" ;
+  skos:prefLabel "France"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FRO-Faroe_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FRO"@en ;
+  skos:altLabel "FO"@en ;
+  skos:notation "234" ;
+  skos:prefLabel "Faroe Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#FSM-Micronesia_Federated_States_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "FSM"@en ;
+  skos:altLabel "FM"@en ;
+  skos:notation "583" ;
+  skos:prefLabel "Micronesia, Federated States of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GAB-Gabon>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GAB"@en ;
+  skos:altLabel "GA"@en ;
+  skos:notation "266" ;
+  skos:prefLabel "Gabon"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GBR-United_Kingdom>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GBR"@en ;
+  skos:altLabel "GB"@en ;
+  skos:notation "826" ;
+  skos:prefLabel "United Kingdom"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GEO-Georgia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GEO"@en ;
+  skos:altLabel "GE"@en ;
+  skos:notation "268" ;
+  skos:prefLabel "Georgia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GGY-Guernsey>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GGY"@en ;
+  skos:altLabel "GG"@en ;
+  skos:notation "831" ;
+  skos:prefLabel "Guernsey"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GHA-Ghana>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GHA"@en ;
+  skos:altLabel "GH"@en ;
+  skos:notation "288" ;
+  skos:prefLabel "Ghana"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GIB-Gibraltar>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GIB"@en ;
+  skos:altLabel "GI"@en ;
+  skos:notation "292" ;
+  skos:prefLabel "Gibraltar"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GIN-Guinea>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GIN"@en ;
+  skos:altLabel "GN"@en ;
+  skos:notation "324" ;
+  skos:prefLabel "Guinea"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GLP-Guadeloupe>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GLP"@en ;
+  skos:altLabel "GP"@en ;
+  skos:notation "312" ;
+  skos:prefLabel "Guadeloupe"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GMB-Gambia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GMB"@en ;
+  skos:altLabel "GM"@en ;
+  skos:notation "270" ;
+  skos:prefLabel "Gambia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GNB-Guinea-Bissau>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GNB"@en ;
+  skos:altLabel "GW"@en ;
+  skos:notation "624" ;
+  skos:prefLabel "Guinea-Bissau"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GNQ-Equatorial_Guinea>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GNQ"@en ;
+  skos:altLabel "GQ"@en ;
+  skos:notation "226" ;
+  skos:prefLabel "Equatorial Guinea"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GRC-Greece>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GRC"@en ;
+  skos:altLabel "GR"@en ;
+  skos:notation "300" ;
+  skos:prefLabel "Greece"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GRD-Grenada>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GRD"@en ;
+  skos:altLabel "GD"@en ;
+  skos:notation "308" ;
+  skos:prefLabel "Grenada"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GRL-Greenland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GRL"@en ;
+  skos:altLabel "GL"@en ;
+  skos:notation "304" ;
+  skos:prefLabel "Greenland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GTM-Guatemala>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GTM"@en ;
+  skos:altLabel "GT"@en ;
+  skos:notation "320" ;
+  skos:prefLabel "Guatemala"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GUF-French_Guiana>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GUF"@en ;
+  skos:altLabel "GF"@en ;
+  skos:notation "254" ;
+  skos:prefLabel "French Guiana"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GUM-Guam>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GUM"@en ;
+  skos:altLabel "GU"@en ;
+  skos:notation "316" ;
+  skos:prefLabel "Guam"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#GUY-Guyana>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "GUY"@en ;
+  skos:altLabel "GY"@en ;
+  skos:notation "328" ;
+  skos:prefLabel "Guyana"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HKG-Hong_Kong>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HKG"@en ;
+  skos:altLabel "HK"@en ;
+  skos:notation "344" ;
+  skos:prefLabel "Hong Kong"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HMD-Heard_Island_and_McDonaldIslands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HMD"@en ;
+  skos:altLabel "HM"@en ;
+  skos:notation "334" ;
+  skos:prefLabel "Heard Island and McDonald Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HND-Honduras>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HND"@en ;
+  skos:altLabel "HN"@en ;
+  skos:notation "340" ;
+  skos:prefLabel "Honduras"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HRV-Croatia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HRV"@en ;
+  skos:altLabel "HR"@en ;
+  skos:notation "191" ;
+  skos:prefLabel "Croatia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HTI-Haiti>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HTI"@en ;
+  skos:altLabel "HT"@en ;
+  skos:notation "332" ;
+  skos:prefLabel "Haiti"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#HUN-Hungary>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "HUN"@en ;
+  skos:altLabel "HU"@en ;
+  skos:notation "348" ;
+  skos:prefLabel "Hungary"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IDN-Indonesia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IDN"@en ;
+  skos:altLabel "ID"@en ;
+  skos:notation "360" ;
+  skos:prefLabel "Indonesia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IMN-Isle_of_Man>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IMN"@en ;
+  skos:altLabel "IM"@en ;
+  skos:notation "833" ;
+  skos:prefLabel "Isle of Man"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IND-India>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IND"@en ;
+  skos:altLabel "IN"@en ;
+  skos:notation "356" ;
+  skos:prefLabel "India"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IOT-British_Indian_Ocean_Territory>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IOT"@en ;
+  skos:altLabel "IO"@en ;
+  skos:notation "86" ;
+  skos:prefLabel "British Indian Ocean Territory"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IRL-Ireland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IRL"@en ;
+  skos:altLabel "IE"@en ;
+  skos:notation "372" ;
+  skos:prefLabel "Ireland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IRN-Iran_Islamic_Republic_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IRN"@en ;
+  skos:altLabel "IR"@en ;
+  skos:notation "364" ;
+  skos:prefLabel "Iran, Islamic Republic of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#IRQ-Iraq>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "IRQ"@en ;
+  skos:altLabel "IQ"@en ;
+  skos:notation "368" ;
+  skos:prefLabel "Iraq"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ISL-Iceland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ISL"@en ;
+  skos:altLabel "IS"@en ;
+  skos:notation "352" ;
+  skos:prefLabel "Iceland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ISR-Israel>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ISR"@en ;
+  skos:altLabel "IL"@en ;
+  skos:notation "376" ;
+  skos:prefLabel "Israel"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ITA-Italy>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ITA"@en ;
+  skos:altLabel "IT"@en ;
+  skos:notation "380" ;
+  skos:prefLabel "Italy"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#JAM-Jamaica>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "JAM"@en ;
+  skos:altLabel "JM"@en ;
+  skos:notation "388" ;
+  skos:prefLabel "Jamaica"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#JEY-Jersey>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "JEY"@en ;
+  skos:altLabel "JE"@en ;
+  skos:notation "832" ;
+  skos:prefLabel "Jersey"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#JOR-Jordan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "JOR"@en ;
+  skos:altLabel "JO"@en ;
+  skos:notation "400" ;
+  skos:prefLabel "Jordan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#JPN-Japan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "JPN"@en ;
+  skos:altLabel "JP"@en ;
+  skos:notation "392" ;
+  skos:prefLabel "Japan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KAZ-Kazakhstan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KAZ"@en ;
+  skos:altLabel "KZ"@en ;
+  skos:notation "398" ;
+  skos:prefLabel "Kazakhstan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KEN-Kenya>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KEN"@en ;
+  skos:altLabel "KE"@en ;
+  skos:notation "404" ;
+  skos:prefLabel "Kenya"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KGZ-Kyrgyzstan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KGZ"@en ;
+  skos:altLabel "KG"@en ;
+  skos:notation "417" ;
+  skos:prefLabel "Kyrgyzstan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KHM-Cambodia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KHM"@en ;
+  skos:altLabel "KH"@en ;
+  skos:notation "116" ;
+  skos:prefLabel "Cambodia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KIR-Kiribati>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KIR"@en ;
+  skos:altLabel "KI"@en ;
+  skos:notation "296" ;
+  skos:prefLabel "Kiribati"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KNA-Saint_Kitts_and_Nevis>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KNA"@en ;
+  skos:altLabel "KN"@en ;
+  skos:notation "659" ;
+  skos:prefLabel "Saint Kitts and Nevis"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KOR-Korea_Republic_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KOR"@en ;
+  skos:altLabel "KR"@en ;
+  skos:notation "410" ;
+  skos:prefLabel "Korea, Republic of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#KWT-Kuwait>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "KWT"@en ;
+  skos:altLabel "KW"@en ;
+  skos:notation "414" ;
+  skos:prefLabel "Kuwait"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LAO-Lao_People's_Democratic_Republic>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LAO"@en ;
+  skos:altLabel "LA"@en ;
+  skos:notation "418" ;
+  skos:prefLabel "Lao People's Democratic Republic"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LBN-Lebanon>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LBN"@en ;
+  skos:altLabel "LB"@en ;
+  skos:notation "422" ;
+  skos:prefLabel "Lebanon"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LBR-Liberia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LBR"@en ;
+  skos:altLabel "LR"@en ;
+  skos:notation "430" ;
+  skos:prefLabel "Liberia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LBY-Libya>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LBY"@en ;
+  skos:altLabel "LY"@en ;
+  skos:notation "434" ;
+  skos:prefLabel "Libya"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LCA-Saint_Lucia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LCA"@en ;
+  skos:altLabel "LC"@en ;
+  skos:notation "662" ;
+  skos:prefLabel "Saint Lucia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LIE-Liechtenstein>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LIE"@en ;
+  skos:altLabel "LI"@en ;
+  skos:notation "438" ;
+  skos:prefLabel "Liechtenstein"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LKA-Sri_Lanka>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LKA"@en ;
+  skos:altLabel "LK"@en ;
+  skos:notation "144" ;
+  skos:prefLabel "Sri Lanka"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LSO-Lesotho>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LSO"@en ;
+  skos:altLabel "LS"@en ;
+  skos:notation "426" ;
+  skos:prefLabel "Lesotho"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LTU-Lithuania>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LTU"@en ;
+  skos:altLabel "LT"@en ;
+  skos:notation "440" ;
+  skos:prefLabel "Lithuania"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LUX-Luxembourg>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LUX"@en ;
+  skos:altLabel "LU"@en ;
+  skos:notation "442" ;
+  skos:prefLabel "Luxembourg"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#LVA-Latvia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "LVA"@en ;
+  skos:altLabel "LV"@en ;
+  skos:notation "428" ;
+  skos:prefLabel "Latvia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MAC-Macao>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MAC"@en ;
+  skos:altLabel "MO"@en ;
+  skos:notation "446" ;
+  skos:prefLabel "Macao"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MAF-Saint_Martin_(French_part)>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MAF"@en ;
+  skos:altLabel "MF"@en ;
+  skos:notation "663" ;
+  skos:prefLabel "Saint Martin (French part)"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MAR-Morocco>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MAR"@en ;
+  skos:altLabel "MA"@en ;
+  skos:notation "504" ;
+  skos:prefLabel "Morocco"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MCO-Monaco>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MCO"@en ;
+  skos:altLabel "MC"@en ;
+  skos:notation "492" ;
+  skos:prefLabel "Monaco"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MDA-Moldova_Republic_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MDA"@en ;
+  skos:altLabel "MD"@en ;
+  skos:notation "498" ;
+  skos:prefLabel "Moldova, Republic of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MDG-Madagascar>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MDG"@en ;
+  skos:altLabel "MG"@en ;
+  skos:notation "450" ;
+  skos:prefLabel "Madagascar"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MDV-Maldives>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MDV"@en ;
+  skos:altLabel "MV"@en ;
+  skos:notation "462" ;
+  skos:prefLabel "Maldives"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MEX-Mexico>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MEX"@en ;
+  skos:altLabel "MX"@en ;
+  skos:notation "484" ;
+  skos:prefLabel "Mexico"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MHL-Marshall_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MHL"@en ;
+  skos:altLabel "MH"@en ;
+  skos:notation "584" ;
+  skos:prefLabel "Marshall Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MKD-Macedonia_the_Former_Yugoslav_Republic_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MKD"@en ;
+  skos:altLabel "MK"@en ;
+  skos:notation "807" ;
+  skos:prefLabel "Macedonia, the Former Yugoslav Republic of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MLI-Mali>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MLI"@en ;
+  skos:altLabel "ML"@en ;
+  skos:notation "466" ;
+  skos:prefLabel "Mali"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MLT-Malta>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MLT"@en ;
+  skos:altLabel "MT"@en ;
+  skos:notation "470" ;
+  skos:prefLabel "Malta"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MMR-Myanmar>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MMR"@en ;
+  skos:altLabel "MM"@en ;
+  skos:notation "104" ;
+  skos:prefLabel "Myanmar"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MNE-Montenegro>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MNE"@en ;
+  skos:altLabel "ME"@en ;
+  skos:notation "499" ;
+  skos:prefLabel "Montenegro"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MNG-Mongolia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MNG"@en ;
+  skos:altLabel "MN"@en ;
+  skos:notation "496" ;
+  skos:prefLabel "Mongolia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MNP-Northern_Mariana_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MNP"@en ;
+  skos:altLabel "MP"@en ;
+  skos:notation "580" ;
+  skos:prefLabel "Northern Mariana Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MOZ-Mozambique>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MOZ"@en ;
+  skos:altLabel "MZ"@en ;
+  skos:notation "508" ;
+  skos:prefLabel "Mozambique"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MRT-Mauritania>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MRT"@en ;
+  skos:altLabel "MR"@en ;
+  skos:notation "478" ;
+  skos:prefLabel "Mauritania"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MSR-Montserrat>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MSR"@en ;
+  skos:altLabel "MS"@en ;
+  skos:notation "500" ;
+  skos:prefLabel "Montserrat"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MTQ-Martinique>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MTQ"@en ;
+  skos:altLabel "MQ"@en ;
+  skos:notation "474" ;
+  skos:prefLabel "Martinique"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MUS-Mauritius>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MUS"@en ;
+  skos:altLabel "MU"@en ;
+  skos:notation "480" ;
+  skos:prefLabel "Mauritius"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MWI-Malawi>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MWI"@en ;
+  skos:altLabel "MW"@en ;
+  skos:notation "454" ;
+  skos:prefLabel "Malawi"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MYS-Malaysia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MYS"@en ;
+  skos:altLabel "MY"@en ;
+  skos:notation "458" ;
+  skos:prefLabel "Malaysia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#MYT-Mayotte>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "MYT"@en ;
+  skos:altLabel "YT"@en ;
+  skos:notation "175" ;
+  skos:prefLabel "Mayotte"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NAM-Namibia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NAM"@en ;
+  skos:altLabel "NA"@en ;
+  skos:notation "516" ;
+  skos:prefLabel "Namibia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NCL-New_Caledonia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NCL"@en ;
+  skos:altLabel "NC"@en ;
+  skos:notation "540" ;
+  skos:prefLabel "New Caledonia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NER-Niger>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NER"@en ;
+  skos:altLabel "NE"@en ;
+  skos:notation "562" ;
+  skos:prefLabel "Niger"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NFK-Norfolk_Island>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NFK"@en ;
+  skos:altLabel "NF"@en ;
+  skos:notation "574" ;
+  skos:prefLabel "Norfolk Island"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NGA-Nigeria>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NGA"@en ;
+  skos:altLabel "NG"@en ;
+  skos:notation "566" ;
+  skos:prefLabel "Nigeria"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NIC-Nicaragua>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NIC"@en ;
+  skos:altLabel "NI"@en ;
+  skos:notation "558" ;
+  skos:prefLabel "Nicaragua"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NIU-Niue>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NIU"@en ;
+  skos:altLabel "NU"@en ;
+  skos:notation "570" ;
+  skos:prefLabel "Niue"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NLD-Netherlands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NLD"@en ;
+  skos:altLabel "NL"@en ;
+  skos:notation "528" ;
+  skos:prefLabel "Netherlands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NOR-Norway>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NOR"@en ;
+  skos:altLabel "NO"@en ;
+  skos:notation "578" ;
+  skos:prefLabel "Norway"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NPL-Nepal>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NPL"@en ;
+  skos:altLabel "NP"@en ;
+  skos:notation "524" ;
+  skos:prefLabel "Nepal"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NRU-Nauru>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NRU"@en ;
+  skos:altLabel "NR"@en ;
+  skos:notation "520" ;
+  skos:prefLabel "Nauru"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#NZL-New_Zealand>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "NZL"@en ;
+  skos:altLabel "NZ"@en ;
+  skos:notation "554" ;
+  skos:prefLabel "New Zealand"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#OMN-Oman>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "OMN"@en ;
+  skos:altLabel "OM"@en ;
+  skos:notation "512" ;
+  skos:prefLabel "Oman"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PAK-Pakistan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PAK"@en ;
+  skos:altLabel "PK"@en ;
+  skos:notation "586" ;
+  skos:prefLabel "Pakistan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PAN-Panama>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PAN"@en ;
+  skos:altLabel "PA"@en ;
+  skos:notation "591" ;
+  skos:prefLabel "Panama"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PCN-Pitcairn>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PCN"@en ;
+  skos:altLabel "PN"@en ;
+  skos:notation "612" ;
+  skos:prefLabel "Pitcairn"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PER-Peru>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PER"@en ;
+  skos:altLabel "PE"@en ;
+  skos:notation "604" ;
+  skos:prefLabel "Peru"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PHL-Philippines>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PHL"@en ;
+  skos:altLabel "PH"@en ;
+  skos:notation "608" ;
+  skos:prefLabel "Philippines"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PLW-Palau>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PLW"@en ;
+  skos:altLabel "PW"@en ;
+  skos:notation "585" ;
+  skos:prefLabel "Palau"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PNG-Papua_New_Guinea>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PNG"@en ;
+  skos:altLabel "PG"@en ;
+  skos:notation "598" ;
+  skos:prefLabel "Papua New Guinea"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#POL-Poland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "POL"@en ;
+  skos:altLabel "PL"@en ;
+  skos:notation "616" ;
+  skos:prefLabel "Poland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PRI-Puerto_Rico>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PRI"@en ;
+  skos:altLabel "PR"@en ;
+  skos:notation "630" ;
+  skos:prefLabel "Puerto Rico"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PRK-Korea_Democratic_People's_Republic_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PRK"@en ;
+  skos:altLabel "KP"@en ;
+  skos:notation "408" ;
+  skos:prefLabel "Korea, Democratic People's Republic of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PRT-Portugal>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PRT"@en ;
+  skos:altLabel "PT"@en ;
+  skos:notation "620" ;
+  skos:prefLabel "Portugal"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PRY-Paraguay>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PRY"@en ;
+  skos:altLabel "PY"@en ;
+  skos:notation "600" ;
+  skos:prefLabel "Paraguay"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PSE-Palestine_State_of>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PSE"@en ;
+  skos:altLabel "PS"@en ;
+  skos:notation "275" ;
+  skos:prefLabel "Palestine, State of"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#PYF-French_Polynesia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "PYF"@en ;
+  skos:altLabel "PF"@en ;
+  skos:notation "258" ;
+  skos:prefLabel "French Polynesia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#QAT-Qatar>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "QAT"@en ;
+  skos:altLabel "QA"@en ;
+  skos:notation "634" ;
+  skos:prefLabel "Qatar"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#REU-Reunion>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "REU"@en ;
+  skos:altLabel "RE"@en ;
+  skos:notation "638" ;
+  skos:prefLabel "Reunion"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ROU-Romania>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ROU"@en ;
+  skos:altLabel "RO"@en ;
+  skos:notation "642" ;
+  skos:prefLabel "Romania"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#RUS-Russian_Federation>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "RUS"@en ;
+  skos:altLabel "RU"@en ;
+  skos:notation "643" ;
+  skos:prefLabel "Russian Federation"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#RWA-Rwanda>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "RWA"@en ;
+  skos:altLabel "RW"@en ;
+  skos:notation "646" ;
+  skos:prefLabel "Rwanda"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SAU-Saudi_Arabia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SAU"@en ;
+  skos:altLabel "SA"@en ;
+  skos:notation "682" ;
+  skos:prefLabel "Saudi Arabia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SDN-Sudan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SDN"@en ;
+  skos:altLabel "SD"@en ;
+  skos:notation "729" ;
+  skos:prefLabel "Sudan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SEN-Senegal>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SEN"@en ;
+  skos:altLabel "SN"@en ;
+  skos:notation "686" ;
+  skos:prefLabel "Senegal"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SGP-Singapore>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SGP"@en ;
+  skos:altLabel "SG"@en ;
+  skos:notation "702" ;
+  skos:prefLabel "Singapore"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SGS-South_Georgia_and_the_South_Sandwich_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SGS"@en ;
+  skos:altLabel "GS"@en ;
+  skos:notation "239" ;
+  skos:prefLabel "South Georgia and the South Sandwich Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SHN-Saint_Helena>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SHN"@en ;
+  skos:altLabel "SH"@en ;
+  skos:notation "654" ;
+  skos:prefLabel "Saint Helena"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SJM-Svalbard_and_Jan_Mayen>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SJM"@en ;
+  skos:altLabel "SJ"@en ;
+  skos:notation "744" ;
+  skos:prefLabel "Svalbard and Jan Mayen"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SLB-Solomon_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SLB"@en ;
+  skos:altLabel "SB"@en ;
+  skos:notation "90" ;
+  skos:prefLabel "Solomon Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SLE-Sierra_Leone>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SLE"@en ;
+  skos:altLabel "SL"@en ;
+  skos:notation "694" ;
+  skos:prefLabel "Sierra Leone"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SLV-El_Salvador>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SLV"@en ;
+  skos:altLabel "SV"@en ;
+  skos:notation "222" ;
+  skos:prefLabel "El Salvador"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SMR-San_Marino>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SMR"@en ;
+  skos:altLabel "SM"@en ;
+  skos:notation "674" ;
+  skos:prefLabel "San Marino"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SOM-Somalia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SOM"@en ;
+  skos:altLabel "SO"@en ;
+  skos:notation "706" ;
+  skos:prefLabel "Somalia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SPM-Saint_Pierre_and_Miquelon>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SPM"@en ;
+  skos:altLabel "PM"@en ;
+  skos:notation "666" ;
+  skos:prefLabel "Saint Pierre and Miquelon"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SRB-Serbia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SRB"@en ;
+  skos:altLabel "RS"@en ;
+  skos:notation "688" ;
+  skos:prefLabel "Serbia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SSD-South_Sudan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SSD"@en ;
+  skos:altLabel "SS"@en ;
+  skos:notation "728" ;
+  skos:prefLabel "South Sudan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#STP-Sao_Tome_and_Principe>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "STP"@en ;
+  skos:altLabel "ST"@en ;
+  skos:notation "678" ;
+  skos:prefLabel "Sao Tome and Principe"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SUR-Suriname>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SUR"@en ;
+  skos:altLabel "SR"@en ;
+  skos:notation "740" ;
+  skos:prefLabel "Suriname"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SVK-Slovakia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SVK"@en ;
+  skos:altLabel "SK"@en ;
+  skos:notation "703" ;
+  skos:prefLabel "Slovakia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SVN-Slovenia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SVN"@en ;
+  skos:altLabel "SI"@en ;
+  skos:notation "705" ;
+  skos:prefLabel "Slovenia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SWE-Sweden>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SWE"@en ;
+  skos:altLabel "SE"@en ;
+  skos:notation "752" ;
+  skos:prefLabel "Sweden"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SWZ-Swaziland>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SWZ"@en ;
+  skos:altLabel "SZ"@en ;
+  skos:notation "748" ;
+  skos:prefLabel "Swaziland"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SXM-Sint_Maarten_(Dutch_part)>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SXM"@en ;
+  skos:altLabel "SX"@en ;
+  skos:notation "534" ;
+  skos:prefLabel "Sint Maarten (Dutch part)"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SYC-Seychelles>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SYC"@en ;
+  skos:altLabel "SC"@en ;
+  skos:notation "690" ;
+  skos:prefLabel "Seychelles"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#SYR-Syrian_Arab_Republic>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "SYR"@en ;
+  skos:altLabel "SY"@en ;
+  skos:notation "760" ;
+  skos:prefLabel "Syrian Arab Republic"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TCA-Turks_and_Caicos_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TCA"@en ;
+  skos:altLabel "TC"@en ;
+  skos:notation "796" ;
+  skos:prefLabel "Turks and Caicos Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TCD-Chad>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TCD"@en ;
+  skos:altLabel "TD"@en ;
+  skos:notation "148" ;
+  skos:prefLabel "Chad"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TGO-Togo>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TGO"@en ;
+  skos:altLabel "TG"@en ;
+  skos:notation "768" ;
+  skos:prefLabel "Togo"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#THA-Thailand>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "THA"@en ;
+  skos:altLabel "TH"@en ;
+  skos:notation "764" ;
+  skos:prefLabel "Thailand"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TJK-Tajikistan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TJK"@en ;
+  skos:altLabel "TJ"@en ;
+  skos:notation "762" ;
+  skos:prefLabel "Tajikistan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TKL-Tokelau>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TKL"@en ;
+  skos:altLabel "TK"@en ;
+  skos:notation "772" ;
+  skos:prefLabel "Tokelau"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TKM-Turkmenistan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TKM"@en ;
+  skos:altLabel "TM"@en ;
+  skos:notation "795" ;
+  skos:prefLabel "Turkmenistan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TLS-Timor-Leste>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TLS"@en ;
+  skos:altLabel "TL"@en ;
+  skos:notation "626" ;
+  skos:prefLabel "Timor-Leste"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TON-Tonga>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TON"@en ;
+  skos:altLabel "TO"@en ;
+  skos:notation "776" ;
+  skos:prefLabel "Tonga"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TTO-Trinidad_and_Tobago>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TTO"@en ;
+  skos:altLabel "TT"@en ;
+  skos:notation "780" ;
+  skos:prefLabel "Trinidad and Tobago"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TUN-Tunisia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TUN"@en ;
+  skos:altLabel "TN"@en ;
+  skos:notation "788" ;
+  skos:prefLabel "Tunisia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TUR-Turkey>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TUR"@en ;
+  skos:altLabel "TR"@en ;
+  skos:notation "792" ;
+  skos:prefLabel "Turkey"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TUV-Tuvalu>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TUV"@en ;
+  skos:altLabel "TV"@en ;
+  skos:notation "798" ;
+  skos:prefLabel "Tuvalu"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TWN-Taiwan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TWN"@en ;
+  skos:altLabel "TW"@en ;
+  skos:notation "158" ;
+  skos:prefLabel "Taiwan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#TZA-United_Republic_of_Tanzania>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "TZA"@en ;
+  skos:altLabel "TZ"@en ;
+  skos:notation "834" ;
+  skos:prefLabel "United Republic of Tanzania"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#UGA-Uganda>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "UGA"@en ;
+  skos:altLabel "UG"@en ;
+  skos:notation "800" ;
+  skos:prefLabel "Uganda"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#UKR-Ukraine>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "UKR"@en ;
+  skos:altLabel "UA"@en ;
+  skos:notation "804" ;
+  skos:prefLabel "Ukraine"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#UMI-United_States_Minor_Outlying_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "UMI"@en ;
+  skos:altLabel "UM"@en ;
+  skos:notation "581" ;
+  skos:prefLabel "United States Minor Outlying Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#URY-Uruguay>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "URY"@en ;
+  skos:altLabel "UY"@en ;
+  skos:notation "858" ;
+  skos:prefLabel "Uruguay"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#USA-United_States>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "USA"@en ;
+  skos:altLabel "US"@en ;
+  skos:notation "840" ;
+  skos:prefLabel "United States"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#UZB-Uzbekistan>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "UZB"@en ;
+  skos:altLabel "UZ"@en ;
+  skos:notation "860" ;
+  skos:prefLabel "Uzbekistan"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VAT-Holy_See_(Vatican_City_State)>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VAT"@en ;
+  skos:altLabel "VA"@en ;
+  skos:notation "336" ;
+  skos:prefLabel "Holy See (Vatican City State)"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VCT-Saint_Vincent_and_the_Grenadines>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VCT"@en ;
+  skos:altLabel "VC"@en ;
+  skos:notation "670" ;
+  skos:prefLabel "Saint Vincent and the Grenadines"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VEN-Venezuela>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VEN"@en ;
+  skos:altLabel "VE"@en ;
+  skos:notation "862" ;
+  skos:prefLabel "Venezuela"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VGB-British_Virgin_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VGB"@en ;
+  skos:altLabel "VG"@en ;
+  skos:notation "92" ;
+  skos:prefLabel "British Virgin Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VIR-US_Virgin_Islands>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VIR"@en ;
+  skos:altLabel "VI"@en ;
+  skos:notation "850" ;
+  skos:prefLabel "US Virgin Islands"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VNM-Viet_Nam>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VNM"@en ;
+  skos:altLabel "VN"@en ;
+  skos:notation "704" ;
+  skos:prefLabel "Viet Nam"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#VUT-Vanuatu>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "VUT"@en ;
+  skos:altLabel "VU"@en ;
+  skos:notation "548" ;
+  skos:prefLabel "Vanuatu"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#WLF-Wallis_and_Futuna>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "WLF"@en ;
+  skos:altLabel "WF"@en ;
+  skos:notation "876" ;
+  skos:prefLabel "Wallis and Futuna"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#WSM-Samoa>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "WSM"@en ;
+  skos:altLabel "WS"@en ;
+  skos:notation "882" ;
+  skos:prefLabel "Samoa"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#YEM-Yemen>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "YEM"@en ;
+  skos:altLabel "YE"@en ;
+  skos:notation "887" ;
+  skos:prefLabel "Yemen"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ZAF-South_Africa>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ZAF"@en ;
+  skos:altLabel "ZA"@en ;
+  skos:notation "710" ;
+  skos:prefLabel "South Africa"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ZMB-Zambia>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ZMB"@en ;
+  skos:altLabel "ZM"@en ;
+  skos:notation "894" ;
+  skos:prefLabel "Zambia"@en ;
+.
+<http://www.geolexica.org/api/country-code-list#ZWE-Zimbabwe>
+  rdf:type geolexica-ap:Country_Code ;
+  rdfs:label "ZWE"@en ;
+  skos:altLabel "ZW"@en ;
+  skos:notation "716" ;
+  skos:prefLabel "Zimbabwe"@en ;
+.
 <https://www.geolexica.org/api/country-codes>
   rdf:type owl:Ontology ;
-  dcterms:modified "2011-01-18" ;
-  rdfs:comment " prior version : \" http://aims.fao.org/aos/geopolitical_v10.owl\"   " ;
-  rdfs:comment "FAO DISCLAIMER:  Information on the FAO Country Profiles portal is provided as and when available. The designations employed and the presentation of information do not imply the expression of any opinion whatsoever on the part of the Food and Agriculture Organization of the United Nations (FAO) concerning the legal status of any country, territory, city or area, or of its authorities, or concerning the delimitation of its frontiers or boundaries. FAO makes every effort to ensure, but does not guarantee, the accuracy or completeness of and declines responsibility for any loss, damage, liability or expense suffered which is claimed to result from its use. " ;
-  rdfs:comment "FAO's geopolitical ontology version 1.1 was populated with FAO, UN and internationally recognized data sources.    " ;
-  rdfs:comment "The use of the information presented on the FAO Country Profiles portal is governed by FAO's copyright reservation. Any queries regarding the content, sources or use, please contact FAO-country-profiles@fao.org or visit http://www.fao.org/countryprofiles. " ;
-  rdfs:comment """Version 1.1 of the ontology includes a structured description of sources (source creator, source identifier by language, and last updated date on source) . 
-   """ ;
+  dcterms:modified "2019-12-02"^^xsd:date ;
+  <http://topbraid.org/teamwork#rootClass> owl:Thing ;
+  rdfs:comment "FAO's geopolitical ontology version 1.1 was populated with FAO, UN and internationally recognized data sources." ;
+  rdfs:comment "For more information, visit the FAO Country Profiles portal: http://www.fao.org/countryprofiles." ;
   rdfs:label "country-codes" ;
+  owl:imports <http://topbraid.org/schema/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
   owl:versionInfo "version 1.1"@en ;
 .
