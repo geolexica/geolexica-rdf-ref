@@ -1,14 +1,18 @@
-# baseURI: https://www.geolexica.org/api/country_codes
+# baseURI: https://www.geolexica.org/api/country-codes
+# imports: http://datashapes.org/dash
+# imports: http://spinrdf.org/spl
+# imports: http://topbraid.org/schema/
+# imports: http://www.w3.org/2004/02/skos/core
 # imports: https://www.geolexica.org/api/geolexica-ap
 
-@prefix : <https://www.geolexica.org/api/country_codes#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geolexica: <https://www.geolexica.org/api/geolexica-ap#> .
+@prefix metadata: <http://topbraid.org/metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
 
 <https://www.geolexica.org/api/codes#ABW-Aruba>
   rdf:type geolexica:Country_Code ;
@@ -38,12 +42,12 @@
   skos:notation "660" ;
   skos:prefLabel "Anguilla"@en ;
 .
-<https://www.geolexica.org/api/codes#ALA-Åland_Islands>
+<https://www.geolexica.org/api/codes#ALA-Ã…land_Islands>
   rdf:type geolexica:Country_Code ;
   rdfs:label "ALA" ;
   skos:altLabel "AX"@en ;
   skos:notation "248" ;
-  skos:prefLabel "Åland Islands"@en ;
+  skos:prefLabel "Ã…land Islands"@en ;
 .
 <https://www.geolexica.org/api/codes#ALB-Albania>
   rdf:type geolexica:Country_Code ;
@@ -199,12 +203,12 @@
   skos:notation "70" ;
   skos:prefLabel "Bosnia and Herzegovina"@en ;
 .
-<https://www.geolexica.org/api/codes#BLM-Saint_Barthélemy>
+<https://www.geolexica.org/api/codes#BLM-Saint_BarthÃ©lemy>
   rdf:type geolexica:Country_Code ;
   rdfs:label "BLM" ;
   skos:altLabel "BL"@en ;
   skos:notation "652" ;
-  skos:prefLabel "Saint Barthélemy"@en ;
+  skos:prefLabel "Saint BarthÃ©lemy"@en ;
 .
 <https://www.geolexica.org/api/codes#BLR-Belarus>
   rdf:type geolexica:Country_Code ;
@@ -318,12 +322,12 @@
   skos:notation "156" ;
   skos:prefLabel "China"@en ;
 .
-<https://www.geolexica.org/api/codes#CIV-Côte_d'Ivoire>
+<https://www.geolexica.org/api/codes#CIV-CÃ´te_d'Ivoire>
   rdf:type geolexica:Country_Code ;
   rdfs:label "CIV" ;
   skos:altLabel "CI"@en ;
   skos:notation "384" ;
-  skos:prefLabel "Côte d'Ivoire"@en ;
+  skos:prefLabel "CÃ´te d'Ivoire"@en ;
 .
 <https://www.geolexica.org/api/codes#CMR-Cameroon>
   rdf:type geolexica:Country_Code ;
@@ -388,12 +392,12 @@
   skos:notation "192" ;
   skos:prefLabel "Cuba"@en ;
 .
-<https://www.geolexica.org/api/codes#CUW-Curaçao>
+<https://www.geolexica.org/api/codes#CUW-CuraÃ§ao>
   rdf:type geolexica:Country_Code ;
   rdfs:label "CUW" ;
   skos:altLabel "CW"@en ;
   skos:notation "531" ;
-  skos:prefLabel "Curaçao"@en ;
+  skos:prefLabel "CuraÃ§ao"@en ;
 .
 <https://www.geolexica.org/api/codes#CXR-Christmas_Island>
   rdf:type geolexica:Country_Code ;
@@ -1326,12 +1330,12 @@
   skos:notation "886" ;
   skos:prefLabel "TWN"@en ;
 .
-<https://www.geolexica.org/api/codes#REU-Réunion>
+<https://www.geolexica.org/api/codes#REU-RÃ©union>
   rdf:type geolexica:Country_Code ;
   rdfs:label "REU" ;
   skos:altLabel "RE"@en ;
   skos:notation "638" ;
-  skos:prefLabel "Réunion"@en ;
+  skos:prefLabel "RÃ©union"@en ;
 .
 <https://www.geolexica.org/api/codes#ROU-Romania>
   rdf:type geolexica:Country_Code ;
@@ -1753,16 +1757,17 @@
   skos:notation "716" ;
   skos:prefLabel "Zimbabwe"@en ;
 .
-<https://www.geolexica.org/api/country_codes>
+<https://www.geolexica.org/api/country-codes>
   rdf:type owl:Ontology ;
-  dcterms:modified "2019-12-02"^^xsd:date ;
-  <http://topbraid.org/metadata#status> <http://topbraid.org/metadata#UnderDevelopmentStatus> ;
-  <http://topbraid.org/swa#defaultNamespace> "https://www.geolexica.org/api/codes#" ;
-  <http://topbraid.org/teamwork#rootClass> owl:Thing ;
+  dcterms:modified "2019-12-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
   rdfs:comment "FAO's geopolitical ontology version 1.1 was populated with FAO, UN and internationally recognized data sources." ;
   rdfs:comment "For more information, visit the FAO Country Profiles portal: http://www.fao.org/countryprofiles." ;
   rdfs:label "country codes" ;
   rdfs:label "country-codes" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://spinrdf.org/spl> ;
+  owl:imports <http://topbraid.org/schema/> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <https://www.geolexica.org/api/geolexica-ap> ;
   owl:versionInfo "version 1.1"@en ;
 .
