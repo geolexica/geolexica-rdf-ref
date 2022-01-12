@@ -1,0 +1,3586 @@
+@prefix :      <https://www.geolexica.org/api/rdf#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:jpn_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:Country_Code  a         owl:Class ;
+        rdfs:comment     "ISO 3166 code list." ;
+        rdfs:label       "Country code" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "COUNTRY CODE" .
+
+:dut_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:rus_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:pol_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:Note   a                owl:Class ;
+        rdfs:label       "Note" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "NOTE" .
+
+:rus_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:ara_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:fra_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:eng_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:chn_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:kor_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:spa_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:dan_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:dan_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:msa_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:msa_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:msa_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:note_6  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:fin_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:chn_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:swe_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:fin_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:fra_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:ger_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:chn_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:spa_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:dan_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:preferred  a           :TermClassification ;
+        rdfs:label      "Preferred" ;
+        skos:prefLabel  "preferred" .
+
+:kor_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:jpn_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:pol_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:dan_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:fin_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:dut_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:kor_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:ger_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:unspecified  a           :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Unspecified" ;
+        skos:hiddenLabel  "6" ;
+        skos:prefLabel    "unspecified" .
+
+:dan_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fra_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:ger_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:kor_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:SimilarityLineage  a    owl:Class ;
+        rdfs:label       "Similarity to Lineage Source" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "SIMILARITY TO LINEAGE SOURCE" .
+
+:msa_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:note_1  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:fra_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:chn_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:dut_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:context_added  a         :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Context added" ;
+        skos:hiddenLabel  "3" ;
+        skos:prefLabel    "context added" .
+
+:fra_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:rus_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:ara_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:msa_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:spa_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:kor_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:ger_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:eng_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:dan_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:dan_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:pol_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:kor_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:eng_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:rus_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:swe_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:ger_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:eng_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:swe_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:chn_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:ger_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:rus_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:example_7  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:fra_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:authority_link  a      owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:spa_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:eng_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:fin_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:swe_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:swe_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:fra_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:eng_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:jpn_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:chn_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:swe_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:ara_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fra_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:jpn_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:kor_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:fin_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:rus_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:fra_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:deprecated  a          :TermClassification ;
+        rdfs:label      "Deprecated" ;
+        skos:prefLabel  "deprecated" .
+
+:kor_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:review_type  a         owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:dan_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:rus_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:spa_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:msa_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:example_2  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:SimilarityAuthoritative
+        a                owl:Class ;
+        rdfs:label       "Similarity to Authoritative Source" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:dut_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:spa_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:jpn_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:ara_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:dan_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:kor_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:fra_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:msa_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:ger_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:dan_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:pol_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ger_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:fra_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dan_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:note_8  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:rus_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:ara_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:msa_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:fin_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:rus_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:eng_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:kor_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:release1_retired  a      :GlossaryRelease ;
+        rdfs:label        "Release 1 Retired" ;
+        skos:hiddenLabel  "-1" ;
+        skos:prefLabel    "release1_retired" .
+
+:swe_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:spa_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:chn_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:dan_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:pol_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:jpn_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:pol_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:ara_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:spa_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:dut_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:eng_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:ger_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:fin_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:dan_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:ISO_19132_2007  a      :Authoritative_Source ;
+        rdfs:comment    "ISO 19132:2007 defines a reference model and conceptual framework for location-based services (LBS)." ;
+        skos:prefLabel  "ISO 19132:2007" ;
+        :link           "https://www.iso.org/standard/40601.html" .
+
+:dan_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ger_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:spa_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:msa_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:note_3  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:fin_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:rus_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:ger_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:rus_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:chn_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:msa_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:spa_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:ara_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:rus_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:dut_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:dan_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:rus_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:ger_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:retirement  a          :ReviewType ;
+        rdfs:label      "Retirement" ;
+        skos:prefLabel  "retirement" .
+
+:release1  a              :GlossaryRelease ;
+        rdfs:label        "Release 1" ;
+        skos:hiddenLabel  "1" ;
+        skos:prefLabel    "release1" .
+
+:pol_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:chn_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dan_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ger_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:pol_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:kor_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:pol_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:date_accepted  a       owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:rus_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:ger_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:ger_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:dan_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:pol_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:eng_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:eng_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:kor_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:notAccepted  a         <https://www.geolexica.org/api/skos-rdf#ReviewDecision> ;
+        rdfs:label      "Not Accepted" ;
+        skos:prefLabel  "notAccepted" .
+
+:ger_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:withdrawn  a           :ReviewDecision ;
+        rdfs:label      "Withdrawn" ;
+        skos:prefLabel  "withdrawn" .
+
+:msa_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:fra_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:rus_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:rus_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:eng_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:ara_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:msa_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:eng_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:term   a               owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:swe_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:GeolexicaConceptScheme
+        a               skos:ConceptScheme ;
+        skos:prefLabel  "Geolexica Concept Scheme" .
+
+:rus_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:ger_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:fin_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:ara_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:eng_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:swe_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dan_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:fra_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:fin_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:jpn_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:fin_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:eng_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:jpn_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:dut_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:dut_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:dut_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:fra_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:pol_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:eng_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:Review_Decision_Note
+        a                       :ReviewDecisionNotes ;
+        rdfs:label              "Review Decision Note 1" ;
+        skos:prefLabel          "REVIEW DECISION NOTE 1" ;
+        :review_decision_notes  "review decision note text"@en .
+
+:under_review  a        :ReviewIndicator ;
+        skos:prefLabel  "Under Review in Source Document" .
+
+:jpn_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:pol_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:example_4  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:spa_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:chn_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:chn_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:eng_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:rus_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:dan_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:jpn_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:jpn_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:fra_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:LineageSource  a        owl:Class ;
+        rdfs:label       "Lineage Source" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "LINEAGE SOURCE" .
+
+:eng_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:swe_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fra_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:spa_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:ara_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:msa_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:GlossaryRelease  a      owl:Class ;
+        rdfs:label       "Glossary Release" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "GLOSSARY RELEASE" .
+
+:fin_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:jpn_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:Authoritative_Source
+        a                owl:Class ;
+        rdfs:label       "Authoritative Source" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "AUTHORITATIVE SOURCE" .
+
+:kor_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:term_synonym  a        owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:ReviewIndicator  a      owl:Class ;
+        rdfs:label       "Review Indicator" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "REVIEW INDICATOR" .
+
+:restyled  a              :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Restyled" ;
+        skos:hiddenLabel  "2" ;
+        skos:prefLabel    "restyled" .
+
+:       a            owl:Ontology ;
+        rdfs:label   "Geolexica SKOS-RDF" ;
+        owl:imports  <http://www.w3.org/2008/05/skos-xl> , <http://www.w3.org/2004/02/skos/core> , <http://topbraid.org/schema/> , dcterms: .
+
+:kor_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:fin_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:ara_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:fin_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      dcterms:source ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:dut_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:Valid  a               :EntryStatus ;
+        rdfs:label      "Valid" ;
+        skos:prefLabel  "valid" .
+
+:Not_Valid  a           :EntryStatus ;
+        rdfs:label      "Not valid" ;
+        skos:prefLabel  "notValid" .
+
+:dan_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:pol_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:msa_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:spa_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:Superceded  a          :EntryStatus ;
+        rdfs:label      "Superceded" ;
+        skos:prefLabel  "superceded" .
+
+:dan_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:similarity_lineage  a  owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:jpn_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:msa_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:eng_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:pol_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:Retired  a             :EntryStatus ;
+        rdfs:label      "Retired" ;
+        skos:prefLabel  "retired" .
+
+:dan_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:note_5  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:chn_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:spa_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:dut_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:fin_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dut_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:ger_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:eng_term  a            owl:DatatypeProperty ;
+        rdfs:label      "Term in English" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM IN ENGLISH" .
+
+:msa_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:chn_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:dan_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:rus_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:EntryStatus  a          owl:Class ;
+        rdfs:label       "Entry Status" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "ENTRY STATUS" .
+
+:kor_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:term_abbreviation  a   owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:language_code  a       owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:fra_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:pol_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:swe_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:ger_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:eng_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:dan_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:eng_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:jpn_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:kor_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dan_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:msa_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:jpn_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:fra_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:dut_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:eng_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:msa_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:msa_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:eng_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:ger_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:ger_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:swe_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:dut_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:dan_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:chn_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:eng_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:eng_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:pol_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:ger_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:fin_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:rus_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:eng_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:review_date  a         owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:dan_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:kor_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:example_6  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:admitted  a            :TermClassification ;
+        rdfs:label      "Admitted" ;
+        skos:prefLabel  "admitted" .
+
+:country_code  a        owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:msa_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:fra_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:fra_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dan_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:chn_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:identical  a             :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Identical" ;
+        skos:hiddenLabel  "1" ;
+        skos:prefLabel    "identical" .
+
+:eng_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:eng_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:note   a               owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:empty_field  a         <https://www.geolexica.org/api/skos-rdf#ReviewIndicator> ;
+        rdfs:comment    "Empty text field (placeholder)." ;
+        rdfs:label      "<empty field>" ;
+        skos:prefLabel  " " .
+
+:chn_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:fin_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:fra_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:specialisation  a        :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Specialisation" ;
+        skos:hiddenLabel  "5" ;
+        skos:prefLabel    "specialisation" .
+
+:chn_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:pending  a             :Status ;
+        rdfs:label      "Pending" ;
+        skos:prefLabel  "pending" .
+
+:dan_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:entry_status  a        owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:jpn_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:dut_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:jpn_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:fra_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:jpn_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:fin_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:fra_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:fin_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:example_1  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:jpn_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:dan_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:ger_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:jpn_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:ara_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:jpn_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:msa_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:fra_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:spa_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:note_7  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:dut_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ara_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:kor_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:fra_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:TermSynonym  a          owl:Class ;
+        rdfs:label       "Term Synonym" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "TERM SYNONYM" .
+
+:dut_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:kor_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:spa_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:fin_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:kor_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:jpn_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:spa_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:eng_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:dan_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ger_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:chn_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ReviewDecisionNotes  a  owl:Class ;
+        rdfs:label       "Review Decision Notes" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "REVIEW DECISION NOTES" .
+
+:Example  a              owl:Class ;
+        rdfs:label       "Example" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "EXAMPLE" .
+
+:chn_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:pol_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:example  a             owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:dan_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dan_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:kor_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:msa_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:chn_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:ger_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:msa_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:note_2  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:eng_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:fra_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:chn_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:dut_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:review_status  a       owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:dan_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:msa_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:dan_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:ger_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:chn_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:generalisation  a        :SimilarityLineage , :SimilarityAuthoritative ;
+        rdfs:label        "Generalisation" ;
+        skos:hiddenLabel  "4" ;
+        skos:prefLabel    "generalisation" .
+
+:spa_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:dan_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dut_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:supersession  a        :ReviewType ;
+        rdfs:label      "Supersession" ;
+        skos:prefLabel  "supersession" .
+
+:kor_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:kor_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ReviewType  a           owl:Class ;
+        rdfs:label       "Review Type" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "REVIEW TYPE" .
+
+:swe_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:swe_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:msa_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:fin_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:tentative  a           :Status ;
+        rdfs:label      "Tentative" ;
+        skos:prefLabel  "tentative" .
+
+:dan_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:eng_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_note_4  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:ger_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:kor_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:example_8  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:pol_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:spa_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:spa_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:fra_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:swe_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:ara_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:TermAbbreviation  a     owl:Class ;
+        rdfs:label       "Term Synonym" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "TERM SYNONYM" .
+
+:term_english  a        owl:DatatypeProperty ;
+        rdfs:label      "term (English)" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM (English)" .
+
+:jpn_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:swe_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:eng_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:msa_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_example_6  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:date_amended  a        owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:ger_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:swe_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:release  a             owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:pol_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:fra_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:jpn_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:rus_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:dut_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:authority_clause  a    owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:ara_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:swe_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ger_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:jpn_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:dut_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:msa_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:pol_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:jpn_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:rus_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:Term   a                owl:Class ;
+        rdfs:label       "Concept Term" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:prefLabel   "CONCEPT TERM" .
+
+:rus_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:fin_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:ReviewDecision  a       owl:Class ;
+        rdfs:label       "Review Decision" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "REVIEW DECISION" .
+
+:fra_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:eng_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:pol_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:ara_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:example_3  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:release2_retired  a      :GlossaryRelease ;
+        rdfs:label        "Release 2 Retired" ;
+        skos:hiddenLabel  "-2" ;
+        skos:prefLabel    "release2_retired" .
+
+:spa_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:spa_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:classification  a      owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:eng_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_example_1  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fra_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:dut_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:swe_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:msa_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:termID  a              owl:DatatypeProperty ;
+        rdfs:label      "Term ID" ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "TERM ID" .
+
+:pol_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_authority_link  a  owl:DatatypeProperty ;
+        rdfs:label      "link" ;
+        rdfs:range      xsd:anyURI ;
+        skos:prefLabel  "LINK" .
+
+:jpn_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:fra_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:chn_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:fin_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:jpn_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:fra_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:ara_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:final  a               :Status ;
+        rdfs:label      "Final" ;
+        skos:prefLabel  "final" .
+
+:definition  a          owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:fin_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:dan_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:jpn_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:TermClassification  a   owl:Class ;
+        rdfs:label       "Term classification" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "TERM CLASSIFICATION" .
+
+:spa_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:kor_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:dut_term_abbreviation
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Term Abbrevation" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM ABBREVIATION" .
+
+:ger_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:rus_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:eng_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:ara_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:spa_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:spa_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:pol_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:msa_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:eng_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:dan_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:chn_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:review_decision  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:dan_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:msa_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:jpn_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:ger_review_date  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DATE" .
+
+:rus_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:msa_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:ara_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:msa_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_review_decision_notes
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Notes" ;
+        skos:prefLabel  "REVIEW DECISION NOTES" .
+
+:note_4  a              owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:fra_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:fin_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ref    a               owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:dut_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:ara_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:dan_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:msa_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:fin_term  a            owl:DatatypeProperty ;
+        rdfs:label      "term" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM" .
+
+:chn_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:ger_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:link   a               owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:release2  a              :GlossaryRelease ;
+        rdfs:label        "Release 2" ;
+        skos:hiddenLabel  "-2" ;
+        skos:prefLabel    "release2" .
+
+:ara_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:ger_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:dan_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:kor_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:msa_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:dut_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:chn_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:dut_ref  a             owl:DatatypeProperty ;
+        rdfs:label      "Reference" ;
+        skos:prefLabel  "REFERENCE" .
+
+:rus_entry_status  a    owl:DatatypeProperty ;
+        skos:prefLabel  "Entry Status" .
+
+:jpn_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:dan_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:Status  a               owl:Class ;
+        rdfs:label       "Status" ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:prefLabel   "STATUS" .
+
+:eng_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:chn_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:kor_note_6  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:pol_review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:msa_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:ger_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dut_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:dut_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:ger_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:ger_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:fra_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:swe_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:rus_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:eng_country_code  a    owl:DatatypeProperty ;
+        rdfs:label      "Country Code" ;
+        skos:prefLabel  "COUNTRY CODE" .
+
+:kor_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:msa_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:msa_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:ara_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:eng_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:ara_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_example_8  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:spa_authoritative_source
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Authoritative Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "AUTHORITATIVE SOURCE" .
+
+:pol_language_code  a   owl:DatatypeProperty ;
+        rdfs:label      "3 Letter Language Code" ;
+        skos:prefLabel  "3 LETTER LANGUAGE CODE" .
+
+:swe_note_7  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:accepted  a            :ReviewDecision ;
+        rdfs:label      "Accepted" ;
+        skos:prefLabel  "ACCEPTED" .
+
+:ger_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:rus_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:review_decision_event
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Event" ;
+        skos:prefLabel  "REVIEW DECISION EVENT" .
+
+:kor_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:swe_example_4  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:swe_authority_clause
+        a               owl:DatatypeProperty ;
+        rdfs:label      "clause" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "CLAUSE" .
+
+:dut_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:LanguageCode  a         owl:Class ;
+        rdfs:subClassOf  schema:Intangible ;
+        skos:inScheme    :GeolexicaConceptScheme ;
+        skos:note        "ISO 3166 two- and three-letter language codes." ;
+        skos:prefLabel   "Language Code" .
+
+:swe_review_decision  a  owl:DatatypeProperty ;
+        rdfs:label      "Review Decision" ;
+        skos:prefLabel  "REVIEW DECISION" .
+
+:jpn_note_8  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:msa_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:dut_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:swe_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:eng_example_2  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:ger_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:kor_note_1  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fra_review_decision_date
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Decision Date" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "REVIEW DECISION DATE" .
+
+:eng_classification  a  owl:DatatypeProperty ;
+        rdfs:label      "classification" ;
+        skos:prefLabel  "CLASSIFICATION" .
+
+:example_5  a           owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:spa_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
+:spa_review_indicator
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:rus_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:kor_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:eng_review_type  a     owl:DatatypeProperty ;
+        rdfs:label      "Review Type" ;
+        skos:prefLabel  "REVIEW TYPE" .
+
+:fra_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:rus_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:ara_similarity_authoritative
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Authoritative Source" ;
+        skos:prefLabel  "SIMILARITY TO AUTHORITATIVE SOURCE" .
+
+:ara_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:pol_term_synonym  a    owl:DatatypeProperty ;
+        rdfs:label      "Term Synonyms" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "TERM SYNONYMS" .
+
+:eng_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:jpn_definition  a      owl:DatatypeProperty ;
+        rdfs:label      "definition" ;
+        rdfs:range      xsd:string ;
+        owl:sameAs      skos:definition ;
+        skos:prefLabel  "Definition" .
+
+:spa_example_3  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:dan_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:swe_note_2  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:spa_date_amended  a    owl:DatatypeProperty ;
+        rdfs:label      "Date Amended" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE AMENDED" .
+
+:lineage_source  a      owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:spa_release  a         owl:DatatypeProperty ;
+        rdfs:label      "Release" ;
+        skos:altLabel   "RELEASE" ;
+        skos:prefLabel  "RELEASE" .
+
+:fra_example_5  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:rus_note_3  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:review_indicator  a    owl:DatatypeProperty ;
+        rdfs:label      "Review Indicator" ;
+        skos:prefLabel  "REVIEW INDICATOR" .
+
+:pol_link  a            owl:DatatypeProperty ;
+        rdfs:label      "Link" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINK" .
+
+:dut_lineage_source  a  owl:DatatypeProperty ;
+        rdfs:label      "Lineage Source" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "LINEAGE SOURCE" .
+
+:eng_date_accepted  a   owl:DatatypeProperty ;
+        rdfs:label      "Date Accepted" ;
+        rdfs:range      xsd:date ;
+        skos:prefLabel  "DATE ACCEPTED" .
+
+:chn_example_7  a       owl:DatatypeProperty ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "Example" .
+
+:pol_similarity_lineage
+        a               owl:DatatypeProperty ;
+        rdfs:label      "Similarity to Lineage Source" ;
+        skos:prefLabel  "SIMILARITY TO LINEAGE SOURCE" .
+
+:fin_review_status  a   owl:DatatypeProperty ;
+        rdfs:label      "Review Status" ;
+        skos:prefLabel  "REVIEW STATUS" .
+
+:ara_note_5  a          owl:DatatypeProperty ;
+        rdfs:label      "Note" ;
+        rdfs:range      xsd:string ;
+        skos:prefLabel  "NOTE" .
+
+:fin_termID  a          owl:DatatypeProperty ;
+        rdfs:range      xsd:integer ;
+        skos:prefLabel  "id" .
+
