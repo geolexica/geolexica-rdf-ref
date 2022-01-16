@@ -1,37 +1,40 @@
-# baseURI: https://osgeo.geolexica.org/api/geolexica .
-
 @prefix : <https://osgeo.geolexica.org/api/geolexica#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://www.w3.org/2004/02/skos/core> .
 
-
-<https://osgeo.geolexica.org/api/geolexica/>
-           rdf:type owl:Ontology ;
-           owl:versionIRI <https://osgeo.geolexica.org/api/geolexica/v0.1.0/>^^xsd:anyURI ;
-           dcterms:created "2022-01-12"^^xsd:date ;
-           dcterms:creator <https://www.linkedin.com/in/lanemk>^^xsd:anyURI ;
-           dcterms:contributor <https://www.linkedin.com/in/rhtse/>^^xsd:anyURI ;
-           dcterms:description "This is the core ontology for OSGeo Geolexica, the online glossary for OSGeo."@en ;
-           dcterms:issued "2022-01-12"^^xsd:date ;
-           dcterms:license "Copyright 2022 OSGeo" ;
-           dcterms:modified "2022-01-15"^^xsd:date ;
-           dcterms:publisher <https://www.osgeo.org/> ;
-           dcterms:source <https://osgeo.geolexica.org/api/geolexica/>^^xsd:anyURI ;
-           dcterms:title "OSGeo Geolexica Ontology"@en ;
-           vann:preferredNamespacePrefix "geolexica" ;
-           vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/geolexica#" ;
-           owl:versionInfo "Version 0.1.0" .
+<http://www.w3.org/2004/02/skos/core> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://osgeo.geolexica.org/api/geolexica/v0.1.0/> ;
+                                       owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                       dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+                                       dcterms:created "2022-01-12" ;
+                                       dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+                                       dcterms:description "This is the core ontology for OSGeo Geolexica, the online glossary for OSGeo."@en ;
+                                       dcterms:issued "2022-01-12" ;
+                                       dcterms:license "Copyright 2022 OSGeo" ;
+                                       dcterms:modified "2022-01-15" ;
+                                       dcterms:publisher <https://www.osgeo.org/> ;
+                                       dcterms:source <https://osgeo.geolexica.org/api/geolexica/> ;
+                                       dcterms:title "OSGeo Geolexica Ontology"@en ;
+                                       vann:preferredNamespacePrefix "geolexica" ;
+                                       vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/geolexica#" ;
+                                       owl:versionInfo "Version 0.1.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:AnnotationProperty .
@@ -40,8 +43,6 @@ dcterms:created rdf:type owl:AnnotationProperty .
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty .
 
-###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty .
@@ -83,9 +84,40 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  http://vocab.deri.ie/void#Dataset
-void:Dataset rdf:type owl:Class ;
-             rdfs:label "Dataset" .
+###  https://osgeo.geolexica.org/api/geolexica#ConceptInfo
+:ConceptInfo rdf:type owl:Class ;
+             rdfs:comment "Herein contains attribute or property values (information) for each concept in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". Further attributes may be included in future versions of the ontology"^^rdfs:Literal ;
+             rdfs:label "Concept Information"^^xsd:string ;
+             skos:prefLabel "Info"^^xsd:string .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#ConceptReview
+:ConceptReview rdf:type owl:Class ;
+               rdfs:comment "Herein contains atributes/properties and values for each concept in the glossary, such as \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\"."^^xsd:string ;
+               rdfs:label "Concept Review"^^xsd:string ;
+               skos:prefLabel "Review"^^xsd:string .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#JSON
+:JSON rdf:type owl:Class ;
+      rdfs:subClassOf :LinkedDataAPI .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#JSON-LD
+:JSON-LD rdf:type owl:Class ;
+         rdfs:subClassOf :LinkedDataAPI .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI
+:LinkedDataAPI rdf:type owl:Class ;
+               dcterms:description "Herein lie classes for linked data APIs, otherwise considered distinct data format representations of each concept in the glossary."^^xsd:string ;
+               rdfs:label "Linked Data API"^^xsd:string ;
+               skos:prefLabel "Linked Data API"^^xsd:string .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#SKOS-RDF
+:SKOS-RDF rdf:type owl:Class ;
+          rdfs:subClassOf :LinkedDataAPI .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
