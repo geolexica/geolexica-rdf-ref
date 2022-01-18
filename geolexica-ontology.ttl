@@ -1,4 +1,5 @@
 @prefix : <https://osgeo.geolexica.org/api/geolexica#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -67,7 +68,8 @@ dcterms:publisher rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
+dcterms:source rdf:type owl:AnnotationProperty ;
+               rdfs:domain skos:Concept .
 
 
 ###  http://purl.org/dc/terms/title
@@ -94,26 +96,42 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:label "Identifier"@en ;
+                   skos:note "Use for Term ID for each concept in the glossary."@en .
+
+
 ###  http://www.linkedmodel.org/schema/vaem#abbreviation
 vaem:abbreviation rdf:type owl:DatatypeProperty ;
                   rdfs:domain skos:Concept ;
                   rdfs:range xsd:string ;
-                  rdfs:label "abbreviation"@en ;
-                  skos:note "Values must be ISO 3166 three-letter language codes."@en .
+                  dcterms:description "ISO 3166 three-letter language codes assigned to each translation provided for a given concept."@en ;
+                  rdfs:label "Abbreviation"@en .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+vs:term_status rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ConceptReview ;
+               rdfs:range xsd:string ;
+               dcterms:description "The status of a vocabulary term; values include \"accepted\", \"final\",\"pending\"..."@en ;
+               rdfs:label "Status"@en .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#classification
+:classification rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ConceptInfo ;
+              rdfs:range xsd:string ;
+              dcterms:description "Classification of the term; values include \"preferred\"."@en ;
+              rdfs:label "classification"@en .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#dateAccepted
 :dateAccepted rdf:type owl:DatatypeProperty ;
               rdfs:domain :ConceptInfo ;
               rdfs:range xsd:date ;
+              dcterms:description "Date the concept term was accepted."@en ;
               rdfs:label "date accepted"@en .
-
-
-###  https://osgeo.geolexica.org/api/geolexica#dateReviewPerformed
-:dateReviewPerformed rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :ConceptReview ;
-                     rdfs:range xsd:date ;
-                     rdfs:label "last review performed"@en .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#decision
@@ -145,12 +163,26 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
            rdfs:label "JSON-LD API URI"@en .
 
 
+###  https://osgeo.geolexica.org/api/geolexica#lastReviewPerformed
+:lastReviewPerformed rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ConceptReview ;
+                     rdfs:range xsd:date ;
+                     rdfs:label "last review performed"@en .
+
+###  https://osgeo.geolexica.org/api/geolexica#notes
+:notes rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ConceptReview ;
+              rdfs:range xsd:string ;
+              dcterms:description "Notes pertaining to term review."@en ;
+              rdfs:label "notes"@en .
+
+
 ###  https://osgeo.geolexica.org/api/geolexica#origin
 :origin rdf:type owl:DatatypeProperty ;
         rdfs:domain skos:Concept ;
         rdfs:range xsd:string ;
         rdfs:label "origin"@en ;
-        skos:note "Origin of ISO-TC 211 Registers"@en .
+        skos:note "Origin of defintion in ISO-TC 211 Registers"@en .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#skosrdfURI
@@ -160,33 +192,11 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
             rdfs:label "SKOS-RDF API URI"@en .
 
 
-###  https://osgeo.geolexica.org/api/geolexica#source
-:source rdf:type owl:DatatypeProperty ;
-        rdfs:domain skos:Concept ;
-        rdfs:range xsd:anyURI ,
-                   xsd:string ;
-        rdfs:label "source"@en ;
-        skos:note "Source of ISO/TC 211 term/concept. Should reference ISO Standard document. Consider using existing metadata for \"source\"."@en .
-
-
-###  https://osgeo.geolexica.org/api/geolexica#status
-:status rdf:type owl:DatatypeProperty ;
-        rdfs:label "status"@en ;
-        skos:note "The range of \"status\" should/could be an enumeration (i.e., accepted, rejected, pending, ...)."@en .
-
-
 ###  https://osgeo.geolexica.org/api/geolexica#tbxisoxmlURI
 :tbxisoxmlURI rdf:type owl:DatatypeProperty ;
               rdfs:domain :TBXISOTML ;
               rdfs:range xsd:anyURI ;
               rdfs:label "TBX ISO XML API URI"@en .
-
-
-###  https://osgeo.geolexica.org/api/geolexica#termID
-:termID rdf:type owl:DatatypeProperty ;
-        rdfs:domain skos:Concept ;
-        rdfs:range xsd:integer ;
-        rdfs:label "term ID"@en .
 
 
 #################################################################
@@ -195,17 +205,15 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
 
 ###  https://osgeo.geolexica.org/api/geolexica#ConceptInfo
 :ConceptInfo rdf:type owl:Class ;
-             rdfs:comment "Herein lies attribute or property values (information) for each concept (term) in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be included in future versions of the Geolexica ontology."@en ;
-             rdfs:label "Concept Information"@en ;
-             skos:note "Need to partition enumerations for attributes; i.e., for \"classification\" there might be: preferred, rejected, deprecated, proposed, alternate, etc. Need to answer the question, what are the specific enumerations?"@en ;
+             rdfs:comment "Attribute values for each concept/term in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be included in future versions of the ontology."@en ;
+             rdfs:label "Information"@en ;
              skos:prefLabel "Info"@en .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#ConceptReview
 :ConceptReview rdf:type owl:Class ;
-               rdfs:comment "Herein lies attributes/properties and values for each concept (term) in the glossary, such as \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". New attributes may be included in future versions of the Geolexica ontology."@en ;
-               rdfs:label "Concept Review"@en ;
-               skos:note "Need to partition enumerations for attributes; i.e., for \"status\" there might be: valid, pending, deprecated, proposed, etc. Need to answer the question, what are the specific enumerations?"@en ;
+               rdfs:comment "Attributes values for each concept/term in the glossary, such as \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". New attributes may be included in future versions of the ontology."@en ;
+               rdfs:label "Review"@en ;
                skos:prefLabel "Review"@en .
 
 
@@ -257,7 +265,7 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
                        skos:Collection ;
               rdfs:label "MLGT Collection of SKOS Concepts"@en ;
               rdfs:seeAlso "https://isotc211.geolexica.org/"^^xsd:anyURI ;
-              skos:note "The MLGT Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the MLGT set of SKOS concepts from the OSGeo set of SKOS concepts. The rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."@en .
+              skos:note "The MLGT Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the MLGT set of SKOS concepts from the OSGeo set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."@en .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#OSGeoGlossary
@@ -265,7 +273,7 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
                         skos:Collection ;
                rdfs:seeAlso "https://osgeo.geolexica.org/"^^xsd:anyURI ;
                skos:note "OSGeo Collection of SKOS Concepts"@en ,
-                         "The OSGeo Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the OSGeo set of SKOS concepts from the MLGT set of SKOS concepts. Rationale: The Geolexica Ontology can be used for either collection and one may want to identify concepts as such."@en .
+                         "The OSGeo Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the OSGeo set of SKOS concepts from the MLGT set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
