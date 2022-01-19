@@ -1,0 +1,585 @@
+{
+  "@graph" : [ {
+    "@id" : "dcterms:MediaType",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "dcterms:contributor",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:creator",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:dateAccepted",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Date the concept/term was accepted in concept INFO."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "date accepted"
+    },
+    "note" : {
+      "@language" : "en",
+      "@value" : "Attribute is drawn from the DCMI Metadata Terms vocabulary."
+    }
+  }, {
+    "@id" : "dcterms:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:identifier",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Encodes the Term ID for each concept."
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Use for Term ID for each concept in the glossary; must be an integer."
+    },
+    "domain" : "skos:Concept",
+    "label" : {
+      "@language" : "en",
+      "@value" : "identifier"
+    },
+    "range" : "xsd:integer",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Attribute is drawn from the DCMI Metadata Terms vocabulary."
+    }
+  }, {
+    "@id" : "dcterms:issued",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:license",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:modified",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:publisher",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:source",
+    "@type" : "owl:DatatypeProperty"
+  }, {
+    "@id" : "dcterms:title",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vann:preferredNamespacePrefix",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vann:preferredNamespaceUri",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vaem:abbreviation",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "ISO 3166 three-letter language codes assigned to each translation provided for a given concept."
+    },
+    "domain" : "skos:Concept",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Abbreviation"
+    },
+    "range" : "xsd:string",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Attribute is drawn from the Vocabulary for Essential Metadata."
+    }
+  }, {
+    "@id" : "xsd:date",
+    "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "vs:term_status",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Status of a vocabulary term for Concept Info and/or Concept Review."
+    },
+    "domain" : ":ConceptReview",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Status"
+    },
+    "range" : "xsd:string",
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "Need to identify and enumerate status values (i.e., \"accepted\", \"final\", \"pending\"...)."
+    }, {
+      "@language" : "en",
+      "@value" : "Attribute is drawn from the SemWeb Vocab Status ontology."
+    } ]
+  }, {
+    "@id" : "./",
+    "@type" : "owl:Ontology",
+    "contributor" : "https://www.linkedin.com/in/rhtse/",
+    "created" : "2022-01-12",
+    "creator" : "https://www.linkedin.com/in/lanemk",
+    "description" : {
+      "@language" : "en",
+      "@value" : "This is the core ontology for OSGeo Geolexica, the online glossary for OSGeo."
+    },
+    "issued" : "",
+    "license" : "Copyright 2022 OSGeo",
+    "modified" : "",
+    "publisher" : "https://www.osgeo.org/",
+    "title" : {
+      "@language" : "en",
+      "@value" : "OSGeo Geolexica Ontology"
+    },
+    "preferredNamespacePrefix" : "geolexica",
+    "preferredNamespaceUri" : "https://osgeo.geolexica.org/api/geolexica#",
+    "imports" : "http://www.w3.org/2004/02/skos/core",
+    "versionIRI" : "v0.1.0/",
+    "versionInfo" : "Version 0.1.0",
+    "note" : {
+      "@language" : "en",
+      "@value" : "The Geolexica Ontology is currently under development as of 2022-19-01. Classes, properties, attributes, and axioms are subject to change."
+    }
+  }, {
+    "@id" : ":ConceptInfo",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Attribute values for each concept/term in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be included in future versions of the ontology."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Information"
+    },
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Info"
+    }
+  }, {
+    "@id" : ":ConceptReview",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Attributes values for each concept/term in the glossary, such as \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". New attributes may be included in future versions of the ontology."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Review"
+    },
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Review"
+    }
+  }, {
+    "@id" : ":GeolexicaConceptScheme",
+    "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
+    "description" : {
+      "@language" : "en",
+      "@value" : "In accordance with SKOS, this is the Geolexica Concept Scheme, to which all SKOS Concepts are attributed in the OSGeo Geolexica Glossary and/or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Geolexica Concept Scheme"
+    },
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Geolexica Concept Scheme"
+    }
+  }, {
+    "@id" : ":JSON",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "JSON class representation of a resource."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "JSON Linked Data API"
+    },
+    "subClassOf" : ":LinkedDataAPI"
+  }, {
+    "@id" : ":JSON-LD",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "JSON-LD class representation of a resource."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "JSON-LD Linked Data API"
+    },
+    "subClassOf" : ":LinkedDataAPI"
+  }, {
+    "@id" : ":LinkedDataAPI",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Herein lies classes for linked data APIs, otherwise considered distinct data format representations of each concept in the glossary."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Linked Data API"
+    },
+    "subClassOf" : "dcterms:MediaType",
+    "prefLabel" : {
+      "@language" : "en",
+      "@value" : "Linked Data API"
+    }
+  }, {
+    "@id" : ":MLGTGlossary",
+    "@type" : [ "skos:Collection", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "MLGT Collection of SKOS Concepts"
+    },
+    "seeAlso" : "https://isotc211.geolexica.org/",
+    "note" : {
+      "@language" : "en",
+      "@value" : "The MLGT Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the MLGT set of SKOS concepts from the OSGeo set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."
+    }
+  }, {
+    "@id" : ":OSGeoGlossary",
+    "@type" : [ "skos:Collection", "owl:NamedIndividual" ],
+    "seeAlso" : "https://osgeo.geolexica.org/",
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "The OSGeo Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the OSGeo set of SKOS concepts from the MLGT set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."
+    }, {
+      "@language" : "en",
+      "@value" : "OSGeo Collection of SKOS Concepts"
+    } ]
+  }, {
+    "@id" : ":Origin",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Source standards document for given language; may include location of chapter, paragraph, and section."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Origin"
+    },
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "Should be a URL linking to Registers document."
+    }, {
+      "@language" : "en",
+      "@value" : "Need to attach all known Registers, all standards document language references as INDIVIDUALS."
+    } ]
+  }, {
+    "@id" : ":SKOS-RDF",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "SKOS-RDF class representation of a resource."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "SKOS-RDF Linked Data API"
+    },
+    "subClassOf" : ":LinkedDataAPI",
+    "altLabel" : {
+      "@language" : "en",
+      "@value" : "SKOS IN RDF Linked Data API"
+    }
+  }, {
+    "@id" : ":Source",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Source standards document; may include location of chapter, paragraph, and section."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Source"
+    },
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "Should be a URL linking to standards document."
+    }, {
+      "@language" : "en",
+      "@value" : "Need to attach all known Source documents as INDIVIDUALS."
+    } ]
+  }, {
+    "@id" : ":TBXISOXML",
+    "@type" : "owl:Class",
+    "description" : {
+      "@language" : "en",
+      "@value" : "TBX-ISO-XML class representation of a resource."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "TBX-ISO-XML Linked Data API"
+    },
+    "subClassOf" : ":LinkedDataAPI",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is this supposed to be TBX-ISO-XML or -TML?"
+    }
+  }, {
+    "@id" : ":classification",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Classification of the term pertaining to concept INFO."
+    },
+    "domain" : ":ConceptInfo",
+    "label" : {
+      "@language" : "en",
+      "@value" : "classification"
+    },
+    "range" : "xsd:string",
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "Need to identify and enumerate classification values (i.e., \"preferred\", \"alternate\"...)."
+    }, {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    } ]
+  }, {
+    "@id" : ":decision",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Disposition of concept/term REVIEW."
+    },
+    "domain" : ":ConceptReview",
+    "label" : {
+      "@language" : "en",
+      "@value" : "decision"
+    },
+    "range" : "xsd:string",
+    "note" : [ {
+      "@language" : "en",
+      "@value" : "Need to identify and enumerate decision values (i.e., \"accepted\", \"rejected\", \"pending\"...)."
+    }, {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    } ]
+  }, {
+    "@id" : ":decisionEvent",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Context statement of authority REVIEW."
+    },
+    "domain" : ":ConceptReview",
+    "label" : {
+      "@language" : "en",
+      "@value" : "decision event"
+    },
+    "range" : "xsd:string",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    }
+  }, {
+    "@id" : ":jsonURI",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "JSON  property representation of resource."
+    },
+    "domain" : ":JSON",
+    "label" : {
+      "@language" : "en",
+      "@value" : "JSON API URI"
+    },
+    "range" : "xsd:anyURI",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Property value is URI link to file."
+    }
+  }, {
+    "@id" : ":jsonldURI",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "JSON-LD property representation of resource."
+    },
+    "domain" : ":JSON-LD",
+    "label" : {
+      "@language" : "en",
+      "@value" : "JSON-LD API URI"
+    },
+    "range" : "xsd:anyURI",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Property value is URI link to file."
+    }
+  }, {
+    "@id" : ":lastReviewPerformed",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Date of the last REVIEW performed for the concept/term."
+    },
+    "domain" : ":ConceptReview",
+    "label" : {
+      "@language" : "en",
+      "@value" : "last review performed"
+    },
+    "range" : "xsd:date",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    }
+  }, {
+    "@id" : ":notes",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Notes pertaining to concept/term REVIEW."
+    },
+    "domain" : ":ConceptReview",
+    "label" : {
+      "@language" : "en",
+      "@value" : "notes"
+    },
+    "range" : "xsd:string",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    }
+  }, {
+    "@id" : ":origin",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Origin of defintion in ISO-TC 211 Registers"
+    },
+    "domain" : "skos:Concept",
+    "label" : {
+      "@language" : "en",
+      "@value" : "origin"
+    },
+    "range" : "xsd:string",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    }
+  }, {
+    "@id" : ":skosrdfURI",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "SKOS-RDF property representation of a resource."
+    },
+    "domain" : ":SKOS-RDF",
+    "label" : {
+      "@language" : "en",
+      "@value" : "SKOS-RDF API URI"
+    },
+    "range" : "xsd:anyURI",
+    "altLabel" : {
+      "@language" : "en",
+      "@value" : "SKOS IN RDF API URI"
+    },
+    "note" : {
+      "@language" : "en",
+      "@value" : "Property value is URI link to file."
+    }
+  }, {
+    "@id" : ":source",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Source of concept/term defintion."
+    },
+    "domain" : "skos:Concept",
+    "label" : {
+      "@language" : "en",
+      "@value" : "source"
+    },
+    "range" : "xsd:string",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Is there a vocabulary with this property (reuse)?"
+    }
+  }, {
+    "@id" : ":tbxisoxmlURI",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "TBX-ISO-XML property representation of a resource."
+    },
+    "domain" : ":TBXISOXML",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TBX ISO XML API URI"
+    },
+    "range" : "xsd:anyURI",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Property value is URI link to file."
+    }
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "description" : "http://purl.org/dc/terms/description",
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "modified" : "http://purl.org/dc/terms/modified",
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "issued" : "http://purl.org/dc/terms/issued",
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "license" : "http://purl.org/dc/terms/license",
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "created" : "http://purl.org/dc/terms/created",
+    "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "title" : "http://purl.org/dc/terms/title",
+    "@base" : "https://osgeo.geolexica.org/api/geolexica#",
+    "" : "https://osgeo.geolexica.org/api/geolexica#",
+    "void" : "http://vocab.deri.ie/void#",
+    "vaem" : "http://www.linkedmodel.org/schema/vaem#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dctype" : "http://purl.org/dc/dcmitype/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  }
+}

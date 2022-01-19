@@ -1,0 +1,277 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dctype="http://purl.org/dc/dcmitype/"
+    xmlns="https://osgeo.geolexica.org/api/geolexica#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:void="http://vocab.deri.ie/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#notes">
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">notes</rdfs:label>
+    <dcterms:description xml:lang="en">Notes pertaining to concept/term REVIEW.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#tbxisoxmlURI">
+    <skos:note xml:lang="en">Property value is URI link to file.</skos:note>
+    <rdfs:label xml:lang="en">TBX ISO XML API URI</rdfs:label>
+    <dcterms:description xml:lang="en">TBX-ISO-XML property representation of a resource.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#TBXISOXML"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#TBXISOXML">
+    <skos:note xml:lang="en">Is this supposed to be TBX-ISO-XML or -TML?</skos:note>
+    <rdfs:label xml:lang="en">TBX-ISO-XML Linked Data API</rdfs:label>
+    <dcterms:description xml:lang="en">TBX-ISO-XML class representation of a resource.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#Origin">
+    <skos:note xml:lang="en">Should be a URL linking to Registers document.</skos:note>
+    <skos:note xml:lang="en">Need to attach all known Registers, all standards document language references as INDIVIDUALS.</skos:note>
+    <rdfs:label xml:lang="en">Origin</rdfs:label>
+    <dcterms:description xml:lang="en">Source standards document for given language; may include location of chapter, paragraph, and section.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#JSON-LD">
+    <rdfs:label xml:lang="en">JSON-LD Linked Data API</rdfs:label>
+    <dcterms:description xml:lang="en">JSON-LD class representation of a resource.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#jsonldURI">
+    <skos:note xml:lang="en">Property value is URI link to file.</skos:note>
+    <rdfs:label xml:lang="en">JSON-LD API URI</rdfs:label>
+    <dcterms:description xml:lang="en">JSON-LD property representation of resource.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#JSON-LD"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#SKOS-RDF">
+    <skos:altLabel xml:lang="en">SKOS IN RDF Linked Data API</skos:altLabel>
+    <rdfs:label xml:lang="en">SKOS-RDF Linked Data API</rdfs:label>
+    <dcterms:description xml:lang="en">SKOS-RDF class representation of a resource.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#decisionEvent">
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">decision event</rdfs:label>
+    <dcterms:description xml:lang="en">Context statement of authority REVIEW.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/dateAccepted">
+    <skos:note xml:lang="en">Attribute is drawn from the DCMI Metadata Terms vocabulary.</skos:note>
+    <rdfs:label xml:lang="en">date accepted</rdfs:label>
+    <dcterms:description xml:lang="en">Date the concept/term was accepted in concept INFO.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#Source">
+    <skos:note xml:lang="en">Should be a URL linking to standards document.</skos:note>
+    <skos:note xml:lang="en">Need to attach all known Source documents as INDIVIDUALS.</skos:note>
+    <rdfs:label xml:lang="en">Source</rdfs:label>
+    <dcterms:description xml:lang="en">Source standards document; may include location of chapter, paragraph, and section.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#skosrdfURI">
+    <skos:note xml:lang="en">Property value is URI link to file.</skos:note>
+    <skos:altLabel xml:lang="en">SKOS IN RDF API URI</skos:altLabel>
+    <rdfs:label xml:lang="en">SKOS-RDF API URI</rdfs:label>
+    <dcterms:description xml:lang="en">SKOS-RDF property representation of a resource.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#SKOS-RDF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#lastReviewPerformed">
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">last review performed</rdfs:label>
+    <dcterms:description xml:lang="en">Date of the last REVIEW performed for the concept/term.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <skos:note xml:lang="en">Attribute is drawn from the DCMI Metadata Terms vocabulary.</skos:note>
+    <rdfs:label xml:lang="en">identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">Use for Term ID for each concept in the glossary; must be an integer.</rdfs:comment>
+    <dcterms:description xml:lang="en">Encodes the Term ID for each concept.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/MediaType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#origin">
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">origin</rdfs:label>
+    <dcterms:description xml:lang="en">Origin of defintion in ISO-TC 211 Registers</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#source">
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">source</rdfs:label>
+    <dcterms:description xml:lang="en">Source of concept/term defintion.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
+    <dcterms:modified></dcterms:modified>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
+    <dcterms:issued></dcterms:issued>
+    <owl:versionIRI rdf:resource="https://osgeo.geolexica.org/api/geolexica/v0.1.0/"/>
+    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
+    <dcterms:description xml:lang="en">This is the core ontology for OSGeo Geolexica, the online glossary for OSGeo.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
+    <skos:note xml:lang="en">The Geolexica Ontology is currently under development as of 2022-19-01. Classes, properties, attributes, and axioms are subject to change.</skos:note>
+    <dcterms:created>2022-01-12</dcterms:created>
+    <vann:preferredNamespacePrefix>geolexica</vann:preferredNamespacePrefix>
+    <owl:versionInfo>Version 0.1.0</owl:versionInfo>
+    <vann:preferredNamespaceUri>https://osgeo.geolexica.org/api/geolexica#</vann:preferredNamespaceUri>
+    <dcterms:title xml:lang="en">OSGeo Geolexica Ontology</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.linkedmodel.org/schema/vaem#abbreviation">
+    <skos:note xml:lang="en">Attribute is drawn from the Vocabulary for Essential Metadata.</skos:note>
+    <rdfs:label xml:lang="en">Abbreviation</rdfs:label>
+    <dcterms:description xml:lang="en">ISO 3166 three-letter language codes assigned to each translation provided for a given concept.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#decision">
+    <skos:note xml:lang="en">Need to identify and enumerate decision values (i.e., "accepted", "rejected", "pending"...).</skos:note>
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">decision</rdfs:label>
+    <dcterms:description xml:lang="en">Disposition of concept/term REVIEW.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI">
+    <skos:prefLabel xml:lang="en">Linked Data API</skos:prefLabel>
+    <rdfs:label xml:lang="en">Linked Data API</rdfs:label>
+    <dcterms:description xml:lang="en">Herein lies classes for linked data APIs, otherwise considered distinct data format representations of each concept in the glossary.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#jsonURI">
+    <skos:note xml:lang="en">Property value is URI link to file.</skos:note>
+    <rdfs:label xml:lang="en">JSON API URI</rdfs:label>
+    <dcterms:description xml:lang="en">JSON  property representation of resource.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#JSON"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#JSON">
+    <rdfs:label xml:lang="en">JSON Linked Data API</rdfs:label>
+    <dcterms:description xml:lang="en">JSON class representation of a resource.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#MLGTGlossary">
+    <skos:note xml:lang="en">The MLGT Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the MLGT set of SKOS concepts from the OSGeo set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such.</skos:note>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/</rdfs:seeAlso>
+    <rdfs:label xml:lang="en">MLGT Collection of SKOS Concepts</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#ConceptReview">
+    <skos:prefLabel xml:lang="en">Review</skos:prefLabel>
+    <rdfs:label xml:lang="en">Review</rdfs:label>
+    <rdfs:comment xml:lang="en">Attributes values for each concept/term in the glossary, such as "last review performed", "status", "decision", decision event", and "notes". New attributes may be included in future versions of the ontology.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#classification">
+    <skos:note xml:lang="en">Need to identify and enumerate classification values (i.e., "preferred", "alternate"...).</skos:note>
+    <skos:note xml:lang="en">Is there a vocabulary with this property (reuse)?</skos:note>
+    <rdfs:label xml:lang="en">classification</rdfs:label>
+    <dcterms:description xml:lang="en">Classification of the term pertaining to concept INFO.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptInfo"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
+    <skos:note xml:lang="en">Need to identify and enumerate status values (i.e., "accepted", "final", "pending"...).</skos:note>
+    <skos:note xml:lang="en">Attribute is drawn from the SemWeb Vocab Status ontology.</skos:note>
+    <rdfs:label xml:lang="en">Status</rdfs:label>
+    <dcterms:description xml:lang="en">Status of a vocabulary term for Concept Info and/or Concept Review.</dcterms:description>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://osgeo.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#GeolexicaConceptScheme">
+    <skos:prefLabel xml:lang="en">Geolexica Concept Scheme</skos:prefLabel>
+    <rdfs:label xml:lang="en">Geolexica Concept Scheme</rdfs:label>
+    <dcterms:description xml:lang="en">In accordance with SKOS, this is the Geolexica Concept Scheme, to which all SKOS Concepts are attributed in the OSGeo Geolexica Glossary and/or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT).</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#OSGeoGlossary">
+    <skos:note xml:lang="en">The OSGeo Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the OSGeo set of SKOS concepts from the MLGT set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such.</skos:note>
+    <skos:note xml:lang="en">OSGeo Collection of SKOS Concepts</skos:note>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://osgeo.geolexica.org/</rdfs:seeAlso>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/geolexica#ConceptInfo">
+    <skos:prefLabel xml:lang="en">Info</skos:prefLabel>
+    <rdfs:label xml:lang="en">Information</rdfs:label>
+    <rdfs:comment xml:lang="en">Attribute values for each concept/term in the glossary that indicates "status", "classification", and "date-accepted". New attributes may be included in future versions of the ontology.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>
