@@ -90,36 +90,44 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://osgeo.geolexica.org/api/geolexica#langCode
-:langCode rdf:type owl:ObjectProperty ;
-          rdfs:domain :LangCode ;
-          dcterms:description "Object property for LangCode values."@en ;
-          rdfs:label "language code"@en .
+###  https://osgeo.geolexica.org/api/geolexica#hasInfo
+:hasInfo rdf:type owl:ObjectProperty ;
+         rdfs:domain skos:Concept ;
+         rdfs:range :ConceptInfo .
 
 
-###  https://osgeo.geolexica.org/api/geolexica#origin
-:origin rdf:type owl:ObjectProperty ;
-        rdfs:domain skos:Concept ;
-        rdfs:range :Origin ;
-        dcterms:description "Origin of defintion in ISO-TC 211 Registers"@en ;
-        rdfs:label "origin"@en ;
-        skos:note "Is there a vocabulary with this property (reuse)?"@en .
+###  https://osgeo.geolexica.org/api/geolexica#hasLangCode
+:hasLangCode rdf:type owl:ObjectProperty ;
+             rdfs:domain skos:Concept ;
+             rdfs:range :LangCode ;
+             dcterms:description "Object property for LangCode values."@en ;
+             rdfs:label "language code"@en .
 
 
-###  https://osgeo.geolexica.org/api/geolexica#review
-:review rdf:type owl:ObjectProperty ;
-        rdfs:domain :ConceptReview ;
-        dcterms:description "Object property for ConceptReview values."@en ;
-        rdfs:label "review"@en .
+###  https://osgeo.geolexica.org/api/geolexica#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :Origin ;
+           dcterms:description "Origin of defintion in ISO-TC 211 Registers"@en ;
+           rdfs:label "origin"@en ;
+           skos:note "Is there a vocabulary with this property (reuse)?"@en .
 
 
-###  https://osgeo.geolexica.org/api/geolexica#source
-:source rdf:type owl:ObjectProperty ;
-        rdfs:domain skos:Concept ;
-        rdfs:range :Source ;
-        dcterms:description "Source of concept / term defintion."@en ;
-        rdfs:label "source"@en ;
-        skos:note "Is there a vocabulary with this property (reuse)? Candidate: dcterms:source"@en .
+###  https://osgeo.geolexica.org/api/geolexica#hasReview
+:hasReview rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :ConceptReview ;
+           dcterms:description "Object property for ConceptReview values."@en ;
+           rdfs:label "review"@en .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :Source ;
+           dcterms:description "Source of concept / term defintion."@en ;
+           rdfs:label "source"@en ;
+           skos:note "Is there a vocabulary with this property (reuse)? Candidate: dcterms:source"@en .
 
 
 #################################################################
@@ -382,10 +390,7 @@ dcterms:MediaType rdf:type owl:Class .
 
 ###  https://osgeo.geolexica.org/api/geolexica#MLGTGlossary
 :MLGTGlossary rdf:type owl:NamedIndividual ,
-                       skos:Collection ;
-              rdfs:label "MLGT Collection of SKOS Concepts"@en ;
-              rdfs:seeAlso "https://isotc211.geolexica.org/"^^xsd:anyURI ;
-              skos:note "The MLGT Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the MLGT set of SKOS concepts from the OSGeo set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."@en .
+                       skos:Collection .
 
 
 ###  https://osgeo.geolexica.org/api/geolexica#OSGeoGlossary
@@ -483,7 +488,7 @@ dcterms:MediaType rdf:type owl:Class .
      skos:prefLabel "fra" .
 
 
-###  https://osgeo.geolexica.org/api/geolexica#freRegistry
+###  https://osgeo.geolexica.org/api/geolexica#fraRegistry
 :fraRegistry rdf:type owl:NamedIndividual ,
                       :Origin ;
              dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;

@@ -1,4 +1,4 @@
-@prefix : <https://isotc211.geolexica.org/api/concepts#> .
+@prefix : <https://isotc211.geolexica.org/api/concepts/6/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -14,22 +14,22 @@
 @prefix geolexica: <https://osgeo.geolexica.org/api/geolexica#> .
 @base <https://isotc211.geolexica.org/api/concepts/6/> .
 
-<https://isotc211.geolexica.org/api/concepts/6/> rdf:type dctype:Dataset ;
+<https://isotc211.geolexica.org/api/concepts/6/> rdf:type owl:Ontology ;
                                                   owl:versionIRI <https://isotc211.geolexica.org/api/concepts/6/> ;
                                                   owl:imports <https://osgeo.geolexica.org/api/geolexica/v0.1.0/> ;
                                                   dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v0.1.0/> ;
                                                   dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
                                                   dcterms:created "2022-01-20"^^xsd:date ;
                                                   dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-                                                  dcterms:description "ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is the glossary for geographic information technology from ISO/TC 211 Geographic information/Geomatics."@en ;
+                                                  dcterms:description "Concept 6: abstract test suite"@en ;
                                                   dcterms:issued "" ;
                                                   dcterms:license "Copyright 2022 OSGeo" ;
                                                   dcterms:modified "2022-01-20"^^xsd:date ;
-                                                  dcterms:title "ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+                                                  dcterms:title "Instance of Concept 6: abstract test suite"@en ;
                                                   vann:preferredNamespacePrefix "concept6" ;
                                                   vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/concepts/6/" ;
                                                   owl:versionInfo "Version 0.1.0" ;
-                                                  skos:note "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is currently under development as of 2022-20-01. Instance data is subject to change."@en .
+                                                  skos:note "Concept 6, member of OSGeo Geolexica MLGT Glossary"@en .
 
 #################################################################
 #    Annotation properties
@@ -51,6 +51,14 @@ skos:inScheme rdf:type owl:AnnotationProperty .
 skos:notation rdf:type owl:AnnotationProperty .
 
 
+###  https://osgeo.geolexica.org/api/geolexica#langCode
+geolexica:langCode rdf:type owl:AnnotationProperty .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review
+geolexica:review rdf:type owl:AnnotationProperty .
+
+
 ###  https://osgeo.geolexica.org/api/geolexica#status
 geolexica:status rdf:type owl:AnnotationProperty .
 
@@ -64,22 +72,8 @@ geolexica:source rdf:type owl:DatatypeProperty .
 
 
 #################################################################
-#    Classes
-#################################################################
-
-###  http://purl.org/dc/dcmitype/Dataset
-dctype:Dataset rdf:type owl:Class .
-
-
-#################################################################
 #    Individuals
 #################################################################
-
-###  https://isotc211.geolexica.org/api/concepts/6/
-<https://isotc211.geolexica.org/api/concepts/6/> rdf:type owl:NamedIndividual ,
-                                                          dctype:Dataset ;
-                                                 rdfs:label "Concept 6: abstract test suite"@en .
-
 
 ###  https://osgeo.geolexica.org/api/concepts/Info6
 <https://osgeo.geolexica.org/api/concepts/Info6> rdf:type owl:NamedIndividual ,
@@ -99,19 +93,19 @@ dctype:Dataset rdf:type owl:Class .
 ###  https://osgeo.geolexica.org/api/concepts/abstract_test_suite
 <https://osgeo.geolexica.org/api/concepts/abstract_test_suite> rdf:type owl:NamedIndividual ,
                                                                         skos:Concept ;
-                                                               geolexica:langCode geolexica:ara ,
-                                                                                  geolexica:dan ,
-                                                                                  geolexica:deu ,
-                                                                                  geolexica:eng ,
-                                                                                  geolexica:fin ,
-                                                                                  geolexica:fra ,
-                                                                                  geolexica:jpn ,
-                                                                                  geolexica:kor ,
-                                                                                  geolexica:rus ,
-                                                                                  geolexica:spa ,
-                                                                                  geolexica:swe ,
-                                                                                  geolexica:zho ;
-                                                               geolexica:review <https://osgeo.geolexica.org/api/concepts/Review6> ;
+                                                               geolexica:hasLangCode geolexica:ara ,
+                                                                                     geolexica:dan ,
+                                                                                     geolexica:deu ,
+                                                                                     geolexica:eng ,
+                                                                                     geolexica:fin ,
+                                                                                     geolexica:fra ,
+                                                                                     geolexica:jpn ,
+                                                                                     geolexica:kor ,
+                                                                                     geolexica:rus ,
+                                                                                     geolexica:spa ,
+                                                                                     geolexica:swe ,
+                                                                                     geolexica:zho ;
+                                                               geolexica:hasReview <https://osgeo.geolexica.org/api/concepts/Review6> ;
                                                                dcterms:identifier 6 ;
                                                                rdfs:label "abstract test suite" ;
                                                                skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
