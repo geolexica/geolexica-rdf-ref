@@ -1,0 +1,138 @@
+@prefix : <https://isotc211.geolexica.org/api/concepts/6/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica: <https://osgeo.geolexica.org/api/geolexica#> .
+@base <https://isotc211.geolexica.org/api/concepts/6/> .
+
+<https://isotc211.geolexica.org/api/concepts/6/> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <https://isotc211.geolexica.org/api/concepts/6/> ;
+                                                  owl:imports <https://osgeo.geolexica.org/api/geolexica/v0.1.0/> ;
+                                                  dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v0.1.0/> ;
+                                                  dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+                                                  dcterms:created "2022-01-20"^^xsd:date ;
+                                                  dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+                                                  dcterms:description "Concept 6: abstract test suite"@en ;
+                                                  dcterms:issued "" ;
+                                                  dcterms:license "Copyright 2022 OSGeo" ;
+                                                  dcterms:modified "2022-01-20"^^xsd:date ;
+                                                  dcterms:title "Instance of Concept 6: abstract test suite"@en ;
+                                                  vann:preferredNamespacePrefix "concept6" ;
+                                                  vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/concepts/6/" ;
+                                                  owl:versionInfo "Version 0.1.0" ;
+                                                  skos:note "Concept 6, member of OSGeo Geolexica MLGT Glossary"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:AnnotationProperty .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#langCode
+geolexica:langCode rdf:type owl:AnnotationProperty .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review
+geolexica:review rdf:type owl:AnnotationProperty .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#status
+geolexica:status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://osgeo.geolexica.org/api/geolexica#source
+geolexica:source rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://osgeo.geolexica.org/api/concepts/Info6
+<https://osgeo.geolexica.org/api/concepts/Info6> rdf:type owl:NamedIndividual ,
+                                                          geolexica:ConceptInfo ;
+                                                 dcterms:dateAccepted "2000-12-15"^^xsd:date ;
+                                                 vs:term_status "valid"@en ;
+                                                 geolexica:classification "preferred"@en .
+
+
+###  https://osgeo.geolexica.org/api/concepts/Review6
+<https://osgeo.geolexica.org/api/concepts/Review6> rdf:type owl:NamedIndividual ,
+                                                            geolexica:ConceptReview ;
+                                                   vs:term_status "pending"@en ;
+                                                   geolexica:lastReviewPerformed "2019-07-05"^^xsd:date .
+
+
+###  https://osgeo.geolexica.org/api/concepts/abstract_test_suite
+<https://osgeo.geolexica.org/api/concepts/abstract_test_suite> rdf:type owl:NamedIndividual ,
+                                                                        skos:Concept ;
+                                                               geolexica:hasLangCode geolexica:ara ,
+                                                                                     geolexica:dan ,
+                                                                                     geolexica:deu ,
+                                                                                     geolexica:eng ,
+                                                                                     geolexica:fin ,
+                                                                                     geolexica:fra ,
+                                                                                     geolexica:jpn ,
+                                                                                     geolexica:kor ,
+                                                                                     geolexica:rus ,
+                                                                                     geolexica:spa ,
+                                                                                     geolexica:swe ,
+                                                                                     geolexica:zho ;
+                                                               geolexica:hasReview <https://osgeo.geolexica.org/api/concepts/Review6> ;
+                                                               dcterms:identifier 6 ;
+                                                               rdfs:label "abstract test suite"@en ;
+                                                               skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
+                                                                               "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"@da ,
+                                                                               "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"@fi ,
+                                                                               "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"@fr ,
+                                                                               "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"@es ,
+                                                                               "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"@sv ,
+                                                                               "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"@ru ,
+                                                                               "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"@ar ,
+                                                                               "満たされなければならないすべての要件を規定する抽象試験モジュール。"@ja ,
+                                                                               "规定了实现一致性所要满足的全部要求的抽象测试模块。"@zh ,
+                                                                               "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"@ko ;
+                                                               skos:inScheme geolexica:GeolexicaConceptScheme ;
+                                                               skos:notation 6 ;
+                                                               skos:prefLabel "abstract test suite"@en ,
+                                                                              "abstrakt testsuite"@da ,
+                                                                              "abstrakt testsvit"@sv ,
+                                                                              "abstrakte Test-Suite"@de ,
+                                                                              "abstrakti testisarja"@fi ,
+                                                                              "conjunto de pruebas abstractas"@es ,
+                                                                              "suite de tests abstraits"@fr ,
+                                                                              "комплекс абстрактных тестов"@ru ,
+                                                                              "مجموعة اختبار تجريدي"@ar ,
+                                                                              "抽象测试套件"@zh ,
+                                                                              "抽象試験項目群，ATS"@ja ,
+                                                                              "추상 시험 스위트"@ko .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
