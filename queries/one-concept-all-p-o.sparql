@@ -1,0 +1,13 @@
+# one selected concept : all resources : dcterms:identifier 5
+
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+select ?predicate ?object
+
+    where { 
+
+        { GRAPH <https://isotc211.geolexica.org/api/concepts#> 
+                {?s ?predicate ?object ; dcterms:identifier 5.              
+        } }
+    }

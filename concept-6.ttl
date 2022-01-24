@@ -24,7 +24,7 @@
                                                   dcterms:description "Concept 6: abstract test suite"@en ;
                                                   dcterms:issued "" ;
                                                   dcterms:license "Copyright 2022 OSGeo" ;
-                                                  dcterms:modified "2022-01-20"^^xsd:date ;
+                                                  dcterms:modified "2022-01-23"^^xsd:date ;
                                                   dcterms:title "Instance of Concept 6: abstract test suite"@en ;
                                                   vann:preferredNamespacePrefix "concept6" ;
                                                   vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/concepts/6/" ;
@@ -87,52 +87,66 @@ geolexica:source rdf:type owl:DatatypeProperty .
 <https://osgeo.geolexica.org/api/concepts/Review6> rdf:type owl:NamedIndividual ,
                                                             geolexica:ConceptReview ;
                                                    vs:term_status "pending"@en ;
-                                                   geolexica:lastReviewPerformed "2019-07-05"^^xsd:date .
+                                                   geolexica:last-review "2019-07-05"^^xsd:date .
 
 
 ###  https://osgeo.geolexica.org/api/concepts/abstract_test_suite
 <https://osgeo.geolexica.org/api/concepts/abstract_test_suite> rdf:type owl:NamedIndividual ,
-                                                                        skos:Concept ;
-                                                               geolexica:hasLangCode geolexica:ara ,
-                                                                                     geolexica:dan ,
-                                                                                     geolexica:deu ,
-                                                                                     geolexica:eng ,
-                                                                                     geolexica:fin ,
-                                                                                     geolexica:fra ,
-                                                                                     geolexica:jpn ,
-                                                                                     geolexica:kor ,
-                                                                                     geolexica:rus ,
-                                                                                     geolexica:spa ,
-                                                                                     geolexica:swe ,
-                                                                                     geolexica:zho ;
-                                                               geolexica:hasReview <https://osgeo.geolexica.org/api/concepts/Review6> ;
-                                                               dcterms:identifier 6 ;
-                                                               rdfs:label "abstract test suite"@en ;
-                                                               skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
-                                                                               "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"@da ,
-                                                                               "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"@fi ,
-                                                                               "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"@fr ,
-                                                                               "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"@es ,
-                                                                               "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"@sv ,
-                                                                               "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"@ru ,
-                                                                               "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"@ar ,
-                                                                               "満たされなければならないすべての要件を規定する抽象試験モジュール。"@ja ,
-                                                                               "规定了实现一致性所要满足的全部要求的抽象测试模块。"@zh ,
-                                                                               "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"@ko ;
-                                                               skos:inScheme geolexica:GeolexicaConceptScheme ;
-                                                               skos:notation 6 ;
-                                                               skos:prefLabel "abstract test suite"@en ,
-                                                                              "abstrakt testsuite"@da ,
-                                                                              "abstrakt testsvit"@sv ,
-                                                                              "abstrakte Test-Suite"@de ,
-                                                                              "abstrakti testisarja"@fi ,
-                                                                              "conjunto de pruebas abstractas"@es ,
-                                                                              "suite de tests abstraits"@fr ,
-                                                                              "комплекс абстрактных тестов"@ru ,
-                                                                              "مجموعة اختبار تجريدي"@ar ,
-                                                                              "抽象测试套件"@zh ,
-                                                                              "抽象試験項目群，ATS"@ja ,
-                                                                              "추상 시험 스위트"@ko .
+               skos:Concept ;
+               geolexica:hasLangCode geolexica:ara ,
+                                     geolexica:dan ,
+                                     geolexica:deu ,
+                                     geolexica:eng ,
+                                     geolexica:fin ,
+                                     geolexica:fra ,
+                                     geolexica:jpn ,
+                                     geolexica:kor ,
+                                     geolexica:rus ,
+                                     geolexica:spa ,
+                                     geolexica:swe ,
+                                     geolexica:zho ;
+               geolexica:origin geolexica:araRegistry ,
+                                geolexica:araRegistry ,
+                                geolexica:danRegistry ,
+                                geolexica:deuRegistry ,
+                                geolexica:engRegistry ,
+                                geolexica:finRegistry ,
+                                geolexica:fraRegistry ,
+                                geolexica:jpnRegistry ,
+                                geolexica:korRegistry ,
+                                geolexica:rusRegistry ,
+                                geolexica:spaRegistry ,
+                                geolexica:sweRegistry ,
+                                geolexica:zhoRegistry ;
+               geolexica:hasReview <https://osgeo.geolexica.org/api/concepts/Review6> ;
+               geolexica:hasInfo <https://osgeo.geolexica.org/api/concepts/Info6> ;
+               dcterms:identifier 6 ;
+               rdfs:label "abstract test suite"@en ;
+               skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
+                               "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"@da ,
+                               "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"@fi ,
+                               "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"@fr ,
+                               "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"@es ,
+                               "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"@sv ,
+                               "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"@ru ,
+                               "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"@ar ,
+                               "満たされなければならないすべての要件を規定する抽象試験モジュール。"@ja ,
+                               "规定了实现一致性所要满足的全部要求的抽象测试模块。"@zh ,
+                               "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"@ko ;
+               skos:inScheme geolexica:GeolexicaConceptScheme ;
+               skos:notation 6 ;
+               skos:prefLabel "abstract test suite"@en ,
+                              "abstrakt testsuite"@da ,
+                              "abstrakt testsvit"@sv ,
+                              "abstrakte Test-Suite"@de ,
+                              "abstrakti testisarja"@fi ,
+                              "conjunto de pruebas abstractas"@es ,
+                              "suite de tests abstraits"@fr ,
+                              "комплекс абстрактных тестов"@ru ,
+                              "مجموعة اختبار تجريدي"@ar ,
+                              "抽象测试套件"@zh ,
+                              "抽象試験項目群，ATS"@ja ,
+                              "추상 시험 스위트"@ko .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

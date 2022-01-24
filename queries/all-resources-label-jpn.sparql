@@ -1,0 +1,13 @@
+#  all resources : label : japanese
+
+
+PREFIX geolexica: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?resource ?label 
+        where { 
+   
+            { GRAPH <https://isotc211.geolexica.org/api/concepts#> {
+                ?resource geolexica:hasLangCode geolexica:jpn ;
+                          rdfs:label ?label . } }
+    		}
