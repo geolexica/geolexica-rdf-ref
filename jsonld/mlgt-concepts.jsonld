@@ -17,7 +17,7 @@
   }, {
     "@id" : "https://isotc211.geolexica.org/api/concepts#",
     "@type" : [ "dctype:Dataset", "owl:NamedIndividual" ],
-    "conformsTo" : "geolexica/v0.1.0/",
+    "conformsTo" : "geolexica/v1.0/",
     "contributor" : "https://www.linkedin.com/in/rhtse/",
     "created" : "2022-01-20",
     "creator" : "https://www.linkedin.com/in/lanemk",
@@ -38,9 +38,9 @@
       "@language" : "en",
       "@value" : "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"
     },
-    "imports" : "geolexica/v0.1.0/",
-    "versionIRI" : "https://isotc211.geolexica.org/api/concepts/v0.1.0",
-    "versionInfo" : "Version 0.1.0",
+    "imports" : "geolexica",
+    "versionIRI" : "https://isotc211.geolexica.org/api/concepts/v1.0",
+    "versionInfo" : "Version 1.0",
     "note" : {
       "@language" : "en",
       "@value" : "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is currently under development as of 2022-20-01. Instance data is subject to change."
@@ -680,21 +680,21 @@
       "@id" : "https://osgeo.geolexica.org/api/geolexica#last-review",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
     "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "imports" : {
-      "@id" : "http://www.w3.org/2002/07/owl#imports",
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
       "@type" : "@id"
     },
     "description" : "http://purl.org/dc/terms/description",
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
-    "versionIRI" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
-      "@type" : "@id"
-    },
     "title" : "http://purl.org/dc/terms/title",
     "note" : "http://www.w3.org/2004/02/skos/core#note",
     "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "issued" : "http://purl.org/dc/terms/issued",
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
     "contributor" : {
       "@id" : "http://purl.org/dc/terms/contributor",
       "@type" : "@id"
@@ -703,10 +703,6 @@
       "@id" : "http://purl.org/dc/terms/modified",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "conformsTo" : {
-      "@id" : "http://purl.org/dc/terms/conformsTo",
-      "@type" : "@id"
-    },
     "license" : "http://purl.org/dc/terms/license",
     "created" : {
       "@id" : "http://purl.org/dc/terms/created",
@@ -714,6 +710,10 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
       "@type" : "@id"
     },
     "decision-event" : "https://osgeo.geolexica.org/api/geolexica#decision-event",
