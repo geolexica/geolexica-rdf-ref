@@ -1,11 +1,9 @@
 @prefix : <https://isotc211.geolexica.org/api/concepts#> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix info: <https://isotc211.geolexica.org/api/info#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -16,15 +14,17 @@
 @prefix geolexica: <https://osgeo.geolexica.org/api/geolexica#> .
 @base <https://isotc211.geolexica.org/api/concepts#> .
 
-<https://isotc211.geolexica.org/api/concepts#> rdf:type owl:Ontology ;
+<https://isotc211.geolexica.org/api/concepts#> rdf:type dctype:Dataset ;
                                                 owl:versionIRI <https://isotc211.geolexica.org/api/concepts/v1.0> ;
-                                                owl:imports info: , reviews: , <https://osgeo.geolexica.org/api/geolexica> ;
+                                                owl:imports info: ,
+                                                            reviews: ,
+                                                            <https://osgeo.geolexica.org/api/geolexica> ;
                                                 dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
                                                 dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
                                                 dcterms:created "2022-01-20"^^xsd:date ;
                                                 dcterms:creator <https://www.linkedin.com/in/lanemk> ;
                                                 dcterms:description "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT), the glossary for geographic information technology from ISO/TC 211 Geographic information/Geomatics."@en ;
-                                                dcterms:issued "" ;
+                                                dcterms:issued " " ;
                                                 dcterms:license "Copyright 2022 OSGeo" ;
                                                 dcterms:modified "2022-01-25"^^xsd:date ;
                                                 dcterms:title "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
@@ -65,6 +65,7 @@ geolexica:origin rdf:type owl:AnnotationProperty .
 ###  https://osgeo.geolexica.org/api/geolexica#source
 geolexica:source rdf:type owl:DatatypeProperty .
 
+
 #################################################################
 #    Classes
 #################################################################
@@ -72,16 +73,14 @@ geolexica:source rdf:type owl:DatatypeProperty .
 ###  http://purl.org/dc/dcmitype/Dataset
 dctype:Dataset rdf:type owl:Class .
 
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://isotc211.geolexica.org/api/concepts#
-<https://isotc211.geolexica.org/api/concepts#> rdf:type owl:NamedIndividual , dctype:Dataset .
-
 ###  https://isotc211.geolexica.org/api/concepts#abbreviation
-
-:abbreviation rdf:type owl:NamedIndividual , skos:Concept ;
+:abbreviation rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
               geolexica:hasInfo info:Info2 ;
               geolexica:hasLangCode geolexica:ara ,
                                     geolexica:dan ,
@@ -120,9 +119,10 @@ dctype:Dataset rdf:type owl:Class .
                                geolexica:spaRegistry ,
                                geolexica:sweRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#abstract_test_case
 
-:abstract_test_case rdf:type owl:NamedIndividual , skos:Concept ;
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_case
+:abstract_test_case rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
                     geolexica:hasInfo info:Info3 ;
                     geolexica:hasLangCode geolexica:ara ,
                                           geolexica:dan ,
@@ -177,9 +177,10 @@ dctype:Dataset rdf:type owl:Class .
                                      geolexica:sweRegistry ,
                                      geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#abstract_test_method
 
-:abstract_test_method rdf:type owl:NamedIndividual , skos:Concept ;
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_method
+:abstract_test_method rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
                       geolexica:hasInfo info:Info4 ;
                       geolexica:hasLangCode geolexica:ara ,
                                             geolexica:dan ,
@@ -234,9 +235,10 @@ dctype:Dataset rdf:type owl:Class .
                                        geolexica:sweRegistry ,
                                        geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#abstract_test_module
 
-:abstract_test_module rdf:type owl:NamedIndividual , skos:Concept ;
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_module
+:abstract_test_module rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
                       geolexica:hasInfo info:Info5 ;
                       geolexica:hasLangCode geolexica:ara ,
                                             geolexica:dan ,
@@ -293,8 +295,8 @@ dctype:Dataset rdf:type owl:Class .
 
 
 ###  https://isotc211.geolexica.org/api/concepts#abstract_test_suite
-
-:abstract_test_suite rdf:type owl:NamedIndividual , skos:Concept ;
+:abstract_test_suite rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
                      geolexica:hasInfo info:Info6 ;
                      geolexica:hasLangCode geolexica:ara ,
                                            geolexica:dan ,
@@ -350,68 +352,335 @@ dctype:Dataset rdf:type owl:Class .
                                       geolexica:zhoRegistry .
 
 
-###  Linked data API individuals  ###
+###  https://isotc211.geolexica.org/api/concepts#acceptance_testing
+:acceptance_testing rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    geolexica:hasInfo info:Info7 ;
+                    geolexica:hasLangCode geolexica:ara ,
+                                          geolexica:dan ,
+                                          geolexica:deu ,
+                                          geolexica:eng ,
+                                          geolexica:fin ,
+                                          geolexica:fra ,
+                                          geolexica:jpn ,
+                                          geolexica:kor ,
+                                          geolexica:msa ,
+                                          geolexica:rus ,
+                                          geolexica:spa ,
+                                          geolexica:swe ,
+                                          geolexica:zho ;
+                    dcterms:identifier 7 ;
+                    rdfs:label "acceptance testing (user)"@en ;
+                    skos:definition "(用户)决定一个实现是否满足验收准则以及用户能否决定接受该实现的过程。"@zh ,
+                                    "proces til bestemmelse af, om en implementering opfylder acceptance-kriterier og sætter brugeren i stand til at afgøre, om implementeringen skal accepteres"@da ,
+                                    "proceso de determinación de si una implementación satisface o no los criterios de aceptación y permite al usuario determinar si acepta o no la implementación"@es ,
+                                    "process of determining whether an implementation satisfies acceptance criteria and enables the user to determine whether to accept the implementation"@en ,
+                                    "processus déterminant si une implémentation satisfait un critère d&#39;acceptation et permet à l&#39;utilisateur de déterminer s&#39;il accepte l&#39;implémentation"@fr ,
+                                    "prosessi, jossa määritetään, täyttääkö toteutus hyväksyttävyyskriteerit ja jossa käyttäjälle annetaan mahdollisuus päättää toteutuksen hyväksymisestä"@fi ,
+                                    "testning i syfte att bestämma om en implementering ska accepteras eller ej med hänsyn till användarnas behov och krav"@sv ,
+                                    "процесс, позволяющий оценить, удовлетворяет ли реализация критериям приемлемости и дающий пользователю возможность вынести решение об этом"@ru ,
+                                    "عملية تحديد ما إذا كان التنفيذ يحقق معيار القبول ويمكن المستخدم من قبول التنفيذ ."@ar ,
+                                    "ある実装が利用者の受入基準を満たすかどうかを決定し，利用者がそれを受け入れるかどうかを判断するための試験。"@ja ,
+                                    "구현된 결과가 검수 기준을 만족하는지에 대한 결정 과정"@ko ;
+                    skos:inScheme geolexica:GeolexicaConceptScheme ;
+                    skos:notation 7 ;
+                    skos:prefLabel "Akzeptanzprüfung"@de ,
+                                   "acceptance test (bruger)"@da ,
+                                   "acceptance testing (user)"@en ,
+                                   "acceptanstestning"@sv ,
+                                   "hyväksymistestaus (käyttäjän)"@fi ,
+                                   "prueba de aceptación (usuario)"@es ,
+                                   "test d&#39;acceptation (utilisateur)"@fr ,
+                                   "ujian penerimaan"@ms ,
+                                   "тестирование на приемлемость для пользователя"@ru ,
+                                   "اختبار القبول (المستخدم)"@ar ,
+                                   "受入試験"@ja ,
+                                   "验收测试(用户)"@zh ,
+                                   "검수 시험(사용자)"@ko ;
+                    geolexica:origin geolexica:araRegistry ,
+                                     geolexica:danRegistry ,
+                                     geolexica:deuRegistry ,
+                                     geolexica:engRegistry ,
+                                     geolexica:finRegistry ,
+                                     geolexica:fraRegistry ,
+                                     geolexica:jpnRegistry ,
+                                     geolexica:korRegistry ,
+                                     geolexica:msaRegistry ,
+                                     geolexica:rusRegistry ,
+                                     geolexica:spaRegistry ,
+                                     geolexica:sweRegistry ,
+                                     geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi2-json
-:ldapi2-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/2.json"^^xsd:anyURI .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi2-jsonld
-:ldapi2-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/2.jsonld"^^xsd:anyURI .
+###  https://isotc211.geolexica.org/api/concepts#accuracy
+:accuracy rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          geolexica:hasInfo info:Info8 ;
+          geolexica:hasLangCode geolexica:ara ,
+                                geolexica:dan ,
+                                geolexica:eng ,
+                                geolexica:fin ,
+                                geolexica:fra ,
+                                geolexica:jpn ,
+                                geolexica:kor ,
+                                geolexica:msa ,
+                                geolexica:rus ,
+                                geolexica:spa ,
+                                geolexica:swe ,
+                                geolexica:zho ;
+          geolexica:hasReview reviews:Review8 ;
+          dcterms:identifier 8 ;
+          rdfs:label "accuracy"@en ;
+          skos:definition "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"@ms ,
+                          "closeness of agreement between a test result and the accepted reference value"@en ,
+                          "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"@da ,
+                          "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"@sv ,
+                          "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"@es ,
+                          "justesse de l&#39;accord entre un résultat de test et la valeur de référence"@fr ,
+                          "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"@fi ,
+                          "близость результата проверки к принятому нормальному значению величины"@ru ,
+                          "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"@ar ,
+                          "品質評価の試験結果得られた値と参照値との近さ。"@ja ,
+                          "测试结果与公认的参考值间的接近程度。"@zh ,
+                          "시험 결과와 기준 값 간의 일치도를 표시하는 척도"@ko ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          skos:notation 8 ;
+          skos:prefLabel "accuracy"@en ,
+                         "exactitud"@es ,
+                         "exactitude"@fr ,
+                         "ketepatan"@ms ,
+                         "noggrannhet"@sv ,
+                         "nøjagtighed"@da ,
+                         "ulkoinen tarkkuus"@fi ,
+                         "точность"@ru ,
+                         "الدقة"@ar ,
+                         "准确度"@zh ,
+                         "正確度"@ja ,
+                         "정확도"@ko ;
+          geolexica:origin geolexica:araRegistry ,
+                           geolexica:danRegistry ,
+                           geolexica:engRegistry ,
+                           geolexica:finRegistry ,
+                           geolexica:fraRegistry ,
+                           geolexica:jpnRegistry ,
+                           geolexica:korRegistry ,
+                           geolexica:msaRegistry ,
+                           geolexica:rusRegistry ,
+                           geolexica:spaRegistry ,
+                           geolexica:sweRegistry ,
+                           geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi2-skosrdf
-:ldapi2-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/2.ttl"^^xsd:anyURI .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi3-json
-:ldapi3-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/3.json"^^xsd:anyURI .
+###  https://isotc211.geolexica.org/api/concepts#actor
+:actor rdf:type owl:NamedIndividual ,
+                skos:Concept ;
+       geolexica:hasInfo info:Info9 ;
+       geolexica:hasLangCode geolexica:ara ,
+                             geolexica:dan ,
+                             geolexica:eng ,
+                             geolexica:fin ,
+                             geolexica:fra ,
+                             geolexica:kor ,
+                             geolexica:rus ,
+                             geolexica:spa ,
+                             geolexica:swe ,
+                             geolexica:zho ;
+       geolexica:hasReview reviews:Review9 ;
+       dcterms:identifier 9 ;
+       rdfs:label "actor (UML)" ;
+       skos:definition "(UML)当用例的用户与这些用例交互时，所扮演的相关角色的集合。"@zh ,
+                       "coherent set of roles that users of use cases play when interacting with these use cases"@en ,
+                       "conjunto coherente de roles que los usuarios de unos casos de uso juegan cuando interaccionan con esos casos de uso"@es ,
+                       "ensemble cohérent de rôles que les utilisateurs de cas d&#39;utilisation jouent en interagissant avec ces cas d&#39;utilisation"@fr ,
+                       "något utanför ett system som växelverkar med systemet genom att delta i ett användningsfall"@sv ,
+                       "sammenhængende sæt af roller, som brugere af use cases spiller i forhold til disse use cases"@da ,
+                       "yhtenäinen joukko rooleja, joita käyttäjillä on käyttötapausten toiminnoissa"@fi ,
+                       "множество логически связанных  ролей, выполняемых пользователями вариантов использования при взаимодействии с  ними"@ru ,
+                       "مجموعة أدوار مترابطة منطقيا يقوم بها مستخدمو أدوات النمذجة عند التفاعل معها ."@ar ,
+                       "유즈 케이스와 상호 작용 시, 그 유즈 케이스의 사용자가 수행하는 역할의 집합"@ko ;
+       skos:inScheme geolexica:GeolexicaConceptScheme ;
+       skos:notation 9 ;
+       skos:prefLabel "Akteur (UML)"@de ,
+                      "acteur (UML)"@fr ,
+                      "actor (UML)"@en ,
+                      "actor (UML)"@es ,
+                      "aktör (UML)"@sv ,
+                      "aktør (UML)"@da ,
+                      "toimija (UML)"@fi ,
+                      "действующее лицо (UML)"@ru ,
+                      "لغة &quot;الممثل&quot; UML"@ar ,
+                      "参与者(UML)"@zh ,
+                      "행위자 (UML)"@ko ;
+       geolexica:origin geolexica:araRegistry ,
+                        geolexica:danRegistry ,
+                        geolexica:engRegistry ,
+                        geolexica:finRegistry ,
+                        geolexica:fraRegistry ,
+                        geolexica:korRegistry ,
+                        geolexica:rusRegistry ,
+                        geolexica:spaRegistry ,
+                        geolexica:sweRegistry ,
+                        geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi3-jsonld
-:ldapi3-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/3.jsonld"^^xsd:anyURI .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi3-skosrdf
-:ldapi3-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/3.ttl"^^xsd:anyURI .
+###  https://isotc211.geolexica.org/api/concepts#admitted_term
+:admitted_term rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               geolexica:hasInfo info:Info10 ;
+               geolexica:hasLangCode geolexica:ara ,
+                                     geolexica:dan ,
+                                     geolexica:deu ,
+                                     geolexica:eng ,
+                                     geolexica:kor ,
+                                     geolexica:rus ,
+                                     geolexica:spa ,
+                                     geolexica:swe ;
+               geolexica:hasReview reviews:Review10 ;
+               dcterms:identifier 10 ;
+               rdfs:label "admitted term" ;
+               skos:definition "term rated according to the scale of the term acceptability rating as a synonym for a preferred term"@en ,
+                               "term som bedömts vara lämplig för ett visst begrepp och som används vid sidan av en rekommenderad term"@sv ,
+                               "term, klassificeret efter en skala for tilladte termer, anvendt som synonym for en foretrukket term"@da ,
+                               "término clasificado de acuerdo a la escala de aceptanción como un sinónimo de un término preferente"@es ,
+                               "термин, оцененный по шкале рейтинга приемлемости термина как синоним предпочтительного термина"@ru ,
+                               "مصطلح صنف وفقا لمقياس تصنيف قبول المصطلحات كمرادف للمصطلح المفضل"@ar ,
+                               "상용 용어의 동의어로써 용어 수용가능성 등급체계에 의거하여 등급이 부여된 용어"@ko ;
+               skos:inScheme geolexica:GeolexicaConceptScheme ;
+               skos:notation 10 ;
+               skos:prefLabel "admitted term"@en ,
+                              "tilladt term"@da ,
+                              "tillåten term"@sv ,
+                              "término admitido"@es ,
+                              "zugelassener Begriff"@de ,
+                              "допустимый термин"@ru ,
+                              "مصطلح معترف به"@ar ,
+                              "승인 용어"@ko ;
+               geolexica:origin geolexica:araRegistry ,
+                                geolexica:danRegistry ,
+                                geolexica:deuRegistry ,
+                                geolexica:engRegistry ,
+                                geolexica:korRegistry ,
+                                geolexica:rusRegistry ,
+                                geolexica:spaRegistry ,
+                                geolexica:sweRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi4-json
-:ldapi4-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/4.json"^^xsd:anyURI .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi4-jsonld
-:ldapi4-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/4.jsonld"^^xsd:anyURI .
+###  https://isotc211.geolexica.org/api/concepts#aggregation
+:aggregation rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             geolexica:hasInfo info:Info11 ;
+             geolexica:hasLangCode geolexica:ara ,
+                                   geolexica:dan ,
+                                   geolexica:deu ,
+                                   geolexica:eng ,
+                                   geolexica:fin ,
+                                   geolexica:fra ,
+                                   geolexica:kor ,
+                                   geolexica:rus ,
+                                   geolexica:spa ,
+                                   geolexica:swe ,
+                                   geolexica:zho ;
+             geolexica:hasReview reviews:Review11 ;
+             dcterms:identifier 11 ;
+             rdfs:label "aggregation (UML)" ;
+             skos:altLabel "kokoelma (UML)"@fi ;
+             skos:definition " "@de ,
+                             "(UML)关联的特殊形式，用以说明聚集(整体)与组成部分之间的整体-部分关系。"@zh ,
+                             "assosiaation erityinen laji, joka määrittää kokonaisuuden (aggregaatin) ja sen osan välisen suhteen"@fi ,
+                             "forma especial de asociación  que especifica una relación del todo con una parte entre el agregado (el todo) y una parte componente"@es ,
+                             "forme spéciale d&#39;association qui spécifie une relation ensemble-composant entre l&#39;agrégat (ensemble) et la partie composante"@fr ,
+                             "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@en ,
+                             "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@sv ,
+                             "særlig form for association, der specificerer et helhed-del-forhold mellem en klasse, som indtager rollen som helheden, og en eller flere klasser, som indtager rollen som del"@da ,
+                             "особая форма ассоциации, описывающая отношение «целое-часть» между агрегатом («целое») и компонентом («часть»)"@ru ,
+                             "شكل خاص من أشكال الترابط يصف علاقة &quot;الكل والجزء&quot; بين الكل والجزء المكون له."@ar ,
+                             "집합체와 컴포넌트 간의 관계를 설명한 연관의 특정 형태"@ko ;
+             skos:inScheme geolexica:GeolexicaConceptScheme ;
+             skos:notation 11 ;
+             skos:prefLabel "Aggregation (UML)"@de ,
+                            "aggregation (UML)"@en ,
+                            "aggregering"@sv ,
+                            "aggregering (UML)"@da ,
+                            "agregación (UML)"@es ,
+                            "agrégation (UML)"@fr ,
+                            "kooste (UML)"@fi ,
+                            "агрегация (UML)"@ru ,
+                            "تجميع (UML)"@ar ,
+                            "聚合(UML)"@zh ,
+                            "집합 연관 (UML)"@ko ;
+             geolexica:origin geolexica:araRegistry ,
+                              geolexica:danRegistry ,
+                              geolexica:engRegistry ,
+                              geolexica:finRegistry ,
+                              geolexica:fraRegistry ,
+                              geolexica:jpnRegistry ,
+                              geolexica:korRegistry ,
+                              geolexica:rusRegistry ,
+                              geolexica:spaRegistry ,
+                              geolexica:sweRegistry ,
+                              geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi4-skosrdf
-:ldapi4-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/4.ttl"^^xsd:anyURI .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi5-json
-:ldapi5-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/5.json"^^xsd:anyURI .
+###  https://isotc211.geolexica.org/api/concepts#altitude
+:altitude rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          geolexica:hasInfo info:Info12 ;
+          geolexica:hasLangCode geolexica:ara ,
+                                geolexica:dan ,
+                                geolexica:deu ,
+                                geolexica:eng ,
+                                geolexica:fin ,
+                                geolexica:fra ,
+                                geolexica:kor ,
+                                geolexica:rus ,
+                                geolexica:spa ,
+                                geolexica:swe ,
+                                geolexica:zho ;
+          geolexica:hasReview reviews:Review12 ;
+          dcterms:identifier 12 ;
+          rdfs:label "altitude" ;
+          skos:altLabel "altitud ortométrica"@es ,
+                        "height"@ar ,
+                        "height"@en ,
+                        "height"@fr ,
+                        "height"@ms ,
+                        "height"@ru ,
+                        "height"@sv ,
+                        "height"@zh ;
+          skos:definition "distance d&#39;un point à une surface de référence choisie, selon une ligne perpendiculaire à cette surface"@fr ,
+                          "distance of a point from a chosen reference surface along a line perpendicular to that surface"@en ,
+                          "distancia de un punto a una superficie de referencia escogida a lo largo de una línea perpendicular a esta superficie"@es ,
+                          "höjd där den valda referensytan är världshavens medelvattenyta"@sv ,
+                          "ketinggian sesuatu tempat (kawasan) yg biasanya diukur dr aras laut."@ms ,
+                          "pisteen etäisyys valitusta vertauspinnasta kyseistä pintaa vastaan kohtisuorassa olevaa viivaa pitkin"@fi ,
+                          "расстояние от отсчетной поверхности до выбранной точки по нормали к этой поверхности"@ru ,
+                          "مسافة نقطة عن سطح إسناد مرجعي مختار على خط رأسي متعامد مع ذلك السطح"@ar ,
+                          "地球自然表面点到所选择的参照面间的垂直距离"@zh ,
+                          "선택된 기준면으로부터 그 면의 수직선으로 연결된 어떤 지점까지의 거리"@ko ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          skos:notation 12 ;
+          skos:prefLabel "Altitud"@ms ,
+                         "altitud"@es ,
+                         "altitud"@sv ,
+                         "altitude"@en ,
+                         "altitude"@fr ,
+                         "korkeus"@fi ,
+                         "высота"@ru ,
+                         "الارتفاع"@ar ,
+                         "海拔"@zh ,
+                         "높이"@ko ;
+          geolexica:origin geolexica:araRegistry ,
+                           geolexica:danRegistry ,
+                           geolexica:engRegistry ,
+                           geolexica:finRegistry ,
+                           geolexica:fraRegistry ,
+                           geolexica:jpnRegistry ,
+                           geolexica:korRegistry ,
+                           geolexica:msaRegistry ,
+                           geolexica:rusRegistry ,
+                           geolexica:spaRegistry ,
+                           geolexica:sweRegistry ,
+                           geolexica:zhoRegistry .
 
-###  https://isotc211.geolexica.org/api/concepts#ldapi5-jsonld
-:ldapi5-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/5.jsonld"^^xsd:anyURI .
-
-
-###  https://isotc211.geolexica.org/api/concepts#ldapi5-skosrdf
-:ldapi5-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/5.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/concepts#ldapi6-json
-:ldapi6-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/6.json"^^xsd:anyURI .
-
-
-###  https://isotc211.geolexica.org/api/concepts#ldapi6-jsonld
-:ldapi6-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/6.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/concepts#ldapi6-skosrdf
-:ldapi6-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/6.ttl"^^xsd:anyURI .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

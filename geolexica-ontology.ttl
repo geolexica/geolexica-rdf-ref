@@ -113,6 +113,13 @@ xsd:date rdf:type rdfs:Datatype .
            dcterms:description "Authority source for concept defintion."@en ;
            rdfs:label "has source"@en .
 
+###  https://osgeo.geolexica.org/api/geolexica#hasLDAPI
+:hasLDAPI rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :LinkedDataAPI ;
+           dcterms:description "Object property for Linked Data APIs."@en ;
+           rdfs:label "has Linked Data API"@en .
+
 #############################
 #    Data properties
 #############################
@@ -145,6 +152,14 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
 ##                rdfs:range xsd:string ;
 ##                dcterms:description " " ;
 ##                rdfs:label "has ENTRY status"@en .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#abbreviation
+:abbreviation rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ConceptInfo ;
+        rdfs:range xsd:string ;
+        dcterms:description "Abbreviation of concept."@en ;
+        rdfs:label "has abbreviation"@en .
 
 ###  https://osgeo.geolexica.org/api/geolexica#classification
 :classification rdf:type owl:DatatypeProperty ;

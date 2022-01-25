@@ -1,0 +1,478 @@
+{
+  "@graph" : [ {
+    "@id" : "dctype:Dataset",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "dcterms:conformsTo",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:source",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:inScheme",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:notation",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "./",
+    "@type" : [ "owl:NamedIndividual", "dctype:Dataset" ],
+    "conformsTo" : "https://osgeo.geolexica.org/api/geolexica/v1.0/",
+    "contributor" : "https://www.linkedin.com/in/rhtse/",
+    "created" : "2022-01-25",
+    "creator" : "https://www.linkedin.com/in/lanemk",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Linked Data API serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."
+    },
+    "issued" : " ",
+    "license" : "Copyright 2022 OSGeo",
+    "modified" : "2022-01-25",
+    "title" : {
+      "@language" : "en",
+      "@value" : "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"
+    },
+    "preferredNamespacePrefix" : "ldapi",
+    "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ldapi#",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"
+    },
+    "imports" : "https://osgeo.geolexica.org/api/geolexica",
+    "versionIRI" : "v1.0",
+    "versionInfo" : "Version 1.0",
+    "note" : {
+      "@language" : "en",
+      "@value" : "Data is subject to change."
+    }
+  }, {
+    "@id" : ":ldapi10-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/10.json"
+  }, {
+    "@id" : ":ldapi10-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/10.jsonld"
+  }, {
+    "@id" : ":ldapi10-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/10.ttl"
+  }, {
+    "@id" : ":ldapi11-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/11.json"
+  }, {
+    "@id" : ":ldapi11-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/11.jsonld"
+  }, {
+    "@id" : ":ldapi11-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/11.ttl"
+  }, {
+    "@id" : ":ldapi12-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/12.json"
+  }, {
+    "@id" : ":ldapi12-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/12.jsonld"
+  }, {
+    "@id" : ":ldapi12-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/12.ttl"
+  }, {
+    "@id" : ":ldapi13-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/13.json"
+  }, {
+    "@id" : ":ldapi13-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/13.jsonld"
+  }, {
+    "@id" : ":ldapi13-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/13.ttl"
+  }, {
+    "@id" : ":ldapi14-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/14.json"
+  }, {
+    "@id" : ":ldapi14-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/14.jsonld"
+  }, {
+    "@id" : ":ldapi14-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/14.ttl"
+  }, {
+    "@id" : ":ldapi15-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/15.json"
+  }, {
+    "@id" : ":ldapi15-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/15.jsonld"
+  }, {
+    "@id" : ":ldapi15-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/15.ttl"
+  }, {
+    "@id" : ":ldapi16-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/16.json"
+  }, {
+    "@id" : ":ldapi16-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/16.jsonld"
+  }, {
+    "@id" : ":ldapi16-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/16.ttl"
+  }, {
+    "@id" : ":ldapi17-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/17.json"
+  }, {
+    "@id" : ":ldapi17-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/17.jsonld"
+  }, {
+    "@id" : ":ldapi17-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/17.ttl"
+  }, {
+    "@id" : ":ldapi18-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/18.json"
+  }, {
+    "@id" : ":ldapi18-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/18.jsonld"
+  }, {
+    "@id" : ":ldapi18-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/18.ttl"
+  }, {
+    "@id" : ":ldapi19-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/19.json"
+  }, {
+    "@id" : ":ldapi19-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/19.jsonld"
+  }, {
+    "@id" : ":ldapi19-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/19.ttl"
+  }, {
+    "@id" : ":ldapi2-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/2.json"
+  }, {
+    "@id" : ":ldapi2-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/2.jsonld"
+  }, {
+    "@id" : ":ldapi2-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/2.ttl"
+  }, {
+    "@id" : ":ldapi20-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/20.json"
+  }, {
+    "@id" : ":ldapi20-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/20.jsonld"
+  }, {
+    "@id" : ":ldapi20-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/20.ttl"
+  }, {
+    "@id" : ":ldapi21-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/21.json"
+  }, {
+    "@id" : ":ldapi21-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/21.jsonld"
+  }, {
+    "@id" : ":ldapi21-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/21.ttl"
+  }, {
+    "@id" : ":ldapi22-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/22.json"
+  }, {
+    "@id" : ":ldapi22-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/22.jsonld"
+  }, {
+    "@id" : ":ldapi22-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/22.ttl"
+  }, {
+    "@id" : ":ldapi23-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/23.json"
+  }, {
+    "@id" : ":ldapi23-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/23.jsonld"
+  }, {
+    "@id" : ":ldapi23-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/23.ttl"
+  }, {
+    "@id" : ":ldapi24-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/24.json"
+  }, {
+    "@id" : ":ldapi24-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/24.jsonld"
+  }, {
+    "@id" : ":ldapi24-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/24.ttl"
+  }, {
+    "@id" : ":ldapi25-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/25.json"
+  }, {
+    "@id" : ":ldapi25-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/25.jsonld"
+  }, {
+    "@id" : ":ldapi25-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/25.ttl"
+  }, {
+    "@id" : ":ldapi26-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/26.json"
+  }, {
+    "@id" : ":ldapi26-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/26.jsonld"
+  }, {
+    "@id" : ":ldapi26-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/26.ttl"
+  }, {
+    "@id" : ":ldapi27-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/27.json"
+  }, {
+    "@id" : ":ldapi27-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/27.jsonld"
+  }, {
+    "@id" : ":ldapi27-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/27.ttl"
+  }, {
+    "@id" : ":ldapi28-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/28.json"
+  }, {
+    "@id" : ":ldapi28-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/28.jsonld"
+  }, {
+    "@id" : ":ldapi28-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/28.ttl"
+  }, {
+    "@id" : ":ldapi29-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/29.json"
+  }, {
+    "@id" : ":ldapi29-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/29.jsonld"
+  }, {
+    "@id" : ":ldapi29-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/29.ttl"
+  }, {
+    "@id" : ":ldapi3-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/3.json"
+  }, {
+    "@id" : ":ldapi3-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/3.jsonld"
+  }, {
+    "@id" : ":ldapi3-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/3.ttl"
+  }, {
+    "@id" : ":ldapi30-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/30.json"
+  }, {
+    "@id" : ":ldapi30-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/30.jsonld"
+  }, {
+    "@id" : ":ldapi30-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/30.ttl"
+  }, {
+    "@id" : ":ldapi31-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/31.json"
+  }, {
+    "@id" : ":ldapi31-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/31.jsonld"
+  }, {
+    "@id" : ":ldapi31-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/31.ttl"
+  }, {
+    "@id" : ":ldapi4-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/4.json"
+  }, {
+    "@id" : ":ldapi4-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/4.jsonld"
+  }, {
+    "@id" : ":ldapi4-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/4.ttl"
+  }, {
+    "@id" : ":ldapi5-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/5.json"
+  }, {
+    "@id" : ":ldapi5-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/5.jsonld"
+  }, {
+    "@id" : ":ldapi5-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/5.ttl"
+  }, {
+    "@id" : ":ldapi6-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/6.json"
+  }, {
+    "@id" : ":ldapi6-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/6.jsonld"
+  }, {
+    "@id" : ":ldapi6-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/6.ttl"
+  }, {
+    "@id" : ":ldapi7-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/7.json"
+  }, {
+    "@id" : ":ldapi7-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/7.jsonld"
+  }, {
+    "@id" : ":ldapi7-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/7.ttl"
+  }, {
+    "@id" : ":ldapi8-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/8.json"
+  }, {
+    "@id" : ":ldapi8-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/8.jsonld"
+  }, {
+    "@id" : ":ldapi8-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/8.ttl"
+  }, {
+    "@id" : ":ldapi9-json",
+    "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
+    "jsonURI" : "https://isotc211.geolexica.org/api/ldapi/9.json"
+  }, {
+    "@id" : ":ldapi9-jsonld",
+    "@type" : [ "geolexica:JSON-LD", "owl:NamedIndividual" ],
+    "jsonldURI" : "https://isotc211.geolexica.org/api/ldapi/9.jsonld"
+  }, {
+    "@id" : ":ldapi9-skosrdf",
+    "@type" : [ "geolexica:SKOS-RDF", "owl:NamedIndividual" ],
+    "skosrdfURI" : "https://isotc211.geolexica.org/api/ldapi/9.ttl"
+  }, {
+    "@id" : "geolexica:origin",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "jsonldURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonldURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "jsonURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "skosrdfURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#skosrdfURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo",
+      "@type" : "@id"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "issued" : "http://purl.org/dc/terms/issued",
+    "license" : "http://purl.org/dc/terms/license",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : "http://purl.org/dc/terms/description",
+    "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "title" : "http://purl.org/dc/terms/title",
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "@base" : "https://isotc211.geolexica.org/api/ldapi#",
+    "" : "https://isotc211.geolexica.org/api/ldapi#",
+    "void" : "http://vocab.deri.ie/void#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "reviews" : "https://isotc211.geolexica.org/api/reviews#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dctype" : "http://purl.org/dc/dcmitype/",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "geolexica" : "https://osgeo.geolexica.org/api/geolexica#",
+    "info" : "https://isotc211.geolexica.org/api/info#"
+  }
+}
