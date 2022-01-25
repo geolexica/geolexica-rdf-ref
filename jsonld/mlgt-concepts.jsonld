@@ -15,9 +15,9 @@
     "@id" : "skos:notation",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "https://isotc211.geolexica.org/api/concepts#",
-    "@type" : [ "dctype:Dataset", "owl:NamedIndividual" ],
-    "conformsTo" : "geolexica/v1.0/",
+    "@id" : "./",
+    "@type" : [ "dctype:Dataset", "owl:NamedIndividual", "owl:Ontology" ],
+    "conformsTo" : "https://osgeo.geolexica.org/api/geolexica/v1.0/",
     "contributor" : "https://www.linkedin.com/in/rhtse/",
     "created" : "2022-01-20",
     "creator" : "https://www.linkedin.com/in/lanemk",
@@ -27,7 +27,7 @@
     },
     "issued" : "",
     "license" : "Copyright 2022 OSGeo",
-    "modified" : "2022-01-23",
+    "modified" : "2022-01-25",
     "title" : {
       "@language" : "en",
       "@value" : "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"
@@ -38,125 +38,13 @@
       "@language" : "en",
       "@value" : "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"
     },
-    "imports" : "geolexica",
-    "versionIRI" : "https://isotc211.geolexica.org/api/concepts/v1.0",
+    "imports" : [ "reviews", "info", "https://osgeo.geolexica.org/api/geolexica" ],
+    "versionIRI" : "v1.0",
     "versionInfo" : "Version 1.0",
     "note" : {
       "@language" : "en",
-      "@value" : "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is currently under development as of 2022-20-01. Instance data is subject to change."
+      "@value" : "The ISO/TC 211 MLGT is currently under development as of 2022-20-01. Data is subject to change."
     }
-  }, {
-    "@id" : ":Info2",
-    "@type" : [ "geolexica:ConceptInfo", "owl:NamedIndividual" ],
-    "dateAccepted" : "2008-11-15",
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "valid"
-    },
-    "classification" : {
-      "@language" : "en",
-      "@value" : "preferred"
-    }
-  }, {
-    "@id" : ":Info3",
-    "@type" : [ "geolexica:ConceptInfo", "owl:NamedIndividual" ],
-    "dateAccepted" : "2000-12-15",
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "valid"
-    },
-    "classification" : {
-      "@language" : "en",
-      "@value" : "preferred"
-    }
-  }, {
-    "@id" : ":Info4",
-    "@type" : [ "geolexica:ConceptInfo", "owl:NamedIndividual" ],
-    "dateAccepted" : "2000-12-15",
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "valid"
-    },
-    "classification" : {
-      "@language" : "en",
-      "@value" : "preferred"
-    }
-  }, {
-    "@id" : ":Info5",
-    "@type" : [ "geolexica:ConceptInfo", "owl:NamedIndividual" ],
-    "dateAccepted" : "2000-12-15",
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "valid"
-    },
-    "classification" : {
-      "@language" : "en",
-      "@value" : "preferred"
-    }
-  }, {
-    "@id" : ":Info6",
-    "@type" : [ "geolexica:ConceptInfo", "owl:NamedIndividual" ],
-    "dateAccepted" : "2000-12-15",
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "valid"
-    },
-    "classification" : {
-      "@language" : "en",
-      "@value" : "preferred"
-    }
-  }, {
-    "@id" : ":Review2",
-    "@type" : [ "geolexica:ConceptReview", "owl:NamedIndividual" ],
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "final"
-    },
-    "decision" : {
-      "@language" : "en",
-      "@value" : "accepted"
-    },
-    "decision-event" : {
-      "@language" : "en",
-      "@value" : "Publication of ISO 19104:2016"
-    },
-    "last-review" : "2013-01-29",
-    "geolexica:note" : {
-      "@language" : "en",
-      "@value" : "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.9. Lineage source added as ISO/TS 19104:2008"
-    }
-  }, {
-    "@id" : ":Review3",
-    "@type" : [ "geolexica:ConceptReview", "owl:NamedIndividual" ],
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "pending"
-    },
-    "last-review" : "2019-07-05"
-  }, {
-    "@id" : ":Review4",
-    "@type" : [ "geolexica:ConceptReview", "owl:NamedIndividual" ],
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "pending"
-    },
-    "last-review" : "2019-07-05"
-  }, {
-    "@id" : ":Review5",
-    "@type" : [ "geolexica:ConceptReview", "owl:NamedIndividual" ],
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "pending"
-    },
-    "last-review" : "2019-07-05"
-  }, {
-    "@id" : ":Review6",
-    "@type" : [ "geolexica:ConceptReview", "owl:NamedIndividual" ],
-    "term_status" : {
-      "@language" : "en",
-      "@value" : "pending"
-    },
-    "last-review" : "2019-07-05"
   }, {
     "@id" : ":abbreviation",
     "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
@@ -166,11 +54,14 @@
       "@value" : "abbreviation"
     },
     "definition" : [ {
-      "@language" : "es",
-      "@value" : "designación formada por la omisión de palabras o letras de una denominación más larga y que designa al mismo concepto"
+      "@language" : "ko",
+      "@value" : "축약하기 전의 용어와 동일한 개념을 나타내면서 글자 또는 단어를 생략한 용어"
     }, {
-      "@language" : "da",
-      "@value" : "betegnelse dannet ved at udelade ord eller bogstaver fra en længere form af et begreb som betegner det samme"
+      "@language" : "en",
+      "@value" : "designation formed by omitting words or letters from a longer form and designating the same concept"
+    }, {
+      "@language" : "ru",
+      "@value" : "обозначение, образованное путём исключения слов или букв из более длинной формы и обозначающее  то же самое понятие"
     }, {
       "@language" : "ar",
       "@value" : "دلالة تتشكل بعد حذف كلمات أو حروف من صيغة أطول وتدل عن نفس المفهوم"
@@ -178,46 +69,43 @@
       "@language" : "sv",
       "@value" : "benämning som skapats genom att ord eller bokstäver har utelämnats från en längre benämning och som står för samma begrepp som den längre benämningen"
     }, {
-      "@language" : "ru",
-      "@value" : "обозначение, образованное путём исключения слов или букв из более длинной формы и обозначающее  то же самое понятие"
+      "@language" : "es",
+      "@value" : "designación formada por la omisión de palabras o letras de una denominación más larga y que designa al mismo concepto"
     }, {
-      "@language" : "en",
-      "@value" : "designation formed by omitting words or letters from a longer form and designating the same concept"
-    }, {
-      "@language" : "ko",
-      "@value" : "축약하기 전의 용어와 동일한 개념을 나타내면서 글자 또는 단어를 생략한 용어"
+      "@language" : "da",
+      "@value" : "betegnelse dannet ved at udelade ord eller bogstaver fra en længere form af et begreb som betegner det samme"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 2,
     "prefLabel" : [ {
-      "@language" : "ru",
-      "@value" : "аббревиатура"
-    }, {
       "@language" : "ar",
       "@value" : "اختصار"
     }, {
       "@language" : "da",
       "@value" : "forkortelse"
     }, {
-      "@language" : "de",
-      "@value" : "Abkürzung"
+      "@language" : "sv",
+      "@value" : "förkortning"
     }, {
       "@language" : "en",
       "@value" : "abbreviation"
     }, {
-      "@language" : "sv",
-      "@value" : "förkortning"
+      "@language" : "ko",
+      "@value" : "약어"
     }, {
       "@language" : "es",
       "@value" : "abreviatura"
     }, {
-      "@language" : "ko",
-      "@value" : "약어"
+      "@language" : "ru",
+      "@value" : "аббревиатура"
+    }, {
+      "@language" : "de",
+      "@value" : "Abkürzung"
     } ],
-    "hasInfo" : ":Info2",
-    "hasLangCode" : [ "geolexica:deu", "geolexica:kor", "geolexica:spa", "geolexica:dan", "geolexica:ara", "geolexica:swe", "geolexica:rus", "geolexica:eng" ],
-    "hasReview" : ":Review2",
-    "origin" : [ "geolexica:engRegistry", "geolexica:deuRegistry", "geolexica:araRegistry", "geolexica:danRegistry", "geolexica:rusRegistry", "geolexica:sweRegistry", "geolexica:spaRegistry", "geolexica:korRegistry" ]
+    "hasInfo" : "info:Info2",
+    "hasLangCode" : [ "geolexica:ara", "geolexica:swe", "geolexica:dan", "geolexica:deu", "geolexica:eng", "geolexica:rus", "geolexica:spa", "geolexica:kor" ],
+    "hasReview" : "reviews:Review2",
+    "origin" : [ "geolexica:engRegistry", "geolexica:araRegistry", "geolexica:spaRegistry", "geolexica:danRegistry", "geolexica:deuRegistry", "geolexica:rusRegistry", "geolexica:korRegistry", "geolexica:sweRegistry" ]
   }, {
     "@id" : ":abstract_test_case",
     "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
@@ -227,23 +115,11 @@
       "@value" : "abstract test case"
     },
     "definition" : [ {
-      "@language" : "en",
-      "@value" : "generalized test for a particular requirement"
-    }, {
-      "@language" : "ko",
-      "@value" : "특정한 요구 사항을 수행하기 위한 일반화된 시험"
-    }, {
       "@language" : "ja",
       "@value" : "特定の要件のために作成された試験。"
     }, {
-      "@language" : "ar",
-      "@value" : "اختبار عام لمتطلب محدد"
-    }, {
-      "@language" : "da",
-      "@value" : "generaliseret test for et bestemt krav"
-    }, {
-      "@language" : "sv",
-      "@value" : "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"
+      "@language" : "fi",
+      "@value" : "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"
     }, {
       "@language" : "zh",
       "@value" : "针对特定要求的一般性测试。"
@@ -251,20 +127,41 @@
       "@language" : "fr",
       "@value" : "test généralisé relatif à une exigence particulière"
     }, {
-      "@language" : "fi",
-      "@value" : "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"
+      "@language" : "es",
+      "@value" : "prueba generalizada para un requisito particular"
+    }, {
+      "@language" : "ko",
+      "@value" : "특정한 요구 사항을 수행하기 위한 일반화된 시험"
+    }, {
+      "@language" : "da",
+      "@value" : "generaliseret test for et bestemt krav"
+    }, {
+      "@language" : "sv",
+      "@value" : "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"
     }, {
       "@language" : "ru",
       "@value" : "обобщенный тест на соответствие конкретным требованиям"
     }, {
-      "@language" : "es",
-      "@value" : "prueba generalizada para un requisito particular"
+      "@language" : "en",
+      "@value" : "generalized test for a particular requirement"
+    }, {
+      "@language" : "ar",
+      "@value" : "اختبار عام لمتطلب محدد"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 3,
     "prefLabel" : [ {
-      "@language" : "ko",
-      "@value" : "추상 시험 케이스"
+      "@language" : "fr",
+      "@value" : "cas de test abstrait"
+    }, {
+      "@language" : "ja",
+      "@value" : "抽象試験項目"
+    }, {
+      "@language" : "de",
+      "@value" : "abstrakter Testfall"
+    }, {
+      "@language" : "zh",
+      "@value" : "抽象测试用例"
     }, {
       "@language" : "en",
       "@value" : "abstract test case"
@@ -272,163 +169,154 @@
       "@language" : "ru",
       "@value" : "абстрактный тест"
     }, {
-      "@language" : "ja",
-      "@value" : "抽象試験項目"
-    }, {
-      "@language" : "es",
-      "@value" : "prueba abstracta"
-    }, {
       "@language" : "ar",
       "@value" : "حالة اختبار تجريدي"
     }, {
-      "@language" : "fr",
-      "@value" : "cas de test abstrait"
+      "@language" : "ko",
+      "@value" : "추상 시험 케이스"
     }, {
       "@language" : "sv",
       "@value" : "abstrakt testfall"
     }, {
-      "@language" : "de",
-      "@value" : "abstrakter Testfall"
-    }, {
-      "@language" : "da",
-      "@value" : "abstrakt testforløb"
+      "@language" : "es",
+      "@value" : "prueba abstracta"
     }, {
       "@language" : "fi",
       "@value" : "abstrakti testitapaus"
     }, {
-      "@language" : "zh",
-      "@value" : "抽象测试用例"
+      "@language" : "da",
+      "@value" : "abstrakt testforløb"
     } ],
-    "hasInfo" : ":Info3",
-    "hasLangCode" : [ "geolexica:fin", "geolexica:dan", "geolexica:fra", "geolexica:ara", "geolexica:jpn", "geolexica:rus", "geolexica:zho", "geolexica:eng", "geolexica:spa", "geolexica:kor", "geolexica:swe", "geolexica:deu" ],
-    "hasReview" : ":Review3",
-    "origin" : [ "geolexica:zhoRegistry", "geolexica:fraRegistry", "geolexica:finRegistry", "geolexica:araRegistry", "geolexica:rusRegistry", "geolexica:jpnRegistry", "geolexica:spaRegistry", "geolexica:deuRegistry", "geolexica:korRegistry", "geolexica:engRegistry", "geolexica:sweRegistry", "geolexica:danRegistry" ]
+    "hasInfo" : "info:Info3",
+    "hasLangCode" : [ "geolexica:kor", "geolexica:ara", "geolexica:fra", "geolexica:swe", "geolexica:fin", "geolexica:zho", "geolexica:rus", "geolexica:spa", "geolexica:jpn", "geolexica:eng", "geolexica:deu", "geolexica:dan" ],
+    "hasReview" : "reviews:Review3",
+    "origin" : [ "geolexica:zhoRegistry", "geolexica:engRegistry", "geolexica:spaRegistry", "geolexica:rusRegistry", "geolexica:jpnRegistry", "geolexica:finRegistry", "geolexica:deuRegistry", "geolexica:sweRegistry", "geolexica:danRegistry", "geolexica:korRegistry", "geolexica:araRegistry", "geolexica:fraRegistry" ]
   }, {
     "@id" : ":abstract_test_method",
-    "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
     "dcterms:identifier" : 4,
     "label" : {
       "@language" : "en",
       "@value" : "abstract test method"
     },
     "definition" : [ {
-      "@language" : "fr",
-      "@value" : "méthode de test d&#39;implémentation indépendante de toute procédure de test"
-    }, {
-      "@language" : "fi",
-      "@value" : "testausmenettelystä riippumaton menetelmä toteutuksen testaamiseksi"
-    }, {
-      "@language" : "ar",
-      "@value" : "طريقة لاختبار التنفيذ مستقلة عن أي إجراءات اختبار محددة"
-    }, {
-      "@language" : "sv",
-      "@value" : "testmetod som är oberoende oavsett typ av implementering"
-    }, {
-      "@language" : "da",
-      "@value" : "metode til at teste implementering uafhængigt af testprocedure"
+      "@language" : "es",
+      "@value" : "método para probar implementaciones independientemente de cualquier procedimiento de prueba particular"
     }, {
       "@language" : "en",
       "@value" : "method for testing implementation independent of any particular test procedure"
     }, {
-      "@language" : "ja",
-      "@value" : "特定の試験手続から独立した実装の試験の方法。"
+      "@language" : "ru",
+      "@value" : "метод тестирования реализации, не зависящий от конкретной процедуры тестирования"
+    }, {
+      "@language" : "fi",
+      "@value" : "testausmenettelystä riippumaton menetelmä toteutuksen testaamiseksi"
+    }, {
+      "@language" : "sv",
+      "@value" : "testmetod som är oberoende oavsett typ av implementering"
+    }, {
+      "@language" : "ar",
+      "@value" : "طريقة لاختبار التنفيذ مستقلة عن أي إجراءات اختبار محددة"
+    }, {
+      "@language" : "zh",
+      "@value" : "用于实现测试的方法，它与特定测试过程无关。"
+    }, {
+      "@language" : "da",
+      "@value" : "metode til at teste implementering uafhængigt af testprocedure"
     }, {
       "@language" : "ko",
       "@value" : "특정 시험 절차와 상관 없이 독립적인 시험 구현을 위한 방법"
     }, {
-      "@language" : "ru",
-      "@value" : "метод тестирования реализации, не зависящий от конкретной процедуры тестирования"
+      "@language" : "fr",
+      "@value" : "méthode de test d&#39;implémentation indépendante de toute procédure de test"
     }, {
-      "@language" : "es",
-      "@value" : "método para probar implementaciones independientemente de cualquier procedimiento de prueba particular"
-    }, {
-      "@language" : "zh",
-      "@value" : "用于实现测试的方法，它与特定测试过程无关。"
+      "@language" : "ja",
+      "@value" : "特定の試験手続から独立した実装の試験の方法。"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 4,
     "prefLabel" : [ {
-      "@language" : "fr",
-      "@value" : "méthode de test abstrait"
-    }, {
-      "@language" : "es",
-      "@value" : "método de prueba abstracta"
-    }, {
-      "@language" : "ar",
-      "@value" : "طريقة اختبار تجريدي"
-    }, {
-      "@language" : "ru",
-      "@value" : "метод абстрактного теста"
-    }, {
-      "@language" : "ja",
-      "@value" : "抽象試験方法"
-    }, {
-      "@language" : "en",
-      "@value" : "abstract test method"
-    }, {
-      "@language" : "zh",
-      "@value" : "抽象测试方法"
+      "@language" : "sv",
+      "@value" : "implementeringsoberoende testmetod"
     }, {
       "@language" : "fi",
       "@value" : "abstrakti testausmenetelmä"
     }, {
-      "@language" : "da",
-      "@value" : "abstrakt testmetode"
+      "@language" : "ar",
+      "@value" : "طريقة اختبار تجريدي"
     }, {
       "@language" : "ko",
       "@value" : "추상 시험 방법"
     }, {
+      "@language" : "ru",
+      "@value" : "метод абстрактного теста"
+    }, {
+      "@language" : "da",
+      "@value" : "abstrakt testmetode"
+    }, {
+      "@language" : "fr",
+      "@value" : "méthode de test abstrait"
+    }, {
+      "@language" : "en",
+      "@value" : "abstract test method"
+    }, {
       "@language" : "de",
       "@value" : "abstrakte Prüfmethode"
     }, {
-      "@language" : "sv",
-      "@value" : "implementeringsoberoende testmetod"
+      "@language" : "zh",
+      "@value" : "抽象测试方法"
+    }, {
+      "@language" : "ja",
+      "@value" : "抽象試験方法"
+    }, {
+      "@language" : "es",
+      "@value" : "método de prueba abstracta"
     } ],
-    "hasInfo" : ":Info4",
-    "hasLangCode" : [ "geolexica:jpn", "geolexica:rus", "geolexica:swe", "geolexica:kor", "geolexica:fin", "geolexica:zho", "geolexica:eng", "geolexica:dan", "geolexica:deu", "geolexica:fra", "geolexica:ara", "geolexica:spa" ],
-    "hasReview" : ":Review4",
-    "origin" : [ "geolexica:korRegistry", "geolexica:finRegistry", "geolexica:engRegistry", "geolexica:fraRegistry", "geolexica:danRegistry", "geolexica:jpnRegistry", "geolexica:araRegistry", "geolexica:deuRegistry", "geolexica:spaRegistry", "geolexica:zhoRegistry", "geolexica:sweRegistry", "geolexica:rusRegistry" ]
+    "hasInfo" : "info:Info4",
+    "hasLangCode" : [ "geolexica:spa", "geolexica:jpn", "geolexica:swe", "geolexica:zho", "geolexica:deu", "geolexica:eng", "geolexica:fin", "geolexica:fra", "geolexica:rus", "geolexica:dan", "geolexica:kor", "geolexica:ara" ],
+    "hasReview" : "reviews:Review4",
+    "origin" : [ "geolexica:jpnRegistry", "geolexica:rusRegistry", "geolexica:korRegistry", "geolexica:zhoRegistry", "geolexica:deuRegistry", "geolexica:danRegistry", "geolexica:finRegistry", "geolexica:sweRegistry", "geolexica:fraRegistry", "geolexica:engRegistry", "geolexica:araRegistry", "geolexica:spaRegistry" ]
   }, {
     "@id" : ":abstract_test_module",
-    "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
     "dcterms:identifier" : 5,
     "label" : {
       "@language" : "en",
       "@value" : "abstract test module"
     },
     "definition" : [ {
-      "@language" : "ko",
-      "@value" : "관련된 추상 시험 케이스의 집합"
-    }, {
-      "@language" : "fr",
-      "@value" : "ensemble de cas de test abstraits liés"
-    }, {
-      "@language" : "da",
-      "@value" : "sæt af forbundne abstrakte testforløb"
-    }, {
-      "@language" : "ru",
-      "@value" : "набор взаимосвязанных абстрактных тестов"
-    }, {
-      "@language" : "en",
-      "@value" : "set of related abstract test cases"
-    }, {
-      "@language" : "zh",
-      "@value" : "相关抽象测试用例的集合。"
-    }, {
-      "@language" : "fi",
-      "@value" : "joukko toisiinsa liittyviä abstrakteja testitapauksia"
-    }, {
-      "@language" : "ar",
-      "@value" : "مجموعة حالات اختبار تجريدي مرتبطة ببعضها"
-    }, {
-      "@language" : "ja",
-      "@value" : "関係する抽象試験項目の集合。"
+      "@language" : "sv",
+      "@value" : "samling av samhörande abstrakta testfall"
     }, {
       "@language" : "es",
       "@value" : "conjunto de pruebas genéricas relacionadas entre sí"
     }, {
-      "@language" : "sv",
-      "@value" : "samling av samhörande abstrakta testfall"
+      "@language" : "da",
+      "@value" : "sæt af forbundne abstrakte testforløb"
+    }, {
+      "@language" : "ja",
+      "@value" : "関係する抽象試験項目の集合。"
+    }, {
+      "@language" : "fr",
+      "@value" : "ensemble de cas de test abstraits liés"
+    }, {
+      "@language" : "ru",
+      "@value" : "набор взаимосвязанных абстрактных тестов"
+    }, {
+      "@language" : "fi",
+      "@value" : "joukko toisiinsa liittyviä abstrakteja testitapauksia"
+    }, {
+      "@language" : "en",
+      "@value" : "set of related abstract test cases"
+    }, {
+      "@language" : "ko",
+      "@value" : "관련된 추상 시험 케이스의 집합"
+    }, {
+      "@language" : "ar",
+      "@value" : "مجموعة حالات اختبار تجريدي مرتبطة ببعضها"
+    }, {
+      "@language" : "zh",
+      "@value" : "相关抽象测试用例的集合。"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 5,
@@ -436,17 +324,14 @@
       "@language" : "fr",
       "@value" : "module de test abstrait"
     }, {
-      "@language" : "fi",
-      "@value" : "abstrakti testausmoduuli"
+      "@language" : "de",
+      "@value" : "abstraktes  Prüfmodul"
     }, {
-      "@language" : "zh",
-      "@value" : "抽象测试模块"
+      "@language" : "en",
+      "@value" : "abstract test module"
     }, {
-      "@language" : "ru",
-      "@value" : "модуль  абстрактных тестов"
-    }, {
-      "@language" : "ja",
-      "@value" : "抽象試験モジュール"
+      "@language" : "ko",
+      "@value" : "추상 시험 모듈"
     }, {
       "@language" : "da",
       "@value" : "abstrakt testmodul"
@@ -454,110 +339,113 @@
       "@language" : "sv",
       "@value" : "abstrakt testmodul"
     }, {
-      "@language" : "es",
-      "@value" : "módulo de pruebas abstractas"
-    }, {
-      "@language" : "en",
-      "@value" : "abstract test module"
-    }, {
-      "@language" : "de",
-      "@value" : "abstraktes  Prüfmodul"
+      "@language" : "zh",
+      "@value" : "抽象测试模块"
     }, {
       "@language" : "ar",
       "@value" : "نموذج اختبار تجريدي"
     }, {
-      "@language" : "ko",
-      "@value" : "추상 시험 모듈"
+      "@language" : "es",
+      "@value" : "módulo de pruebas abstractas"
+    }, {
+      "@language" : "ja",
+      "@value" : "抽象試験モジュール"
+    }, {
+      "@language" : "ru",
+      "@value" : "модуль  абстрактных тестов"
+    }, {
+      "@language" : "fi",
+      "@value" : "abstrakti testausmoduuli"
     } ],
-    "hasInfo" : ":Info5",
-    "hasLangCode" : [ "geolexica:rus", "geolexica:dan", "geolexica:zho", "geolexica:eng", "geolexica:fra", "geolexica:fin", "geolexica:swe", "geolexica:deu", "geolexica:jpn", "geolexica:spa", "geolexica:kor", "geolexica:ara" ],
-    "hasReview" : ":Review5",
-    "origin" : [ "geolexica:araRegistry", "geolexica:engRegistry", "geolexica:fraRegistry", "geolexica:finRegistry", "geolexica:spaRegistry", "geolexica:deuRegistry", "geolexica:rusRegistry", "geolexica:korRegistry", "geolexica:zhoRegistry", "geolexica:jpnRegistry", "geolexica:sweRegistry", "geolexica:danRegistry" ]
+    "hasInfo" : "info:Info5",
+    "hasLangCode" : [ "geolexica:rus", "geolexica:swe", "geolexica:kor", "geolexica:fin", "geolexica:ara", "geolexica:dan", "geolexica:deu", "geolexica:fra", "geolexica:jpn", "geolexica:spa", "geolexica:zho", "geolexica:eng" ],
+    "hasReview" : "reviews:Review5",
+    "origin" : [ "geolexica:engRegistry", "geolexica:spaRegistry", "geolexica:fraRegistry", "geolexica:sweRegistry", "geolexica:araRegistry", "geolexica:korRegistry", "geolexica:finRegistry", "geolexica:zhoRegistry", "geolexica:rusRegistry", "geolexica:danRegistry", "geolexica:deuRegistry", "geolexica:jpnRegistry" ]
   }, {
     "@id" : ":abstract_test_suite",
-    "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+    "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
     "dcterms:identifier" : 6,
     "label" : {
       "@language" : "en",
       "@value" : "abstract test suite"
     },
     "definition" : [ {
-      "@language" : "zh",
-      "@value" : "规定了实现一致性所要满足的全部要求的抽象测试模块。"
-    }, {
       "@language" : "en",
       "@value" : "abstract test module specifying all the requirements to be satisfied for conformance"
-    }, {
-      "@language" : "es",
-      "@value" : "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"
-    }, {
-      "@language" : "ar",
-      "@value" : "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"
     }, {
       "@language" : "ko",
       "@value" : "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"
     }, {
-      "@language" : "da",
-      "@value" : "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"
-    }, {
-      "@language" : "fi",
-      "@value" : "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"
-    }, {
-      "@language" : "ru",
-      "@value" : "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"
+      "@language" : "ja",
+      "@value" : "満たされなければならないすべての要件を規定する抽象試験モジュール。"
     }, {
       "@language" : "fr",
       "@value" : "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"
     }, {
+      "@language" : "ar",
+      "@value" : "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"
+    }, {
+      "@language" : "fi",
+      "@value" : "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"
+    }, {
+      "@language" : "es",
+      "@value" : "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"
+    }, {
+      "@language" : "ru",
+      "@value" : "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"
+    }, {
+      "@language" : "zh",
+      "@value" : "规定了实现一致性所要满足的全部要求的抽象测试模块。"
+    }, {
       "@language" : "sv",
       "@value" : "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"
     }, {
-      "@language" : "ja",
-      "@value" : "満たされなければならないすべての要件を規定する抽象試験モジュール。"
+      "@language" : "da",
+      "@value" : "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 6,
     "prefLabel" : [ {
-      "@language" : "es",
-      "@value" : "conjunto de pruebas abstractas"
-    }, {
       "@language" : "sv",
       "@value" : "abstrakt testsvit"
-    }, {
-      "@language" : "en",
-      "@value" : "abstract test suite"
-    }, {
-      "@language" : "fr",
-      "@value" : "suite de tests abstraits"
-    }, {
-      "@language" : "ru",
-      "@value" : "комплекс абстрактных тестов"
-    }, {
-      "@language" : "fi",
-      "@value" : "abstrakti testisarja"
     }, {
       "@language" : "ja",
       "@value" : "抽象試験項目群，ATS"
     }, {
-      "@language" : "de",
-      "@value" : "abstrakte Test-Suite"
+      "@language" : "es",
+      "@value" : "conjunto de pruebas abstractas"
     }, {
-      "@language" : "da",
-      "@value" : "abstrakt testsuite"
+      "@language" : "fr",
+      "@value" : "suite de tests abstraits"
     }, {
-      "@language" : "zh",
-      "@value" : "抽象测试套件"
+      "@language" : "fi",
+      "@value" : "abstrakti testisarja"
     }, {
       "@language" : "ar",
       "@value" : "مجموعة اختبار تجريدي"
     }, {
+      "@language" : "ru",
+      "@value" : "комплекс абстрактных тестов"
+    }, {
+      "@language" : "da",
+      "@value" : "abstrakt testsuite"
+    }, {
       "@language" : "ko",
       "@value" : "추상 시험 스위트"
+    }, {
+      "@language" : "en",
+      "@value" : "abstract test suite"
+    }, {
+      "@language" : "de",
+      "@value" : "abstrakte Test-Suite"
+    }, {
+      "@language" : "zh",
+      "@value" : "抽象测试套件"
     } ],
-    "hasInfo" : ":Info6",
-    "hasLangCode" : [ "geolexica:ara", "geolexica:fin", "geolexica:rus", "geolexica:fra", "geolexica:deu", "geolexica:kor", "geolexica:dan", "geolexica:zho", "geolexica:jpn", "geolexica:eng", "geolexica:spa", "geolexica:swe" ],
-    "hasReview" : ":Review6",
-    "origin" : [ "geolexica:araRegistry", "geolexica:finRegistry", "geolexica:sweRegistry", "geolexica:danRegistry", "geolexica:zhoRegistry", "geolexica:spaRegistry", "geolexica:jpnRegistry", "geolexica:engRegistry", "geolexica:fraRegistry", "geolexica:korRegistry", "geolexica:deuRegistry", "geolexica:rusRegistry" ]
+    "hasInfo" : "info:Info6",
+    "hasLangCode" : [ "geolexica:fin", "geolexica:fra", "geolexica:deu", "geolexica:jpn", "geolexica:rus", "geolexica:zho", "geolexica:eng", "geolexica:kor", "geolexica:swe", "geolexica:spa", "geolexica:ara", "geolexica:dan" ],
+    "hasReview" : "reviews:Review6",
+    "origin" : [ "geolexica:sweRegistry", "geolexica:deuRegistry", "geolexica:rusRegistry", "geolexica:korRegistry", "geolexica:engRegistry", "geolexica:fraRegistry", "geolexica:spaRegistry", "geolexica:danRegistry", "geolexica:araRegistry", "geolexica:zhoRegistry", "geolexica:finRegistry", "geolexica:jpnRegistry" ]
   }, {
     "@id" : ":ldapi2-json",
     "@type" : [ "geolexica:JSON", "owl:NamedIndividual" ],
@@ -627,58 +515,40 @@
   } ],
   "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
-    "skosrdfURI" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#skosrdfURI",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "jsonldURI" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonldURI",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
     "definition" : "http://www.w3.org/2004/02/skos/core#definition",
     "origin" : {
       "@id" : "https://osgeo.geolexica.org/api/geolexica#origin",
       "@type" : "@id"
     },
-    "hasInfo" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasInfo",
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "hasLangCode" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasLangCode",
       "@type" : "@id"
     },
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "hasReview" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasReview",
+      "@type" : "@id"
+    },
     "notation" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#notation",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "hasLangCode" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasLangCode",
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
     },
     "identifier" : {
       "@id" : "http://purl.org/dc/terms/identifier",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "hasReview" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasReview",
+    "hasInfo" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#hasInfo",
       "@type" : "@id"
     },
-    "inScheme" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type" : "@id"
-    },
-    "classification" : "https://osgeo.geolexica.org/api/geolexica#classification",
-    "term_status" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
-    "dateAccepted" : {
-      "@id" : "http://purl.org/dc/terms/dateAccepted",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "jsonURI" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonURI",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "jsonldURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonldURI",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "last-review" : {
-      "@id" : "https://osgeo.geolexica.org/api/geolexica#last-review",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
     "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
@@ -688,8 +558,16 @@
     },
     "description" : "http://purl.org/dc/terms/description",
     "title" : "http://purl.org/dc/terms/title",
-    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
     "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
     "issued" : "http://purl.org/dc/terms/issued",
     "versionIRI" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
@@ -698,10 +576,6 @@
     "contributor" : {
       "@id" : "http://purl.org/dc/terms/contributor",
       "@type" : "@id"
-    },
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "license" : "http://purl.org/dc/terms/license",
     "created" : {
@@ -712,19 +586,22 @@
       "@id" : "http://purl.org/dc/terms/creator",
       "@type" : "@id"
     },
-    "imports" : {
-      "@id" : "http://www.w3.org/2002/07/owl#imports",
-      "@type" : "@id"
+    "jsonURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#jsonURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "decision-event" : "https://osgeo.geolexica.org/api/geolexica#decision-event",
-    "decision" : "https://osgeo.geolexica.org/api/geolexica#decision",
-    "@base" : "https://osgeo.geolexica.org/api/concepts#",
-    "" : "https://osgeo.geolexica.org/api/concepts#",
+    "skosrdfURI" : {
+      "@id" : "https://osgeo.geolexica.org/api/geolexica#skosrdfURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "@base" : "https://isotc211.geolexica.org/api/concepts#",
+    "" : "https://isotc211.geolexica.org/api/concepts#",
     "void" : "http://vocab.deri.ie/void#",
     "owl" : "http://www.w3.org/2002/07/owl#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
     "skos" : "http://www.w3.org/2004/02/skos/core#",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "reviews" : "https://isotc211.geolexica.org/api/reviews#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xml" : "http://www.w3.org/XML/1998/namespace",
     "dctype" : "http://purl.org/dc/dcmitype/",
@@ -732,6 +609,7 @@
     "vann" : "http://purl.org/vocab/vann/",
     "geolexica" : "https://osgeo.geolexica.org/api/geolexica#",
     "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
-    "prov" : "http://www.w3.org/ns/prov#"
+    "prov" : "http://www.w3.org/ns/prov#",
+    "info" : "https://isotc211.geolexica.org/api/info#"
   }
 }

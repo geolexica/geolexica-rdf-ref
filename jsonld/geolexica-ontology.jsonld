@@ -12,21 +12,6 @@
     "@id" : "dcterms:creator",
     "@type" : "owl:AnnotationProperty"
   }, {
-    "@id" : "dcterms:dateAccepted",
-    "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Date the concept/term was accepted in concept INFO."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "date accepted"
-    },
-    "note" : {
-      "@language" : "en",
-      "@value" : "Attribute is drawn from the DCMI Metadata Terms vocabulary."
-    }
-  }, {
     "@id" : "dcterms:description",
     "@type" : "owl:AnnotationProperty"
   }, {
@@ -34,11 +19,11 @@
     "@type" : "owl:DatatypeProperty",
     "description" : {
       "@language" : "en",
-      "@value" : "Encodes the Term ID for each concept."
+      "@value" : "Encodes the term ID for each concept."
     },
     "comment" : {
       "@language" : "en",
-      "@value" : "Use for Term ID for each concept in the glossary; must be an integer."
+      "@value" : "Entry must be an integer."
     },
     "domain" : "skos:Concept",
     "label" : {
@@ -48,7 +33,7 @@
     "range" : "xsd:integer",
     "note" : {
       "@language" : "en",
-      "@value" : "Attribute is drawn from the DCMI Metadata Terms vocabulary."
+      "@value" : "From the DCMI Metadata Terms vocabulary."
     }
   }, {
     "@id" : "dcterms:issued",
@@ -79,7 +64,7 @@
     "@type" : "owl:DatatypeProperty",
     "description" : {
       "@language" : "en",
-      "@value" : "ISO 3166 three-letter language codes assigned to each translation provided for a given concept."
+      "@value" : "ISO 3166 three-letter language codes assigned to each translation."
     },
     "domain" : "skos:Concept",
     "label" : {
@@ -89,31 +74,11 @@
     "range" : "xsd:string",
     "note" : {
       "@language" : "en",
-      "@value" : "Attribute is drawn from the Vocabulary for Essential Metadata."
+      "@value" : "From Vocabulary for Essential Metadata (VAEM)."
     }
   }, {
     "@id" : "xsd:date",
     "@type" : "rdfs:Datatype"
-  }, {
-    "@id" : "vs:term_status",
-    "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Status of a vocabulary term for Concept Info and/or Concept Review."
-    },
-    "domain" : ":ConceptReview",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has ENTRY status"
-    },
-    "range" : "xsd:string",
-    "note" : [ {
-      "@language" : "en",
-      "@value" : "Need to identify and enumerate status values (i.e., \"accepted\", \"final\", \"pending\"...)."
-    }, {
-      "@language" : "en",
-      "@value" : "Attribute is drawn from the SemWeb Vocab Status ontology."
-    } ]
   }, {
     "@id" : "./",
     "@type" : "owl:Ontology",
@@ -122,11 +87,11 @@
     "creator" : "https://www.linkedin.com/in/lanemk",
     "description" : {
       "@language" : "en",
-      "@value" : "This is the core ontology for OSGeo Geolexica, the online glossary for OSGeo."
+      "@value" : "This document presents the core ontology for OSGeo Geolexica, the online glossary for OSGeo."
     },
-    "issued" : "",
+    "issued" : " ",
     "license" : "Copyright 2022 OSGeo",
-    "modified" : "2022-01-24",
+    "modified" : "2022-01-25",
     "publisher" : "https://www.osgeo.org/",
     "title" : {
       "@language" : "en",
@@ -146,11 +111,11 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "Instance data relative to INFO about selected concept/term."
+      "@value" : "Instance data relative to INFO about selected concept."
     },
     "comment" : {
       "@language" : "en",
-      "@value" : "Attribute values for each concept/term in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be added to future versions of the ontology."
+      "@value" : "Attribute values for each concept in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be added to future versions of the ontology."
     },
     "label" : {
       "@language" : "en",
@@ -165,15 +130,15 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "Instance data for official REVIEW of selected concept/term."
+      "@value" : "Instance data for official REVIEW of selected concept."
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Attribute values for each concept; i.e., \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". ."
     },
     "label" : {
       "@language" : "en",
       "@value" : "Review"
-    },
-    "note" : {
-      "@language" : "en",
-      "@value" : "Attributes values for each concept/term in the glossary, such as \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". New attributes may be added to future versions of the ontology."
     },
     "prefLabel" : {
       "@language" : "en",
@@ -184,7 +149,7 @@
     "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
     "description" : {
       "@language" : "en",
-      "@value" : "In accordance with SKOS, this is the Geolexica Concept Scheme, to which all SKOS Concepts are attributed in the OSGeo Geolexica Glossary and/or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."
+      "@value" : "Geolexica Concept Scheme, in accordance with SKOS applied tp OSGeo Geolexica Glossary or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."
     },
     "label" : {
       "@language" : "en",
@@ -202,10 +167,16 @@
       "@value" : "Terminology work — Vocabulary — Part 1: Theory and application"
     },
     "source" : "https://www.iso.org/standard/20057.html",
-    "label" : {
+    "label" : "ISO 1087-1:2000"
+  }, {
+    "@id" : ":ISO-19101-1-2014",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
       "@language" : "en",
-      "@value" : "ISO 1087-1:2000"
-    }
+      "@value" : "Geographic information — Reference model — Part 1: Fundamentals"
+    },
+    "source" : "https://www.iso.org/standard/59164.html",
+    "label" : "ISO 19101-1:2014"
   }, {
     "@id" : ":ISO-19105-2000",
     "@type" : [ ":Source", "owl:NamedIndividual" ],
@@ -214,10 +185,34 @@
       "@value" : "Geographic information — Conformance and testing"
     },
     "source" : "https://www.iso.org/standard/26010.html",
-    "label" : {
+    "label" : "ISO 19105:2000"
+  }, {
+    "@id" : ":ISO-19116-2004",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
       "@language" : "en",
-      "@value" : "ISO 19105:2000"
-    }
+      "@value" : "Geographic information — Positioning services"
+    },
+    "source" : "https://www.iso.org/standard/37805.html",
+    "label" : "ISO 19116:2004"
+  }, {
+    "@id" : ":ISO-19116-2019",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
+      "@language" : "en",
+      "@value" : "Geographic information — Positioning services"
+    },
+    "source" : "https://www.iso.org/standard/70882.html",
+    "label" : "ISO 19116:2019"
+  }, {
+    "@id" : ":ISO-19117-2012",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
+      "@language" : "en",
+      "@value" : "Geographic information — Portrayal"
+    },
+    "source" : "https://www.iso.org/standard/46226.html",
+    "label" : "ISO 19117:2012"
   }, {
     "@id" : ":ISO-3534-1-1993",
     "@type" : [ ":Source", "owl:NamedIndividual" ],
@@ -226,10 +221,16 @@
       "@value" : "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"
     },
     "source" : "https://www.iso.org/standard/8919.html",
-    "label" : {
+    "label" : "ISO 3534-1:1993"
+  }, {
+    "@id" : ":ISO-IEC-19501",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
       "@language" : "en",
-      "@value" : "ISO 3534-1:1993"
-    }
+      "@value" : "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"
+    },
+    "source" : "https://www.iso.org/standard/32620.html",
+    "label" : "ISO/IEC 19501"
   }, {
     "@id" : ":ISO-IEC-19501-2005",
     "@type" : [ ":Source", "owl:NamedIndividual" ],
@@ -238,16 +239,22 @@
       "@value" : "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"
     },
     "source" : "https://www.iso.org/standard/32620.html",
-    "label" : {
+    "label" : "ISO/IEC 19501:2005"
+  }, {
+    "@id" : ":ISO-IEC-2382-2015",
+    "@type" : [ ":Source", "owl:NamedIndividual" ],
+    "description" : {
       "@language" : "en",
-      "@value" : "ISO/IEC 19501:2005"
-    }
+      "@value" : "Information technology — Vocabulary"
+    },
+    "source" : "https://www.iso.org/standard/63598.html",
+    "label" : "ISO/IEC 2382:2015"
   }, {
     "@id" : ":JSON",
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "JSON file representation relative to selected concept/term."
+      "@value" : "JSON file representation of concept."
     },
     "label" : {
       "@language" : "en",
@@ -260,7 +267,7 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "JSON-LD file representation relative to selected concept/term."
+      "@value" : "JSON-LD file representation of concept"
     },
     "label" : {
       "@language" : "en",
@@ -273,8 +280,9 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "ISO-3166 3-letter language code for each concept/term definition."
+      "@value" : "ISO-3166 3-letter language code."
     },
+    "comment" : "Use for each language definition in the glossary",
     "label" : {
       "@language" : "en",
       "@value" : "3-letter Language Code"
@@ -284,7 +292,7 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "Classes for linked data APIs, considered distinct file format representations for each concept/term in the glossary."
+      "@value" : "Class for linked data APIs, distinct file formats for each concept."
     },
     "label" : {
       "@language" : "en",
@@ -300,7 +308,7 @@
     "seeAlso" : "https://osgeo.geolexica.org/",
     "note" : [ {
       "@language" : "en",
-      "@value" : "The OSGeo Glossary (SKOS) Collection may not be necessary and is subject to change. It is being used to differentiate the OSGeo set of SKOS concepts from the MLGT set of SKOS concepts. Rationale is that the Geolexica Ontology can be used for either collection and one may want to identify concepts as such."
+      "@value" : "(Extended) OSGeo Glossary (SKOS) collection of concepts."
     }, {
       "@language" : "en",
       "@value" : "OSGeo Collection of SKOS Concepts"
@@ -318,17 +326,17 @@
     },
     "note" : [ {
       "@language" : "en",
-      "@value" : "Should be a URL linking to Registers document."
+      "@value" : "This should be a link to the Registers document."
     }, {
       "@language" : "en",
-      "@value" : "Need to attach all known Registers, all standards document language references as INDIVIDUALS."
+      "@value" : "Need to attach all Registers, all references as INDIVIDUALS."
     } ]
   }, {
     "@id" : ":SKOS-RDF",
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "SKOS-RDF file representation relative to selected concept/term."
+      "@value" : "SKOS-RDF file representation of concept."
     },
     "label" : {
       "@language" : "en",
@@ -359,7 +367,7 @@
     "@type" : "owl:Class",
     "description" : {
       "@language" : "en",
-      "@value" : "TBX-ISO-XML file representation relative to selected concept/term."
+      "@value" : "TBX-ISO-XML file representation relative to selected concept."
     },
     "label" : {
       "@language" : "en",
@@ -418,13 +426,10 @@
       "@value" : "has INFO classification"
     },
     "range" : "xsd:string",
-    "note" : [ {
+    "note" : {
       "@language" : "en",
-      "@value" : "Need to identify and enumerate classification values (i.e., \"preferred\", \"alternate\"...)."
-    }, {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    } ]
+      "@value" : "Need to enumerate classification values (i.e., \"preferred\", \"alternate\"...)."
+    }
   }, {
     "@id" : ":clause",
     "@type" : "owl:DatatypeProperty",
@@ -437,11 +442,7 @@
       "@language" : "en",
       "@value" : "has SOURCE clause"
     },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : ":dan",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -460,25 +461,41 @@
       "@value" : "Danish Registry"
     }
   }, {
+    "@id" : ":date-accepted",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Date the concept was accepted in concept REVIEW."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "date accepted"
+    },
+    "range" : "xsd:date"
+  }, {
+    "@id" : ":date-amended",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Date the concept was amended in concept REVIEW."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "has SOURCE clause"
+    },
+    "range" : "xsd:date"
+  }, {
     "@id" : ":decision",
     "@type" : "owl:DatatypeProperty",
     "description" : {
       "@language" : "en",
-      "@value" : "Disposition of concept/term REVIEW."
+      "@value" : "Disposition of concept REVIEW."
     },
-    "domain" : ":ConceptReview",
     "label" : {
       "@language" : "en",
       "@value" : "has REVIEW decision"
     },
-    "range" : "xsd:string",
-    "note" : [ {
-      "@language" : "en",
-      "@value" : "Need to identify and enumerate decision values (i.e., \"accepted\", \"rejected\", \"pending\"...)."
-    }, {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    } ]
+    "range" : "xsd:string"
   }, {
     "@id" : ":decision-event",
     "@type" : "owl:DatatypeProperty",
@@ -486,16 +503,11 @@
       "@language" : "en",
       "@value" : "Context statement of authority REVIEW."
     },
-    "domain" : ":ConceptReview",
     "label" : {
       "@language" : "en",
       "@value" : "has REVIEW decision event"
     },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : ":deu",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -537,16 +549,11 @@
       "@language" : "en",
       "@value" : "Example(s) to clarify concept definition."
     },
-    "domain" : ":ConceptInfo",
     "label" : {
       "@language" : "en",
       "@value" : "has INFO example"
     },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : ":fin",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -619,11 +626,7 @@
       "@language" : "en",
       "@value" : "has origin"
     },
-    "range" : ":Origin",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : ":Origin"
   }, {
     "@id" : ":hasReview",
     "@type" : "owl:ObjectProperty",
@@ -642,18 +645,26 @@
     "@type" : "owl:ObjectProperty",
     "description" : {
       "@language" : "en",
-      "@value" : "Source of concept / term defintion."
+      "@value" : "Authority source for concept defintion."
     },
     "domain" : "skos:Concept",
     "label" : {
       "@language" : "en",
       "@value" : "has source"
     },
-    "range" : ":Source",
-    "note" : {
+    "range" : ":Source"
+  }, {
+    "@id" : ":info-status",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
       "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)? Candidate: dcterms:source"
-    }
+      "@value" : "Status of a vocabulary term for Concept Info."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "has info status"
+    },
+    "range" : "xsd:string"
   }, {
     "@id" : ":jpn",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -727,18 +738,13 @@
     "@type" : "owl:DatatypeProperty",
     "description" : {
       "@language" : "en",
-      "@value" : "Date of the last REVIEW performed for the concept/term."
+      "@value" : "Date of the last REVIEW performed for the concept."
     },
-    "domain" : ":ConceptReview",
     "label" : {
       "@language" : "en",
       "@value" : "last review performed"
     },
-    "range" : "xsd:date",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : "xsd:date"
   }, {
     "@id" : ":msa",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -780,16 +786,11 @@
       "@language" : "en",
       "@value" : "Notes pertaining to ConceptInfo or ConceptReview."
     },
-    "domain" : ":ConceptInfo",
     "label" : {
       "@language" : "en",
       "@value" : "has note"
     },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is there a vocabulary with this property (reuse)?"
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : ":pol",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -807,6 +808,18 @@
       "@language" : "en",
       "@value" : "Polish Registry"
     }
+  }, {
+    "@id" : ":review-status",
+    "@type" : "owl:DatatypeProperty",
+    "description" : {
+      "@language" : "en",
+      "@value" : "Status of a vocabulary term for Concept Review."
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "has review status"
+    },
+    "range" : "xsd:string"
   }, {
     "@id" : ":rus",
     "@type" : [ ":LangCode", "owl:NamedIndividual" ],
@@ -922,17 +935,18 @@
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
     },
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "domain" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
     "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
     "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
@@ -941,7 +955,10 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
     "created" : {
       "@id" : "http://purl.org/dc/terms/created",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
@@ -958,7 +975,6 @@
       "@id" : "http://purl.org/dc/terms/contributor",
       "@type" : "@id"
     },
-    "issued" : "http://purl.org/dc/terms/issued",
     "versionIRI" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
       "@type" : "@id"
@@ -968,10 +984,7 @@
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
     },
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
+    "issued" : "http://purl.org/dc/terms/issued",
     "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
     "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
