@@ -1,0 +1,190 @@
+@prefix : <https://isotc211.geolexica.org/api/reviews#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/info#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica: <https://osgeo.geolexica.org/api/geolexica#> .
+
+<https://isotc211.geolexica.org/api/reviews#> a owl:Ontology ;
+	owl:versionIRI <https://isotc211.geolexica.org/api/reviews/v0.1.0> ;
+	owl:imports <https://osgeo.geolexica.org/api/geolexica> ;
+	dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
+	dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+	dcterms:created "2022-01-24"^^xsd:date ;
+	dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+	dcterms:description "Serialization of concept reviews in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
+	dcterms:issued "" ;
+	dcterms:license "Copyright 2022 OSGeo" ;
+	dcterms:modified "2022-01-24"^^xsd:date ;
+	dcterms:title "Concept Reviews Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+	vann:preferredNamespacePrefix "reviews" ;
+	vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/reviews#" ;
+	rdfs:label "Concept Reviews Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+	owl:versionInfo "Version 1.0" ;
+	skos:note "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is being developed as of 2022-20-01. Data is subject to change."@en .
+
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+
+# http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo a owl:AnnotationProperty .
+
+# http://purl.org/dc/terms/source
+dcterms:source a owl:AnnotationProperty . 
+
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+vs:term_status a owl:AnnotationProperty .
+ 
+# http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme a owl:AnnotationProperty .
+
+# http://www.w3.org/2004/02/skos/core#notation
+skos:notation a owl:AnnotationProperty .
+
+# https://osgeo.geolexica.org/api/geolexica#origin
+geolexica:origin a owl:AnnotationProperty .
+
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+
+###  https://isotc211.geolexica.org/api/reviews#Review2
+:Review2 a owl:NamedIndividual , geolexica:ConceptReview ;
+	geolexica:decision "accepted"@en ;
+	geolexica:decision-event "Publication of ISO 19104:2016"@en ;
+	geolexica:last-review "2013-01-29"^^xsd:date ;
+	geolexica:note "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.9. Lineage source added as ISO/TS 19104:2008"@en ;
+    geolexica:review-status "final"@en .
+# 
+###  https://isotc211.geolexica.org/api/reviews#Review3
+:Review3 a owl:NamedIndividual , geolexica:ConceptReview ;
+	geolexica:last-review "2019-07-05"^^xsd:date ;
+    geolexica:review-status "pending"@en .
+# 
+###  https://isotc211.geolexica.org/api/reviews#Review4
+:Review4 a owl:NamedIndividual , geolexica:ConceptReview ;
+	geolexica:last-review "2019-07-05"^^xsd:date ;
+    geolexica:review-status "pending"@en .
+# 
+###  https://isotc211.geolexica.org/api/reviews#Review5
+:Review5 a owl:NamedIndividual , geolexica:ConceptReview ;
+	geolexica:last-review "2019-07-05"^^xsd:date ;
+    geolexica:review-status "pending"@en .
+
+###  https://isotc211.geolexica.org/api/reviews#Review6
+:Review6 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:review-status "pending"@en ;
+   geolexica:last-review "2019-07-05"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review8
+:Review8 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Result of FDIS Ballot for ISO 6709:2008"@en ;
+   geolexica:review-status " " ;
+   geolexica:decision " " ;
+   geolexica:note "Definition originally taken from ISO 3534-1 was later superseded by definition in ISO 3534-2:2006"@en ;
+   geolexica:last-review "2007-12-07"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review9
+:Review9 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19103:2015"@en ;
+   geolexica:review-status "final"@en  ;
+   geolexica:decision "accepted"@en  ;
+   geolexica:note "The entry has been omitted from the superseding standard (ISO 19103:2015)."@en ;
+   geolexica:last-review "2009-01-14"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review10
+:Review10 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19104:2016"@en ;
+   geolexica:review-status "final"@en  ;
+   geolexica:decision "accepted"@en  ;
+   geolexica:note "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.16, modified — the Note 1 to entry has been added.. Lineage source added as ISO/TS 19104:2008"@en ;
+   geolexica:last-review "2013-01-29"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review11
+:Review11 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19103:2015"@en ;
+   geolexica:review-status "final"@en  ;
+   geolexica:decision "accepted"@en  ;
+   geolexica:note "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en ;
+   geolexica:last-review "2009-01-14"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review12
+:Review12 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Result of FDIS Ballot for ISO 6709:2008"@en ;
+   geolexica:review-status " " ;
+   geolexica:decision " " ;
+   geolexica:note "Definition in ISO 19116:2002 was superseded by a new definition in ISO 6709."@en ;
+   geolexica:last-review "2007-12-07"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review13
+:Review13 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19117:2012"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO 19117:2005 to ISO 19117:2012. Lineage source added as ISO 19117:2005."@en ;
+   geolexica:last-review "2009-11-25"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review14
+:Review14 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19101-1:2014"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en ;
+   geolexica:last-review "2014-11-01"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review15
+:Review15 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19101-1:2014"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en ;
+   geolexica:last-review "2010-10-12"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review17
+:Review17 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19150-2:2015(E)"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "This entry is superseded by the entry for "association <UML>" in ISO 19150-2:2015"@en ;
+   geolexica:last-review "2009-08-31"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review18
+:Review18 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19150-2:2015(E)"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "This entry is superseded by the entry for "association <UML>" in ISO 19150-2:2015"@en ;
+   geolexica:last-review "2009-08-31"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review19
+:Review19 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19115-2:2019(E)"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO/IEC 2382-17:1999 to ISO/IEC 2382:2015, 2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry.. Lineage source added as ISO 19115-2:2009(E)"@en ;
+   geolexica:last-review "2019-01-01"^^xsd:date .
+
+###  https://isotc211.geolexica.org/api/reviews#Review20
+:Review20 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19103:2015"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en ;
+   geolexica:last-review "2009-01-14"^^xsd:date .
+ 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

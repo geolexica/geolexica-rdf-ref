@@ -1,9 +1,10 @@
-@prefix : <https://osgeo.geolexica.org/api/concepts#> .
+@prefix : <https://isotc211.geolexica.org/api/concepts#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/info#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -11,27 +12,27 @@
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/reviews#> .
 @prefix geolexica: <https://osgeo.geolexica.org/api/geolexica#> .
 @base <https://isotc211.geolexica.org/api/concepts#> .
 
-<https://isotc211.geolexica.org/api/concepts#> 
-        rdf:type dctype:Dataset ;
-        owl:versionIRI <https://isotc211.geolexica.org/api/concepts/v1.0> ;
-        owl:imports <https://osgeo.geolexica.org/api/geolexica> ;
-        dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:description "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT), the glossary for geographic information technology from ISO/TC 211 Geographic information/Geomatics."@en ;
-        dcterms:issued "" ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-23"^^xsd:date ;
-        dcterms:title "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        vann:preferredNamespacePrefix "mlgt-concepts" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/concepts#" ;
-        rdfs:label "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        owl:versionInfo "Version 1.0" ;
-        skos:note "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is currently under development as of 2022-20-01. Instance data is subject to change."@en .
+<https://isotc211.geolexica.org/api/concepts#> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://isotc211.geolexica.org/api/concepts/v1.0> ;
+                                                owl:imports info: , reviews: , <https://osgeo.geolexica.org/api/geolexica> ;
+                                                dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
+                                                dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+                                                dcterms:created "2022-01-20"^^xsd:date ;
+                                                dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+                                                dcterms:description "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT), the glossary for geographic information technology from ISO/TC 211 Geographic information/Geomatics."@en ;
+                                                dcterms:issued "" ;
+                                                dcterms:license "Copyright 2022 OSGeo" ;
+                                                dcterms:modified "2022-01-25"^^xsd:date ;
+                                                dcterms:title "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+                                                vann:preferredNamespacePrefix "mlgt-concepts" ;
+                                                vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/concepts#" ;
+                                                rdfs:label "Concept Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+                                                owl:versionInfo "Version 1.0" ;
+                                                skos:note "The ISO/TC 211 MLGT is currently under development as of 2022-20-01. Data is subject to change."@en .
 
 #################################################################
 #    Annotation properties
@@ -64,7 +65,6 @@ geolexica:origin rdf:type owl:AnnotationProperty .
 ###  https://osgeo.geolexica.org/api/geolexica#source
 geolexica:source rdf:type owl:DatatypeProperty .
 
-
 #################################################################
 #    Classes
 #################################################################
@@ -72,98 +72,17 @@ geolexica:source rdf:type owl:DatatypeProperty .
 ###  http://purl.org/dc/dcmitype/Dataset
 dctype:Dataset rdf:type owl:Class .
 
-
 #################################################################
 #    Individuals
 #################################################################
 
 ###  https://isotc211.geolexica.org/api/concepts#
-<https://isotc211.geolexica.org/api/concepts#> rdf:type owl:NamedIndividual ,
-                                                        dctype:Dataset .
+<https://isotc211.geolexica.org/api/concepts#> rdf:type owl:NamedIndividual , dctype:Dataset .
 
+###  https://isotc211.geolexica.org/api/concepts#abbreviation
 
-###  https://osgeo.geolexica.org/api/concepts#Info2
-:Info2 rdf:type owl:NamedIndividual ,
-                geolexica:ConceptInfo ;
-       dcterms:dateAccepted "2008-11-15"^^xsd:date ;
-       vs:term_status "valid"@en ;
-       geolexica:classification "preferred"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Info3
-:Info3 rdf:type owl:NamedIndividual ,
-                geolexica:ConceptInfo ;
-       dcterms:dateAccepted "2000-12-15"^^xsd:date ;
-       vs:term_status "valid"@en ;
-       geolexica:classification "preferred"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Info4
-:Info4 rdf:type owl:NamedIndividual ,
-                geolexica:ConceptInfo ;
-       dcterms:dateAccepted "2000-12-15"^^xsd:date ;
-       vs:term_status "valid"@en ;
-       geolexica:classification "preferred"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Info5
-:Info5 rdf:type owl:NamedIndividual ,
-                geolexica:ConceptInfo ;
-       dcterms:dateAccepted "2000-12-15"^^xsd:date ;
-       vs:term_status "valid"@en ;
-       geolexica:classification "preferred"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Info6
-:Info6 rdf:type owl:NamedIndividual ,
-                geolexica:ConceptInfo ;
-       dcterms:dateAccepted "2000-12-15"^^xsd:date ;
-       vs:term_status "valid"@en ;
-       geolexica:classification "preferred"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Review2
-:Review2 rdf:type owl:NamedIndividual ,
-                  geolexica:ConceptReview ;
-         vs:term_status "final"@en ;
-         geolexica:decision "accepted"@en ;
-         geolexica:decision-event "Publication of ISO 19104:2016"@en ;
-         geolexica:last-review "2013-01-29"^^xsd:date ;
-         geolexica:note "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.9. Lineage source added as ISO/TS 19104:2008"@en .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Review3
-:Review3 rdf:type owl:NamedIndividual ,
-                  geolexica:ConceptReview ;
-         vs:term_status "pending"@en ;
-         geolexica:last-review "2019-07-05"^^xsd:date .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Review4
-:Review4 rdf:type owl:NamedIndividual ,
-                  geolexica:ConceptReview ;
-         vs:term_status "pending"@en ;
-         geolexica:last-review "2019-07-05"^^xsd:date .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Review5
-:Review5 rdf:type owl:NamedIndividual ,
-                  geolexica:ConceptReview ;
-         vs:term_status "pending"@en ;
-         geolexica:last-review "2019-07-05"^^xsd:date .
-
-
-###  https://osgeo.geolexica.org/api/concepts#Review6
-:Review6 rdf:type owl:NamedIndividual ,
-                  geolexica:ConceptReview ;
-         vs:term_status "pending"@en ;
-         geolexica:last-review "2019-07-05"^^xsd:date .
-
-
-###  https://osgeo.geolexica.org/api/concepts#abbreviation
-:abbreviation rdf:type owl:NamedIndividual ,
-                       skos:Concept ;
-              geolexica:hasInfo :Info2 ;
+:abbreviation rdf:type owl:NamedIndividual , skos:Concept ;
+              geolexica:hasInfo info:Info2 ;
               geolexica:hasLangCode geolexica:ara ,
                                     geolexica:dan ,
                                     geolexica:deu ,
@@ -172,7 +91,7 @@ dctype:Dataset rdf:type owl:Class .
                                     geolexica:rus ,
                                     geolexica:spa ,
                                     geolexica:swe ;
-              geolexica:hasReview :Review2 ;
+              geolexica:hasReview reviews:Review2 ;
               dcterms:identifier 2 ;
               rdfs:label "abbreviation"@en ;
               skos:definition "benämning som skapats genom att ord eller bokstäver har utelämnats från en längre benämning och som står för samma begrepp som den längre benämningen"@sv ,
@@ -201,11 +120,10 @@ dctype:Dataset rdf:type owl:Class .
                                geolexica:spaRegistry ,
                                geolexica:sweRegistry .
 
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_case
 
-###  https://osgeo.geolexica.org/api/concepts#abstract_test_case
-:abstract_test_case rdf:type owl:NamedIndividual ,
-                             skos:Concept ;
-                    geolexica:hasInfo :Info3 ;
+:abstract_test_case rdf:type owl:NamedIndividual , skos:Concept ;
+                    geolexica:hasInfo info:Info3 ;
                     geolexica:hasLangCode geolexica:ara ,
                                           geolexica:dan ,
                                           geolexica:deu ,
@@ -218,7 +136,7 @@ dctype:Dataset rdf:type owl:Class .
                                           geolexica:spa ,
                                           geolexica:swe ,
                                           geolexica:zho ;
-                    geolexica:hasReview :Review3 ;
+                    geolexica:hasReview reviews:Review3 ;
                     dcterms:identifier 3 ;
                     rdfs:label "abstract test case"@en ;
                     skos:definition "generaliseret test for et bestemt krav"@da ,
@@ -259,11 +177,10 @@ dctype:Dataset rdf:type owl:Class .
                                      geolexica:sweRegistry ,
                                      geolexica:zhoRegistry .
 
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_method
 
-###  https://osgeo.geolexica.org/api/concepts#abstract_test_method
-:abstract_test_method rdf:type owl:NamedIndividual ,
-                               skos:Concept ;
-                      geolexica:hasInfo :Info4 ;
+:abstract_test_method rdf:type owl:NamedIndividual , skos:Concept ;
+                      geolexica:hasInfo info:Info4 ;
                       geolexica:hasLangCode geolexica:ara ,
                                             geolexica:dan ,
                                             geolexica:deu ,
@@ -276,7 +193,7 @@ dctype:Dataset rdf:type owl:Class .
                                             geolexica:spa ,
                                             geolexica:swe ,
                                             geolexica:zho ;
-                      geolexica:hasReview :Review4 ;
+                      geolexica:hasReview reviews:Review4 ;
                       dcterms:identifier 4 ;
                       rdfs:label "abstract test method"@en ;
                       skos:definition "method for testing implementation independent of any particular test procedure"@en ,
@@ -317,11 +234,10 @@ dctype:Dataset rdf:type owl:Class .
                                        geolexica:sweRegistry ,
                                        geolexica:zhoRegistry .
 
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_module
 
-###  https://osgeo.geolexica.org/api/concepts#abstract_test_module
-:abstract_test_module rdf:type owl:NamedIndividual ,
-                               skos:Concept ;
-                      geolexica:hasInfo :Info5 ;
+:abstract_test_module rdf:type owl:NamedIndividual , skos:Concept ;
+                      geolexica:hasInfo info:Info5 ;
                       geolexica:hasLangCode geolexica:ara ,
                                             geolexica:dan ,
                                             geolexica:deu ,
@@ -334,7 +250,7 @@ dctype:Dataset rdf:type owl:Class .
                                             geolexica:spa ,
                                             geolexica:swe ,
                                             geolexica:zho ;
-                      geolexica:hasReview :Review5 ;
+                      geolexica:hasReview reviews:Review5 ;
                       dcterms:identifier 5 ;
                       rdfs:label "abstract test module"@en ;
                       skos:definition "conjunto de pruebas genéricas relacionadas entre sí"@es ,
@@ -376,10 +292,10 @@ dctype:Dataset rdf:type owl:Class .
                                        geolexica:zhoRegistry .
 
 
-###  https://osgeo.geolexica.org/api/concepts#abstract_test_suite
-:abstract_test_suite rdf:type owl:NamedIndividual ,
-                              skos:Concept ;
-                     geolexica:hasInfo :Info6 ;
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_suite
+
+:abstract_test_suite rdf:type owl:NamedIndividual , skos:Concept ;
+                     geolexica:hasInfo info:Info6 ;
                      geolexica:hasLangCode geolexica:ara ,
                                            geolexica:dan ,
                                            geolexica:deu ,
@@ -392,7 +308,7 @@ dctype:Dataset rdf:type owl:Class .
                                            geolexica:spa ,
                                            geolexica:swe ,
                                            geolexica:zho ;
-                     geolexica:hasReview :Review6 ;
+                     geolexica:hasReview reviews:Review6 ;
                      dcterms:identifier 6 ;
                      rdfs:label "abstract test suite"@en ;
                      skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
@@ -434,94 +350,68 @@ dctype:Dataset rdf:type owl:Class .
                                       geolexica:zhoRegistry .
 
 
-###  https://osgeo.geolexica.org/api/concepts#ldapi2-json
-:ldapi2-json rdf:type owl:NamedIndividual ,
-                      geolexica:JSON ;
+###  Linked data API individuals  ###
+
+###  https://isotc211.geolexica.org/api/concepts#ldapi2-json
+:ldapi2-json rdf:type owl:NamedIndividual , geolexica:JSON ;
              geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/2.json"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi2-jsonld
-:ldapi2-jsonld rdf:type owl:NamedIndividual ,
-                        geolexica:JSON-LD ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi2-jsonld
+:ldapi2-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
                geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/2.jsonld"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi2-skosrdf
-:ldapi2-skosrdf rdf:type owl:NamedIndividual ,
-                         geolexica:SKOS-RDF ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi2-skosrdf
+:ldapi2-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/2.ttl"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi3-json
-:ldapi3-json rdf:type owl:NamedIndividual ,
-                      geolexica:JSON ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi3-json
+:ldapi3-json rdf:type owl:NamedIndividual , geolexica:JSON ;
              geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/3.json"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi3-jsonld
-:ldapi3-jsonld rdf:type owl:NamedIndividual ,
-                        geolexica:JSON-LD ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi3-jsonld
+:ldapi3-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
                geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/3.jsonld"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi3-skosrdf
-:ldapi3-skosrdf rdf:type owl:NamedIndividual ,
-                         geolexica:SKOS-RDF ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi3-skosrdf
+:ldapi3-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/3.ttl"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi4-json
-:ldapi4-json rdf:type owl:NamedIndividual ,
-                      geolexica:JSON ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi4-json
+:ldapi4-json rdf:type owl:NamedIndividual , geolexica:JSON ;
              geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/4.json"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi4-jsonld
-:ldapi4-jsonld rdf:type owl:NamedIndividual ,
-                        geolexica:JSON-LD ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi4-jsonld
+:ldapi4-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
                geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/4.jsonld"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi4-skosrdf
-:ldapi4-skosrdf rdf:type owl:NamedIndividual ,
-                         geolexica:SKOS-RDF ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi4-skosrdf
+:ldapi4-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/4.ttl"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi5-json
-:ldapi5-json rdf:type owl:NamedIndividual ,
-                      geolexica:JSON ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi5-json
+:ldapi5-json rdf:type owl:NamedIndividual , geolexica:JSON ;
              geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/5.json"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi5-jsonld
-:ldapi5-jsonld rdf:type owl:NamedIndividual ,
-                        geolexica:JSON-LD ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi5-jsonld
+:ldapi5-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
                geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/5.jsonld"^^xsd:anyURI .
 
 
-###  https://osgeo.geolexica.org/api/concepts#ldapi5-skosrdf
-:ldapi5-skosrdf rdf:type owl:NamedIndividual ,
-                         geolexica:SKOS-RDF ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi5-skosrdf
+:ldapi5-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/5.ttl"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi6-json
-:ldapi6-json rdf:type owl:NamedIndividual ,
-                      geolexica:JSON ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi6-json
+:ldapi6-json rdf:type owl:NamedIndividual , geolexica:JSON ;
              geolexica:jsonURI "https://isotc211.geolexica.org/api/concepts/6.json"^^xsd:anyURI .
 
 
-###  https://osgeo.geolexica.org/api/concepts#ldapi6-jsonld
-:ldapi6-jsonld rdf:type owl:NamedIndividual ,
-                        geolexica:JSON-LD ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi6-jsonld
+:ldapi6-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
                geolexica:jsonldURI "https://isotc211.geolexica.org/api/concepts/6.jsonld"^^xsd:anyURI .
 
-
-###  https://osgeo.geolexica.org/api/concepts#ldapi6-skosrdf
-:ldapi6-skosrdf rdf:type owl:NamedIndividual ,
-                         geolexica:SKOS-RDF ;
+###  https://isotc211.geolexica.org/api/concepts#ldapi6-skosrdf
+:ldapi6-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/concepts/6.ttl"^^xsd:anyURI .
-
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
