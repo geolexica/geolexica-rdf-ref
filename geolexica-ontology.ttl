@@ -30,42 +30,6 @@
          owl:versionInfo "Version 1.0" ;
          skos:note "The Geolexica Ontology is currently under development as of 2022-19-01. Classes, properties, attributes, and axioms are subject to change."@en .
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/contributor
-dcterms:contributor rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/creator
-dcterms:creator rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/description
-dcterms:description rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Datatypes
@@ -132,9 +96,6 @@ dcterms:identifier rdf:type owl:DatatypeProperty ;
                    rdfs:comment "Entry must be an integer."@en ;
                    rdfs:label "identifier"@en ;
                    skos:note "From the DCMI Metadata Terms vocabulary."@en .
-
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:DatatypeProperty .
 
 ###  http://www.linkedmodel.org/schema/vaem#abbreviation
 vaem:abbreviation rdf:type owl:DatatypeProperty ;
@@ -372,6 +333,24 @@ dcterms:MediaType rdf:type owl:Class .
                 dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
                 dcterms:description "Geographic information — Conformance and testing"@en ;
                 rdfs:label "ISO 19105:2000" .
+
+###  https://osgeo.geolexica.org/api/geolexica#ISO-19106-2004
+:ISO-19106-2004 rdf:type owl:NamedIndividual , :Source ;
+                dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                rdfs:label "ISO 19116:2004" .
+
+###  https://osgeo.geolexica.org/api/geolexica#ISO-19107-2003
+:ISO-19107-2003 rdf:type owl:NamedIndividual , :Source ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                rdfs:label "ISO 19107:2003" .
+
+###  https://osgeo.geolexica.org/api/geolexica#ISO-19107-2019
+:ISO-19107-2019 rdf:type owl:NamedIndividual , :Source ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                rdfs:label "ISO 19107:2019" .
 
 ###  https://osgeo.geolexica.org/api/geolexica#ISO-19116-2004
 :ISO-19116-2004 rdf:type owl:NamedIndividual , :Source ;
