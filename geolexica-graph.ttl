@@ -1,0 +1,3569 @@
+@prefix : <https://osgeo.geolexica.org/api/geolexica#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix info: <https://isotc211.geolexica.org/api/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix mlgt-concepts: <https://isotc211.geolexica.org/api/concepts#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/api/reviews#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+xsd:string a rdfs:Datatype, owl:DatatypeProperty, owl:DatatypeProperty .
+
+<https://osgeo.geolexica.org/api/geolexica> a owl:Ontology .
+
+dcterms:created a owl:AnnotationProperty, owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype, rdfs:Datatype .
+
+dcterms:issued a owl:AnnotationProperty, owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty, owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty, owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty, owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty, owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty, owl:AnnotationProperty .
+
+:hasInfo a owl:ObjectProperty .
+
+:ConceptInfo a owl:Class .
+
+:hasLangCode a owl:ObjectProperty .
+
+:LangCode a owl:Class .
+
+:hasOrigin a owl:ObjectProperty .
+
+:Origin a owl:Class .
+
+:hasReview a owl:ObjectProperty .
+
+:ConceptReview a owl:Class .
+
+:hasSource a owl:ObjectProperty .
+
+:Source a owl:Class .
+
+dcterms:identifier a owl:DatatypeProperty .
+
+dcterms:source a owl:AnnotationProperty, owl:AnnotationProperty, owl:AnnotationProperty .
+
+vaem:abbreviation a owl:DatatypeProperty .
+
+:classification a owl:DatatypeProperty .
+
+:decision a owl:DatatypeProperty .
+
+:jsonURI a owl:DatatypeProperty .
+
+:JSON a owl:Class .
+
+:jsonldURI a owl:DatatypeProperty .
+
+:JSON-LD a owl:Class .
+
+:skosrdfURI a owl:DatatypeProperty .
+
+:SKOS-RDF a owl:Class .
+
+:tbxisoxmlURI a owl:DatatypeProperty .
+
+:TBXISOXML a owl:Class .
+
+dcterms:MediaType a owl:Class .
+
+:LinkedDataAPI a owl:Class .
+
+:GeolexicaConceptScheme a owl:NamedIndividual, skos:ConceptScheme .
+
+:ISO-1087-1-2000 a owl:NamedIndividual, :Source .
+
+:ISO-19105-2000 a owl:NamedIndividual, :Source .
+
+:ISO-3534-1-1993 a owl:NamedIndividual, :Source .
+
+:ISO-IEC-19501-2005 a owl:NamedIndividual, :Source .
+
+:MLGTGlossary a owl:NamedIndividual, skos:Collection .
+
+:OSGeoGlossary a owl:NamedIndividual, skos:Collection .
+
+:UML-1x a owl:NamedIndividual, :Source .
+
+:ara a owl:NamedIndividual, :LangCode .
+
+:araRegistry a owl:NamedIndividual, :Origin .
+
+:dan a owl:NamedIndividual, :LangCode .
+
+:danRegistry a owl:NamedIndividual, :Origin .
+
+:deu a owl:NamedIndividual, :LangCode .
+
+:deuRegistry a owl:NamedIndividual, :Origin .
+
+:eng a owl:NamedIndividual, :LangCode .
+
+:engRegistry a owl:NamedIndividual, :Origin .
+
+:fin a owl:NamedIndividual, :LangCode .
+
+:finRegistry a owl:NamedIndividual, :Origin .
+
+:fra a owl:NamedIndividual, :LangCode .
+
+:fraRegistry a owl:NamedIndividual, :Origin .
+
+:jpn a owl:NamedIndividual, :LangCode .
+
+:jpnRegistry a owl:NamedIndividual, :Origin .
+
+:kor a owl:NamedIndividual, :LangCode .
+
+:korRegistry a owl:NamedIndividual, :Origin .
+
+:msa a owl:NamedIndividual, :LangCode .
+
+:msaRegistry a owl:NamedIndividual, :Origin .
+
+:nld a owl:NamedIndividual, :LangCode .
+
+:nldRegistry a owl:NamedIndividual, :Origin .
+
+:pol a owl:NamedIndividual, :LangCode .
+
+:polRegistry a owl:NamedIndividual, :Origin .
+
+:rus a owl:NamedIndividual, :LangCode .
+
+:rusRegistry a owl:NamedIndividual, :Origin .
+
+:spa a owl:NamedIndividual, :LangCode .
+
+:spaRegistry a owl:NamedIndividual, :Origin .
+
+:swe a owl:NamedIndividual, :LangCode .
+
+:sweRegistry a owl:NamedIndividual, :Origin .
+
+:zho a owl:NamedIndividual, :LangCode .
+
+:zhoRegistry a owl:NamedIndividual, :Origin .
+
+dcterms:conformsTo a owl:AnnotationProperty .
+
+skos:inScheme a owl:AnnotationProperty .
+
+skos:notation a owl:AnnotationProperty .
+
+:last-review a owl:DatatypeProperty .
+
+:origin a owl:AnnotationProperty .
+
+:clause a owl:DatatypeProperty .
+
+:decision-event a owl:DatatypeProperty .
+
+:example a owl:DatatypeProperty .
+
+:note a owl:DatatypeProperty .
+
+:hasLDAPI a owl:ObjectProperty .
+
+:abbreviation a owl:DatatypeProperty .
+
+:date-accepted a owl:DatatypeProperty .
+
+:date-amended a owl:DatatypeProperty .
+
+:info-status a owl:DatatypeProperty .
+
+:review-status a owl:DatatypeProperty .
+
+:ISO-IEC-19501 a owl:NamedIndividual, :Source .
+
+:ISO-19101-1-2014 a owl:NamedIndividual, :Source .
+
+:ISO-19116-2004 a owl:NamedIndividual, :Source .
+
+:ISO-IEC-2382-2015 a owl:NamedIndividual, :Source .
+
+:ISO-19116-2019 a owl:NamedIndividual, :Source .
+
+:ISO-19117-2012 a owl:NamedIndividual, :Source .
+
+dctype:Dataset a owl:Class .
+
+info:Info2 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review2 a owl:NamedIndividual, :ConceptReview .
+
+info:Info3 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review3 a owl:NamedIndividual, :ConceptReview .
+
+info:Info4 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review4 a owl:NamedIndividual, :ConceptReview .
+
+info:Info5 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review5 a owl:NamedIndividual, :ConceptReview .
+
+info:Info6 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review6 a owl:NamedIndividual, :ConceptReview .
+
+info:Info7 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info8 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review8 a owl:NamedIndividual, :ConceptReview .
+
+info:Info9 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review9 a owl:NamedIndividual, :ConceptReview .
+
+info:Info10 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review10 a owl:NamedIndividual, :ConceptReview .
+
+info:Info11 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review11 a owl:NamedIndividual, :ConceptReview .
+
+info:Info12 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review12 a owl:NamedIndividual, :ConceptReview .
+
+<https://isotc211.geolexica.org/api/ldapi#> a dctype:Dataset, owl:NamedIndividual .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-skosrdf> a owl:NamedIndividual, :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-json> a owl:NamedIndividual, :JSON .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-jsonld> a owl:NamedIndividual, :JSON-LD .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-skosrdf> a owl:NamedIndividual,
+    :SKOS-RDF .
+
+<https://isotc211.geolexica.org/api/reviews#> a dctype:Dataset .
+
+reviews:Review13 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review14 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review15 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review17 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review18 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review19 a owl:NamedIndividual, :ConceptReview .
+
+reviews:Review20 a owl:NamedIndividual, :ConceptReview .
+
+<https://isotc211.geolexica.org/api/info#> a dctype:Dataset .
+
+info:Info13 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info14 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info15 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info17 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info18 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info19 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info20 a owl:NamedIndividual, :ConceptInfo .
+
+reviews:Review24 a owl:NamedIndividual, :ConceptReview .
+
+:ISO-19107-2003 a owl:NamedIndividual, :Source .
+
+:ISO-19107-2019 a owl:NamedIndividual, :Source .
+
+info:Info24 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info26 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info27 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info28 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info29 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info30 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info21 a owl:NamedIndividual, :ConceptInfo .
+
+info:Info35 a owl:NamedIndividual, :ConceptInfo .
+
+<https://isotc211.geolexica.org/api/ld/info#> a dctype:Dataset, void:Dataset .
+
+<https://isotc211.geolexica.org/api/ld/concepts#> a dctype:Dataset, void:Dataset .
+
+<https://isotc211.geolexica.org/api/ld/reviews#> a dctype:Dataset, void:Dataset .
+
+<https://isotc211.geolexica.org/api/ld/language> a dctype:Dataset, void:Dataset, owl:NamedIndividual .
+
+<https://isotc211.geolexica.org/api/ld/geolexica> a owl:Ontology .
+
+lang:ara-note a owl:DatatypeProperty .
+
+lang:dan-note a owl:DatatypeProperty .
+
+lang:deu-note a owl:DatatypeProperty .
+
+lang:eng-note a owl:DatatypeProperty .
+
+lang:fin-note a owl:DatatypeProperty .
+
+lang:fra-note a owl:DatatypeProperty .
+
+lang:jpn-note a owl:DatatypeProperty .
+
+lang:kor-note a owl:DatatypeProperty .
+
+lang:msa-note a owl:DatatypeProperty .
+
+lang:pol-note a owl:DatatypeProperty .
+
+lang:rus-note a owl:DatatypeProperty .
+
+lang:spa-note a owl:DatatypeProperty .
+
+lang:swe-note a owl:DatatypeProperty .
+
+lang:zho-note a owl:DatatypeProperty .
+
+lang:ara a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#LangCode> a owl:Class .
+
+lang:araRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#Origin> a owl:Class .
+
+lang:dan a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:danRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:deu a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:deuRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:eng a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:engRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:fin a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:finRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:fra a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:fraRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:jpn a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:jpnRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:kor a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:korRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:msa a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:msaRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:nld a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:nldRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:pol a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:polRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:rus a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:rusRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:spa a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:spaRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:swe a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:sweRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+lang:zho a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+lang:zhoRegistry a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasInfo> a owl:ObjectProperty .
+
+<https://isotc211.geolexica.org/api/ld/info#Info2> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> a owl:ObjectProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasReview> a owl:ObjectProperty .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review2> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> a owl:NamedIndividual,
+    <https://isotc211.geolexica.org/api/ld/geolexica#DefnUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme> a owl:NamedIndividual,
+    skos:ConceptScheme .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info3> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review3> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> a owl:NamedIndividual,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info4> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review4> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info5> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review5> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info6> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review6> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#abbreviation> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info7> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info8> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review8> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff> a owl:NamedIndividual,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteSourceDiff> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info9> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review9> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info10> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review10> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info11> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review11> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info12> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review12> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info13> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review13> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info14> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review14> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info15> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review15> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info17> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review17> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info18> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review18> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info19> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review19> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/info#Info20> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review20> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info24> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review24> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info26> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info27> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review27> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> a owl:NamedIndividual,
+    skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info28> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review28> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info29> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review29> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info30> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review30> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> a owl:NamedIndividual, skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/info#Info31> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> a owl:Class .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#decision> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#decision-event> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#last-review> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#note> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#review-status> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review35> a owl:NamedIndividual, <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> a owl:Class .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI> a owl:ObjectProperty;
+  rdfs:domain skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> a owl:Class;
+  rdfs:subClassOf dcterms:MediaType .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasNote> a owl:ObjectProperty;
+  rdfs:domain skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#Note> a owl:Class .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasOrigin> a owl:ObjectProperty;
+  rdfs:domain skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasSource> a owl:ObjectProperty;
+  rdfs:domain skos:Concept .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#Source> a owl:Class .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#classification> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#clause> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#date-amended> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#example> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#info-status> a owl:DatatypeProperty .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#jsonURI> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#JSON> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#JSON> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#jsonldURI> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#JSON-LD> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#JSON-LD> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#skosrdfURI> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#SKOS-RDF> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#SKOS-RDF> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#tbxisoxmlURI> a owl:DatatypeProperty;
+  rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#TBXISOXML> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#TBXISOXML> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#DefnUnavail> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#Note> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteSourceDiff> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#Note> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteUnavail> a owl:Class;
+  rdfs:subClassOf <https://isotc211.geolexica.org/api/ld/geolexica#Note> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#MLGTGlossary> a owl:NamedIndividual,
+    skos:Collection .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#OSGeoGlossary> a owl:NamedIndividual,
+    skos:Collection .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> a owl:NamedIndividual,
+    skos:Concept .
+
+:JSON rdfs:subClassOf :LinkedDataAPI .
+
+:JSON-LD rdfs:subClassOf :LinkedDataAPI .
+
+:SKOS-RDF rdfs:subClassOf :LinkedDataAPI .
+
+:TBXISOXML rdfs:subClassOf :LinkedDataAPI .
+
+:LinkedDataAPI rdfs:subClassOf dcterms:MediaType .
+
+:hasInfo rdfs:domain skos:Concept;
+  rdfs:label "has info"@en;
+  rdfs:range :ConceptInfo .
+
+:hasLangCode rdfs:domain skos:Concept;
+  rdfs:label "has language code"@en;
+  rdfs:range :LangCode .
+
+:hasOrigin rdfs:domain skos:Concept;
+  rdfs:label "has origin"@en;
+  rdfs:range :Origin .
+
+:hasReview rdfs:domain skos:Concept;
+  rdfs:label "has review"@en;
+  rdfs:range :ConceptReview .
+
+:hasSource rdfs:domain skos:Concept;
+  rdfs:label "has source"@en;
+  rdfs:range :Source .
+
+dcterms:identifier rdfs:comment "Entry must be an integer."@en;
+  rdfs:domain skos:Concept;
+  rdfs:label "identifier"@en;
+  rdfs:range xsd:integer .
+
+vaem:abbreviation rdfs:domain skos:Concept;
+  rdfs:label "Abbreviation"@en;
+  rdfs:range xsd:string .
+
+:classification rdfs:domain :ConceptInfo;
+  rdfs:label "has INFO classification"@en;
+  rdfs:range xsd:string .
+
+:jsonURI rdfs:domain :JSON;
+  rdfs:label "has JSON API URI"@en;
+  rdfs:range xsd:anyURI .
+
+:jsonldURI rdfs:domain :JSON-LD;
+  rdfs:label "has JSON-LD API URI"@en;
+  rdfs:range xsd:anyURI .
+
+:skosrdfURI rdfs:domain :SKOS-RDF;
+  rdfs:label "has SKOS-RDF API URI"@en;
+  rdfs:range xsd:anyURI .
+
+:tbxisoxmlURI rdfs:domain :TBXISOXML;
+  rdfs:label "has TBX-ISO-XML API URI"@en;
+  rdfs:range xsd:anyURI .
+
+:clause rdfs:domain :ConceptInfo;
+  rdfs:range xsd:string .
+
+:hasLDAPI rdfs:domain skos:Concept;
+  rdfs:range :LinkedDataAPI .
+
+:abbreviation rdfs:domain :ConceptInfo;
+  rdfs:range xsd:string .
+
+lang:ara-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:dan-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:deu-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:eng-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:fin-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:fra-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:jpn-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:kor-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:msa-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:pol-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:rus-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:spa-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:swe-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+lang:zho-note rdfs:domain skos:Concept;
+  rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasInfo> rdfs:domain skos:Concept;
+  rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> rdfs:domain skos:Concept;
+  rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#LangCode> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasReview> rdfs:domain skos:Concept;
+  rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#ConceptReview> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#abbreviation> rdfs:domain <https://isotc211.geolexica.org/api/ld/geolexica#ConceptInfo>;
+  rdfs:range xsd:string .
+
+:decision rdfs:label "has REVIEW decision"@en;
+  rdfs:range xsd:string .
+
+:last-review rdfs:label "last review performed"@en;
+  rdfs:range xsd:date .
+
+:decision-event rdfs:label "has REVIEW decision event"@en;
+  rdfs:range xsd:string .
+
+:example rdfs:label "has INFO example"@en;
+  rdfs:range xsd:string .
+
+:note rdfs:label "has note"@en;
+  rdfs:range xsd:string .
+
+:date-accepted rdfs:label "date accepted"@en;
+  rdfs:range xsd:date .
+
+:date-amended rdfs:label "has SOURCE clause"@en;
+  rdfs:range xsd:date .
+
+:info-status rdfs:label "has info status"@en;
+  rdfs:range xsd:string .
+
+:review-status rdfs:label "has review status"@en;
+  rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#decision> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#decision-event> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#last-review> rdfs:range xsd:date .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#note> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#review-status> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI> rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#LinkedDataAPI> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasNote> rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#Note> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasOrigin> rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#Origin> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#hasSource> rdfs:range <https://isotc211.geolexica.org/api/ld/geolexica#Source> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#classification> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#clause> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> rdfs:range xsd:date .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#date-amended> rdfs:range xsd:date .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#example> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#info-status> rdfs:range xsd:string .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#jsonURI> rdfs:range xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#jsonldURI> rdfs:range xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#skosrdfURI> rdfs:range xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#tbxisoxmlURI> rdfs:range xsd:anyURI .
+
+:ConceptInfo rdfs:comment "Attribute values for each concept in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be added to future versions of the ontology."@en;
+  rdfs:label "Information"@en .
+
+:LangCode rdfs:comment "Use for each language definition in the glossary";
+  rdfs:label "3-letter Language Code"@en .
+
+:ConceptReview rdfs:comment "Attribute values for each concept; i.e., \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". ."@en;
+  rdfs:label "Review"@en .
+
+:UML-1x rdfs:comment "Earliest 1.x version found: https://www.omg.org/spec/UML/1.1/"@en;
+  rdfs:label "Unified Modeling Language 1.x"@en .
+
+:Origin rdfs:label "Origin"@en .
+
+:Source rdfs:label "Source"@en .
+
+:JSON rdfs:label "JSON Linked Data API"@en .
+
+:JSON-LD rdfs:label "JSON-LD Linked Data API"@en .
+
+:SKOS-RDF rdfs:label "SKOS-RDF Linked Data API"@en .
+
+:TBXISOXML rdfs:label "TBX-ISO-XML Linked Data API"@en .
+
+:LinkedDataAPI rdfs:label "Linked Data API"@en .
+
+:GeolexicaConceptScheme rdfs:label "Geolexica Concept Scheme"@en .
+
+:ISO-1087-1-2000 rdfs:label "ISO 1087-1:2000" .
+
+:ISO-19105-2000 rdfs:label "ISO 19105:2000" .
+
+:ISO-3534-1-1993 rdfs:label "ISO 3534-1:1993" .
+
+:ISO-IEC-19501-2005 rdfs:label "ISO/IEC 19501:2005" .
+
+:ara rdfs:label "Arabic"@en .
+
+:araRegistry rdfs:label "Arabic Registry"@en .
+
+:dan rdfs:label "Danish"@en .
+
+:danRegistry rdfs:label "Danish Registry"@en .
+
+:deu rdfs:label "German"@en .
+
+:deuRegistry rdfs:label "German Registry"@en .
+
+:eng rdfs:label "English"@en .
+
+:engRegistry rdfs:label "English Registry"@en .
+
+:fin rdfs:label "Finnish"@en .
+
+:finRegistry rdfs:label "Finnish Registry"@en .
+
+:fra rdfs:label "French"@en .
+
+:fraRegistry rdfs:label "French Registry"@en .
+
+:jpn rdfs:label "Japanese"@en .
+
+:jpnRegistry rdfs:label "Japanese Registry"@en .
+
+:kor rdfs:label "Korean"@en .
+
+:korRegistry rdfs:label "Korean Registry"@en .
+
+:msa rdfs:label "Malay"@en .
+
+:msaRegistry rdfs:label "Malay Registry"@en .
+
+:nld rdfs:label "Nederlands"@en .
+
+:nldRegistry rdfs:label "Nederlands Registry"@en .
+
+:pol rdfs:label "Polish"@en .
+
+:polRegistry rdfs:label "Polish Registry"@en .
+
+:rus rdfs:label "Russian"@en .
+
+:rusRegistry rdfs:label "Russian Registry"@en .
+
+:spa rdfs:label "Spanish"@en .
+
+:spaRegistry rdfs:label "Spanish Registry"@en .
+
+:swe rdfs:label "Swedish"@en .
+
+:sweRegistry rdfs:label "Swedish Registry"@en .
+
+:zho rdfs:label "Chinese"@en .
+
+:zhoRegistry rdfs:label "Chinese Registry"@en .
+
+:clause rdfs:label "has SOURCE clause"@en .
+
+:hasLDAPI rdfs:label "has Linked Data API"@en .
+
+:abbreviation rdfs:label "has abbreviation"@en .
+
+:ISO-IEC-19501 rdfs:label "ISO/IEC 19501" .
+
+:ISO-19101-1-2014 rdfs:label "ISO 19101-1:2014" .
+
+:ISO-19116-2004 rdfs:label "ISO 19116:2004" .
+
+:ISO-IEC-2382-2015 rdfs:label "ISO/IEC 2382:2015" .
+
+:ISO-19116-2019 rdfs:label "ISO 19116:2019" .
+
+:ISO-19117-2012 rdfs:label "ISO 19117:2012" .
+
+<https://isotc211.geolexica.org/api/ldapi#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  rdfs:label "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  owl:imports <https://osgeo.geolexica.org/api/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ldapi/v1.0>;
+  dcterms:created "2022-01-25"^^xsd:date .
+
+<https://isotc211.geolexica.org/api/reviews#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-24"^^xsd:date;
+  rdfs:label "Concept Reviews Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  owl:imports <https://osgeo.geolexica.org/api/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/reviews/v0.1.0> .
+
+<https://isotc211.geolexica.org/api/info#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-24"^^xsd:date;
+  rdfs:label "Concept Info Dataset: (MLGT)"@en;
+  owl:imports <https://osgeo.geolexica.org/api/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/info/v0.1.0>;
+  dcterms:creator <https://www.linkedin.com/in/lanemk> .
+
+:ISO-19107-2003 rdfs:label "ISO 19107:2003" .
+
+:ISO-19107-2019 rdfs:label "ISO 19107:2019" .
+
+<https://isotc211.geolexica.org/api/ld/info#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-24"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  rdfs:label "Concept Info RDF Dataset (MLGT)"@en;
+  owl:imports <https://isotc211.geolexica.org/api/ld/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ld/info/v0.1.0> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-20"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  rdfs:label "Concepts RDF Dataset: (MLGT)"@en;
+  owl:imports <https://isotc211.geolexica.org/api/ld/geolexica>, <https://isotc211.geolexica.org/api/ld/info#>,
+    <https://isotc211.geolexica.org/api/ld/language#>, <https://isotc211.geolexica.org/api/ld/reviews#>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/v1.0> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-24"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  rdfs:label "Concept Reviews RDF Dataset (MLGT)"@en;
+  owl:imports <https://isotc211.geolexica.org/api/ld/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ld/reviews/v0.1.0> .
+
+<https://isotc211.geolexica.org/api/ld/language> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-27"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  rdfs:label "Language Reference RDF Dataset (MLGT)";
+  owl:imports <https://isotc211.geolexica.org/api/ld/geolexica>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ld/language/v1.0/> .
+
+lang:ara rdfs:label "Arabic" .
+
+lang:araRegistry rdfs:label "Arabic Registry"@en .
+
+lang:dan rdfs:label "Danish" .
+
+lang:danRegistry rdfs:label "Danish Registry"@en .
+
+lang:deu rdfs:label "German" .
+
+lang:deuRegistry rdfs:label "German Registry"@en .
+
+lang:eng rdfs:label "English" .
+
+lang:engRegistry rdfs:label "English Registry"@en .
+
+lang:fin rdfs:label "Finnish" .
+
+lang:finRegistry rdfs:label "Finnish Registry"@en .
+
+lang:fra rdfs:label "French" .
+
+lang:fraRegistry rdfs:label "French Registry"@en .
+
+lang:jpn rdfs:label "Japanese" .
+
+lang:jpnRegistry rdfs:label "Japanese Registry"@en .
+
+lang:kor rdfs:label "Korean" .
+
+lang:korRegistry rdfs:label "Korean Registry"@en .
+
+lang:msa rdfs:label "Malay" .
+
+lang:msaRegistry rdfs:label "Malay Registry"@en .
+
+lang:nld rdfs:label "Nederlands" .
+
+lang:nldRegistry rdfs:label "Nederlands Registry"@en .
+
+lang:pol rdfs:label "Polish" .
+
+lang:polRegistry rdfs:label "Polish Registry"@en .
+
+lang:rus rdfs:label "Russian" .
+
+lang:rusRegistry rdfs:label "Russian Registry"@en .
+
+lang:spa rdfs:label "Spanish" .
+
+lang:spaRegistry rdfs:label "Spanish Registry"@en .
+
+lang:swe rdfs:label "Swedish" .
+
+lang:sweRegistry rdfs:label "Swedish Registry"@en .
+
+lang:zho rdfs:label "Chinese" .
+
+lang:zhoRegistry rdfs:label "Chinese Registry"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> rdfs:label "abbreviation"@en .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> rdfs:label "Definition Translation Not Available"@en;
+  xsd:string "Definition not provided in this language." .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme> dcterms:description
+    "Geolexica Concept Scheme, as SKOS, applied tp OSGeo Geolexica Glossary, ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."@en;
+  rdfs:label "Geolexica Concept Scheme" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> rdfs:label "abstract test case"@en .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> rdfs:label "Note Translation Not Available"@en;
+  xsd:string "This note has not been translated." .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> rdfs:label "abstract test method"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> rdfs:label "abstract test module"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> rdfs:label "abstract test suite"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> rdfs:label "acceptance testing (user)"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> rdfs:label "accuracy"@en .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff> rdfs:label "Translation Difference; Source to Normative"@en;
+  xsd:string "This translated term may not be from the same source as the normative term." .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> rdfs:label "actor (UML)" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> rdfs:label "admitted term" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> rdfs:label "aggregation (UML)" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> rdfs:label "altitude" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> rdfs:label "annotation" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> rdfs:label "application" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> rdfs:label "application schema" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> rdfs:label "association (UML);" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> rdfs:label "attitude" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> rdfs:label "attribute" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> rdfs:label "bag" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> rdfs:label "base standard" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> rdfs:label "basic test" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> rdfs:label "behaviour (UML)" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> rdfs:label "boundary" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> rdfs:label "buffer" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> rdfs:label "calendar" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> rdfs:label "attribute (UML)" .
+
+:OSGeoGlossary rdfs:seeAlso "https://osgeo.geolexica.org/"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#OSGeoGlossary> rdfs:seeAlso "https://osgeo.geolexica.org/"^^xsd:anyURI .
+
+<https://osgeo.geolexica.org/api/geolexica> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-12"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  dcterms:description "This document presents the core ontology for OSGeo Geolexica, the online glossary for OSGeo."@en;
+  dcterms:issued " ";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-25"^^xsd:date;
+  dcterms:publisher <https://www.osgeo.org/>;
+  dcterms:title "OSGeo Geolexica Ontology"@en;
+  vann:preferredNamespacePrefix "geolexica";
+  owl:imports <http://www.w3.org/2004/02/skos/core>;
+  owl:versionIRI <https://osgeo.geolexica.org/api/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/ld/geolexica> dcterms:contributor <https://www.linkedin.com/in/rhtse/>;
+  dcterms:created "2022-01-12"^^xsd:date;
+  dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  dcterms:issued " ";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-25"^^xsd:date;
+  dcterms:publisher <https://www.osgeo.org/>;
+  dcterms:title "OSGeo Geolexica Ontology"@en;
+  vann:preferredNamespacePrefix "geolexica";
+  owl:imports <http://www.w3.org/2004/02/skos/core>;
+  owl:versionIRI <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/>;
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/geolexica#" .
+
+<https://isotc211.geolexica.org/api/ldapi#> dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  dcterms:description "Linked Data API serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en;
+  dcterms:issued " ";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-25"^^xsd:date;
+  dcterms:title "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "ldapi";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ldapi#";
+  owl:versionInfo "Version 1.0" .
+
+<https://isotc211.geolexica.org/api/reviews#> dcterms:creator <https://www.linkedin.com/in/lanemk>;
+  dcterms:description "Serialization of concept reviews in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en;
+  dcterms:issued "";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-24"^^xsd:date;
+  dcterms:title "Concept Reviews Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "reviews";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/reviews#";
+  owl:versionInfo "Version 1.0" .
+
+:hasInfo dcterms:description "Object property for ConceptInfo values."@en .
+
+:ConceptInfo dcterms:description "Instance data relative to INFO about selected concept."@en .
+
+:hasLangCode dcterms:description "Object property for LangCode values."@en .
+
+:LangCode dcterms:description "ISO-3166 3-letter language code."@en .
+
+:hasOrigin dcterms:description "Origin of defintion in ISO-TC 211 Registers"@en .
+
+:Origin dcterms:description "Source standards document for given language; may include location of chapter, paragraph, and section."@en;
+  skos:note "Need to attach all Registers, all references as INDIVIDUALS."@en, "This should be a link to the Registers document."@en .
+
+:hasReview dcterms:description "Object property for ConceptReview values."@en .
+
+:ConceptReview dcterms:description "Instance data for official REVIEW of selected concept."@en .
+
+:hasSource dcterms:description "Authority source for concept defintion."@en .
+
+:Source dcterms:description "Source standards document; may include location of chapter, paragraph, and section."@en;
+  skos:note "Need to attach all known Source documents as INDIVIDUALS."@en, "Should be a URL linking to standards document."@en .
+
+dcterms:identifier dcterms:description "Encodes the term ID for each concept."@en;
+  skos:note "From the DCMI Metadata Terms vocabulary."@en .
+
+vaem:abbreviation dcterms:description "ISO 3166 three-letter language codes assigned to each translation."@en;
+  skos:note "From Vocabulary for Essential Metadata (VAEM)."@en .
+
+:classification dcterms:description "Classification of the term pertaining to concept INFO."@en;
+  skos:note "Need to enumerate classification values (i.e., \"preferred\", \"alternate\"...)."@en .
+
+:decision dcterms:description "Disposition of concept REVIEW."@en .
+
+:jsonURI dcterms:description "JSON  property representation of resource."@en;
+  skos:note "Property value is URI link to file."@en .
+
+:JSON dcterms:description "JSON file representation of concept."@en .
+
+:jsonldURI dcterms:description "JSON-LD property representation of resource."@en;
+  skos:note "Property value is URI link to file."@en .
+
+:JSON-LD dcterms:description "JSON-LD file representation of concept"@en .
+
+:skosrdfURI dcterms:description "SKOS-RDF property representation of a resource."@en;
+  skos:note "Property value is URI link to file."@en .
+
+:SKOS-RDF dcterms:description "SKOS-RDF file representation of concept."@en .
+
+:tbxisoxmlURI dcterms:description "TBX-ISO-XML property representation of a resource."@en;
+  skos:note "Property value is URI link to file."@en .
+
+:TBXISOXML dcterms:description "TBX-ISO-XML file representation relative to selected concept."@en;
+  skos:note "Is this supposed to be TBX-ISO-XML or -TML?"@en .
+
+:LinkedDataAPI dcterms:description "Class for linked data APIs, distinct file formats for each concept."@en .
+
+:GeolexicaConceptScheme dcterms:description "Geolexica Concept Scheme, in accordance with SKOS applied tp OSGeo Geolexica Glossary or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."@en .
+
+:ISO-1087-1-2000 dcterms:description "Terminology work — Vocabulary — Part 1: Theory and application"@en .
+
+:ISO-19105-2000 dcterms:description "Geographic information — Conformance and testing"@en .
+
+:ISO-3534-1-1993 dcterms:description "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"@en .
+
+:ISO-IEC-19501-2005 dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en .
+
+:UML-1x dcterms:description "The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system."@en .
+
+:last-review dcterms:description "Date of the last REVIEW performed for the concept."@en .
+
+:clause dcterms:description "Classification of the term pertaining to concept INFO."@en .
+
+:decision-event dcterms:description "Context statement of authority REVIEW."@en .
+
+:example dcterms:description "Example(s) to clarify concept definition."@en .
+
+:note dcterms:description "Notes pertaining to ConceptInfo or ConceptReview."@en .
+
+:hasLDAPI dcterms:description "Object property for Linked Data APIs."@en .
+
+:abbreviation dcterms:description "Abbreviation of concept."@en .
+
+:date-accepted dcterms:description "Date the concept was accepted in concept REVIEW."@en .
+
+:date-amended dcterms:description "Date the concept was amended in concept REVIEW."@en .
+
+:info-status dcterms:description "Status of a vocabulary term for Concept Info."@en .
+
+:review-status dcterms:description "Status of a vocabulary term for Concept Review."@en .
+
+:ISO-IEC-19501 dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en .
+
+:ISO-19101-1-2014 dcterms:description "Geographic information — Reference model — Part 1: Fundamentals"@en .
+
+:ISO-19116-2004 dcterms:description "Geographic information — Positioning services"@en .
+
+:ISO-IEC-2382-2015 dcterms:description "Information technology — Vocabulary"@en .
+
+:ISO-19116-2019 dcterms:description "Geographic information — Positioning services"@en .
+
+:ISO-19117-2012 dcterms:description "Geographic information — Portrayal"@en .
+
+<https://isotc211.geolexica.org/api/info#> dcterms:description "Serialization of concept info in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en;
+  dcterms:issued "";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-24"^^xsd:date;
+  dcterms:title "Concept Info Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "info";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/info#";
+  owl:versionInfo "Version 1.0";
+  skos:note "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is currently under development as of 2022-20-01. Instance data is subject to change."@en .
+
+:ISO-19107-2003 dcterms:description "Geographic information — Spatial schema"@en .
+
+:ISO-19107-2019 dcterms:description "Geographic information — Spatial schema"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#> dcterms:description "Serialization of concept info in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en;
+  dcterms:issued "";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-24"^^xsd:date;
+  dcterms:title "Concept Info RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "info";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/info#";
+  owl:versionInfo "Version 1.0";
+  skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Info data is subject to change."@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#> dcterms:description "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT), the glossary for geographic information technology from ISO/TC 211 Geographic information/Geomatics."@en;
+  dcterms:issued " ";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-25"^^xsd:date;
+  dcterms:title "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "mlgt-concepts";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts#";
+  owl:versionInfo "Version 1.0";
+  skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Data is subject to change."@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#> dcterms:description "Serialization of concept reviews in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en;
+  dcterms:issued "";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-24"^^xsd:date;
+  dcterms:title "Concept Reviews RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en;
+  vann:preferredNamespacePrefix "reviews";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/reviews#";
+  owl:versionInfo "Version 1.0";
+  skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Data is subject to change."@en .
+
+<https://isotc211.geolexica.org/api/ld/language> dcterms:issued " ";
+  dcterms:license "Copyright 2022 OSGeo";
+  dcterms:modified "2022-01-27"^^xsd:date;
+  dcterms:publisher <https://www.osgeo.org/>;
+  dcterms:title "Language Reference RDF Dataset"@en;
+  vann:preferredNamespacePrefix "lang";
+  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/language#";
+  owl:versionInfo "Version 1.0";
+  skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Language references are subject to change."@en .
+
+<https://osgeo.geolexica.org/api/geolexica> vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/geolexica#";
+  owl:versionInfo "Version 1.0";
+  skos:note "The Geolexica Ontology is currently under development as of 2022-19-01. Classes, properties, attributes, and axioms are subject to change."@en .
+
+<https://isotc211.geolexica.org/api/ld/geolexica> owl:versionInfo "Version 1.0";
+  skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Classes, properties, attributes, and axioms are subject to change."@en .
+
+:OSGeoGlossary skos:note "(Extended) OSGeo Glossary (SKOS) collection of concepts."@en,
+    "OSGeo Collection of SKOS Concepts"@en .
+
+<https://isotc211.geolexica.org/api/ldapi#> skos:note "Data is subject to change."@en .
+
+<https://isotc211.geolexica.org/api/reviews#> skos:note "The ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT) is being developed as of 2022-20-01. Data is subject to change."@en .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#OSGeoGlossary> skos:note "(Extended) OSGeo Glossary (SKOS) collection of concepts."@en,
+    "OSGeo Collection of SKOS Concepts"@en .
+
+info:Info2 :classification "preferred"@en;
+  :hasSource :ISO-1087-1-2000 .
+
+info:Info3 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info4 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info5 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info6 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info7 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info8 :hasSource :ISO-3534-1-1993 .
+
+info:Info9 :hasSource :ISO-IEC-19501-2005 .
+
+info:Info10 :classification "preferred"@en;
+  :hasSource :ISO-1087-1-2000 .
+
+info:Info11 :classification "preferred"@en;
+  :hasSource :UML-1x .
+
+info:Info12 :hasSource :ISO-19116-2004 .
+
+info:Info13 :classification "preferred"@en;
+  :hasSource :ISO-19117-2012 .
+
+info:Info14 :classification "preferred"@en;
+  :hasSource :ISO-19101-1-2014 .
+
+info:Info15 :classification "preferred"@en;
+  :hasSource :ISO-19101-1-2014 .
+
+info:Info17 :hasSource :ISO-IEC-19501 .
+
+info:Info18 :classification "preferred"@en;
+  :hasSource :ISO-19116-2019 .
+
+info:Info19 :classification "preferred"@en;
+  :hasSource :ISO-IEC-2382-2015 .
+
+info:Info20 :classification "preferred"@en;
+  :hasSource :UML-1x .
+
+info:Info24 :hasSource :ISO-19107-2003 .
+
+info:Info26 :classification "preferred"@en;
+  :hasSource :ISO-19106-2004 .
+
+info:Info27 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+info:Info28 :hasSource :ISO-IEC-19501-2005 .
+
+info:Info29 :classification "preferred"@en;
+  :hasSource :ISO-19107-2019 .
+
+info:Info30 :hasSource :ISO-19107-2003 .
+
+info:Info21 :hasSource :ISO-19107-2003 .
+
+info:Info35 :classification "preferred"@en;
+  :hasSource :ISO-19105-2000 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> dcterms:identifier 2 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> dcterms:identifier
+    3 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> dcterms:identifier
+    4 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> dcterms:identifier
+    5 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> dcterms:identifier
+    6 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> dcterms:identifier
+    7 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> dcterms:identifier 8 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> dcterms:identifier 9 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> dcterms:identifier
+    10 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> dcterms:identifier 11 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> dcterms:identifier 12 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> dcterms:identifier 13 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> dcterms:identifier 14 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> dcterms:identifier
+    15 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> dcterms:identifier 17 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> dcterms:identifier 18 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> dcterms:identifier 19 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> dcterms:identifier 24 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> dcterms:identifier
+    26 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> dcterms:identifier 27 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> dcterms:identifier 28 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> dcterms:identifier 29 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> dcterms:identifier 30 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> dcterms:identifier 31 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> dcterms:identifier 20 .
+
+:ISO-1087-1-2000 dcterms:source "https://www.iso.org/standard/20057.html"^^xsd:anyURI .
+
+:ISO-19105-2000 dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI .
+
+:ISO-3534-1-1993 dcterms:source "https://www.iso.org/standard/8919.html"^^xsd:anyURI .
+
+:ISO-IEC-19501-2005 dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI .
+
+:UML-1x dcterms:source "https://www.omg.org/spec/UML/1.1/"^^xsd:anyURI .
+
+:araRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI .
+
+:danRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI .
+
+:deuRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI .
+
+:engRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI .
+
+:finRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI .
+
+:fraRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI .
+
+:jpnRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI .
+
+:korRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI .
+
+:msaRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI .
+
+:nldRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI .
+
+:polRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI .
+
+:rusRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI .
+
+:spaRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI .
+
+:sweRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI .
+
+:zhoRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI .
+
+:ISO-IEC-19501 dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI .
+
+:ISO-19101-1-2014 dcterms:source "https://www.iso.org/standard/59164.html"^^xsd:anyURI .
+
+:ISO-19116-2004 dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI .
+
+:ISO-IEC-2382-2015 dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI .
+
+:ISO-19116-2019 dcterms:source "https://www.iso.org/standard/70882.html"^^xsd:anyURI .
+
+:ISO-19117-2012 dcterms:source "https://www.iso.org/standard/46226.html"^^xsd:anyURI .
+
+:ISO-19107-2003 dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI .
+
+:ISO-19107-2019 dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI .
+
+lang:araRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI .
+
+lang:danRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI .
+
+lang:deuRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI .
+
+lang:engRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI .
+
+lang:finRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI .
+
+lang:fraRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI .
+
+lang:jpnRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI .
+
+lang:korRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI .
+
+lang:msaRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI .
+
+lang:nldRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI .
+
+lang:polRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI .
+
+lang:rusRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI .
+
+lang:spaRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI .
+
+lang:sweRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI .
+
+lang:zhoRegistry dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI .
+
+reviews:Review2 :decision "accepted"@en .
+
+reviews:Review8 :decision " " .
+
+reviews:Review9 :decision "accepted"@en .
+
+reviews:Review10 :decision "accepted"@en .
+
+reviews:Review11 :decision "accepted"@en .
+
+reviews:Review12 :decision " " .
+
+reviews:Review13 :decision "accepted" .
+
+reviews:Review14 :decision "accepted" .
+
+reviews:Review15 :decision "accepted" .
+
+reviews:Review17 :decision "accepted" .
+
+reviews:Review18 :decision "accepted" .
+
+reviews:Review19 :decision "accepted" .
+
+reviews:Review20 :decision "accepted" .
+
+reviews:Review24 :decision "accepted" .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/2.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/3.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/4.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/5.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/6.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/7.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/8.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/9.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/10.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/11.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/12.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/13.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/14.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/15.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/16.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/17.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/18.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/19.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/20.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/21.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/22.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/23.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/24.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/25.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/26.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/27.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/28.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/29.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/30.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-json> :jsonURI "https://isotc211.geolexica.org/api/ldapi/31.json"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/2.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/3.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/4.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/5.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/6.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/7.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/8.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/9.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/10.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/11.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/12.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/13.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/14.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/15.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/16.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/17.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/18.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/19.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/20.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/21.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/22.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/23.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/24.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/25.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/26.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/27.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/28.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/29.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/30.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-jsonld> :jsonldURI "https://isotc211.geolexica.org/api/ldapi/31.jsonld"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi2-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/2.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi3-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/3.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi4-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/4.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi5-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/5.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi6-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/6.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi7-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/7.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi8-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/8.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi9-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/9.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi10-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/10.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi11-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/11.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi12-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/12.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi13-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/13.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi14-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/14.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi15-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/15.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi16-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/16.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi17-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/17.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi18-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/18.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi19-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/19.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi20-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/20.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi21-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/21.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi22-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/22.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi23-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/23.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi24-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/24.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi25-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/25.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi26-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/26.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi27-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/27.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi28-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/28.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi29-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/29.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi30-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/30.ttl"^^xsd:anyURI .
+
+<https://isotc211.geolexica.org/api/ldapi#ldapi31-skosrdf> :skosrdfURI "https://isotc211.geolexica.org/api/ldapi/31.ttl"^^xsd:anyURI .
+
+:JSON skos:altLabel "JSON" .
+
+:JSON-LD skos:altLabel "SKOS IN JSON-LD" .
+
+:skosrdfURI skos:altLabel "has SKOS-IN-RDF API URI"@en .
+
+:SKOS-RDF skos:altLabel "SKOS IN RDF" .
+
+:TBXISOXML skos:altLabel "TBX-ISO-XML" .
+
+:ara skos:altLabel "ARA";
+  skos:prefLabel "ara" .
+
+:dan skos:altLabel "DAN";
+  skos:prefLabel "dan" .
+
+:deu skos:altLabel "DEU";
+  skos:prefLabel "deu" .
+
+:eng skos:altLabel "ENG";
+  skos:prefLabel "eng" .
+
+:fin skos:altLabel "FIN";
+  skos:prefLabel "fin" .
+
+:fra skos:altLabel "FRA";
+  skos:prefLabel "fra" .
+
+:jpn skos:altLabel "JPN";
+  skos:prefLabel "jpn" .
+
+:kor skos:altLabel "KOR";
+  skos:prefLabel "kor" .
+
+:msa skos:altLabel "MSA";
+  skos:prefLabel "msa" .
+
+:nld skos:altLabel "NLD";
+  skos:prefLabel "nld" .
+
+:pol skos:altLabel "POL";
+  skos:prefLabel "pol" .
+
+:rus skos:altLabel "RUS";
+  skos:prefLabel "rus" .
+
+:spa skos:altLabel "SPA";
+  skos:prefLabel "spa" .
+
+:swe skos:altLabel "SWE";
+  skos:prefLabel "swe" .
+
+:zho skos:altLabel "ZHO";
+  skos:prefLabel "zho" .
+
+lang:ara skos:altLabel "ARA";
+  skos:prefLabel "ara"@en .
+
+lang:dan skos:altLabel "DAN";
+  skos:prefLabel "dan"@en .
+
+lang:deu skos:altLabel "DEU";
+  skos:prefLabel "deu"@en .
+
+lang:eng skos:altLabel "ENG";
+  skos:prefLabel "eng"@en .
+
+lang:fin skos:altLabel "FIN";
+  skos:prefLabel "fin"@en .
+
+lang:fra skos:altLabel "FRA";
+  skos:prefLabel "fra"@en .
+
+lang:jpn skos:altLabel "JPN";
+  skos:prefLabel "jpn"@en .
+
+lang:kor skos:altLabel "KOR";
+  skos:prefLabel "kor"@en .
+
+lang:msa skos:altLabel "MSA";
+  skos:prefLabel "msa"@en .
+
+lang:nld skos:altLabel "NLD";
+  skos:prefLabel "nld"@en .
+
+lang:pol skos:altLabel "POL";
+  skos:prefLabel "pol"@en .
+
+lang:rus skos:altLabel "RUS";
+  skos:prefLabel "rus"@en .
+
+lang:spa skos:altLabel "SPA";
+  skos:prefLabel "spa"@en .
+
+lang:swe skos:altLabel "SWE";
+  skos:prefLabel "swe"@en .
+
+lang:zho skos:altLabel "ZHO";
+  skos:prefLabel "zho"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> skos:altLabel "kokoelma (UML)"@fi .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> skos:altLabel "altitud ortométrica"@es,
+    "height"@ar, "height"@en, "height"@fr, "height"@ms, "height"@ru, "height"@sv, "height"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> skos:altLabel "sovelma"@fi .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> skos:altLabel "assosiaatiosuhde (UML)"@fi .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> skos:altLabel "백"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> skos:altLabel "버퍼"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> skos:altLabel "버퍼"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> skos:altLabel "määrite (UML)"@fi .
+
+:ConceptInfo skos:prefLabel "Info"@en .
+
+:ConceptReview skos:prefLabel "Review"@en .
+
+:GeolexicaConceptScheme skos:prefLabel "Geolexica Concept Scheme"@en .
+
+:UML-1x skos:prefLabel "UML 1" .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> skos:prefLabel "Abkürzung"@de,
+    "abbreviation"@en, "abreviatura"@es, "forkortelse"@da, "förkortning"@sv, "аббревиатура"@ru,
+    "اختصار"@ar, "약어"@ko .
+
+<https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme> skos:prefLabel
+    "Geolexica Concept Scheme"@en .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> skos:prefLabel
+    "abstract test case"@en, "abstrakt testfall"@sv, "abstrakt testforløb"@da, "abstrakter Testfall"@de,
+    "abstrakti testitapaus"@fi, "cas de test abstrait"@fr, "prueba abstracta"@es, "абстрактный тест"@ru,
+    "حالة اختبار تجريدي"@ar, "抽象测试用例"@zh, "抽象試験項目"@ja, "추상 시험 케이스"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> skos:prefLabel
+    "abstract test method"@en, "abstrakt testmetode"@da, "abstrakte Prüfmethode"@de, "abstrakti testausmenetelmä"@fi,
+    "implementeringsoberoende testmetod"@sv, "méthode de test abstrait"@fr, "método de prueba abstracta"@es,
+    "метод абстрактного теста"@ru, "طريقة اختبار تجريدي"@ar, "抽象测试方法"@zh, "抽象試験方法"@ja,
+    "추상 시험 방법"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> skos:prefLabel
+    "abstract test module"@en, "abstrakt testmodul"@da, "abstrakt testmodul"@sv, "abstraktes  Prüfmodul"@de,
+    "abstrakti testausmoduuli"@fi, "module de test abstrait"@fr, "módulo de pruebas abstractas"@es,
+    "модуль  абстрактных тестов"@ru, "نموذج اختبار تجريدي"@ar, "抽象测试模块"@zh, "抽象試験モジュール"@ja,
+    "추상 시험 모듈"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> skos:prefLabel
+    "abstract test suite"@en, "abstrakt testsuite"@da, "abstrakt testsvit"@sv, "abstrakte Test-Suite"@de,
+    "abstrakti testisarja"@fi, "conjunto de pruebas abstractas"@es, "suite de tests abstraits"@fr,
+    "комплекс абстрактных тестов"@ru, "مجموعة اختبار تجريدي"@ar, "抽象测试套件"@zh, "抽象試験項目群，ATS"@ja,
+    "추상 시험 스위트"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> skos:prefLabel
+    "Akzeptanzprüfung"@de, "acceptance test (bruger)"@da, "acceptance testing (user)"@en,
+    "acceptanstestning"@sv, "hyväksymistestaus (käyttäjän)"@fi, "prueba de aceptación (usuario)"@es,
+    "test d&#39;acceptation (utilisateur)"@fr, "ujian penerimaan"@ms, "тестирование на приемлемость для пользователя"@ru,
+    "اختبار القبول (المستخدم)"@ar, "受入試験"@ja, "验收测试(用户)"@zh, "검수 시험(사용자)"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> skos:prefLabel "accuracy"@en,
+    "exactitud"@es, "exactitude"@fr, "ketepatan"@ms, "noggrannhet"@sv, "nøjagtighed"@da,
+    "ulkoinen tarkkuus"@fi, "точность"@ru, "الدقة"@ar, "准确度"@zh, "正確度"@ja, "정확도"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> skos:prefLabel "Akteur (UML)"@de,
+    "acteur (UML)"@fr, "actor (UML)"@en, "actor (UML)"@es, "aktör (UML)"@sv, "aktør (UML)"@da,
+    "toimija (UML)"@fi, "действующее лицо (UML)"@ru, "لغة &quot;الممثل&quot; UML"@ar,
+    "参与者(UML)"@zh, "행위자 (UML)"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> skos:prefLabel "admitted term"@en,
+    "tilladt term"@da, "tillåten term"@sv, "término admitido"@es, "zugelassener Begriff"@de,
+    "допустимый термин"@ru, "مصطلح معترف به"@ar, "승인 용어"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> skos:prefLabel "Aggregation (UML)"@de,
+    "aggregation (UML)"@en, "aggregering"@sv, "aggregering (UML)"@da, "agregación (UML)"@es,
+    "agrégation (UML)"@fr, "kooste (UML)"@fi, "агрегация (UML)"@ru, "تجميع (UML)"@ar,
+    "聚合(UML)"@zh, "집합 연관 (UML)"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> skos:prefLabel "Altitud"@ms,
+    "altitud"@es, "altitud"@sv, "altitude"@en, "altitude"@fr, "korkeus"@fi, "высота"@ru,
+    "الارتفاع"@ar, "海拔"@zh, "높이"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> skos:prefLabel "Anmerkung"@de,
+    "Anotasi"@ms, "adnotacja"@pl, "annotation"@da, "annotation"@en, "annotation"@fr, "annotation"@sv,
+    "anotación"@es, "viitemerkintä"@fi, "аннотация"@ru, "حاشية"@ar, "注记"@zh, "주석"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> skos:prefLabel "Anwendung"@de,
+    "Aplikasi"@ms, "aplicación"@es, "application"@en, "application"@fr, "applikation"@da,
+    "applikation"@sv, "sovellus"@fi, "приложение"@ru, "تطبيق"@ar, "应用"@zh, "응용"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> skos:prefLabel
+    "Anwendungsschema"@de, "Skema Aplikasi"@ms, "applicatie schema"@nl, "application schema"@en,
+    "applikationsmodel"@da, "applikationsschema"@sv, "esquema de aplicación"@es, "schéma d&#39;application"@fr,
+    "sovellusskeema"@fi, "схема приложения"@ru, "مخطط التطبيق"@ar, "应用模式"@zh, "응용 스키마"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> skos:prefLabel "Relation (UML) (Synonym: Beziehung, Assoziation)"@de,
+    "asociación (UML)"@es, "association (UML)"@da, "association (UML)"@en, "association (UML)"@fr,
+    "assosiaatio (UML)"@fi, "samband (UML)"@sv, "ассоциация (UML)"@ru, "ارتباط UML"@ar,
+    "关联(UML)"@zh, "연관 (UML)"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> skos:prefLabel "Einstellung"@de,
+    "actitud"@es, "attitude"@en, "attitude"@fr, "attityd"@sv, "sikap"@ms, "suuntaus"@fi,
+    "ydre orientering"@da, "пространственное положение"@ru, "الوضع"@ar, "姿态"@zh, "자세"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> skos:prefLabel "Attribut"@de,
+    "atribut"@ms, "atributo"@es, "attribut"@sv, "attribute"@en, "attribuut"@nl, "атрибут"@ru,
+    "صفة"@ar, "속성"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> skos:prefLabel "Multimenge"@de,
+    "bag"@en, "bag"@sv, "beg"@ms, "bolsa"@es, "monijoukko"@fi, "multimængde"@da, "sac"@fr,
+    "wielozbiór"@pl, "мультимножество"@ru, "مجموعة"@ar, "包"@zh, "多重集合"@ja, "다중 집합"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> skos:prefLabel "Basisstandard"@de,
+    "base standard"@en, "basisstandard"@da, "grundstandard"@sv, "norma base"@es, "norme de base"@fr,
+    "perusstandardi"@fi, "базовый стандарт"@ru, "مواصفة قياسية أساسية"@ar, "基础标准"@zh,
+    "기반 표준"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> skos:prefLabel "Basistest"@de,
+    "basic test"@en, "basistest"@da;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:prefLabel "grundtest"@sv, "perustesti"@fi, "prueba básica"@es, "test de base"@fr,
+    "базовый  тест"@ru, "اختبار أساسي"@ar, "基本测试"@zh, "基本試験"@ja, "기본 시험"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:prefLabel "Verhalten (UML)"@de, "behaviour (UML)"@en, "behaviour (UML)"@sv, "comportamiento (UML)"@es,
+    "comportement (UML)"@fr, "käyttäytyminen (UML)"@fi, "opførsel (UML)"@da, "perangai"@ms,
+    "поведение (UML)"@ru, "سلوك (UML)"@ar, "行为(UML)"@zh, "행태 (UML)"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:prefLabel "Grenze"@de, "afgrænsning"@da, "avgränsning"@sv;
+  skos:notation 29;
+  skos:prefLabel "boundary"@en, "frontera"@es, "frontière"@fr, "granica"@pl, "rajaus"@fi,
+    "sempadan"@ms, "граница"@ru, "حدود"@ar, "境界"@ja, "边界"@zh, "경계"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 30;
+  skos:prefLabel "Puffer"@de, "buffer"@da, "buffer"@en, "buffer"@es, "buffertzon"@sv,
+    "bufor"@pl, "penampan"@ms, "tampon (buffer)"@fr, "vyöhyke"@fi, "буферная зона [буфер]"@ru,
+    "نطاق"@ar, "バッファ"@ja, "缓冲区"@zh, "영향 범위"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 31;
+  skos:prefLabel "Kalender"@de, "calendar"@en, "calendario"@es, "calendrier"@fr, "kalendar"@ms,
+    "kalendarz"@pl, "kalender"@da, "kalender tideräkning"@sv, "kalenteri"@fi, "календарь"@ru,
+    "تقويم"@ar, "日历"@zh, "暦"@ja, "달력"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 20;
+  skos:prefLabel "Attribut (UML)"@de, "UML-attribut"@sv, "atributo (UML)"@es, "attribut (UML)"@da,
+    "attribut (UML)"@fr, "attribute (UML)"@en, "attribuut (UML)"@nl, "attribuutti (UML)"@fi,
+    "атрибут(UML)"@ru, "صفة (UML)"@ar, "属性(UML)"@zh, "속성 (UML)"@ko .
+
+<https://isotc211.geolexica.org/api/ldapi#> dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/reviews#> dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/info#> dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/ld/info#> dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#> dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#> dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> skos:definition "benämning som skapats genom att ord eller bokstäver har utelämnats från en längre benämning och som står för samma begrepp som den längre benämningen"@sv,
+    "betegnelse dannet ved at udelade ord eller bogstaver fra en længere form af et begreb som betegner det samme"@da,
+    "designación formada por la omisión de palabras o letras de una denominación más larga y que designa al mismo concepto"@es,
+    "designation formed by omitting words or letters from a longer form and designating the same concept"@en,
+    "обозначение, образованное путём исключения слов или букв из более длинной формы и обозначающее  то же самое понятие"@ru,
+    "دلالة تتشكل بعد حذف كلمات أو حروف من صيغة أطول وتدل عن نفس المفهوم"@ar, "축약하기 전의 용어와 동일한 개념을 나타내면서 글자 또는 단어를 생략한 용어"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 2 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> skos:definition
+    "generaliseret test for et bestemt krav"@da, "generalized test for a particular requirement"@en,
+    "prueba generalizada para un requisito particular"@es, "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"@sv,
+    "test généralisé relatif à une exigence particulière"@fr, "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"@fi,
+    "обобщенный тест на соответствие конкретным требованиям"@ru, "اختبار عام لمتطلب محدد"@ar,
+    "特定の要件のために作成された試験"@ja, "针对特定要求的一般性测试。"@zh, "특정한 요구 사항을 수행하기 위한 일반화된 시험"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 3 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> skos:definition
+    "method for testing implementation independent of any particular test procedure"@en,
+    "metode til at teste implementering uafhængigt af testprocedure"@da, "méthode de test d&#39;implémentation indépendante de toute procédure de test"@fr,
+    "método para probar implementaciones independientemente de cualquier procedimiento de prueba particular"@es,
+    "testausmenettelystä riippumaton menetelmä toteutuksen testaamiseksi"@fi, "testmetod som är oberoende oavsett typ av implementering"@sv,
+    "метод тестирования реализации, не зависящий от конкретной процедуры тестирования"@ru,
+    "طريقة لاختبار التنفيذ مستقلة عن أي إجراءات اختبار محددة"@ar, "特定の試験手続から独立した実装の試験の方法。"@ja,
+    "用于实现测试的方法，它与特定测试过程无关。"@zh, "특정 시험 절차와 상관 없이 독립적인 시험 구현을 위한 방법"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 4 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> skos:definition
+    "conjunto de pruebas genéricas relacionadas entre sí"@es, "ensemble de cas de test abstraits liés"@fr,
+    "joukko toisiinsa liittyviä abstrakteja testitapauksia"@fi, "samling av samhörande abstrakta testfall"@sv,
+    "set of related abstract test cases"@en, "sæt af forbundne abstrakte testforløb"@da,
+    "набор взаимосвязанных абстрактных тестов"@ru, "مجموعة حالات اختبار تجريدي مرتبطة ببعضها"@ar,
+    "相关抽象测试用例的集合。"@zh, "関係する抽象試験項目の集合。"@ja, "관련된 추상 시험 케이스의 집합"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 5 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> skos:definition
+    "abstract test module specifying all the requirements to be satisfied for conformance"@en,
+    "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"@da,
+    "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"@fi,
+    "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"@fr,
+    "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"@es,
+    "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"@sv,
+    "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"@ru,
+    "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"@ar, "満たされなければならないすべての要件を規定する抽象試験モジュール。"@ja,
+    "规定了实现一致性所要满足的全部要求的抽象测试模块。"@zh, "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 6 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> skos:definition
+    "(用户)决定一个实现是否满足验收准则以及用户能否决定接受该实现的过程。"@zh, "proces til bestemmelse af, om en implementering opfylder acceptance-kriterier og sætter brugeren i stand til at afgøre, om implementeringen skal accepteres"@da,
+    "proceso de determinación de si una implementación satisface o no los criterios de aceptación y permite al usuario determinar si acepta o no la implementación"@es,
+    "process of determining whether an implementation satisfies acceptance criteria and enables the user to determine whether to accept the implementation"@en,
+    "processus déterminant si une implémentation satisfait un critère d&#39;acceptation et permet à l&#39;utilisateur de déterminer s&#39;il accepte l&#39;implémentation"@fr,
+    "prosessi, jossa määritetään, täyttääkö toteutus hyväksyttävyyskriteerit ja jossa käyttäjälle annetaan mahdollisuus päättää toteutuksen hyväksymisestä"@fi,
+    "testning i syfte att bestämma om en implementering ska accepteras eller ej med hänsyn till användarnas behov och krav"@sv,
+    "процесс, позволяющий оценить, удовлетворяет ли реализация критериям приемлемости и дающий пользователю возможность вынести решение об этом"@ru,
+    "عملية تحديد ما إذا كان التنفيذ يحقق معيار القبول ويمكن المستخدم من قبول التنفيذ ."@ar,
+    "ある実装が利用者の受入基準を満たすかどうかを決定し，利用者がそれを受け入れるかどうかを判断するための試験。"@ja, "구현된 결과가 검수 기준을 만족하는지에 대한 결정 과정"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 7 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> skos:definition "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"@ms,
+    "closeness of agreement between a test result and the accepted reference value"@en,
+    "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"@da,
+    "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"@sv,
+    "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"@es,
+    "justesse de l&#39;accord entre un résultat de test et la valeur de référence"@fr,
+    "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"@fi, "близость результата проверки к принятому нормальному значению величины"@ru,
+    "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"@ar, "品質評価の試験結果得られた値と参照値との近さ。"@ja,
+    "测试结果与公认的参考值间的接近程度。"@zh, "시험 결과와 기준 값 간의 일치도를 표시하는 척도"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 8 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> skos:definition "(UML)当用例的用户与这些用例交互时，所扮演的相关角色的集合。"@zh,
+    "coherent set of roles that users of use cases play when interacting with these use cases"@en,
+    "conjunto coherente de roles que los usuarios de unos casos de uso jue gan cuando interaccionan con esos casos de uso"@es,
+    "ensemble cohérent de rôles que les utilisateurs de cas d&#39;utilisation jouent en interagissant avec ces cas d&#39;utilisation"@fr,
+    "något utanför ett system som växelverkar med systemet genom att delta i ett användningsfall"@sv,
+    "sammenhængende sæt af roller, som brugere af use cases spiller i forhold til disse use cases"@da,
+    "yhtenäinen joukko rooleja, joita käyttäjillä on käyttötapausten toiminnoissa"@fi,
+    "множество логически связанных  ролей, выполняемых пользователями вариантов использования при взаимодействии с  ними"@ru,
+    "مجموعة أدوار مترابطة منطقيا يقوم بها مستخدمو أدوات النمذجة عند التفاعل معها ."@ar,
+    "유즈 케이스와 상호 작용 시, 그 유즈 케이스의 사용자가 수행하는 역할의 집합"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 9 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> skos:definition "term rated according to the scale of the term acceptability rating as a synonym for a preferred term"@en,
+    "term som bedömts vara lämplig för ett visst begrepp och som används vid sidan av en rekommenderad term"@sv,
+    "term, klassificeret efter en skala for tilladte termer, anvendt som synonym for en foretrukket term"@da,
+    "término clasificado de acuerdo a la escala de aceptanción como un sinónimo de un término preferente"@es,
+    "термин, оцененный по шкале рейтинга приемлемости термина как синоним предпочтительного термина"@ru,
+    "مصطلح صنف وفقا لمقياس تصنيف قبول المصطلحات كمرادف للمصطلح المفضل"@ar, "상용 용어의 동의어로써 용어 수용가능성 등급체계에 의거하여 등급이 부여된 용어"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 10 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> skos:definition "(UML)关联的特殊形式，用以说明聚集(整体)与组成部分之间的整体-部分关系。"@zh,
+    "assosiaation erityinen laji, joka määrittää kokonaisuuden (aggregaatin) ja sen osan välisen suhteen"@fi,
+    "forma especial de asociación  que especifica una relación del todo con una parte entre el agregado (el todo) y una parte componente"@es,
+    "forme spéciale d&#39;association qui spécifie une relation ensemble-composant entre l&#39;agrégat (ensemble) et la partie composante"@fr,
+    "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@en,
+    "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@sv,
+    "særlig form for association, der specificerer et helhed-del-forhold mellem en klasse, som indtager rollen som helheden, og en eller flere klasser, som indtager rollen som del"@da,
+    "особая форма ассоциации, описывающая отношение «целое-часть» между агрегатом («целое») и компонентом («часть»)"@ru,
+    "شكل خاص من أشكال الترابط يصف علاقة &quot;الكل والجزء&quot; بين الكل والجزء المكون له."@ar,
+    "집합체와 컴포넌트 간의 관계를 설명한 연관의 특정 형태"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 11 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> skos:definition "distance d&#39;un point à une surface de référence choisie, selon une ligne perpendiculaire à cette surface"@fr,
+    "distance of a point from a chosen reference surface along a line perpendicular to that surface"@en,
+    "distancia de un punto a una superficie de referencia escogida a lo largo de una línea perpendicular a esta superficie"@es,
+    "höjd där den valda referensytan är världshavens medelvattenyta"@sv, "ketinggian sesuatu tempat (kawasan) yg biasanya diukur dr aras laut."@ms,
+    "pisteen etäisyys valitusta vertauspinnasta kyseistä pintaa vastaan kohtisuorassa olevaa viivaa pitkin"@fi,
+    "расстояние от отсчетной поверхности до выбранной точки по нормали к этой поверхности"@ru,
+    "مسافة نقطة عن سطح إسناد مرجعي مختار على خط رأسي متعامد مع ذلك السطح"@ar, "地球自然表面点到所选择的参照面间的垂直距离"@zh,
+    "선택된 기준면으로부터 그 면의 수직선으로 연결된 어떤 지점까지의 거리"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 12 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> skos:definition "any marking on illustrative material for the purpose of clarification"@en,
+    "cualquier marca hecha en las ilustraciones con el objetivo de clarificar"@es, "jakiekolwiek oznaczenie na materiale ilustracyjnym, stosowane w celach wyjaśniających"@pl,
+    "jede Kennzeichnung für illustrierendes Material zur Klarstellung"@de, "kort kommentar eller anteckning"@sv,
+    "markering på illustrativt materiale med henblik på tydeliggørelse"@da, "mikä hyvänsä selvennykseksi tarkoitettu merkintä havainnollistavassa aineistossa"@fi,
+    "nota atau catatan (sbg penerangan, komen dsb) yg ditambahkan pd teks penulisan sastera atau bahan bertulis yg lain."@ms,
+    "note explicative sur un objet illustratif dans un but de clarification"@fr, "любые пояснительные метки, размещаемые на иллюстративном материале"@ru,
+    "أي كتابة تكتب على مادة توضيحية بقصد التفسير والإيضاح"@ar, "以说明为目的，在诠释材料上作的标记。"@zh,
+    "명시를 목적으로 해설 자료에 넣는 표기"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 13 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> skos:definition "Be- und Verarbeitung von Daten zur Unterstützung von Nutzeranforderungen"@de,
+    "hantering och bearbetning av data utifrån användarens behov"@sv, "ist atur cara atau program komputer yg direka khusus utk kegunaan tertentu"@ms,
+    "manipulación y procesamiento de datos para satisfacer los requerimientos del usuario"@es,
+    "manipulation and processing of data in support of user requirements"@en, "manipulation et traitement de données supportant des besoins d&#39;utilisateurs"@fr,
+    "manipulation og behandling af data for at opfylde brugerkrav"@da, "tiedon käsittely ja prosessointi käyttäjävaatimusten mukaisesti"@fi,
+    "манипулирование данными и их обработка с целью удовлетворения потребностей пользователя"@ru,
+    "معالجة وتجهيز البيانات فيما يدعم متطلبات المستخدم"@ar, "支持用户需求的数据操作和处理。"@zh, "사용자 요구 사항의 지원을 위한 데이터의 조작 및 처리"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 14 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> skos:definition
+    "conceptual schema for data required by one or more applications"@en, "esquema conceptual de los datos requeridos por una o más aplicaciones"@es,
+    "formell beskrivning av den logiska strukturen"@sv, "informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties"@nl,
+    "konceptuel datamodel, der er nødvendig for en eller flere applikationer"@da, "konzeptuelles Schema für Daten, das für eine oder mehrere Anwendungen erforderlich ist"@de,
+    "schéma conceptuel de données requis pour une ou plusieurs applications"@fr, "skeema, joka kuvaa yhden tai useamman sovellusalan tarvitsemaa tietoa"@fi,
+    "skema konseptual bagi data yang diperlukan oleh satu atau lebih aplikasi"@ms, "концептуальная схема для данных, которые требуются одному или  нескольким приложениям"@ru,
+    "مخطط تصوري للبيانات المطلوبة لتطبيق واحد أو أكثر"@ar, "一个或多个应用所需数据的概念模式。"@zh, "하나 이상의 응용에서 요구되는 데이터의 개념적 스키마"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 15 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> skos:definition "(UML)两个或两个以上类之间的语义关系，定义了类中实例间的连接。"@zh,
+    "UML-element som anger hur instanser kan eller ska referera till varandra"@sv, "kahden tai useamman luokittelijan välinen semanttinen suhde, joka määrittää luokittelijoiden mukaisten ilmentymien väliset yhteydet"@fi,
+    "relación semántica entre dos o más clasificadores que especifica conexiones entre sus instancias"@es,
+    "relation sémantique entre deux ou plusieurs classificateurs qui spécifient des connections parmi leurs instances"@fr,
+    "semantic relationship between two or more classifiers that specifies connections among their instances"@en,
+    "semantisk sammenhæng imellem to eller flere klassifikatorer, som specificerer forbindelser mellem deres instanser"@da,
+    "семантическое отношение двух или более классификаторов, определяющее взаимосвязи между их экземплярами"@ru,
+    "العلاقة اللغوية القائمة بين مصنِّفَيْن أو أكثر التي تحدد الترابط بين عناصرها"@ar,
+    "인스턴스간의 연결을 규정하는 두 개 이상 분류자 간의 의미론적 관계"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 17 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> skos:definition "(vid positionering) riktning hos ett objekt, beskrivet som vinklar mellan axlarna hos objektets interna koordinatsystem och axlarna i ett valt referenssystem"@sv,
+    "kappaleen suunta, joka on ilmaistu kappaleen paikallisen koordinaatiston akseleiden ja ulkoisen koordinaatiston akseleiden välisten kulmien avulla"@fi,
+    "orientación de un cuerpo, descrita mediante los ángulos entre los ejes del sistema de coordenadas del cuerpo y los ejes de un sistema de coordenadas externo"@es,
+    "orientation d&#39;un objet décrite par les angles entre les axes du système de coordonnées de cet objet et les axes du système de coordonnées externe"@fr,
+    "orientation of a body, described by the angles between the axes of that body&#39;s coordinate system and the axes of an external coordinate system"@en,
+    "orientering af et legeme beskrevet ved vinklerne mellem akserne i legemets koordinatsystem og akserne i et eksternt koordinatsystem"@da,
+    "perbuatan atau pandangan yg berdasarkan sesuatu pendapat"@ms, "ориентация тела, описываемая углами между осями его [собственной] системы координат и осями внешней системы координат"@ru,
+    "اتجاه جسم ما كما تصفه الزوايا التي بين محاور نظام إحداثيات ذلك الجسم ومحاور نظام إحداثيات خارجي آخر"@ar,
+    "一个物体的定向，由物体坐标系的轴和外部坐标系的轴之间的夹角来描述。"@zh, "물체의 좌표 체계 축과 외부 좌표 체계 축 사이의 각도를 통해 기술되는 물체의 방향"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 18 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> skos:definition "benannte Eigenschaft einer Einheit"@de,
+    "ciri-ciri bagi sesuatu fitur"@ms, "kenmerk van een geo-object"@nl, "named property of an entity"@en,
+    "namngiven egenskap hos objekt"@sv, "nombre de una propiedad de una entidad"@es, "именованное свойство сущности"@ru,
+    "اسم خاصية لكيان ما"@ar, "실체의 속성"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 19 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> skos:definition "bekas utk mengisi, menyimpan atau membawa pakaian, surat, buku, dll yg dibuat drpd kulit dll"@ms,
+    "colección finita y desordenada de ítems relacionados (objetos o valores) que pueden estar repetidos"@es,
+    "collection limitée et non-ordonnée d&#39;éléments liés (objets ou valeurs) pouvant être répétés"@fr,
+    "finit, uordnet samling af beslægtede elementer (objekter eller værdier), som kan gentages"@da,
+    "finite, unordered collection of related items (objects or values) that may be repeated"@en,
+    "oordnad, ändlig mängd av samhörande data"@sv, "skończona, nieuporządkowana kolekcja powiązanych pozycji (obiektów lub wartości), które mogą się powtarzać"@pl,
+    "äärellinen, järjestämätön kokoelma yhteenliittyviä tietokohteita (objekteja tai arvoja), jotka voivat toistua"@fi,
+    "конечная неупорядоченная совокупность элементов (объектов или значений), в которой  допускается их повторение"@ru,
+    "مجموعة محدودة غير مرتبة من البنود (كيانات أو قيم) ذات ارتباط ببعضها ويمكن تكرارها"@ar,
+    "可以重复的相关项（对象或值）的有限、无序的集合。"@zh, "繰返しのある，関連する項目（オブジェクト又は値）の，有限非順序な集まり。"@ja, "유한하며 순서가 없는, 반복 가능한 항목(객체 또는 값)의 모음"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 24 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> skos:definition "ISO geographic information standard or other information technology standard that is used as a source from which a profile may be constructed"@en,
+    "SO geografisk informations-standard eller anden informationsteknologisk standard, der er udgivet som en kilde, hvorfra der kan opbygges en profil"@da,
+    "norma ISO de información geográfica, u otra norma de tecnologías de la información, que se puede utilizar como fuente a partir de la cual es posible construir un perfil"@es,
+    "norme d&#39;information géographique ISO ou autre norme de technologie de l&#39;information publiée comme une source et à partir de laquelle un profil peut être construit"@fr,
+    "paikkatietoa koskeva ISO-standardi tai muu tietotekniikkastandardi, jota voidaan käyttää profiilin laatimisen perustana"@fi,
+    "standard som har ett brett syfte eller innehåller allmänna bestämmelser för ett visst område"@sv,
+    "стандарт ISO из серии  «Географическая информация» или другой технологический стандарт, который может служить источником для разработки профиля"@ru,
+    "مواصفة قياسية للمعلومات الجغرافية ( ISO ) أو مواصفة قياسية لتقنية المعلومات والتي صدرت كمصدر يمكن إنشاء مواصفة محددة منه"@ar,
+    "能够用于构建专用标准的ISO地理信息标准或其他信息技术标准。"@zh, "하나의 프로파일을 구성하는 데 활용될 수 있는 KS(ISO) 지리 정보 표준 또는 이외의 정보 기술 표준"@ko;
+  skos:inScheme <https://isotc211.geolexica.org/api/ld/geolexica#GeolexicaConceptScheme>;
+  skos:notation 26 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> skos:definition "aluksi suoritettava kelpoisuustesti, jonka tarkoituksena on tunnistaa tapaukset, joissa vaatimuksenmukaisuusehdot eivät selvästi täyty"@fi,
+    "duglighetstest som görs som första steg för att identifiera uppenbara fall av icke-överensstämmelse"@sv,
+    "indledende egnethedstest, der har til formål at identificere tydelige tilfælde af afvigelse"@da,
+    "initial capability test intended to identify clear cases of non-conformance"@en,
+    "prueba de funcionalidad inicial que pretende identificar casos claros de no conformidad"@es,
+    "test fonctionnel initial ayant pour but d&#39;identifier clairement des cas de non-conformité"@fr,
+    "начальный тест на функциональное соответствие,  предназначенный для выявления очевидных случаев несоответствия"@ru,
+    "اختبار قدرة أولي الغرض منه تحديد الحالات الواضحة من عدم المطابقة"@ar, "初始能力测试，目的是确定那些明显的不一致内容。"@zh,
+    "明らかな不適合のケースを識別するために実施する最初の機能試験。"@ja, "부적합 경우와 적합한 경우를 명확하게 식별하기 위해 실시하는 최초의 기능 시험"@ko;
+  skos:notation 27 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> skos:definition "efectos observables de una operación o de un evento, incluyendo sus resultados"@es,
+    "effets observables d&#39;une opération ou d&#39;un événement, incluant ses résultats"@fr,
+    "iagttagelige virkninger af en handling eller hændelse, herunder dens resultater"@da,
+    "kelakuan atau tingkah laku"@ms, "observable effects of an operation or event, including its results"@en,
+    "observable effects of an operation or event, including its results"@sv, "toiminnon tai tapahtuman havaittavissa olevat vaikutukset ja tulokset"@fi,
+    "доступные для наблюдения последствия выполнения операции или события, в том числе, ее (его)  результаты"@ru,
+    "الآثار التي يمكن رصدها لعملية أو حدث ، بما في ذلك نتائجها ."@ar, "由操作或事件产生的可观测的影响及其结果。"@zh,
+    "연산, 사건 또는 그 결과 값까지 포함하여 관측 가능한 효과"@ko;
+  skos:notation 28 .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> skos:definition "Menge, die die Begrenzung einer Entität darstellt"@de,
+    "bersempadankan mempunyai sesuatu sbg sempadan; berbataskan"@ms, "conjunto que representa el límite de una entidad"@es,
+    "ensemble représentant les limites d&#39;une entité"@fr, "kokonaisuuden rajaava joukko"@fi,
+    "mængde, som repræsenterer grænsen af en entitet"@da, "set that represents the limit of an entity"@en,
+    "yttre begränsning hos ett objekt"@sv, "zbiór, który reprezentuje ograniczenie obiektu"@pl,
+    "множество,  представляющее пределы данной сущности"@ru, "مجموعة من التحديدات تمثل حدود كيان ما"@ar,
+    "実体の広がりの限界を示す集合。"@ja, "表示一个实体的界限的集合。"@zh, "개체의 한계를 표현하는 집합"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> skos:definition "Kawasan dalam ingatan utama yang telah dikhaskan untuk memegang data yang masih belum dapat dipindahkan kepada cakera"@ms,
+    "geometric object that contains all direct positions whose distance from a specified geometric object is less than or equal to a given distance"@en,
+    "geometrinen objekti, joka sisältää kaikki pisteet, joiden etäisyys annetusta geometrisestä objektista on pienempi tai yhtä suuri kuin tietty etäisyys"@fi,
+    "geometrisk objekt, der indeholder alle de direkte positioner, hvis afstand fra et specificeret geometrisk objekt er mindre end eller lig med en given afstand"@da,
+    "obiekt geometryczny zawierający wszystkie położenia bezpośrednie, których odległość od określonego obiektu geometrycznego jest równa danej odległości lub mniejsza"@pl,
+    "objet géométrique contenant toutes les positions directes dont la distance à un objet géométrique spécifié est inférieure ou égale à une distance donnée"@fr,
+    "objeto geométrico que contiene todas las posiciones directas cuyas distancias a un objeto geométrico específico son menores o iguales que una distancia dada"@es,
+    "område vars gränser befinner sig på givna avstånd från ett utvalt geografiskt objekt"@sv,
+    "геометрический объект, содержащий все точки, расстояния от которых до заданного геометрического объекта меньше или равны заданной величине"@ru,
+    "كيان هندسي يحتوي على جميع المواضع المباشرة التي تكون في نطاق يبعد عن كيان محدد مسافة محددة"@ar,
+    "包含距一个指定几何对象的距离都小于或等于一个给定值的所有直接位置的几何对象。"@zh, "指定された幾何オブジェクトから与えられた距離以内のすべての直接位置を含む幾何オブジェクト。"@ja,
+    "지정된 기하 객체로부터 주어진 거리 이내의 모든 직접 위치를 포함하는 기하 객체"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> skos:definition "discrete temporal reference system that provides a basis for defining temporal position to a resolution of one day"@en,
+    "diskreetti ajan vertausjärjestelmä, joka toimii pohjana temporaalisen sijainnin määrittelemiselle yhden vuorokauden tarkkuudella"@fi,
+    "diskret tidsmæssigt referencesystem, der danner grundlag for at definere tidsmæssig position med en nøjagtighed på 1 døgn"@da,
+    "dyskretny czasowy system odniesienia będący podstawą do definiowania położenia w czasie z dokładnością do jednego dnia"@pl,
+    "senarai atau daftar hari bulan; takwim"@ms, "sistema de referencia temporal característico, que constituye una base para definir la posición temporal con una resolución de un día"@es,
+    "system av regler för hur tid indelas och mäts"@sv, "système de référence temporelle discret fournissant une base pour définir la position temporelle avec une résolution d&#39;un jour"@fr,
+    "дискретная система отсчета времени, которая образует основу для определения времени с разрешением в одни сутки"@ru,
+    "نظام مرجعي زمني متميِّز يعتبر أساسا لتعريف الموضع الزمني بدرجة دقة تصل إلى يوم واحد"@ar,
+    "一日をその分解能とする時間位置を定義するための基礎となる離散的な時間参照系の一つ。"@ja, "离散的时间参照系，提供了定义分辨率为一日的时间位置的基础。"@zh,
+    "일 단위 시간 위치의 정의 근거를 제시하는 불연속 시간 참조 체계"@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> skos:definition "aspecto dentro de un clasificador, que describe un rango de valores que las instancias del clasificador pueden tener"@es,
+    "caractéristique d&#39;un classificateur décrivant une gamme de valeurs que les instances du classificateur peuvent avoir"@fr,
+    "egenskab ved en klassifikator, der beskriver en række værdier, som instanser af klassifikatoren kan indeholde"@da,
+    "element binnen een objecttype waarmee waarden worden beschreven die instanties van het object kunnen hebben"@nl,
+    "feature within a classifier that describes a range of values that instances of the classifier may hold"@en,
+    "kombination av en attributtyp och ett attributvärde, knutet till ett visst objekt"@sv,
+    "luokittelijaan sisältyvä piirre, joka määrittelee niiden arvojen joukon, joita luokittelijan ilmentymät voivat saada"@fi,
+    "свойство в классификаторе, описывающее множество значений, которые могут принимать экземпляры данного классификатора"@ru,
+    "ميزة المصنِّف التي تصف نطاق من القيم التي يمكن لعناصر ذلك المصنِّف أن تحملها"@ar,
+    "类元的特性，描述该类元的实例可能有的值的范围。"@zh, "분류자의 특성으로 분류자의 인스턴스가 가질 수 있는 값의 범위를 기술"@ko .
+
+reviews:Review2 :decision-event "Publication of ISO 19104:2016"@en;
+  :last-review "2013-01-29"^^xsd:date;
+  :note "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.9. Lineage source added as ISO/TS 19104:2008"@en .
+
+reviews:Review3 :last-review "2019-07-05"^^xsd:date .
+
+reviews:Review4 :last-review "2019-07-05"^^xsd:date .
+
+reviews:Review5 :last-review "2019-07-05"^^xsd:date .
+
+reviews:Review6 :last-review "2019-07-05"^^xsd:date .
+
+reviews:Review8 :decision-event "Result of FDIS Ballot for ISO 6709:2008"@en;
+  :last-review "2007-12-07"^^xsd:date;
+  :note "Definition originally taken from ISO 3534-1 was later superseded by definition in ISO 3534-2:2006"@en .
+
+reviews:Review9 :decision-event "Publication of ISO 19103:2015"@en;
+  :last-review "2009-01-14"^^xsd:date;
+  :note "The entry has been omitted from the superseding standard (ISO 19103:2015)."@en .
+
+reviews:Review10 :decision-event "Publication of ISO 19104:2016"@en;
+  :last-review "2013-01-29"^^xsd:date;
+  :note "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.16, modified — the Note 1 to entry has been added.. Lineage source added as ISO/TS 19104:2008"@en .
+
+reviews:Review11 :decision-event "Publication of ISO 19103:2015"@en;
+  :last-review "2009-01-14"^^xsd:date;
+  :note "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en .
+
+reviews:Review12 :decision-event "Result of FDIS Ballot for ISO 6709:2008"@en;
+  :last-review "2007-12-07"^^xsd:date;
+  :note "Definition in ISO 19116:2002 was superseded by a new definition in ISO 6709."@en .
+
+reviews:Review13 :decision-event "Publication of ISO 19117:2012"@en;
+  :last-review "2009-11-25"^^xsd:date;
+  :note "Authoritative reference changed from ISO 19117:2005 to ISO 19117:2012. Lineage source added as ISO 19117:2005."@en;
+  :review-status "final" .
+
+reviews:Review14 :decision-event "Publication of ISO 19101-1:2014"@en;
+  :last-review "2014-11-01"^^xsd:date;
+  :note "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en;
+  :review-status "final" .
+
+reviews:Review15 :decision-event "Publication of ISO 19101-1:2014"@en;
+  :last-review "2010-10-12"^^xsd:date;
+  :note "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en;
+  :review-status "final" .
+
+reviews:Review17 :decision-event "Publication of ISO 19150-2:2015(E)"@en;
+  :last-review "2009-08-31"^^xsd:date;
+  :note "This entry is superseded by the entry for \"association <UML>\" in ISO 19150-2:2015"@en;
+  :review-status "final" .
+
+reviews:Review18 :decision-event "Publication of ISO 19150-2:2015(E)"@en;
+  :last-review "2009-08-31"^^xsd:date;
+  :note "This entry is superseded by the entry for \"association <UML>\" in ISO 19150-2:2015"@en;
+  :review-status "final" .
+
+reviews:Review19 :decision-event "Publication of ISO 19115-2:2019(E)"@en;
+  :last-review "2019-01-01"^^xsd:date;
+  :note "Authoritative reference changed from ISO/IEC 2382-17:1999 to ISO/IEC 2382:2015, 2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry.. Lineage source added as ISO 19115-2:2009(E)"@en;
+  :review-status "final" .
+
+reviews:Review20 :decision-event "Publication of ISO 19103:2015"@en;
+  :last-review "2009-01-14"^^xsd:date;
+  :note "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en;
+  :review-status "final" .
+
+reviews:Review24 :decision-event "Publication of documentISO 19107:2019(E)"@en;
+  :last-review "2019-12-02"^^xsd:date;
+  :note "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en;
+  :review-status "final" .
+
+info:Info2 :clause "3.4.9";
+  :date-accepted "2008-11-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info9 :clause "(Adapted from)"@en;
+  :date-accepted "2005-07-15"^^xsd:date;
+  :date-amended "2015-12-01"^^xsd:date;
+  :info-status "retired"@en .
+
+info:Info10 :clause "3.4.16, modified — the Note 1 to entry has been added.";
+  :date-accepted "2008-11-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info13 :clause "4.1";
+  :date-accepted "2005-06-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info14 :clause "4.1.1";
+  :date-accepted "2002-07-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info15 :clause "4.1.2";
+  :date-accepted "2002-07-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info17 :clause "4.1.2";
+  :date-accepted "2005-07-15"^^xsd:date;
+  :date-amended "2015-07-01"^^xsd:date;
+  :info-status "superseded"@en .
+
+info:Info18 :clause "(E), 3.3";
+  :date-accepted "2004-07-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info19 :clause "2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry.";
+  :date-accepted "2009-02-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info3 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info4 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info5 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info6 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info7 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info8 :date-accepted "2002-12-01"^^xsd:date;
+  :date-amended "2008-07-15"^^xsd:date;
+  :info-status "superseded"@en .
+
+info:Info11 :date-accepted "2005-07-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info12 :date-accepted "2004-07-01"^^xsd:date;
+  :date-amended "2008-07-15"^^xsd:date;
+  :info-status "superseded"@en .
+
+info:Info20 :date-accepted "2005-07-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info24 :date-accepted "2003-05-01"^^xsd:date;
+  :date-amended "2019-12-02"^^xsd:date;
+  :info-status "retired"@en .
+
+info:Info26 :date-accepted "2004-07-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info27 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info28 :date-accepted "2005-07-15"^^xsd:date;
+  :date-amended "2015-12-01"^^xsd:date;
+  :info-status "retired"@en .
+
+info:Info29 :date-accepted "2003-05-01"^^xsd:date;
+  :info-status "valid"@en .
+
+info:Info30 :date-accepted "2003-05-01"^^xsd:date;
+  :date-amended "2019-12-02"^^xsd:date;
+  :info-status "superseded"@en .
+
+info:Info21 :date-accepted "2003-05-01"^^xsd:date;
+  :date-amended "2019-12-02"^^xsd:date;
+  :info-status "retired"@en .
+
+info:Info35 :date-accepted "2000-12-15"^^xsd:date;
+  :info-status "valid"@en .
+
+reviews:Review2 :review-status "final"@en .
+
+reviews:Review3 :review-status "pending"@en .
+
+reviews:Review4 :review-status "pending"@en .
+
+reviews:Review5 :review-status "pending"@en .
+
+reviews:Review6 :review-status "pending"@en .
+
+reviews:Review8 :review-status " " .
+
+reviews:Review9 :review-status "final"@en .
+
+reviews:Review10 :review-status "final"@en .
+
+reviews:Review11 :review-status "final"@en .
+
+reviews:Review12 :review-status " " .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> lang:ara-note
+    "ملاحظة: حالة الاختبار التجريدي هي عبارة عن أساس منهجي لاشتقاق حالات اختبار قابلة للتطبيق. ويتم التعبير بشكل واضح ومقتضب عن غرض اختبار واحد أو أكثر في حالة الاختبار التجريدية. وتكون حالة الاختبار التجريدية مستقلة عن كل من التنفيذ والقيم. وينبغي أن تكون مكتملة بمعنى أن تشكل أساسا كافيا لإصدار حكم واضح وغير ملتبس مبني على نتيجة كل اختبار يتم إجراؤه ويخضع للملاحظة ( أي سلسلة الأحداث المتتالية للاختبار)"@ar;
+  lang:dan-note "Bemærk til posten: Et abstrakt testforløb er et formelt grundlag for at kunne udvikle eksekverbare testforløb. Et eller flere testformål er samlet i det abstrakte testforløb. Et abstrakt testforløb er både uafhængigt af implementeringen og af værdierne. Testforløbet bør være fuldstændigt, dvs. tilstrækkeligt omfattende til at fremkomme med en testafgørelse, som kan knyttes utvetydigt til ethvert muligt testudfald (fx en sekvens af test events)."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: An abstract test case is a formal basis for deriving executable test cases One or more test purposes are encapsulated in the abstract test case. An abstract test case is independent of both the implementation and the values. It should be complete in the sense that it is sufficient to enable a test verdict to be assigned unambiguously to each potentially observable test outcome (i.e. sequence of test events)."@en;
+  lang:fin-note "HUOM.: Abstrakti testitapaus on suoritettavissa olevien testitapausten johtamisen muodollinen perusta. Abstraktiin testitapaukseen liittyy yksi tai useampi testaustarkoitus. Abstrakti testitapaus on toteutuksesta ja arvoista riippumaton. Abstraktin testitapauksen tulisi olla täydellinen, eli sen tulisi mahdollistaa yksikäsitteisen lausunnon (hyväksyntä/hylkäys) antaminen jokaiselle mahdollisesti havaittavalle testitulokselle (testitapahtumajonolle)."@fi;
+  lang:jpn-note "備考： 抽象試験項目は，実行可能試験項目を導き出すための基礎として用いられる。抽象試験項目は，一つ以上の試験目的を含む。抽象試験項目は，実装及び値の両方から独立している。観測可能なすべての試験結果（試験中の一連の出力）に対して，あいまい性がなく試験判定を下すことができるという意味で，抽象試験項目は，完全であることが望ましい"@ja .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> lang:ara-note
+    "ملاحظة: الوحدات التكاملية المستقلة للاختبار التجريدي يمكن تعشيشها على نسق تسلسل هرمي"@ar;
+  lang:dan-note "Bemærk til posten: Abstrakte testmoduler kan hænge hierarkisk sammen."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Abstract test modules may be nested in a hierarchical way."@en;
+  lang:fin-note "HUOM.: Abstrakteja testausmoduuleja voi sijoittaa sisäkkäin hierarkkisesti."@fi;
+  lang:jpn-note "備考： 抽象試験モジュールは，階層的な方法で，入れ子になってもよい。"@ja;
+  lang:kor-note "비고: 추상 시험 모듈은 계층적 구조를 가질 수 있다."@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> lang:ara-note
+    "ملاحظة: توصف مجموعات الاختبار التجريدي في فقرة للمطابقة"@ar;
+  lang:dan-note "Bemærk til posten: Abstrakte testsuiter er beskrevet i en overensstemmelsesklausul."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Abstract test suites are described in a conformance clause."@en;
+  lang:fin-note "HUOM.: Abstraktit testisarjat on kuvattu vaatimuksenmukaisuuden määrittelyssä."@fi;
+  lang:jpn-note "備考： 抽象試験項目群は，適合性の箇条において記述する。"@ja;
+  lang:kor-note "비고: 추상 시험 스위트는 적합성 조항에서 기술되어 있다."@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> lang:ara-note
+    "ملاحظة 1: هذا يشمل تخطيط وتنفيذ عدة أنواع من الاختبارات (مثل الاختبارات الوظيفية واختبارات الحجم واختبارات الأداء) التي تثبت أن التنفيذ يفي بجميع شروط ومتطلبات المستخدم"@ar,
+    "ملاحظة 2: هذا لا يشكل جزءا من اختبار المطابقة."@ar;
+  lang:dan-note "Bemærk 1 til posten: Dette omfatter planlægning og gennemførelse af forskellige slags test (fx funktions-, volumen-, performancetest), som viser, at implementeringen opfylder brugerens krav."@da,
+    "Bemærk 2 til posten: Dette indgår ikke i overensstemmelsestest."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note 1 to entry: This includes the planning and execution of several kinds of tests (e.g. functional, volume, performance tests) that demonstrate that the implementation satisfies the user requirements."@en,
+    "Note 2 to entry: This is not a part of conformance testing "@en;
+  lang:fin-note "HUOM. 1: Hyväksymistestaukseen kuuluu monenlaisten käyttäjävaatimusten täyttymistä mittaavien testien (esim. toiminnallisuus-, kuormitus- ja suorituskykytestit) suunnittelua ja toteuttamista."@fi,
+    "HUOM. 2: Hyväksymistestaus ei kuulu vaatimuksenmukaisuuden testaukseen."@fi;
+  lang:fra-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:jpn-note "備考 1： 受入試験には，実装が利用者の要求を満たしていることを立証するための，種々の試験（機能性試験，数量試験，性能試験など）の計画及び実行が含まれる。"@ja,
+    "備考 2： 受入試験は，適合性試験の一部ではない。"@ja;
+  lang:kor-note "비고 1: 사용자 요구 사항에 맞게 구현되는지를 시연하는 여러 종류의 시험(기능 시험, 용량 시험, 성능 시험 등)을 기획하고 실행하는 것이 검수 시험에 포함된다."@ko,
+    "비고 2: 검수 시험은 적합성 시험의 일부가 아니다."@ko .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar;
+  lang:dan-note "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da;
+  lang:eng-note "A test result can be observations or measurements."@en;
+  lang:fin-note "HUOM.: Testitulos voi olla havainto tai mittaus."@fi;
+  lang:fra-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff>;
+  lang:jpn-note "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja, "備考 2： 参照値は，論議領域を実現するものとして採択された値である。"@ja;
+  lang:kor-note "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar;
+  lang:dan-note "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: A test result can be observations or measurements."@en;
+  lang:fin-note "HUOM.: Testitulos voi olla havainto tai mittaus."@fi;
+  lang:fra-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff>;
+  lang:jpn-note "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja, "備考 2： 参照値は，論議領域を実現するものとして採択された値である"@ja;
+  lang:kor-note "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> lang:ara-note "ملاحظة: أنظر التركيب"@ar;
+  lang:dan-note "Bemærk til posten: Se komposition"@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: See composition"@en;
+  lang:fin-note "HUOM.: Katso vahva/aito kooste (composition)."@fi;
+  lang:kor-note "비고: 합성 참고"@ko;
+  lang:rus-note "Примечание: См. термин «композиция»"@ru, <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> lang:ara-note "ملاحظة 1: أنظر ارتفاع مجسم القطع الناقص والارتفاع المتصل بالجاذبية"@ar,
+    "ملاحظة 2: ارتفاع نقطة تقع خارج السطح ويعامل كقيمة موجبة ؛ أما الارتفاع ذو القيمة السالبة فيصنف على أنه عمق."@ar;
+  lang:eng-note "Note 1 to entry: See ellipsoidal height and gravity-related height."@en,
+    "Note 2 to entry: Height of a point outside the surface treated as positive; negative height is designated as depth."@en;
+  lang:fin-note "HUOM. 1: Katso myös ellipsoidinen korkeus ja painovoimaan perustuva korkeus."@fi,
+    "HUOM. 2: Termillä korkeus viitataan pinnan yläpuolella olevan pisteen etäisyyteen pinnasta; negatiivista korkeutta nimitetään syvyydeksi."@fi;
+  lang:fra-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff>;
+  lang:kor-note "비고 1: 타원체의 높이와 중력과 관련된 높이 참조"@ko, "비고 2: 양으로 여겨지는 표면 외부 지점의 높이, 음의 높이는 깊이라고 불린다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание 1: Высота точки, расположенная выше отсчетной поверхности, является положительной, а ниже нее – отрицательной"@ru,
+    "Примечание 2: Высота точки над поверхностью считается положительной; отрицательная высота называется глубиной"@ru;
+  lang:spa-note "Nota 1: Véase altitud elipsoidal y altitud ligada a la gravedad."@es,
+    "Nota 2: La altitud de un punto, sí es hacia el exterior de la superficie, se considera positiva; la altitud negativa se designa como profundidad."@es .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> lang:ara-note "ملاحظة: الأرقام والحروف والرموز والعلامات كلها أمثلة للحاشية"@ar;
+  lang:dan-note "Bemærk til posten: Tal, bogstaver, symboler og signaturer er eksempler på annotation."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Numbers, letters, symbols, and signs are examples of annotation"@en;
+  lang:fin-note "HUOM.: Viitemerkintöjä ovat esimerkiksi numerot, kirjaimet, symbolit ja merkit."@fi;
+  lang:kor-note "비고: 숫자, 문자, 기호 및 부호 등"@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:pol-note "UWAGA: Przykładami adnotacji są liczby, litery, symbole i znak."@po;
+  lang:rus-note "Примечание: Примерами аннотаций служат цифры, буквы, обозначения и подписи"@ru,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff>;
+  lang:spa-note "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> lang:ara-note "ملاحظة: الربط الثنائي هو عبارة عن ربط بين مصنِّفَيْن بالضبط ( ويشمل ذلك إمكانية الربط من مصنِّف إلى نفسه)"@ar;
+  lang:dan-note "Bemærk til posten: En binær association er en association imellem nøjagtig to klassifikatorer (inkl. muligheden for en association fra en klassifikator til sig selv)."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: A binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself)."@en;
+  lang:fin-note "HUOM.: Binäärinen assosiaatio määrittää suhteen täsmälleen kahden luokittelijan välillä (mukaan lukien luokittelijan assosiaatiosuhde itseensä)."@fi;
+  lang:kor-note "비고: 이진 연관 관계는 정확하게 두 분류자 간의 연관 관계이다."@ko;
+  lang:rus-note "Примечание: Бинарная ассоциация является ассоциацией между двумя классификаторами, включая возможность ассоциации классификатора с самим собой"@ru;
+  lang:spa-note "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> lang:ara-note "ملاحظة: في خدمات تحديد المواقع ، يشير هذا عادة إلى اتجاه قواعد أداء المعدات لدى المستخدم مثل الطائرة ، أو المركب (قارب) أو السيارة"@ar;
+  lang:dan-note "Bemærk til posten: I stedsbestemmelsestjenester er dette normalt orienteringen af brugerens platform, såsom et luftfartøj, en båd eller en bil."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: In positioning services, this is usually the orientation of the user's platform, such as an aircraft, boat, or automobile."@en;
+  lang:fin-note "HUOM.: Paikannuspalveluissa termillä suuntaus viitataan tavallisesti käyttäjän alustan, esimerkiksi lentokoneen, laivan tai auton, suuntaan."@fi;
+  lang:kor-note "비고: 측위 서비스의 경우, 보통 항공기, 배, 자동차 등 사용자 플랫폼의 방향을 의미한다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание: В системах позиционирования это обычно ориентация платформы пользователя, например, самолета, судна или автомобиля"@ru;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> lang:ara-note "ملاحظة: عبارة عن وصف لخاصية هندسية ، أو طوبولوجية ، أو موضوعية أو أي خاصية أخرى للكيان المعني."@ar;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Describes a geometrical, topological, thematic, or other characteristic of an entity"@en;
+  lang:kor-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание: Описывает геометрическую, топологическую, тематическую и другие характеристики сущности"@ru;
+  lang:spa-note "Nota: Describe una característica geométrica, topológica, temática o cualquier otra característica de una entidad"@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> lang:ara-note "ملاحظة: منطقيا ، الحقيبة هي عبارة عن مجموعة مكونة من أزواج < البند ، الإحصاء>"@ar;
+  lang:dan-note "Bemærk til posten: Logisk set er en samling organiseret i par <element, antal>"@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Logically, a bag is a set of pairs <item, count>."@en;
+  lang:fin-note "HUOM.: Monijoukkoa voidaan loogisesti kuvata parien <tietokohde, lukumäärä> joukkona."@fi;
+  lang:jpn-note "備考： 論理的には，多重集合は，＜項目，項数＞の対の集合である。"@ja;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo> <https://isotc211.geolexica.org/api/ld/info#Info24>;
+  lang:kor-note "비고: 논리적으로 다중 집합은 <항목, 수>쌍의 집합이다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:pol-note "UWAGA: W sensie logicznym wielozbiór można uważać za kolekcję par typu <element, krotność tego elementu w kolekcji>."@po;
+  lang:rus-note "Примечание: Логически, мультимножество – это набор пар < item, count >."@ru;
+  lang:spa-note "Nota: Lógicamente, una bolsa es un conjunto de pares <item, contador>"@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 逻辑上，包是<项,数目>对的集合。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info29>;
+  lang:ara-note "ملاحظة: تستخدم كلمة الحد أكثر ما تستخدم في السياق الهندسي ، وفي هذا السياق تفهم المجموعة على أنها تعني مجموعة نقاط أو مجموعة من الأجسام التي تمثل تلك النقاط . و في حالات أخرى ، يستخدم المصطلح استخداما مجازيا لوصف حالة التحول بين كيان ما وبقية ما في المجال الذي ينتمي إليه"@ar;
+  lang:dan-note "Bemærk til posten: Afgrænsning anvendes almindeligvis inden for geometrien, hvor mængden er en samling af punkter eller en samling af objekter, der repræsenterer disse punkter. På andre områder anvendes termen metaforisk til at beskrive overgangen mellem en entitet og resten af dens universe of discourse"@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note to entry: Boundary is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects that represent those points. In other arenas, the term is used metaphorically to describe the transition between an entity and the rest of its domain of discourse."@en;
+  lang:fin-note "HUOM.: Käsitettä rajaus käytetään yleisimmin geometriassa, jossa määritelmän sanalla joukko tarkoitetaan kokoelmaa pisteitä tai pisteitä vastaavia objekteja. Muissa yhteyksissä termiä rajaus käytetään kuvaannollisesti viittaamaan tietyn kokonaisuuden ja sen ulkopuolisen maailman väliseen siirtymään."@fi;
+  lang:jpn-note "備考： 境界が最もよく使用されるのは，集合が点の集まり又はこれらの点を表すオブジェクトの集まりであるような幾何に関する記　述においてである。他の分野では，この用語を，実体とその論議領域での余事象との遷移領域を比ゆ（喩）的に記述するために使用する。"@ja;
+  lang:kor-note "비고: 경계는 기하 환경에서 가장 많이 사용된다. 기하는 점 집합체 또는 그 점들을 표현하는 객체 집합체로 구성된다. 다른 측면에서 경계는 어떤 개체와 그 개체를 제외한 논의의 영역 간의 전이역을 기술하기 위하여 은유적 용어로 사용된다."@ko;
+  lang:msa-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:pol-note "UWAGA: Granica jest najczęściej używana w kontekście geometrii, gdzie zbiór stanowi kolekcję punktów lub kolekcję obiektów reprezentujących te punkty. W innych dziedzinach wyrażenie granica jest stosowane metaforycznie do opisu przejścia między obiektem a resztą rozważanej dziedziny."@po;
+  lang:rus-note "Примечание: Термин «граница» повсеместно используется в контексте геометрии, где множество представляет собой совокупность точек или совокупность объектов, состоящих из этих точек. В других сферах деятельности указанный термин используется образно для описания переходного участка между сущностью и остальной предметной областью"@ru;
+  lang:spa-note "Nota: El término frontera se usa normalmente en el contexto de geometría, siendo conjunto, una colección de puntos o de objetos que representan a esos puntos. En otros ámbitos, el término se usa metafóricamente para describir la transición entre una entidad y el resto del universo de discurso."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 边界通常用在几何结构中，这里的几何是点的集合或代表这些点的对象的集合。在别的场合，这个术语通常隐喻在实体与论域其余部分间的跃迁。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info20>;
+  lang:ara-note "ملاحظة 1: الصفة لغة تعادل ربط التركيب ؛ ولكن المقصد والاستخدام يختلفان دائما"@ar,
+    "ملاحظة 2: استخدم مصطلح (معلم) في هذا التعريف بمعناه المعتمد في اللغة الموحَّدة للنمذجة UML وهو مختلف عن تعريفه المنصوص عليه في الفقرة 4-1 من هذه المواصفة الفنية."@ar;
+  lang:dan-note "Bemærk til posten: En attribut svarer semantisk til en sammensætningsassociation; men formål og anvendelse er normalt forskellig fra denne."@da;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:eng-note "Note 1 to entry: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different."@en,
+    "Note 2 to entry:-Feature- used in this definition is the UML meaning of the term and is not meant as defined in 4.1 of this Technical Specification. "@en;
+  lang:kor-note "비고 1: 속성은 의미적으로 합성 연관과 동일하다. 그러나 의미와 용법은 일반적으로 다르다."@ko, "비고 2: 정의에 사용된 “특성(Feature)”은 KS X ISO 19103에 정의된 의미가 아닌 UML 용어이다."@ko,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:rus-note "Примечание 1: Атрибут семантически эквивалентен ассоциации композиции, однако их содержание и использование обычно различаются"@ru,
+    "Примечание 2: -Объект-, исходя из этого определения, это объект в терминологии UML."@ru,
+    <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff>;
+  lang:spa-note "Nota 1: Un atributo es semánticamente equivalente a una asociación de composición; sin embargo, la intención y el uso normalmente es diferente."@es,
+    "Nota 2: -Aspecto- tal y como se ha usado en esta definición, tiene el significado UML del término y no aquel definido en el apartado 4.1 de esta Especificación Técnica."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注 1： 一个属性语义上等同于一个组合关联，但是，目的和用途是不同的。"@zh, "注 2： 该定义使用的“特性（feature)”是UML的术语含义，不是本技术规范第4.1章定义的含义。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info2>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:kor, lang:rus, lang:spa, lang:swe;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info4>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info10>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info26>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail>;
+  lang:fra-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransDiff> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info27>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info28>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info30>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info31>;
+  lang:deu-note <https://isotc211.geolexica.org/api/ld/geolexica#DefnTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info3>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:kor-note "비고: 추상 시험 케이스는 실행 가능 시험 케이스에 대한 형식적인 틀을 제공하며 하나 이상의 시험 목적을 갖는다. 추상 시험 케이스는 구현과 값의 양쪽에 모두 독립해 있다. 관측 가능한 모든 시험 결과는 시험 판정을 내릴 수 있도록 명확해야 한다(예: 시험 이벤트의 연속)"@ko;
+  lang:rus-note "Примечание: Абстрактный тест является формальной основой для случаев исполняемого теста. Абстрактный тест не зависит ни от реализации объекта, ни от определенных значений. Абстрактный тест должен быть выполнен в таком объеме, чтобы по его итогам можно было подготовить непротиворечивое заключение для каждого потенциально возможного результата тестирования (т.е. последовательности шагов тестирования) "@ru;
+  lang:spa-note "Nota: Una prueba genérica es una base formal para obtener pruebas ejecutables. Uno o más propósitos de prueba se encapsulan en una prueba genérica. Una prueba genérica es independiente tanto de la implementación como de los valores. Debería ser completa en el sentido de ser suficiente para permitir asignar inequívocamente un veredicto de prueba a cada resultado de la prueba potencialmente observable (es decir secuencia de eventos de ensayo)."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "果（即：测试事件的序列）当中。"@zh, "注： 抽象测试用例是导出可执行测试用例的形式化基础。在抽象测试用例里包含有一个或多个测试目的。一个抽象测试用例不取决于实现，也不取决于数值。它应当是完整的，足以将测试判定被明确地分配到每个潜在的可观察的测试结"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info5>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:rus-note "Примечание: Модули абстрактных тестов могут вкладываться друг в друга, образуя иерархическую структуру"@ru;
+  lang:spa-note "Nota: Los módulos de pruebas genéricas pueden estar anidados de un modo jerárquico."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 抽象测试模块可以层次镶嵌。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info6>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:rus-note "Примечание: Комплексы абстрактных тестов описываются в разделе «Соответствие» международного стандарта"@ru;
+  lang:spa-note "Nota: Los conjuntos de pruebas genéricas se describen en un capítulo de conformidad."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 抽象测试套件由一致性条款进行描述。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info7>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:msa, lang:rus, lang:spa,
+    lang:swe, lang:zho;
+  lang:rus-note "Примечание 1: Включает планирование и выполнение различных видов тестов, например, на функциональность, полноту, эффективность, которые показывают, удовлетворяет ли реализация требованиям пользователя"@ru,
+    "Примечание 2: Не является частью тестирования на соответствие"@ru;
+  lang:spa-note "Nota 1: Esto incluye la planificación y ejecución de varias clases de pruebas (por ejemplo funcionales, de volumen, de desempeño) que demues¬tran que la implementación satisface los requisitos de usuario."@es,
+    "Nota 2: No es una parte de la prueba de conformidad."@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注 1： 这个过程包括几种类型测试（例如：功能、容量、性能测试）的设计和执行，用来表明该实现是否满足的用户要求。"@zh, "注 2： 验收测试不作为一致性测试的组成部分。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info15>;
+  lang:rus-note "Примечание: Прикладная схема описывает содержимое, структуру и ограничения, накладываемые на информацию (4.22) в определенной области применения."@ru .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info8>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:msa, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:spa-note "Nota: Un resultado pueden ser observaciones o medidas"@es;
+  lang:swe-note "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv;
+  lang:zho-note "注： 测试结果可以是观测结果或量测结果。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info9>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:eng, lang:fin, lang:fra, lang:kor, lang:rus, lang:spa, lang:swe, lang:zho;
+  lang:spa-note "Nota: Un resultado pueden ser observaciones o medidas"@es;
+  lang:swe-note "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv;
+  lang:zho-note "注： 测试结果可以是观测结果或量测结果。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info11>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:rus, lang:spa, lang:swe, lang:zho;
+  lang:spa-note "Nota: Véase la composición"@es;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注： 参见组合。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info12>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  lang:swe-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail>;
+  lang:zho-note "注 1： 参加椭球面高和重力高"@zh, "注 2： 向地表面外的高度视为正，相反的高度视为深度"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info13>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:pol, lang:rus, lang:spa,
+    lang:swe, lang:zho;
+  lang:zho-note "注： 数字,字母,符号和标记是注记的例子。"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info17>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:rus, lang:spa, lang:swe, lang:zho;
+  lang:zho-note "注： 二元关联确指两个类元之间的关联（包括一个类元与其本身的关联）"@zh .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info14>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:rus, lang:spa, lang:swe,
+    lang:zho .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info18>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:dan,
+    lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:rus, lang:spa, lang:swe,
+    lang:zho .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> <https://isotc211.geolexica.org/api/ld/geolexica#hasInfo>
+    <https://isotc211.geolexica.org/api/ld/info#Info19>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode> lang:ara, lang:deu,
+    lang:eng, lang:kor, lang:msa, lang:nld, lang:rus, lang:spa, lang:swe .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:kor, lang:rus, lang:spa, lang:swe .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:nld,
+    lang:rus, lang:spa, lang:swe, lang:zho .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:eng, lang:fin, lang:fra, lang:kor, lang:nld, lang:rus, lang:spa,
+    lang:swe, lang:zho .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:eng, lang:fin, lang:fra, lang:kor, lang:rus, lang:spa, lang:swe,
+    lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review26> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:rus, lang:spa,
+    lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review27> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:fin, lang:fra, lang:kor, lang:msa, lang:rus,
+    lang:spa, lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review28> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:msa,
+    lang:pol, lang:rus, lang:spa, lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review29> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:msa,
+    lang:pol, lang:rus, lang:spa, lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review30> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:deu, lang:eng, lang:fin, lang:fra, lang:jpn, lang:kor, lang:msa,
+    lang:pol, lang:rus, lang:spa, lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review31> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> <https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode>
+    lang:ara, lang:dan, lang:eng, lang:fin, lang:fra, lang:kor, lang:nld, lang:rus, lang:spa,
+    lang:swe, lang:zho;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasReview> <https://isotc211.geolexica.org/api/ld/reviews#Review20> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abbreviation> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review2>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:korRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review3>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review4>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review5>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review6>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#accuracy> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review8>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry, lang:korRegistry,
+    lang:msaRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#actor> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review9>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry, lang:rusRegistry,
+    lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#admitted_term> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review10>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:korRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#aggregation> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review11>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry, lang:korRegistry,
+    lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review12>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> <https://isotc211.geolexica.org/api/ld/geolexica#engRegistry>,
+    lang:araRegistry, lang:danRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:msaRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry,
+    lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#annotation> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review13>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry,
+    lang:msaRegistry, lang:polRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry,
+    lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review14>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry,
+    lang:msaRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#application_schema> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review15>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry,
+    lang:msaRegistry, lang:nldRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry,
+    lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#association> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review17>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry,
+    lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attitude> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review18>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:korRegistry,
+    lang:msaRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review19>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:deuRegistry,
+    lang:engRegistry, lang:korRegistry, lang:msaRegistry, lang:nldRegistry, lang:rusRegistry,
+    lang:spaRegistry, lang:sweRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> <https://isotc211.geolexica.org/api/ld/geolexica#hasReview>
+    <https://isotc211.geolexica.org/api/ld/reviews#Review24>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#origin> lang:araRegistry, lang:danRegistry,
+    lang:deuRegistry, lang:engRegistry, lang:finRegistry, lang:fraRegistry, lang:jpnRegistry,
+    lang:korRegistry, lang:msaRegistry, lang:polRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:jpnRegistry, lang:korRegistry, lang:msaRegistry, lang:rusRegistry,
+    lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#base_standard> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:korRegistry, lang:rusRegistry, lang:spaRegistry, lang:sweRegistry,
+    lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#basic_test> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:jpnRegistry, lang:korRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#behaviour> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:korRegistry, lang:msaRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#boundary> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:jpnRegistry, lang:korRegistry, lang:msaRegistry, lang:polRegistry,
+    lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#buffer> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:jpnRegistry, lang:korRegistry, lang:msaRegistry, lang:polRegistry,
+    lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#calendar> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:jpnRegistry, lang:korRegistry, lang:msaRegistry, lang:polRegistry,
+    lang:rusRegistry, lang:spaRegistry, lang:sweRegistry, lang:zhoRegistry .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attributeUML> <https://isotc211.geolexica.org/api/ld/geolexica#origin>
+    lang:araRegistry, lang:danRegistry, lang:deuRegistry, lang:engRegistry, lang:finRegistry,
+    lang:fraRegistry, lang:korRegistry, lang:nldRegistry, lang:rusRegistry, lang:spaRegistry,
+    lang:sweRegistry, lang:zhoRegistry;
+  lang:nld-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite> <https://isotc211.geolexica.org/api/ld/geolexica#abbreviation>
+    "ATS"@da, "ATS"@de, "ATS"@en, "ATS"@es, "ATS"@ja, "ATS"@ko, "ATS"@sv, "ATS"@zh, "م ا ت"@ar .
+
+<https://isotc211.geolexica.org/api/ld/concepts#altitude> <https://isotc211.geolexica.org/api/ld/geolexica#abbreviation>
+    "h or H"@en, "h or H"@es, "h or H"@sv, "h or H"@zh, "h; H"@fi, "h; H"@ko, "ع, ر"@ar .
+
+<https://isotc211.geolexica.org/api/ld/concepts#attribute> lang:nld-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/concepts#bag> lang:nld-note <https://isotc211.geolexica.org/api/ld/geolexica#NoteTransUnavail> .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review2> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19104:2016"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2013-01-29"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.9. Lineage source added as ISO/TS 19104:2008"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review8> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    " ";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Result of FDIS Ballot for ISO 6709:2008"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2007-12-07"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Definition originally taken from ISO 3534-1 was later superseded by definition in ISO 3534-2:2006"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> " " .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review9> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19103:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-01-14"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "The entry has been omitted from the superseding standard (ISO 19103:2015)."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review10> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19104:2016"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2013-01-29"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 1087-1:2000 to ISO 1087-1:2000, 3.4.16, modified — the Note 1 to entry has been added.. Lineage source added as ISO/TS 19104:2008"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review11> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19103:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-01-14"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review12> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    " ";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Result of FDIS Ballot for ISO 6709:2008"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2007-12-07"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Definition in ISO 19116:2002 was superseded by a new definition in ISO 6709."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> " " .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review13> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19117:2012"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-11-25"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 19117:2005 to ISO 19117:2012. Lineage source added as ISO 19117:2005."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review14> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19101-1:2014"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2014-11-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review15> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19101-1:2014"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2010-10-12"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review17> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19150-2:2015(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-08-31"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "This entry is superseded by the entry for \"association <UML>\" in ISO 19150-2:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review18> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19150-2:2015(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-08-31"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "This entry is superseded by the entry for \"association <UML>\" in ISO 19150-2:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review19> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19115-2:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2019-01-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO/IEC 2382-17:1999 to ISO/IEC 2382:2015, 2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry.. Lineage source added as ISO 19115-2:2009(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review20> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19103:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-01-14"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review24> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of documentISO 19107:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2019-12-02"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review28> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19103:2015"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2009-01-14"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "The entry has been omitted from the superseding standard (ISO 19103:2015)."@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review29> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of ISO 19107:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2019-12-02"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "Authoritative reference changed from ISO 19107:2003 to ISO 19107:2019(E), 3.6. Lineage source added as ISO 19107:2003(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review30> <https://isotc211.geolexica.org/api/ld/geolexica#decision>
+    "accepted";
+  <https://isotc211.geolexica.org/api/ld/geolexica#decision-event> "Publication of document ISO 19107:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#last-review> "2019-12-02"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#note> "This entry is superseded by the entry for buffer in ISO 19107:2019(E)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "final" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review3> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review4> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review5> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review6> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending"@en .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review27> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending" .
+
+<https://isotc211.geolexica.org/api/ld/reviews#Review35> <https://isotc211.geolexica.org/api/ld/geolexica#last-review>
+    "2019-07-05"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#review-status> "pending" .
+
+<https://isotc211.geolexica.org/api/ld/info#Info2> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "3.4.9";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2008-11-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-1087-1-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info3> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info4> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info5> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info6> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info7> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info8> <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted>
+    "2002-12-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2008-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-3534-1-1993>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "superseded"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info9> <https://isotc211.geolexica.org/api/ld/geolexica#clause>
+    "(Adapted from)"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2005-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2015-12-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-IEC-19501-2005>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "retired"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info10> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "3.4.16, modified — the Note 1 to entry has been added.";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2008-11-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-1087-1-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info11> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2005-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#UML-1x>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info12> <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted>
+    "2004-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2008-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19116-2004>,
+    <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19116-2019>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "superseded"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info13> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "4.1";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2005-06-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19117-2012>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info14> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "4.1.1";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2002-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19101-1-2014>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info15> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "4.1.2";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2002-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19101-1-2014>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info17> <https://isotc211.geolexica.org/api/ld/geolexica#clause>
+    "4.1.2";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2005-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2015-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-IEC-19501>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "superseded"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info18> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "(E), 3.3";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2004-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19116-2019>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info19> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#clause> "2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry.";
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2009-02-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-IEC-2382-2015>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info20> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2005-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#UML-1x>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info24> <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted>
+    "2003-05-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2019-12-02"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19107-2003>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "retired"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info26> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2004-07-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19106-2004>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info27> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2000-12-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19105-2000>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info28> <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted>
+    "2005-07-15"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2015-12-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-IEC-19501-2005>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "retired"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info29> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2003-05-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19107-2019>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info30> <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted>
+    "2003-05-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-amended> "2019-12-02"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19107-2003>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "superseded"@en .
+
+<https://isotc211.geolexica.org/api/ld/info#Info31> <https://isotc211.geolexica.org/api/ld/geolexica#classification>
+    "preferred"@en;
+  <https://isotc211.geolexica.org/api/ld/geolexica#date-accepted> "2002-09-01"^^xsd:date;
+  <https://isotc211.geolexica.org/api/ld/geolexica#hasSource> <https://isotc211.geolexica.org/api/ld/geolexica#ISO-19108-2002>;
+  <https://isotc211.geolexica.org/api/ld/geolexica#info-status> "valid"@en .

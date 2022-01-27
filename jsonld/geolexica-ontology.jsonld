@@ -3,38 +3,13 @@
     "@id" : "dcterms:MediaType",
     "@type" : "owl:Class"
   }, {
-    "@id" : "dcterms:contributor",
-    "@type" : "owl:AnnotationProperty"
-  }, {
     "@id" : "dcterms:created",
-    "@type" : "owl:AnnotationProperty"
-  }, {
-    "@id" : "dcterms:creator",
-    "@type" : "owl:AnnotationProperty"
-  }, {
-    "@id" : "dcterms:description",
     "@type" : "owl:AnnotationProperty"
   }, {
     "@id" : "dcterms:identifier",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Encodes the term ID for each concept."
-    },
-    "comment" : {
-      "@language" : "en",
-      "@value" : "Entry must be an integer."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "identifier"
-    },
-    "range" : "xsd:integer",
-    "note" : {
-      "@language" : "en",
-      "@value" : "From the DCMI Metadata Terms vocabulary."
-    }
+    "range" : "xsd:integer"
   }, {
     "@id" : "dcterms:issued",
     "@type" : "owl:AnnotationProperty"
@@ -49,9 +24,6 @@
     "@type" : "owl:AnnotationProperty"
   }, {
     "@id" : "dcterms:source",
-    "@type" : "owl:DatatypeProperty"
-  }, {
-    "@id" : "dcterms:title",
     "@type" : "owl:AnnotationProperty"
   }, {
     "@id" : "vann:preferredNamespacePrefix",
@@ -62,33 +34,20 @@
   }, {
     "@id" : "vaem:abbreviation",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "ISO 3166 three-letter language codes assigned to each translation."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Abbreviation"
-    },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "From Vocabulary for Essential Metadata (VAEM)."
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : "xsd:date",
     "@type" : "rdfs:Datatype"
+  }, {
+    "@id" : "xsd:string",
+    "@type" : [ "owl:DatatypeProperty", "rdfs:Datatype" ]
   }, {
     "@id" : "./",
     "@type" : "owl:Ontology",
     "contributor" : "https://www.linkedin.com/in/rhtse/",
     "created" : "2022-01-12",
     "creator" : "https://www.linkedin.com/in/lanemk",
-    "description" : {
-      "@language" : "en",
-      "@value" : "This document presents the core ontology for OSGeo Geolexica, the online glossary for OSGeo."
-    },
     "issued" : " ",
     "license" : "Copyright 2022 OSGeo",
     "modified" : "2022-01-25",
@@ -98,855 +57,266 @@
       "@value" : "OSGeo Geolexica Ontology"
     },
     "preferredNamespacePrefix" : "geolexica",
-    "preferredNamespaceUri" : "https://osgeo.geolexica.org/api/geolexica#",
+    "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/geolexica#",
     "imports" : "http://www.w3.org/2004/02/skos/core",
     "versionIRI" : "v1.0/",
     "versionInfo" : "Version 1.0",
     "note" : {
       "@language" : "en",
-      "@value" : "The Geolexica Ontology is currently under development as of 2022-19-01. Classes, properties, attributes, and axioms are subject to change."
+      "@value" : "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Classes, properties, attributes, and axioms are subject to change."
     }
   }, {
     "@id" : ":ConceptInfo",
-    "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Instance data relative to INFO about selected concept."
-    },
-    "comment" : {
-      "@language" : "en",
-      "@value" : "Attribute values for each concept in the glossary that indicates \"status\", \"classification\", and \"date-accepted\". New attributes may be added to future versions of the ontology."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Information"
-    },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "Info"
-    }
+    "@type" : "owl:Class"
   }, {
     "@id" : ":ConceptReview",
-    "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Instance data for official REVIEW of selected concept."
-    },
-    "comment" : {
-      "@language" : "en",
-      "@value" : "Attribute values for each concept; i.e., \"last review performed\", \"status\", \"decision\", decision event\", and \"notes\". ."
-    },
+    "@type" : "owl:Class"
+  }, {
+    "@id" : ":DefnTransUnavail",
+    "@type" : [ ":DefnUnavail", "owl:NamedIndividual" ],
     "label" : {
       "@language" : "en",
-      "@value" : "Review"
+      "@value" : "Definition Translation Not Available"
     },
-    "prefLabel" : {
-      "@language" : "en",
-      "@value" : "Review"
-    }
+    "xsd:string" : "Definition not provided in this language."
+  }, {
+    "@id" : ":DefnUnavail",
+    "@type" : "owl:Class",
+    "subClassOf" : ":Note"
   }, {
     "@id" : ":GeolexicaConceptScheme",
     "@type" : [ "skos:ConceptScheme", "owl:NamedIndividual" ],
     "description" : {
       "@language" : "en",
-      "@value" : "Geolexica Concept Scheme, in accordance with SKOS applied tp OSGeo Geolexica Glossary or ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."
+      "@value" : "Geolexica Concept Scheme, as SKOS, applied tp OSGeo Geolexica Glossary, ISO/TC 211 Multi-lingual Glossary of Terms (MLGT)."
     },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Geolexica Concept Scheme"
-    },
+    "label" : "Geolexica Concept Scheme",
     "prefLabel" : {
       "@language" : "en",
       "@value" : "Geolexica Concept Scheme"
     }
   }, {
-    "@id" : ":ISO-1087-1-2000",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Terminology work — Vocabulary — Part 1: Theory and application"
-    },
-    "source" : "https://www.iso.org/standard/20057.html",
-    "label" : "ISO 1087-1:2000"
-  }, {
-    "@id" : ":ISO-19101-1-2014",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Geographic information — Reference model — Part 1: Fundamentals"
-    },
-    "source" : "https://www.iso.org/standard/59164.html",
-    "label" : "ISO 19101-1:2014"
-  }, {
-    "@id" : ":ISO-19105-2000",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Geographic information — Conformance and testing"
-    },
-    "source" : "https://www.iso.org/standard/26010.html",
-    "label" : "ISO 19105:2000"
-  }, {
-    "@id" : ":ISO-19116-2004",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Geographic information — Positioning services"
-    },
-    "source" : "https://www.iso.org/standard/37805.html",
-    "label" : "ISO 19116:2004"
-  }, {
-    "@id" : ":ISO-19116-2019",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Geographic information — Positioning services"
-    },
-    "source" : "https://www.iso.org/standard/70882.html",
-    "label" : "ISO 19116:2019"
-  }, {
-    "@id" : ":ISO-19117-2012",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Geographic information — Portrayal"
-    },
-    "source" : "https://www.iso.org/standard/46226.html",
-    "label" : "ISO 19117:2012"
-  }, {
-    "@id" : ":ISO-3534-1-1993",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"
-    },
-    "source" : "https://www.iso.org/standard/8919.html",
-    "label" : "ISO 3534-1:1993"
-  }, {
-    "@id" : ":ISO-IEC-19501",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"
-    },
-    "source" : "https://www.iso.org/standard/32620.html",
-    "label" : "ISO/IEC 19501"
-  }, {
-    "@id" : ":ISO-IEC-19501-2005",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"
-    },
-    "source" : "https://www.iso.org/standard/32620.html",
-    "label" : "ISO/IEC 19501:2005"
-  }, {
-    "@id" : ":ISO-IEC-2382-2015",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "Information technology — Vocabulary"
-    },
-    "source" : "https://www.iso.org/standard/63598.html",
-    "label" : "ISO/IEC 2382:2015"
-  }, {
     "@id" : ":JSON",
     "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "JSON file representation of concept."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "JSON Linked Data API"
-    },
-    "subClassOf" : ":LinkedDataAPI",
-    "altLabel" : "JSON"
+    "subClassOf" : ":LinkedDataAPI"
   }, {
     "@id" : ":JSON-LD",
     "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "JSON-LD file representation of concept"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "JSON-LD Linked Data API"
-    },
-    "subClassOf" : ":LinkedDataAPI",
-    "altLabel" : "SKOS IN JSON-LD"
+    "subClassOf" : ":LinkedDataAPI"
   }, {
     "@id" : ":LangCode",
-    "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "ISO-3166 3-letter language code."
-    },
-    "comment" : "Use for each language definition in the glossary",
-    "label" : {
-      "@language" : "en",
-      "@value" : "3-letter Language Code"
-    }
+    "@type" : "owl:Class"
   }, {
     "@id" : ":LinkedDataAPI",
     "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Class for linked data APIs, distinct file formats for each concept."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Linked Data API"
-    },
     "subClassOf" : "dcterms:MediaType"
   }, {
     "@id" : ":MLGTGlossary",
     "@type" : [ "skos:Collection", "owl:NamedIndividual" ]
+  }, {
+    "@id" : ":Note",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : ":NoteSourceDiff",
+    "@type" : "owl:Class",
+    "subClassOf" : ":Note"
+  }, {
+    "@id" : ":NoteTransDiff",
+    "@type" : [ ":NoteSourceDiff", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Translation Difference; Source to Normative"
+    },
+    "xsd:string" : "This translated term may not be from the same source as the normative term."
+  }, {
+    "@id" : ":NoteTransUnavail",
+    "@type" : [ ":NoteUnavail", "owl:NamedIndividual" ],
+    "label" : {
+      "@language" : "en",
+      "@value" : "Note Translation Not Available"
+    },
+    "xsd:string" : "This note has not been translated."
+  }, {
+    "@id" : ":NoteUnavail",
+    "@type" : "owl:Class",
+    "subClassOf" : ":Note"
   }, {
     "@id" : ":OSGeoGlossary",
     "@type" : [ "skos:Collection", "owl:NamedIndividual" ],
     "seeAlso" : "https://osgeo.geolexica.org/",
     "note" : [ {
       "@language" : "en",
-      "@value" : "(Extended) OSGeo Glossary (SKOS) collection of concepts."
+      "@value" : "OSGeo Collection of SKOS Concepts"
     }, {
       "@language" : "en",
-      "@value" : "OSGeo Collection of SKOS Concepts"
+      "@value" : "(Extended) OSGeo Glossary (SKOS) collection of concepts."
     } ]
   }, {
     "@id" : ":Origin",
-    "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Source standards document for given language; may include location of chapter, paragraph, and section."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Origin"
-    },
-    "note" : [ {
-      "@language" : "en",
-      "@value" : "This should be a link to the Registers document."
-    }, {
-      "@language" : "en",
-      "@value" : "Need to attach all Registers, all references as INDIVIDUALS."
-    } ]
+    "@type" : "owl:Class"
   }, {
     "@id" : ":SKOS-RDF",
     "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "SKOS-RDF file representation of concept."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "SKOS-RDF Linked Data API"
-    },
-    "subClassOf" : ":LinkedDataAPI",
-    "altLabel" : "SKOS IN RDF"
+    "subClassOf" : ":LinkedDataAPI"
   }, {
     "@id" : ":Source",
-    "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Source standards document; may include location of chapter, paragraph, and section."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Source"
-    },
-    "note" : [ {
-      "@language" : "en",
-      "@value" : "Should be a URL linking to standards document."
-    }, {
-      "@language" : "en",
-      "@value" : "Need to attach all known Source documents as INDIVIDUALS."
-    } ]
+    "@type" : "owl:Class"
   }, {
     "@id" : ":TBXISOXML",
     "@type" : "owl:Class",
-    "description" : {
-      "@language" : "en",
-      "@value" : "TBX-ISO-XML file representation relative to selected concept."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "TBX-ISO-XML Linked Data API"
-    },
-    "subClassOf" : ":LinkedDataAPI",
-    "altLabel" : "TBX-ISO-XML",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Is this supposed to be TBX-ISO-XML or -TML?"
-    }
+    "subClassOf" : ":LinkedDataAPI"
   }, {
-    "@id" : ":UML-1x",
-    "@type" : [ ":Source", "owl:NamedIndividual" ],
-    "description" : {
-      "@language" : "en",
-      "@value" : "The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system."
-    },
-    "source" : "https://www.omg.org/spec/UML/1.1/",
-    "comment" : {
-      "@language" : "en",
-      "@value" : "Earliest 1.x version found: https://www.omg.org/spec/UML/1.1/"
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "Unified Modeling Language 1.x"
-    },
-    "prefLabel" : "UML 1"
-  }, {
-    "@id" : ":ara",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Arabic"
-    },
-    "altLabel" : "ARA",
-    "prefLabel" : "ara"
-  }, {
-    "@id" : ":araRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-ara",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Arabic Registry"
-    }
+    "@id" : ":abbreviation",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : ":ConceptInfo",
+    "range" : "xsd:string"
   }, {
     "@id" : ":classification",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Classification of the term pertaining to concept INFO."
-    },
     "domain" : ":ConceptInfo",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has INFO classification"
-    },
-    "range" : "xsd:string",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Need to enumerate classification values (i.e., \"preferred\", \"alternate\"...)."
-    }
+    "range" : "xsd:string"
   }, {
     "@id" : ":clause",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Classification of the term pertaining to concept INFO."
-    },
     "domain" : ":ConceptInfo",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has SOURCE clause"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":dan",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Danish"
-    },
-    "altLabel" : "DAN",
-    "prefLabel" : "dan"
-  }, {
-    "@id" : ":danRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-dan",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Danish Registry"
-    }
   }, {
     "@id" : ":date-accepted",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Date the concept was accepted in concept REVIEW."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "date accepted"
-    },
     "range" : "xsd:date"
   }, {
     "@id" : ":date-amended",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Date the concept was amended in concept REVIEW."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has SOURCE clause"
-    },
     "range" : "xsd:date"
   }, {
     "@id" : ":decision",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Disposition of concept REVIEW."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has REVIEW decision"
-    },
     "range" : "xsd:string"
   }, {
     "@id" : ":decision-event",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Context statement of authority REVIEW."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has REVIEW decision event"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":deu",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "German"
-    },
-    "altLabel" : "DEU",
-    "prefLabel" : "deu"
-  }, {
-    "@id" : ":deuRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-deu",
-    "label" : {
-      "@language" : "en",
-      "@value" : "German Registry"
-    }
-  }, {
-    "@id" : ":eng",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "English"
-    },
-    "altLabel" : "ENG",
-    "prefLabel" : "eng"
-  }, {
-    "@id" : ":engRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-eng",
-    "label" : {
-      "@language" : "en",
-      "@value" : "English Registry"
-    }
   }, {
     "@id" : ":example",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Example(s) to clarify concept definition."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has INFO example"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":fin",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Finnish"
-    },
-    "altLabel" : "FIN",
-    "prefLabel" : "fin"
-  }, {
-    "@id" : ":finRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-fin",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Finnish Registry"
-    }
-  }, {
-    "@id" : ":fra",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "French"
-    },
-    "altLabel" : "FRA",
-    "prefLabel" : "fra"
-  }, {
-    "@id" : ":fraRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-fra",
-    "label" : {
-      "@language" : "en",
-      "@value" : "French Registry"
-    }
   }, {
     "@id" : ":hasInfo",
     "@type" : "owl:ObjectProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Object property for ConceptInfo values."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has info"
-    },
     "range" : ":ConceptInfo"
+  }, {
+    "@id" : ":hasLDAPI",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "skos:Concept",
+    "range" : ":LinkedDataAPI"
   }, {
     "@id" : ":hasLangCode",
     "@type" : "owl:ObjectProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Object property for LangCode values."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has language code"
-    },
     "range" : ":LangCode"
+  }, {
+    "@id" : ":hasNote",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "skos:Concept",
+    "range" : ":Note"
   }, {
     "@id" : ":hasOrigin",
     "@type" : "owl:ObjectProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Origin of defintion in ISO-TC 211 Registers"
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has origin"
-    },
     "range" : ":Origin"
   }, {
     "@id" : ":hasReview",
     "@type" : "owl:ObjectProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Object property for ConceptReview values."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has review"
-    },
     "range" : ":ConceptReview"
   }, {
     "@id" : ":hasSource",
     "@type" : "owl:ObjectProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Authority source for concept defintion."
-    },
     "domain" : "skos:Concept",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has source"
-    },
     "range" : ":Source"
   }, {
     "@id" : ":info-status",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Status of a vocabulary term for Concept Info."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has info status"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":jpn",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Japanese"
-    },
-    "altLabel" : "JPN",
-    "prefLabel" : "jpn"
-  }, {
-    "@id" : ":jpnRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-jpn",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Japanese Registry"
-    }
   }, {
     "@id" : ":jsonURI",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "JSON  property representation of resource."
-    },
     "domain" : ":JSON",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has JSON API URI"
-    },
-    "range" : "xsd:anyURI",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Property value is URI link to file."
-    }
+    "range" : "xsd:anyURI"
   }, {
     "@id" : ":jsonldURI",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "JSON-LD property representation of resource."
-    },
     "domain" : ":JSON-LD",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has JSON-LD API URI"
-    },
-    "range" : "xsd:anyURI",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Property value is URI link to file."
-    }
-  }, {
-    "@id" : ":kor",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Korean"
-    },
-    "altLabel" : "KOR",
-    "prefLabel" : "kor"
-  }, {
-    "@id" : ":korRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-kor",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Korean Registry"
-    }
+    "range" : "xsd:anyURI"
   }, {
     "@id" : ":last-review",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Date of the last REVIEW performed for the concept."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "last review performed"
-    },
     "range" : "xsd:date"
-  }, {
-    "@id" : ":msa",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Malay"
-    },
-    "altLabel" : "MSA",
-    "prefLabel" : "msa"
-  }, {
-    "@id" : ":msaRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-msa",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Malay Registry"
-    }
-  }, {
-    "@id" : ":nld",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Nederlands"
-    },
-    "altLabel" : "NLD",
-    "prefLabel" : "nld"
-  }, {
-    "@id" : ":nldRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-nld",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Nederlands Registry"
-    }
   }, {
     "@id" : ":note",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Notes pertaining to ConceptInfo or ConceptReview."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has note"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":pol",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Polish"
-    },
-    "altLabel" : "POL",
-    "prefLabel" : "pol"
-  }, {
-    "@id" : ":polRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-pol",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Polish Registry"
-    }
   }, {
     "@id" : ":review-status",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Status of a vocabulary term for Concept Review."
-    },
-    "label" : {
-      "@language" : "en",
-      "@value" : "has review status"
-    },
     "range" : "xsd:string"
-  }, {
-    "@id" : ":rus",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Russian"
-    },
-    "altLabel" : "RUS",
-    "prefLabel" : "rus"
-  }, {
-    "@id" : ":rusRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-rus",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Russian Registry"
-    }
   }, {
     "@id" : ":skosrdfURI",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "SKOS-RDF property representation of a resource."
-    },
     "domain" : ":SKOS-RDF",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has SKOS-RDF API URI"
-    },
-    "range" : "xsd:anyURI",
-    "altLabel" : {
-      "@language" : "en",
-      "@value" : "has SKOS-IN-RDF API URI"
-    },
-    "note" : {
-      "@language" : "en",
-      "@value" : "Property value is URI link to file."
-    }
-  }, {
-    "@id" : ":spa",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Spanish"
-    },
-    "altLabel" : "SPA",
-    "prefLabel" : "spa"
-  }, {
-    "@id" : ":spaRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-spa",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Spanish Registry"
-    }
-  }, {
-    "@id" : ":swe",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Swedish"
-    },
-    "altLabel" : "SWE",
-    "prefLabel" : "swe"
-  }, {
-    "@id" : ":sweRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-swe",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Swedish Registry"
-    }
+    "range" : "xsd:anyURI"
   }, {
     "@id" : ":tbxisoxmlURI",
     "@type" : "owl:DatatypeProperty",
-    "description" : {
-      "@language" : "en",
-      "@value" : "TBX-ISO-XML property representation of a resource."
-    },
     "domain" : ":TBXISOXML",
-    "label" : {
-      "@language" : "en",
-      "@value" : "has TBX-ISO-XML API URI"
-    },
-    "range" : "xsd:anyURI",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Property value is URI link to file."
-    }
-  }, {
-    "@id" : ":zho",
-    "@type" : [ ":LangCode", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Chinese"
-    },
-    "altLabel" : "ZHO",
-    "prefLabel" : "zho"
-  }, {
-    "@id" : ":zhoRegistry",
-    "@type" : [ ":Origin", "owl:NamedIndividual" ],
-    "source" : "https://isotc211.geolexica.org/registers/#language-zho",
-    "label" : {
-      "@language" : "en",
-      "@value" : "Chinese Registry"
-    }
+    "range" : "xsd:anyURI"
   } ],
   "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
-    "description" : "http://purl.org/dc/terms/description",
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
     },
-    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "domain" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
-    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-    "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "license" : "http://purl.org/dc/terms/license",
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "issued" : "http://purl.org/dc/terms/issued",
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
@@ -955,42 +325,15 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "description" : "http://purl.org/dc/terms/description",
+    "string" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "created" : {
-      "@id" : "http://purl.org/dc/terms/created",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "creator" : {
-      "@id" : "http://purl.org/dc/terms/creator",
-      "@type" : "@id"
-    },
-    "imports" : {
-      "@id" : "http://www.w3.org/2002/07/owl#imports",
-      "@type" : "@id"
-    },
-    "contributor" : {
-      "@id" : "http://purl.org/dc/terms/contributor",
-      "@type" : "@id"
-    },
-    "versionIRI" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
-      "@type" : "@id"
-    },
-    "license" : "http://purl.org/dc/terms/license",
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
-    "issued" : "http://purl.org/dc/terms/issued",
-    "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
-    "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "title" : "http://purl.org/dc/terms/title",
-    "@base" : "https://osgeo.geolexica.org/api/geolexica#",
-    "" : "https://osgeo.geolexica.org/api/geolexica#",
+    "@base" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+    "" : "https://isotc211.geolexica.org/api/ld/geolexica#",
     "void" : "http://vocab.deri.ie/void#",
     "vaem" : "http://www.linkedmodel.org/schema/vaem#",
     "owl" : "http://www.w3.org/2002/07/owl#",
