@@ -327,6 +327,12 @@ dcterms:MediaType rdf:type owl:Class .
                xsd:string "This translated term may not be from the same source as the normative term."^^xsd:string ;
                rdfs:label "Translation Difference; Source to Normative"@en .
 
+###  https://isotc211.geolexica.org/api/ld/language#NoteTransUnavail
+:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           :NoteUnavail ;
+                  xsd:string "This note has not been translated."^^xsd:string ;
+                  rdfs:label "Note Translation Not Available"@en .
+
 ###  https://osgeo.geolexica.org/api/ld/geolexica#OSGeoGlossary
 :OSGeoGlossary rdf:type owl:NamedIndividual ,
                         skos:Collection ;
