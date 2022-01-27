@@ -1,0 +1,175 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/sources#> .
+
+
+<https://isotc211.geolexica.org/api/sources> rdf:type dctype:Dataset, void:Dataset ;
+                                             owl:versionIRI <https://isotc211.geolexica.org/api/ld/sources/v1.0/> ;
+                                             owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
+                                             dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+                                             dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+                                             dcterms:created "2022-01-26"^^xsd:date ;
+                                             dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+                                             dcterms:issued " " ;
+                                             dcterms:license "Copyright 2022 OSGeo" ;
+                                             dcterms:modified "2022-01-26"^^xsd:date ;
+                                             dcterms:publisher <https://www.osgeo.org/> ;
+                                             dcterms:title "Sources RDF Dataset (MLGT)"@en ;
+                                             rdfs:label "Sources RDF Dataset (MLGT)" ;
+                                             vann:preferredNamespacePrefix "sources" ;
+                                             vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/sources#" ;
+                                             owl:versionInfo "Version 1.0" ;
+                                             skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Sources are subject to change."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-1087-1-2000
+:ISO-1087-1-2000 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Terminology work — Vocabulary — Part 1: Theory and application"@en ;
+                 dcterms:source "https://www.iso.org/standard/20057.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 1087-1:2000" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19101-1-2014
+:ISO-19101-1-2014 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/59164.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-1:2014" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19105-2000
+:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Conformance and testing"@en ;
+                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19105:2000" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19106-2004
+:ISO-19106-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2004" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19107-2003
+:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19107-2019
+:ISO-19107-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19108-2002
+:ISO-19108-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26013.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19108:2002" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19116-2004
+:ISO-19116-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2004" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19116-2019
+:ISO-19116-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/70882.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2019" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-19117-2012
+:ISO-19117-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Portrayal"@en ;
+                dcterms:source "https://www.iso.org/standard/46226.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19117:2012" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-3534-1-1993
+:ISO-3534-1-1993 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"@en ;
+                 dcterms:source "https://www.iso.org/standard/8919.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 3534-1:1993" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-IEC-19501
+:ISO-IEC-19501 rdf:type owl:NamedIndividual ,
+                        geolexica:Source ;
+               dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+               dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+               rdfs:label "ISO/IEC 19501" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-IEC-19501-2005
+:ISO-IEC-19501-2005 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+                    dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+                    rdfs:label "ISO/IEC 19501:2005" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#ISO-IEC-2382-2015
+:ISO-IEC-2382-2015 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 2382:2015" .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#UML-1x
+:UML-1x rdf:type owl:NamedIndividual ,
+                 geolexica:Source ;
+        dcterms:description "The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system."@en ;
+        dcterms:source "https://www.omg.org/spec/UML/1.1/"^^xsd:anyURI ;
+        rdfs:comment "Earliest 1.x version found: https://www.omg.org/spec/UML/1.1/"@en ;
+        rdfs:label "Unified Modeling Language 1.x" ;
+        skos:prefLabel "UML 1"@en .
