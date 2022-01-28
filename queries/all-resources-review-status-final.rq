@@ -1,0 +1,9 @@
+# all resources : review-status : final :@en
+
+PREFIX geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#>
+
+select ?review
+
+where { 
+    ?review geolexica:review-status "final"@en .
+    }
