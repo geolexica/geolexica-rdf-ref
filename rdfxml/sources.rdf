@@ -27,6 +27,58 @@
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19116-2019">
+    <rdfs:label>ISO 19116:2019</rdfs:label>
+    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/70882.html</dcterms:source>
+    <dcterms:description xml:lang="en">Geographic information — Positioning services</dcterms:description>
+    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19108-2002">
+    <rdfs:label>ISO 19108:2002</rdfs:label>
+    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/26013.html</dcterms:source>
+    <dcterms:description xml:lang="en">Geographic information — Spatial schema</dcterms:description>
+    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19117-2012">
+    <rdfs:label>ISO 19117:2012</rdfs:label>
+    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/46226.html</dcterms:source>
+    <dcterms:description xml:lang="en">Geographic information — Portrayal</dcterms:description>
+    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources">
+    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/api/ld/sources#</vann:preferredNamespaceUri>
+    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
+    <dcterms:conformsTo rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica/v1.0/"/>
+    <skos:note xml:lang="en">ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Sources are subject to change.</skos:note>
+    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-26</dcterms:modified>
+    <dcterms:issued> </dcterms:issued>
+    <rdfs:label>Sources RDF Dataset (MLGT)</rdfs:label>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-26</dcterms:created>
+    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
+    <vann:preferredNamespacePrefix>sources</vann:preferredNamespacePrefix>
+    <owl:versionInfo>Version 1.0</owl:versionInfo>
+    <owl:imports rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica"/>
+    <dcterms:title xml:lang="en">Sources RDF Dataset (MLGT)</dcterms:title>
+    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/api/ld/sources/v1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-IEC-19501">
     <rdfs:label>ISO/IEC 19501</rdfs:label>
     <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/32620.html</dcterms:source>
@@ -48,6 +100,9 @@
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
@@ -55,13 +110,6 @@
     <rdfs:label>ISO 19101-1:2014</rdfs:label>
     <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/59164.html</dcterms:source>
     <dcterms:description xml:lang="en">Geographic information — Reference model — Part 1: Fundamentals</dcterms:description>
-    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19116-2019">
-    <rdfs:label>ISO 19116:2019</rdfs:label>
-    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/70882.html</dcterms:source>
-    <dcterms:description xml:lang="en">Geographic information — Positioning services</dcterms:description>
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
@@ -82,19 +130,8 @@
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19108-2002">
-    <rdfs:label>ISO 19108:2002</rdfs:label>
-    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/26013.html</dcterms:source>
-    <dcterms:description xml:lang="en">Geographic information — Spatial schema</dcterms:description>
-    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19117-2012">
-    <rdfs:label>ISO 19117:2012</rdfs:label>
-    <dcterms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/46226.html</dcterms:source>
-    <dcterms:description xml:lang="en">Geographic information — Portrayal</dcterms:description>
-    <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
+    <owl:sameAs rdf:resource="http://vocab.deri.ie/void#Dataset"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-19107-2003">
     <rdfs:label>ISO 19107:2003</rdfs:label>
@@ -102,12 +139,6 @@
     <dcterms:description xml:lang="en">Geographic information — Spatial schema</dcterms:description>
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
@@ -118,29 +149,6 @@
     <dcterms:description xml:lang="en">Geographic information — Positioning services</dcterms:description>
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Source"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/sources">
-    <skos:note xml:lang="en">ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Sources are subject to change.</skos:note>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-26</dcterms:modified>
-    <rdf:type rdf:resource="http://vocab.deri.ie/void#Dataset"/>
-    <dcterms:title xml:lang="en">Sources RDF Dataset (MLGT)</dcterms:title>
-    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/api/ld/sources#</vann:preferredNamespaceUri>
-    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
-    <rdfs:label>Sources RDF Dataset (MLGT)</rdfs:label>
-    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-26</dcterms:created>
-    <dcterms:conformsTo rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica/v1.0/"/>
-    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
-    <owl:versionInfo>Version 1.0</owl:versionInfo>
-    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/api/ld/sources/v1.0/"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica"/>
-    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
-    <vann:preferredNamespacePrefix>sources</vann:preferredNamespacePrefix>
-    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
-    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
-    <dcterms:issued> </dcterms:issued>
   </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/sources#ISO-1087-1-2000">
     <rdfs:label>ISO 1087-1:2000</rdfs:label>

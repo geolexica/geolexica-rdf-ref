@@ -1,0 +1,230 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "abstract test method",
+      "preferredNamespacePrefix" : "concept4",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/4/",
+      "label" : "abstract test method",
+      "imports" : [ "../../../reviews", "../../../info", "../../../language", "../../../sources", "../../../notes", "../../../geolexica", "../../../ldapi" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":abstract_test_method",
+      "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+      "dcterms:identifier" : 4,
+      "label" : "abstract test method",
+      "definition" : [ {
+        "@language" : "fi",
+        "@value" : "testausmenettelystä riippumaton menetelmä toteutuksen testaamiseksi"
+      }, {
+        "@language" : "zh",
+        "@value" : "用于实现测试的方法，它与特定测试过程无关。"
+      }, {
+        "@language" : "sv",
+        "@value" : "testmetod som är oberoende oavsett typ av implementering"
+      }, {
+        "@language" : "da",
+        "@value" : "metode til at teste implementering uafhængigt af testprocedure"
+      }, {
+        "@language" : "fr",
+        "@value" : "méthode de test d&#39;implémentation indépendante de toute procédure de test"
+      }, {
+        "@language" : "es",
+        "@value" : "método para probar implementaciones independientemente de cualquier procedimiento de prueba particular"
+      }, {
+        "@language" : "ja",
+        "@value" : "特定の試験手続から独立した実装の試験の方法。"
+      }, {
+        "@language" : "ru",
+        "@value" : "метод тестирования реализации, не зависящий от конкретной процедуры тестирования"
+      }, {
+        "@language" : "en",
+        "@value" : "method for testing implementation independent of any particular test procedure"
+      }, {
+        "@language" : "ko",
+        "@value" : "특정 시험 절차와 상관 없이 독립적인 시험 구현을 위한 방법"
+      }, {
+        "@language" : "ar",
+        "@value" : "طريقة لاختبار التنفيذ مستقلة عن أي إجراءات اختبار محددة"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 4,
+      "prefLabel" : [ {
+        "@language" : "ru",
+        "@value" : "метод абстрактного теста"
+      }, {
+        "@language" : "ar",
+        "@value" : "طريقة اختبار تجريدي"
+      }, {
+        "@language" : "zh",
+        "@value" : "抽象测试方法"
+      }, {
+        "@language" : "fr",
+        "@value" : "méthode de test abstrait"
+      }, {
+        "@language" : "es",
+        "@value" : "método de prueba abstracta"
+      }, {
+        "@language" : "ja",
+        "@value" : "抽象試験方法"
+      }, {
+        "@language" : "da",
+        "@value" : "abstrakt testmetode"
+      }, {
+        "@language" : "ko",
+        "@value" : "추상 시험 방법"
+      }, {
+        "@language" : "fi",
+        "@value" : "abstrakti testausmenetelmä"
+      }, {
+        "@language" : "en",
+        "@value" : "abstract test method"
+      }, {
+        "@language" : "sv",
+        "@value" : "implementeringsoberoende testmetod"
+      }, {
+        "@language" : "de",
+        "@value" : "abstrakte Prüfmethode"
+      } ],
+      "hasInfo" : "info:Info4",
+      "hasLDAPI" : [ "ldapi:ldapi4-json", "ldapi:ldapi4-skosrdf", "ldapi:ldapi4-rdfxml", "ldapi:ldapi4-jsonld" ],
+      "hasLangCode" : [ "lang:deu", "lang:kor", "lang:swe", "lang:zho", "lang:rus", "lang:jpn", "lang:dan", "lang:fra", "lang:ara", "lang:fin", "lang:eng", "lang:spa" ],
+      "hasReview" : "reviews:Review4",
+      "origin" : [ "lang:finRegistry", "lang:spaRegistry", "lang:rusRegistry", "lang:danRegistry", "lang:korRegistry", "lang:jpnRegistry", "lang:araRegistry", "lang:fraRegistry", "lang:sweRegistry", "lang:engRegistry", "lang:zhoRegistry", "lang:deuRegistry" ],
+      "deu-note" : "notes:DefnTransUnavail"
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "title" : "http://purl.org/dc/terms/title",
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "issued" : "http://purl.org/dc/terms/issued",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "deu-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/4/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/4/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

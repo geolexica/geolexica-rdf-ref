@@ -27,9 +27,7 @@
         dcterms:title "Language Reference RDF Dataset"@en ;
         vann:preferredNamespacePrefix "lang" ;
         vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/language#" ;
-        rdfs:label "Language Reference RDF Dataset (MLGT)" ;
-        owl:versionInfo "Version 1.0" ;
-        skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Language references are subject to change."@en .
+        rdfs:label "Language Reference RDF Dataset (MLGT)" .
 
 dctype:Dataset owl:sameAs void:Dataset .
 
@@ -55,24 +53,8 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 #################################################################
-#    Datatypes
+#    Datatype properties
 #################################################################
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string rdf:type rdfs:Datatype .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string rdf:type owl:DatatypeProperty .
-
 
 ###  https://isotc211.geolexica.org/api/ld/language#ara-note
 :ara-note rdf:type owl:DatatypeProperty ;

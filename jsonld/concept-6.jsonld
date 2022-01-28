@@ -1,57 +1,84 @@
 {
   "@graph" : [ {
     "@id" : "dctype:Dataset",
-    "@type" : "owl:Class"
+    "@type" : "owl:Class",
+    "sameAs" : "void:Dataset"
   }, {
     "@id" : "./",
-    "@type" : [ "dctype:Dataset", "owl:NamedIndividual" ]
+    "@type" : "dctype:Dataset",
+    "conformsTo" : "../../../geolexica/v1.0/",
+    "contributor" : "https://www.linkedin.com/in/rhtse/",
+    "created" : "2022-01-20",
+    "creator" : "https://www.linkedin.com/in/lanemk",
+    "description" : {
+      "@language" : "en",
+      "@value" : "term: abstract test suite"
+    },
+    "issued" : " ",
+    "license" : "Copyright 2022 OSGeo",
+    "modified" : "2022-01-28",
+    "title" : "abstract test suite",
+    "preferredNamespacePrefix" : "concept6",
+    "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/6/",
+    "label" : "abstract test suite",
+    "imports" : [ "../../../sources", "../../../geolexica", "../../../reviews", "../../../info" ],
+    "versionIRI" : "./"
   }, {
     "@id" : ":abstract_test_suite",
     "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
     "dcterms:identifier" : 6,
-    "label" : {
-      "@language" : "en",
-      "@value" : "abstract test suite"
-    },
+    "label" : "abstract test suite",
     "definition" : [ {
-      "@language" : "sv",
-      "@value" : "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"
-    }, {
       "@language" : "zh",
       "@value" : "规定了实现一致性所要满足的全部要求的抽象测试模块。"
     }, {
-      "@language" : "ar",
-      "@value" : "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"
-    }, {
-      "@language" : "en",
-      "@value" : "abstract test module specifying all the requirements to be satisfied for conformance"
-    }, {
-      "@language" : "ja",
-      "@value" : "満たされなければならないすべての要件を規定する抽象試験モジュール。"
+      "@language" : "fr",
+      "@value" : "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"
     }, {
       "@language" : "ko",
       "@value" : "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"
     }, {
-      "@language" : "ru",
-      "@value" : "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"
-    }, {
-      "@language" : "fi",
-      "@value" : "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"
+      "@language" : "en",
+      "@value" : "abstract test module specifying all the requirements to be satisfied for conformance"
     }, {
       "@language" : "es",
       "@value" : "módulo de pruebas genéricas que especifica todos los requisitos que deben ser satisfechos para la conformidad"
     }, {
+      "@language" : "fi",
+      "@value" : "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"
+    }, {
+      "@language" : "ru",
+      "@value" : "тестовый модуль, определяющий все требования, которые должны быть удовлетворены для заключения о соответствии"
+    }, {
       "@language" : "da",
       "@value" : "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"
     }, {
-      "@language" : "fr",
-      "@value" : "module de test abstrait spécifiant toutes les exigences de satisfaction par conformité"
+      "@language" : "ja",
+      "@value" : "満たされなければならないすべての要件を規定する抽象試験モジュール。"
+    }, {
+      "@language" : "sv",
+      "@value" : "samling abstrakta testfall som tillsammans kan avgöra om överensstämmelse råder med alla uppställda krav"
+    }, {
+      "@language" : "ar",
+      "@value" : "نموذج اختبار تجريدي يحدد جميع المتطلبات اللازم تحقيقها للتطابق"
     } ],
     "inScheme" : "geolexica:GeolexicaConceptScheme",
     "skos:notation" : 6,
     "prefLabel" : [ {
-      "@language" : "ja",
-      "@value" : "抽象試験項目群，ATS"
+      "@language" : "da",
+      "@value" : "abstrakt testsuite"
+    }, {
+      "@language" : "fr",
+      "@value" : "suite de tests abstraits"
+    }, {
+      "@language" : "zh",
+      "@value" : "抽象测试套件"
+    }, {
+      "@language" : "fi",
+      "@value" : "abstrakti testisarja"
+    }, {
+      "@language" : "de",
+      "@value" : "abstrakte Test-Suite"
     }, {
       "@language" : "en",
       "@value" : "abstract test suite"
@@ -59,14 +86,11 @@
       "@language" : "es",
       "@value" : "conjunto de pruebas abstractas"
     }, {
-      "@language" : "ko",
-      "@value" : "추상 시험 스위트"
+      "@language" : "ru",
+      "@value" : "комплекс абстрактных тестов"
     }, {
-      "@language" : "fi",
-      "@value" : "abstrakti testisarja"
-    }, {
-      "@language" : "fr",
-      "@value" : "suite de tests abstraits"
+      "@language" : "ja",
+      "@value" : "抽象試験項目群，ATS"
     }, {
       "@language" : "ar",
       "@value" : "مجموعة اختبار تجريدي"
@@ -74,35 +98,26 @@
       "@language" : "sv",
       "@value" : "abstrakt testsvit"
     }, {
-      "@language" : "zh",
-      "@value" : "抽象测试套件"
-    }, {
-      "@language" : "ru",
-      "@value" : "комплекс абстрактных тестов"
-    }, {
-      "@language" : "da",
-      "@value" : "abstrakt testsuite"
-    }, {
-      "@language" : "de",
-      "@value" : "abstrakte Test-Suite"
+      "@language" : "ko",
+      "@value" : "추상 시험 스위트"
     } ],
     "abbreviation" : [ {
-      "@language" : "ko",
-      "@value" : "ATS"
-    }, {
-      "@language" : "ja",
-      "@value" : "ATS"
-    }, {
       "@language" : "da",
       "@value" : "ATS"
     }, {
       "@language" : "de",
+      "@value" : "ATS"
+    }, {
+      "@language" : "en",
       "@value" : "ATS"
     }, {
       "@language" : "es",
       "@value" : "ATS"
     }, {
-      "@language" : "en",
+      "@language" : "ja",
+      "@value" : "ATS"
+    }, {
+      "@language" : "ko",
       "@value" : "ATS"
     }, {
       "@language" : "sv",
@@ -115,9 +130,10 @@
       "@value" : "م ا ت"
     } ],
     "hasInfo" : "info:Info6",
-    "hasLangCode" : [ "lang:dan", "lang:rus", "lang:jpn", "lang:eng", "lang:fin", "lang:fra", "lang:kor", "lang:ara", "lang:spa", "lang:zho", "lang:swe", "lang:deu" ],
+    "hasLDAPI" : [ "ldapi:ldapi6-jsonld", "ldapi:ldapi6-rdfxml", "ldapi:ldapi6-json", "ldapi:ldapi6-skosrdf" ],
+    "hasLangCode" : [ "lang:zho", "lang:jpn", "lang:ara", "lang:kor", "lang:spa", "lang:fra", "lang:rus", "lang:deu", "lang:fin", "lang:dan", "lang:swe", "lang:eng" ],
     "hasReview" : "reviews:Review6",
-    "origin" : [ "lang:jpnRegistry", "lang:deuRegistry", "lang:zhoRegistry", "lang:sweRegistry", "lang:korRegistry", "lang:rusRegistry", "lang:danRegistry", "lang:finRegistry", "lang:engRegistry", "lang:spaRegistry", "lang:fraRegistry", "lang:araRegistry" ],
+    "origin" : [ "lang:jpnRegistry", "lang:deuRegistry", "lang:danRegistry", "lang:araRegistry", "lang:fraRegistry", "lang:rusRegistry", "lang:zhoRegistry", "lang:engRegistry", "lang:spaRegistry", "lang:finRegistry", "lang:korRegistry", "lang:sweRegistry" ],
     "ara-note" : {
       "@language" : "ar",
       "@value" : "ملاحظة: توصف مجموعات الاختبار التجريدي في فقرة للمطابقة"
@@ -126,7 +142,7 @@
       "@language" : "da",
       "@value" : "Bemærk til posten: Abstrakte testsuiter er beskrevet i en overensstemmelsesklausul."
     },
-    "deu-note" : [ "geolexica:DefnTransUnavail", "geolexica:NoteTransUnavail" ],
+    "deu-note" : [ "notes:NoteTransUnavail", "notes:DefnTransUnavail" ],
     "eng-note" : {
       "@language" : "en",
       "@value" : "Note to entry: Abstract test suites are described in a conformance clause."
@@ -151,65 +167,40 @@
       "@language" : "es",
       "@value" : "Nota: Los conjuntos de pruebas genéricas se describen en un capítulo de conformidad."
     },
-    "swe-note" : "geolexica:NoteTransUnavail",
+    "swe-note" : "notes:NoteTransUnavail",
     "zho-note" : {
       "@language" : "zh",
       "@value" : "注： 抽象测试套件由一致性条款进行描述。"
     }
-  }, {
-    "@id" : "../../../ld/concepts/6/",
-    "@type" : [ "void:Dataset", "dctype:Dataset" ],
-    "conformsTo" : "../../../ld/geolexica/v1.0/",
-    "contributor" : "https://www.linkedin.com/in/rhtse/",
-    "created" : "2022-01-20",
-    "creator" : "https://www.linkedin.com/in/lanemk",
-    "description" : {
-      "@language" : "en",
-      "@value" : "Concept 6: abstract test suite"
-    },
-    "issued" : " ",
-    "license" : "Copyright 2022 OSGeo",
-    "modified" : "2022-01-27",
-    "title" : {
-      "@language" : "en",
-      "@value" : "Concept 6: abstract test suite"
-    },
-    "preferredNamespacePrefix" : "concept6",
-    "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/6/",
-    "imports" : [ "../../../ld/geolexica", "../../../ld/reviews", "../../../ld/info" ],
-    "versionIRI" : "../../../ld/concepts/6/",
-    "versionInfo" : "Version 0.1.0",
-    "note" : {
-      "@language" : "en",
-      "@value" : "Member of OSGeo Geolexica MLGT Glossary"
-    }
-  }, {
-    "@id" : "geolexica:source",
-    "@type" : "owl:DatatypeProperty"
   } ],
   "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+      "@type" : "@id"
+    },
     "issued" : "http://purl.org/dc/terms/issued",
     "created" : {
       "@id" : "http://purl.org/dc/terms/created",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "modified" : {
-      "@id" : "http://purl.org/dc/terms/modified",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "imports" : {
       "@id" : "http://www.w3.org/2002/07/owl#imports",
       "@type" : "@id"
     },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
     "license" : "http://purl.org/dc/terms/license",
     "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "description" : "http://purl.org/dc/terms/description",
     "versionIRI" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
       "@type" : "@id"
     },
-    "description" : "http://purl.org/dc/terms/description",
+    "title" : "http://purl.org/dc/terms/title",
     "conformsTo" : {
       "@id" : "http://purl.org/dc/terms/conformsTo",
       "@type" : "@id"
@@ -219,64 +210,68 @@
       "@type" : "@id"
     },
     "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "title" : "http://purl.org/dc/terms/title",
-    "versionInfo" : "http://www.w3.org/2002/07/owl#versionInfo",
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator",
       "@type" : "@id"
     },
-    "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
     "origin" : {
       "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+      "@type" : "@id"
+    },
+    "hasLangCode" : {
+      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+      "@type" : "@id"
+    },
+    "jpn-note" : "https://isotc211.geolexica.org/api/ld/language#jpn-note",
+    "abbreviation" : "https://isotc211.geolexica.org/api/ld/geolexica#abbreviation",
+    "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
+    "dan-note" : "https://isotc211.geolexica.org/api/ld/language#dan-note",
+    "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+    "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "kor-note" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
+    "hasInfo" : {
+      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
       "@type" : "@id"
     },
     "deu-note" : {
       "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
       "@type" : "@id"
     },
-    "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "hasLDAPI" : {
+      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+      "@type" : "@id"
+    },
+    "fin-note" : "https://isotc211.geolexica.org/api/ld/language#fin-note",
     "notation" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#notation",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "hasLangCode" : {
-      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
-      "@type" : "@id"
-    },
-    "abbreviation" : "https://isotc211.geolexica.org/api/ld/geolexica#abbreviation",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
-    "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
-    "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
-    "dan-note" : "https://isotc211.geolexica.org/api/ld/language#dan-note",
+    "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
     "inScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
     },
-    "fin-note" : "https://isotc211.geolexica.org/api/ld/language#fin-note",
-    "hasReview" : {
-      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
-      "@type" : "@id"
-    },
+    "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
+    "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
     "swe-note" : {
       "@id" : "https://isotc211.geolexica.org/api/ld/language#swe-note",
       "@type" : "@id"
     },
-    "identifier" : {
-      "@id" : "http://purl.org/dc/terms/identifier",
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
-    },
-    "jpn-note" : "https://isotc211.geolexica.org/api/ld/language#jpn-note",
-    "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
-    "hasInfo" : {
-      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+    "hasReview" : {
+      "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
       "@type" : "@id"
     },
-    "kor-note" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
-    "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
-    "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
-    "@base" : "https://isotc211.geolexica.org/api/concepts/6/",
-    "" : "https://isotc211.geolexica.org/api/concepts/6/",
+    "@base" : "https://isotc211.geolexica.org/api/ld/concepts/6/",
+    "" : "https://isotc211.geolexica.org/api/ld/concepts/6/",
+    "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+    "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
     "void" : "http://vocab.deri.ie/void#",
+    "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
     "owl" : "http://www.w3.org/2002/07/owl#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
     "skos" : "http://www.w3.org/2004/02/skos/core#",

@@ -1,0 +1,247 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "buffer",
+      "preferredNamespacePrefix" : "concept30",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/30/",
+      "label" : "buffer",
+      "imports" : [ "../../../reviews", "../../../language", "../../../notes", "../../../sources", "../../../info", "../../../geolexica", "../../../ldapi" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":buffer",
+      "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+      "dcterms:identifier" : 30,
+      "label" : "buffer",
+      "altLabel" : {
+        "@language" : "ko",
+        "@value" : "버퍼"
+      },
+      "definition" : [ {
+        "@language" : "ja",
+        "@value" : "指定された幾何オブジェクトから与えられた距離以内のすべての直接位置を含む幾何オブジェクト。"
+      }, {
+        "@language" : "es",
+        "@value" : "objeto geométrico que contiene todas las posiciones directas cuyas distancias a un objeto geométrico específico son menores o iguales que una distancia dada"
+      }, {
+        "@language" : "pl",
+        "@value" : "obiekt geometryczny zawierający wszystkie położenia bezpośrednie, których odległość od określonego obiektu geometrycznego jest równa danej odległości lub mniejsza"
+      }, {
+        "@language" : "zh",
+        "@value" : "包含距一个指定几何对象的距离都小于或等于一个给定值的所有直接位置的几何对象。"
+      }, {
+        "@language" : "ru",
+        "@value" : "геометрический объект, содержащий все точки, расстояния от которых до заданного геометрического объекта меньше или равны заданной величине"
+      }, {
+        "@language" : "ms",
+        "@value" : "Kawasan dalam ingatan utama yang telah dikhaskan untuk memegang data yang masih belum dapat dipindahkan kepada cakera"
+      }, {
+        "@language" : "fi",
+        "@value" : "geometrinen objekti, joka sisältää kaikki pisteet, joiden etäisyys annetusta geometrisestä objektista on pienempi tai yhtä suuri kuin tietty etäisyys"
+      }, {
+        "@language" : "en",
+        "@value" : "geometric object that contains all direct positions whose distance from a specified geometric object is less than or equal to a given distance"
+      }, {
+        "@language" : "ar",
+        "@value" : "كيان هندسي يحتوي على جميع المواضع المباشرة التي تكون في نطاق يبعد عن كيان محدد مسافة محددة"
+      }, {
+        "@language" : "fr",
+        "@value" : "objet géométrique contenant toutes les positions directes dont la distance à un objet géométrique spécifié est inférieure ou égale à une distance donnée"
+      }, {
+        "@language" : "da",
+        "@value" : "geometrisk objekt, der indeholder alle de direkte positioner, hvis afstand fra et specificeret geometrisk objekt er mindre end eller lig med en given afstand"
+      }, {
+        "@language" : "sv",
+        "@value" : "område vars gränser befinner sig på givna avstånd från ett utvalt geografiskt objekt"
+      }, {
+        "@language" : "ko",
+        "@value" : "지정된 기하 객체로부터 주어진 거리 이내의 모든 직접 위치를 포함하는 기하 객체"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 30,
+      "prefLabel" : [ {
+        "@language" : "ms",
+        "@value" : "penampan"
+      }, {
+        "@language" : "fi",
+        "@value" : "vyöhyke"
+      }, {
+        "@language" : "fr",
+        "@value" : "tampon (buffer)"
+      }, {
+        "@language" : "ja",
+        "@value" : "バッファ"
+      }, {
+        "@language" : "de",
+        "@value" : "Puffer"
+      }, {
+        "@language" : "pl",
+        "@value" : "bufor"
+      }, {
+        "@language" : "es",
+        "@value" : "buffer"
+      }, {
+        "@language" : "en",
+        "@value" : "buffer"
+      }, {
+        "@language" : "da",
+        "@value" : "buffer"
+      }, {
+        "@language" : "ko",
+        "@value" : "영향 범위"
+      }, {
+        "@language" : "sv",
+        "@value" : "buffertzon"
+      }, {
+        "@language" : "ru",
+        "@value" : "буферная зона [буфер]"
+      }, {
+        "@language" : "zh",
+        "@value" : "缓冲区"
+      }, {
+        "@language" : "ar",
+        "@value" : "نطاق"
+      } ],
+      "hasInfo" : "info:Info30",
+      "hasLDAPI" : [ "ldapi:ldapi30-rdfxml", "ldapi:ldapi30-jsonld", "ldapi:ldapi30-skosrdf", "ldapi:ldapi30-json" ],
+      "hasLangCode" : [ "lang:ara", "lang:msa", "lang:zho", "lang:eng", "lang:fin", "lang:jpn", "lang:fra", "lang:rus", "lang:pol", "lang:spa", "lang:deu", "lang:kor", "lang:dan", "lang:swe" ],
+      "hasReview" : "reviews:Review30",
+      "origin" : [ "lang:msaRegistry", "lang:jpnRegistry", "lang:korRegistry", "lang:finRegistry", "lang:zhoRegistry", "lang:spaRegistry", "lang:danRegistry", "lang:sweRegistry", "lang:rusRegistry", "lang:engRegistry", "lang:deuRegistry", "lang:fraRegistry", "lang:polRegistry", "lang:araRegistry" ],
+      "deu-note" : "notes:DefnTransUnavail"
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+      "deu-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "title" : "http://purl.org/dc/terms/title",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "issued" : "http://purl.org/dc/terms/issued",
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/30/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/30/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

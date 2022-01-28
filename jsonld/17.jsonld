@@ -1,0 +1,274 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "association (UML)",
+      "preferredNamespacePrefix" : "concept17",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/17/",
+      "label" : "association (UML)",
+      "imports" : [ "../../../info", "../../../reviews", "../../../sources", "../../../notes", "../../../language", "../../../geolexica", "../../../ldapi" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":association",
+      "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+      "dcterms:identifier" : 17,
+      "label" : "association (UML);",
+      "altLabel" : {
+        "@language" : "fi",
+        "@value" : "assosiaatiosuhde (UML)"
+      },
+      "definition" : [ {
+        "@language" : "fr",
+        "@value" : "relation sémantique entre deux ou plusieurs classificateurs qui spécifient des connections parmi leurs instances"
+      }, {
+        "@language" : "da",
+        "@value" : "semantisk sammenhæng imellem to eller flere klassifikatorer, som specificerer forbindelser mellem deres instanser"
+      }, {
+        "@language" : "fi",
+        "@value" : "kahden tai useamman luokittelijan välinen semanttinen suhde, joka määrittää luokittelijoiden mukaisten ilmentymien väliset yhteydet"
+      }, {
+        "@language" : "ar",
+        "@value" : "العلاقة اللغوية القائمة بين مصنِّفَيْن أو أكثر التي تحدد الترابط بين عناصرها"
+      }, {
+        "@language" : "en",
+        "@value" : "semantic relationship between two or more classifiers that specifies connections among their instances"
+      }, {
+        "@language" : "zh",
+        "@value" : "(UML)两个或两个以上类之间的语义关系，定义了类中实例间的连接。"
+      }, {
+        "@language" : "es",
+        "@value" : "relación semántica entre dos o más clasificadores que especifica conexiones entre sus instancias"
+      }, {
+        "@language" : "sv",
+        "@value" : "UML-element som anger hur instanser kan eller ska referera till varandra"
+      }, {
+        "@language" : "ko",
+        "@value" : "인스턴스간의 연결을 규정하는 두 개 이상 분류자 간의 의미론적 관계"
+      }, {
+        "@language" : "ru",
+        "@value" : "семантическое отношение двух или более классификаторов, определяющее взаимосвязи между их экземплярами"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 17,
+      "prefLabel" : [ {
+        "@language" : "fr",
+        "@value" : "association (UML)"
+      }, {
+        "@language" : "en",
+        "@value" : "association (UML)"
+      }, {
+        "@language" : "da",
+        "@value" : "association (UML)"
+      }, {
+        "@language" : "fi",
+        "@value" : "assosiaatio (UML)"
+      }, {
+        "@language" : "es",
+        "@value" : "asociación (UML)"
+      }, {
+        "@language" : "ru",
+        "@value" : "ассоциация (UML)"
+      }, {
+        "@language" : "zh",
+        "@value" : "关联(UML)"
+      }, {
+        "@language" : "sv",
+        "@value" : "samband (UML)"
+      }, {
+        "@language" : "de",
+        "@value" : "Relation (UML) (Synonym: Beziehung, Assoziation)"
+      }, {
+        "@language" : "ko",
+        "@value" : "연관 (UML)"
+      }, {
+        "@language" : "ar",
+        "@value" : "ارتباط UML"
+      } ],
+      "hasInfo" : "info:Info17",
+      "hasLDAPI" : [ "ldapi:ldapi17-jsonld", "ldapi:ldapi17-skosrdf", "ldapi:ldapi17-rdfxml", "ldapi:ldapi17-json" ],
+      "hasLangCode" : [ "lang:spa", "lang:kor", "lang:rus", "lang:swe", "lang:dan", "lang:zho", "lang:deu", "lang:fra", "lang:fin", "lang:ara", "lang:eng" ],
+      "hasReview" : "reviews:Review17",
+      "origin" : [ "lang:deuRegistry", "lang:rusRegistry", "lang:fraRegistry", "lang:engRegistry", "lang:sweRegistry", "lang:finRegistry", "lang:danRegistry", "lang:zhoRegistry", "lang:spaRegistry", "lang:korRegistry", "lang:araRegistry" ],
+      "ara-note" : {
+        "@language" : "ar",
+        "@value" : "ملاحظة: الربط الثنائي هو عبارة عن ربط بين مصنِّفَيْن بالضبط ( ويشمل ذلك إمكانية الربط من مصنِّف إلى نفسه)"
+      },
+      "dan-note" : {
+        "@language" : "da",
+        "@value" : "Bemærk til posten: En binær association er en association imellem nøjagtig to klassifikatorer (inkl. muligheden for en association fra en klassifikator til sig selv)."
+      },
+      "deu-note" : [ "notes:DefnTransUnavail", "notes:NoteTransUnavail" ],
+      "eng-note" : {
+        "@language" : "en",
+        "@value" : "Note to entry: A binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself)."
+      },
+      "fin-note" : {
+        "@language" : "fi",
+        "@value" : "HUOM.: Binäärinen assosiaatio määrittää suhteen täsmälleen kahden luokittelijan välillä (mukaan lukien luokittelijan assosiaatiosuhde itseensä)."
+      },
+      "kor-note" : {
+        "@language" : "ko",
+        "@value" : "비고: 이진 연관 관계는 정확하게 두 분류자 간의 연관 관계이다."
+      },
+      "rus-note" : {
+        "@language" : "ru",
+        "@value" : "Примечание: Бинарная ассоциация является ассоциацией между двумя классификаторами, включая возможность ассоциации классификатора с самим собой"
+      },
+      "spa-note" : {
+        "@language" : "es",
+        "@value" : "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."
+      },
+      "swe-note" : "notes:NoteTransUnavail",
+      "zho-note" : {
+        "@language" : "zh",
+        "@value" : "注： 二元关联确指两个类元之间的关联（包括一个类元与其本身的关联）"
+      }
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "issued" : "http://purl.org/dc/terms/issued",
+      "title" : "http://purl.org/dc/terms/title",
+      "license" : "http://purl.org/dc/terms/license",
+      "deu-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
+        "@type" : "@id"
+      },
+      "altLabel" : "http://www.w3.org/2004/02/skos/core#altLabel",
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
+      "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "dan-note" : "https://isotc211.geolexica.org/api/ld/language#dan-note",
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "swe-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#swe-note",
+        "@type" : "@id"
+      },
+      "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+      "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "kor-note" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
+      "fin-note" : "https://isotc211.geolexica.org/api/ld/language#fin-note",
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/17/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/17/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

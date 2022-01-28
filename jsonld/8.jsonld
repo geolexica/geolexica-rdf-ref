@@ -1,0 +1,291 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "accuracy",
+      "preferredNamespacePrefix" : "concept8",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/8/",
+      "label" : "accuracy",
+      "imports" : [ "../../../reviews", "../../../ldapi", "../../../notes", "../../../language", "../../../geolexica", "../../../info", "../../../sources" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":accuracy",
+      "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+      "dcterms:identifier" : 8,
+      "label" : "accuracy",
+      "definition" : [ {
+        "@language" : "ja",
+        "@value" : "品質評価の試験結果得られた値と参照値との近さ。"
+      }, {
+        "@language" : "en",
+        "@value" : "closeness of agreement between a test result and the accepted reference value"
+      }, {
+        "@language" : "ar",
+        "@value" : "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"
+      }, {
+        "@language" : "ru",
+        "@value" : "близость результата проверки к принятому нормальному значению величины"
+      }, {
+        "@language" : "fi",
+        "@value" : "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"
+      }, {
+        "@language" : "sv",
+        "@value" : "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"
+      }, {
+        "@language" : "es",
+        "@value" : "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"
+      }, {
+        "@language" : "da",
+        "@value" : "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"
+      }, {
+        "@language" : "ko",
+        "@value" : "시험 결과와 기준 값 간의 일치도를 표시하는 척도"
+      }, {
+        "@language" : "zh",
+        "@value" : "测试结果与公认的参考值间的接近程度。"
+      }, {
+        "@language" : "fr",
+        "@value" : "justesse de l&#39;accord entre un résultat de test et la valeur de référence"
+      }, {
+        "@language" : "ms",
+        "@value" : "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 8,
+      "prefLabel" : [ {
+        "@language" : "fi",
+        "@value" : "ulkoinen tarkkuus"
+      }, {
+        "@language" : "da",
+        "@value" : "nøjagtighed"
+      }, {
+        "@language" : "zh",
+        "@value" : "准确度"
+      }, {
+        "@language" : "ms",
+        "@value" : "ketepatan"
+      }, {
+        "@language" : "ja",
+        "@value" : "正確度"
+      }, {
+        "@language" : "ar",
+        "@value" : "الدقة"
+      }, {
+        "@language" : "es",
+        "@value" : "exactitud"
+      }, {
+        "@language" : "fr",
+        "@value" : "exactitude"
+      }, {
+        "@language" : "en",
+        "@value" : "accuracy"
+      }, {
+        "@language" : "ru",
+        "@value" : "точность"
+      }, {
+        "@language" : "ko",
+        "@value" : "정확도"
+      }, {
+        "@language" : "sv",
+        "@value" : "noggrannhet"
+      } ],
+      "hasInfo" : "info:Info8",
+      "hasLDAPI" : [ "ldapi:ldapi8-jsonld", "ldapi:ldapi8-skosrdf", "ldapi:ldapi8-json", "ldapi:ldapi8-rdfxml" ],
+      "hasLangCode" : [ "lang:eng", "lang:spa", "lang:kor", "lang:fra", "lang:jpn", "lang:dan", "lang:zho", "lang:swe", "lang:ara", "lang:rus", "lang:msa", "lang:fin" ],
+      "hasReview" : "reviews:Review8",
+      "origin" : [ "lang:rusRegistry", "lang:spaRegistry", "lang:engRegistry", "lang:zhoRegistry", "lang:sweRegistry", "lang:danRegistry", "lang:korRegistry", "lang:fraRegistry", "lang:araRegistry", "lang:msaRegistry", "lang:jpnRegistry", "lang:finRegistry" ],
+      "ara-note" : {
+        "@language" : "ar",
+        "@value" : "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"
+      },
+      "dan-note" : {
+        "@language" : "da",
+        "@value" : "Bemærk til posten: Et testresultat kan være observationer eller målinger."
+      },
+      "eng-note" : {
+        "@language" : "en",
+        "@value" : "A test result can be observations or measurements."
+      },
+      "fin-note" : {
+        "@language" : "fi",
+        "@value" : "HUOM.: Testitulos voi olla havainto tai mittaus."
+      },
+      "fra-note" : "notes:NoteTransDiff",
+      "jpn-note" : [ {
+        "@language" : "ja",
+        "@value" : "備考 1： 試験結果は，観測値又は測定値として得ることができる。"
+      }, {
+        "@language" : "ja",
+        "@value" : "備考 2： 参照値は，論議領域を実現するものとして採択された値である。"
+      } ],
+      "kor-note" : {
+        "@language" : "ko",
+        "@value" : "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."
+      },
+      "msa-note" : "notes:NoteTransUnavail",
+      "rus-note" : {
+        "@language" : "ru",
+        "@value" : "Примечание: Результат проверки может быть получен путем наблюдения или измерения"
+      },
+      "spa-note" : {
+        "@language" : "es",
+        "@value" : "Nota: Un resultado pueden ser observaciones o medidas"
+      },
+      "swe-note" : {
+        "@language" : "sv",
+        "@value" : "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."
+      },
+      "zho-note" : {
+        "@language" : "zh",
+        "@value" : "注： 测试结果可以是观测结果或量测结果。"
+      }
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "msa-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#msa-note",
+        "@type" : "@id"
+      },
+      "swe-note" : "https://isotc211.geolexica.org/api/ld/language#swe-note",
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "kor-note" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "fra-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#fra-note",
+        "@type" : "@id"
+      },
+      "fin-note" : "https://isotc211.geolexica.org/api/ld/language#fin-note",
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+      "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "dan-note" : "https://isotc211.geolexica.org/api/ld/language#dan-note",
+      "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
+      "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
+      "jpn-note" : "https://isotc211.geolexica.org/api/ld/language#jpn-note",
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "issued" : "http://purl.org/dc/terms/issued",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "title" : "http://purl.org/dc/terms/title",
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/8/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/8/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

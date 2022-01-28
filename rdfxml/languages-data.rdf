@@ -17,10 +17,6 @@
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/language#zho-note">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -32,24 +28,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/language">
-    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
-    <vann:preferredNamespacePrefix>lang</vann:preferredNamespacePrefix>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-27</dcterms:modified>
-    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/api/ld/language/v1.0/"/>
-    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
-    <skos:note xml:lang="en">ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Language references are subject to change.</skos:note>
     <rdf:type rdf:resource="http://vocab.deri.ie/void#Dataset"/>
-    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/api/ld/language#</vann:preferredNamespaceUri>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica"/>
     <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
-    <dcterms:title xml:lang="en">Language Reference RDF Dataset</dcterms:title>
-    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
-    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
-    <dcterms:issued> </dcterms:issued>
-    <owl:versionInfo>Version 1.0</owl:versionInfo>
-    <rdfs:label>Language Reference RDF Dataset (MLGT)</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-27</dcterms:created>
   </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/language#ara-note">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -280,6 +261,22 @@
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#LangCode"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/language#">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-27</dcterms:modified>
+    <dcterms:title xml:lang="en">Language Reference RDF Dataset</dcterms:title>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <vann:preferredNamespacePrefix>lang</vann:preferredNamespacePrefix>
+    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/api/ld/language/v1.0/"/>
+    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
+    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
+    <owl:imports rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica"/>
+    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
+    <rdfs:label>Language Reference RDF Dataset (MLGT)</rdfs:label>
+    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/api/ld/language#</vann:preferredNamespaceUri>
+    <dcterms:issued> </dcterms:issued>
+    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-27</dcterms:created>
+  </rdf:Description>
   <rdf:Description rdf:about="https://isotc211.geolexica.org/api/ld/language#fra">
     <skos:prefLabel xml:lang="en">fra</skos:prefLabel>
     <skos:altLabel>FRA</skos:altLabel>
@@ -310,8 +307,8 @@
     <rdf:type rdf:resource="https://isotc211.geolexica.org/api/ld/geolexica#Origin"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
+    <owl:sameAs rdf:resource="http://vocab.deri.ie/void#Dataset"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>

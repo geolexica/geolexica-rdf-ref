@@ -1,0 +1,140 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : ":DefnTransUnavail",
+      "@type" : [ "geolexica:DefnUnavail", "owl:NamedIndividual" ],
+      "label" : {
+        "@language" : "en",
+        "@value" : "Definition Translation Not Available"
+      },
+      "xsd:string" : "Definition not provided in this language."
+    }, {
+      "@id" : ":NoteTransDiff",
+      "@type" : [ "geolexica:NoteSourceDiff", "owl:NamedIndividual" ],
+      "label" : {
+        "@language" : "en",
+        "@value" : "Translation Difference; Source to Normative"
+      },
+      "xsd:string" : "This translated term may not be from the same source as the normative term."
+    }, {
+      "@id" : ":NoteTransUnavail",
+      "@type" : [ "geolexica:NoteUnavail", "owl:NamedIndividual" ],
+      "label" : {
+        "@language" : "en",
+        "@value" : "Note Translation Not Available"
+      },
+      "xsd:string" : "This note has not been translated."
+    }, {
+      "@id" : "../notes",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-28",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-26",
+      "publisher" : "https://www.osgeo.org/",
+      "title" : {
+        "@language" : "en",
+        "@value" : "Notes RDF Dataset (MLGT)"
+      },
+      "preferredNamespacePrefix" : "notes",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "label" : "Notes RDF Dataset (MLGT)",
+      "imports" : "geolexica",
+      "versionIRI" : "v1.0/"
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "string" : {
+        "@id" : "http://www.w3.org/2001/XMLSchema#string",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "issued" : "http://purl.org/dc/terms/issued",
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "publisher" : {
+        "@id" : "http://purl.org/dc/terms/publisher",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "title" : "http://purl.org/dc/terms/title",
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    }
+  }

@@ -1,0 +1,239 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "application schema",
+      "preferredNamespacePrefix" : "concept15",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/15/",
+      "label" : "application schema",
+      "imports" : [ "../../../notes", "../../../sources", "../../../info", "../../../reviews", "../../../ldapi", "../../../geolexica", "../../../language" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":application_schema",
+      "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+      "dcterms:identifier" : 15,
+      "label" : "application schema",
+      "definition" : [ {
+        "@language" : "ko",
+        "@value" : "하나 이상의 응용에서 요구되는 데이터의 개념적 스키마"
+      }, {
+        "@language" : "nl",
+        "@value" : "informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties"
+      }, {
+        "@language" : "en",
+        "@value" : "conceptual schema for data required by one or more applications"
+      }, {
+        "@language" : "zh",
+        "@value" : "一个或多个应用所需数据的概念模式。"
+      }, {
+        "@language" : "da",
+        "@value" : "konceptuel datamodel, der er nødvendig for en eller flere applikationer"
+      }, {
+        "@language" : "ar",
+        "@value" : "مخطط تصوري للبيانات المطلوبة لتطبيق واحد أو أكثر"
+      }, {
+        "@language" : "fr",
+        "@value" : "schéma conceptuel de données requis pour une ou plusieurs applications"
+      }, {
+        "@language" : "fi",
+        "@value" : "skeema, joka kuvaa yhden tai useamman sovellusalan tarvitsemaa tietoa"
+      }, {
+        "@language" : "ms",
+        "@value" : "skema konseptual bagi data yang diperlukan oleh satu atau lebih aplikasi"
+      }, {
+        "@language" : "sv",
+        "@value" : "formell beskrivning av den logiska strukturen"
+      }, {
+        "@language" : "ru",
+        "@value" : "концептуальная схема для данных, которые требуются одному или  нескольким приложениям"
+      }, {
+        "@language" : "es",
+        "@value" : "esquema conceptual de los datos requeridos por una o más aplicaciones"
+      }, {
+        "@language" : "de",
+        "@value" : "konzeptuelles Schema für Daten, das für eine oder mehrere Anwendungen erforderlich ist"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 15,
+      "prefLabel" : [ {
+        "@language" : "ar",
+        "@value" : "مخطط التطبيق"
+      }, {
+        "@language" : "sv",
+        "@value" : "applikationsschema"
+      }, {
+        "@language" : "es",
+        "@value" : "esquema de aplicación"
+      }, {
+        "@language" : "en",
+        "@value" : "application schema"
+      }, {
+        "@language" : "ms",
+        "@value" : "Skema Aplikasi"
+      }, {
+        "@language" : "zh",
+        "@value" : "应用模式"
+      }, {
+        "@language" : "da",
+        "@value" : "applikationsmodel"
+      }, {
+        "@language" : "fi",
+        "@value" : "sovellusskeema"
+      }, {
+        "@language" : "nl",
+        "@value" : "applicatie schema"
+      }, {
+        "@language" : "fr",
+        "@value" : "schéma d&#39;application"
+      }, {
+        "@language" : "ru",
+        "@value" : "схема приложения"
+      }, {
+        "@language" : "de",
+        "@value" : "Anwendungsschema"
+      }, {
+        "@language" : "ko",
+        "@value" : "응용 스키마"
+      } ],
+      "hasInfo" : "info:Info15",
+      "hasLDAPI" : [ "ldapi:ldapi15-skosrdf", "ldapi:ldapi15-rdfxml", "ldapi:ldapi15-jsonld", "ldapi:ldapi15-json" ],
+      "hasLangCode" : [ "lang:rus", "lang:spa", "lang:swe", "lang:dan", "lang:msa", "lang:fra", "lang:nld", "lang:fin", "lang:ara", "lang:eng", "lang:kor", "lang:zho", "lang:deu" ],
+      "hasReview" : "reviews:Review15",
+      "origin" : [ "lang:sweRegistry", "lang:spaRegistry", "lang:deuRegistry", "lang:danRegistry", "lang:engRegistry", "lang:fraRegistry", "lang:zhoRegistry", "lang:araRegistry", "lang:korRegistry", "lang:msaRegistry", "lang:rusRegistry", "lang:nldRegistry", "lang:finRegistry" ],
+      "rus-note" : {
+        "@language" : "ru",
+        "@value" : "Примечание: Прикладная схема описывает содержимое, структуру и ограничения, накладываемые на информацию (4.22) в определенной области применения."
+      }
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "title" : "http://purl.org/dc/terms/title",
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "issued" : "http://purl.org/dc/terms/issued",
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/15/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/15/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

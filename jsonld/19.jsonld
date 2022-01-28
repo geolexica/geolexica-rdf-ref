@@ -1,0 +1,260 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "attribute",
+      "preferredNamespacePrefix" : "concept19",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/19/",
+      "label" : "attribute",
+      "imports" : [ "../../../ldapi", "../../../sources", "../../../geolexica", "../../../notes", "../../../language", "../../../info", "../../../reviews" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":attribute",
+      "@type" : [ "skos:Concept", "owl:NamedIndividual" ],
+      "dcterms:identifier" : 19,
+      "label" : "attribute",
+      "definition" : [ {
+        "@language" : "nl",
+        "@value" : "kenmerk van een geo-object"
+      }, {
+        "@language" : "es",
+        "@value" : "nombre de una propiedad de una entidad"
+      }, {
+        "@language" : "ar",
+        "@value" : "اسم خاصية لكيان ما"
+      }, {
+        "@language" : "ru",
+        "@value" : "именованное свойство сущности"
+      }, {
+        "@language" : "de",
+        "@value" : "benannte Eigenschaft einer Einheit"
+      }, {
+        "@language" : "ms",
+        "@value" : "ciri-ciri bagi sesuatu fitur"
+      }, {
+        "@language" : "en",
+        "@value" : "named property of an entity"
+      }, {
+        "@language" : "sv",
+        "@value" : "namngiven egenskap hos objekt"
+      }, {
+        "@language" : "ko",
+        "@value" : "실체의 속성"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 19,
+      "prefLabel" : [ {
+        "@language" : "ar",
+        "@value" : "صفة"
+      }, {
+        "@language" : "es",
+        "@value" : "atributo"
+      }, {
+        "@language" : "ko",
+        "@value" : "속성"
+      }, {
+        "@language" : "sv",
+        "@value" : "attribut"
+      }, {
+        "@language" : "nl",
+        "@value" : "attribuut"
+      }, {
+        "@language" : "de",
+        "@value" : "Attribut"
+      }, {
+        "@language" : "en",
+        "@value" : "attribute"
+      }, {
+        "@language" : "ms",
+        "@value" : "atribut"
+      }, {
+        "@language" : "ru",
+        "@value" : "атрибут"
+      } ],
+      "hasInfo" : "info:Info19",
+      "hasLDAPI" : [ "ldapi:ldapi19-jsonld", "ldapi:ldapi19-json", "ldapi:ldapi19-skosrdf", "ldapi:ldapi19-rdfxml" ],
+      "hasLangCode" : [ "lang:spa", "lang:rus", "lang:ara", "lang:swe", "lang:msa", "lang:deu", "lang:kor", "lang:eng", "lang:nld" ],
+      "hasReview" : "reviews:Review19",
+      "origin" : [ "lang:nldRegistry", "lang:rusRegistry", "lang:deuRegistry", "lang:engRegistry", "lang:spaRegistry", "lang:sweRegistry", "lang:msaRegistry", "lang:korRegistry", "lang:araRegistry" ],
+      "ara-note" : {
+        "@language" : "ar",
+        "@value" : "ملاحظة: عبارة عن وصف لخاصية هندسية ، أو طوبولوجية ، أو موضوعية أو أي خاصية أخرى للكيان المعني."
+      },
+      "deu-note" : "notes:NoteTransUnavail",
+      "eng-note" : {
+        "@language" : "en",
+        "@value" : "Note to entry: Describes a geometrical, topological, thematic, or other characteristic of an entity"
+      },
+      "kor-note" : "notes:NoteTransUnavail",
+      "msa-note" : "notes:NoteTransUnavail",
+      "nld-note" : "notes:NoteTransUnavail",
+      "rus-note" : {
+        "@language" : "ru",
+        "@value" : "Примечание: Описывает геометрическую, топологическую, тематическую и другие характеристики сущности"
+      },
+      "spa-note" : {
+        "@language" : "es",
+        "@value" : "Nota: Describe una característica geométrica, topológica, temática o cualquier otra característica de una entidad"
+      },
+      "swe-note" : "notes:NoteTransUnavail",
+      "zho-note" : {
+        "@language" : "zh",
+        "@value" : "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"
+      }
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "title" : "http://purl.org/dc/terms/title",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "issued" : "http://purl.org/dc/terms/issued",
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "license" : "http://purl.org/dc/terms/license",
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "msa-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#msa-note",
+        "@type" : "@id"
+      },
+      "kor-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
+        "@type" : "@id"
+      },
+      "deu-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
+        "@type" : "@id"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "swe-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#swe-note",
+        "@type" : "@id"
+      },
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "nld-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#nld-note",
+        "@type" : "@id"
+      },
+      "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
+      "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
+      "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+      "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/19/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/19/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

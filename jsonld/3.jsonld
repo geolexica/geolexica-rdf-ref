@@ -1,0 +1,283 @@
+{
+    "@graph" : [ {
+      "@id" : "dctype:Dataset",
+      "sameAs" : "void:Dataset"
+    }, {
+      "@id" : "dcterms:conformsTo",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:created",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:issued",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:license",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:modified",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:publisher",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "dcterms:source",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespacePrefix",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "vann:preferredNamespaceUri",
+      "@type" : "owl:AnnotationProperty"
+    }, {
+      "@id" : "./",
+      "@type" : "dctype:Dataset",
+      "conformsTo" : "../../../geolexica/v1.0/",
+      "contributor" : "https://www.linkedin.com/in/rhtse/",
+      "created" : "2022-01-20",
+      "creator" : "https://www.linkedin.com/in/lanemk",
+      "issued" : " ",
+      "license" : "Copyright 2022 OSGeo",
+      "modified" : "2022-01-28",
+      "title" : "abstract test case",
+      "preferredNamespacePrefix" : "concept3",
+      "preferredNamespaceUri" : "https://isotc211.geolexica.org/api/ld/concepts/3/",
+      "label" : "abstract test case",
+      "imports" : [ "../../../info", "../../../sources", "../../../language", "../../../geolexica", "../../../notes", "../../../ldapi", "../../../reviews" ],
+      "versionIRI" : "./"
+    }, {
+      "@id" : ":abstract_test_case",
+      "@type" : [ "owl:NamedIndividual", "skos:Concept" ],
+      "dcterms:identifier" : 3,
+      "label" : "abstract test case",
+      "definition" : [ {
+        "@language" : "ar",
+        "@value" : "اختبار عام لمتطلب محدد"
+      }, {
+        "@language" : "da",
+        "@value" : "generaliseret test for et bestemt krav"
+      }, {
+        "@language" : "sv",
+        "@value" : "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"
+      }, {
+        "@language" : "fr",
+        "@value" : "test généralisé relatif à une exigence particulière"
+      }, {
+        "@language" : "es",
+        "@value" : "prueba generalizada para un requisito particular"
+      }, {
+        "@language" : "fi",
+        "@value" : "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"
+      }, {
+        "@language" : "ko",
+        "@value" : "특정한 요구 사항을 수행하기 위한 일반화된 시험"
+      }, {
+        "@language" : "zh",
+        "@value" : "针对特定要求的一般性测试。"
+      }, {
+        "@language" : "ja",
+        "@value" : "特定の要件のために作成された試験"
+      }, {
+        "@language" : "ru",
+        "@value" : "обобщенный тест на соответствие конкретным требованиям"
+      }, {
+        "@language" : "en",
+        "@value" : "generalized test for a particular requirement"
+      } ],
+      "inScheme" : "geolexica:GeolexicaConceptScheme",
+      "skos:notation" : 3,
+      "prefLabel" : [ {
+        "@language" : "sv",
+        "@value" : "abstrakt testfall"
+      }, {
+        "@language" : "de",
+        "@value" : "abstrakter Testfall"
+      }, {
+        "@language" : "ru",
+        "@value" : "абстрактный тест"
+      }, {
+        "@language" : "zh",
+        "@value" : "抽象测试用例"
+      }, {
+        "@language" : "fi",
+        "@value" : "abstrakti testitapaus"
+      }, {
+        "@language" : "es",
+        "@value" : "prueba abstracta"
+      }, {
+        "@language" : "fr",
+        "@value" : "cas de test abstrait"
+      }, {
+        "@language" : "ko",
+        "@value" : "추상 시험 케이스"
+      }, {
+        "@language" : "da",
+        "@value" : "abstrakt testforløb"
+      }, {
+        "@language" : "ja",
+        "@value" : "抽象試験項目"
+      }, {
+        "@language" : "ar",
+        "@value" : "حالة اختبار تجريدي"
+      }, {
+        "@language" : "en",
+        "@value" : "abstract test case"
+      } ],
+      "hasInfo" : "info:Info3",
+      "hasLDAPI" : [ "ldapi:ldapi3-rdfxml", "ldapi:ldapi3-skosrdf", "ldapi:ldapi3-jsonld", "ldapi:ldapi3-json" ],
+      "hasLangCode" : [ "lang:kor", "lang:eng", "lang:fra", "lang:fin", "lang:swe", "lang:spa", "lang:dan", "lang:rus", "lang:ara", "lang:jpn", "lang:zho", "lang:deu" ],
+      "hasReview" : "reviews:Review3",
+      "origin" : [ "lang:deuRegistry", "lang:sweRegistry", "lang:araRegistry", "lang:danRegistry", "lang:fraRegistry", "lang:zhoRegistry", "lang:finRegistry", "lang:rusRegistry", "lang:korRegistry", "lang:jpnRegistry", "lang:engRegistry", "lang:spaRegistry" ],
+      "ara-note" : {
+        "@language" : "ar",
+        "@value" : "ملاحظة: حالة الاختبار التجريدي هي عبارة عن أساس منهجي لاشتقاق حالات اختبار قابلة للتطبيق. ويتم التعبير بشكل واضح ومقتضب عن غرض اختبار واحد أو أكثر في حالة الاختبار التجريدية. وتكون حالة الاختبار التجريدية مستقلة عن كل من التنفيذ والقيم. وينبغي أن تكون مكتملة بمعنى أن تشكل أساسا كافيا لإصدار حكم واضح وغير ملتبس مبني على نتيجة كل اختبار يتم إجراؤه ويخضع للملاحظة ( أي سلسلة الأحداث المتتالية للاختبار)"
+      },
+      "dan-note" : {
+        "@language" : "da",
+        "@value" : "Bemærk til posten: Et abstrakt testforløb er et formelt grundlag for at kunne udvikle eksekverbare testforløb. Et eller flere testformål er samlet i det abstrakte testforløb. Et abstrakt testforløb er både uafhængigt af implementeringen og af værdierne. Testforløbet bør være fuldstændigt, dvs. tilstrækkeligt omfattende til at fremkomme med en testafgørelse, som kan knyttes utvetydigt til ethvert muligt testudfald (fx en sekvens af test events)."
+      },
+      "deu-note" : [ "notes:NoteTransUnavail", "notes:DefnTransUnavail" ],
+      "eng-note" : {
+        "@language" : "en",
+        "@value" : "Note to entry: An abstract test case is a formal basis for deriving executable test cases One or more test purposes are encapsulated in the abstract test case. An abstract test case is independent of both the implementation and the values. It should be complete in the sense that it is sufficient to enable a test verdict to be assigned unambiguously to each potentially observable test outcome (i.e. sequence of test events)."
+      },
+      "fin-note" : {
+        "@language" : "fi",
+        "@value" : "HUOM.: Abstrakti testitapaus on suoritettavissa olevien testitapausten johtamisen muodollinen perusta. Abstraktiin testitapaukseen liittyy yksi tai useampi testaustarkoitus. Abstrakti testitapaus on toteutuksesta ja arvoista riippumaton. Abstraktin testitapauksen tulisi olla täydellinen, eli sen tulisi mahdollistaa yksikäsitteisen lausunnon (hyväksyntä/hylkäys) antaminen jokaiselle mahdollisesti havaittavalle testitulokselle (testitapahtumajonolle)."
+      },
+      "jpn-note" : {
+        "@language" : "ja",
+        "@value" : "備考： 抽象試験項目は，実行可能試験項目を導き出すための基礎として用いられる。抽象試験項目は，一つ以上の試験目的を含む。抽象試験項目は，実装及び値の両方から独立している。観測可能なすべての試験結果（試験中の一連の出力）に対して，あいまい性がなく試験判定を下すことができるという意味で，抽象試験項目は，完全であることが望ましい"
+      },
+      "kor-note" : {
+        "@language" : "ko",
+        "@value" : "비고: 추상 시험 케이스는 실행 가능 시험 케이스에 대한 형식적인 틀을 제공하며 하나 이상의 시험 목적을 갖는다. 추상 시험 케이스는 구현과 값의 양쪽에 모두 독립해 있다. 관측 가능한 모든 시험 결과는 시험 판정을 내릴 수 있도록 명확해야 한다(예: 시험 이벤트의 연속)"
+      },
+      "rus-note" : {
+        "@language" : "ru",
+        "@value" : "Примечание: Абстрактный тест является формальной основой для случаев исполняемого теста. Абстрактный тест не зависит ни от реализации объекта, ни от определенных значений. Абстрактный тест должен быть выполнен в таком объеме, чтобы по его итогам можно было подготовить непротиворечивое заключение для каждого потенциально возможного результата тестирования (т.е. последовательности шагов тестирования) "
+      },
+      "spa-note" : {
+        "@language" : "es",
+        "@value" : "Nota: Una prueba genérica es una base formal para obtener pruebas ejecutables. Uno o más propósitos de prueba se encapsulan en una prueba genérica. Una prueba genérica es independiente tanto de la implementación como de los valores. Debería ser completa en el sentido de ser suficiente para permitir asignar inequívocamente un veredicto de prueba a cada resultado de la prueba potencialmente observable (es decir secuencia de eventos de ensayo)."
+      },
+      "swe-note" : "notes:NoteTransUnavail",
+      "zho-note" : [ {
+        "@language" : "zh",
+        "@value" : "果（即：测试事件的序列）当中。"
+      }, {
+        "@language" : "zh",
+        "@value" : "注： 抽象测试用例是导出可执行测试用例的形式化基础。在抽象测试用例里包含有一个或多个测试目的。一个抽象测试用例不取决于实现，也不取决于数值。它应当是完整的，足以将测试判定被明确地分配到每个潜在的可观察的测试结"
+      } ]
+    } ],
+    "@id" : "urn:x-arq:DefaultGraphNode",
+    "@context" : {
+      "sameAs" : {
+        "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+        "@type" : "@id"
+      },
+      "creator" : {
+        "@id" : "http://purl.org/dc/terms/creator",
+        "@type" : "@id"
+      },
+      "conformsTo" : {
+        "@id" : "http://purl.org/dc/terms/conformsTo",
+        "@type" : "@id"
+      },
+      "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "imports" : {
+        "@id" : "http://www.w3.org/2002/07/owl#imports",
+        "@type" : "@id"
+      },
+      "contributor" : {
+        "@id" : "http://purl.org/dc/terms/contributor",
+        "@type" : "@id"
+      },
+      "issued" : "http://purl.org/dc/terms/issued",
+      "created" : {
+        "@id" : "http://purl.org/dc/terms/created",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "title" : "http://purl.org/dc/terms/title",
+      "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "license" : "http://purl.org/dc/terms/license",
+      "versionIRI" : {
+        "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+        "@type" : "@id"
+      },
+      "preferredNamespaceUri" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "modified" : {
+        "@id" : "http://purl.org/dc/terms/modified",
+        "@type" : "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "definition" : "http://www.w3.org/2004/02/skos/core#definition",
+      "ara-note" : "https://isotc211.geolexica.org/api/ld/language#ara-note",
+      "origin" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#origin",
+        "@type" : "@id"
+      },
+      "hasLDAPI" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLDAPI",
+        "@type" : "@id"
+      },
+      "hasLangCode" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasLangCode",
+        "@type" : "@id"
+      },
+      "dan-note" : "https://isotc211.geolexica.org/api/ld/language#dan-note",
+      "eng-note" : "https://isotc211.geolexica.org/api/ld/language#eng-note",
+      "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "jpn-note" : "https://isotc211.geolexica.org/api/ld/language#jpn-note",
+      "inScheme" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "@type" : "@id"
+      },
+      "zho-note" : "https://isotc211.geolexica.org/api/ld/language#zho-note",
+      "deu-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#deu-note",
+        "@type" : "@id"
+      },
+      "spa-note" : "https://isotc211.geolexica.org/api/ld/language#spa-note",
+      "hasInfo" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasInfo",
+        "@type" : "@id"
+      },
+      "kor-note" : "https://isotc211.geolexica.org/api/ld/language#kor-note",
+      "hasReview" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/geolexica#hasReview",
+        "@type" : "@id"
+      },
+      "notation" : {
+        "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "fin-note" : "https://isotc211.geolexica.org/api/ld/language#fin-note",
+      "swe-note" : {
+        "@id" : "https://isotc211.geolexica.org/api/ld/language#swe-note",
+        "@type" : "@id"
+      },
+      "identifier" : {
+        "@id" : "http://purl.org/dc/terms/identifier",
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      },
+      "rus-note" : "https://isotc211.geolexica.org/api/ld/language#rus-note",
+      "@base" : "https://isotc211.geolexica.org/api/ld/concepts/3/",
+      "" : "https://isotc211.geolexica.org/api/ld/concepts/3/",
+      "ldapi" : "https://isotc211.geolexica.org/api/ld/ldapi#",
+      "notes" : "https://isotc211.geolexica.org/api/ld/notes#",
+      "void" : "http://vocab.deri.ie/void#",
+      "sources" : "https://isotc211.geolexica.org/api/ld/sources#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "skos" : "http://www.w3.org/2004/02/skos/core#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "reviews" : "https://isotc211.geolexica.org/api/ld/reviews#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dctype" : "http://purl.org/dc/dcmitype/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "lang" : "https://isotc211.geolexica.org/api/ld/language#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "geolexica" : "https://isotc211.geolexica.org/api/ld/geolexica#",
+      "info" : "https://isotc211.geolexica.org/api/ld/info#"
+    }
+  }

@@ -61,24 +61,19 @@
     "imports" : "http://www.w3.org/2004/02/skos/core",
     "versionIRI" : "v1.0/",
     "versionInfo" : "Version 1.0",
-    "note" : {
+    "note" : [ {
       "@language" : "en",
-      "@value" : "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Classes, properties, attributes, and axioms are subject to change."
-    }
+      "@value" : "Classes, properties, attributes, and axioms are subject to change."
+    }, {
+      "@language" : "en",
+      "@value" : "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01."
+    } ]
   }, {
     "@id" : ":ConceptInfo",
     "@type" : "owl:Class"
   }, {
     "@id" : ":ConceptReview",
     "@type" : "owl:Class"
-  }, {
-    "@id" : ":DefnTransUnavail",
-    "@type" : [ ":DefnUnavail", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Definition Translation Not Available"
-    },
-    "xsd:string" : "Definition not provided in this language."
   }, {
     "@id" : ":DefnUnavail",
     "@type" : "owl:Class",
@@ -121,39 +116,16 @@
     "@type" : "owl:Class",
     "subClassOf" : ":Note"
   }, {
-    "@id" : ":NoteTransDiff",
-    "@type" : [ ":NoteSourceDiff", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Translation Difference; Source to Normative"
-    },
-    "xsd:string" : "This translated term may not be from the same source as the normative term."
-  }, {
-    "@id" : ":NoteTransUnavail",
-    "@type" : [ ":NoteUnavail", "owl:NamedIndividual" ],
-    "label" : {
-      "@language" : "en",
-      "@value" : "Note Translation Not Available"
-    },
-    "xsd:string" : "This note has not been translated."
-  }, {
     "@id" : ":NoteUnavail",
     "@type" : "owl:Class",
     "subClassOf" : ":Note"
   }, {
-    "@id" : ":OSGeoGlossary",
-    "@type" : [ "skos:Collection", "owl:NamedIndividual" ],
-    "seeAlso" : "https://osgeo.geolexica.org/",
-    "note" : [ {
-      "@language" : "en",
-      "@value" : "OSGeo Collection of SKOS Concepts"
-    }, {
-      "@language" : "en",
-      "@value" : "(Extended) OSGeo Glossary (SKOS) collection of concepts."
-    } ]
-  }, {
     "@id" : ":Origin",
     "@type" : "owl:Class"
+  }, {
+    "@id" : ":RDF-XML",
+    "@type" : "owl:Class",
+    "subClassOf" : ":LinkedDataAPI"
   }, {
     "@id" : ":SKOS-RDF",
     "@type" : "owl:Class",
@@ -258,6 +230,11 @@
     "@type" : "owl:DatatypeProperty",
     "range" : "xsd:string"
   }, {
+    "@id" : ":rdfxmlURI",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : ":RDF-XML",
+    "range" : "xsd:anyURI"
+  }, {
     "@id" : ":review-status",
     "@type" : "owl:DatatypeProperty",
     "range" : "xsd:string"
@@ -282,6 +259,7 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
     },
+    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "created" : {
       "@id" : "http://purl.org/dc/terms/created",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
@@ -310,7 +288,6 @@
     },
     "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "issued" : "http://purl.org/dc/terms/issued",
-    "note" : "http://www.w3.org/2004/02/skos/core#note",
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
@@ -321,17 +298,9 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
     },
-    "seeAlso" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
     "prefLabel" : "http://www.w3.org/2004/02/skos/core#prefLabel",
     "label" : "http://www.w3.org/2000/01/rdf-schema#label",
     "description" : "http://purl.org/dc/terms/description",
-    "string" : {
-      "@id" : "http://www.w3.org/2001/XMLSchema#string",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "@base" : "https://isotc211.geolexica.org/api/ld/geolexica#",
     "" : "https://isotc211.geolexica.org/api/ld/geolexica#",
     "void" : "http://vocab.deri.ie/void#",
