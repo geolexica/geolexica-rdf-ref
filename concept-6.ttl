@@ -46,10 +46,11 @@ dctype:Dataset rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://isotc211.geolexica.org/api/ld/concepts/6/abstract_test_suite
+###  https://isotc211.geolexica.org/api/ld/concepts/6/
 
 :abstract_test_suite rdf:type owl:NamedIndividual ,
                               skos:Concept ;
+                     skos:inScheme geolexica:GeolexicaConceptScheme ;
                      geolexica:hasInfo info:Info6 ;
                      geolexica:hasLangCode lang:ara ,
                                            lang:dan ,
@@ -64,21 +65,28 @@ dctype:Dataset rdf:type owl:Class .
                                            lang:swe ,
                                            lang:zho ;
                      geolexica:hasReview reviews:Review6 ;
+                     geolexica:hasLDAPI ldapi:ldapi6-json , ldapi:ldapi6-jsonld , ldapi:ldapi6-skosrdf, ldapi:ldapi6-rdfxml ;
                      dcterms:identifier 6 ;
-                     rdfs:label "abstract test suite"@en ;
-                     geolexica:abbreviation "ATS"@ko , "ATS"@ja , "ATS"@da , "ATS"@de , "ATS"@es , "ATS"@en , "ATS"@sv , "ATS"@zh , "م ا ت"@ar ;
-                      lang:deu-note geolexica:DefnTransUnavail ;
-                      lang:deu-note geolexica:NoteTransUnavail ;
-                      lang:dan-note "Bemærk til posten: Abstrakte testsuiter er beskrevet i en overensstemmelsesklausul."@da ;
-                      lang:ara-note "ملاحظة: توصف مجموعات الاختبار التجريدي في فقرة للمطابقة"@ar ;
-                      lang:swe-note geolexica:NoteTransUnavail ;
-                      lang:eng-note "Note to entry: Abstract test suites are described in a conformance clause."@en ;
-                      lang:fin-note "HUOM.: Abstraktit testisarjat on kuvattu vaatimuksenmukaisuuden määrittelyssä."@fi ;
-                      lang:jpn-note "備考： 抽象試験項目群は，適合性の箇条において記述する。"@ja ;
-                      lang:spa-note "Nota: Los conjuntos de pruebas genéricas se describen en un capítulo de conformidad."@es ;
-                      lang:rus-note "Примечание: Комплексы абстрактных тестов описываются в разделе «Соответствие» международного стандарта"@ru ;
-                      lang:kor-note "비고: 추상 시험 스위트는 적합성 조항에서 기술되어 있다."@ko ;
-                      lang:zho-note "注： 抽象测试套件由一致性条款进行描述。"@zh ;
+                     skos:notation 6 ;
+                     geolexica:abbreviation "ATS"@da ,
+                                            "ATS"@de ,
+                                            "ATS"@en ,
+                                            "ATS"@es ,
+                                            "ATS"@ja ,
+                                            "ATS"@ko ,
+                                            "ATS"@sv ,
+                                            "ATS"@zh ,
+                                            "م ا ت"@ar ;
+                     lang:ara-note "ملاحظة: توصف مجموعات الاختبار التجريدي في فقرة للمطابقة"@ar ;
+                     lang:dan-note "Bemærk til posten: Abstrakte testsuiter er beskrevet i en overensstemmelsesklausul."@da ;
+                     lang:eng-note "Note to entry: Abstract test suites are described in a conformance clause."@en ;
+                     lang:fin-note "HUOM.: Abstraktit testisarjat on kuvattu vaatimuksenmukaisuuden määrittelyssä."@fi ;
+                     lang:jpn-note "備考： 抽象試験項目群は，適合性の箇条において記述する。"@ja ;
+                     lang:kor-note "비고: 추상 시험 스위트는 적합성 조항에서 기술되어 있다."@ko ;
+                     lang:rus-note "Примечание: Комплексы абстрактных тестов описываются в разделе «Соответствие» международного стандарта"@ru ;
+                     lang:spa-note "Nota: Los conjuntos de pruebas genéricas se describen en un capítulo de conformidad."@es ;
+                     lang:zho-note "注： 抽象测试套件由一致性条款进行描述。"@zh ;
+                     rdfs:label "abstract test suite" ;
                      skos:definition "abstract test module specifying all the requirements to be satisfied for conformance"@en ,
                                      "abstrakt testmodul, som specificerer alle krav, der skal opfyldes for, at der er overensstemmelse"@da ,
                                      "abstrakti testausmoduuli, jossa on määritelty kaikki laatuvaatimustason täyttymiseen edellytettävät vaatimukset"@fi ,
@@ -90,8 +98,6 @@ dctype:Dataset rdf:type owl:Class .
                                      "満たされなければならないすべての要件を規定する抽象試験モジュール。"@ja ,
                                      "规定了实现一致性所要满足的全部要求的抽象测试模块。"@zh ,
                                      "적합성 시험에 요구되는 모든 사항들을 규정한 추상 시험 모듈"@ko ;
-                     skos:inScheme geolexica:GeolexicaConceptScheme ;
-                     skos:notation 6 ;
                      skos:prefLabel "abstract test suite"@en ,
                                     "abstrakt testsuite"@da ,
                                     "abstrakt testsvit"@sv ,
@@ -115,6 +121,8 @@ dctype:Dataset rdf:type owl:Class .
                                       lang:rusRegistry ,
                                       lang:spaRegistry ,
                                       lang:sweRegistry ,
-                                      lang:zhoRegistry .
+                                      lang:zhoRegistry ;
+                     lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+                     lang:swe-note notes:NoteTransUnavail .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
