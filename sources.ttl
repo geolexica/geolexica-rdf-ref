@@ -14,23 +14,29 @@
 @base <https://isotc211.geolexica.org/api/ld/sources#> .
 
 
-<https://isotc211.geolexica.org/api/sources> rdf:type dctype:Dataset, void:Dataset ;
-                                             owl:versionIRI <https://isotc211.geolexica.org/api/ld/sources/v1.0/> ;
-                                             owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
-                                             dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
-                                             dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-                                             dcterms:created "2022-01-26"^^xsd:date ;
-                                             dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-                                             dcterms:issued " " ;
-                                             dcterms:license "Copyright 2022 OSGeo" ;
-                                             dcterms:modified "2022-01-26"^^xsd:date ;
-                                             dcterms:publisher <https://www.osgeo.org/> ;
-                                             dcterms:title "Sources RDF Dataset (MLGT)"@en ;
-                                             rdfs:label "Sources RDF Dataset (MLGT)" ;
-                                             vann:preferredNamespacePrefix "sources" ;
-                                             vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/sources#" ;
-                                             owl:versionInfo "Version 1.0" ;
-                                             skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Sources are subject to change."@en .
+<https://isotc211.geolexica.org/api/sources> rdf:type dctype:Dataset ;
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/sources/v1.0/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-26"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-26"^^xsd:date ;
+        dcterms:publisher <https://www.osgeo.org/> ;
+        dcterms:title "Sources RDF Dataset (MLGT)"@en ;
+        rdfs:label "Sources RDF Dataset (MLGT)" ;
+        vann:preferredNamespacePrefix "sources" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/sources#" ;
+        owl:versionInfo "Version 1.0" ;
+        skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Sources are subject to change."@en .
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
 
 #################################################################
 #    Annotation properties
@@ -38,28 +44,20 @@
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/issued
 dcterms:issued rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/modified
 dcterms:modified rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/publisher
 dcterms:publisher rdf:type owl:AnnotationProperty .
-
-
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 

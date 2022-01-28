@@ -1,6 +1,7 @@
 @prefix : <https://isotc211.geolexica.org/api/ld/ldapi#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix info: <https://isotc211.geolexica.org/api/info#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,422 +12,633 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix reviews: <https://isotc211.geolexica.org/api/reviews#> .
 @prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/api/ld/ldapi#> .
-
-<https://isotc211.geolexica.org/api/ld/ldapi#> rdf:type dctype:Dataset ;
-        owl:versionIRI <https://isotc211.geolexica.org/api/ld/ldapi/v1.0> ;
-        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-25"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:description "Linked Data API serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-25"^^xsd:date ;
-        dcterms:title "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        vann:preferredNamespacePrefix "ldapi" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/ldapi#" ;
-        rdfs:label "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        owl:versionInfo "Version 1.0" ;
-        skos:note "Data is subject to change."@en .
-
-dctype:Dataset owl:sameAs void:Datatype .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
 
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-skos:inScheme rdf:type owl:AnnotationProperty .
-
-###  http://www.w3.org/2004/02/skos/core#notation
-skos:notation rdf:type owl:AnnotationProperty .
-
-###  https://osgeo.geolexica.org/api/geolexica#origin
-geolexica:origin rdf:type owl:AnnotationProperty .
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://purl.org/dc/dcmitype/Dataset
-dctype:Dataset rdf:type owl:Class .
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#
-<https://isotc211.geolexica.org/api/ld/ldapi#> rdf:type owl:NamedIndividual , dctype:Dataset .
-
-###  Linked data API individuals  ###
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-json
-:ldapi2-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/2.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-jsonld
-:ldapi2-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/2.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-skosrdf
-:ldapi2-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/2.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-json
-:ldapi3-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/3.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-jsonld
-:ldapi3-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/3.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-skosrdf
-:ldapi3-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/3.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-json
-:ldapi4-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/4.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-jsonld
-:ldapi4-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/4.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-skosrdf
-:ldapi4-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/4.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-json
-:ldapi5-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/5.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-jsonld
-:ldapi5-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/5.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-skosrdf
-:ldapi5-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/5.ttl"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-json
-# :ldapi6-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-#              geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/6.json"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-jsonld
-# :ldapi6-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-#                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/6.jsonld"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-skosrdf
-# :ldapi6-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-#                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/6.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-json
-:ldapi7-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/7.json"^^xsd:anyURI .
-
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-jsonld
-:ldapi7-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/7.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-skosrdf
-:ldapi7-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/7.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-json
-:ldapi8-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/8.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-jsonld
-:ldapi8-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/8.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-skosrdf
-:ldapi8-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/8.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-json
-:ldapi9-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/9.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-jsonld
-:ldapi9-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/9.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-skosrdf
-:ldapi9-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/9.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-json
-:ldapi10-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/10.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-jsonld
-:ldapi10-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/10.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-skosrdf
-:ldapi10-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/10.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-json
-:ldapi11-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/11.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-jsonld
-:ldapi11-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/11.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-skosrdf
-:ldapi11-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/11.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-json
-:ldapi12-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/12.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-jsonld
-:ldapi12-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/12.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-skosrdf
-:ldapi12-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/12.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-json
-:ldapi13-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/13.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-jsonld
-:ldapi13-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/13.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-skosrdf
-:ldapi13-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/13.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-json
-:ldapi14-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/14.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-jsonld
-:ldapi14-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/14.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-skosrdf
-:ldapi14-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/14.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-json
-:ldapi15-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/15.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-jsonld
-:ldapi15-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/15.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-skosrdf
-:ldapi15-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/15.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-json
-:ldapi16-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/16.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-jsonld
-:ldapi16-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/16.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-skosrdf
-:ldapi16-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/16.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-json
-:ldapi17-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/17.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-jsonld
-:ldapi17-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/17.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-skosrdf
-:ldapi17-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/17.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-json
-:ldapi18-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/18.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-jsonld
-:ldapi18-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/18.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-skosrdf
-:ldapi18-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/18.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-json
-:ldapi19-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/19.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-jsonld
-:ldapi19-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/19.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-skosrdf
-:ldapi19-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/19.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-json
-:ldapi20-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/20.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-jsonld
-:ldapi20-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/20.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-skosrdf
-:ldapi20-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/20.ttl"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi21-json
-# :ldapi21-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-#              geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/21.json"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi21-jsonld
-# :ldapi21-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-#                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/21.jsonld"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi21-skosrdf
-# :ldapi21-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-#                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/21.ttl"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi22-json
-# :ldapi22-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-#              geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/22.json"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi22-jsonld
-# :ldapi22-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-#                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/22.jsonld"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi22-skosrdf
-# :ldapi22-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-#                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/22.ttl"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi23-json
-# :ldapi23-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-#              geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/23.json"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi23-jsonld
-# :ldapi23-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-#                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/23.jsonld"^^xsd:anyURI .
-
-# ###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi23-skosrdf
-# :ldapi23-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-#                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/23.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-json
-:ldapi24-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/24.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-jsonld
-:ldapi24-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/24.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-skosrdf
-:ldapi24-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/24.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-json
-:ldapi25-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/25.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-jsonld
-:ldapi25-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/25.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-skosrdf
-:ldapi25-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/25.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-json
-:ldapi26-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/26.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-jsonld
-:ldapi26-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/26.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-skosrdf
-:ldapi26-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/26.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-json
-:ldapi27-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/27.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-jsonld
-:ldapi27-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/27.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-skosrdf
-:ldapi27-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/27.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-json
-:ldapi28-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/28.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-jsonld
-:ldapi28-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/28.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-skosrdf
-:ldapi28-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/28.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-json
-:ldapi29-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/29.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-jsonld
-:ldapi29-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/29.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-skosrdf
-:ldapi29-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/29.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-json
-:ldapi30-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/30.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-jsonld
-:ldapi30-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/30.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-skosrdf
-:ldapi30-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/30.ttl"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-json
-:ldapi31-json rdf:type owl:NamedIndividual , geolexica:JSON ;
-             geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/31.json"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-jsonld
-:ldapi31-jsonld rdf:type owl:NamedIndividual , geolexica:JSON-LD ;
-               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/31.jsonld"^^xsd:anyURI .
-
-###  https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-skosrdf
-:ldapi31-skosrdf rdf:type owl:NamedIndividual , geolexica:SKOS-RDF ;
-                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/31.ttl"^^xsd:anyURI .
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+<https://isotc211.geolexica.org/api/ld/ldapi#> a owl:Ontology ;
+	owl:versionIRI <https://isotc211.geolexica.org/api/ld/ldapi/v1.0> ;
+	owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
+	dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+	dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+	dcterms:created "2022-01-25"^^xsd:date ;
+	dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+	dcterms:description "Linked Data API serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
+	dcterms:issued " " ;
+	dcterms:license "Copyright 2022 OSGeo" ;
+	dcterms:modified "2022-01-25"^^xsd:date ;
+	dcterms:title "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+	vann:preferredNamespacePrefix "ldapi" ;
+	vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/ldapi#" ;
+	rdfs:label "Linked Data API Dataset: For ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+	owl:versionInfo "Version 1.0" ;
+	skos:note "Data is subject to change."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/conformsTo
+
+dcterms:conformsTo a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/created
+
+dcterms:created a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/issued
+
+dcterms:issued a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dcterms:license a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/modified
+
+dcterms:modified a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/publisher
+
+dcterms:publisher a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/source
+
+dcterms:source a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/dcmitype/Dataset
+
+dctype:Dataset a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#
+
+<https://isotc211.geolexica.org/api/ld/ldapi#> a owl:NamedIndividual , dctype:Dataset .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-json
+
+:ldapi10-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/10.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-jsonld
+
+:ldapi10-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/10.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-rdfxml
+
+:ldapi10-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/10.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi10-skosrdf
+
+:ldapi10-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/10.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-json
+
+:ldapi11-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/11.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-jsonld
+
+:ldapi11-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/11.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-rdfxml
+
+:ldapi11-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/11.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi11-skosrdf
+
+:ldapi11-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/11.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-json
+
+:ldapi12-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/12.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-jsonld
+
+:ldapi12-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/12.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-rdfxml
+
+:ldapi12-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/12.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi12-skosrdf
+
+:ldapi12-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/12.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-json
+
+:ldapi13-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/13.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-jsonld
+
+:ldapi13-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/13.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-rdfxml
+
+:ldapi13-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/13.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi13-skosrdf
+
+:ldapi13-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/13.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-json
+
+:ldapi14-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/14.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-jsonld
+
+:ldapi14-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/14.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-rdfxml
+
+:ldapi14-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/14.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi14-skosrdf
+
+:ldapi14-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/14.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-json
+
+:ldapi15-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/15.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-jsonld
+
+:ldapi15-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/15.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-rdfxml
+
+:ldapi15-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/15.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi15-skosrdf
+
+:ldapi15-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/15.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-json
+
+:ldapi16-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/16.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-jsonld
+
+:ldapi16-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/16.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-rdfxml
+
+:ldapi16-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/16.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi16-skosrdf
+
+:ldapi16-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/16.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-json
+
+:ldapi17-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/17.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-jsonld
+
+:ldapi17-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/17.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-rdfxml
+
+:ldapi17-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/17.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi17-skosrdf
+
+:ldapi17-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/17.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-json
+
+:ldapi18-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/18.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-jsonld
+
+:ldapi18-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/18.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-rdfxml
+
+:ldapi18-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/18.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi18-skosrdf
+
+:ldapi18-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/18.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-json
+
+:ldapi19-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/19.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-jsonld
+
+:ldapi19-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/19.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-rdfxml
+
+:ldapi19-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/19.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi19-skosrdf
+
+:ldapi19-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/19.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-json
+
+:ldapi2-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/2.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-jsonld
+
+:ldapi2-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/2.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-rdfxml
+
+:ldapi2-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/2.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi2-skosrdf
+
+:ldapi2-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/2.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-json
+
+:ldapi20-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/20.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-jsonld
+
+:ldapi20-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/20.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-rdfxml
+
+:ldapi20-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/20.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi20-skosrdf
+
+:ldapi20-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/20.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-json
+
+:ldapi24-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/24.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-jsonld
+
+:ldapi24-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/24.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-rdfxml
+
+:ldapi24-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/24.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi24-skosrdf
+
+:ldapi24-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/24.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-json
+
+:ldapi25-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/25.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-jsonld
+
+:ldapi25-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/25.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-rdfxml
+
+:ldapi25-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/25.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi25-skosrdf
+
+:ldapi25-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/25.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-json
+
+:ldapi26-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/26.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-jsonld
+
+:ldapi26-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/26.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-rdfxml
+
+:ldapi26-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/26.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi26-skosrdf
+
+:ldapi26-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/26.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-json
+
+:ldapi27-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/27.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-jsonld
+
+:ldapi27-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/27.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-rdfxml
+
+:ldapi27-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/27.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi27-skosrdf
+
+:ldapi27-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/27.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-json
+
+:ldapi28-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/28.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-jsonld
+
+:ldapi28-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/28.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-rdfxml
+
+:ldapi28-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/28.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi28-skosrdf
+
+:ldapi28-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/28.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-json
+
+:ldapi29-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/29.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-jsonld
+
+:ldapi29-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/29.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-rdfxml
+
+:ldapi29-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/29.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi29-skosrdf
+
+:ldapi29-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/29.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-json
+
+:ldapi3-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/3.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-jsonld
+
+:ldapi3-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/3.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-rdfxml
+
+:ldapi3-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/3.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi3-skosrdf
+
+:ldapi3-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/3.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-json
+
+:ldapi30-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/30.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-jsonld
+
+:ldapi30-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/30.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-rdfxml
+
+:ldapi30-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/30.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi30-skosrdf
+
+:ldapi30-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/30.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-json
+
+:ldapi31-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/31.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-jsonld
+
+:ldapi31-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/31.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-rdfxml
+
+:ldapi31-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/31.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi31-skosrdf
+
+:ldapi31-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/31.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-json
+
+:ldapi4-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/4.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-jsonld
+
+:ldapi4-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/4.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-rdfxml
+
+:ldapi4-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/4.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi4-skosrdf
+
+:ldapi4-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/4.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-json
+
+:ldapi5-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/5.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-jsonld
+
+:ldapi5-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/5.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-rdfxml
+
+:ldapi5-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/5.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi5-skosrdf
+
+:ldapi5-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/5.ttl"^^xsd:anyURI .
+
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-json
+
+:ldapi6-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/6.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-jsonld
+
+:ldapi6-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/6.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-rdfxml
+
+:ldapi6-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/6.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi6-skosrdf
+
+:ldapi6-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/6.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-json
+
+:ldapi7-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/7.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-jsonld
+
+:ldapi7-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/7.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-rdfxml
+
+:ldapi7-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/7.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi7-skosrdf
+
+:ldapi7-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/7.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-json
+
+:ldapi8-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/8.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-jsonld
+
+:ldapi8-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/8.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-rdfxml
+
+:ldapi8-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/8.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi8-skosrdf
+
+:ldapi8-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/8.ttl"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-json
+
+:ldapi9-json a owl:NamedIndividual , geolexica:JSON ;
+	geolexica:jsonURI "https://isotc211.geolexica.org/api/ld/ldapi/9.json"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-jsonld
+
+:ldapi9-jsonld a owl:NamedIndividual , geolexica:JSON-LD ;
+	geolexica:jsonldURI "https://isotc211.geolexica.org/api/ld/ldapi/9.jsonld"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-rdfxml
+
+:ldapi9-rdfxml a owl:NamedIndividual , geolexica:RDF-XML ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/9.rdf"^^xsd:anyURI .
+# 
+# https://isotc211.geolexica.org/api/ld/ldapi#ldapi9-skosrdf
+
+:ldapi9-skosrdf a owl:NamedIndividual , geolexica:SKOS-RDF ;
+	geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ld/ldapi/9.ttl"^^xsd:anyURI .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

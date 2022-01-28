@@ -13,7 +13,7 @@
 @prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
 @base <https://isotc211.geolexica.org/api/ld/reviews#> .
 
-<https://isotc211.geolexica.org/api/ld/reviews#> a dctype:Dataset, void:Dataset ;
+<https://isotc211.geolexica.org/api/ld/reviews#> a dctype:Dataset ;
          owl:versionIRI <https://isotc211.geolexica.org/api/ld/reviews/v0.1.0> ;
          owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
          dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
@@ -31,12 +31,12 @@
          owl:versionInfo "Version 1.0" ;
          skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01. Data is subject to change."@en .
 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
+dctype:Dataset owl:sameAs void:Dataset .
 
+# #################################################################
+# #    Individuals
+# #################################################################
+ 
 ###  https://isotc211.geolexica.org/api/ld/reviews#Review2
 :Review2 a owl:NamedIndividual , geolexica:ConceptReview ;
 	geolexica:decision "accepted"@en ;

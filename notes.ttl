@@ -1,0 +1,80 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/notes#> .
+
+
+<https://isotc211.geolexica.org/api/notes#> rdf:type dctype:Dataset ;
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/notes/v1.0/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-28"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-26"^^xsd:date ;
+        dcterms:publisher <https://www.osgeo.org/> ;
+        dcterms:title "Notes RDF Dataset (MLGT)"@en ;
+        rdfs:label "Notes RDF Dataset (MLGT)" ;
+        vann:preferredNamespacePrefix "notes" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/notes#" ;
+        owl:versionInfo "Version 1.0" ;
+        skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01 Notes are subject to change."@en .
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#DefnTransUnavail
+:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                  geolexica:DefnUnavail ;
+                  xsd:string "Definition not provided in this language."^^xsd:string ;
+                  rdfs:label "Definition Translation Not Available"@en .
+
+###  https://osgeo.geolexica.org/api/ld/geolexica#NoteTransDiff
+:NoteTransDiff rdf:type owl:NamedIndividual ,
+               geolexica:NoteSourceDiff ;
+               xsd:string "This translated term may not be from the same source as the normative term."^^xsd:string ;
+               rdfs:label "Translation Difference; Source to Normative"@en .
+
+###  https://isotc211.geolexica.org/api/ld/language#NoteTransUnavail
+:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                  geolexica:NoteUnavail ;
+                  xsd:string "This note has not been translated."^^xsd:string ;
+                  rdfs:label "Note Translation Not Available"@en .

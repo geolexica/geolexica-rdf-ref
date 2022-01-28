@@ -1,4 +1,4 @@
-@prefix : <https://isotc211.geolexica.org/api/concepts/6/> .
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/6/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -11,32 +11,29 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
 @prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
 @base <https://isotc211.geolexica.org/api/ld/concepts/6/> .
 
-<https://isotc211.geolexica.org/api/ld/concepts/6/> rdf:type dctype:Dataset, void:Dataset ;
-                                                  owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/6/> ;
-                                                  owl:imports info: , reviews: , <https://isotc211.geolexica.org/api/ld/geolexica> ;
-                                                  dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
-                                                  dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-                                                  dcterms:created "2022-01-20"^^xsd:date ;
-                                                  dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-                                                  dcterms:description "Concept 6: abstract test suite"@en ;
-                                                  dcterms:issued " " ;
-                                                  dcterms:license "Copyright 2022 OSGeo" ;
-                                                  dcterms:modified "2022-01-27"^^xsd:date ;
-                                                  dcterms:title "Concept 6: abstract test suite"@en ;
-                                                  vann:preferredNamespacePrefix "concept6" ;
-                                                  vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/6/" ;
-                                                  owl:versionInfo "Version 0.1.0" ;
-                                                  skos:note "Member of OSGeo Geolexica MLGT Glossary"@en .
+<https://isotc211.geolexica.org/api/ld/concepts/6/> rdf:type dctype:Dataset ;
 
-#################################################################
-#    Data properties
-#################################################################
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/6/> ;
+        owl:imports info: , reviews: , sources: , <https://isotc211.geolexica.org/api/ld/geolexica> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:description "term: abstract test suite"@en ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-27"^^xsd:date ;
+        dcterms:title "abstract test suite" ;
+        rdfs:label "abstract test suite" ;
+        vann:preferredNamespacePrefix "concept6" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/6/" .
 
-###  https://osgeo.geolexica.org/api/geolexica#source
-geolexica:source rdf:type owl:DatatypeProperty .
+
+dctype:Dataset owl:sameAs void:Dataset .
 
 #################################################################
 #    Classes
@@ -49,11 +46,7 @@ dctype:Dataset rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://isotc211.geolexica.org/api/concepts/6/
-
-<https://isotc211.geolexica.org/api/concepts/6/> rdf:type owl:NamedIndividual , dctype:Dataset .
-
-###  https://isotc211.geolexica.org/api/concepts/6/abstract_test_suite
+###  https://isotc211.geolexica.org/api/ld/concepts/6/abstract_test_suite
 
 :abstract_test_suite rdf:type owl:NamedIndividual ,
                               skos:Concept ;
