@@ -5,11 +5,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
 @prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -23,9 +23,9 @@
                                                    owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
                                                                info: ,
                                                                lang: ,
+                                                               ldapi: ,
                                                                notes: ,
                                                                reviews: ,
-                                                               ldapi: ,
                                                                sources: ;
                                                    dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
                                                    dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
@@ -114,7 +114,11 @@ dctype:Dataset owl:sameAs void:Dataset .
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
               geolexica:hasInfo info:Info2 ;
-              geolexica:hasLDAPI :abbreviation ;
+              geolexica:hasLDAPI :abbreviation ,
+                                 ldapi:ldapi2-json ,
+                                 ldapi:ldapi2-jsonld ,
+                                 ldapi:ldapi2-rdfxml ,
+                                 ldapi:ldapi2-skosrdf ;
               geolexica:hasLangCode lang:ara ,
                                     lang:dan ,
                                     lang:deu ,
@@ -124,7 +128,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                     lang:spa ,
                                     lang:swe ;
               geolexica:hasReview reviews:Review2 ;
-              geolexica:hasLDAPI ldapi:ldapi2-json , ldapi:ldapi2-jsonld , ldapi:ldapi2-skosrdf, ldapi:ldapi2-rdfxml ;
               dcterms:identifier 2 ;
               skos:notation 2 ;
               rdfs:label "abbreviation" ;
@@ -159,6 +162,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
                     geolexica:hasInfo info:Info3 ;
+                    geolexica:hasLDAPI ldapi:ldapi3-json ,
+                                       ldapi:ldapi3-jsonld ,
+                                       ldapi:ldapi3-rdfxml ,
+                                       ldapi:ldapi3-skosrdf ;
                     geolexica:hasLangCode lang:ara ,
                                           lang:dan ,
                                           lang:deu ,
@@ -172,7 +179,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                           lang:swe ,
                                           lang:zho ;
                     geolexica:hasReview reviews:Review3 ;
-                    geolexica:hasLDAPI ldapi:ldapi3-json , ldapi:ldapi3-jsonld , ldapi:ldapi3-skosrdf, ldapi:ldapi3-rdfxml ;
                     dcterms:identifier 3 ;
                     skos:notation 3 ;
                     lang:ara-note "ملاحظة: حالة الاختبار التجريدي هي عبارة عن أساس منهجي لاشتقاق حالات اختبار قابلة للتطبيق. ويتم التعبير بشكل واضح ومقتضب عن غرض اختبار واحد أو أكثر في حالة الاختبار التجريدية. وتكون حالة الاختبار التجريدية مستقلة عن كل من التنفيذ والقيم. وينبغي أن تكون مكتملة بمعنى أن تشكل أساسا كافيا لإصدار حكم واضح وغير ملتبس مبني على نتيجة كل اختبار يتم إجراؤه ويخضع للملاحظة ( أي سلسلة الأحداث المتتالية للاختبار)"@ar ;
@@ -221,7 +227,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                                      lang:spaRegistry ,
                                      lang:sweRegistry ,
                                      lang:zhoRegistry ;
-                    lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+                    lang:deu-note notes:DefnTransUnavail ,
+                                  notes:NoteTransUnavail ;
                     lang:swe-note notes:NoteTransUnavail .
 
 
@@ -230,6 +237,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
                       geolexica:hasInfo info:Info4 ;
+                      geolexica:hasLDAPI ldapi:ldapi4-json ,
+                                         ldapi:ldapi4-jsonld ,
+                                         ldapi:ldapi4-rdfxml ,
+                                         ldapi:ldapi4-skosrdf ;
                       geolexica:hasLangCode lang:ara ,
                                             lang:dan ,
                                             lang:deu ,
@@ -243,7 +254,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                             lang:swe ,
                                             lang:zho ;
                       geolexica:hasReview reviews:Review4 ;
-                      geolexica:hasLDAPI ldapi:ldapi4-json , ldapi:ldapi4-jsonld , ldapi:ldapi4-skosrdf, ldapi:ldapi4-rdfxml ;
                       dcterms:identifier 4 ;
                       skos:notation 4 ;
                       rdfs:label "abstract test method" ;
@@ -290,6 +300,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
                       geolexica:hasInfo info:Info5 ;
+                      geolexica:hasLDAPI ldapi:ldapi5-json ,
+                                         ldapi:ldapi5-jsonld ,
+                                         ldapi:ldapi5-rdfxml ,
+                                         ldapi:ldapi5-skosrdf ;
                       geolexica:hasLangCode lang:ara ,
                                             lang:dan ,
                                             lang:deu ,
@@ -303,7 +317,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                             lang:swe ,
                                             lang:zho ;
                       geolexica:hasReview reviews:Review5 ;
-                      geolexica:hasLDAPI ldapi:ldapi5-json , ldapi:ldapi5-jsonld , ldapi:ldapi5-skosrdf, ldapi:ldapi5-rdfxml ;
                       dcterms:identifier 5 ;
                       skos:notation 5 ;
                       lang:ara-note "ملاحظة: الوحدات التكاملية المستقلة للاختبار التجريدي يمكن تعشيشها على نسق تسلسل هرمي"@ar ;
@@ -351,7 +364,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                                        lang:spaRegistry ,
                                        lang:sweRegistry ,
                                        lang:zhoRegistry ;
-                      lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+                      lang:deu-note notes:DefnTransUnavail ,
+                                    notes:NoteTransUnavail ;
                       lang:swe-note notes:NoteTransUnavail .
 
 
@@ -360,6 +374,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                               skos:Concept ;
                      skos:inScheme geolexica:GeolexicaConceptScheme ;
                      geolexica:hasInfo info:Info6 ;
+                     geolexica:hasLDAPI ldapi:ldapi6-json ,
+                                        ldapi:ldapi6-jsonld ,
+                                        ldapi:ldapi6-rdfxml ,
+                                        ldapi:ldapi6-skosrdf ;
                      geolexica:hasLangCode lang:ara ,
                                            lang:dan ,
                                            lang:deu ,
@@ -373,7 +391,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                            lang:swe ,
                                            lang:zho ;
                      geolexica:hasReview reviews:Review6 ;
-                     geolexica:hasLDAPI ldapi:ldapi6-json , ldapi:ldapi6-jsonld , ldapi:ldapi6-skosrdf, ldapi:ldapi6-rdfxml ;
                      dcterms:identifier 6 ;
                      skos:notation 6 ;
                      geolexica:abbreviation "ATS"@da ,
@@ -430,7 +447,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                                       lang:spaRegistry ,
                                       lang:sweRegistry ,
                                       lang:zhoRegistry ;
-                     lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+                     lang:deu-note notes:DefnTransUnavail ,
+                                   notes:NoteTransUnavail ;
                      lang:swe-note notes:NoteTransUnavail .
 
 
@@ -439,6 +457,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
                     geolexica:hasInfo info:Info7 ;
+                    geolexica:hasLDAPI ldapi:ldapi7-json ,
+                                       ldapi:ldapi7-jsonld ,
+                                       ldapi:ldapi7-rdfxml ,
+                                       ldapi:ldapi7-skosrdf ;
                     geolexica:hasLangCode lang:ara ,
                                           lang:dan ,
                                           lang:deu ,
@@ -452,7 +474,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                           lang:spa ,
                                           lang:swe ,
                                           lang:zho ;
-                    geolexica:hasLDAPI ldapi:ldapi7-json , ldapi:ldapi7-jsonld , ldapi:ldapi7-skosrdf, ldapi:ldapi7-rdfxml ;
                     dcterms:identifier 7 ;
                     skos:notation 7 ;
                     lang:ara-note "ملاحظة 1: هذا يشمل تخطيط وتنفيذ عدة أنواع من الاختبارات (مثل الاختبارات الوظيفية واختبارات الحجم واختبارات الأداء) التي تثبت أن التنفيذ يفي بجميع شروط ومتطلبات المستخدم"@ar ,
@@ -511,7 +532,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                                      lang:spaRegistry ,
                                      lang:sweRegistry ,
                                      lang:zhoRegistry ;
-                    lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+                    lang:deu-note notes:DefnTransUnavail ,
+                                  notes:NoteTransUnavail ;
                     lang:fra-note notes:NoteTransUnavail ;
                     lang:swe-note notes:NoteTransUnavail .
 
@@ -521,6 +543,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
           geolexica:hasInfo info:Info8 ;
+          geolexica:hasLDAPI ldapi:ldapi8-json ,
+                             ldapi:ldapi8-jsonld ,
+                             ldapi:ldapi8-rdfxml ,
+                             ldapi:ldapi8-skosrdf ;
           geolexica:hasLangCode lang:ara ,
                                 lang:dan ,
                                 lang:eng ,
@@ -534,7 +560,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                 lang:swe ,
                                 lang:zho ;
           geolexica:hasReview reviews:Review8 ;
-          geolexica:hasLDAPI ldapi:ldapi8-json , ldapi:ldapi8-jsonld , ldapi:ldapi8-skosrdf, ldapi:ldapi8-rdfxml ;      
           dcterms:identifier 8 ;
           skos:notation 8 ;
           lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
@@ -594,6 +619,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                 skos:Concept ;
        skos:inScheme geolexica:GeolexicaConceptScheme ;
        geolexica:hasInfo info:Info9 ;
+       geolexica:hasLDAPI ldapi:ldapi9-json ,
+                          ldapi:ldapi9-jsonld ,
+                          ldapi:ldapi9-rdfxml ,
+                          ldapi:ldapi9-skosrdf ;
        geolexica:hasLangCode lang:ara ,
                              lang:dan ,
                              lang:eng ,
@@ -605,7 +634,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                              lang:swe ,
                              lang:zho ;
        geolexica:hasReview reviews:Review9 ;
-       geolexica:hasLDAPI ldapi:ldapi9-json , ldapi:ldapi9-jsonld , ldapi:ldapi9-skosrdf, ldapi:ldapi9-rdfxml ;
        dcterms:identifier 9 ;
        skos:notation 9 ;
        lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
@@ -651,7 +679,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                         lang:spaRegistry ,
                         lang:sweRegistry ,
                         lang:zhoRegistry ;
-       lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+       lang:deu-note notes:DefnTransUnavail ,
+                     notes:NoteTransUnavail ;
        lang:fra-note notes:NoteTransDiff ;
        lang:msa-note notes:NoteTransUnavail .
 
@@ -661,6 +690,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
                geolexica:hasInfo info:Info10 ;
+               geolexica:hasLDAPI ldapi:ldapi10-json ,
+                                  ldapi:ldapi10-jsonld ,
+                                  ldapi:ldapi10-rdfxml ,
+                                  ldapi:ldapi10-skosrdf ;
                geolexica:hasLangCode lang:ara ,
                                      lang:dan ,
                                      lang:deu ,
@@ -670,7 +703,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                      lang:spa ,
                                      lang:swe ;
                geolexica:hasReview reviews:Review10 ;
-               geolexica:hasLDAPI ldapi:ldapi10-json , ldapi:ldapi10-jsonld , ldapi:ldapi10-skosrdf, ldapi:ldapi10-rdfxml ;
                dcterms:identifier 10 ;
                skos:notation 10 ;
                rdfs:label "admitted term" ;
@@ -705,6 +737,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
              geolexica:hasInfo info:Info11 ;
+             geolexica:hasLDAPI ldapi:ldapi11-json ,
+                                ldapi:ldapi11-jsonld ,
+                                ldapi:ldapi11-rdfxml ,
+                                ldapi:ldapi11-skosrdf ;
              geolexica:hasLangCode lang:ara ,
                                    lang:dan ,
                                    lang:deu ,
@@ -717,7 +753,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                    lang:swe ,
                                    lang:zho ;
              geolexica:hasReview reviews:Review11 ;
-             geolexica:hasLDAPI ldapi:ldapi11-json , ldapi:ldapi11-jsonld , ldapi:ldapi11-skosrdf, ldapi:ldapi11-rdfxml ;
              dcterms:identifier 11 ;
              skos:notation 11 ;
              lang:ara-note "ملاحظة: أنظر التركيب"@ar ;
@@ -762,7 +797,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                               lang:spaRegistry ,
                               lang:sweRegistry ,
                               lang:zhoRegistry ;
-             lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+             lang:deu-note notes:DefnTransUnavail ,
+                           notes:NoteTransUnavail ;
              lang:rus-note notes:NoteTransDiff ;
              lang:swe-note notes:NoteTransUnavail .
 
@@ -772,6 +808,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
           geolexica:hasInfo info:Info12 ;
+          geolexica:hasLDAPI ldapi:ldapi12-json ,
+                             ldapi:ldapi12-jsonld ,
+                             ldapi:ldapi12-rdfxml ,
+                             ldapi:ldapi12-skosrdf ;
           geolexica:hasLangCode lang:ara ,
                                 lang:dan ,
                                 lang:deu ,
@@ -785,7 +825,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                 lang:swe ,
                                 lang:zho ;
           geolexica:hasReview reviews:Review12 ;
-          geolexica:hasLDAPI ldapi:ldapi12-json , ldapi:ldapi12-jsonld , ldapi:ldapi12-skosrdf, ldapi:ldapi12-rdfxml ;
           dcterms:identifier 12 ;
           skos:notation 12 ;
           geolexica:abbreviation "h or H"@en ,
@@ -860,6 +899,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
             geolexica:hasInfo info:Info13 ;
+            geolexica:hasLDAPI ldapi:ldapi13-json ,
+                               ldapi:ldapi13-jsonld ,
+                               ldapi:ldapi13-rdfxml ,
+                               ldapi:ldapi13-skosrdf ;
             geolexica:hasLangCode lang:ara ,
                                   lang:dan ,
                                   lang:deu ,
@@ -874,7 +917,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                   lang:swe ,
                                   lang:zho ;
             geolexica:hasReview reviews:Review13 ;
-            geolexica:hasLDAPI ldapi:ldapi13-json , ldapi:ldapi13-jsonld , ldapi:ldapi13-skosrdf, ldapi:ldapi13-rdfxml ;
             dcterms:identifier 13 ;
             skos:notation 13 ;
             lang:ara-note "ملاحظة: الأرقام والحروف والرموز والعلامات كلها أمثلة للحاشية"@ar ;
@@ -937,6 +979,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
              geolexica:hasInfo info:Info14 ;
+             geolexica:hasLDAPI ldapi:ldapi14-json ,
+                                ldapi:ldapi14-jsonld ,
+                                ldapi:ldapi14-rdfxml ,
+                                ldapi:ldapi14-skosrdf ;
              geolexica:hasLangCode lang:ara ,
                                    lang:dan ,
                                    lang:deu ,
@@ -950,7 +996,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                    lang:swe ,
                                    lang:zho ;
              geolexica:hasReview reviews:Review14 ;
-             geolexica:hasLDAPI ldapi:ldapi14-json , ldapi:ldapi14-jsonld , ldapi:ldapi14-skosrdf, ldapi:ldapi14-rdfxml ;
              dcterms:identifier 14 ;
              skos:notation 14 ;
              rdfs:label "application" ;
@@ -998,6 +1043,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
                     geolexica:hasInfo info:Info15 ;
+                    geolexica:hasLDAPI ldapi:ldapi15-json ,
+                                       ldapi:ldapi15-jsonld ,
+                                       ldapi:ldapi15-rdfxml ,
+                                       ldapi:ldapi15-skosrdf ;
                     geolexica:hasLangCode lang:ara ,
                                           lang:dan ,
                                           lang:deu ,
@@ -1012,7 +1061,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                           lang:swe ,
                                           lang:zho ;
                     geolexica:hasReview reviews:Review15 ;
-                    geolexica:hasLDAPI ldapi:ldapi15-json , ldapi:ldapi15-jsonld , ldapi:ldapi15-skosrdf, ldapi:ldapi15-rdfxml ;
                     dcterms:identifier 15 ;
                     skos:notation 15 ;
                     lang:rus-note "Примечание: Прикладная схема описывает содержимое, структуру и ограничения, накладываемые на информацию (4.22) в определенной области применения."@ru ;
@@ -1063,6 +1111,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
              geolexica:hasInfo info:Info17 ;
+             geolexica:hasLDAPI ldapi:ldapi17-json ,
+                                ldapi:ldapi17-jsonld ,
+                                ldapi:ldapi17-rdfxml ,
+                                ldapi:ldapi17-skosrdf ;
              geolexica:hasLangCode lang:ara ,
                                    lang:dan ,
                                    lang:deu ,
@@ -1075,7 +1127,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                    lang:swe ,
                                    lang:zho ;
              geolexica:hasReview reviews:Review17 ;
-             geolexica:hasLDAPI ldapi:ldapi17-json , ldapi:ldapi17-jsonld , ldapi:ldapi17-skosrdf, ldapi:ldapi17-rdfxml ;
              dcterms:identifier 17 ;
              skos:notation 17 ;
              lang:ara-note "ملاحظة: الربط الثنائي هو عبارة عن ربط بين مصنِّفَيْن بالضبط ( ويشمل ذلك إمكانية الربط من مصنِّف إلى نفسه)"@ar ;
@@ -1120,7 +1171,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                               lang:spaRegistry ,
                               lang:sweRegistry ,
                               lang:zhoRegistry ;
-             lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+             lang:deu-note notes:DefnTransUnavail ,
+                           notes:NoteTransUnavail ;
              lang:swe-note notes:NoteTransUnavail .
 
 
@@ -1129,6 +1181,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
           geolexica:hasInfo info:Info18 ;
+          geolexica:hasLDAPI ldapi:ldapi18-json ,
+                             ldapi:ldapi18-jsonld ,
+                             ldapi:ldapi18-rdfxml ,
+                             ldapi:ldapi18-skosrdf ;
           geolexica:hasLangCode lang:ara ,
                                 lang:dan ,
                                 lang:deu ,
@@ -1142,7 +1198,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                 lang:swe ,
                                 lang:zho ;
           geolexica:hasReview reviews:Review18 ;
-          geolexica:hasLDAPI ldapi:ldapi18-json , ldapi:ldapi18-jsonld , ldapi:ldapi18-skosrdf, ldapi:ldapi18-rdfxml ;
           dcterms:identifier 18 ;
           skos:notation 18 ;
           lang:ara-note "ملاحظة: في خدمات تحديد المواقع ، يشير هذا عادة إلى اتجاه قواعد أداء المعدات لدى المستخدم مثل الطائرة ، أو المركب (قارب) أو السيارة"@ar ;
@@ -1188,7 +1243,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                            lang:spaRegistry ,
                            lang:sweRegistry ,
                            lang:zhoRegistry ;
-          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:deu-note notes:DefnTransUnavail ,
+                        notes:NoteTransUnavail ;
           lang:msa-note notes:NoteTransUnavail ;
           lang:swe-note notes:NoteTransUnavail .
 
@@ -1198,6 +1254,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
            geolexica:hasInfo info:Info19 ;
+           geolexica:hasLDAPI ldapi:ldapi19-json ,
+                              ldapi:ldapi19-jsonld ,
+                              ldapi:ldapi19-rdfxml ,
+                              ldapi:ldapi19-skosrdf ;
            geolexica:hasLangCode lang:ara ,
                                  lang:deu ,
                                  lang:eng ,
@@ -1208,7 +1268,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                  lang:spa ,
                                  lang:swe ;
            geolexica:hasReview reviews:Review19 ;
-           geolexica:hasLDAPI ldapi:ldapi19-json , ldapi:ldapi19-jsonld , ldapi:ldapi19-skosrdf, ldapi:ldapi19-rdfxml ;
            dcterms:identifier 19 ;
            skos:notation 19 ;
            lang:ara-note "ملاحظة: عبارة عن وصف لخاصية هندسية ، أو طوبولوجية ، أو موضوعية أو أي خاصية أخرى للكيان المعني."@ar ;
@@ -1256,6 +1315,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
               geolexica:hasInfo info:Info20 ;
+              geolexica:hasLDAPI ldapi:ldapi20-json ,
+                                 ldapi:ldapi20-jsonld ,
+                                 ldapi:ldapi20-rdfxml ,
+                                 ldapi:ldapi20-skosrdf ;
               geolexica:hasLangCode lang:ara ,
                                     lang:dan ,
                                     lang:eng ,
@@ -1268,7 +1331,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                     lang:swe ,
                                     lang:zho ;
               geolexica:hasReview reviews:Review20 ;
-              geolexica:hasLDAPI ldapi:ldapi20-json , ldapi:ldapi20-jsonld , ldapi:ldapi20-skosrdf, ldapi:ldapi20-rdfxml ;
               dcterms:identifier 20 ;
               skos:notation 20 ;
               lang:ara-note "ملاحظة 1: الصفة لغة تعادل ربط التركيب ؛ ولكن المقصد والاستخدام يختلفان دائما"@ar ,
@@ -1321,7 +1383,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                                lang:spaRegistry ,
                                lang:sweRegistry ,
                                lang:zhoRegistry ;
-              lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+              lang:deu-note notes:DefnTransUnavail ,
+                            notes:NoteTransUnavail ;
               lang:kor-note notes:NoteTransUnavail ;
               lang:nld-note notes:NoteTransUnavail ;
               lang:rus-note notes:NoteTransDiff ;
@@ -1333,6 +1396,10 @@ dctype:Dataset owl:sameAs void:Dataset .
               skos:Concept ;
      skos:inScheme geolexica:GeolexicaConceptScheme ;
      geolexica:hasInfo info:Info24 ;
+     geolexica:hasLDAPI ldapi:ldapi24-json ,
+                        ldapi:ldapi24-jsonld ,
+                        ldapi:ldapi24-rdfxml ,
+                        ldapi:ldapi24-skosrdf ;
      geolexica:hasLangCode lang:ara ,
                            lang:dan ,
                            lang:eng ,
@@ -1345,7 +1412,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                            lang:swe ,
                            lang:zho ;
      geolexica:hasReview reviews:Review24 ;
-     geolexica:hasLDAPI ldapi:ldapi24-json , ldapi:ldapi24-jsonld , ldapi:ldapi24-skosrdf, ldapi:ldapi24-rdfxml ;
      dcterms:identifier 24 ;
      skos:notation 24 ;
      lang:ara-note "ملاحظة: منطقيا ، الحقيبة هي عبارة عن مجموعة مكونة من أزواج < البند ، الإحصاء>"@ar ;
@@ -1401,7 +1467,8 @@ dctype:Dataset owl:sameAs void:Dataset .
                       lang:spaRegistry ,
                       lang:sweRegistry ,
                       lang:zhoRegistry ;
-     lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+     lang:deu-note notes:DefnTransUnavail ,
+                   notes:NoteTransUnavail ;
      lang:msa-note notes:NoteTransUnavail ;
      lang:nld-note notes:NoteTransUnavail ;
      lang:swe-note notes:NoteTransUnavail .
@@ -1412,6 +1479,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
                geolexica:hasInfo info:Info26 ;
+               geolexica:hasLDAPI ldapi:ldapi26-json ,
+                                  ldapi:ldapi26-jsonld ,
+                                  ldapi:ldapi26-rdfxml ,
+                                  ldapi:ldapi26-skosrdf ;
                geolexica:hasLangCode lang:ara ,
                                      lang:dan ,
                                      lang:eng ,
@@ -1422,8 +1493,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                      lang:spa ,
                                      lang:swe ,
                                      lang:zho ;
-               geolexica:hasReview reviews:Review26 ;
-               geolexica:hasLDAPI ldapi:ldapi26-json , ldapi:ldapi26-jsonld , ldapi:ldapi26-skosrdf, ldapi:ldapi26-rdfxml ;
                dcterms:identifier 26 ;
                skos:notation 26 ;
                rdfs:label "base standard" ;
@@ -1468,6 +1537,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
             geolexica:hasInfo info:Info27 ;
+            geolexica:hasLDAPI ldapi:ldapi27-json ,
+                               ldapi:ldapi27-jsonld ,
+                               ldapi:ldapi27-rdfxml ,
+                               ldapi:ldapi27-skosrdf ;
             geolexica:hasLangCode lang:ara ,
                                   lang:dan ,
                                   lang:eng ,
@@ -1480,7 +1553,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                   lang:swe ,
                                   lang:zho ;
             geolexica:hasReview reviews:Review27 ;
-            geolexica:hasLDAPI ldapi:ldapi27-json , ldapi:ldapi27-jsonld , ldapi:ldapi27-skosrdf, ldapi:ldapi27-rdfxml ;
             dcterms:identifier 27 ;
             skos:notation 27 ;
             rdfs:label "basic test" ;
@@ -1527,6 +1599,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
            geolexica:hasInfo info:Info28 ;
+           geolexica:hasLDAPI ldapi:ldapi28-json ,
+                              ldapi:ldapi28-jsonld ,
+                              ldapi:ldapi28-rdfxml ,
+                              ldapi:ldapi28-skosrdf ;
            geolexica:hasLangCode lang:ara ,
                                  lang:dan ,
                                  lang:deu ,
@@ -1540,7 +1616,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                  lang:swe ,
                                  lang:zho ;
            geolexica:hasReview reviews:Review28 ;
-           geolexica:hasLDAPI ldapi:ldapi28-json , ldapi:ldapi28-jsonld , ldapi:ldapi28-skosrdf, ldapi:ldapi28-rdfxml ;
            dcterms:identifier 28 ;
            skos:notation 28 ;
            rdfs:label "behaviour (UML)" ;
@@ -1587,6 +1662,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
           geolexica:hasInfo info:Info29 ;
+          geolexica:hasLDAPI ldapi:ldapi29-json ,
+                             ldapi:ldapi29-jsonld ,
+                             ldapi:ldapi29-rdfxml ,
+                             ldapi:ldapi29-skosrdf ;
           geolexica:hasLangCode lang:ara ,
                                 lang:dan ,
                                 lang:deu ,
@@ -1602,7 +1681,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                 lang:swe ,
                                 lang:zho ;
           geolexica:hasReview reviews:Review29 ;
-          geolexica:hasLDAPI ldapi:ldapi29-json , ldapi:ldapi29-jsonld , ldapi:ldapi29-skosrdf, ldapi:ldapi29-rdfxml ;
           dcterms:identifier 29 ;
           skos:notation 29 ;
           lang:ara-note "ملاحظة: تستخدم كلمة الحد أكثر ما تستخدم في السياق الهندسي ، وفي هذا السياق تفهم المجموعة على أنها تعني مجموعة نقاط أو مجموعة من الأجسام التي تمثل تلك النقاط . و في حالات أخرى ، يستخدم المصطلح استخداما مجازيا لوصف حالة التحول بين كيان ما وبقية ما في المجال الذي ينتمي إليه"@ar ;
@@ -1668,6 +1746,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                  skos:Concept ;
         skos:inScheme geolexica:GeolexicaConceptScheme ;
         geolexica:hasInfo info:Info30 ;
+        geolexica:hasLDAPI ldapi:ldapi30-json ,
+                           ldapi:ldapi30-jsonld ,
+                           ldapi:ldapi30-rdfxml ,
+                           ldapi:ldapi30-skosrdf ;
         geolexica:hasLangCode lang:ara ,
                               lang:dan ,
                               lang:deu ,
@@ -1683,7 +1765,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                               lang:swe ,
                               lang:zho ;
         geolexica:hasReview reviews:Review30 ;
-        geolexica:hasLDAPI ldapi:ldapi30-json , ldapi:ldapi30-jsonld , ldapi:ldapi30-skosrdf, ldapi:ldapi30-rdfxml ;
         dcterms:identifier 30 ;
         skos:notation 30 ;
         rdfs:label "buffer" ;
@@ -1737,6 +1818,10 @@ dctype:Dataset owl:sameAs void:Dataset .
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
           geolexica:hasInfo info:Info31 ;
+          geolexica:hasLDAPI ldapi:ldapi31-json ,
+                             ldapi:ldapi31-jsonld ,
+                             ldapi:ldapi31-rdfxml ,
+                             ldapi:ldapi31-skosrdf ;
           geolexica:hasLangCode lang:ara ,
                                 lang:dan ,
                                 lang:deu ,
@@ -1751,8 +1836,6 @@ dctype:Dataset owl:sameAs void:Dataset .
                                 lang:spa ,
                                 lang:swe ,
                                 lang:zho ;
-          geolexica:hasReview reviews:Review31 ;
-          geolexica:hasLDAPI ldapi:ldapi31-json , ldapi:ldapi31-jsonld , ldapi:ldapi31-skosrdf, ldapi:ldapi31-rdfxml ;
           dcterms:identifier 31 ;
           skos:notation 31 ;
           rdfs:label "calendar" ;
