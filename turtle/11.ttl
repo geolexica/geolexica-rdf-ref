@@ -1,0 +1,143 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/11/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/11/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/11/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/11/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "aggregation (UML)" ;
+        rdfs:label "aggregation (UML)" ;
+        vann:preferredNamespacePrefix "concept11" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/11/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/11/
+
+:aggregation rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:inScheme geolexica:GeolexicaConceptScheme ;
+             geolexica:hasInfo info:Info11 ;
+             geolexica:hasLDAPI ldapi:ldapi11-json ,
+                                ldapi:ldapi11-jsonld ,
+                                ldapi:ldapi11-rdfxml ,
+                                ldapi:ldapi11-skosrdf ;
+             geolexica:hasLangCode lang:ara ,
+                                   lang:dan ,
+                                   lang:deu ,
+                                   lang:eng ,
+                                   lang:fin ,
+                                   lang:fra ,
+                                   lang:kor ,
+                                   lang:rus ,
+                                   lang:spa ,
+                                   lang:swe ,
+                                   lang:zho ;
+             geolexica:hasReview reviews:Review11 ;
+             dcterms:identifier 11 ;
+             skos:notation 11 ;
+             lang:ara-note "ملاحظة: أنظر التركيب"@ar ;
+             lang:dan-note "Bemærk til posten: Se komposition"@da ;
+             lang:eng-note "Note to entry: See composition"@en ;
+             lang:fin-note "HUOM.: Katso vahva/aito kooste (composition)."@fi ;
+             lang:kor-note "비고: 합성 참고"@ko ;
+             lang:rus-note "Примечание: См. термин «композиция»"@ru ;
+             lang:spa-note "Nota: Véase la composición"@es ;
+             lang:zho-note "注： 参见组合。"@zh ;
+             rdfs:label "aggregation (UML)" ;
+             skos:altLabel "kokoelma (UML)"@fi ;
+             skos:definition "(UML)关联的特殊形式，用以说明聚集(整体)与组成部分之间的整体-部分关系。"@zh ,
+                             "assosiaation erityinen laji, joka määrittää kokonaisuuden (aggregaatin) ja sen osan välisen suhteen"@fi ,
+                             "forma especial de asociación  que especifica una relación del todo con una parte entre el agregado (el todo) y una parte componente"@es ,
+                             "forme spéciale d&#39;association qui spécifie une relation ensemble-composant entre l&#39;agrégat (ensemble) et la partie composante"@fr ,
+                             "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@en ,
+                             "special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part"@sv ,
+                             "særlig form for association, der specificerer et helhed-del-forhold mellem en klasse, som indtager rollen som helheden, og en eller flere klasser, som indtager rollen som del"@da ,
+                             "особая форма ассоциации, описывающая отношение «целое-часть» между агрегатом («целое») и компонентом («часть»)"@ru ,
+                             "شكل خاص من أشكال الترابط يصف علاقة &quot;الكل والجزء&quot; بين الكل والجزء المكون له."@ar ,
+                             "집합체와 컴포넌트 간의 관계를 설명한 연관의 특정 형태"@ko ;
+             skos:prefLabel "Aggregation (UML)"@de ,
+                            "aggregation (UML)"@en ,
+                            "aggregering"@sv ,
+                            "aggregering (UML)"@da ,
+                            "agregación (UML)"@es ,
+                            "agrégation (UML)"@fr ,
+                            "kooste (UML)"@fi ,
+                            "агрегация (UML)"@ru ,
+                            "تجميع (UML)"@ar ,
+                            "聚合(UML)"@zh ,
+                            "집합 연관 (UML)"@ko ;
+             geolexica:origin lang:araRegistry ,
+                              lang:danRegistry ,
+                              lang:engRegistry ,
+                              lang:finRegistry ,
+                              lang:fraRegistry ,
+                              lang:jpnRegistry ,
+                              lang:korRegistry ,
+                              lang:rusRegistry ,
+                              lang:spaRegistry ,
+                              lang:sweRegistry ,
+                              lang:zhoRegistry ;
+             lang:deu-note notes:DefnTransUnavail ,
+                           notes:NoteTransUnavail ;
+             lang:rus-note notes:NoteTransDiff ;
+             lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

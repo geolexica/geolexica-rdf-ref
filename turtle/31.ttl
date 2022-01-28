@@ -1,0 +1,143 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/31/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/31/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/31/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/31/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "calendar" ;
+        rdfs:label "calendar" ;
+        vann:preferredNamespacePrefix "concept31" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/31/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/31/
+
+:calendar rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info31 ;
+          geolexica:hasLDAPI ldapi:ldapi31-json ,
+                             ldapi:ldapi31-jsonld ,
+                             ldapi:ldapi31-rdfxml ,
+                             ldapi:ldapi31-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:jpn ,
+                                lang:kor ,
+                                lang:msa ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 31 ;
+          skos:notation 31 ;
+          rdfs:label "calendar" ;
+          skos:altLabel "버퍼"@ko ;
+          skos:definition "discrete temporal reference system that provides a basis for defining temporal position to a resolution of one day"@en ,
+                          "diskreetti ajan vertausjärjestelmä, joka toimii pohjana temporaalisen sijainnin määrittelemiselle yhden vuorokauden tarkkuudella"@fi ,
+                          "diskret tidsmæssigt referencesystem, der danner grundlag for at definere tidsmæssig position med en nøjagtighed på 1 døgn"@da ,
+                          "dyskretny czasowy system odniesienia będący podstawą do definiowania położenia w czasie z dokładnością do jednego dnia"@pl ,
+                          "senarai atau daftar hari bulan; takwim"@ms ,
+                          "sistema de referencia temporal característico, que constituye una base para definir la posición temporal con una resolución de un día"@es ,
+                          "system av regler för hur tid indelas och mäts"@sv ,
+                          "système de référence temporelle discret fournissant une base pour définir la position temporelle avec une résolution d&#39;un jour"@fr ,
+                          "дискретная система отсчета времени, которая образует основу для определения времени с разрешением в одни сутки"@ru ,
+                          "نظام مرجعي زمني متميِّز يعتبر أساسا لتعريف الموضع الزمني بدرجة دقة تصل إلى يوم واحد"@ar ,
+                          "一日をその分解能とする時間位置を定義するための基礎となる離散的な時間参照系の一つ。"@ja ,
+                          "离散的时间参照系，提供了定义分辨率为一日的时间位置的基础。"@zh ,
+                          "일 단위 시간 위치의 정의 근거를 제시하는 불연속 시간 참조 체계"@ko ;
+          skos:prefLabel "Kalender"@de ,
+                         "calendar"@en ,
+                         "calendario"@es ,
+                         "calendrier"@fr ,
+                         "kalendar"@ms ,
+                         "kalendarz"@pl ,
+                         "kalender"@da ,
+                         "kalender tideräkning"@sv ,
+                         "kalenteri"@fi ,
+                         "календарь"@ru ,
+                         "تقويم"@ar ,
+                         "日历"@zh ,
+                         "暦"@ja ,
+                         "달력"@ko ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:jpnRegistry ,
+                           lang:korRegistry ,
+                           lang:msaRegistry ,
+                           lang:polRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

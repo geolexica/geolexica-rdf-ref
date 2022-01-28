@@ -1,0 +1,142 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/17/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/17/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/17/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/17/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "association (UML)" ;
+        rdfs:label "association (UML)" ;
+        vann:preferredNamespacePrefix "concept17" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/17/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/17/
+
+:association rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:inScheme geolexica:GeolexicaConceptScheme ;
+             geolexica:hasInfo info:Info17 ;
+             geolexica:hasLDAPI ldapi:ldapi17-json ,
+                                ldapi:ldapi17-jsonld ,
+                                ldapi:ldapi17-rdfxml ,
+                                ldapi:ldapi17-skosrdf ;
+             geolexica:hasLangCode lang:ara ,
+                                   lang:dan ,
+                                   lang:deu ,
+                                   lang:eng ,
+                                   lang:fin ,
+                                   lang:fra ,
+                                   lang:kor ,
+                                   lang:rus ,
+                                   lang:spa ,
+                                   lang:swe ,
+                                   lang:zho ;
+             geolexica:hasReview reviews:Review17 ;
+             dcterms:identifier 17 ;
+             skos:notation 17 ;
+             lang:ara-note "ملاحظة: الربط الثنائي هو عبارة عن ربط بين مصنِّفَيْن بالضبط ( ويشمل ذلك إمكانية الربط من مصنِّف إلى نفسه)"@ar ;
+             lang:dan-note "Bemærk til posten: En binær association er en association imellem nøjagtig to klassifikatorer (inkl. muligheden for en association fra en klassifikator til sig selv)."@da ;
+             lang:eng-note "Note to entry: A binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself)."@en ;
+             lang:fin-note "HUOM.: Binäärinen assosiaatio määrittää suhteen täsmälleen kahden luokittelijan välillä (mukaan lukien luokittelijan assosiaatiosuhde itseensä)."@fi ;
+             lang:kor-note "비고: 이진 연관 관계는 정확하게 두 분류자 간의 연관 관계이다."@ko ;
+             lang:rus-note "Примечание: Бинарная ассоциация является ассоциацией между двумя классификаторами, включая возможность ассоциации классификатора с самим собой"@ru ;
+             lang:spa-note "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es ;
+             lang:zho-note "注： 二元关联确指两个类元之间的关联（包括一个类元与其本身的关联）"@zh ;
+             rdfs:label "association (UML);" ;
+             skos:altLabel "assosiaatiosuhde (UML)"@fi ;
+             skos:definition "(UML)两个或两个以上类之间的语义关系，定义了类中实例间的连接。"@zh ,
+                             "UML-element som anger hur instanser kan eller ska referera till varandra"@sv ,
+                             "kahden tai useamman luokittelijan välinen semanttinen suhde, joka määrittää luokittelijoiden mukaisten ilmentymien väliset yhteydet"@fi ,
+                             "relación semántica entre dos o más clasificadores que especifica conexiones entre sus instancias"@es ,
+                             "relation sémantique entre deux ou plusieurs classificateurs qui spécifient des connections parmi leurs instances"@fr ,
+                             "semantic relationship between two or more classifiers that specifies connections among their instances"@en ,
+                             "semantisk sammenhæng imellem to eller flere klassifikatorer, som specificerer forbindelser mellem deres instanser"@da ,
+                             "семантическое отношение двух или более классификаторов, определяющее взаимосвязи между их экземплярами"@ru ,
+                             "العلاقة اللغوية القائمة بين مصنِّفَيْن أو أكثر التي تحدد الترابط بين عناصرها"@ar ,
+                             "인스턴스간의 연결을 규정하는 두 개 이상 분류자 간의 의미론적 관계"@ko ;
+             skos:prefLabel "Relation (UML) (Synonym: Beziehung, Assoziation)"@de ,
+                            "asociación (UML)"@es ,
+                            "association (UML)"@da ,
+                            "association (UML)"@en ,
+                            "association (UML)"@fr ,
+                            "assosiaatio (UML)"@fi ,
+                            "samband (UML)"@sv ,
+                            "ассоциация (UML)"@ru ,
+                            "ارتباط UML"@ar ,
+                            "关联(UML)"@zh ,
+                            "연관 (UML)"@ko ;
+             geolexica:origin lang:araRegistry ,
+                              lang:danRegistry ,
+                              lang:deuRegistry ,
+                              lang:engRegistry ,
+                              lang:finRegistry ,
+                              lang:fraRegistry ,
+                              lang:korRegistry ,
+                              lang:rusRegistry ,
+                              lang:spaRegistry ,
+                              lang:sweRegistry ,
+                              lang:zhoRegistry ;
+             lang:deu-note notes:DefnTransUnavail ,
+                           notes:NoteTransUnavail ;
+             lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

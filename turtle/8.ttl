@@ -1,0 +1,148 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/8/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/8/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/8/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/8/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "accuracy" ;
+        rdfs:label "accuracy" ;
+        vann:preferredNamespacePrefix "concept8" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/8/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/8/
+
+:accuracy rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info8 ;
+          geolexica:hasLDAPI ldapi:ldapi8-json ,
+                             ldapi:ldapi8-jsonld ,
+                             ldapi:ldapi8-rdfxml ,
+                             ldapi:ldapi8-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:jpn ,
+                                lang:kor ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          geolexica:hasReview reviews:Review8 ;
+          dcterms:identifier 8 ;
+          skos:notation 8 ;
+          lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
+          lang:dan-note "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da ;
+          lang:eng-note "A test result can be observations or measurements."@en ;
+          lang:fin-note "HUOM.: Testitulos voi olla havainto tai mittaus."@fi ;
+          lang:jpn-note "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja ,
+                        "備考 2： 参照値は，論議領域を実現するものとして採択された値である。"@ja ;
+          lang:kor-note "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko ;
+          lang:rus-note "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru ;
+          lang:spa-note "Nota: Un resultado pueden ser observaciones o medidas"@es ;
+          lang:swe-note "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv ;
+          lang:zho-note "注： 测试结果可以是观测结果或量测结果。"@zh ;
+          rdfs:label "accuracy" ;
+          skos:definition "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"@ms ,
+                          "closeness of agreement between a test result and the accepted reference value"@en ,
+                          "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"@da ,
+                          "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"@sv ,
+                          "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"@es ,
+                          "justesse de l&#39;accord entre un résultat de test et la valeur de référence"@fr ,
+                          "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"@fi ,
+                          "близость результата проверки к принятому нормальному значению величины"@ru ,
+                          "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"@ar ,
+                          "品質評価の試験結果得られた値と参照値との近さ。"@ja ,
+                          "测试结果与公认的参考值间的接近程度。"@zh ,
+                          "시험 결과와 기준 값 간의 일치도를 표시하는 척도"@ko ;
+          skos:prefLabel "accuracy"@en ,
+                         "exactitud"@es ,
+                         "exactitude"@fr ,
+                         "ketepatan"@ms ,
+                         "noggrannhet"@sv ,
+                         "nøjagtighed"@da ,
+                         "ulkoinen tarkkuus"@fi ,
+                         "точность"@ru ,
+                         "الدقة"@ar ,
+                         "准确度"@zh ,
+                         "正確度"@ja ,
+                         "정확도"@ko ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:jpnRegistry ,
+                           lang:korRegistry ,
+                           lang:msaRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:fra-note notes:NoteTransDiff ;
+          lang:msa-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,134 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/27/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/27/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/27/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/27/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "basic test" ;
+        rdfs:label "basic test" ;
+        vann:preferredNamespacePrefix "concept27" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/27/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/27/
+
+:basic_test rdf:type owl:NamedIndividual ,
+                     skos:Concept ;
+            skos:inScheme geolexica:GeolexicaConceptScheme ;
+            geolexica:hasInfo info:Info27 ;
+            geolexica:hasLDAPI ldapi:ldapi27-json ,
+                               ldapi:ldapi27-jsonld ,
+                               ldapi:ldapi27-rdfxml ,
+                               ldapi:ldapi27-skosrdf ;
+            geolexica:hasLangCode lang:ara ,
+                                  lang:dan ,
+                                  lang:eng ,
+                                  lang:fin ,
+                                  lang:fra ,
+                                  lang:jpn ,
+                                  lang:kor ,
+                                  lang:rus ,
+                                  lang:spa ,
+                                  lang:swe ,
+                                  lang:zho ;
+            geolexica:hasReview reviews:Review27 ;
+            dcterms:identifier 27 ;
+            skos:notation 27 ;
+            rdfs:label "basic test" ;
+            skos:definition "aluksi suoritettava kelpoisuustesti, jonka tarkoituksena on tunnistaa tapaukset, joissa vaatimuksenmukaisuusehdot eivät selvästi täyty"@fi ,
+                            "duglighetstest som görs som första steg för att identifiera uppenbara fall av icke-överensstämmelse"@sv ,
+                            "indledende egnethedstest, der har til formål at identificere tydelige tilfælde af afvigelse"@da ,
+                            "initial capability test intended to identify clear cases of non-conformance"@en ,
+                            "prueba de funcionalidad inicial que pretende identificar casos claros de no conformidad"@es ,
+                            "test fonctionnel initial ayant pour but d&#39;identifier clairement des cas de non-conformité"@fr ,
+                            "начальный тест на функциональное соответствие,  предназначенный для выявления очевидных случаев несоответствия"@ru ,
+                            "اختبار قدرة أولي الغرض منه تحديد الحالات الواضحة من عدم المطابقة"@ar ,
+                            "初始能力测试，目的是确定那些明显的不一致内容。"@zh ,
+                            "明らかな不適合のケースを識別するために実施する最初の機能試験。"@ja ,
+                            "부적합 경우와 적합한 경우를 명확하게 식별하기 위해 실시하는 최초의 기능 시험"@ko ;
+            skos:prefLabel "Basistest"@de ,
+                           "basic test"@en ,
+                           "basistest"@da ,
+                           "grundtest"@sv ,
+                           "perustesti"@fi ,
+                           "prueba básica"@es ,
+                           "test de base"@fr ,
+                           "базовый  тест"@ru ,
+                           "اختبار أساسي"@ar ,
+                           "基本测试"@zh ,
+                           "基本試験"@ja ,
+                           "기본 시험"@ko ;
+            geolexica:origin lang:araRegistry ,
+                             lang:danRegistry ,
+                             lang:deuRegistry ,
+                             lang:engRegistry ,
+                             lang:finRegistry ,
+                             lang:fraRegistry ,
+                             lang:jpnRegistry ,
+                             lang:korRegistry ,
+                             lang:rusRegistry ,
+                             lang:spaRegistry ,
+                             lang:sweRegistry ,
+                             lang:zhoRegistry ;
+            lang:deu-note notes:DefnTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

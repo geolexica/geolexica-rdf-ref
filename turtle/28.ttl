@@ -1,0 +1,135 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/28/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/28/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/28/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/28/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "behaviour (UML)" ;
+        rdfs:label "behaviour (UML)" ;
+        vann:preferredNamespacePrefix "concept28" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/28/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/28/
+
+:behaviour rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:inScheme geolexica:GeolexicaConceptScheme ;
+           geolexica:hasInfo info:Info28 ;
+           geolexica:hasLDAPI ldapi:ldapi28-json ,
+                              ldapi:ldapi28-jsonld ,
+                              ldapi:ldapi28-rdfxml ,
+                              ldapi:ldapi28-skosrdf ;
+           geolexica:hasLangCode lang:ara ,
+                                 lang:dan ,
+                                 lang:deu ,
+                                 lang:eng ,
+                                 lang:fin ,
+                                 lang:fra ,
+                                 lang:kor ,
+                                 lang:msa ,
+                                 lang:rus ,
+                                 lang:spa ,
+                                 lang:swe ,
+                                 lang:zho ;
+           geolexica:hasReview reviews:Review28 ;
+           dcterms:identifier 28 ;
+           skos:notation 28 ;
+           rdfs:label "behaviour (UML)" ;
+           skos:definition "efectos observables de una operación o de un evento, incluyendo sus resultados"@es ,
+                           "effets observables d&#39;une opération ou d&#39;un événement, incluant ses résultats"@fr ,
+                           "iagttagelige virkninger af en handling eller hændelse, herunder dens resultater"@da ,
+                           "kelakuan atau tingkah laku"@ms ,
+                           "observable effects of an operation or event, including its results"@en ,
+                           "observable effects of an operation or event, including its results"@sv ,
+                           "toiminnon tai tapahtuman havaittavissa olevat vaikutukset ja tulokset"@fi ,
+                           "доступные для наблюдения последствия выполнения операции или события, в том числе, ее (его)  результаты"@ru ,
+                           "الآثار التي يمكن رصدها لعملية أو حدث ، بما في ذلك نتائجها ."@ar ,
+                           "由操作或事件产生的可观测的影响及其结果。"@zh ,
+                           "연산, 사건 또는 그 결과 값까지 포함하여 관측 가능한 효과"@ko ;
+           skos:prefLabel "Verhalten (UML)"@de ,
+                          "behaviour (UML)"@en ,
+                          "behaviour (UML)"@sv ,
+                          "comportamiento (UML)"@es ,
+                          "comportement (UML)"@fr ,
+                          "käyttäytyminen (UML)"@fi ,
+                          "opførsel (UML)"@da ,
+                          "perangai"@ms ,
+                          "поведение (UML)"@ru ,
+                          "سلوك (UML)"@ar ,
+                          "行为(UML)"@zh ,
+                          "행태 (UML)"@ko ;
+           geolexica:origin lang:araRegistry ,
+                            lang:danRegistry ,
+                            lang:deuRegistry ,
+                            lang:engRegistry ,
+                            lang:finRegistry ,
+                            lang:fraRegistry ,
+                            lang:korRegistry ,
+                            lang:msaRegistry ,
+                            lang:rusRegistry ,
+                            lang:spaRegistry ,
+                            lang:sweRegistry ,
+                            lang:zhoRegistry ;
+           lang:deu-note notes:DefnTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

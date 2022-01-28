@@ -1,0 +1,130 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/26/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/26/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/26/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/26/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "base standard" ;
+        rdfs:label "base standard" ;
+        vann:preferredNamespacePrefix "concept26" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/26/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/26/
+
+:base_standard rdf:type owl:NamedIndividual ,
+                        skos:Concept ;
+               skos:inScheme geolexica:GeolexicaConceptScheme ;
+               geolexica:hasInfo info:Info26 ;
+               geolexica:hasLDAPI ldapi:ldapi26-json ,
+                                  ldapi:ldapi26-jsonld ,
+                                  ldapi:ldapi26-rdfxml ,
+                                  ldapi:ldapi26-skosrdf ;
+               geolexica:hasLangCode lang:ara ,
+                                     lang:dan ,
+                                     lang:eng ,
+                                     lang:fin ,
+                                     lang:fra ,
+                                     lang:kor ,
+                                     lang:rus ,
+                                     lang:spa ,
+                                     lang:swe ,
+                                     lang:zho ;
+               dcterms:identifier 26 ;
+               skos:notation 26 ;
+               rdfs:label "base standard" ;
+               skos:definition "ISO geographic information standard or other information technology standard that is used as a source from which a profile may be constructed"@en ,
+                               "SO geografisk informations-standard eller anden informationsteknologisk standard, der er udgivet som en kilde, hvorfra der kan opbygges en profil"@da ,
+                               "norma ISO de información geográfica, u otra norma de tecnologías de la información, que se puede utilizar como fuente a partir de la cual es posible construir un perfil"@es ,
+                               "norme d&#39;information géographique ISO ou autre norme de technologie de l&#39;information publiée comme une source et à partir de laquelle un profil peut être construit"@fr ,
+                               "paikkatietoa koskeva ISO-standardi tai muu tietotekniikkastandardi, jota voidaan käyttää profiilin laatimisen perustana"@fi ,
+                               "standard som har ett brett syfte eller innehåller allmänna bestämmelser för ett visst område"@sv ,
+                               "стандарт ISO из серии  «Географическая информация» или другой технологический стандарт, который может служить источником для разработки профиля"@ru ,
+                               "مواصفة قياسية للمعلومات الجغرافية ( ISO ) أو مواصفة قياسية لتقنية المعلومات والتي صدرت كمصدر يمكن إنشاء مواصفة محددة منه"@ar ,
+                               "能够用于构建专用标准的ISO地理信息标准或其他信息技术标准。"@zh ,
+                               "하나의 프로파일을 구성하는 데 활용될 수 있는 KS(ISO) 지리 정보 표준 또는 이외의 정보 기술 표준"@ko ;
+               skos:prefLabel "Basisstandard"@de ,
+                              "base standard"@en ,
+                              "basisstandard"@da ,
+                              "grundstandard"@sv ,
+                              "norma base"@es ,
+                              "norme de base"@fr ,
+                              "perusstandardi"@fi ,
+                              "базовый стандарт"@ru ,
+                              "مواصفة قياسية أساسية"@ar ,
+                              "基础标准"@zh ,
+                              "기반 표준"@ko ;
+               geolexica:origin lang:araRegistry ,
+                                lang:danRegistry ,
+                                lang:deuRegistry ,
+                                lang:engRegistry ,
+                                lang:finRegistry ,
+                                lang:fraRegistry ,
+                                lang:korRegistry ,
+                                lang:rusRegistry ,
+                                lang:spaRegistry ,
+                                lang:sweRegistry ,
+                                lang:zhoRegistry ;
+               lang:deu-note notes:DefnTransUnavail ;
+               lang:fra-note notes:NoteTransDiff .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,140 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/15/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/15/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/15/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/15/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "application schema" ;
+        rdfs:label "application schema" ;
+        vann:preferredNamespacePrefix "concept15" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/15/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/15/
+
+:application_schema rdf:type owl:NamedIndividual ,
+                             skos:Concept ;
+                    skos:inScheme geolexica:GeolexicaConceptScheme ;
+                    geolexica:hasInfo info:Info15 ;
+                    geolexica:hasLDAPI ldapi:ldapi15-json ,
+                                       ldapi:ldapi15-jsonld ,
+                                       ldapi:ldapi15-rdfxml ,
+                                       ldapi:ldapi15-skosrdf ;
+                    geolexica:hasLangCode lang:ara ,
+                                          lang:dan ,
+                                          lang:deu ,
+                                          lang:eng ,
+                                          lang:fin ,
+                                          lang:fra ,
+                                          lang:kor ,
+                                          lang:msa ,
+                                          lang:nld ,
+                                          lang:rus ,
+                                          lang:spa ,
+                                          lang:swe ,
+                                          lang:zho ;
+                    geolexica:hasReview reviews:Review15 ;
+                    dcterms:identifier 15 ;
+                    skos:notation 15 ;
+                    lang:rus-note "Примечание: Прикладная схема описывает содержимое, структуру и ограничения, накладываемые на информацию (4.22) в определенной области применения."@ru ;
+                    rdfs:label "application schema" ;
+                    skos:definition "conceptual schema for data required by one or more applications"@en ,
+                                    "esquema conceptual de los datos requeridos por una o más aplicaciones"@es ,
+                                    "formell beskrivning av den logiska strukturen"@sv ,
+                                    "informatiemodel dat gegevens beschrijft die worden gebruikt door een of meer applicaties"@nl ,
+                                    "konceptuel datamodel, der er nødvendig for en eller flere applikationer"@da ,
+                                    "konzeptuelles Schema für Daten, das für eine oder mehrere Anwendungen erforderlich ist"@de ,
+                                    "schéma conceptuel de données requis pour une ou plusieurs applications"@fr ,
+                                    "skeema, joka kuvaa yhden tai useamman sovellusalan tarvitsemaa tietoa"@fi ,
+                                    "skema konseptual bagi data yang diperlukan oleh satu atau lebih aplikasi"@ms ,
+                                    "концептуальная схема для данных, которые требуются одному или  нескольким приложениям"@ru ,
+                                    "مخطط تصوري للبيانات المطلوبة لتطبيق واحد أو أكثر"@ar ,
+                                    "一个或多个应用所需数据的概念模式。"@zh ,
+                                    "하나 이상의 응용에서 요구되는 데이터의 개념적 스키마"@ko ;
+                    skos:prefLabel "Anwendungsschema"@de ,
+                                   "Skema Aplikasi"@ms ,
+                                   "applicatie schema"@nl ,
+                                   "application schema"@en ,
+                                   "applikationsmodel"@da ,
+                                   "applikationsschema"@sv ,
+                                   "esquema de aplicación"@es ,
+                                   "schéma d&#39;application"@fr ,
+                                   "sovellusskeema"@fi ,
+                                   "схема приложения"@ru ,
+                                   "مخطط التطبيق"@ar ,
+                                   "应用模式"@zh ,
+                                   "응용 스키마"@ko ;
+                    geolexica:origin lang:araRegistry ,
+                                     lang:danRegistry ,
+                                     lang:deuRegistry ,
+                                     lang:engRegistry ,
+                                     lang:finRegistry ,
+                                     lang:fraRegistry ,
+                                     lang:korRegistry ,
+                                     lang:msaRegistry ,
+                                     lang:nldRegistry ,
+                                     lang:rusRegistry ,
+                                     lang:spaRegistry ,
+                                     lang:sweRegistry ,
+                                     lang:zhoRegistry .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

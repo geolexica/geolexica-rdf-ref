@@ -1,0 +1,133 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/19/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/19/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/19/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/19/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "attribute" ;
+        rdfs:label "attribute" ;
+        vann:preferredNamespacePrefix "concept19" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/19/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/19/
+
+:attribute rdf:type owl:NamedIndividual ,
+                    skos:Concept ;
+           skos:inScheme geolexica:GeolexicaConceptScheme ;
+           geolexica:hasInfo info:Info19 ;
+           geolexica:hasLDAPI ldapi:ldapi19-json ,
+                              ldapi:ldapi19-jsonld ,
+                              ldapi:ldapi19-rdfxml ,
+                              ldapi:ldapi19-skosrdf ;
+           geolexica:hasLangCode lang:ara ,
+                                 lang:deu ,
+                                 lang:eng ,
+                                 lang:kor ,
+                                 lang:msa ,
+                                 lang:nld ,
+                                 lang:rus ,
+                                 lang:spa ,
+                                 lang:swe ;
+           geolexica:hasReview reviews:Review19 ;
+           dcterms:identifier 19 ;
+           skos:notation 19 ;
+           lang:ara-note "ملاحظة: عبارة عن وصف لخاصية هندسية ، أو طوبولوجية ، أو موضوعية أو أي خاصية أخرى للكيان المعني."@ar ;
+           lang:eng-note "Note to entry: Describes a geometrical, topological, thematic, or other characteristic of an entity"@en ;
+           lang:rus-note "Примечание: Описывает геометрическую, топологическую, тематическую и другие характеристики сущности"@ru ;
+           lang:spa-note "Nota: Describe una característica geométrica, topológica, temática o cualquier otra característica de una entidad"@es ;
+           lang:zho-note "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"@zh ;
+           rdfs:label "attribute" ;
+           skos:definition "benannte Eigenschaft einer Einheit"@de ,
+                           "ciri-ciri bagi sesuatu fitur"@ms ,
+                           "kenmerk van een geo-object"@nl ,
+                           "named property of an entity"@en ,
+                           "namngiven egenskap hos objekt"@sv ,
+                           "nombre de una propiedad de una entidad"@es ,
+                           "именованное свойство сущности"@ru ,
+                           "اسم خاصية لكيان ما"@ar ,
+                           "실체의 속성"@ko ;
+           skos:prefLabel "Attribut"@de ,
+                          "atribut"@ms ,
+                          "atributo"@es ,
+                          "attribut"@sv ,
+                          "attribute"@en ,
+                          "attribuut"@nl ,
+                          "атрибут"@ru ,
+                          "صفة"@ar ,
+                          "속성"@ko ;
+           geolexica:origin lang:araRegistry ,
+                            lang:deuRegistry ,
+                            lang:engRegistry ,
+                            lang:korRegistry ,
+                            lang:msaRegistry ,
+                            lang:nldRegistry ,
+                            lang:rusRegistry ,
+                            lang:spaRegistry ,
+                            lang:sweRegistry ;
+           lang:deu-note notes:NoteTransUnavail ;
+           lang:kor-note notes:NoteTransUnavail ;
+           lang:msa-note notes:NoteTransUnavail ;
+           lang:nld-note notes:NoteTransUnavail ;
+           lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

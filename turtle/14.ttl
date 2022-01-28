@@ -1,0 +1,136 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/14/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/14/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/14/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/14/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "application" ;
+        rdfs:label "application" ;
+        vann:preferredNamespacePrefix "concept14" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/14/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/14/
+
+:application rdf:type owl:NamedIndividual ,
+                      skos:Concept ;
+             skos:inScheme geolexica:GeolexicaConceptScheme ;
+             geolexica:hasInfo info:Info14 ;
+             geolexica:hasLDAPI ldapi:ldapi14-json ,
+                                ldapi:ldapi14-jsonld ,
+                                ldapi:ldapi14-rdfxml ,
+                                ldapi:ldapi14-skosrdf ;
+             geolexica:hasLangCode lang:ara ,
+                                   lang:dan ,
+                                   lang:deu ,
+                                   lang:eng ,
+                                   lang:fin ,
+                                   lang:fra ,
+                                   lang:kor ,
+                                   lang:msa ,
+                                   lang:rus ,
+                                   lang:spa ,
+                                   lang:swe ,
+                                   lang:zho ;
+             geolexica:hasReview reviews:Review14 ;
+             dcterms:identifier 14 ;
+             skos:notation 14 ;
+             rdfs:label "application" ;
+             skos:altLabel "sovelma"@fi ;
+             skos:definition "Be- und Verarbeitung von Daten zur Unterstützung von Nutzeranforderungen"@de ,
+                             "hantering och bearbetning av data utifrån användarens behov"@sv ,
+                             "ist atur cara atau program komputer yg direka khusus utk kegunaan tertentu"@ms ,
+                             "manipulación y procesamiento de datos para satisfacer los requerimientos del usuario"@es ,
+                             "manipulation and processing of data in support of user requirements"@en ,
+                             "manipulation et traitement de données supportant des besoins d&#39;utilisateurs"@fr ,
+                             "manipulation og behandling af data for at opfylde brugerkrav"@da ,
+                             "tiedon käsittely ja prosessointi käyttäjävaatimusten mukaisesti"@fi ,
+                             "манипулирование данными и их обработка с целью удовлетворения потребностей пользователя"@ru ,
+                             "معالجة وتجهيز البيانات فيما يدعم متطلبات المستخدم"@ar ,
+                             "支持用户需求的数据操作和处理。"@zh ,
+                             "사용자 요구 사항의 지원을 위한 데이터의 조작 및 처리"@ko ;
+             skos:prefLabel "Anwendung"@de ,
+                            "Aplikasi"@ms ,
+                            "aplicación"@es ,
+                            "application"@en ,
+                            "application"@fr ,
+                            "applikation"@da ,
+                            "applikation"@sv ,
+                            "sovellus"@fi ,
+                            "приложение"@ru ,
+                            "تطبيق"@ar ,
+                            "应用"@zh ,
+                            "응용"@ko ;
+             geolexica:origin lang:araRegistry ,
+                              lang:danRegistry ,
+                              lang:deuRegistry ,
+                              lang:engRegistry ,
+                              lang:finRegistry ,
+                              lang:fraRegistry ,
+                              lang:korRegistry ,
+                              lang:msaRegistry ,
+                              lang:rusRegistry ,
+                              lang:spaRegistry ,
+                              lang:sweRegistry ,
+                              lang:zhoRegistry .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

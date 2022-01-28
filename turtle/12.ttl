@@ -1,0 +1,163 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/12/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/12/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/12/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/12/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "altitude" ;
+        rdfs:label "altitude" ;
+        vann:preferredNamespacePrefix "concept12" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/12/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/12/
+
+:altitude rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info12 ;
+          geolexica:hasLDAPI ldapi:ldapi12-json ,
+                             ldapi:ldapi12-jsonld ,
+                             ldapi:ldapi12-rdfxml ,
+                             ldapi:ldapi12-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          geolexica:hasReview reviews:Review12 ;
+          dcterms:identifier 12 ;
+          skos:notation 12 ;
+          geolexica:abbreviation "h or H"@en ,
+                                 "h or H"@es ,
+                                 "h or H"@sv ,
+                                 "h or H"@zh ,
+                                 "h; H"@fi ,
+                                 "h; H"@ko ,
+                                 "ع, ر"@ar ;
+          lang:ara-note "ملاحظة 1: أنظر ارتفاع مجسم القطع الناقص والارتفاع المتصل بالجاذبية"@ar ,
+                        "ملاحظة 2: ارتفاع نقطة تقع خارج السطح ويعامل كقيمة موجبة ؛ أما الارتفاع ذو القيمة السالبة فيصنف على أنه عمق."@ar ;
+          lang:eng-note "Note 1 to entry: See ellipsoidal height and gravity-related height."@en ,
+                        "Note 2 to entry: Height of a point outside the surface treated as positive; negative height is designated as depth."@en ;
+          lang:fin-note "HUOM. 1: Katso myös ellipsoidinen korkeus ja painovoimaan perustuva korkeus."@fi ,
+                        "HUOM. 2: Termillä korkeus viitataan pinnan yläpuolella olevan pisteen etäisyyteen pinnasta; negatiivista korkeutta nimitetään syvyydeksi."@fi ;
+          lang:kor-note "비고 1: 타원체의 높이와 중력과 관련된 높이 참조"@ko ,
+                        "비고 2: 양으로 여겨지는 표면 외부 지점의 높이, 음의 높이는 깊이라고 불린다."@ko ;
+          lang:rus-note "Примечание 1: Высота точки, расположенная выше отсчетной поверхности, является положительной, а ниже нее – отрицательной"@ru ,
+                        "Примечание 2: Высота точки над поверхностью считается положительной; отрицательная высота называется глубиной"@ru ;
+          lang:spa-note "Nota 1: Véase altitud elipsoidal y altitud ligada a la gravedad."@es ,
+                        "Nota 2: La altitud de un punto, sí es hacia el exterior de la superficie, se considera positiva; la altitud negativa se designa como profundidad."@es ;
+          lang:zho-note "注 1： 参加椭球面高和重力高"@zh ,
+                        "注 2： 向地表面外的高度视为正，相反的高度视为深度"@zh ;
+          rdfs:label "altitude" ;
+          skos:altLabel "altitud ortométrica"@es ,
+                        "height"@ar ,
+                        "height"@en ,
+                        "height"@fr ,
+                        "height"@ms ,
+                        "height"@ru ,
+                        "height"@sv ,
+                        "height"@zh ;
+          skos:definition "distance d&#39;un point à une surface de référence choisie, selon une ligne perpendiculaire à cette surface"@fr ,
+                          "distance of a point from a chosen reference surface along a line perpendicular to that surface"@en ,
+                          "distancia de un punto a una superficie de referencia escogida a lo largo de una línea perpendicular a esta superficie"@es ,
+                          "höjd där den valda referensytan är världshavens medelvattenyta"@sv ,
+                          "ketinggian sesuatu tempat (kawasan) yg biasanya diukur dr aras laut."@ms ,
+                          "pisteen etäisyys valitusta vertauspinnasta kyseistä pintaa vastaan kohtisuorassa olevaa viivaa pitkin"@fi ,
+                          "расстояние от отсчетной поверхности до выбранной точки по нормали к этой поверхности"@ru ,
+                          "مسافة نقطة عن سطح إسناد مرجعي مختار على خط رأسي متعامد مع ذلك السطح"@ar ,
+                          "地球自然表面点到所选择的参照面间的垂直距离"@zh ,
+                          "선택된 기준면으로부터 그 면의 수직선으로 연결된 어떤 지점까지의 거리"@ko ;
+          skos:prefLabel "Altitud"@ms ,
+                         "altitud"@es ,
+                         "altitud"@sv ,
+                         "altitude"@en ,
+                         "altitude"@fr ,
+                         "korkeus"@fi ,
+                         "высота"@ru ,
+                         "الارتفاع"@ar ,
+                         "海拔"@zh ,
+                         "높이"@ko ;
+          geolexica:origin geolexica:engRegistry ,
+                           lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:jpnRegistry ,
+                           lang:korRegistry ,
+                           lang:msaRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:fra-note notes:NoteTransDiff ;
+          lang:msa-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

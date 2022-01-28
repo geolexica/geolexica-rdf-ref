@@ -1,0 +1,135 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/4/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/4/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/4/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "abstract test method" ;
+        rdfs:label "abstract test method" ;
+        vann:preferredNamespacePrefix "concept4" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/4/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/4/
+
+:abstract_test_method rdf:type owl:NamedIndividual ,
+                               skos:Concept ;
+                      skos:inScheme geolexica:GeolexicaConceptScheme ;
+                      geolexica:hasInfo info:Info4 ;
+                      geolexica:hasLDAPI ldapi:ldapi4-json ,
+                                         ldapi:ldapi4-jsonld ,
+                                         ldapi:ldapi4-rdfxml ,
+                                         ldapi:ldapi4-skosrdf ;
+                      geolexica:hasLangCode lang:ara ,
+                                            lang:dan ,
+                                            lang:deu ,
+                                            lang:eng ,
+                                            lang:fin ,
+                                            lang:fra ,
+                                            lang:jpn ,
+                                            lang:kor ,
+                                            lang:rus ,
+                                            lang:spa ,
+                                            lang:swe ,
+                                            lang:zho ;
+                      geolexica:hasReview reviews:Review4 ;
+                      dcterms:identifier 4 ;
+                      skos:notation 4 ;
+                      rdfs:label "abstract test method" ;
+                      skos:definition "method for testing implementation independent of any particular test procedure"@en ,
+                                      "metode til at teste implementering uafhængigt af testprocedure"@da ,
+                                      "méthode de test d&#39;implémentation indépendante de toute procédure de test"@fr ,
+                                      "método para probar implementaciones independientemente de cualquier procedimiento de prueba particular"@es ,
+                                      "testausmenettelystä riippumaton menetelmä toteutuksen testaamiseksi"@fi ,
+                                      "testmetod som är oberoende oavsett typ av implementering"@sv ,
+                                      "метод тестирования реализации, не зависящий от конкретной процедуры тестирования"@ru ,
+                                      "طريقة لاختبار التنفيذ مستقلة عن أي إجراءات اختبار محددة"@ar ,
+                                      "特定の試験手続から独立した実装の試験の方法。"@ja ,
+                                      "用于实现测试的方法，它与特定测试过程无关。"@zh ,
+                                      "특정 시험 절차와 상관 없이 독립적인 시험 구현을 위한 방법"@ko ;
+                      skos:prefLabel "abstract test method"@en ,
+                                     "abstrakt testmetode"@da ,
+                                     "abstrakte Prüfmethode"@de ,
+                                     "abstrakti testausmenetelmä"@fi ,
+                                     "implementeringsoberoende testmetod"@sv ,
+                                     "méthode de test abstrait"@fr ,
+                                     "método de prueba abstracta"@es ,
+                                     "метод абстрактного теста"@ru ,
+                                     "طريقة اختبار تجريدي"@ar ,
+                                     "抽象测试方法"@zh ,
+                                     "抽象試験方法"@ja ,
+                                     "추상 시험 방법"@ko ;
+                      geolexica:origin lang:araRegistry ,
+                                       lang:danRegistry ,
+                                       lang:deuRegistry ,
+                                       lang:engRegistry ,
+                                       lang:finRegistry ,
+                                       lang:fraRegistry ,
+                                       lang:jpnRegistry ,
+                                       lang:korRegistry ,
+                                       lang:rusRegistry ,
+                                       lang:spaRegistry ,
+                                       lang:sweRegistry ,
+                                       lang:zhoRegistry ;
+                      lang:deu-note notes:DefnTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,153 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/20/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/20/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/20/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/20/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "attribute (UML)" ;
+        rdfs:label "attribute (UML)" ;
+        vann:preferredNamespacePrefix "concept20" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/20/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/20/
+
+:attributeUML rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:inScheme geolexica:GeolexicaConceptScheme ;
+              geolexica:hasInfo info:Info20 ;
+              geolexica:hasLDAPI ldapi:ldapi20-json ,
+                                 ldapi:ldapi20-jsonld ,
+                                 ldapi:ldapi20-rdfxml ,
+                                 ldapi:ldapi20-skosrdf ;
+              geolexica:hasLangCode lang:ara ,
+                                    lang:dan ,
+                                    lang:eng ,
+                                    lang:fin ,
+                                    lang:fra ,
+                                    lang:kor ,
+                                    lang:nld ,
+                                    lang:rus ,
+                                    lang:spa ,
+                                    lang:swe ,
+                                    lang:zho ;
+              geolexica:hasReview reviews:Review20 ;
+              dcterms:identifier 20 ;
+              skos:notation 20 ;
+              lang:ara-note "ملاحظة 1: الصفة لغة تعادل ربط التركيب ؛ ولكن المقصد والاستخدام يختلفان دائما"@ar ,
+                            "ملاحظة 2: استخدم مصطلح (معلم) في هذا التعريف بمعناه المعتمد في اللغة الموحَّدة للنمذجة UML وهو مختلف عن تعريفه المنصوص عليه في الفقرة 4-1 من هذه المواصفة الفنية."@ar ;
+              lang:dan-note "Bemærk til posten: En attribut svarer semantisk til en sammensætningsassociation; men formål og anvendelse er normalt forskellig fra denne."@da ;
+              lang:eng-note "Note 1 to entry: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different."@en ,
+                            "Note 2 to entry:-Feature- used in this definition is the UML meaning of the term and is not meant as defined in 4.1 of this Technical Specification. "@en ;
+              lang:kor-note "비고 1: 속성은 의미적으로 합성 연관과 동일하다. 그러나 의미와 용법은 일반적으로 다르다."@ko ,
+                            "비고 2: 정의에 사용된 “특성(Feature)”은 KS X ISO 19103에 정의된 의미가 아닌 UML 용어이다."@ko ;
+              lang:rus-note "Примечание 1: Атрибут семантически эквивалентен ассоциации композиции, однако их содержание и использование обычно различаются"@ru ,
+                            "Примечание 2: -Объект-, исходя из этого определения, это объект в терминологии UML."@ru ;
+              lang:spa-note "Nota 1: Un atributo es semánticamente equivalente a una asociación de composición; sin embargo, la intención y el uso normalmente es diferente."@es ,
+                            "Nota 2: -Aspecto- tal y como se ha usado en esta definición, tiene el significado UML del término y no aquel definido en el apartado 4.1 de esta Especificación Técnica."@es ;
+              lang:zho-note "注 1： 一个属性语义上等同于一个组合关联，但是，目的和用途是不同的。"@zh ,
+                            "注 2： 该定义使用的“特性（feature)”是UML的术语含义，不是本技术规范第4.1章定义的含义。"@zh ;
+              rdfs:label "attribute (UML)" ;
+              skos:altLabel "määrite (UML)"@fi ;
+              skos:definition "aspecto dentro de un clasificador, que describe un rango de valores que las instancias del clasificador pueden tener"@es ,
+                              "caractéristique d&#39;un classificateur décrivant une gamme de valeurs que les instances du classificateur peuvent avoir"@fr ,
+                              "egenskab ved en klassifikator, der beskriver en række værdier, som instanser af klassifikatoren kan indeholde"@da ,
+                              "element binnen een objecttype waarmee waarden worden beschreven die instanties van het object kunnen hebben"@nl ,
+                              "feature within a classifier that describes a range of values that instances of the classifier may hold"@en ,
+                              "kombination av en attributtyp och ett attributvärde, knutet till ett visst objekt"@sv ,
+                              "luokittelijaan sisältyvä piirre, joka määrittelee niiden arvojen joukon, joita luokittelijan ilmentymät voivat saada"@fi ,
+                              "свойство в классификаторе, описывающее множество значений, которые могут принимать экземпляры данного классификатора"@ru ,
+                              "ميزة المصنِّف التي تصف نطاق من القيم التي يمكن لعناصر ذلك المصنِّف أن تحملها"@ar ,
+                              "类元的特性，描述该类元的实例可能有的值的范围。"@zh ,
+                              "분류자의 특성으로 분류자의 인스턴스가 가질 수 있는 값의 범위를 기술"@ko ;
+              skos:prefLabel "Attribut (UML)"@de ,
+                             "UML-attribut"@sv ,
+                             "atributo (UML)"@es ,
+                             "attribut (UML)"@da ,
+                             "attribut (UML)"@fr ,
+                             "attribute (UML)"@en ,
+                             "attribuut (UML)"@nl ,
+                             "attribuutti (UML)"@fi ,
+                             "атрибут(UML)"@ru ,
+                             "صفة (UML)"@ar ,
+                             "属性(UML)"@zh ,
+                             "속성 (UML)"@ko ;
+              geolexica:origin lang:araRegistry ,
+                               lang:danRegistry ,
+                               lang:deuRegistry ,
+                               lang:engRegistry ,
+                               lang:finRegistry ,
+                               lang:fraRegistry ,
+                               lang:korRegistry ,
+                               lang:nldRegistry ,
+                               lang:rusRegistry ,
+                               lang:spaRegistry ,
+                               lang:sweRegistry ,
+                               lang:zhoRegistry ;
+              lang:deu-note notes:DefnTransUnavail ,
+                            notes:NoteTransUnavail ;
+              lang:kor-note notes:NoteTransUnavail ;
+              lang:nld-note notes:NoteTransUnavail ;
+              lang:rus-note notes:NoteTransDiff ;
+              lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

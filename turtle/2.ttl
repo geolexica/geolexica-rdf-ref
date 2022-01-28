@@ -1,0 +1,116 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/2/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/2/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/2/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-27"^^xsd:date ;
+        dcterms:title "abbreviation" ;
+        rdfs:label "abbreviation" ;
+        vann:preferredNamespacePrefix "concept2" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/2/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/2/
+:abbreviation rdf:type owl:NamedIndividual ,
+                       skos:Concept ;
+              skos:inScheme geolexica:GeolexicaConceptScheme ;
+              geolexica:hasInfo info:Info2 ;
+              geolexica:hasLDAPI :abbreviation ;
+              geolexica:hasLangCode lang:ara ,
+                                    lang:dan ,
+                                    lang:deu ,
+                                    lang:eng ,
+                                    lang:kor ,
+                                    lang:rus ,
+                                    lang:spa ,
+                                    lang:swe ;
+              geolexica:hasReview reviews:Review2 ;
+              geolexica:hasLDAPI ldapi:ldapi2-json , ldapi:ldapi2-jsonld , ldapi:ldapi2-skosrdf, ldapi:ldapi2-rdfxml ;
+              dcterms:identifier 2 ;
+              skos:notation 2 ;
+              rdfs:label "abbreviation" ;
+              skos:definition "benämning som skapats genom att ord eller bokstäver har utelämnats från en längre benämning och som står för samma begrepp som den längre benämningen"@sv ,
+                              "betegnelse dannet ved at udelade ord eller bogstaver fra en længere form af et begreb som betegner det samme"@da ,
+                              "designación formada por la omisión de palabras o letras de una denominación más larga y que designa al mismo concepto"@es ,
+                              "designation formed by omitting words or letters from a longer form and designating the same concept"@en ,
+                              "обозначение, образованное путём исключения слов или букв из более длинной формы и обозначающее  то же самое понятие"@ru ,
+                              "دلالة تتشكل بعد حذف كلمات أو حروف من صيغة أطول وتدل عن نفس المفهوم"@ar ,
+                              "축약하기 전의 용어와 동일한 개념을 나타내면서 글자 또는 단어를 생략한 용어"@ko ;
+              skos:prefLabel "Abkürzung"@de ,
+                             "abbreviation"@en ,
+                             "abreviatura"@es ,
+                             "forkortelse"@da ,
+                             "förkortning"@sv ,
+                             "аббревиатура"@ru ,
+                             "اختصار"@ar ,
+                             "약어"@ko ;
+              geolexica:origin lang:araRegistry ,
+                               lang:danRegistry ,
+                               lang:deuRegistry ,
+                               lang:engRegistry ,
+                               lang:korRegistry ,
+                               lang:rusRegistry ,
+                               lang:spaRegistry ,
+                               lang:sweRegistry ;
+              lang:deu-note notes:DefnTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

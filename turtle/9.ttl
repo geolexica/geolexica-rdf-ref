@@ -1,0 +1,143 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/9/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/9/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/9/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/9/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "actor (UML)" ;
+        rdfs:label "actor (UML)" ;
+        vann:preferredNamespacePrefix "concept9" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/9/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/9/
+
+:actor rdf:type owl:NamedIndividual ,
+                skos:Concept ;
+       skos:inScheme geolexica:GeolexicaConceptScheme ;
+       geolexica:hasInfo info:Info9 ;
+       geolexica:hasLDAPI ldapi:ldapi9-json ,
+                          ldapi:ldapi9-jsonld ,
+                          ldapi:ldapi9-rdfxml ,
+                          ldapi:ldapi9-skosrdf ;
+       geolexica:hasLangCode lang:ara ,
+                             lang:dan ,
+                             lang:eng ,
+                             lang:fin ,
+                             lang:fra ,
+                             lang:kor ,
+                             lang:rus ,
+                             lang:spa ,
+                             lang:swe ,
+                             lang:zho ;
+       geolexica:hasReview reviews:Review9 ;
+       dcterms:identifier 9 ;
+       skos:notation 9 ;
+       lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
+       lang:dan-note "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da ;
+       lang:eng-note "Note to entry: A test result can be observations or measurements."@en ;
+       lang:fin-note "HUOM.: Testitulos voi olla havainto tai mittaus."@fi ;
+       lang:jpn-note "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja ,
+                     "備考 2： 参照値は，論議領域を実現するものとして採択された値である"@ja ;
+       lang:kor-note "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko ;
+       lang:rus-note "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru ;
+       lang:spa-note "Nota: Un resultado pueden ser observaciones o medidas"@es ;
+       lang:swe-note "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv ;
+       lang:zho-note "注： 测试结果可以是观测结果或量测结果。"@zh ;
+       rdfs:label "actor (UML)" ;
+       skos:definition "(UML)当用例的用户与这些用例交互时，所扮演的相关角色的集合。"@zh ,
+                       "coherent set of roles that users of use cases play when interacting with these use cases"@en ,
+                       "conjunto coherente de roles que los usuarios de unos casos de uso jue gan cuando interaccionan con esos casos de uso"@es ,
+                       "ensemble cohérent de rôles que les utilisateurs de cas d&#39;utilisation jouent en interagissant avec ces cas d&#39;utilisation"@fr ,
+                       "något utanför ett system som växelverkar med systemet genom att delta i ett användningsfall"@sv ,
+                       "sammenhængende sæt af roller, som brugere af use cases spiller i forhold til disse use cases"@da ,
+                       "yhtenäinen joukko rooleja, joita käyttäjillä on käyttötapausten toiminnoissa"@fi ,
+                       "множество логически связанных  ролей, выполняемых пользователями вариантов использования при взаимодействии с  ними"@ru ,
+                       "مجموعة أدوار مترابطة منطقيا يقوم بها مستخدمو أدوات النمذجة عند التفاعل معها ."@ar ,
+                       "유즈 케이스와 상호 작용 시, 그 유즈 케이스의 사용자가 수행하는 역할의 집합"@ko ;
+       skos:prefLabel "Akteur (UML)"@de ,
+                      "acteur (UML)"@fr ,
+                      "actor (UML)"@en ,
+                      "actor (UML)"@es ,
+                      "aktör (UML)"@sv ,
+                      "aktør (UML)"@da ,
+                      "toimija (UML)"@fi ,
+                      "действующее лицо (UML)"@ru ,
+                      "لغة &quot;الممثل&quot; UML"@ar ,
+                      "参与者(UML)"@zh ,
+                      "행위자 (UML)"@ko ;
+       geolexica:origin lang:araRegistry ,
+                        lang:danRegistry ,
+                        lang:engRegistry ,
+                        lang:finRegistry ,
+                        lang:fraRegistry ,
+                        lang:korRegistry ,
+                        lang:rusRegistry ,
+                        lang:spaRegistry ,
+                        lang:sweRegistry ,
+                        lang:zhoRegistry ;
+       lang:deu-note notes:DefnTransUnavail ,
+                     notes:NoteTransUnavail ;
+       lang:fra-note notes:NoteTransDiff ;
+       lang:msa-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

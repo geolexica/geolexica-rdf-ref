@@ -1,0 +1,155 @@
+@prefix : <https://isotc211.geolexica.org/api/ld/concepts/24/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://vocab.deri.ie/void#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/api/ld/concepts/24/> .
+
+<https://isotc211.geolexica.org/api/ld/concepts/24/> rdf:type dctype:Dataset ;
+
+        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/24/> ;
+        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+                                                               info: ,
+                                                               lang: ,
+                                                               notes: ,
+                                                               reviews: ,
+                                                               ldapi: ,
+                                                               sources: ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+        dcterms:created "2022-01-20"^^xsd:date ;
+        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+        dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-01-28"^^xsd:date ;
+        dcterms:title "bag" ;
+        rdfs:label "bag" ;
+        vann:preferredNamespacePrefix "concept24" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/24/" .
+
+
+dctype:Dataset owl:sameAs void:Dataset .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/conformsTo
+dcterms:conformsTo rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/ld/concepts/24/
+
+:bag rdf:type owl:NamedIndividual ,
+              skos:Concept ;
+     skos:inScheme geolexica:GeolexicaConceptScheme ;
+     geolexica:hasInfo info:Info24 ;
+     geolexica:hasLDAPI ldapi:ldapi24-json ,
+                        ldapi:ldapi24-jsonld ,
+                        ldapi:ldapi24-rdfxml ,
+                        ldapi:ldapi24-skosrdf ;
+     geolexica:hasLangCode lang:ara ,
+                           lang:dan ,
+                           lang:eng ,
+                           lang:fin ,
+                           lang:fra ,
+                           lang:kor ,
+                           lang:nld ,
+                           lang:rus ,
+                           lang:spa ,
+                           lang:swe ,
+                           lang:zho ;
+     geolexica:hasReview reviews:Review24 ;
+     dcterms:identifier 24 ;
+     skos:notation 24 ;
+     lang:ara-note "ملاحظة: منطقيا ، الحقيبة هي عبارة عن مجموعة مكونة من أزواج < البند ، الإحصاء>"@ar ;
+     lang:dan-note "Bemærk til posten: Logisk set er en samling organiseret i par <element, antal>"@da ;
+     lang:eng-note "Note to entry: Logically, a bag is a set of pairs <item, count>."@en ;
+     lang:fin-note "HUOM.: Monijoukkoa voidaan loogisesti kuvata parien <tietokohde, lukumäärä> joukkona."@fi ;
+     lang:jpn-note "備考： 論理的には，多重集合は，＜項目，項数＞の対の集合である。"@ja ;
+     lang:kor-note "비고: 논리적으로 다중 집합은 <항목, 수>쌍의 집합이다."@ko ;
+     lang:pol-note "UWAGA: W sensie logicznym wielozbiór można uważać za kolekcję par typu <element, krotność tego elementu w kolekcji>."@po ;
+     lang:rus-note "Примечание: Логически, мультимножество – это набор пар < item, count >."@ru ;
+     lang:spa-note "Nota: Lógicamente, una bolsa es un conjunto de pares <item, contador>"@es ;
+     lang:zho-note "注： 逻辑上，包是<项,数目>对的集合。"@zh ;
+     rdfs:label "bag" ;
+     skos:altLabel "백"@ko ;
+     skos:definition "bekas utk mengisi, menyimpan atau membawa pakaian, surat, buku, dll yg dibuat drpd kulit dll"@ms ,
+                     "colección finita y desordenada de ítems relacionados (objetos o valores) que pueden estar repetidos"@es ,
+                     "collection limitée et non-ordonnée d&#39;éléments liés (objets ou valeurs) pouvant être répétés"@fr ,
+                     "finit, uordnet samling af beslægtede elementer (objekter eller værdier), som kan gentages"@da ,
+                     "finite, unordered collection of related items (objects or values) that may be repeated"@en ,
+                     "oordnad, ändlig mängd av samhörande data"@sv ,
+                     "skończona, nieuporządkowana kolekcja powiązanych pozycji (obiektów lub wartości), które mogą się powtarzać"@pl ,
+                     "äärellinen, järjestämätön kokoelma yhteenliittyviä tietokohteita (objekteja tai arvoja), jotka voivat toistua"@fi ,
+                     "конечная неупорядоченная совокупность элементов (объектов или значений), в которой  допускается их повторение"@ru ,
+                     "مجموعة محدودة غير مرتبة من البنود (كيانات أو قيم) ذات ارتباط ببعضها ويمكن تكرارها"@ar ,
+                     "可以重复的相关项（对象或值）的有限、无序的集合。"@zh ,
+                     "繰返しのある，関連する項目（オブジェクト又は値）の，有限非順序な集まり。"@ja ,
+                     "유한하며 순서가 없는, 반복 가능한 항목(객체 또는 값)의 모음"@ko ;
+     skos:prefLabel "Multimenge"@de ,
+                    "bag"@en ,
+                    "bag"@sv ,
+                    "beg"@ms ,
+                    "bolsa"@es ,
+                    "monijoukko"@fi ,
+                    "multimængde"@da ,
+                    "sac"@fr ,
+                    "wielozbiór"@pl ,
+                    "мультимножество"@ru ,
+                    "مجموعة"@ar ,
+                    "包"@zh ,
+                    "多重集合"@ja ,
+                    "다중 집합"@ko ;
+     geolexica:origin lang:araRegistry ,
+                      lang:danRegistry ,
+                      lang:deuRegistry ,
+                      lang:engRegistry ,
+                      lang:finRegistry ,
+                      lang:fraRegistry ,
+                      lang:jpnRegistry ,
+                      lang:korRegistry ,
+                      lang:msaRegistry ,
+                      lang:polRegistry ,
+                      lang:rusRegistry ,
+                      lang:spaRegistry ,
+                      lang:sweRegistry ,
+                      lang:zhoRegistry ;
+     lang:deu-note notes:DefnTransUnavail ,
+                   notes:NoteTransUnavail ;
+     lang:msa-note notes:NoteTransUnavail ;
+     lang:nld-note notes:NoteTransUnavail ;
+     lang:swe-note notes:NoteTransUnavail .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
