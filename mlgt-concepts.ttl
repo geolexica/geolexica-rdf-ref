@@ -1,33 +1,33 @@
-@prefix : <https://isotc211.geolexica.org/api/ld/concepts#> .
+@prefix : <https://isotc211.geolexica.org/ld/concepts#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
+@prefix info: <https://isotc211.geolexica.org/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
-@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/api/ld/concepts> .
+@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/ld/concepts> .
 
-<https://isotc211.geolexica.org/api/ld/concepts> rdf:type owl:Ontology ;
-        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/v1.0> ;
-        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+<https://isotc211.geolexica.org/ld/concepts> rdf:type owl:Ontology ;
+        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/v1.0> ;
+        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
                     info: ,
                     lang: ,
                     ldapi: ,
                     notes: ,
                     reviews: ,
                     sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
         dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
         dcterms:created "2022-01-20"^^xsd:date ;
         dcterms:creator <https://www.linkedin.com/in/lanemk> ;
@@ -37,7 +37,7 @@
         dcterms:modified "2022-01-25"^^xsd:date ;
         dcterms:title "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
         vann:preferredNamespacePrefix "mlgt-concepts" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts#" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts#" ;
         rdfs:label "Concepts RDF Dataset: (MLGT)"@en .
 
 
@@ -73,19 +73,19 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-# ###  https://isotc211.geolexica.org/api/ld/geolexica#origin
+# ###  https://isotc211.geolexica.org/ld/geolexica#origin
 # geolexica:origin rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/api/ld/language#deu-note
+# ###  https://isotc211.geolexica.org/ld/language#deu-note
 # lang:deu-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/api/ld/language#fra-note
+# ###  https://isotc211.geolexica.org/ld/language#fra-note
 # lang:fra-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/api/ld/language#msa-note
+# ###  https://isotc211.geolexica.org/ld/language#msa-note
 # lang:msa-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/api/ld/language#nld-note
+# ###  https://isotc211.geolexica.org/ld/language#nld-note
 # lang:nld-note rdf:type owl:AnnotationProperty .
 
 #################################################################
@@ -97,12 +97,12 @@ dctype:Dataset owl:sameAs void:Dataset .
 
 ###  http://vocab.deri.ie/void#Dataset
 
-###  https://isotc211.geolexica.org/api/ld/concepts#
-<https://isotc211.geolexica.org/api/ld/concepts#> rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/ld/concepts#
+<https://isotc211.geolexica.org/ld/concepts#> rdf:type owl:NamedIndividual ,
                                                            dctype:Dataset .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#abbreviation
+###  https://isotc211.geolexica.org/ld/concepts#abbreviation
 :abbreviation rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -150,7 +150,7 @@ dctype:Dataset owl:sameAs void:Dataset .
               lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#abstract_test_case
+###  https://isotc211.geolexica.org/ld/concepts#abstract_test_case
 :abstract_test_case rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -225,7 +225,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                     lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#abstract_test_method
+###  https://isotc211.geolexica.org/ld/concepts#abstract_test_method
 :abstract_test_method rdf:type owl:NamedIndividual ,
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -288,7 +288,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                       lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#abstract_test_module
+###  https://isotc211.geolexica.org/ld/concepts#abstract_test_module
 :abstract_test_module rdf:type owl:NamedIndividual ,
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -362,7 +362,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                       lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#abstract_test_suite
+###  https://isotc211.geolexica.org/ld/concepts#abstract_test_suite
 :abstract_test_suite rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -445,7 +445,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                      lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#acceptance_testing
+###  https://isotc211.geolexica.org/ld/concepts#acceptance_testing
 :acceptance_testing rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -531,7 +531,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                     lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#accuracy
+###  https://isotc211.geolexica.org/ld/concepts#accuracy
 :accuracy rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -607,7 +607,7 @@ dctype:Dataset owl:sameAs void:Dataset .
           lang:msa-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#actor
+###  https://isotc211.geolexica.org/ld/concepts#actor
 :actor rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -678,7 +678,7 @@ dctype:Dataset owl:sameAs void:Dataset .
        lang:msa-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#admitted_term
+###  https://isotc211.geolexica.org/ld/concepts#admitted_term
 :admitted_term rdf:type owl:NamedIndividual ,
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -725,7 +725,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#aggregation
+###  https://isotc211.geolexica.org/ld/concepts#aggregation
 :aggregation rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -796,7 +796,7 @@ dctype:Dataset owl:sameAs void:Dataset .
              lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#altitude
+###  https://isotc211.geolexica.org/ld/concepts#altitude
 :altitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -887,7 +887,7 @@ dctype:Dataset owl:sameAs void:Dataset .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#annotation
+###  https://isotc211.geolexica.org/ld/concepts#annotation
 :annotation rdf:type owl:NamedIndividual ,
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -967,7 +967,7 @@ dctype:Dataset owl:sameAs void:Dataset .
             lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#application
+###  https://isotc211.geolexica.org/ld/concepts#application
 :application rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1031,7 +1031,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                               lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#application_schema
+###  https://isotc211.geolexica.org/ld/concepts#application_schema
 :application_schema rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1099,7 +1099,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                                      lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#association
+###  https://isotc211.geolexica.org/ld/concepts#association
 :association rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1169,7 +1169,7 @@ dctype:Dataset owl:sameAs void:Dataset .
              lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#attitude
+###  https://isotc211.geolexica.org/ld/concepts#attitude
 :attitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1242,7 +1242,7 @@ dctype:Dataset owl:sameAs void:Dataset .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#attribute
+###  https://isotc211.geolexica.org/ld/concepts#attribute
 :attribute rdf:type owl:NamedIndividual ,
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1303,7 +1303,7 @@ dctype:Dataset owl:sameAs void:Dataset .
            lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#attributeUML
+###  https://isotc211.geolexica.org/ld/concepts#attributeUML
 :attributeUML rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1384,7 +1384,7 @@ dctype:Dataset owl:sameAs void:Dataset .
               lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#bag
+###  https://isotc211.geolexica.org/ld/concepts#bag
 :bag rdf:type owl:NamedIndividual ,
               skos:Concept ;
      skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1467,7 +1467,7 @@ dctype:Dataset owl:sameAs void:Dataset .
      lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#base_standard
+###  https://isotc211.geolexica.org/ld/concepts#base_standard
 :base_standard rdf:type owl:NamedIndividual ,
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1525,7 +1525,7 @@ dctype:Dataset owl:sameAs void:Dataset .
                lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#basic_test
+###  https://isotc211.geolexica.org/ld/concepts#basic_test
 :basic_test rdf:type owl:NamedIndividual ,
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1587,7 +1587,7 @@ dctype:Dataset owl:sameAs void:Dataset .
             lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#behaviour
+###  https://isotc211.geolexica.org/ld/concepts#behaviour
 :behaviour rdf:type owl:NamedIndividual ,
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1650,7 +1650,7 @@ dctype:Dataset owl:sameAs void:Dataset .
            lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#boundary
+###  https://isotc211.geolexica.org/ld/concepts#boundary
 :boundary rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1734,7 +1734,7 @@ dctype:Dataset owl:sameAs void:Dataset .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#buffer
+###  https://isotc211.geolexica.org/ld/concepts#buffer
 :buffer rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1806,7 +1806,7 @@ dctype:Dataset owl:sameAs void:Dataset .
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/api/ld/concepts#calendar
+###  https://isotc211.geolexica.org/ld/concepts#calendar
 :calendar rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;

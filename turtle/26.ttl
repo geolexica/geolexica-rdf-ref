@@ -1,33 +1,33 @@
-@prefix : <https://isotc211.geolexica.org/api/ld/concepts/26/> .
+@prefix : <https://isotc211.geolexica.org/ld/concepts/26/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/api/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/api/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/api/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix info: <https://isotc211.geolexica.org/ld/info#> .
+@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
+@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/api/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/api/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/api/ld/concepts/26/> .
+@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/ld/concepts/26/> .
 
-<https://isotc211.geolexica.org/api/ld/concepts/26/> rdf:type dctype:Dataset ;
+<https://isotc211.geolexica.org/ld/concepts/26/> rdf:type dctype:Dataset ;
 
-        owl:versionIRI <https://isotc211.geolexica.org/api/ld/concepts/26/> ;
-        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ,
+        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/26/> ;
+        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
                                                                info: ,
                                                                lang: ,
                                                                notes: ,
                                                                reviews: ,
                                                                ldapi: ,
                                                                sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
         dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
         dcterms:created "2022-01-20"^^xsd:date ;
         dcterms:creator <https://www.linkedin.com/in/lanemk> ;
@@ -37,7 +37,7 @@
         dcterms:title "base standard" ;
         rdfs:label "base standard" ;
         vann:preferredNamespacePrefix "concept26" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/concepts/26/" .
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/26/" .
 
 
 dctype:Dataset owl:sameAs void:Dataset .
@@ -69,7 +69,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  https://isotc211.geolexica.org/api/ld/concepts/26/
+###  https://isotc211.geolexica.org/ld/concepts/26/
 
 :base_standard rdf:type owl:NamedIndividual ,
                         skos:Concept ;

@@ -1,4 +1,4 @@
-@prefix : <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix : <https://isotc211.geolexica.org/ld/notes#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,14 +10,14 @@
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix geolexica: <https://isotc211.geolexica.org/api/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/api/ld/notes#> .
+@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
+@base <https://isotc211.geolexica.org/ld/notes#> .
 
 
 <https://isotc211.geolexica.org/api/notes#> rdf:type dctype:Dataset ;
-        owl:versionIRI <https://isotc211.geolexica.org/api/ld/notes/v1.0/> ;
-        owl:imports <https://isotc211.geolexica.org/api/ld/geolexica> ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/api/ld/geolexica/v1.0/> ;
+        owl:versionIRI <https://isotc211.geolexica.org/ld/notes/v1.0/> ;
+        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
         dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
         dcterms:created "2022-01-28"^^xsd:date ;
         dcterms:creator <https://www.linkedin.com/in/lanemk> ;
@@ -28,7 +28,7 @@
         dcterms:title "Notes RDF Dataset (MLGT)"@en ;
         rdfs:label "Notes RDF Dataset (MLGT)" ;
         vann:preferredNamespacePrefix "notes" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/ld/notes#" .
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/notes#" .
 
 dctype:Dataset owl:sameAs void:Dataset .
 
@@ -59,19 +59,19 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  https://osgeo.geolexica.org/api/ld/geolexica#DefnTransUnavail
+###  https://osgeo.geolexica.org/ld/geolexica#DefnTransUnavail
 :DefnTransUnavail rdf:type owl:NamedIndividual ,
                   geolexica:DefnUnavail ;
                   xsd:string "Definition not provided in this language."^^xsd:string ;
                   rdfs:label "Definition Translation Not Available"@en .
 
-###  https://osgeo.geolexica.org/api/ld/geolexica#NoteTransDiff
+###  https://osgeo.geolexica.org/ld/geolexica#NoteTransDiff
 :NoteTransDiff rdf:type owl:NamedIndividual ,
                geolexica:NoteSourceDiff ;
                xsd:string "This translated term may not be from the same source as the normative term."^^xsd:string ;
                rdfs:label "Translation Difference; Source to Normative"@en .
 
-###  https://isotc211.geolexica.org/api/ld/language#NoteTransUnavail
+###  https://isotc211.geolexica.org/ld/language#NoteTransUnavail
 :NoteTransUnavail rdf:type owl:NamedIndividual ,
                   geolexica:NoteUnavail ;
                   xsd:string "This note has not been translated."^^xsd:string ;
