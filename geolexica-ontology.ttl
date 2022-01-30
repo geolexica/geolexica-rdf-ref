@@ -30,6 +30,8 @@
       skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01."@en ;
       skos:note "Classes, properties, attributes, and axioms are subject to change."@en .
 
+dctype:Dataset owl:sameAs void:Dataset .
+
 #################################################################
 #    Annotation properties
 #################################################################
@@ -107,7 +109,6 @@ xsd:string rdf:type rdfs:Datatype .
 :hasSource rdf:type owl:ObjectProperty ;
            rdfs:domain skos:Concept ;
            rdfs:range :Source .
-
 
 #################################################################
 #    Data properties

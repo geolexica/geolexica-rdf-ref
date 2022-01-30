@@ -30,7 +30,7 @@
          rdfs:label "Concept Reviews RDF Dataset (MLGT)"@en .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+# dctype:Dataset owl:sameAs void:Dataset .
 
 # #################################################################
 # #    Individuals
@@ -419,6 +419,14 @@ dctype:Dataset owl:sameAs void:Dataset .
    geolexica:review-status "final" ;
    geolexica:decision "accepted" ;
    geolexica:note "This entry is superseded by the entry for connected in ISO 19107:2019(E)"@en ;
+   geolexica:last-review "2019-12-02"^^xsd:date .
+
+###  https://isotc211.geolexica.org/ld/reviews#Review79
+:Review79 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+   geolexica:decision-event "Publication of ISO 19107:2019(E)"@en ;
+   geolexica:review-status "final" ;
+   geolexica:decision "accepted" ;
+   geolexica:note "Authoritative reference changed from ISO 19107:2003 to ISO 19107:2019(E), 3.12. Lineage source added as ISO 19107:2003(E)"@en ;
    geolexica:last-review "2019-12-02"^^xsd:date .
 
 ###  https://isotc211.geolexica.org/ld/reviews#Review81

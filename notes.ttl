@@ -30,7 +30,7 @@
         vann:preferredNamespacePrefix "notes" ;
         vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/notes#" .
 
-dctype:Dataset owl:sameAs void:Dataset .
+# dctype:Dataset owl:sameAs void:Dataset .
 
 #################################################################
 #    Annotation properties
@@ -69,10 +69,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :NoteTransDiff rdf:type owl:NamedIndividual ,
                geolexica:NoteSourceDiff ;
                xsd:string "This translated term may not be from the same source as the normative term."^^xsd:string ;
-               rdfs:label "Translation Difference; Source to Normative"@en .
+               rdfs:label "Translation Difference Exists - Source to Normative"@en .
 
 ###  https://isotc211.geolexica.org/ld/language#NoteTransUnavail
 :NoteTransUnavail rdf:type owl:NamedIndividual ,
                   geolexica:NoteUnavail ;
                   xsd:string "This note has not been translated."^^xsd:string ;
                   rdfs:label "Note Translation Not Available"@en .
+
+###  https://isotc211.geolexica.org/ld/language#ExTransUnavail
+:ExTransUnavail rdf:type owl:NamedIndividual ,
+                  geolexica:NoteUnavail ;
+                  xsd:string "This example has not been translated."^^xsd:string ;
+                  rdfs:label "Example Translation Not Available"@en .

@@ -18,7 +18,7 @@
 @prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
 @base <https://isotc211.geolexica.org/ld/concepts> .
 
-<https://isotc211.geolexica.org/ld/concepts> rdf:type owl:Ontology ;
+<https://isotc211.geolexica.org/ld/concepts> rdf:type dctype:Dataset ;
         owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/v1.0> ;
         owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
                     info: ,
@@ -47,28 +47,16 @@
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/issued
 dcterms:issued rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/modified
 dcterms:modified rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/publisher
 dcterms:publisher rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
@@ -92,14 +80,14 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://purl.org/dc/dcmitype/Dataset
-dctype:Dataset owl:sameAs void:Dataset .
+# ###  http://purl.org/dc/dcmitype/Dataset
+# dctype:Dataset owl:sameAs void:Dataset .
 
 ###  http://vocab.deri.ie/void#Dataset
 
-###  https://isotc211.geolexica.org/ld/concepts#
-<https://isotc211.geolexica.org/ld/concepts#> rdf:type owl:NamedIndividual ,
-                                                           dctype:Dataset .
+# ###  https://isotc211.geolexica.org/ld/concepts#
+# <https://isotc211.geolexica.org/ld/concepts#> rdf:type owl:NamedIndividual ,
+#                                                            dctype:Dataset .
 
 
 ###  https://isotc211.geolexica.org/ld/concepts#abbreviation
@@ -1875,5 +1863,2999 @@ dctype:Dataset owl:sameAs void:Dataset .
                            lang:sweRegistry ,
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#calendar_era
+:calendar_era rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info32 ;
+          geolexica:hasLDAPI ldapi:ldapi32-json ,
+                             ldapi:ldapi32-jsonld ,
+                             ldapi:ldapi32-rdfxml ,
+                             ldapi:ldapi32-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:jpn ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 32 ;
+          skos:notation 32 ;
+          rdfs:label "calendar era" ;
+          skos:definition "sequence of periods of one of the types used in a calendar, counted from a specified event"@en ,
+  "سلسلة من المدد الزمنية المتتالية من أحد الأنواع التي تستخدم في التقاويم ، تحسب اعتبارا من واقعة محددة"@ar ,
+   "sekvens af perioder af en af de typer, der anvendes i en kalender, regnet fra en nærmere angivet hændelse"@da ,
+   "kalenterissa käytössä olevien joidenkin aikajaksojen jono, joka aloitetaan tietystä ajanhetkestä"@fi ,
+   "séquence de périodes de l&#39;un des types utilisés dans un calendrier, comptée à partir d&#39;un évenement particulier"@fr ,
+   "暦の中で使用する型の一つとなり，ある特定の事象からその長さを数える期間。"@ja ,
+   "기간의 연속을 표현하는 달력의 유형으로 특정 사건으로부터 계산된 기간 표시"@ko ,
+   "zastosowany w kalendarzu ciąg okresów jednego typu,liczonych od określonego zdarzenia"@pl ,
+   "последовательность периодов одного типа, используемого в календаре, с отсчетом от определенного события"@ru ,
+   "secuencia de períodos de uno de los tipos utilizados en un calendario, contando a partir de un evento específico"@es ,
+   "sequence of periods of one of the types used in a calendar, counted from a specified event"@sv ,
+   "从特定事件起算的，日历中使用的一类时段序列。"@zh ;
+            skos:prefLabel "calendar era"@en ,
+   "حقبة تقويمية"@ar ,
+   "kalenderinddeling"@da ,
+   "kalendarischer Zeitraum"@de ,
+   "kalenterikausi"@fi ,
+   "ère calendaire"@fr ,
+   "暦年代"@ja ,
+   "달력 연대"@ko ,
+   "era kalendarzowa"@pl ,
+   "календарная эра"@ru ,
+   "era de calendario"@es ,
+   "kalenderera"@sv ,
+   "日历时代"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:jpnRegistry ,
+                           lang:korRegistry ,
+                           lang:polRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#candidate_route
+:candidate_route rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info34 ;
+          geolexica:hasLDAPI ldapi:ldapi34-json ,
+                             ldapi:ldapi34-jsonld ,
+                             ldapi:ldapi34-rdfxml ,
+                             ldapi:ldapi34-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 34 ;
+          skos:notation 34 ;
+          rdfs:label "candidate route" ;
+          skos:definition "any route that satisfies all constraints of the routing request with the possible exception of optimality of the cost function"@en ,
+                        "أي مسلك يكون مستوفيا لجميع القيود المشمولة في طلب تحديد مسلك أو مسار مع احتمال استثناء أفضلية دالة التكلفة"@ar ,
+                        "enhver rute, der opfylder alle betingelser i ruteforespørgslen, dog evt. med undtagelse af optimering af omkostningsfunktionen"@da ,
+                        "reitti, joka täyttää kaikki reitinhakupyynnön ehdot mahdollisesti lukuunottamatta kustannusten optimointitoimintoa"@fi ,
+                        "itinéraire satisfaisant toutes les contraintes d&#39;une requête de routage à l&#39;exception possible de l&#39;optimalité de la fonction de coût"@fr ,
+                        "라우팅 요청의 제약 조건에 대하여 최적화된 비용 함수를 만족시키는 경로"@ko ,
+                        "любой из маршрутов, удовлетворяющий всем ограничениям из запроса, за исключением, возможно, требования на минимум функции  стоимости"@ru ,
+                        "cualquier ruta que satisfaga todas las restricciones de una petición de enrutamiento con la posible excepción de la optimización de la función de costo"@es ,
+                        "varje rutt som uppfyller kraven i ruttförfrågan, eventuellt frånsett kostnadsoptimering"@sv ,
+                        "除了成本函数最优路径之外，还包含任何可满足路径请求的所有限制条件的路径。"@zh ;
+            skos:prefLabel "candidate route"@en ,
+                        "مسلك مرشح"@ar ,
+                        "ruteforslag"@da ,
+                        "mögliche Route"@de ,
+                        "reittiehdokas"@fi ,
+                        "itinéraire candidat"@fr ,
+                        "후보 경로"@ko ,
+                        "вариант маршрута"@ru ,
+                        "ruta candidata"@es ,
+                        "ruttkandidat"@sv ,
+                        "候选路径"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:fra-note notes:NoteTransDiff ;
+          lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#capability_test
+:capability_test rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info35 ;
+          geolexica:hasReview reviews:Review35 ;
+          geolexica:hasLDAPI ldapi:ldapi35-json ,
+                             ldapi:ldapi35-jsonld ,
+                             ldapi:ldapi35-rdfxml ,
+                             ldapi:ldapi35-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 35 ;
+          skos:notation 35 ;
+          rdfs:label "capability test" ;
+          skos:definition "test designed to determine whether an IUT conforms to a particular characteristic of an International Standard as described in the test purpose"@en ,
+   "اختبار صُمم لتحديد ما إذا كان التنفيذ تحت ظروف الاختبار في حالة معينة مطابقا لخاصية محددة لمقياس دولي ما بحسب الوصف الوارد في الغرض من إجراء الاختبار"@ar ,
+   "test, der er udviklet med henblik på at afgøre, om en IUT (Implementation Under Test) opfylder kravene til en bestemt egenskab i en international standard som beskrevet i testformålet"@da ,
+   "testi, jonka tarkoituksena on määrittää, onko testattavana oleva toteutus (Implementation Under Test, IUT) kansainvälisen standardin tietyn vaatimuksen mukainen siten kuin testin tarkoituksessa on kuvattu"@fi ,
+   "test destiné à déterminer si une implémentation soumise à test est conforme à une caractéristique particulière d&#39;une norme internationale, tel que décrit dans l&#39;objet du test"@fr ,
+   "試験対象(IUT:implementation under test)が試験目的の記述どおりに規格の特定の性質に適合するかどうかを決定するための試験。"@ja ,
+   "시험용 구현(IUT: Implementation under test)이 시험 목적에 기술된 바와 같이 표준 표준의 특정한 특성을 따르는지를 판단하기 위해 설계된 시험"@ko ,
+   "тест, призванный установить, обладает ли объект проверки конкретным свойством, которое предусмотрено международным стандартом и объявлено целью тестирования"@ru ,
+   "prueba diseñada para determinar si un IUT es conforme a una característica particular de una norma internacional tal y como se describe en el propósito de la prueba"@es ,
+   "test som är framtagen för att avgöra om en implementering av en standard överensstämmer med en viss egenskap hos standarden och i enlighet med testens syfte"@sv ,
+   "为确定被测实现（IUT)是否符合测试目的所描述的标准的特性而设计的测试。"@zh ;
+             skos:prefLabel "capability test"@en ,
+   "اختبار القدرة"@ar ,
+   "egnethedstest"@da ,
+   "Fähigkeitstest"@de ,
+   "kelpoisuustesti"@fi ,
+   "test fonctionnel"@fr ,
+   "機能試験"@ja ,
+   "기능 시험"@ko ,
+   "тест на функциональное соответствие"@ru ,
+   "prueba de capacidad"@es ,
+   "duglighetstest"@sv ,
+   "能力测试"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#cardinalityUML
+:cardinalityUML rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info36 ;
+          geolexica:hasReview reviews:Review36 ;
+          geolexica:hasLDAPI ldapi:ldapi36-json ,
+                             ldapi:ldapi36-jsonld ,
+                             ldapi:ldapi36-rdfxml ,
+                             ldapi:ldapi36-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 36 ;
+          skos:notation 36 ;
+          rdfs:label "cardinality (UML)" ;
+          skos:definition "number of elements in a set"@en ,
+                "عدد العناصر في مجموعة معينة"@ar ,
+                "antal elementer i en mængde"@da ,
+                "joukon elementtien lukumäärä"@fi ,
+                "nombre d&#39;éléments dans un ensemble"@fr ,
+                "집합 내 요소의 수"@ko ,
+                "число элементов  множества"@ru ,
+                "número de elementos en un conjunto"@es ,
+                "number of elements in a set"@sv ,
+                "集合中元素的个数。"@zh ;
+             skos:prefLabel "cardinality (UML)"@en ,
+                "عدد العلاقات (UML)"@ar ,
+                "kardinalitet (UML)"@da ,
+                "Kardinalität"@de ,
+                "mahtavuus (UML)"@fi ,
+                "cardinalité (UML)"@fr ,
+                "관계 수 (UML)"@ko ,
+                "кардинальное число (UML)"@ru ,
+                "cardinalidad(UML)"@es ,
+                "cardinality (UML)"@sv ,
+                "基数(UML)"@zh ;
+          skos:altLabel "kardinaliteetti (UML)"@fi ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail ;
+          lang:rus-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#cartesian_coordinate_system
+:cartesian_coordinate_system rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info37 ;
+          geolexica:hasReview reviews:Review37 ;
+          geolexica:hasLDAPI ldapi:ldapi37-json ,
+                             ldapi:ldapi37-jsonld ,
+                             ldapi:ldapi37-rdfxml ,
+                             ldapi:ldapi37-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:nld ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 37 ;
+          skos:notation 37 ;
+          rdfs:label "Cartesian coordinate system" ;
+          skos:definition "coordinate system which gives the position of points relative to n mutually perpendicular axes"@en ,
+                "نظام إحداثيات يحدد موقع النقاط بالنسبة إلى عدد (ع) من المحاور المتعامدة على بعضها البعض"@ar ,
+                "koordinatsystem, der angiver punkters position i forhold til n akser, som er vinkelret på hinanden"@da ,
+                "Koordinatensystem, das die Punktposition in Bezug auf n zueinander orthogonale Achsen angibt"@de ,
+                "koordinaatisto, jossa pisteen sijainti ilmoitetaan suhteessa n:ään toisiaan vastaan kohtisuorassa olevaan akseliin"@fi ,
+                "système de coordonnées donnant la position des points relativement à n axes perpendiculaires deux à deux"@fr ,
+                "상호 직교하는 n개의 축을 기준으로 점의 위치를 나타내는 좌표 체계"@ko ,
+                "Coördinaat systeem wat de positie geeft van punten ten opzichte van loodrecht op elkaar staande assen."@nl ,
+                "układ współrzędnych, który podaje pozycję punktów względem n wzajemnie prostopadłych osi"@pl ,
+                "система координат, определяющая положение точек по отношению к N взаимно перпендикулярным осям, исходящим из одной точки"@ru ,
+                "sistema de coordenadas que da la posición de los puntos en relación a n ejes mutuamente perpendiculares"@es ,
+                "koordinatsystem som består av minst två axlar, vilka skär varandra under rät vinkel i ett origo, och där en punkts position anges som avstånd till axlarna"@sv ,
+                "给出相对与n个相互垂直坐标轴的点位置的坐标系。"@zh ;
+             skos:prefLabel "Cartesian coordinate system"@en ,
+                "نظام الإحداثيات الديكارتي"@ar ,
+                "kartesisk koordinatsystem"@da ,
+                "kartesisches Koordinatensystem"@de ,
+                "suorakulmainen koordinaatisto"@fi ,
+                "système cartésien de coordonnées"@fr ,
+                "직각 좌표계"@ko ,
+                "Cartesiaans Coördinaat Systeem"@nl ,
+                "kartezjański układ współrzędnych"@pl ,
+                "прямоугольная система координат"@ru ,
+                "sistema de coordenadas cartesianas"@es ,
+                "kartesiskt koordinatsystem"@sv ,
+                "笛卡尔坐标系"@zh ;
+  skos:altLabel "karteesinen koordinaatisto"@fi ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:nldRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#character
+:character rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info39 ;
+          geolexica:hasReview reviews:Review39 ;
+          geolexica:hasLDAPI ldapi:ldapi39-json ,
+                             ldapi:ldapi39-jsonld ,
+                             ldapi:ldapi39-rdfxml ,
+                             ldapi:ldapi39-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 39 ;
+          skos:notation 39 ;
+          rdfs:label "character" ;
+          skos:definition "member of a set of elements that is used for the representation, organization, or control of data"@en ,
+                "واحد من مجموعة عناصر تستخدم لعرض البيانات أو تنظيمها أو السيطرة عليها"@ar ,
+                "et af en mængde elementer, som anvendes til angivelse, organisering eller styring af data"@da ,
+                "tiedon esittämiseen, järjestelyyn tai hallintaan käytetyn elementtijoukon jäsen"@fi ,
+                "membre d’un ensemble d’éléments utilisé pour la représentation, l’organisation ou le contrôle des données"@fr ,
+                "데이터를 표현, 구성 또는 제어하기 위해 사용되는 요소 집합의 원소"@ko ,
+                "1 huruf. 2 ist huruf, angka, atau simbol dsb yg dpt dilambangkan dgn kod komputer."@ms ,
+                "элемент множества, используемого для представления и организации данных, а также управления ими"@ru ,
+                "miembro de un conjunto de elementos que se usa para la representación, organización o control de datos"@es ,
+                "element som ingår i en mängd av vedertagen sammansättning och som används för att bilda, styra eller representera data"@sv ,
+                "用于数据的表示、组织或控制的元素集合的成员。"@zh ;
+          skos:prefLabel "character"@en ,
+                "حرف"@ar ,
+                "karakter; tegn"@da ,
+                "Zeichen"@de ,
+                "merkki"@fi ,
+                "caractère"@fr ,
+                "문자"@ko ,
+                "aksara"@ms ,
+                "символ"@ru ,
+                "carácter"@es ,
+                "tecken"@sv ,
+                "字符"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:rusRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#circular_sequence
+:circular_sequence rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info41 ;
+          geolexica:hasReview reviews:Review41 ;
+          geolexica:hasLDAPI ldapi:ldapi41-json ,
+                             ldapi:ldapi41-jsonld ,
+                             ldapi:ldapi41-rdfxml ,
+                             ldapi:ldapi41-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:jpn ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 41 ;
+          skos:notation 41 ;
+          rdfs:label "circular sequence" ;
+          skos:definition "sequence which has no logical beginning and is therefore equivalent to any circular shift of itself; hence the last item in the sequence is considered to precede the first item in the sequence"@en ,
+   "تسلسل ليس له بداية منطقية ولهذا يعتبر مماثلا لأي تحول دائري يتم تلقائيا ؛ لذا فإن الجزء الأخير في التسلسل يعتبر متقدماً على الجزء الأول فيه"@ar ,
+   "sekvens, der ikke har nogen logisk begyndelse og derfor er ækvivalent med enhver cirkulær forskydning af sig selv; derfor anses det sidste element i en sekvens at stå foran det første element i sekvensen"@da ,
+   "jono, jolla ei ole käsitteellistä alkua ja joka loogisesti voidaan aloittaa mistä tahansa alkiosta; jonon viimeisen jäsenen katsotaan näin ollen edeltävän ensimmäistä alkiota jonossa"@fi ,
+   "séquence n&#39;ayant aucun début logique et étant donc équivalente à n&#39;importe quelle permutation circulaire d&#39;elle-même; par conséquent, le dernier élément de la séquence est considéré comme celui qui précède le premier"@fr ,
+   "論理的な開始点をもたないために，それ自身のどのような循環的なシフトとも同一になり，結果として最後の項目が順列の最初の項目に先行するとみなされる列。"@ja ,
+   "논리적인 시작점이 존재하지 않기 때문에 어떤 한 점에서 수열을 이동하더라도 항상 동일한 연속; 따라서 연속의 마지막 항목이 첫 항목에 앞서는 것으로 간주됨"@ko ,
+   "sekwencja, która nie ma logicznego początku i w tym sensie jest równoważna każdemu cyklicznemu przesunięciu samej siebie; ostatni element w sekwencji traktuje się jako poprzednik pierwszego elementu w sekwencji"@pl ,
+   "последовательность, которая не имеет логического начала и, следовательно, эквивалентна любому циклу, сдвинутому относительно себя; в результате этого последний элемент последовательности считается предшествующим первому элементу"@ru ,
+   "secuencia que no tiene un principio lógico y en consecuencia es equivalente a cualquier desplazamiento de sí mismo; de ahí que se considere que el último ítem de la secuencia precede al primero"@es ,
+   "sekvens som upprepas från början när den kommit till sista elementet"@sv ,
+   "没有逻辑起始，因而等同于任何自身循环移位的序列，因此可认为序列的最后一数据项位于该序列的第一项之前。"@zh ;
+          skos:prefLabel "circular sequence"@en ,
+   "تسلسل دائري"@ar ,
+   "cirkulær sekvens"@da ,
+   "Kreissequenz"@de ,
+   "kehäjono"@fi ,
+   "séquence circulaire"@fr ,
+   "環状列"@ja ,
+   "순환 연속"@ko ,
+   "sekwencja cykliczna"@pl ,
+   "циклическая [круговая] последовательность"@ru ,
+   "secuencia circular"@es ,
+   "cirkulär sekvens"@sv ,
+   "循环序列"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#classUML
+:classUML rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info43 ;
+          geolexica:hasReview reviews:Review43 ;
+          geolexica:hasLDAPI ldapi:ldapi43-json ,
+                             ldapi:ldapi43-jsonld ,
+                             ldapi:ldapi43-rdfxml ,
+                             ldapi:ldapi43-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 43 ;
+          skos:notation 43 ;
+          rdfs:label "class (UML)" ;
+          skos:definition "description of a set of objects that share the same attributes, operations, methods, relationships, and semantics"@en ,
+   "وصف لمجموعة من البيانات التي لها بيانات وصفية ، وعمليات ، وطرق ، وعلاقات ، ودلالات لفظية مشتركة"@ar ,
+   "beskrivelse af en mængde af objekter med samme attributter, operationer, metoder, relationer og semantik"@da ,
+   "kuvaus joukosta objekteja, joilla on keskenään samat attribuutit, toiminnot, metodit, suhteet ja semantiikat"@fi ,
+   "description d&#39;un ensemble d&#39;objets partageant les mêmes attributs, opérations, méthodes, relations et sémantique"@fr ,
+   "동일한 속성, 연산, 방법 및 관계와 의미론을 공유하는 객체 집합의 기술"@ko ,
+   "описание множества объектов, обладающих общими атрибутами, операциями, методами,  отношениями и семантикой"@ru ,
+   "descripción de un conjunto de objetos que comparten los mismos atributos, operaciones, métodos, relaciones y semántica"@es ,
+   "UML-element i klassdiagram för formell specifikation av datauppgifter och semantik för representation av likartade företeelser eller egenskaper"@sv ,
+   "(UML)具有相同的属性（域）、操作方法、关系与语义的对象集的描述。"@zh ;
+          skos:prefLabel "class (UML)"@en ,
+   "فئة (UML)"@ar ,
+   "klasse (UML)"@da ,
+   "(Objekt-)Klasse"@de ,
+   "luokka (UML)"@fi ,
+   "classe (UML)"@fr ,
+   "클래스 (UML)"@ko ,
+   "класс (UML)"@ru ,
+   "clase (UML)"@es ,
+   "klass (UML)"@sv ,
+   "类(UML)"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail ;
+          lang:rus-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#classifierUML
+:classifierUML rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info44 ;
+          geolexica:hasReview reviews:Review44 ;
+          geolexica:hasLDAPI ldapi:ldapi44-json ,
+                             ldapi:ldapi44-jsonld ,
+                             ldapi:ldapi44-rdfxml ,
+                             ldapi:ldapi44-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 44 ;
+          skos:notation 44 ;
+          rdfs:label "classifier (UML)" ;
+          skos:definition "mechanism that describes behavioural and structural features"@en ,
+   "آلية تصف المعالم السلوكية والهيكلية"@ar ,
+   "mekanisme, der beskriver adfærdsmæssige og strukturelle træk"@da ,
+   "mekanismi, joka kuvaa käyttäytymiseen ja rakenteeseen liittyviä piirteitä"@fi ,
+   "mécanisme décrivant les caractéristiques comportementales et structurelles"@fr ,
+   "행위 및 구조적 특성을 기술하는 메커니즘"@ko ,
+   "механизм, описывающий структурные и поведенческие особенности"@ru ,
+   "mecanismo que describe objetos geográficos estructurados y con comportamiento"@es ,
+   "mechanism that describes behavioural and structural features"@sv ,
+   "描述行为和结构要素的机制。"@zh ;
+  skos:prefLabel "classifier (UML);"@en ,
+   "مصنِّف (UML);"@ar ,
+   "klassifikator (UML);"@da ,
+   "Klassifikator (UML);"@de ,
+   "luokittelija (UML);"@fi ,
+   "classificateur (UML);"@fr ,
+   "분류자 (UML);"@ko ,
+   "классификатор (UML);"@ru ,
+   "clasificador (UML);"@es ,
+   "classifier (UML);"@sv ,
+   "类元(UML);"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail ;
+          lang:rus-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#client
+:client rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info45 ;
+      #   geolexica:hasReview reviews:Review45 ;
+          geolexica:hasLDAPI ldapi:ldapi45-json ,
+                             ldapi:ldapi45-jsonld ,
+                             ldapi:ldapi45-rdfxml ,
+                             ldapi:ldapi45-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 45 ;
+          skos:notation 45 ;
+          rdfs:label "client" ;
+          skos:definition "software component that can invoke an operation from a server"@en ,
+                "أحد مكونات برنامج حاسب آلي قادر على تنفيذ التشغيل من خلال حاسب آلي خادم"@ar ,
+                "softewarekomponent, der kan aktivere en operation fra en server"@da ,
+                "Software-Komponente, die eine Operation von einem Server aufrufen kann"@de ,
+                "ohjelmistokomponentti, joka voi kutsua operaatiota palvelimelta"@fi ,
+                "composant logiciel pouvant invoquer une opération d&#39;un serveur"@fr ,
+                "서버에게 연산을 호출할 수 있는 소프트웨어 컴포넌트"@ko ,
+                "składnik oprogramowania, który może wywołać operację z serwera"@pl ,
+                "компонент программного обеспечения, который   может вызвать операцию с сервера"@ru ,
+                "componente software que puede solicitar una operación de un servidor"@es ,
+                "program som kan begära en tjänst från en server"@sv ,
+                "能从服务器端调用操作的软件组件。"@zh ;
+          skos:prefLabel "client"@en ,
+                "عميل"@ar ,
+                "klient"@da ,
+                "Client"@de ,
+                "asiakassovellus"@fi ,
+                "client"@fr ,
+                "클라이언트"@ko ,
+                "klient"@pl ,
+                "клиент"@ru ,
+                "cliente"@es ,
+                "klient"@sv ,
+                "客户端"@zh ;
+          skos:altLabel "asiakasohjelma"@fi ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:polRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#closure
+:closure rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info46 ;
+          geolexica:hasReview reviews:Review46 ;
+          geolexica:hasLDAPI ldapi:ldapi46-json ,
+                             ldapi:ldapi46-jsonld ,
+                             ldapi:ldapi46-rdfxml ,
+                             ldapi:ldapi46-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 46 ;
+          skos:notation 46 ;
+          rdfs:label "closure" ;
+          skos:definition "union of the interior and boundary of a topological or geometric object"@en ;
+  skos:definition "اتحاد المكونات الداخلية والحدود ليكان طوبولوجي أو هندسي"@ar ;
+  skos:definition "foreningsmængden af indholdet af og afgrænsningen af et topologisk eller geometrisk objekt"@da ;
+  skos:definition "Vereinigung des Inneren und der Grenze eines topologischen oder geometrischen Objekts"@de ;
+  skos:definition "topologisen tai geometrisen objektin sisäpuolen ja rajauksen muodostama kokonaisuus"@fi ;
+  skos:definition "union de l&#39;intérieur et de la frontière d&#39;un objet topologique ou géométrique"@fr ;
+  skos:definition "位相オブジェクト又は幾何オブジェクトの内部と境界との和集合。"@ja ;
+  skos:definition "위상 객체 또는 기하 객체의 내부와 경계의 합집합"@ko ;
+  skos:definition "sesuatu yang ditutup"@ms ;
+  skos:definition "suma wnętrza i granicy obiektu topologicznego lub obiektu geometrycznego"@pl ;
+  skos:definition "объединение внутренней области и границы топологического или геометрического объекта"@ru ;
+  skos:definition "unión del interior y de la frontera de un objeto geométrico o topológico"@es ;
+  skos:definition "unionen av avgränsningen hos ett rumsligt objekt och objektet självt"@sv ;
+  skos:definition "拓扑对象或几何对象的内部与边界的并集。"@zh ;
+  skos:prefLabel "closure"@en ;
+  skos:prefLabel "مغلق"@ar ;
+  skos:prefLabel "lukket enhed"@da ;
+  skos:prefLabel "Abschluss"@de ;
+  skos:prefLabel "sulkeuma"@fi ;
+  skos:prefLabel "fermeture"@fr ;
+  skos:prefLabel "閉包"@ja ;
+  skos:prefLabel "폐합"@ko ;
+  skos:prefLabel "tutupan"@ms ;
+  skos:prefLabel "domknięcie"@pl ;
+  skos:prefLabel "замкнутая область"@ru ;
+  skos:prefLabel "cerramiento"@es ;
+  skos:prefLabel "inneslutning"@sv ;
+  skos:prefLabel "闭包"@zh ;
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:polRegistry ,
+                           lang:rusRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/ld/concepts#cluster2
+:cluster2 rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info47 ;
+        #   geolexica:hasReview reviews:Review47 ;
+          geolexica:hasLDAPI ldapi:ldapi47-json ,
+                             ldapi:ldapi47-jsonld ,
+                             ldapi:ldapi47-rdfxml ,
+                             ldapi:ldapi47-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 47 ;
+          skos:notation 47 ;
+          rdfs:label "cluster" ;
+
+  skos:definition "union of the interior and boundary of a topological or geometric object"@en ;
+  skos:definition "collection of targets potentially heterogeneous (each satisfying a different query criteria) whose locations fall within a small neighbourhood."@en ;
+  skos:definition "مجموعة أهداف غير متجانسة  ( كلاً منها يحقق معيار استعلام مختلف) تقع مواضيعها ضمن جوار قريب"@ar ;
+  skos:definition "kokoelma mahdollisesti heterogeenisia (eri hakuehdot täyttäviä) kohteita, jotka sijaitsevat lähekkäin"@fi ;
+  skos:definition "ensemble de cibles potentiellement hétérogènes (chacun satisfaisant un critère de requête différent) dont la localisation se trouve dans un voisinage proche"@fr ;
+  skos:definition "그 위치가 소규모 인접군 지역 내에 존재하는 잠재적으로 이질적인(서로 다른 질의 기준을 만족할 수 있는) 대상들의 모음"@ko ;
+  skos:definition "beberapa benda (spt pulau) yg berada dlm kumpulan dan dikira satu/ sesuatu yg berada dlm kelompok"@ms ;
+  skos:definition "совокупность целей, потенциально гетерогенных (каждая цель удовлетворяет своему критерию запроса), попадающих в некоторую малую окрестность"@ru ;
+  skos:definition "colección de objetivos potencialmente heterogéneos (cada uno satisfaciendo un criterio de consulta diferente), cuyas ubicaciones caen dentro de una pequeña vecindad"@es ;
+  skos:definition "samling av objekt som i något avseende liknar varandra eller ligger tillräckligt nära varandra och som därför behandlas som en enhet"@sv ;
+  skos:definition "地点位于一个小区域内的具有潜在的不同类别的目标集合（每个目标都满足不同的查询准则）。"@zh ;
+
+  skos:prefLabel "cluster"@en ;
+  skos:prefLabel "تجميع"@ar ;
+  skos:prefLabel "Cluster"@de ;
+  skos:prefLabel "klusteri"@fi ;
+  skos:prefLabel "grappe"@fr ;
+  skos:prefLabel "클러스터"@ko ;
+  skos:prefLabel "gugusan"@ms ;
+  skos:prefLabel "кластер"@ru ;
+  skos:prefLabel "cluster"@es ;
+  skos:prefLabel "kluster"@sv ;
+  skos:prefLabel "簇"@zh ;
+  skos:altLabel "ryväs"@fi ;
+
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:rusRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#coboundary
+:coboundary rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info48 ;
+          geolexica:hasReview reviews:Review48 ;
+          geolexica:hasLDAPI ldapi:ldapi48-json ,
+                             ldapi:ldapi48-jsonld ,
+                             ldapi:ldapi48-rdfxml ,
+                             ldapi:ldapi48-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 48 ;
+          skos:notation 48 ;
+          rdfs:label "coboundary" ;
+
+skos:definition "set of topological primitives of higher topological dimension associated with a particular topological object, such that this topological object is in each of their boundaries"@en ;
+  skos:definition "مجموعة عناصر طوبولوجية بدائية ذات بعد طوبولوجي أعلى ترتبط بكيان طوبولوجي معيَّن  بحيث يكون هذا الكيان الطوبولوجي في حدود كل منها"@ar ;
+  skos:definition "en mængde af topologiske grundformer af højere topologisk dimension, som er forbundet med et bestemt topologisk objekt, således at dette topologiske objekt er i hver af deres afgrænsning"@da ;
+  skos:definition "joukko korkeamman topologisen ulottuvuuden omaavia topologisia primitiivejä, jotka liittyvät tiettyyn topologiseen objektiin siten, että tämä topologinen objekti on mukana jokaisen primitiivin rajauksessa"@fi ;
+  skos:definition "ensemble de primitives topologiques de dimension topologique supérieure associé à un objet topologique particulier, tel que cet objet topologique appartient à la frontière de chacune d&#39;elles."@fr ;
+  skos:definition "ある位相オブジェクトに対応して，その位相オブジェクトを境界としてもつ，より高い位相次元の位相プリミティブの集合。"@ja ;
+  skos:definition "특정 위상 객체를 구성하는 높은 위상 차원의 위상 원시 객체 집합으로, 이 위상 객체는 위상 원시 객체의 각 경계에 존재함"@ko ;
+  skos:definition "zbiór prostych elementów topologicznych o większym wymiarze topologicznym, powiązanych z danym obiektem topologicznym w taki sposób, że ten topologiczny obiekt należy do granicy każdego z nich"@pl ;
+  skos:definition "множество топологических примитивов более высокой топологической размерности, так ассоциированных с определенным топологическим объектом,  что  данный  топологический объект принадлежит границе каждого из них"@ru ;
+  skos:definition "conjunto de primitivas topológicas, de dimensión topológica mayor, asociadas a un objeto topológico particular de tal modo, que este objeto topológico está en cada una de las fronteras del conjunto"@es ;
+  skos:definition "samling av de topologiska objekt för vilka ett och samma topologiska objekt ingår i avgränsningen"@sv ;
+  skos:definition "与特定的拓扑对象相关联，具有更高维数的拓扑单形的集合，这个拓扑对象在这些更高维数的拓扑单形的边界上。"@zh ;
+
+  skos:prefLabel "coboundary"@en ;
+  skos:prefLabel "حدود مشتركة"@ar ;
+  skos:prefLabel "fællesgrænse"@da ;
+  skos:prefLabel "kettenartig verknüpfte Grenze"@de ;
+  skos:prefLabel "yhteisrajaus"@fi ;
+  skos:prefLabel "co-frontière"@fr ;
+  skos:prefLabel "双対境界"@ja ;
+  skos:prefLabel "공유 경계"@ko ;
+  skos:prefLabel "kosempadan"@ms ;
+  skos:prefLabel "współgranica,  kogranica"@pl ;
+  skos:prefLabel "кограница"@ru ;
+  skos:prefLabel "cofrontera"@es ;
+  skos:prefLabel "gränsberörda objekt"@sv ;
+  skos:prefLabel "余边界"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#code
+:code rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info49 ;
+          geolexica:hasReview reviews:Review49 ;
+          geolexica:hasLDAPI ldapi:ldapi49-json ,
+                             ldapi:ldapi49-jsonld ,
+                             ldapi:ldapi49-rdfxml ,
+                             ldapi:ldapi49-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                              # lang:pol ,
+                                lang:rus ,
+                                lang:msa ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 49 ;
+          skos:notation 49 ;
+          rdfs:label "code" ;
+
+  skos:definition "representation of a label according to a specified scheme"@en ;
+  skos:definition "تمثيل لعلامة مميزة وفقاً لمخطط محدد"@ar ;
+  skos:definition "angivelse af et label ud fra en specificeret skema"@da ;
+  skos:definition "tunnuksen esitys tietyn mallin mukaisesti"@fi ;
+  skos:definition "représentation d&#39;un libellé selon une méthode spécifiée"@fr ;
+  skos:definition "특정한 형식에 따른 라벨의 표현"@ko ;
+  skos:definition "1. Set peraturan tertentu yang menunjukkan cara bagaimana data boleh diwakili. 2. Peraturan dan resam yang menentukan bagaimana isyarat yang mewakili data boleh dibentuk, dihantar, diterima, dan diproses dalam suatu sistem perhubungan. 3. Bentuk berlambang yang mewakili data atau suruhan atur cara komputer atau mikropemproses yang boleh diterima dan diproses oleh mesin tersebut."@ms ;
+  skos:definition "представление строки символов в соответствии со специфицированной схемой"@ru ;
+  skos:definition "representación de una etiqueta de acuerdo a un esquema determinado"@es ;
+  skos:definition "data som skapats enligt bestämda regler och som inte kan tolkas direkt"@sv ;
+  skos:definition "基于所定义模式的符号表示。"@zh ;
+
+  skos:prefLabel "code"@en ;
+  skos:prefLabel "رمز"@ar ;
+  skos:prefLabel "kode"@da ;
+  skos:prefLabel "Code"@de ;
+  skos:prefLabel "koodi"@fi ;
+  skos:prefLabel "code"@fr ;
+  skos:prefLabel "코드"@ko ;
+  skos:prefLabel "kod"@ms ;
+  skos:prefLabel "код"@ru ;
+  skos:prefLabel "código"@es ;
+  skos:prefLabel "kod"@sv ;
+  skos:prefLabel "代码"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                      #    lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#codelist
+:codelist rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info50 ;
+          geolexica:hasReview reviews:Review50 ;
+          geolexica:hasLDAPI ldapi:ldapi50-json ,
+                             ldapi:ldapi50-jsonld ,
+                             ldapi:ldapi50-rdfxml ,
+                             ldapi:ldapi50-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 50 ;
+          skos:notation 50 ;
+          rdfs:label "codelist" ;
+
+  skos:definition "value domain including a code for each permissible value"@en ;
+  skos:definition "مجال للقيم يحتوي على رمز لكل قيمة مسموح بها"@ar ;
+  skos:definition "Werteliste einschließlich eines Codes für jeden Wert"@de ;
+  skos:definition "arvoalue, joka muodostuu arvojen luettelosta, jota voi laajentaa"@fi ;
+  skos:definition "domaine de valeurs comprenant un code pour chaque valeur autorisée"@fr ;
+  skos:definition "각 코드에 따른 허용 값을 제시하는 값 영역"@ko ;
+  skos:definition "область значений,  содержащая код для каждого допустимого значения"@ru ;
+  skos:definition "dominio de valores que incluye un código para cada uno de los valores permitidos"@es ;
+  skos:definition "diskret värdedomän där varje värde tilldelats en inom listan unik beteckning"@sv ;
+  skos:definition "包括每一个允许值代码的值域。"@zh ;
+
+  skos:prefLabel "codelist"@en ;
+  skos:prefLabel "قائمة الرموز"@ar ;
+  skos:prefLabel "Codeliste"@de ;
+  skos:prefLabel "koodiluettelo"@fi ;
+  skos:prefLabel "liste de codes"@fr ;
+  skos:prefLabel "코드 목록"@ko ;
+  skos:prefLabel "кодовый спISOк"@ru ;
+  skos:prefLabel "lista de códigos (codelist)"@es ;
+  skos:prefLabel "kodlista"@sv ;
+  skos:prefLabel "代码表"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                      #    lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                      #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                      #    lang:polRegistry ,
+                      #    lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/ld/concepts#codespace
+:codespace rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info51 ;
+          geolexica:hasReview reviews:Review51 ;
+          geolexica:hasLDAPI ldapi:ldapi51-json ,
+                             ldapi:ldapi51-jsonld ,
+                             ldapi:ldapi51-rdfxml ,
+                             ldapi:ldapi51-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                # lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                # lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                # lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 51 ;
+          skos:notation 51 ;
+          rdfs:label "codespace" ;
+
+  skos:definition "rule or authority for a code, name, term or category"@en ;
+  skos:definition "قانون أو سلطة يستمد منها رمز أو اسم أو مصطلح أو فئة"@ar ;
+  skos:definition "Regel oder Vorgabe für einen Code, Namen, Begriff oder Kategorie"@de ;
+  skos:definition "valtuusalue koodille, nimelle, termille tai kategorialle"@fi ;
+  skos:definition "règle ou autorité relative à un code, un nom, un terme ou une catégorie"@fr ;
+  skos:definition "코드, 이름, 용어, 분류 체계 등에 대한 규정"@ko ;
+  skos:definition "правило или уполномоченный орган,  определенные для назначения кода, имени, термина или категории"@ru ;
+  skos:definition "regla o autoridad para un código, nombre, término o categoría"@es ;
+  skos:definition "确认代码、名称、术语或类别的规则或者典据。"@zh ;
+
+  skos:prefLabel "codespace"@en ;
+  skos:prefLabel "حيز الرمز"@ar ;
+  skos:prefLabel "Codespace"@de ;
+  skos:prefLabel "koodiavaruus"@fi ;
+  skos:prefLabel "espace de codage"@fr ;
+  skos:prefLabel "코드 영역"@ko ;
+  skos:prefLabel "пространство кодов"@ru ;
+  skos:prefLabel "espacio de códigos (codespace)"@es ;
+  skos:prefLabel "代码空间"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                        #    lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                        #    lang:polRegistry ,
+                        #    lang:msaRegistry ,
+                           lang:spaRegistry ,
+                        #    lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#complex_feature
+:complex_feature rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info52 ;
+          geolexica:hasReview reviews:Review52 ;
+          geolexica:hasLDAPI ldapi:ldapi52-json ,
+                             ldapi:ldapi52-jsonld ,
+                             ldapi:ldapi52-rdfxml ,
+                             ldapi:ldapi52-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                # lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                # lang:pol ,
+                                lang:rus ,
+                                lang:spa ,
+                                # lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 52 ;
+          skos:notation 52 ;
+          rdfs:label "complex feature" ;
+
+  skos:definition "feature composed of other features"@en ;
+  skos:definition "معلم مؤلف من معالم أخرى"@ar ;
+  skos:definition "Feature, das sich aus anderen Objekten zusammensetzt"@de ;
+  skos:definition "kohde, joka geometrialtaan on muutakin kuin lineaarista kaksiulotteista geometriaa"@fi ;
+  skos:definition "entité composée d&#39;autres entités"@fr ;
+  skos:definition "다수의 피처들로 구성된 피처"@ko ;
+  skos:definition "obiekt składający się z innych obiektów"@pl ;
+  skos:definition "пространственный объект, состоящий из нескольких простых и/или сложных пространственных объектов"@ru ;
+  skos:definition "objeto geográfico compuesto de otros objetos geográficos"@es ;
+  skos:definition "objekt sammansatt av andra objekt"@sv ;
+  skos:definition "由其它要素组合而成的要素。"@zh ;
+
+  skos:prefLabel "complex feature"@en ;
+  skos:prefLabel "معلم مركَّب"@ar ;
+  skos:prefLabel "komplexes Feature"@de ;
+  skos:prefLabel "kompleksinen kohde"@fi ;
+  skos:prefLabel "entité complexe"@fr ;
+  skos:prefLabel "복합 지형지물"@ko ;
+  skos:prefLabel "kompleks fitur"@ms ;
+  skos:prefLabel "złożony obiekt geograficzny"@pl ;
+  skos:prefLabel "сложный (пространственный ) объект"@ru ;
+  skos:prefLabel "objeto geográfico complejo"@es ;
+  skos:prefLabel "sammansatt objekt"@sv ;
+  skos:prefLabel "复杂要素"@zh ;
+  skos:altLabel "복합 피처"@ko ;
+  
+          geolexica:origin lang:araRegistry ,
+                        #    lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                        #    lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:msa-note notes:DefnTransUnavail, notes:NoteTransDiff ;
+          lang:rus-note notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#composite_curve
+:composite_curve rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info55 ;
+          geolexica:hasReview reviews:Review55 ;
+          geolexica:hasLDAPI ldapi:ldapi55-json ,
+                             ldapi:ldapi55-jsonld ,
+                             ldapi:ldapi55-rdfxml ,
+                             ldapi:ldapi55-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 55 ;
+          skos:notation 55 ;
+          rdfs:label "composite curve" ;
+
+  skos:definition "sequence of curves such that each curve (except the first) starts at the end point of the previous curve in the sequence"@en ;
+  skos:definition "سلسلة من المنحنيات  بحيث أن كل منحنى منها (باستثناء المنحنى الأول) يبدأ من النقطة التي ينتهي عندها المنحنى الذي يسبقه"@ar ;
+  skos:definition "sekvens af kurver dannet således, at hver kurve (undtagen den første) starter ved slutpunktet af den foregående kurve i sekvensen."@da ;
+  skos:definition "Sequenz von Kurven, wobei jede Kurve (außer der ersten) am Endpunkt der vorhergehenden Kurve einer Sequenz beginnt"@de ;
+  skos:definition "komposiitti, joka koostuu toisissaan kiinni olevista peräkkäisistä käyristä"@fi ;
+  skos:definition "séquence de courbes telle que chaque courbe (sauf la première) commence au point final de la courbe précédente dans la séquence"@fr ;
+  skos:definition "列の各曲線が（最初のものを除き）直前の曲線の終点から開始するような曲線の列。"@ja ;
+  skos:definition "첫 번째 곡선을 제외한 각각의 곡선이 연속적으로 앞 곡선의 끝점에서 시작되는 곡선의 연속"@ko ;
+  skos:definition "sekwencja krzywych, w której każda krzywa (poza pierwszą) zaczyna się w punkcie końcowym poprzedniej krzywej w sekwencji"@pl ;
+  skos:definition "последовательность кривых, каждая из которых (за исключением первой)  начинается в конечной точке предшествующей ей кривой"@ru ;
+  skos:definition "secuencia de curvas tal que cada curva (excepto la primera) empieza en el punto final de la curva anterior en la secuencia"@es ;
+  skos:definition "sekvens av linjer där varje linje utom den första startar där föregående linje slutar"@sv ;
+  skos:definition "曲线的序列，其每条（第一条除外）在该序列的上一条曲线的结尾处开始。"@zh ;
+
+  skos:prefLabel "composite curve"@en ;
+  skos:prefLabel "منحنى مركَّب"@ar ;
+  skos:prefLabel "sammensat kurve"@da ;
+  skos:prefLabel "zusammenhängende Kurve"@de ;
+  skos:prefLabel "komposiittikäyrä"@fi ;
+  skos:prefLabel "courbe composite"@fr ;
+  skos:prefLabel "合成曲線"@ja ;
+  skos:prefLabel "합성 곡선"@ko ;
+  skos:prefLabel "lengkok gabungan"@ms ;
+  skos:prefLabel "krzywa kompozytowa"@pl ;
+  skos:prefLabel "составная кривая"@ru ;
+  skos:prefLabel "curva compuesta"@es ;
+  skos:prefLabel "sammansatt linje"@sv ;
+  skos:prefLabel "组合曲线"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail ;
+          lang:msa-note notes:DefnTransUnavail , notes:NoteTransDiff .
+
+
+
+###  https://isotc211.geolexica.org/ld/concepts#composite_solid
+:composite_solid rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info56 ;
+          geolexica:hasReview reviews:Review56 ;
+          geolexica:hasLDAPI ldapi:ldapi56-json ,
+                             ldapi:ldapi56-jsonld ,
+                             ldapi:ldapi56-rdfxml ,
+                             ldapi:ldapi56-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 56 ;
+          skos:notation 56 ;
+          rdfs:label "composite solid" ;
+
+  skos:definition "connected set of solids adjoining one another along shared boundary surfaces"@en ;
+  skos:definition "مجموعة مجسمات متصلة ومجاورة بعضها ببعض على طول أسطح الحدود المشتركه"@ar ;
+  skos:definition "samlet sæt af legemer, der er forbundet med hinanden langs fælles grænseflader"@da ;
+  skos:definition "verbundene Menge von Körpern, die gegenseitig entlang von gemeinsamen Grenzflächen verbunden sind"@de ;
+  skos:definition "komposiitti, joka koostuu toisissaan kiinni olevista kappaleista"@fi ;
+  skos:definition "ensemble de solides connectés attenants l&#39;un à l&#39;autre le long d&#39;une frontière surfacique partagée"@fr ;
+  skos:definition "共有された境界曲面に沿って互いに隣接する立体の連結した集合。"@ja ;
+  skos:definition "공유 경계 표면을 따라 서로 연결된 입방체의 집합"@ko ;
+  skos:definition "set terhubung pepejal bersebelahan di sepanjang permukaan sempadan yang dikongsi"@ms ;
+  skos:definition "spójny zbiór brył dołączonych, przylegających jedna do drugiej poprzez współdzielone powierzchnie graniczne"@pl ;
+  skos:definition "связное  множество тел, примыкающих друг к другу по общим ограничивающим поверхностям"@ru ;
+  skos:definition "conjunto conectado de sólidos que son colindantes unos con otros a través de las superficies de frontera que comparten"@es ;
+  skos:definition "samling kroppar där varje kropp delar gränsyta med minst en av de övriga kropparna"@sv ;
+  skos:definition "沿着共享边界曲面相邻且相连的体的集合。"@zh ;
+
+  skos:prefLabel "composite solid"@en ;
+  skos:prefLabel "مجسم مركب"@ar ;
+  skos:prefLabel "sammensat legeme"@da ;
+  skos:prefLabel "zusammenhängender Körper"@de ;
+  skos:prefLabel "komposiittikappale"@fi ;
+  skos:prefLabel "solide composite"@fr ;
+  skos:prefLabel "合成立体"@ja ;
+  skos:prefLabel "합성 입방체"@ko ;
+  skos:prefLabel "pepejal komposit"@ms ;
+  skos:prefLabel "bryła kompozytowa"@pl ;
+  skos:prefLabel "составное тело"@ru ;
+  skos:prefLabel "sólido compuesto"@es ;
+  skos:prefLabel "sammansatt kropp"@sv ;
+  skos:prefLabel "组合体"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail ;
+          lang:msa-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#composite_surface
+:composite_surface rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info57 ;
+          geolexica:hasReview reviews:Review57 ;
+          geolexica:hasLDAPI ldapi:ldapi57-json ,
+                             ldapi:ldapi57-jsonld ,
+                             ldapi:ldapi57-rdfxml ,
+                             ldapi:ldapi57-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 57 ;
+          skos:notation 57 ;
+          rdfs:label "composite surface" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "connected set of surfaces adjoining one another along shared boundary curves"@en ;
+  skos:definition "مجموعة أسطح متصلة ببعضها  ومجاورة بعضها لبعض على طول منحنيات الحدود المشتركه"@ar ;
+  skos:definition "samlet sæt af flader, der er forbundet med hinanden langs fælles grænsekurv"@da ;
+  skos:definition "verbundene Menge von Flächen, die gegenseitig entlang von gemeinsamen Grenzkurven verbunden sind"@de ;
+  skos:definition "komposiitti, joka koostuu toisissaan kiinni olevista pinnoista"@fi ;
+  skos:definition "ensemble connecté de surfaces jointes le long d&#39;une frontière curviligne partagée"@fr ;
+  skos:definition "共有された境界曲線に沿って互いに隣接する曲面の連結な集合。"@ja ;
+  skos:definition "공유 경계 곡선을 따라 서로 연결된 표면의 집합"@ko ;
+  skos:definition "set permukaan terhubung yang bersebelahan satu sama lain di sepanjang lengkungan sempadan bersama"@ms ;
+  skos:definition "spójny zbiór powierzchni przylegających jedna do drugiej poprzez współdzielone krzywe graniczne"@pl ;
+  skos:definition "связное множество поверхностей, примыкающих друг к другу по общим граничным кривым"@ru ;
+  skos:definition "conjunto conectado de superficies que son colindantes unas con otras a través de las curvas de frontera que comparten"@es ;
+  skos:definition "samling ytor där varje yta delar gränslinje med minst en av de övriga ytorna"@sv ;
+  skos:definition "沿着共享边界曲线相邻并相连的曲面的集合。"@zh ;
+
+  skos:prefLabel "composite surface"@en ;
+  skos:prefLabel "سطح مركَّب"@ar ;
+  skos:prefLabel "sammensat flade"@da ;
+  skos:prefLabel "zusammenhängende Fläche"@de ;
+  skos:prefLabel "komposiittipinta"@fi ;
+  skos:prefLabel "surface composite"@fr ;
+  skos:prefLabel "合成曲面"@ja ;
+  skos:prefLabel "합성 표면"@ko ;
+  skos:prefLabel "permukaan komposit"@ms ;
+  skos:prefLabel "powierzchnia kompozytowa"@pl ;
+  skos:prefLabel "составная поверхность"@ru ;
+  skos:prefLabel "superficie compuesta"@es ;
+  skos:prefLabel "sammansatt yta"@sv ;
+  skos:prefLabel "组合曲面"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail ;
+          lang:msa-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#computational_geometry
+:computational_geometry rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info61 ;
+          geolexica:hasReview reviews:Review61 ;
+          geolexica:hasLDAPI ldapi:ldapi61-json ,
+                             ldapi:ldapi61-jsonld ,
+                             ldapi:ldapi61-rdfxml ,
+                             ldapi:ldapi61-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:jpn ,
+                                # lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 61 ;
+          skos:notation 61 ;
+          rdfs:label "computational geometry" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "manipulation of and calculations with geometric representations for the implementation of geometric operations"@en ;
+  skos:definition "المعالجات والطرق الحسابية للتمثيل الهندسي لتنفيذ العمليات الهندسية الفراغيه"@ar ;
+  skos:definition "manipulationer og beregninger af geometriske repræsentationer med det formål at udføre geometriske operationer"@da ;
+  skos:definition "geometriailmentymien käsittely ja niillä laskeminen geometristen operaatioiden suorittamiseksi"@fi ;
+  skos:definition "manipulation et calculs de représentations géométriques pour l&#39;implémentation d&#39;opérations géométriques"@fr ;
+  skos:definition "幾何演算を実装するための，幾何表現に関する操作及び計算。"@ja ;
+  skos:definition "기하 연산을 구현하기 위한 기하 표현의 계산과 조작"@ko ;
+  skos:definition "działania i obliczenia na reprezentacjach geometrycznych dla celów implementacji operacji geometrycznych"@pl ;
+  skos:definition "манипуляции и вычисления, призводимые с геометрическими представлениями  при реализации геометрических операций"@ru ;
+  skos:definition "cálculo y manipulación de representaciones geométricas para la implementación de operaciones geométricas"@es ;
+  skos:definition "bearbetning och beräkning utgående från geometrisk representation för att bestämma geometriska förhållanden"@sv ;
+  skos:definition "几何表达式的处理与计算，用于几何操作的实现。"@zh ;
+
+  skos:prefLabel "computational geometry"@en ;
+  skos:prefLabel "الهندسة الفراغية الحسابية"@ar ;
+  skos:prefLabel "algoritmisk geometri"@da ;
+  skos:prefLabel "algorithmische Geometrie"@de ;
+  skos:prefLabel "laskennallinen geometria"@fi ;
+  skos:prefLabel "géométrie calculée"@fr ;
+  skos:prefLabel "計算幾何"@ja ;
+  skos:prefLabel "계산 기하"@ko ;
+  skos:prefLabel "hitungan geometri"@ms ;
+  skos:prefLabel "geometria obliczeniowa"@pl ;
+  skos:prefLabel "вычислительная геометрия"@ru ;
+  skos:prefLabel "geometría computacional"@es ;
+  skos:prefLabel "beräkningsgeometri"@sv ;
+  skos:prefLabel "计算几何"@zh ;
+
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                        #    lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail, notes:DefnTransUnavail ;
+          lang:msa-note notes:NoteTransUnavail, notes:DefnTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#computational_topology
+:computational_topology rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info62 ;
+          geolexica:hasReview reviews:Review62 ;
+          geolexica:hasLDAPI ldapi:ldapi62-json ,
+                             ldapi:ldapi62-jsonld ,
+                             ldapi:ldapi62-rdfxml ,
+                             ldapi:ldapi62-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 62 ;
+          skos:notation 62 ;
+          rdfs:label "computational topology" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "topological concepts, structures and algebra that aid, enhance or define operations on topological objects usually performed in computational geometry"@en ;
+  skos:definition "المفاهيم والهياكل والجبر الطوبولوجي التي تساعد أو تعزز أو تعرِّف العمليات الحسابية التي تجرى على الكيانات الطوبولوجية والتي يتم إجراؤها عادة في إطار الهندسة الفراغية الحسابية"@ar ;
+  skos:definition "topologiske begreber, strukturer og algebra, som hjælper, forstærker eller definerer operationer på topologiske objekter, og som sædvanligvis anvendes i algoritmisk geometri"@da ;
+  skos:definition "topologiset käsitteet, rakenteet ja algebra, joilla tuetaan, tehostetaan tai määritellään topologisille objekteille tavallisesti laskennallisessa geometriassa suoritettavia operaatioita"@fi ;
+  skos:definition "concepts topologiques, structures et algèbres aidant, améliorant ou définissant des opérations sur des objets topologiques exécutées habituellement sur une géométrie calculée"@fr ;
+  skos:definition "通常，計算幾何において実行される位相オブジェクトの演算の支援，拡張又は定義を行う位相的な概念，構造及び代数。"@ja ;
+  skos:definition "계산 기하에서 위상 객체에 대하여 일반적으로 수행되는 위상 개념, 구조, 대수 및 부가적 확장 또는 정의 연산"@ko ;
+  skos:definition "pojęcia topologiczne, struktury i algebra, które wspomagają, rozszerzają lub definiują operacje na obiektach topologicznych, wykonywane zwykle w geometrii obliczeniowej"@pl ;
+  skos:definition "топологические принципы, структуры и алгебра, нацеленные на то, чтобы расширить или определить операции с топологическими объектами, выполняемые обычно средствами вычислительной геометрии"@ru ;
+  skos:definition "álgebra, estructuras y conceptos topológicos que apoyan, amplian o definen operaciones, normalmente ejecutadas sobre objetos geométricos"@es ;
+  skos:definition "topologiska begrepp, strukturer och algebra som underlättar, förbättrar eller definierar operationer på topologiska objekt, vanligtvis utförda med beräkningsgeometri"@sv ;
+  skos:definition "在计算几何中通常用来辅助、增强或定义在拓扑对象上进行操作的拓扑概念、拓扑结构和拓扑代数。"@zh ;
+
+  skos:prefLabel "computational topology"@en ;
+  skos:prefLabel "الطوبولوجيا الحسابيه"@ar ;
+  skos:prefLabel "algoritmisk topologi"@da ;
+  skos:prefLabel "algorithmische Topologie"@de ;
+  skos:prefLabel "laskennallinen topologia"@fi ;
+  skos:prefLabel "topologie calculée"@fr ;
+  skos:prefLabel "計算位相幾何"@ja ;
+  skos:prefLabel "계산 위상"@ko ;
+  skos:prefLabel "hitungan topografi"@ms ;
+  skos:prefLabel "topologia obliczeniowa"@pl ;
+  skos:prefLabel "вычислительная топология"@ru ;
+  skos:prefLabel "topología computacional"@es ;
+  skos:prefLabel "beräkningstopologi"@sv ;
+  skos:prefLabel "计算拓扑"@zh ;
+
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                           lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail, notes:DefnTransUnavail ;
+          lang:msa-note notes:NoteTransUnavail, notes:DefnTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#computational_viewpoint
+:computational_viewpoint rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info63 ;
+          geolexica:hasReview reviews:Review63 ;
+          geolexica:hasLDAPI ldapi:ldapi63-json ,
+                             ldapi:ldapi63-jsonld ,
+                             ldapi:ldapi63-rdfxml ,
+                             ldapi:ldapi63-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:pol ,
+                                # lang:jpn ,
+                                # lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 63 ;
+          skos:notation 63 ;
+          rdfs:label "computational viewpoint" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "viewpoint on a system and its environment that enables distribution through functional decomposition of the system into objects which interact at interfaces"@en ;
+  skos:definition "وجهة نظر حول نظام معين وبيئته التي تتيح إمكانية التوزيع من خلال التحليل الوظيفي للنظام إلى كيانات تتفاعل من خلال واجهات حاسب آلي"@ar ;
+  skos:definition "synsvinkel på et system og dets omgivelser, som muliggør distribution gennem funktionel opdeling af systemet i objekter, der interagerer ved grænseflader (RM-ODP)"@da ;
+  skos:definition "järjestelmän ja sen ympäristön tarkastelun näkökulma, joka kiinnittää huomiota siihen, miten järjestelmä toiminnallisesti jaetaan rajapintojen kautta vuorovaikuttaviin objekteihin"@fi ;
+  skos:definition "point de vue sur un système et son environnement qui permet la répartition selon une décomposition fonctionnelle du système en objets interagissant à leurs interfaces"@fr ;
+  skos:definition "시스템을 인터페이스를 통해 상호 작용하는 기능적 객체들로 분해함으로써 분산 처리를 가능하게 하는 개방형 시스템 및 그 환경에 대한 관점"@ko ;
+  skos:definition "punkt widzenia (4.7) przyjęty dla systemu oraz jego otoczenia, który za pomocą dekompozycji funkcjonalnej umożliwia rozproszenie systemu na obiekty współpracujące ze sobą poprzez interfejsy"@pl ;
+  skos:definition "точка зрения на систему и ее среду, предполагающая распределенную обработку через функциональную декомпозицию системы на объекты, которые взаимодействуют через интерфейсы"@ru ;
+  skos:definition "punto de vista de un sistema y su entorno que permite la distribución a través de la descomposición funcional del sistema en objetos que interactúan con interfaces"@es ;
+  skos:definition "perspektiv på ett system och dess omgivning som ger möjlighet att dela upp systemet i funktioner som samverkar via gränssnitt"@sv ;
+  skos:definition "基于ODP系统及其环境能实现分布处理的视角，这个环境通过系统的功能分解能够在接口上实现对象交互。"@zh ;
+
+  skos:prefLabel "computational viewpoint"@en ;
+  skos:prefLabel "وجهة النظر الحسابية"@ar ;
+  skos:prefLabel "beregningsmæssig synsvinkel"@da ;
+  skos:prefLabel "Implementierungssicht"@de ;
+  skos:prefLabel "toiminnallinen näkökulma"@fi ;
+  skos:prefLabel "point de vue informatique"@fr ;
+  skos:prefLabel "계산 관점"@ko ;
+  skos:prefLabel "obliczeniowy punkt widzenia"@pl ;
+  skos:prefLabel "вычислительный аспект"@ru ;
+  skos:prefLabel "punto de vista computacional"@es ;
+  skos:prefLabel "bearbetningsperspektiv"@sv ;
+  skos:prefLabel "计算视角"@zh ;
+
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                           lang:polRegistry ,
+                        #    lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#concept
+:concept rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info64 ;
+          geolexica:hasReview reviews:Review64 ;
+          geolexica:hasLDAPI ldapi:ldapi64-json ,
+                             ldapi:ldapi64-jsonld ,
+                             ldapi:ldapi64-rdfxml ,
+                             ldapi:ldapi64-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                # lang:fra ,
+                                # lang:kor ,
+                                # lang:pol ,
+                                # lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ;
+                                # lang:zho ;
+          dcterms:identifier 64 ;
+          skos:notation 64 ;
+          rdfs:label "concept" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "unit of knowledge created by a unique combination of characteristics"@en ;
+  skos:definition "وحدة معرفية نشأت عن طريق مزيج فريد من المزايا"@ar ;
+  skos:definition "enhed af viden skabt ved en unik kombination af karakteristika"@da ;
+  skos:definition "특성의 독특한 조합을 통해 창조된 지식의 단위"@ko ;
+  skos:definition "pengertian am atau idea yg mendasari sesuatu"@ms ;
+  skos:definition "единица знаний, созданная уникальной комбинацией характеристик"@ru ;
+  skos:definition "unidad de conocimiento creada por una combinación única de características"@es ;
+  skos:definition "kunskapsenhet som skapats genom en unik kombination av kännetecken"@sv ;
+
+  skos:prefLabel "concept"@en ;
+  skos:prefLabel "مفهوم"@ar ;
+  skos:prefLabel "begreb"@da ;
+  skos:prefLabel "Konzept"@de ;
+  skos:prefLabel "개념"@ko ;
+  skos:prefLabel "Konsep"@ms ;
+  skos:prefLabel "концепция (понятие)"@ru ;
+  skos:prefLabel "concepto"@es ;
+  skos:prefLabel "begrepp"@sv ;
+
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                        #    lang:finRegistry ,
+                        #    lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                        #    lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ;
+                        #    lang:zhoRegistry ;
+          lang:deu-note notes:NoteTransUnavail, notes:DefnTransUnavail ;
+          lang:kor-note notes:NoteTransUnavail ;
+          lang:msa-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#concept_system
+:concept_system rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info66 ;
+          geolexica:hasReview reviews:Review66 ;
+          geolexica:hasLDAPI ldapi:ldapi66-json ,
+                             ldapi:ldapi66-jsonld ,
+                             ldapi:ldapi66-rdfxml ,
+                             ldapi:ldapi66-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                # lang:fin ,
+                                # lang:fra ,
+                                lang:kor ,
+                                # lang:pol ,
+                                # lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 66 ;
+          skos:notation 66 ;
+          rdfs:label "composite surface" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "set of concepts structured according to the relations among them"@en ;
+  skos:definition "مجموعة مفاهيم بنيت وفقا للعلاقات القائمة بينها"@ar ;
+  skos:definition "sæt af begreber, der er struktureret efter relationerne imellem dem"@da ;
+  skos:definition "개념간 관계에 따라 구조화된 개념 집합"@ko ;
+  skos:definition "совокупность понятий, структурированных в соответствии с отношениями между ними"@ru ;
+  skos:definition "conjunto de conceptos estructurado según las relaciones que los unen"@es ;
+  skos:definition "uppsättning begrepp och deras inbördes relationer"@sv ;
+
+  skos:prefLabel "concept system"@en ;
+  skos:prefLabel "منظومة مفاهيم"@ar ;
+  skos:prefLabel "begrebssystem"@da ;
+  skos:prefLabel "System von Konzepten"@de ;
+  skos:prefLabel "개념 체계"@ko ;
+  skos:prefLabel "Konsep sistem"@ms ;
+  skos:prefLabel "система понятий"@ru ;
+  skos:prefLabel "sistema de conceptos"@es ;
+  skos:prefLabel "begreppssystem"@sv ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                        #    lang:finRegistry ,
+                        #    lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                        #    lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ;
+                        #    lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:msa-note notes:DefnTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#conceptual_formalism
+:conceptual_formalism rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info67 ;
+          geolexica:hasReview reviews:Review67 ;
+          geolexica:hasLDAPI ldapi:ldapi67-json ,
+                             ldapi:ldapi67-jsonld ,
+                             ldapi:ldapi67-rdfxml ,
+                             ldapi:ldapi67-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                # lang:pol ,
+                                # lang:jpn ,
+                                # lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 67 ;
+          skos:notation 67 ;
+          rdfs:label "conceptual formalism" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "set of modelling concepts used to describe a conceptual model"@en ;
+  skos:definition "مجموعة من المفاهيم النموذجيه المستخدمه لوصف نموذج مفاهيمي"@ar ;
+  skos:definition "sæt af modelleringsbegreber, der anvendes til at beskrive en begrebsmodel"@da ;
+  skos:definition "Zusammenstellung von Modellierungskonzepten zur Beschreibung eines konzeptuellen Modells"@de ;
+  skos:definition "käsiteskeeman kuvaamiseen käytetty mallinnuskäsitejoukko"@fi ;
+  skos:definition "ensemble de concepts de modélisation utilisés pour décrire un modèle conceptuel"@fr ;
+  skos:definition "개념적 모델을 기술하기 위해 사용된 모델링 개념의 집합"@ko ;
+  skos:definition "набор моделирующих понятий, используемых для описания концептуальной модели"@ru ;
+  skos:definition "conjunto de conceptos de modelado utilizados para describir un modelo conceptual"@es ;
+  skos:definition "uppsättning modelleringsbegrepp som används för att beskriva en begreppsmodell"@sv ;
+  skos:definition "用于描述概念模型的一组建模概念。"@zh ;
+
+  skos:prefLabel "conceptual formalism"@en ;
+  skos:prefLabel "تكوين مفاهيمي"@ar ;
+  skos:prefLabel "konceptuel formalisme"@da ;
+  skos:prefLabel "konzeptueller Formalismus"@de ;
+  skos:prefLabel "käsitteellinen formalismi"@fi ;
+  skos:prefLabel "formalisme conceptuel"@fr ;
+  skos:prefLabel "개념적 형식"@ko ;
+  skos:prefLabel "концептуальный формализм"@ru ;
+  skos:prefLabel "formalismo conceptual"@es ;
+  skos:prefLabel "begreppsformalism"@sv ;
+  skos:prefLabel "概念形式化体系"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                        #    lang:polRegistry ,
+                        #    lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail, notes:ExTransUnavail ;
+          lang:swe-note notes:DefnTransUnavail, notes:ExTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#conceptual_model
+:conceptual_model rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info68 ;
+          geolexica:hasReview reviews:Review68 ;
+          geolexica:hasLDAPI ldapi:ldapi68-json ,
+                             ldapi:ldapi68-jsonld ,
+                             ldapi:ldapi68-rdfxml ,
+                             ldapi:ldapi68-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                # lang:pol ,
+                                # lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 68 ;
+          skos:notation 68 ;
+          rdfs:label "conceptual model" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "model that defines concepts of a universe of discourse"@en ;
+  skos:definition "نموذج يحدد المفاهيم الخاصة بالمجموعة الشاملة محل البحث"@ar ;
+  skos:definition "model, der definerer begreber i et universe of discourse"@da ;
+  skos:definition "Modell, das einen abstrahierten Bereich der realen Welt abbildet"@de ;
+  skos:definition "tietomalli, joka määrittelee tarkastelun kohteena olevat kohdemaailman käsitteet ja niiden väliset suhteet"@fi ;
+  skos:definition "modèle définissant les concepts de l&#39;univers du discours"@fr ;
+  skos:definition "논의의 영역의 개념을 정의한 모델"@ko ;
+  skos:definition "Satu skim yang menerangkan model konseptual dalam pangkalan data"@ms ;
+  skos:definition "модель, определяющая понятия предметной области"@ru ;
+  skos:definition "modelo que define conceptos de un universo de discurso"@es ;
+  skos:definition "modell som, för ett visst syfte, beskriver begrepp, deras egenskaper och inbördes relationer"@sv ;
+  skos:definition "定义一个论域概念的模型。"@zh ;
+
+  skos:prefLabel "conceptual model"@en ;
+  skos:prefLabel "نموذج مفاهيمي"@ar ;
+  skos:prefLabel "konceptuel model"@da ;
+  skos:prefLabel "konzeptuelles Modell"@de ;
+  skos:prefLabel "käsitemalli"@fi ;
+  skos:prefLabel "modèle conceptuel"@fr ;
+  skos:prefLabel "개념적 모델"@ko ;
+  skos:prefLabel "model konseptual"@ms ;
+  skos:prefLabel "концептуальная модель"@ru ;
+  skos:prefLabel "modelo conceptual"@es ;
+  skos:prefLabel "begreppsmodell"@sv ;
+  skos:prefLabel "概念模型"@zh ;
+  
+          geolexica:origin lang:araRegistry ,
+                           lang:danRegistry ,
+                           lang:deuRegistry ,
+                           lang:engRegistry ,
+                           lang:finRegistry ,
+                           lang:fraRegistry ,
+                           lang:korRegistry ,
+                        #    lang:jpnRegistry ,
+                           lang:rusRegistry ,
+                        #    lang:polRegistry ,
+                           lang:msaRegistry ,
+                           lang:spaRegistry ,
+                           lang:sweRegistry ,
+                           lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/ld/concepts#conceptual_schema
+:conceptual_schema rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info69 ;
+          geolexica:hasReview reviews:Review69 ;
+          geolexica:hasLDAPI ldapi:ldapi69-json ,
+                             ldapi:ldapi69-jsonld ,
+                             ldapi:ldapi69-rdfxml ,
+                             ldapi:ldapi69-skosrdf ;
+          geolexica:hasLangCode lang:ara ,
+                                lang:dan ,
+                                lang:deu ,
+                                lang:eng ,
+                                lang:fin ,
+                                lang:fra ,
+                                lang:kor ,
+                                lang:nld ,
+                                # lang:pol ,
+                                # lang:jpn ,
+                                lang:msa ,
+                                lang:rus ,
+                                lang:spa ,
+                                lang:swe ,
+                                lang:zho ;
+          dcterms:identifier 69 ;
+          skos:notation 69 ;
+          rdfs:label "conceptual schema" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "formal description of a conceptual model"@en ;
+  skos:definition "وصف منهجي للنموذج المفاهيمي"@ar ;
+  skos:definition "formel beskrivelse af en konceptuel model"@da ;
+  skos:definition "formale Beschreibung eines konzeptuellen Modells"@de ;
+  skos:definition "käsitemallin määrämuotoinen esitys"@fi ;
+  skos:definition "description formelle d&#39;un modèle conceptuel"@fr ;
+  skos:definition "개념적 모델의 정형화된 기술"@ko ;
+  skos:definition "skema yang menjelaskan sesuatu model konseptual"@ms ;
+  skos:definition "formele definitie van objecten, attributen, relaties en regels in een bepaald domein"@nl ;
+  skos:definition "формальное описание концептуальной модели"@ru ;
+  skos:definition "descripción formal de un modelo conceptual"@es ;
+  skos:definition "formell beskrivning av en begreppsmodell"@sv ;
+  skos:definition "概念模型的形式化描述。"@zh ;
+
+ skos:prefLabel "conceptual schema"@en ;
+  skos:prefLabel "مُخطَّطْ مفاهيمي"@ar ;
+  skos:prefLabel "konceptuelt skema"@da ;
+  skos:prefLabel "konzeptuelles Schema"@de ;
+  skos:prefLabel "käsiteskeema"@fi ;
+  skos:prefLabel "schéma conceptuel"@fr ;
+  skos:prefLabel "개념적 스키마"@ko ;
+  skos:prefLabel "skema Konseptual"@ms ;
+  skos:prefLabel "informatiemodel"@nl ;
+  skos:prefLabel "концептуальня схема"@ru ;
+  skos:prefLabel "esquema conceptual"@es ;
+  skos:prefLabel "begreppsschema"@sv ;
+  skos:prefLabel "概念模式"@zh ;
+  
+  skos:altLabel "käsitekaavio"@fi ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:nldRegistry ,
+        #    lang:jpnRegistry ,
+                lang:rusRegistry ,
+        #    lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/ld/concepts#conceptual_schema_language
+:conceptual_schema_language rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info70 ;
+          geolexica:hasReview reviews:Review70 ;
+          geolexica:hasLDAPI ldapi:ldapi70-json ,
+                             ldapi:ldapi70-jsonld ,
+                             ldapi:ldapi70-rdfxml ,
+                             ldapi:ldapi70-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 70 ;
+          skos:notation 70 ;
+          rdfs:label "conceptual schema language" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "formal language based on a conceptual formalism for the purpose of representing conceptual schemas"@en ;
+  skos:definition "لغة رسمية مبنية على التكوين المفاهيمي  لغرض تمثيل المخططات المفاهيمية( التصورية)"@ar ;
+  skos:definition "formelt sprog baseret på en konceptuel formalisme til repræsentation af konceptuelle skemaer"@da ;
+  skos:definition "formale Sprache, die auf einem konzeptuellen Formalismus zur Darstellung konzeptueller Schemata basiert"@de ;
+  skos:definition "määrämuotoinen kieli käsiteskeemojen tuottamista varten"@fi ;
+  skos:definition "langage formel basé sur un formalisme conceptuel destiné à représenter des schémas conceptuels"@fr ;
+  skos:definition "개념적 스키마의 표현을 위해 개념적 형식에 근거한 형식 언어"@ko ;
+  skos:definition "формальный язык представления концептуальных схем, основанный на концептуальном формализме"@ru ;
+  skos:definition "lenguaje formal basado en un formalismo conceptual con el propósito de representar esquemas conceptuales"@es ;
+  skos:definition "formellt språk som är baserat på begreppsformalism och som används för att representera begreppsscheman"@sv ;
+  skos:definition "表达概念模式的形式化语言。"@zh ;
+
+  skos:prefLabel "conceptual schema language"@en ;
+  skos:prefLabel "لغة المُخطَّطْ المفاهيمي"@ar ;
+  skos:prefLabel "konceptuelt modelleringssprog"@da ;
+  skos:prefLabel "Modellierungsprache"@de ;
+  skos:prefLabel "mallinnuskieli"@fi ;
+  skos:prefLabel "langage de schéma conceptuel"@fr ;
+  skos:prefLabel "개념적 스키마 언어"@ko ;
+  skos:prefLabel "skema bahasa  Konseptual"@ms ;
+  skos:prefLabel "язык концептуальных схем"@ru ;
+  skos:prefLabel "lenguaje de esquemas conceptuales"@es ;
+  skos:prefLabel "begreppsschemaspråk"@sv ;
+  skos:prefLabel "概念模式语言"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail, notes:ExTransUnavail ;
+          lang:msa-note notes:DefnTransUnavail, notes:NoteTransUnavail, notes:ExTransUnavail ;
+          lang:dan-note notes:ExTransUnavail ;
+          lang:kor-note notes:ExTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail, notes:ExTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance
+:conformance rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info71 ;
+        #   geolexica:hasReview reviews:Review71 ;
+          geolexica:hasLDAPI ldapi:ldapi71-json ,
+                             ldapi:ldapi71-jsonld ,
+                             ldapi:ldapi71-rdfxml ,
+                             ldapi:ldapi71-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 71 ;
+          skos:notation 71 ;
+          rdfs:label "conformance" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "fulfilment of specified requirements"@en ;
+  skos:definition "الوفاء بمتطلبات محددة"@ar ;
+  skos:definition "opfyldelse af specificerede krav"@da ;
+  skos:definition "Erfüllung festgelegter Anforderungen"@de ;
+  skos:definition "laatuvaatimustason mukaisten vaatimusten täyttyminen"@fi ;
+  skos:definition "satisfaction des exigences spécifiées"@fr ;
+  skos:definition "規定された要件をすべて満足すること。"@ja ;
+  skos:definition "명시된 요구 사항을 구현한 것에 대한 충실도"@ko ;
+  skos:definition "memenuhi keperluan spesifikasi yang ditetapkan"@ms ;
+  skos:definition "выполнение заданных требований"@ru ;
+  skos:definition "cumplimiento de los requisitos especificados"@es ;
+  skos:definition "uppfyllande av specificerade krav"@sv ;
+  skos:definition "满足规定的要求。"@zh ;
+
+  skos:prefLabel "conformance"@en ;
+  skos:prefLabel "مطابقة"@ar ;
+  skos:prefLabel "overensstemmelse"@da ;
+  skos:prefLabel "Konformität"@de ;
+  skos:prefLabel "vaatimuksenmukaisuus"@fi ;
+  skos:prefLabel "conformité"@fr ;
+  skos:prefLabel "適合，適合性"@ja ;
+  skos:prefLabel "적합성"@ko ;
+  skos:prefLabel "Pematuhan"@ms ;
+  skos:prefLabel "соответствие"@ru ;
+  skos:prefLabel "conformidad"@es ;
+  skos:prefLabel "överensstämmelse"@sv ;
+  skos:prefLabel "一致性"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance_assess_process
+:conformance_assess_process rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info72 ;
+          geolexica:hasReview reviews:Review72 ;
+          geolexica:hasLDAPI ldapi:ldapi72-json ,
+                             ldapi:ldapi72-jsonld ,
+                             ldapi:ldapi72-rdfxml ,
+                             ldapi:ldapi72-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 72 ;
+          skos:notation 72 ;
+          rdfs:label "conformance assessment process" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "process for assessing the conformance of an implementation to an International Standard"@en ;
+  skos:definition "عملية لتقييم مطابقة التنفيذ للمعيار الدولي"@ar ;
+  skos:definition "proces til vurdering af overensstemmelsen af en implementering i forhold til en international standard"@da ;
+  skos:definition "prosessi, jossa arvioidaan, miten toteutus täyttää kansainvälisen standardin vaatimukset"@fi ;
+  skos:definition "processus évaluant la conformité d&#39;une implémentation d&#39;une Norme Internationale"@fr ;
+  skos:definition "ある規格への実装の適合性を評価する過程。"@ja ;
+  skos:definition "표준 표준에 따라 적합성을 만족하도록 구현되었는지를 평가하는 과정"@ko ;
+  skos:definition "процесс, призванный оценить степень соответствия реализации требованиям конкретного международного стандарта"@ru ;
+  skos:definition "proceso para evaluar la conformidad de una implementación con una norma internacional"@es ;
+  skos:definition "process för att bedöma i vilken grad en implementering överensstämmer med en standard"@sv ;
+  skos:definition "对某项国际标准实现的一致性评价过程。"@zh ;
+
+  skos:prefLabel "conformance assessment process"@en ;
+  skos:prefLabel "عملية تقييم المطابقة"@ar ;
+  skos:prefLabel "overensstemmelse, proces til vurdering af"@da ;
+  skos:prefLabel "Konformitätsauswertungsprozess"@de ;
+  skos:prefLabel "vaatimuksenmukaisuuden arviointi"@fi ;
+  skos:prefLabel "processus d&#39;évaluation de conformité"@fr ;
+  skos:prefLabel "適合性評価過程"@ja ;
+  skos:prefLabel "적합성 평가 과정"@ko ;
+  skos:prefLabel "процесс оценки соответствия"@ru ;
+  skos:prefLabel "proceso de evaluación de la conformidad"@es ;
+  skos:prefLabel "process för överensstämmelsebedömning"@sv ;
+  skos:prefLabel "一致性评价过程"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance_clause
+:conformance_clause rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info73 ;
+       #  geolexica:hasReview reviews:Review73 ;
+          geolexica:hasLDAPI ldapi:ldapi73-json ,
+                             ldapi:ldapi73-jsonld ,
+                             ldapi:ldapi73-rdfxml ,
+                             ldapi:ldapi73-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 73 ;
+          skos:notation 73 ;
+          rdfs:label "conformance clause" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "clause defining what is necessary in order to meet the requirements of the International Standard"@en ;
+  skos:definition "شرط يوضح ما هو ضروري للوفاء بمتطلبات المعاير الدولي"@ar ;
+  skos:definition "klausul, der definerer, hvad der er nødvendigt for at opfylde kravene i den internationale standard"@da ;
+  skos:definition "määrittely, jossa todetaan, mikä on välttämätöntä kansainvälisen standardin vaatimusten täyttymiseksi"@fi ;
+  skos:definition "clause définissant ce qui est nécessaire pour satisfaire les exigences de la norme Internationale"@fr ;
+  skos:definition "規格の要件を満たすために必要なことを示した箇条。"@ja ;
+  skos:definition "표준의 요구사항 충족을 위해 필요한 것이 무엇인지를 정의하는 조항"@ko ;
+  skos:definition "раздел, определяющий, что необходимо для соответствия требованиям конкретного международного стандарта"@ru ;
+  skos:definition "capítulo que define qué es necesario para satisfacer los requisitos de la norma internacional"@es ;
+  skos:definition "avsnitt i standard om vad som är nödvändigt för att standardens krav ska anses uppfyllda"@sv ;
+  skos:definition "为满足标准要求而必须规定的条款。"@zh ;
+
+  skos:prefLabel "conformance clause"@en ;
+  skos:prefLabel "شرط المطابقة"@ar ;
+  skos:prefLabel "overensstemmelsesklausul"@da ;
+  skos:prefLabel "Konformitätsabschnitt"@de ;
+  skos:prefLabel "vaatimuksenmukaisuuden määrittely"@fi ;
+  skos:prefLabel "clause de conformité"@fr ;
+  skos:prefLabel "適合性の箇条"@ja ;
+  skos:prefLabel "적합성 조항"@ko ;
+  skos:prefLabel "раздел о соответствии"@ru ;
+  skos:prefLabel "claúsula de conformidad"@es ;
+  skos:prefLabel "överensstämmelseavsnitt"@sv ;
+  skos:prefLabel "一致性条款"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance_quality_level
+:conformance_quality_level rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info74 ;
+          geolexica:hasReview reviews:Review74 ;
+          geolexica:hasLDAPI ldapi:ldapi74-json ,
+                             ldapi:ldapi74-jsonld ,
+                             ldapi:ldapi74-rdfxml ,
+                             ldapi:ldapi74-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 74 ;
+          skos:notation 74 ;
+          rdfs:label "conformance quality level" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "threshold value or set of threshold values for data quality results used to determine how well a dataset meets the criteria set forth in its product specification or user requirements"@en ;
+  skos:definition "القيمة الحدية أو مجموعة القيم الحدية لنتائج فحص الجودة التي تستخدم لمعرفة مدى مطابقة مجموعة بيانات للمعايير المحددة لمواصفات إنتاجها أو لمتطلبات المستخدم"@ar ;
+  skos:definition "tærskelværdi eller sæt af tærskelværdier for resultater af datakvalitet, som anvendes til at bestemme, hvor godt et datasæt opfylder kriterierne i produktspecifikationen eller brugerkravene"@da ;
+  skos:definition "Schwellenwert oder Reihe von Schwellenwerten zur Ermittlung der Qualität von Daten, mit denen bestimmt wird, wie gut ein Datensatz die in dessen Datenprodukt-Spezifikation oder den Benutzeranforderungen festgelegten Kriterien erfüllt"@de ;
+  skos:definition "kynnysarvo tai kynnysarvojen joukko, jonka avulla voidaan selvittää, kuinka hyvin tietoaineisto vastaa käyttäjän vaatimuksia tai tietotuotemäärittelyä"@fi ;
+  skos:definition "valeur seuil ou ensemble de valeurs seuil devant être atteint par des résultats d&#39;évaluation de la qualité et utilisé pour déterminer dans quelle mesure un jeu de données respecte les critères exposés dans sa spécification de produit ou les exigences utilisateur"@fr ;
+  skos:definition "데이터셋이 제품 사양이나 사용자의 요구사항을 만족했는지를 결정하는데 사용되는 데이터 품질 결과에 대한 임계 값 또는 임계 값의 집합"@ko ;
+  skos:definition "пороговое значение или набор пороговых значений для  оценки качества данных, по которым определяют степень соответствия  спецификации продукта или потребностям пользователя"@ru ;
+  skos:definition "valor umbral o conjunto de valores umbral, para los resultados de la calidad de datos, empleados para determinar lo bien que un conjunto de datos se adecua a los criterios expuestos en sus especificaciones de producto o en los requerimientos de usuario"@es ;
+  skos:definition "ett eller flera tröskelvärden för datas kvalitet vilka används för att bedöma hur väl en datamängd uppfyller användarkraven eller kraven i dataproduktspecifikationen"@sv ;
+  skos:definition "数据质量结果的一个或一组阀值，用于确定数据集符合产品规范所规定或用户要求的程度。"@zh ;
+
+  skos:prefLabel "conformance quality level"@en ;
+  skos:prefLabel "مستوى جودة المطابقة"@ar ;
+  skos:prefLabel "overensstemmelse, kvalitetsniveau af"@da ;
+  skos:prefLabel "Qualitätskonformitätsschwellwert"@de ;
+  skos:prefLabel "laatuvaatimustaso"@fi ;
+  skos:prefLabel "niveau de conformité"@fr ;
+  skos:prefLabel "적합성 품질 수준"@ko ;
+  skos:prefLabel "уровень соответствия качества"@ru ;
+  skos:prefLabel "nivel de calidad de conformidad"@es ;
+  skos:prefLabel "målvärde för datakvalitet"@sv ;
+  skos:prefLabel "一致性质量级别"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance_test_report
+:conformance_test_report rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info75 ;
+          geolexica:hasReview reviews:Review75 ;
+          geolexica:hasLDAPI ldapi:ldapi75-json ,
+                             ldapi:ldapi75-jsonld ,
+                             ldapi:ldapi75-rdfxml ,
+                             ldapi:ldapi75-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 75 ;
+          skos:notation 75 ;
+          rdfs:label "conformance test report" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "summary of the conformance to the International Standard as well as all the details of the testing that supports the given overall summary"@en ;
+  skos:definition "ملخص مطابقة المعيار الدولي وكذلك جميع تفاصيل الاختبار التي تؤيد الملخص الإجمالي المعطى"@ar ;
+  skos:definition "opsummering af overensstemmelsen med den internationale standard samt detaljer om testen, der understøtter den givne samlede opsummering"@da ;
+  skos:definition "yhteenveto kansainvälisen standardin vaatimusten täyttymisestä sekä yksityiskohtaiset testitiedot, joihin yhteenveto perustuu"@fi ;
+  skos:definition "résumé de la conformité à la Norme Internationale et détails des tests ayant abouti au résumé donné"@fr ;
+  skos:definition "規格への適合の全体概要報告及びその全体概要の基となる試験結果の詳細報告。"@ja ;
+  skos:definition "시험의 상세 내용과 표준에 대한 적합성 여부를 요약한 보고서"@ko ;
+  skos:definition "резюме соответствия конкретному международному стандарту, а также детальные результаты тестирования, которые подтверждают данное сводное резюме"@ru ;
+  skos:definition "resumen de la conformidad con la Norma Internacional así como de todos los detalles de las pruebas que justifican el resumen global incluido"@es ;
+  skos:definition "redovisning av någots överensstämmelse med en standard samt detaljer som underbygger detta"@sv ;
+  skos:definition "与具体标准一致性程度的概要以及支持给出这一总体概要的全部测试细节。"@zh ;
+
+  skos:prefLabel "conformance test report"@en ;
+  skos:prefLabel "تقرير اختبار المطابقة"@ar ;
+  skos:prefLabel "overensstemmelse, testrapport"@da ;
+  skos:prefLabel "Konformitätsprüfbericht"@de ;
+  skos:prefLabel "vaatimuksenmukaisuuden testausraportti"@fi ;
+  skos:prefLabel "compte-rendu de test de conformité"@fr ;
+  skos:prefLabel "適合性試験報告書"@ja ;
+  skos:prefLabel "적합성 시험 보고서"@ko ;
+  skos:prefLabel "отчет о тестировании на соответствие"@ru ;
+  skos:prefLabel "informe de prueba de conformidad"@es ;
+  skos:prefLabel "överensstämmelseredovisning"@sv ;
+  skos:prefLabel "一致性测试报告"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#conformance_testing
+:conformance_testing rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info76 ;
+        #   geolexica:hasReview reviews:Review76 ;
+          geolexica:hasLDAPI ldapi:ldapi76-json ,
+                             ldapi:ldapi76-jsonld ,
+                             ldapi:ldapi76-rdfxml ,
+                             ldapi:ldapi76-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 76 ;
+          skos:notation 76 ;
+          rdfs:label "conformance testings" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "testing of a product to determine the extent to which the product is a conforming implementation"@en ;
+  skos:definition "اختبار منتج لمعرفة مدى مطابقته للتنفيذ"@ar ;
+  skos:definition "test af et produkt for at afgøre, i hvor høj grad produktet opfylder kravene til implementeringen"@da ;
+  skos:definition "tuotteen testaaminen sen selvittämiseksi, missä määrin tuote on vaatimuksenmukainen toteutus"@fi ;
+  skos:definition "test d&#39;un produit pour déterminer dans quelle mesure l&#39;implémentation du produit est conforme"@fr ;
+  skos:definition "製品の実装の適合の度合を決めるために，その製品に対して行う試験。"@ja ;
+  skos:definition "구현된 제품의 적합 정도를 결정하기 위한 시험"@ko ;
+  skos:definition "тестирование продукта с целью определения степени его соответствия установленным требованиям"@ru ;
+  skos:definition "prueba de un producto para determinar hasta qué punto el producto es una implementación conforme"@es ;
+  skos:definition "aktivitet för att avgöra i vilken grad angivna krav uppfylls"@sv ;
+  skos:definition "对产品进行的测试，以便确定该产品一致性实现的程度。"@zh ;
+
+  skos:prefLabel "conformance testing"@en ;
+  skos:prefLabel "اختبار المطابقة"@ar ;
+  skos:prefLabel "overensstemmelse, test af"@da ;
+  skos:prefLabel "Konformitätsprüfung"@de ;
+  skos:prefLabel "vaatimuksenmukaisuuden testaus"@fi ;
+  skos:prefLabel "test de conformité"@fr ;
+  skos:prefLabel "適合性試験"@ja ;
+  skos:prefLabel "적합성 시험"@ko ;
+  skos:prefLabel "тестирование на соответствие"@ru ;
+  skos:prefLabel "prueba de conformidad"@es ;
+  skos:prefLabel "test av överensstämmelse"@sv ;
+  skos:prefLabel "一致性测试"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#conforming_implementation
+:conforming_implementation rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info77 ;
+        #   geolexica:hasReview reviews:Review77 ;
+          geolexica:hasLDAPI ldapi:ldapi77-json ,
+                             ldapi:ldapi77-jsonld ,
+                             ldapi:ldapi77-rdfxml ,
+                             ldapi:ldapi77-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 77 ;
+          skos:notation 77 ;
+          rdfs:label "conforming implementation" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "implementation which satisfies the requirements"@en ;
+  skos:definition "التنفيذ الذي يحقق المتطلبات"@ar ;
+  skos:definition "implementering, der opfylder kravene"@da ;
+  skos:definition "toteutus, joka täyttää vaatimukset"@fi ;
+  skos:definition "implémentation satisfaisant les exigences"@fr ;
+  skos:definition "適合性要件を満たしている実装。"@ja ;
+  skos:definition "적합성 요건을 만족시키는 구현"@ko ;
+  skos:definition "реализация, удовлетворяющая требованиям"@ru ;
+  skos:definition "implementación que satisface los requisitos de conformidad"@es ;
+  skos:definition "implementering som uppfyller angivna krav"@sv ;
+  skos:definition "满足要求的实现。"@zh ;
+
+  skos:prefLabel "conforming implementation"@en ;
+  skos:prefLabel "تنفيذ مطابِق"@ar ;
+  skos:prefLabel "overensstemmende implementering"@da ;
+  skos:prefLabel "konforme Implementierung"@de ;
+  skos:prefLabel "vaatimuksenmukainen toteutus"@fi ;
+  skos:prefLabel "implémentation conforme"@fr ;
+  skos:prefLabel "適合実装"@ja ;
+  skos:prefLabel "적합성 구현"@ko ;
+  skos:prefLabel "корректная реализация"@ru ;
+  skos:prefLabel "implementación conforme"@es ;
+  skos:prefLabel "överensstämmande implementering"@sv ;
+  skos:prefLabel "一致性实现"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/ld/concepts#connected
+:connected rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info78 ;
+          geolexica:hasReview reviews:Review78 ;
+          geolexica:hasLDAPI ldapi:ldapi78-json ,
+                             ldapi:ldapi78-jsonld ,
+                             ldapi:ldapi78-rdfxml ,
+                             ldapi:ldapi78-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 77 ;
+          skos:notation 77 ;
+          rdfs:label "connected" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "property of a geometric object implying that any two direct positions on the object can be placed on a curve that remains totally within the object"@en ;
+  skos:definition "خاصية كيان هندسي تتضمن أن أي موقعين مباشرين على الكيان المذكور يمكن وضعهما على منحنى يظل بكامله داخل الكيان"@ar ;
+  skos:definition "egenskab ved et geometrisk objekt, som angiver, at enhver af to direkte positioner på objektet kan placeres på en kurve, der forbliver helt inde i objektet"@da ;
+  skos:definition "geometrisen objektin ominaisuus, joka edellyttää, että mitkä hyvänsä kaksi objektin pistettä voidaan sijoittaa käyrälle, joka on kokonaan objektin sisällä"@fi ;
+  skos:definition "propriété d&#39;un objet géométrique impliquant que tout couple de positions directes de l&#39;objet peut être placé sur une courbe restant totalement dans l&#39;objet"@fr ;
+  skos:definition "オブジェクトの任意の二つの直接位置がそのオブジェクト内に完全に含まれる曲線上に配置できることを意味する幾何オブジェクトの性質。"@ja ;
+  skos:definition "객체에서 임의의 두 개의 직접 위치가 그 객체 내부에 완전하게 포함되는 곡선상에 위치할 수 있는 것을 의미하는 기하 객체의 특성"@ko ;
+  skos:definition "właściwość obiektu geometrycznego oznaczająca, że dowolne dwa położenia bezpośrednie na tym obiekcie mogą być umieszczone na krzywej, która całkowicie pozostaje wewnątrz tego obiektu"@pl ;
+  skos:definition "свойство геометрического объекта, предполагающее, что любые две точки в пределах объекта могут быть помещены на кривую, полностью лежащую внутри этого объекта"@ru ;
+  skos:definition "propiedad de un objeto geométrico que implica que cualesquiera dos posiciones directas en el objeto pueden ser puestas sobre una curva que permance totalmente dentro de ese objeto"@es ;
+  skos:definition "(inom geometri); sådan att en linje genom två  godtyckligt valda punkter hos ett geometriskt objekt befinner sig inom objektet"@sv ;
+  skos:definition "几何对象的一种特性，指这个几何对象内的任何两个直接位置可以都位于完全在这个对象内的一条曲线上。"@zh ;
+
+  skos:prefLabel "connected"@en ;
+  skos:prefLabel "متصل"@ar ;
+  skos:prefLabel "forbundet"@da ;
+  skos:prefLabel "verbunden"@de ;
+  skos:prefLabel "yhtenäinen"@fi ;
+  skos:prefLabel "connexe"@fr ;
+  skos:prefLabel "連結"@ja ;
+  skos:prefLabel "연결"@ko ;
+  skos:prefLabel "hubungan"@ms ;
+  skos:prefLabel "spójny"@pl ;
+  skos:prefLabel "связный"@ru ;
+  skos:prefLabel "conectado"@es ;
+  skos:prefLabel "sammanhängande"@sv ;
+  skos:prefLabel "连通"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail ;
+          lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#connected_node
+:connected_node rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info79 ;
+          geolexica:hasReview reviews:Review79 ;
+          geolexica:hasLDAPI ldapi:ldapi79-json ,
+                             ldapi:ldapi79-jsonld ,
+                             ldapi:ldapi79-rdfxml ,
+                             ldapi:ldapi79-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 79 ;
+          skos:notation 79 ;
+          rdfs:label "connected node" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "node that starts or ends one or more edges"@en ;
+  skos:definition "عقدة تبدأ منها أو تنتهي إليها حافة واحدة أو أكثر"@ar ;
+  skos:definition "knude, der starter eller slutter en eller flere kanter"@da ;
+  skos:definition "solmupiste, joka toimii yhden tai useamman linkin alku- tai loppupisteenä"@fi ;
+  skos:definition "nœud de début ou de fin d&#39;une ou plusieurs arêtes"@fr ;
+  skos:definition "一つ以上のエッジが開始又は終了するノード。"@ja ;
+  skos:definition "한 개 이상의 변으로 시작하거나 끝나는 절점"@ko ;
+  skos:definition "węzeł, który zaczyna lub kończy co najmniej jedną krawędź"@pl ;
+  skos:definition "узел, в котором начинаются или заканчиваются  одно или несколько ребер"@ru ;
+  skos:definition "nodo en el que empiezan o acaban uno o más arcos"@es ;
+  skos:definition "nod som inleder eller avslutar en eller flera länkar"@sv ;
+  skos:definition "起始于或终止于一条或多条边的结点。"@zh ;
+
+  skos:prefLabel "connected node"@en ;
+  skos:prefLabel "عقدة موصلة"@ar ;
+  skos:prefLabel "forbundet knude"@da ;
+  skos:prefLabel "Verbindungsknoten"@de ;
+  skos:prefLabel "yhdistävä solmu"@fi ;
+  skos:prefLabel "nœud connexe"@fr ;
+  skos:prefLabel "連結ノード"@ja ;
+  skos:prefLabel "연결 절점"@ko ;
+  skos:prefLabel "węzeł dołączony"@pl ;
+  skos:prefLabel "сопряженный узел"@ru ;
+  skos:prefLabel "nodo conectado"@es ;
+  skos:prefLabel "ansluten nod"@sv ;
+  skos:prefLabel "相连结点"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/ld/concepts#constraintUML
+:constraintUML rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info81 ;
+          geolexica:hasReview reviews:Review81 ;
+          geolexica:hasLDAPI ldapi:ldapi81-json ,
+                             ldapi:ldapi81-jsonld ,
+                             ldapi:ldapi81-rdfxml ,
+                             ldapi:ldapi81-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 81 ;
+          skos:notation 81 ;
+          rdfs:label "constraint (UML)" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "semantic condition or restriction"@en ;
+  skos:definition "شرط أو قيد يتعلق بمعاني ودلالات المفردات اللغوية"@ar ;
+  skos:definition "semantisk betingelse eller begrænsning"@da ;
+  skos:definition "semanttinen ehto tai rajoitus"@fi ;
+  skos:definition "condition ou restriction sémantique"@fr ;
+  skos:definition "의미론적 조건 또는 제한"@ko ;
+  skos:definition "семантическое условие или особое требование"@ru ;
+  skos:definition "restricción o  condición semántica"@es ;
+  skos:definition "(i UML); begränsning i beteende för en klass"@sv ;
+  skos:definition "语义条件或限制。"@zh ;
+
+  skos:prefLabel "constraint (UML);"@en ;
+  skos:prefLabel "قيد (UML);"@ar ;
+  skos:prefLabel "restriktion (UML);"@da ;
+  skos:prefLabel "Einschränkung (UML);"@de ;
+  skos:prefLabel "rajoite (UML);"@fi ;
+  skos:prefLabel "contrainte (UML);"@fr ;
+  skos:prefLabel "제약 조건 (UML);"@ko ;
+  skos:prefLabel "ограничение (UML);"@ru ;
+  skos:prefLabel "restricción (UML);"@es ;
+  skos:prefLabel "restriktion (UML);"@sv ;
+  skos:prefLabel "约束(UML);"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#content_model
+:content_model rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info82 ;
+        #   geolexica:hasReview reviews:Review82 ;
+          geolexica:hasLDAPI ldapi:ldapi82-json ,
+                             ldapi:ldapi82-jsonld ,
+                             ldapi:ldapi82-rdfxml ,
+                             ldapi:ldapi82-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        # lang:fin ,
+                        # lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ;
+                        # lang:zho ;
+          dcterms:identifier 82 ;
+          skos:notation 82 ;
+          rdfs:label "content model" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "information view of an application schemas"@en ;
+  skos:definition "جانب المعلومات لمخطط التطبيق"@ar ;
+  skos:definition "응용 스키마의 정보창"@ko ;
+  skos:definition "информационное представление схем приложений"@ru ;
+  skos:definition "vista informativa de un esquema de aplicación"@es ;
+  skos:definition "informationsperspektiv på ett applikationsschema"@sv ;
+
+  skos:prefLabel "content model"@en ;
+  skos:prefLabel "نموذج المحتوى"@ar ;
+  skos:prefLabel "Inhaltsmodell"@de ;
+  skos:prefLabel "내용 모형"@ko ;
+  skos:prefLabel "модель контента"@ru ;
+  skos:prefLabel "modelo de contenido"@es ;
+  skos:prefLabel "innehållsmodell"@sv ;
+  
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                # lang:finRegistry ,
+                # lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ;
+                # lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:kor-note notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#continuous_coverage
+:continuous_coverage rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info83 ;
+        #   geolexica:hasReview reviews:Review83 ;
+          geolexica:hasLDAPI ldapi:ldapi83-json ,
+                             ldapi:ldapi83-jsonld ,
+                             ldapi:ldapi83-rdfxml ,
+                             ldapi:ldapi83-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 83 ;
+          skos:notation 83 ;
+          rdfs:label "continuous coverage" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "coverage that returns different values for the same feature attribute at different direct positions within a single spatial object, temporal object, or spatiotemporal object in its domain"@en ;
+  skos:definition "تغطية تعيد قيم مختلفة لخاصية المعلم نفسه ، التي تكون على مواقع مباشرة مختلفة ضمن كيان مكاني واحد ،أو كيان زماني أو كيان مكاني-زماني ، في نطاقها"@ar ;
+  skos:definition "coverage, der giver forskellige værdier for samme featureattribut på forskellige direkte positioner inden for et enkelt spatialt objekt, temporale objekt eller temporalt-spatialt objekt i sit domæne"@da ;
+  skos:definition "paikkatietojatkumo, jonka alueella olevan spatiaalisen, temporaalisen tai spatiotemporaalisen objektin sisällä sama kohteen ominaisuus saa eri arvot eri koordinaattipisteissä"@fi ;
+  skos:definition "couverture qui retourne des valeurs différentes pour le même attribut d&#39;entité à différentes positions directes à l&#39;intérieur de tout objet spatial, temporel ou spatiotemporel dans son domaine"@fr ;
+  skos:definition "동일한 피처(공간 객체, 시간 객체, 시공간 객체) 속성값이 영역 내 서로 다른 직접 위치에서 다른 값을 갖는 커버리지"@ko ;
+  skos:definition "pokrycie, które przyjmuje różne wartości tego samego atrybutu obiektu w różnych położeniach bezpośrednich w obrębie pojedynczego obiektu przestrzennego, czasowego lub czasoprzestrzennego z jego dziedziny"@pl ;
+  skos:definition "покрытие, возвращающее разные значения одного атрибута для различных  точек в пределах одного пространственного , временнóго или пространственно-временнóго объекта в его области определения"@ru ;
+  skos:definition "cobertura que devuelve valores diferentes para el mismo atributo de objeto geográfico en diferentes posiciones directas dentro de un único objeto espacial, objeto temporal, u objeto espacio-temporal en su dominio"@es ;
+  skos:definition "domänobjekttyp vars objekt definierar en domän inom vilket objektets uppgifter varierar kontinuerligt med positionen"@sv ;
+  skos:definition "在一个数据覆盖域中，单独的空间对象、时间对象或时空对象的相同要素属性在不同的直接位置返回不同值的覆盖。"@zh ;
+
+  skos:prefLabel "continuous coverage"@en ;
+  skos:prefLabel "تغطية مستمرة"@ar ;
+  skos:prefLabel "coverage,  sammenhængende"@da ;
+  skos:prefLabel "stetiges Coverage"@de ;
+  skos:prefLabel "jatkuva paikkatietojatkumo"@fi ;
+  skos:prefLabel "couverture continue"@fr ;
+  skos:prefLabel "연속 커버리지"@ko ;
+  skos:prefLabel "liputan selanjar"@ms ;
+  skos:prefLabel "pokrycie ciągłe"@pl ;
+  skos:prefLabel "непрерывное покрытие"@ru ;
+  skos:prefLabel "cobertura continua"@es ;
+  skos:prefLabel "kontinuerlig domänobjekttyp"@sv ;
+  skos:prefLabel "连续覆盖"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:fra-note notes:NoteTransDiff ;
+          lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+          lang:swe-note notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#control_body
+:control_body rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info84 ;
+          geolexica:hasReview reviews:Review84 ;
+          geolexica:hasLDAPI ldapi:ldapi84-json ,
+                             ldapi:ldapi84-jsonld ,
+                             ldapi:ldapi84-rdfxml ,
+                             ldapi:ldapi84-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 84 ;
+          skos:notation 84 ;
+          rdfs:label "control body" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "group of technical experts that makes decisions regarding the content of a register"@en ;
+  skos:definition "مجموعة من الخبراء الفنيين تختص باتخاذ القرارات فيما يتعلق بمحتويات كل سجل"@ar ;
+  skos:definition "gruppe af tekniske eksperter, der træffer beslutninger om indholdet af et register"@da ;
+  skos:definition "Expertengruppe, welche über den Inhalt eines Registers entscheidet"@de ;
+  skos:definition "teknisten asiantuntijoiden ryhmä, joka tekee rekisterin sisältöä koskevat päätökset"@fi ;
+  skos:definition "groupe d&#39;experts techniques qui prend des décisions quant au contenu d&#39;un registre"@fr ;
+  skos:definition "등록물의 내용에 대한 결정권을 갖는 전문가 집단"@ko ;
+  skos:definition "grupa ekspertów technicznych podejmująca decyzje dotyczące zawartosci rejestru"@pl ;
+  skos:definition "группа технических экспертов, которая принимает решения по содержанию реестра"@ru ;
+  skos:definition "grupo de expertos técnicos que decide el contenido de un registro"@es ;
+  skos:definition "grupp som fattar övergripande beslut gällande ett projekt eller en löpande verksamhet"@sv ;
+  skos:definition "对注册表内容作决定的技术专家组。"@zh ;
+
+  skos:prefLabel "control body"@en ;
+  skos:prefLabel "جهاز الرقابة"@ar ;
+  skos:prefLabel "kontrolorgan"@da ;
+  skos:prefLabel "Koordinierungsgremium"@de ;
+  skos:prefLabel "ohjausryhmä"@fi ;
+  skos:prefLabel "organisme de contrôle"@fr ;
+  skos:prefLabel "통제 기구"@ko ;
+  skos:prefLabel "organ nadzorujący"@pl ;
+  skos:prefLabel "управляющий орган"@ru ;
+  skos:prefLabel "organismo de control"@es ;
+  skos:prefLabel "styrgrupp"@sv ;
+  skos:prefLabel "控制组"@zh ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:rus-note notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/ld/concepts#conversion_rule
+:conversion_rule rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info85 ;
+          geolexica:hasReview reviews:Review85 ;
+          geolexica:hasLDAPI ldapi:ldapi85-json ,
+                             ldapi:ldapi85-jsonld ,
+                             ldapi:ldapi85-rdfxml ,
+                             ldapi:ldapi85-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 85 ;
+          skos:notation 85 ;
+          rdfs:label "conversion rule" ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+  skos:definition "rule for converting instances in the input data structure to instances in the output data structure"@en ;
+  skos:definition "قاعدة لتحويل حالات في هيكل البيانات المدخلة إلى حالات في هياكل البيانات المخرجة"@ar ;
+  skos:definition "regel for at konvertere instanser i inputdatastrukturen til instanser i outputdatastrukturen"@da ;
+  skos:definition "sääntö, jota sovelletaan tiedon muuntamisessa"@fi ;
+  skos:definition "règle utilisée pour convertir les instances de la structure de données entrante en instances de la structure de données sortante"@fr ;
+  skos:definition "입력 데이터 구조의 인스턴스를 출력 자료 구조의 인스턴스로 바꾸는 규칙"@ko ;
+  skos:definition "правило преобразования экземпляров во входных структурах данных в экземпляры  выходных  структур данных"@ru ;
+  skos:definition "regla para convertir instancias de la estructura de datos de entrada a instancias de la estructura de datos de salida"@es ;
+  skos:definition "regel för att översätta data enligt en datastruktur till data enligt en annan datastruktur"@sv ;
+  skos:definition "将输入数据结构的实例转换成输出数据结构实例的规则。"@zh ;
+
+  skos:prefLabel "conversion rule"@en ;
+  skos:prefLabel "قاعدة التحويل"@ar ;
+  skos:prefLabel "konverteringsregel"@da ;
+  skos:prefLabel "Konvertierungsregel"@de ;
+  skos:prefLabel "muunnossääntö"@fi ;
+  skos:prefLabel "règle de conversion"@fr ;
+  skos:prefLabel "전환 규칙"@ko ;
+  skos:prefLabel "undang-undang penukaran"@ms ;
+  skos:prefLabel "правило преобразования"@ru ;
+  skos:prefLabel "regla de conversión"@es ;
+  skos:prefLabel "översättningsregel"@sv ;
+  skos:prefLabel "转换规则"@zh ;
+  skos:altLabel "muunnossääntö"@fi ;
+  
+  geolexica:origin lang:araRegistry ,
+                lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+          lang:deu-note notes:DefnTransUnavail ;
+          lang:msa-note notes:DefnTransUnavail .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
