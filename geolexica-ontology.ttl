@@ -11,26 +11,24 @@
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://isotc211.geolexica.org/api/geolexica> .
+@base <https://isotc211.geolexica.org/api/geolexica#> .
 
 <https://isotc211.geolexica.org/api/geolexica#> rdf:type owl:Ontology ;
-      owl:versionIRI <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
-      owl:imports <http://www.w3.org/2004/02/skos/core> ;
-      dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-      dcterms:created "2022-01-12"^^xsd:date ;
-      dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-      dcterms:issued " " ;
-      dcterms:license "Copyright 2022 OSGeo" ;
-      dcterms:modified "2022-01-25"^^xsd:date ;
-      dcterms:publisher <https://www.osgeo.org/> ;
-      dcterms:title "OSGeo Geolexica Ontology"@en ;
-      vann:preferredNamespacePrefix "geolexica" ;
-      vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/geolexica#" ;
-      owl:versionInfo "Version 1.0" ;
-      skos:note "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01."@en ;
-      skos:note "Classes, properties, attributes, and axioms are subject to change."@en .
-
-dctype:Dataset owl:sameAs void:Dataset .
+                                                 owl:versionIRI <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+                                                 owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                                 dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
+                                                 dcterms:created "2022-01-12"^^xsd:date ;
+                                                 dcterms:creator <https://www.linkedin.com/in/lanemk> ;
+                                                 dcterms:issued " " ;
+                                                 dcterms:license "Copyright 2022 OSGeo" ;
+                                                 dcterms:modified "2022-01-25"^^xsd:date ;
+                                                 dcterms:publisher <https://www.osgeo.org/> ;
+                                                 dcterms:title "OSGeo Geolexica Ontology"@en ;
+                                                 vann:preferredNamespacePrefix "geolexica" ;
+                                                 vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/geolexica#" ;
+                                                 owl:versionInfo "Version 1.0" ;
+                                                 skos:note "Classes, properties, attributes, and axioms are subject to change."@en ,
+                                                           "ISO/TC 211 MLGT in RDF is under development as of 2022-20-01."@en .
 
 #################################################################
 #    Annotation properties
@@ -38,20 +36,35 @@ dctype:Dataset owl:sameAs void:Dataset .
 
 ###  http://purl.org/dc/terms/created
 dcterms:created rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/issued
 dcterms:issued rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/modified
 dcterms:modified rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/publisher
 dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Datatypes
@@ -68,6 +81,13 @@ xsd:string rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://isotc211.geolexica.org/api/geolexica#hasConcept
+:hasConcept rdf:type owl:ObjectProperty ;
+            owl:inverseOf :hasTermID ;
+            rdfs:domain :TermID ;
+            rdfs:range skos:Concept .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#hasInfo
 :hasInfo rdf:type owl:ObjectProperty ;
@@ -110,6 +130,13 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:domain skos:Concept ;
            rdfs:range :Source .
 
+
+###  https://isotc211.geolexica.org/api/geolexica#hasTermID
+:hasTermID rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :TermID .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -117,105 +144,158 @@ xsd:string rdf:type rdfs:Datatype .
 ###  http://purl.org/dc/terms/identifier
 dcterms:identifier rdf:type owl:DatatypeProperty ;
                    rdfs:domain skos:Concept ;
-                   rdfs:range xsd:integer .
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "Use for term IDs in the data." ;
+                   rdfs:label "dcterms:identifier property" .
 
 
 ###  http://www.linkedmodel.org/schema/vaem#abbreviation
 vaem:abbreviation rdf:type owl:DatatypeProperty ;
-                  rdfs:domain skos:Concept ;
-                  rdfs:range xsd:string .
-
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string rdf:type owl:DatatypeProperty .
+                  rdfs:range xsd:string ;
+                  rdfs:label "vaem:abbreviation property" .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#abbreviation
 :abbreviation rdf:type owl:DatatypeProperty ;
-              rdfs:domain :ConceptInfo ;
-              rdfs:range xsd:string .
+              rdfs:range xsd:string ;
+              rdfs:label "geolexica:abbreviation property" .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#classification
 :classification rdf:type owl:DatatypeProperty ;
-                rdfs:domain :ConceptInfo ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:string ;
+                rdfs:label "geolexica:abbreviation property" .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#clause
 :clause rdf:type owl:DatatypeProperty ;
-        rdfs:domain :ConceptInfo ;
-        rdfs:range xsd:string .
+        rdfs:range xsd:string ;
+        rdfs:label "geolexica:clause property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#date-accepted
-:date-accepted rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:date .
+###  https://isotc211.geolexica.org/api/geolexica#date_accepted
+:date_accepted rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "geolexica:date_accepted property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#date-amended
-:date-amended rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:date .
+###  https://isotc211.geolexica.org/api/geolexica#date_amended
+:date_amended rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "geolexica:date_amended property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#decision
-:decision rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:string .
+###  https://isotc211.geolexica.org/api/geolexica#entry_status
+:entry_status rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:label "geolexica:entry_status property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#decision-event
-:decision-event rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:string .
-
-
-###  https://isotc211.geolexica.org/api/geolexica#example
-:example rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:string .
-
-
-###  https://isotc211.geolexica.org/api/geolexica#info-status
-:info-status rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:string .
+###  https://isotc211.geolexica.org/api/geolexica#examples
+:examples rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "geolexica:examples property" .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#jsonURI
 :jsonURI rdf:type owl:DatatypeProperty ;
          rdfs:domain :JSON ;
-         rdfs:range xsd:anyURI .
+         rdfs:range xsd:anyURI ;
+         rdfs:label "geolexica:jsonURI property" .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#jsonldURI
 :jsonldURI rdf:type owl:DatatypeProperty ;
            rdfs:domain :JSON-LD ;
-           rdfs:range xsd:anyURI .
+           rdfs:range xsd:anyURI ;
+           rdfs:label "geolexica:jsonldURI property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#last-review
-:last-review rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:date .
+###  https://isotc211.geolexica.org/api/geolexica#lineage_source
+:lineage_source rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "geolexica:lineage_source property" .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#note
-:note rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:string .
+###  https://isotc211.geolexica.org/api/geolexica#lineage_source_similarity
+:lineage_source_similarity rdf:type owl:DatatypeProperty ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "geolexica:lineage_source_similarity property" .
 
-###  https://isotc211.geolexica.org/api/geolexica#review-status
-:review-status rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:string .
+
+###  https://isotc211.geolexica.org/api/geolexica#notes
+:notes rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:string ;
+       rdfs:label "geolexica:notes property" .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#rdfxmlURI
 :rdfxmlURI rdf:type owl:DatatypeProperty ;
-            rdfs:domain :RDF-XML ;
-            rdfs:range xsd:anyURI .
+           rdfs:domain :RDF-XML ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "geolexica:rdfxmlURI property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#release
+:release rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:label "geolexica:release property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_date
+:review_date rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "geolexica:review_date property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_decision
+:review_decision rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "geolexica:review_decision property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_decision_date
+:review_decision_date rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:label "geolexica:review_decision_date property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_decision_event
+:review_decision_event rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "geolexica:review_decision_event property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_decision_notes
+:review_decision_notes rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "geolexica:review_decision_notes property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_indicator
+:review_indicator rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "geolexica:review_indicator property" .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#review_status
+:review_status rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "geolexica:review_status property" .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#skosrdfURI
 :skosrdfURI rdf:type owl:DatatypeProperty ;
             rdfs:domain :SKOS-RDF ;
-            rdfs:range xsd:anyURI .
+            rdfs:range xsd:anyURI ;
+            rdfs:label "geolexica:skosrdfURI property" .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#tbxisoxmlURI
 :tbxisoxmlURI rdf:type owl:DatatypeProperty ;
-              rdfs:domain :TBXISOXML ;
-              rdfs:range xsd:anyURI .
+              rdfs:domain :TBX-ISO-XML ;
+              rdfs:range xsd:anyURI ;
+              rdfs:label "geolexica:tbxisoxmlURI property" .
 
 
 #################################################################
@@ -241,12 +321,19 @@ dcterms:MediaType rdf:type owl:Class .
 
 ###  https://isotc211.geolexica.org/api/geolexica#JSON
 :JSON rdf:type owl:Class ;
-      rdfs:subClassOf :LinkedDataAPI .
+      rdfs:subClassOf :LinkedDataAPI ;
+      owl:disjointWith :JSON-LD ,
+                       :RDF-XML ,
+                       :SKOS-RDF ,
+                       :TBX-ISO-XML .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#JSON-LD
 :JSON-LD rdf:type owl:Class ;
-         rdfs:subClassOf :LinkedDataAPI .
+         rdfs:subClassOf :LinkedDataAPI ;
+         owl:disjointWith :RDF-XML ,
+                          :SKOS-RDF ,
+                          :TBX-ISO-XML .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#LangCode
@@ -278,20 +365,28 @@ dcterms:MediaType rdf:type owl:Class .
 
 ###  https://isotc211.geolexica.org/api/geolexica#RDF-XML
 :RDF-XML rdf:type owl:Class ;
-          rdfs:subClassOf :LinkedDataAPI .
+         rdfs:subClassOf :LinkedDataAPI ;
+         owl:disjointWith :SKOS-RDF ,
+                          :TBX-ISO-XML .
+
 
 ###  https://isotc211.geolexica.org/api/geolexica#SKOS-RDF
 :SKOS-RDF rdf:type owl:Class ;
-          rdfs:subClassOf :LinkedDataAPI .
+          rdfs:subClassOf :LinkedDataAPI ;
+          owl:disjointWith :TBX-ISO-XML .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#Source
 :Source rdf:type owl:Class .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#TBXISOXML
-:TBXISOXML rdf:type owl:Class ;
-           rdfs:subClassOf :LinkedDataAPI .
+###  https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML
+:TBX-ISO-XML rdf:type owl:Class ;
+             rdfs:subClassOf :LinkedDataAPI .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#TermID
+:TermID rdf:type owl:Class .
 
 
 #################################################################
@@ -305,16 +400,10 @@ dcterms:MediaType rdf:type owl:Class .
                         rdfs:label "Geolexica Concept Scheme" ;
                         skos:prefLabel "Geolexica Concept Scheme"@en .
 
+
 ###  https://isotc211.geolexica.org/api/geolexica#MLGTGlossary
 :MLGTGlossary rdf:type owl:NamedIndividual ,
                        skos:Collection .
-
-# ###  https://isotc211.geolexica.org/api/geolexica#OSGeoGlossary
-# :OSGeoGlossary rdf:type owl:NamedIndividual ,
-#                         skos:Collection ;
-#                rdfs:seeAlso "https://osgeo.geolexica.org/"^^xsd:anyURI ;
-#                skos:note "(Extended) OSGeo Glossary (SKOS) collection of concepts."@en ,
-#                          "OSGeo Collection of SKOS Concepts"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
