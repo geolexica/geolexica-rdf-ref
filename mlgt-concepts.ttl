@@ -1,33 +1,33 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts#> .
+@prefix : <https://isotc211.geolexica.org/api/concepts#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
+@prefix info: <https://isotc211.geolexica.org/api/info#> .
+@prefix lang: <https://isotc211.geolexica.org/api/language#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
+@prefix ldapi: <https://isotc211.geolexica.org/api/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/api/notes#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts> .
+@prefix reviews: <https://isotc211.geolexica.org/api/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
+@base <https://isotc211.geolexica.org/api/concepts> .
 
-<https://isotc211.geolexica.org/ld/concepts> rdf:type dctype:Dataset ;
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/v1.0> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
+<https://isotc211.geolexica.org/api/concepts> rdf:type dctype:Dataset ;
+        owl:versionIRI <https://isotc211.geolexica.org/api/concepts/v1.0> ;
+        owl:imports <https://isotc211.geolexica.org/api/geolexica> ,
                     info: ,
                     lang: ,
                     ldapi: ,
                     notes: ,
                     reviews: ,
                     sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
         dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
         dcterms:created "2022-01-20"^^xsd:date ;
         dcterms:creator <https://www.linkedin.com/in/lanemk> ;
@@ -37,7 +37,7 @@
         dcterms:modified "2022-01-25"^^xsd:date ;
         dcterms:title "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
         vann:preferredNamespacePrefix "mlgt-concepts" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts#" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/concepts#" ;
         rdfs:label "Concepts RDF Dataset: (MLGT)"@en .
 
 
@@ -61,19 +61,19 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-# ###  https://isotc211.geolexica.org/ld/geolexica#origin
+# ###  https://isotc211.geolexica.org/api/geolexica#origin
 # geolexica:origin rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/ld/language#deu-note
+# ###  https://isotc211.geolexica.org/api/language#deu-note
 # lang:deu-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/ld/language#fra-note
+# ###  https://isotc211.geolexica.org/api/language#fra-note
 # lang:fra-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/ld/language#msa-note
+# ###  https://isotc211.geolexica.org/api/language#msa-note
 # lang:msa-note rdf:type owl:AnnotationProperty .
 
-# ###  https://isotc211.geolexica.org/ld/language#nld-note
+# ###  https://isotc211.geolexica.org/api/language#nld-note
 # lang:nld-note rdf:type owl:AnnotationProperty .
 
 #################################################################
@@ -85,12 +85,12 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  http://vocab.deri.ie/void#Dataset
 
-# ###  https://isotc211.geolexica.org/ld/concepts#
-# <https://isotc211.geolexica.org/ld/concepts#> rdf:type owl:NamedIndividual ,
+# ###  https://isotc211.geolexica.org/api/concepts#
+# <https://isotc211.geolexica.org/api/concepts#> rdf:type owl:NamedIndividual ,
 #                                                            dctype:Dataset .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#abbreviation
+###  https://isotc211.geolexica.org/api/concepts#abbreviation
 :abbreviation rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -138,7 +138,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
               lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#abstract_test_case
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_case
 :abstract_test_case rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -213,7 +213,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                     lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#abstract_test_method
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_method
 :abstract_test_method rdf:type owl:NamedIndividual ,
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -276,7 +276,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                       lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#abstract_test_module
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_module
 :abstract_test_module rdf:type owl:NamedIndividual ,
                                skos:Concept ;
                       skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -350,7 +350,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                       lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#abstract_test_suite
+###  https://isotc211.geolexica.org/api/concepts#abstract_test_suite
 :abstract_test_suite rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -433,7 +433,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                      lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#acceptance_testing
+###  https://isotc211.geolexica.org/api/concepts#acceptance_testing
 :acceptance_testing rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -519,7 +519,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                     lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#accuracy
+###  https://isotc211.geolexica.org/api/concepts#accuracy
 :accuracy rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -595,7 +595,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:msa-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#actor
+###  https://isotc211.geolexica.org/api/concepts#actor
 :actor rdf:type owl:NamedIndividual ,
                 skos:Concept ;
        skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -666,7 +666,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
        lang:msa-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#admitted_term
+###  https://isotc211.geolexica.org/api/concepts#admitted_term
 :admitted_term rdf:type owl:NamedIndividual ,
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -713,7 +713,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#aggregation
+###  https://isotc211.geolexica.org/api/concepts#aggregation
 :aggregation rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -784,7 +784,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
              lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#altitude
+###  https://isotc211.geolexica.org/api/concepts#altitude
 :altitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -875,7 +875,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#annotation
+###  https://isotc211.geolexica.org/api/concepts#annotation
 :annotation rdf:type owl:NamedIndividual ,
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -905,7 +905,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
             lang:eng-note "Note to entry: Numbers, letters, symbols, and signs are examples of annotation"@en ;
             lang:fin-note "HUOM.: Viitemerkintöjä ovat esimerkiksi numerot, kirjaimet, symbolit ja merkit."@fi ;
             lang:kor-note "비고: 숫자, 문자, 기호 및 부호 등"@ko ;
-            lang:pol-note "UWAGA: Przykładami adnotacji są liczby, litery, symbole i znak."@po ;
+            lang:pol-note "UWAGA: Przykładami adnotacji są liczby, litery, symbole i znak."@pl ;
             lang:rus-note "Примечание: Примерами аннотаций служат цифры, буквы, обозначения и подписи"@ru ;
             lang:spa-note "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es ;
             lang:zho-note "注： 数字,字母,符号和标记是注记的例子。"@zh ;
@@ -955,7 +955,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
             lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#application
+###  https://isotc211.geolexica.org/api/concepts#application
 :application rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1019,7 +1019,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                               lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#application_schema
+###  https://isotc211.geolexica.org/api/concepts#application_schema
 :application_schema rdf:type owl:NamedIndividual ,
                              skos:Concept ;
                     skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1087,7 +1087,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                      lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#association
+###  https://isotc211.geolexica.org/api/concepts#association
 :association rdf:type owl:NamedIndividual ,
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1157,7 +1157,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
              lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#attitude
+###  https://isotc211.geolexica.org/api/concepts#attitude
 :attitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1230,7 +1230,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#attribute
+###  https://isotc211.geolexica.org/api/concepts#attribute
 :attribute rdf:type owl:NamedIndividual ,
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1291,7 +1291,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
            lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#attributeUML
+###  https://isotc211.geolexica.org/api/concepts#attributeUML
 :attributeUML rdf:type owl:NamedIndividual ,
                        skos:Concept ;
               skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1372,7 +1372,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
               lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#bag
+###  https://isotc211.geolexica.org/api/concepts#bag
 :bag rdf:type owl:NamedIndividual ,
               skos:Concept ;
      skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1401,7 +1401,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
      lang:fin-note "HUOM.: Monijoukkoa voidaan loogisesti kuvata parien <tietokohde, lukumäärä> joukkona."@fi ;
      lang:jpn-note "備考： 論理的には，多重集合は，＜項目，項数＞の対の集合である。"@ja ;
      lang:kor-note "비고: 논리적으로 다중 집합은 <항목, 수>쌍의 집합이다."@ko ;
-     lang:pol-note "UWAGA: W sensie logicznym wielozbiór można uważać za kolekcję par typu <element, krotność tego elementu w kolekcji>."@po ;
+     lang:pol-note "UWAGA: W sensie logicznym wielozbiór można uważać za kolekcję par typu <element, krotność tego elementu w kolekcji>."@pl ;
      lang:rus-note "Примечание: Логически, мультимножество – это набор пар < item, count >."@ru ;
      lang:spa-note "Nota: Lógicamente, una bolsa es un conjunto de pares <item, contador>"@es ;
      lang:zho-note "注： 逻辑上，包是<项,数目>对的集合。"@zh ;
@@ -1455,7 +1455,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
      lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#base_standard
+###  https://isotc211.geolexica.org/api/concepts#base_standard
 :base_standard rdf:type owl:NamedIndividual ,
                         skos:Concept ;
                skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1513,7 +1513,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#basic_test
+###  https://isotc211.geolexica.org/api/concepts#basic_test
 :basic_test rdf:type owl:NamedIndividual ,
                      skos:Concept ;
             skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1575,7 +1575,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
             lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#behaviour
+###  https://isotc211.geolexica.org/api/concepts#behaviour
 :behaviour rdf:type owl:NamedIndividual ,
                     skos:Concept ;
            skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1638,7 +1638,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
            lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#boundary
+###  https://isotc211.geolexica.org/api/concepts#boundary
 :boundary rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1670,7 +1670,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:fin-note "HUOM.: Käsitettä rajaus käytetään yleisimmin geometriassa, jossa määritelmän sanalla joukko tarkoitetaan kokoelmaa pisteitä tai pisteitä vastaavia objekteja. Muissa yhteyksissä termiä rajaus käytetään kuvaannollisesti viittaamaan tietyn kokonaisuuden ja sen ulkopuolisen maailman väliseen siirtymään."@fi ;
           lang:jpn-note "備考： 境界が最もよく使用されるのは，集合が点の集まり又はこれらの点を表すオブジェクトの集まりであるような幾何に関する記　述においてである。他の分野では，この用語を，実体とその論議領域での余事象との遷移領域を比ゆ（喩）的に記述するために使用する。"@ja ;
           lang:kor-note "비고: 경계는 기하 환경에서 가장 많이 사용된다. 기하는 점 집합체 또는 그 점들을 표현하는 객체 집합체로 구성된다. 다른 측면에서 경계는 어떤 개체와 그 개체를 제외한 논의의 영역 간의 전이역을 기술하기 위하여 은유적 용어로 사용된다."@ko ;
-          lang:pol-note "UWAGA: Granica jest najczęściej używana w kontekście geometrii, gdzie zbiór stanowi kolekcję punktów lub kolekcję obiektów reprezentujących te punkty. W innych dziedzinach wyrażenie granica jest stosowane metaforycznie do opisu przejścia między obiektem a resztą rozważanej dziedziny."@po ;
+          lang:pol-note "UWAGA: Granica jest najczęściej używana w kontekście geometrii, gdzie zbiór stanowi kolekcję punktów lub kolekcję obiektów reprezentujących te punkty. W innych dziedzinach wyrażenie granica jest stosowane metaforycznie do opisu przejścia między obiektem a resztą rozważanej dziedziny."@pl ;
           lang:rus-note "Примечание: Термин «граница» повсеместно используется в контексте геометрии, где множество представляет собой совокупность точек или совокупность объектов, состоящих из этих точек. В других сферах деятельности указанный термин используется образно для описания переходного участка между сущностью и остальной предметной областью"@ru ;
           lang:spa-note "Nota: El término frontera se usa normalmente en el contexto de geometría, siendo conjunto, una colección de puntos o de objetos que representan a esos puntos. En otros ámbitos, el término se usa metafóricamente para describir la transición entre una entidad y el resto del universo de discurso."@es ;
           lang:zho-note "注： 边界通常用在几何结构中，这里的几何是点的集合或代表这些点的对象的集合。在别的场合，这个术语通常隐喻在实体与论域其余部分间的跃迁。"@zh ;
@@ -1722,7 +1722,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#buffer
+###  https://isotc211.geolexica.org/api/concepts#buffer
 :buffer rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1794,7 +1794,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#calendar
+###  https://isotc211.geolexica.org/api/concepts#calendar
 :calendar rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1864,7 +1864,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#calendar_era
+###  https://isotc211.geolexica.org/api/concepts#calendar_era
 :calendar_era rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1931,7 +1931,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#candidate_route
+###  https://isotc211.geolexica.org/api/concepts#candidate_route
 :candidate_route rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -1990,7 +1990,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:fra-note notes:NoteTransDiff ;
           lang:swe-note notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#capability_test
+###  https://isotc211.geolexica.org/api/concepts#capability_test
 :capability_test rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2050,7 +2050,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#cardinalityUML
+###  https://isotc211.geolexica.org/api/concepts#cardinalityUML
 :cardinalityUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2111,7 +2111,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail ;
           lang:rus-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#cartesian_coordinate_system
+###  https://isotc211.geolexica.org/api/concepts#cartesian_coordinate_system
 :cartesian_coordinate_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2179,7 +2179,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#character
+###  https://isotc211.geolexica.org/api/concepts#character
 :character rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2241,7 +2241,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#circular_sequence
+###  https://isotc211.geolexica.org/api/concepts#circular_sequence
 :circular_sequence rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2307,7 +2307,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#classUML
+###  https://isotc211.geolexica.org/api/concepts#classUML
 :classUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2366,7 +2366,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail ;
           lang:rus-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#classifierUML
+###  https://isotc211.geolexica.org/api/concepts#classifierUML
 :classifierUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2425,7 +2425,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:swe-note notes:NoteTransUnavail ;
           lang:rus-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#client
+###  https://isotc211.geolexica.org/api/concepts#client
 :client rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2489,7 +2489,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:zhoRegistry ;
           lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#closure
+###  https://isotc211.geolexica.org/api/concepts#closure
 :closure rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2555,7 +2555,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            lang:sweRegistry ,
                            lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#cluster2
+###  https://isotc211.geolexica.org/api/concepts#cluster2
 :cluster2 rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2622,7 +2622,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
           lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coboundary
+###  https://isotc211.geolexica.org/api/concepts#coboundary
 :coboundary rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2694,7 +2694,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#code
+###  https://isotc211.geolexica.org/api/concepts#code
 :code rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2763,7 +2763,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#codelist
+###  https://isotc211.geolexica.org/api/concepts#codelist
 :codelist rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2826,7 +2826,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                            lang:sweRegistry ,
                            lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#codespace
+###  https://isotc211.geolexica.org/api/concepts#codespace
 :codespace rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2889,7 +2889,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#complex_feature
+###  https://isotc211.geolexica.org/api/concepts#complex_feature
 :complex_feature rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -2959,7 +2959,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:rus-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#composite_curve
+###  https://isotc211.geolexica.org/api/concepts#composite_curve
 :composite_curve rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3036,7 +3036,7 @@ skos:definition "set of topological primitives of higher topological dimension a
 
 
 
-###  https://isotc211.geolexica.org/ld/concepts#composite_solid
+###  https://isotc211.geolexica.org/api/concepts#composite_solid
 :composite_solid rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3113,7 +3113,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#composite_surface
+###  https://isotc211.geolexica.org/api/concepts#composite_surface
 :composite_surface rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3190,7 +3190,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#computational_geometry
+###  https://isotc211.geolexica.org/api/concepts#computational_geometry
 :computational_geometry rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3265,7 +3265,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#computational_topology
+###  https://isotc211.geolexica.org/api/concepts#computational_topology
 :computational_topology rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3340,7 +3340,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#computational_viewpoint
+###  https://isotc211.geolexica.org/api/concepts#computational_viewpoint
 :computational_viewpoint rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3409,7 +3409,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                            lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#concept
+###  https://isotc211.geolexica.org/api/concepts#concept
 :concept rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3475,7 +3475,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#concept_system
+###  https://isotc211.geolexica.org/api/concepts#concept_system
 :concept_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3539,7 +3539,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#conceptual_formalism
+###  https://isotc211.geolexica.org/api/concepts#conceptual_formalism
 :conceptual_formalism rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3608,7 +3608,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail, notes:ExTransUnavail ;
           lang:swe-note notes:DefnTransUnavail, notes:ExTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#conceptual_model
+###  https://isotc211.geolexica.org/api/concepts#conceptual_model
 :conceptual_model rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3677,7 +3677,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                            lang:sweRegistry ,
                            lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#conceptual_schema
+###  https://isotc211.geolexica.org/api/concepts#conceptual_schema
 :conceptual_schema rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3752,7 +3752,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#conceptual_schema_language
+###  https://isotc211.geolexica.org/api/concepts#conceptual_schema_language
 :conceptual_schema_language rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3827,7 +3827,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:kor-note notes:ExTransUnavail ;
           lang:swe-note notes:NoteTransUnavail, notes:ExTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance
+###  https://isotc211.geolexica.org/api/concepts#conformance
 :conformance rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3901,7 +3901,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
           lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance_assess_process
+###  https://isotc211.geolexica.org/api/concepts#conformance_assess_process
 :conformance_assess_process rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -3972,7 +3972,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance_clause
+###  https://isotc211.geolexica.org/api/concepts#conformance_clause
 :conformance_clause rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4044,7 +4044,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail ;
           lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance_quality_level
+###  https://isotc211.geolexica.org/api/concepts#conformance_quality_level
 :conformance_quality_level rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4113,7 +4113,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance_test_report
+###  https://isotc211.geolexica.org/api/concepts#conformance_test_report
 :conformance_test_report rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4184,7 +4184,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#conformance_testing
+###  https://isotc211.geolexica.org/api/concepts#conformance_testing
 :conformance_testing rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4256,7 +4256,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail ;
           lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#conforming_implementation
+###  https://isotc211.geolexica.org/api/concepts#conforming_implementation
 :conforming_implementation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4328,7 +4328,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail ;
           lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#connected
+###  https://isotc211.geolexica.org/api/concepts#connected
 :connected rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4404,7 +4404,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail ;
           lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#connected_node
+###  https://isotc211.geolexica.org/api/concepts#connected_node
 :connected_node rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4477,7 +4477,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
           lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#constraintUML
+###  https://isotc211.geolexica.org/api/concepts#constraintUML
 :constraintUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4548,7 +4548,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#content_model
+###  https://isotc211.geolexica.org/api/concepts#content_model
 :content_model rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4612,7 +4612,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#continuous_coverage
+###  https://isotc211.geolexica.org/api/concepts#continuous_coverage
 :continuous_coverage rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4688,7 +4688,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#control_body
+###  https://isotc211.geolexica.org/api/concepts#control_body
 :control_body rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4760,7 +4760,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
           lang:rus-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#conversion_rule
+###  https://isotc211.geolexica.org/api/concepts#conversion_rule
 :conversion_rule rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4833,7 +4833,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#convex_hull
+###  https://isotc211.geolexica.org/api/concepts#convex_hull
 :convex_hull rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4904,7 +4904,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail, notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#convex_set
+###  https://isotc211.geolexica.org/api/concepts#convex_set
 :convex_set rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -4975,7 +4975,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coordinate
+###  https://isotc211.geolexica.org/api/concepts#coordinate
 :coordinate rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5054,7 +5054,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:msa-note notes:NoteTransUnavail ; 
           lang:swe-note notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#coordinate_dimension
+###  https://isotc211.geolexica.org/api/concepts#coordinate_dimension
 :coordinate_dimension rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5128,7 +5128,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coordinate_operation
+###  https://isotc211.geolexica.org/api/concepts#coordinate_operation
 :coordinate_operation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5205,7 +5205,7 @@ skos:definition "set of topological primitives of higher topological dimension a
           lang:swe-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coordinate_system
+###  https://isotc211.geolexica.org/api/concepts#coordinate_system
 :coordinate_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5279,7 +5279,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#Coordinated_Universal_Time
+###  https://isotc211.geolexica.org/api/concepts#Coordinated_Universal_Time
 :Coordinated_Universal_Time rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5348,7 +5348,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#cost_function
+###  https://isotc211.geolexica.org/api/concepts#cost_function
 :cost_function rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5420,7 +5420,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coverage
+###  https://isotc211.geolexica.org/api/concepts#coverage
 :coverage rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5498,7 +5498,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coverage_geometry
+###  https://isotc211.geolexica.org/api/concepts#coverage_geometry
 :coverage_geometry rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5571,7 +5571,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#coverage_geometry
+###  https://isotc211.geolexica.org/api/concepts#coverage_geometry
 :coverage_geometry rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5644,7 +5644,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#curve
+###  https://isotc211.geolexica.org/api/concepts#curve
 :curve rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5722,7 +5722,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#curve_segment
+###  https://isotc211.geolexica.org/api/concepts#curve_segment
 :curve_segment rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5796,7 +5796,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#cycle_geometry
+###  https://isotc211.geolexica.org/api/concepts#cycle_geometry
 :cycle_geometry rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5870,7 +5870,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data
+###  https://isotc211.geolexica.org/api/concepts#data
 :data rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -5942,7 +5942,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_element
+###  https://isotc211.geolexica.org/api/concepts#data_element
 :data_element rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6012,7 +6012,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_interchange
+###  https://isotc211.geolexica.org/api/concepts#data_interchange
 :data_interchange rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6082,7 +6082,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_level
+###  https://isotc211.geolexica.org/api/concepts#data_level
 :data_level rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6151,7 +6151,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_product
+###  https://isotc211.geolexica.org/api/concepts#data_product
 :data_product rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6220,7 +6220,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_product_specification
+###  https://isotc211.geolexica.org/api/concepts#data_product_specification
 :data_product_specification rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6291,7 +6291,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_date
+###  https://isotc211.geolexica.org/api/concepts#data_quality_date
 :data_quality_date rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6363,7 +6363,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_element
+###  https://isotc211.geolexica.org/api/concepts#data_quality_element
 :data_quality_element rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6434,7 +6434,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_eval_procedure
+###  https://isotc211.geolexica.org/api/concepts#data_quality_eval_procedure
 :data_quality_eval_procedure rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6506,7 +6506,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_measure
+###  https://isotc211.geolexica.org/api/concepts#data_quality_measure
 :data_quality_measure rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6581,7 +6581,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_over_element
+###  https://isotc211.geolexica.org/api/concepts#data_quality_over_element
 :data_quality_over_element rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6652,7 +6652,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_result
+###  https://isotc211.geolexica.org/api/concepts#data_quality_result
 :data_quality_result rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6727,7 +6727,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_scope
+###  https://isotc211.geolexica.org/api/concepts#data_quality_scope
 :data_quality_scope rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6801,7 +6801,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ; 
         lang:swe-note notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_subelement
+###  https://isotc211.geolexica.org/api/concepts#data_quality_subelement
 :data_quality_subelement rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6872,7 +6872,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_value_type
+###  https://isotc211.geolexica.org/api/concepts#data_quality_value_type
 :data_quality_value_type rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -6947,7 +6947,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail , notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_quality_value_unit
+###  https://isotc211.geolexica.org/api/concepts#data_quality_value_unit
 :data_quality_value_unit rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7022,7 +7022,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail , notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#data_transfer
+###  https://isotc211.geolexica.org/api/concepts#data_transfer
 :data_transfer rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7092,7 +7092,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
         lang:swe-note notes:NoteTransUnavail  .
 
-###  https://isotc211.geolexica.org/ld/concepts#data_type
+###  https://isotc211.geolexica.org/api/concepts#data_type
 :data_type rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7166,7 +7166,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:rus-note notes:NoteTransDiff  ;
         lang:swe-note notes:ExTransUnavail , notes:NoteTransUnavail   .
 
-###  https://isotc211.geolexica.org/ld/concepts#dataset
+###  https://isotc211.geolexica.org/api/concepts#dataset
 :dataset rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7245,7 +7245,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail   .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#dataset_series
+###  https://isotc211.geolexica.org/api/concepts#dataset_series
 :dataset_series rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7320,7 +7320,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#day
+###  https://isotc211.geolexica.org/api/concepts#day
 :day rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7397,7 +7397,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#definition
+###  https://isotc211.geolexica.org/api/concepts#definition
 :definition rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7463,7 +7463,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#Delaunay_triangulation
+###  https://isotc211.geolexica.org/api/concepts#Delaunay_triangulation
 :Delaunay_triangulation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7535,7 +7535,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail ;
         lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#dependencyUML
+###  https://isotc211.geolexica.org/api/concepts#dependencyUML
 :dependencyUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7604,7 +7604,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#deprecated_term
+###  https://isotc211.geolexica.org/api/concepts#deprecated_term
 :deprecated_term rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7667,7 +7667,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 # lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#Dijkstra_graph
+###  https://isotc211.geolexica.org/api/concepts#Dijkstra_graph
 :Dijkstra_graph rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7740,7 +7740,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:fra-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#direct_eval_method
+###  https://isotc211.geolexica.org/api/concepts#direct_eval_method
 :direct_eval_method rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7809,7 +7809,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#direct_position
+###  https://isotc211.geolexica.org/api/concepts#direct_position
 :direct_position rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7885,7 +7885,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:msa-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#directed_edge
+###  https://isotc211.geolexica.org/api/concepts#directed_edge
 :directed_edge rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -7960,7 +7960,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#directed_face
+###  https://isotc211.geolexica.org/api/concepts#directed_face
 :directed_face rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8035,7 +8035,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ; 
         lang:swe-note notes:NoteTransUnavail  .
 
-###  https://isotc211.geolexica.org/ld/concepts#directed_node
+###  https://isotc211.geolexica.org/api/concepts#directed_node
 :directed_node rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8110,7 +8110,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail  .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#directed_solid
+###  https://isotc211.geolexica.org/api/concepts#directed_solid
 :directed_solid rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8184,7 +8184,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ; 
         lang:swe-note notes:NoteTransUnavail  .
 
-###  https://isotc211.geolexica.org/ld/concepts#directed_topo_object
+###  https://isotc211.geolexica.org/api/concepts#directed_topo_object
 :directed_topo_object rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8257,7 +8257,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#discrete_coverage
+###  https://isotc211.geolexica.org/api/concepts#discrete_coverage
 :discrete_coverage rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8330,7 +8330,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail ;
         lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#distribution_transparency
+###  https://isotc211.geolexica.org/api/concepts#distribution_transparency
 :distribution_transparency rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8404,7 +8404,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:rus-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#domain
+###  https://isotc211.geolexica.org/api/concepts#domain
 :domain rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8484,7 +8484,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:rus-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#easting
+###  https://isotc211.geolexica.org/api/concepts#easting
 :easting rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8570,7 +8570,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:msa-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#edge
+###  https://isotc211.geolexica.org/api/concepts#edge
 :edge rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8648,7 +8648,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail ;
         lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#edge_node_graph
+###  https://isotc211.geolexica.org/api/concepts#edge_node_graph
 :edge_node_graph rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8722,7 +8722,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#elementXML
+###  https://isotc211.geolexica.org/api/concepts#elementXML
 :elementXML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8791,7 +8791,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#ellipsoid
+###  https://isotc211.geolexica.org/api/concepts#ellipsoid
 :ellipsoid rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8868,7 +8868,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#ellipsoid_height
+###  https://isotc211.geolexica.org/api/concepts#ellipsoid_height
 :ellipsoid_height rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -8965,7 +8965,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#encoding
+###  https://isotc211.geolexica.org/api/concepts#encoding
 :encoding rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9038,7 +9038,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#encoding_rule
+###  https://isotc211.geolexica.org/api/concepts#encoding_rule
 :encoding_rule rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9112,7 +9112,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail , notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#encoding_service
+###  https://isotc211.geolexica.org/api/concepts#encoding_service
 :encoding_service rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9182,7 +9182,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#end_node
+###  https://isotc211.geolexica.org/api/concepts#end_node
 :end_node rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9257,7 +9257,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:deu-note notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#end_point
+###  https://isotc211.geolexica.org/api/concepts#end_point
 :end_point rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9330,7 +9330,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#engineering_datum
+###  https://isotc211.geolexica.org/api/concepts#engineering_datum
 :engineering_datum rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9415,7 +9415,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail , notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#engineering_viewpoint
+###  https://isotc211.geolexica.org/api/concepts#engineering_viewpoint
 :engineering_viewpoint rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9487,7 +9487,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail ;
         lang:rus-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#enterprise_viewpoint
+###  https://isotc211.geolexica.org/api/concepts#enterprise_viewpoint
 :enterprise_viewpoint rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9560,7 +9560,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:rus-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#evaluation_coverage
+###  https://isotc211.geolexica.org/api/concepts#evaluation_coverage
 :evaluation_coverage rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9632,7 +9632,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail ;
         lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#event
+###  https://isotc211.geolexica.org/api/concepts#event
 :event rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9707,7 +9707,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:fra-note notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#executable_test_case
+###  https://isotc211.geolexica.org/api/concepts#executable_test_case
 :executable_test_case rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9782,7 +9782,7 @@ skos:definition "set of topological primitives of higher topological dimension a
 
 
 
-###  https://isotc211.geolexica.org/ld/concepts#executable_test_suite
+###  https://isotc211.geolexica.org/api/concepts#executable_test_suite
 :executable_test_suite rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9855,7 +9855,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#exterior
+###  https://isotc211.geolexica.org/api/concepts#exterior
 :exterior rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -9934,7 +9934,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#external_function
+###  https://isotc211.geolexica.org/api/concepts#external_function
 :external_function rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10010,7 +10010,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#face
+###  https://isotc211.geolexica.org/api/concepts#face
 :face rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10089,7 +10089,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail ;
         lang:deu-note notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#fail_verdict
+###  https://isotc211.geolexica.org/api/concepts#fail_verdict
 :fail_verdict rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10162,7 +10162,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:swe-note notes:NoteTransUnavail ;
         lang:deu-note notes:NoteTransUnavail, notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#falsification_test
+###  https://isotc211.geolexica.org/api/concepts#falsification_test
 :falsification_test rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10235,7 +10235,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:NoteTransUnavail , notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature
+###  https://isotc211.geolexica.org/api/concepts#feature
 :feature rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10311,7 +10311,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:deu-note notes:NoteTransUnavail , notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_association
+###  https://isotc211.geolexica.org/api/concepts#feature_association
 :feature_association rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10385,7 +10385,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:rus-note notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_attribute
+###  https://isotc211.geolexica.org/api/concepts#feature_attribute
 :feature_attribute rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10461,7 +10461,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-nld notes:NoteTransUnavail , notes:ExTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_division
+###  https://isotc211.geolexica.org/api/concepts#feature_division
 :feature_division rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10537,7 +10537,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:ExTransUnavail ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_fusion
+###  https://isotc211.geolexica.org/api/concepts#feature_fusion
 :feature_fusion rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10614,7 +10614,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-fra notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_operation
+###  https://isotc211.geolexica.org/api/concepts#feature_operation
 :feature_operation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10690,7 +10690,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-rus notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_portrayal_rule_set
+###  https://isotc211.geolexica.org/api/concepts#feature_portrayal_rule_set
 :feature_portrayal_rule_set rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10762,7 +10762,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_substitution
+###  https://isotc211.geolexica.org/api/concepts#feature_substitution
 :feature_substitution rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10839,7 +10839,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-fra notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_succession
+###  https://isotc211.geolexica.org/api/concepts#feature_succession
 :feature_succession rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10915,7 +10915,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-fra notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#feature_table
+###  https://isotc211.geolexica.org/api/concepts#feature_table
 :feature_table rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -10989,7 +10989,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-fra notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#file
+###  https://isotc211.geolexica.org/api/concepts#file
 :file rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11059,7 +11059,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#flattening
+###  https://isotc211.geolexica.org/api/concepts#flattening
 :flattening rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11134,7 +11134,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#framework
+###  https://isotc211.geolexica.org/api/concepts#framework
 :framework rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11196,7 +11196,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#framework
+###  https://isotc211.geolexica.org/api/concepts#framework
 :framework rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11258,7 +11258,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#full_inspection
+###  https://isotc211.geolexica.org/api/concepts#full_inspection
 :full_inspection rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11330,7 +11330,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#function
+###  https://isotc211.geolexica.org/api/concepts#function
 :function rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11408,7 +11408,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#functional_language
+###  https://isotc211.geolexica.org/api/concepts#functional_language
 :functional_language rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11482,7 +11482,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-rus notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#functional_standard
+###  https://isotc211.geolexica.org/api/concepts#functional_standard
 :functional_standard rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11553,7 +11553,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#gazetteer
+###  https://isotc211.geolexica.org/api/concepts#gazetteer
 :gazetteer rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11630,7 +11630,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-msa notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#geocoding
+###  https://isotc211.geolexica.org/api/concepts#geocoding
 :geocoding rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11705,7 +11705,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#geodetic_coord_system
+###  https://isotc211.geolexica.org/api/concepts#geodetic_coord_system
 :geodetic_coord_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11790,7 +11790,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#geodetic_height
+###  https://isotc211.geolexica.org/api/concepts#geodetic_height
 :geodetic_height rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11871,7 +11871,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geodetic_latitude
+###  https://isotc211.geolexica.org/api/concepts#geodetic_latitude
 :geodetic_latitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -11955,7 +11955,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#geodetic_longitude
+###  https://isotc211.geolexica.org/api/concepts#geodetic_longitude
 :geodetic_longitude rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12039,7 +12039,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_data
+###  https://isotc211.geolexica.org/api/concepts#geographic_data
 :geographic_data rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12111,7 +12111,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-rus notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_feature
+###  https://isotc211.geolexica.org/api/concepts#geographic_feature
 :geographic_feature rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12189,7 +12189,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_identifier
+###  https://isotc211.geolexica.org/api/concepts#geographic_identifier
 :geographic_identifier rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12265,7 +12265,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:ExTransUnavail ;
         lang:lang-deu notes:DefnTransUnavail , notes:ExTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_information
+###  https://isotc211.geolexica.org/api/concepts#geographic_information
 :geographic_information rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12341,7 +12341,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-msa notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_info_service
+###  https://isotc211.geolexica.org/api/concepts#geographic_info_service
 :geographic_info_service rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12412,7 +12412,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geographic_info_system
+###  https://isotc211.geolexica.org/api/concepts#geographic_info_system
 :geographic_info_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12483,7 +12483,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail ;
         lang:lang-msa notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_aggregate
+###  https://isotc211.geolexica.org/api/concepts#geometric_aggregate
 :geometric_aggregate rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12557,7 +12557,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_boundary
+###  https://isotc211.geolexica.org/api/concepts#geometric_boundary
 :geometric_boundary rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12630,7 +12630,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_complex
+###  https://isotc211.geolexica.org/api/concepts#geometric_complex
 :geometric_complex rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12704,7 +12704,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_dimension
+###  https://isotc211.geolexica.org/api/concepts#geometric_dimension
 :geometric_dimension rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12779,7 +12779,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_object
+###  https://isotc211.geolexica.org/api/concepts#geometric_object
 :geometric_object rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12855,7 +12855,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_primitive
+###  https://isotc211.geolexica.org/api/concepts#geometric_primitive
 :geometric_primitive rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -12930,7 +12930,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_realization
+###  https://isotc211.geolexica.org/api/concepts#geometric_realization
 :geometric_realization rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13007,7 +13007,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-msa notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometric_set
+###  https://isotc211.geolexica.org/api/concepts#geometric_set
 :geometric_set rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13082,7 +13082,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#gravity_related_height
+###  https://isotc211.geolexica.org/api/concepts#gravity_related_height
 :gravity_related_height rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13168,7 +13168,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#geometry_property
+###  https://isotc211.geolexica.org/api/concepts#geometry_property
 :geometry_property rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13237,7 +13237,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#Gregorian_calendar
+###  https://isotc211.geolexica.org/api/concepts#Gregorian_calendar
 :Gregorian_calendar rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13328,7 +13328,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-msa notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#grid
+###  https://isotc211.geolexica.org/api/concepts#grid
 :grid rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13410,7 +13410,7 @@ skos:definition "set of topological primitives of higher topological dimension a
 
 
 
-###  https://isotc211.geolexica.org/ld/concepts#grid_coordinates
+###  https://isotc211.geolexica.org/api/concepts#grid_coordinates
 :grid_coordinates rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13473,7 +13473,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#grid_point
+###  https://isotc211.geolexica.org/api/concepts#grid_point
 :grid_point rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13548,7 +13548,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#gridded_data
+###  https://isotc211.geolexica.org/api/concepts#gridded_data
 :gridded_data rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13609,7 +13609,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry .
                 # lang:zhoRegistry ;
 
-###  https://isotc211.geolexica.org/ld/concepts#homomorphism
+###  https://isotc211.geolexica.org/api/concepts#homomorphism
 :homomorphism rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13688,7 +13688,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail  .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#image_point
+###  https://isotc211.geolexica.org/api/concepts#image_point
 :image_point rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13751,7 +13751,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry .
                 # lang:zhoRegistry ; 
 
-###  https://isotc211.geolexica.org/ld/concepts#implementation
+###  https://isotc211.geolexica.org/api/concepts#implementation
 :implementation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13828,7 +13828,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail  .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#Implement_Conform_Statement
+###  https://isotc211.geolexica.org/api/concepts#Implement_Conform_Statement
 :Implement_Conform_Statement rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13899,7 +13899,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:sweRegistry ,
                 lang:zhoRegistry .
 
-###  https://isotc211.geolexica.org/ld/concepts#Implemen_eXtra_Info_Testing
+###  https://isotc211.geolexica.org/api/concepts#Implemen_eXtra_Info_Testing
 :Implemen_eXtra_Info_Testing rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -13995,7 +13995,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail  .
 
-###  https://isotc211.geolexica.org/ld/concepts#inconclusive_verdict
+###  https://isotc211.geolexica.org/api/concepts#inconclusive_verdict
 :inconclusive_verdict rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14067,7 +14067,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#indirect_eval_method
+###  https://isotc211.geolexica.org/api/concepts#indirect_eval_method
 :indirect_eval_method rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14138,7 +14138,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#inert_position_system
+###  https://isotc211.geolexica.org/api/concepts#inert_position_system
 :inert_position_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14209,7 +14209,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#information
+###  https://isotc211.geolexica.org/api/concepts#information
 :information rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14281,7 +14281,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#information_viewpoint
+###  https://isotc211.geolexica.org/api/concepts#information_viewpoint
 :information_viewpoint rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14353,7 +14353,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail ;
         lang:lang-rus notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#inheritance
+###  https://isotc211.geolexica.org/api/concepts#inheritance
 :inheritance rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14424,7 +14424,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#instance
+###  https://isotc211.geolexica.org/api/concepts#instance
 :instance rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14498,7 +14498,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#instance_model
+###  https://isotc211.geolexica.org/api/concepts#instance_model
 :instance_model rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14565,7 +14565,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#instant
+###  https://isotc211.geolexica.org/api/concepts#instant
 :instant rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14642,7 +14642,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-fra notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#instantiate
+###  https://isotc211.geolexica.org/api/concepts#instantiate
 :instantiate rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14710,7 +14710,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#integrated_position_system
+###  https://isotc211.geolexica.org/api/concepts#integrated_position_system
 :integrated_position_system rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14778,7 +14778,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:NoteTransUnavail , notes:DefnTransUnavail ;
         lang:lang-swe notes:NoteTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#interface
+###  https://isotc211.geolexica.org/api/concepts#interface
 :interface rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14855,7 +14855,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-msa notes:NoteTransUnavail , notes:NoteTransDiff .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#interfaceUML
+###  https://isotc211.geolexica.org/api/concepts#interfaceUML
 :interfaceUML rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -14923,7 +14923,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#interior
+###  https://isotc211.geolexica.org/api/concepts#interior
 :interior rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15000,7 +15000,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-swe notes:NoteTransUnavail .
 
 
-###  https://isotc211.geolexica.org/ld/concepts#interoperability
+###  https://isotc211.geolexica.org/api/concepts#interoperability
 :interoperability rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15075,7 +15075,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-msa notes:NoteTransDiff ;
         lang:lang-rus notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#interval_scale
+###  https://isotc211.geolexica.org/api/concepts#interval_scale
 :interval_scale rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15154,7 +15154,7 @@ skos:definition "set of topological primitives of higher topological dimension a
 
 
 
-###  https://isotc211.geolexica.org/ld/concepts#inverse_evaluation
+###  https://isotc211.geolexica.org/api/concepts#inverse_evaluation
 :inverse_evaluation rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15226,7 +15226,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-fra notes:NoteTransDiff .
 
-###  https://isotc211.geolexica.org/ld/concepts#isolated_node
+###  https://isotc211.geolexica.org/api/concepts#isolated_node
 :isolated_node rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15299,7 +15299,7 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#isomorphism
+###  https://isotc211.geolexica.org/api/concepts#isomorphism
 :isomorphism rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15373,7 +15373,7 @@ skos:definition "set of topological primitives of higher topological dimension a
         lang:lang-deu notes:DefnTransUnavail ;
         lang:lang-msa notes:DefnTransUnavail .
 
-###  https://isotc211.geolexica.org/ld/concepts#item
+###  https://isotc211.geolexica.org/api/concepts#item
 :item rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -15442,6 +15442,1910 @@ skos:definition "set of topological primitives of higher topological dimension a
                 lang:zhoRegistry ;
         lang:lang-deu notes:NoteTransUnavail ;
         lang:lang-msa notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#item_class
+:item_class rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info261;
+          geolexica:hasReview reviews:Review261;
+          geolexica:hasLDAPI ldapi:ldapi261-json ,
+                             ldapi:ldapi261-jsonld ,
+                             ldapi:ldapi261-rdfxml ,
+                             ldapi:ldapi261-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 261;
+          skos:notation 261;
+          rdfs:label "item class" ;
+
+  skos:definition "set of items with common properties"@en ;
+  skos:definition "مجموعة من البنود ذات خصائص مشتركة"@ar ;
+  skos:definition "Menge von Elementen mit gemeinsamen Eigenschaften"@de ;
+  skos:definition "joukko yksiköitä, joilla on yhteisiä ominaisuuksia"@fi ;
+  skos:definition "ensemble d&#39;éléments avec des propriétés communes"@fr ;
+  skos:definition "공통의 특성을 갖는 항목의 집합"@ko ;
+  skos:definition "zbiór pozycji mających wspólne właściwości"@pl ;
+  skos:definition "множество элементов с общими свойствами"@ru ;
+  skos:definition "conjunto de ítems con propiedades comunes"@es ;
+  skos:definition "uppsättning företeelser med gemensamma egenskaper"@sv ;
+  skos:definition "具有共同特性的数据项集合。"@zh ;
+  
+  skos:prefLabel "item class"@en ;
+  skos:prefLabel "فئة بنود"@ar ;
+  skos:prefLabel "Elementklasse"@de ;
+  skos:prefLabel "tietokohdeluokka"@fi ;
+  skos:altLabel "yksilöluokka"@fi ;
+  skos:prefLabel "classe d&#39;éléments"@fr ;
+  skos:prefLabel "항목 클래스"@ko ;
+  skos:prefLabel "klasa pozycji"@pl ;
+  skos:prefLabel "класс элементов"@ru ;
+  skos:prefLabel "clase de ítems"@es ;
+  skos:prefLabel "företeelseklass"@sv ;
+  skos:prefLabel "数据项类"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:NoteTransUnavail ;
+        lang:lang-rus notes:NoteTransDiff ;
+        lang:lang-swe notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#Julian_date
+:Julian_date rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info263;
+        #   geolexica:hasReview reviews:Review263;
+          geolexica:hasLDAPI ldapi:ldapi263-json ,
+                             ldapi:ldapi263-jsonld ,
+                             ldapi:ldapi263-rdfxml ,
+                             ldapi:ldapi263-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        # lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 263;
+          skos:notation 263;
+          rdfs:label "Julian date" ;
+
+  skos:definition "Julian day number followed by the decimal fraction of the day elapsed since the preceding noon"@en ;
+  skos:definition "رقم اليوم اليوليوسي يتبعه كسر عشري يمثل الجزء الذي انصرم من اليوم منذ منتصف نهار اليوم السابق"@ar ;
+  skos:definition "juliaaninen päivännumero lisättynä edellisestä keskipäivästä kuluneen päivän desimaaliosalla"@fi ;
+  skos:definition "numéro de jour du calendrier Julien suivi par la fraction décimale du jour écoulée depuis le midi passé"@fr ;
+  skos:definition "直前の正午からの経過を表す10進小数の日数を伴ったユリウス日数。"@ja ;
+  skos:definition "전날 정오 이후 경과한 날을 소수로 표현한 율리우스 일수"@ko ;
+  skos:definition "Nombor hari Julian diikuti oleh pecahan perpuluhan hari yang berlalu sejak tengah hari sebelumnya"@ms ;
+  skos:definition "juliański numer dnia, po którym podany jest ułamek dziesiętny dnia, jaki upłynął od poprzedniego południa"@pl ;
+  skos:definition "номер Юлианского дня, за которым следует десятичная доля дня, прошедшая  после предыдущего полудня"@ru ;
+  skos:definition "número de días julianos, seguido de la fracción decimal del día, transcurridos desde la luna precedente"@es ;
+  skos:definition "儒略日数加上从前一个平正午起已经消逝的该日的十进制小数。"@zh ;
+
+  skos:prefLabel "Julian date"@en ;
+  skos:prefLabel "تاريخ يوليوسي"@ar ;
+  skos:prefLabel "julianisches Datum"@de ;
+  skos:prefLabel "juliaaninen päivä"@fi ;
+  skos:prefLabel "date julienne"@fr ;
+  skos:prefLabel "ユリウス日"@ja ;
+  skos:prefLabel "율리우스날짜"@ko ;
+  skos:prefLabel "tarikh Julian"@ms ;
+  skos:prefLabel "data juliańska"@pl ;
+  skos:prefLabel "Юлианская  дата"@ru ;
+  skos:prefLabel "fecha juliana"@es ;
+  skos:prefLabel "儒略日期"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                # lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#Julian_day_number
+:Julian_day_number rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info264;
+        #   geolexica:hasReview reviews:Review264;
+          geolexica:hasLDAPI ldapi:ldapi264-json ,
+                             ldapi:ldapi264-jsonld ,
+                             ldapi:ldapi264-rdfxml ,
+                             ldapi:ldapi264-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 264;
+          skos:notation 264;
+          rdfs:label "Julian day number" ;
+
+  skos:definition "number of days elapsed since Greenwich mean noon on 1 January 4713 BC, Julian proleptic calendar"@en ;
+  skos:definition "عدد الأيام التي انقضت منذ وسط النهار بتوقيت غرينتش في اليوم الأول من شهر يناير سنة 4713 قبل الميلاد ، بالتقويم اليوليوسي التسبيقي"@ar ;
+  skos:definition "Greenwichin ajan mukaisesta keskipäivästä 1. tammikuuta 4713 e.Kr. kuluneiden kokonaisten päivien lukumäärä"@fi ;
+  skos:definition "nombre de jours écoulés depuis le midi de Greenwich du 1 janvier 4713 av. J.-C, selon le calendrier julien proleptique"@fr ;
+  skos:definition "ユリウス暦における紀元前4713年1月1日のグリニッジ標準時正午を原点として数えた日の数。"@ja ;
+  skos:definition "기원전 4713년 1월 1일 그린위치 평균 정오 이후 경과한 일수, 율리우스 예상 달력"@ko ;
+  skos:definition "liczba dni, które według kalendarza juliańskiego  upłynęły od południa mierzonego według czasu Greenwich w dniu 1 stycznia 4713 roku przed Chrystusem"@pl ;
+  skos:definition "число дней, прошедших после полудня по Гринвичскому среднему времени 1 января 4713 г. до Рождества Христова [новой эры], доюлианский [пролептический] календарь"@ru ;
+  skos:definition "número de días transcurridos desde el mediodía medio en Greenwich el 1 de enero de 4713 AC"@es ;
+  skos:definition "det antal dygn som gått sedan måndag 1 januari 4713 f.Kr. i den julianska kalendern, 12.00 UT (middag) vid Greenwichs horisont"@sv ;
+  skos:definition "约定儒略历从公元前4713年1月1日格林尼治平正午起计算的时间消逝的日数。"@zh ;
+  
+  skos:prefLabel "Julian day number"@en ;
+  skos:prefLabel "رقم اليوم اليوليوسي"@ar ;
+  skos:prefLabel "julianische Tageszahl"@de ;
+  skos:prefLabel "juliaaninen päivännumero"@fi ;
+  skos:prefLabel "numéro de jour Julien"@fr ;
+  skos:prefLabel "ユリウス日数"@ja ;
+  skos:prefLabel "율리우스 일수"@ko ;
+  skos:prefLabel "nombor hari Julian"@ms ;
+  skos:prefLabel "juliański numer dnia"@pl ;
+  skos:prefLabel "номер Юлианского  дня"@ru ;
+  skos:prefLabel "número del día juliano"@es ;
+  skos:prefLabel "julianskt datum, julianskt dagtal"@sv ;
+  skos:prefLabel "儒略日数"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail ;
+        lang:lang-msa notes:DefnTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#junction
+:junction rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info265;
+        #   geolexica:hasReview reviews:Review265;
+          geolexica:hasLDAPI ldapi:ldapi265-json ,
+                             ldapi:ldapi265-jsonld ,
+                             ldapi:ldapi265-rdfxml ,
+                             ldapi:ldapi265-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 265;
+          skos:notation 265;
+          rdfs:label "junction" ;
+
+  skos:definition "single topological node in a network with its associated collection of turns, incoming and outgoing links"@en ;
+  skos:definition "عقدة طوبولوجية مفردة في شبكة مع ما يرتبط بها من منعطفات ووصلات الربط الداخلة والخارجة"@ar ;
+  skos:definition "verkostossa oleva yksittäinen topologinen solmupiste ja siihen liittyvät käännökset, sisääntulo- ja poistumislinkit"@fi ;
+  skos:definition "noeud topologique simple dans un réseau avec sa collection associée de chemins, de liens d&#39;entrée et de sortie"@fr ;
+  skos:definition "진입 및 진출 링크와 회전의 관련 모음으로 구성된 네트워크상의 단일 위상 절점"@ko ;
+  skos:definition "node topologi tunggal dalam suatu rangkaian dengan kumpulan terkait bagi belokan, tautan masuk dan keluar"@ms ;
+  skos:definition "один из топологических узлов (транспортной] сети с соответствующей совокупностью поворотов, входящими и выходящими дугами"@ru ;
+  skos:definition "nodo topológico simple en una red con su colección asociada de giros, y enlaces entrantes y salientes"@es ;
+  skos:definition "(i nät) nod och de länkar som är kopplade till denna"@sv ;
+  skos:definition "网络中的单一拓扑结点以及与之相关联的转向、入口路段和出口路段的连接集合。"@zh ;
+
+  skos:prefLabel "junction"@en ;
+  skos:prefLabel "نقطة وصل"@ar ;
+  skos:prefLabel "Knotenpunkt"@de ;
+  skos:prefLabel "risteyssolmu"@fi ;
+  skos:prefLabel "jonction"@fr ;
+  skos:prefLabel "교차점"@ko ;
+  skos:prefLabel "persimpangan"@ms ;
+  skos:prefLabel "примыкание"@ru ;
+  skos:prefLabel "cruce"@es ;
+  skos:prefLabel "knutpunkt"@sv ;
+  skos:prefLabel "连接点"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-msa notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#language_identifier
+:language_identifier rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info266;
+          geolexica:hasReview reviews:Review266;
+          geolexica:hasLDAPI ldapi:ldapi266-json ,
+                             ldapi:ldapi266-jsonld ,
+                             ldapi:ldapi266-rdfxml ,
+                             ldapi:ldapi266-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        # lang:fin ,
+                        # lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ;
+                        # lang:zho ;
+          dcterms:identifier 266;
+          skos:notation 266;
+          rdfs:label "language identifier" ;
+
+  skos:definition "information in a terminological entry which indicates the name of a language"@en ;
+  skos:definition "معلومات في سجل المصطلحات تشير إلى اسم اللغة"@ar ;
+  skos:definition "언어 명칭을 가르키는 용어 입력내의 정보"@ko ;
+  skos:definition "информация в терминологической записи, которая указывает название языка"@ru ;
+  skos:definition "información de una entrada terminológica que indica el nombre del lenguaje"@es ;
+  skos:definition "information in a terminological entry which indicates the name of a language"@sv ;
+  
+  skos:prefLabel "language identifier"@en ;
+  skos:prefLabel "معرِّف لغة"@ar ;
+  skos:prefLabel "Sprachidentifikator"@de ;
+  skos:prefLabel "언어 식별자"@ko ;
+  skos:prefLabel "идентификатор языка"@ru ;
+  skos:prefLabel "identificador de lenguaje"@es ;
+  skos:prefLabel "language identifier"@sv ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                # lang:finRegistry ,
+                # lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ;
+                # lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#layer
+:layer rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info267;
+        #   geolexica:hasReview reviews:Review267;
+          geolexica:hasLDAPI ldapi:ldapi267-json ,
+                             ldapi:ldapi267-jsonld ,
+                             ldapi:ldapi267-rdfxml ,
+                             ldapi:ldapi267-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 267;
+          skos:notation 267;
+          rdfs:label "layer" ;
+
+  skos:definition "basic unit of geographic information that may be requested as a map from a server"@en ;
+  skos:definition "الوحدة الأساسية للمعلومات الجغرافية التي يمكن أن تطلب على شكل خارطة من جهاز حاسب خادم"@ar ;
+  skos:definition "grundlegende Einheit von Geoinformation, die als eigenständige Karte von einem Server abgefragt werden kann"@de ;
+  skos:definition "paikkatietoaineisto tai sen osa, joka voidaan pyytää palvelimelta karttana"@fi ;
+  skos:definition "unité de base d&#39;information géographique pouvant être requêtée d&#39;un serveur en tant que carte"@fr ;
+  skos:definition "서버에서 지도로 요청될 수 있는 지리 정보의 기본 단위"@ko ;
+  skos:definition "unit asas maklumat geografi yang boleh di bekalkan sebagai peta dari pelayan"@ms ;
+  skos:definition "podstawowa jednostka informacji geograficznej, jaka może być żądana z serwera w postaci mapy"@pl ;
+  skos:definition "основная единица географической информации, которая может быть получена в виде карты по запросу с сервера"@ru ;
+  skos:definition "unidad básica de información geográfica que puede ser solicitada como un mapa de un servidor"@es ;
+  skos:definition "sammanhållen mängd geografiska eller kartografiska data som representerar geografiska objekt tillhörande utvalda objekttyper, ibland med utvalda attributtyper eller attributvärden"@sv ;
+  skos:definition "地理信息的基本单元，可作为一幅地图从服务器端请求得到。"@zh ;
+  
+  skos:prefLabel "layer"@en ;
+  skos:prefLabel "طبقة"@ar ;
+  skos:prefLabel "Layer"@de ;
+  skos:prefLabel "karttataso"@fi ;
+  skos:prefLabel "couche"@fr ;
+  skos:prefLabel "레이어"@ko ;
+  skos:prefLabel "lapisan"@ms ;
+  skos:prefLabel "warstwa"@pl ;
+  skos:prefLabel "слой"@ru ;
+  skos:prefLabel "capa"@es ;
+  skos:prefLabel "skikt"@sv ;
+  skos:prefLabel "图层"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#lexical_language
+:lexical_language rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info268;
+          geolexica:hasReview reviews:Review268;
+          geolexica:hasLDAPI ldapi:ldapi268-json ,
+                             ldapi:ldapi268-jsonld ,
+                             ldapi:ldapi268-rdfxml ,
+                             ldapi:ldapi268-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 268;
+          skos:notation 268;
+          rdfs:label "lexical language" ;
+
+  skos:definition "language whose syntax is expressed in terms of symbols defined as character strings"@en ;
+  skos:definition "لغة يعبر عن تركيباتها في شكل رموز محدده بسلاسل حروف"@ar ;
+  skos:definition "kieli, jonka syntaksi on ilmaistu merkkijonoiksi määritellyillä symboleilla"@fi ;
+  skos:definition "langage dont la syntaxe est exprimée en termes de symboles définis comme des chaînes de caractères"@fr ;
+  skos:definition "문자열로 정의된 기호를 통해 표현되는 문법을 갖는 언어"@ko ;
+  skos:definition "язык, синтаксис которого выражен через обозначения, определяемые как последовательности знаков [текстовые строки]"@ru ;
+  skos:definition "lenguaje cuya sintaxis se expresa en términos de símbolos definidos como cadenas de caracteres"@es ;
+  skos:definition "språk vars syntax uttrycks med symboler definierade som textsträngar"@sv ;
+  skos:definition "用定义为字符串的符号表达语法的语言。"@zh ;
+  
+  skos:prefLabel "lexical language"@en ;
+  skos:prefLabel "لغة رمزية"@ar ;
+  skos:prefLabel "lexikalische Sprache"@de ;
+  skos:prefLabel "leksikaalinen kieli"@fi ;
+  skos:prefLabel "langage lexical"@fr ;
+  skos:prefLabel "어휘 언어"@ko ;
+  skos:prefLabel "лексический язык"@ru ;
+  skos:prefLabel "lenguaje léxico"@es ;
+  skos:prefLabel "lexikalt språk"@sv ;
+  skos:prefLabel "文字语言"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#life_span
+:life_span rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info269;
+        #   geolexica:hasReview reviews:Review269;
+          geolexica:hasLDAPI ldapi:ldapi269-json ,
+                             ldapi:ldapi269-jsonld ,
+                             ldapi:ldapi269-rdfxml ,
+                             ldapi:ldapi269-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        lang:pol ,
+                        lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 269;
+          skos:notation 269;
+          rdfs:label "life span" ;
+
+  skos:definition "period during which something exists"@en ;
+  skos:definition "المدة التي يظل فيها الشيء موجودا"@ar ;
+  skos:definition "ajanjakso, jona jokin on olemassa"@fi ;
+  skos:definition "période pendant laquelle quelque chose existe"@fr ;
+  skos:definition "物が存在し続けている期間。"@ja ;
+  skos:definition "어떤 대상이 존재하는 기간"@ko ;
+  skos:definition "tempoh atau jangka hayat di mana sesuatu wujud"@ms ;
+  skos:definition "okres, w którym coś istnieje"@pl ;
+  skos:definition "период, в течение которого что-либо  существует"@ru ;
+  skos:definition "período de existencia de algo"@es ;
+  skos:definition "en period när någonting existerar"@sv ;
+  skos:definition "事物存在的时段。"@zh ;
+  
+  skos:prefLabel "life span"@en ;
+  skos:prefLabel "مدى الحياة"@ar ;
+  skos:prefLabel "Lebenszeitintervall"@de ;
+  skos:prefLabel "kestoaika"@fi ;
+  skos:altLabel "elinkaari"@fi ;
+  skos:prefLabel "durée de vie"@fr ;
+  skos:prefLabel "存続期間"@ja ;
+  skos:prefLabel "수명"@ko ;
+  skos:prefLabel "jangka hayat"@ms ;
+  skos:prefLabel "czas życia"@pl ;
+  skos:prefLabel "продожительность существования"@ru ;
+  skos:prefLabel "periodo de vida"@es ;
+  skos:prefLabel "livslängd"@sv ;
+  skos:prefLabel "生存期"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail, notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff ;
+        lang:lang-msa notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#line_string
+:line_string rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info270;
+          geolexica:hasReview reviews:Review270;
+          geolexica:hasLDAPI ldapi:ldapi270-json ,
+                             ldapi:ldapi270-jsonld ,
+                             ldapi:ldapi270-rdfxml ,
+                             ldapi:ldapi270-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 270;
+          skos:notation 270;
+          rdfs:label "line string" ;
+
+  skos:definition "curve composed of straight-line segments"@en ;
+  skos:definition "منحنى من خطوط مستقيمة هي أجزاؤه التي يتكون منها"@ar ;
+  skos:definition "aus geraden Liniensegmenten zusammengesetzte Kurve"@de ;
+  skos:definition "yhtenäinen käyrä, joka koostuu suorista osaviivoista eli janoista"@fi ;
+  skos:definition "courbe composée de segments de lignes droites"@fr ;
+  skos:definition "직선 조각으로 구성된 곡선"@ko ;
+  skos:definition "кривая, состоящая из прямолинейных сегментов [отрезков прямой)"@ru ;
+  skos:definition "curva compuesta de segmentos rectilíneos"@es ;
+  skos:definition "linje bestående av sammanhängande räta linjer"@sv ;
+  skos:definition "由直线段组成的曲线。"@zh ;
+  
+  skos:prefLabel "line string"@en ;
+  skos:prefLabel "سلسلة خطوط"@ar ;
+  skos:prefLabel "Linienzug"@de ;
+  skos:prefLabel "murtoviiva"@fi ;
+  skos:prefLabel "polyligne"@fr ;
+  skos:prefLabel "선열"@ko ;
+  skos:prefLabel "ломаная"@ru ;
+  skos:prefLabel "cadena de líneas"@es ;
+  skos:prefLabel "öppen polygon, linjesegment"@sv ;
+  skos:prefLabel "线串"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry .
+
+###  https://isotc211.geolexica.org/api/concepts#linear_posit_system
+:linear_posit_system rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info271;
+          geolexica:hasReview reviews:Review271;
+          geolexica:hasLDAPI ldapi:ldapi271-json ,
+                             ldapi:ldapi271-jsonld ,
+                             ldapi:ldapi271-rdfxml ,
+                             ldapi:ldapi271-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 271;
+          skos:notation 271;
+          rdfs:label "linear positioning system" ;
+
+  skos:definition "positioning system that measures distance from a reference point along a route"@en ;
+  skos:definition "نظام تحديد أماكن يقيس المسافة من نقطة مرجعية  على مسار معين"@ar ;
+  skos:definition "paikannusjärjestelmä, jossa mitataan etäisyys vertauspisteestä reittiä pitkin"@fi ;
+  skos:definition "système de positionnement qui mesure la distance à un point de référence le long d&#39;un itinéraire"@fr ;
+  skos:definition "참조 점으로부터 경로를 따라 거리를 측정하는 측위 시스템"@ko ;
+  skos:definition "система позиционирования, которая определяет расстояние от точки отсчета вдоль маршрута"@ru ;
+  skos:definition "sistema de posicionamiento que mide la distancia desde un punto de referencia a lo largo de una ruta"@es ;
+  skos:definition "koordinatsystem där en position anges som ett avstånd från en referenspunkt längs en linje"@sv ;
+  skos:definition "从参照点开始沿路径测量距离的定位系统。"@zh ;
+  
+  skos:prefLabel "linear positioning system"@en ;
+  skos:prefLabel "نظام طولي لتحديد الأماكن"@ar ;
+  skos:prefLabel "lineares Positionierungssystem"@de ;
+  skos:prefLabel "lineaarinen paikannusjärjestelmä"@fi ;
+  skos:prefLabel "système de positionnement linéaire"@fr ;
+  skos:prefLabel "선형 측위 시스템"@ko ;
+  skos:prefLabel "линейная система позиционирования"@ru ;
+  skos:prefLabel "sistema de posicionamiento lineal"@es ;
+  skos:prefLabel "linjärt referenssystem"@sv ;
+  skos:prefLabel "线性定位系统"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail, notes:ExTransUnavail ;
+        lang:lang-swe notes:ExTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#linear_reference_system
+:linear_reference_system rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info272;
+          geolexica:hasReview reviews:Review272;
+          geolexica:hasLDAPI ldapi:ldapi272-json ,
+                             ldapi:ldapi272-jsonld ,
+                             ldapi:ldapi272-rdfxml ,
+                             ldapi:ldapi272-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        # lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 272;
+          skos:notation 272;
+          rdfs:label "linear reference system" ;
+
+  skos:definition "reference system that identifies a location by reference to a segment of a linear geographic feature and distance along that segment from a given point"@en ;
+  skos:definition "نظام مرجعي يحدد الموقع بالرجوع إلى جزء من معلم جغرافي والمسافة الممتدة بطول ذلك الجزء ابتداءً من نقطة معطاه"@ar ;
+  skos:definition "vertausjärjestelmä, jossa sijainti yksilöidään käyttämällä viittausta lineaarisen paikkatietokohteen johonkin segmenttiin ja tietystä pisteestä tätä segmenttiä pitkin mitattua etäisyyttä"@fi ;
+  skos:definition "système de référence qui identifie une position par référence à un segment d&#39;une entité géographique linéaire et d&#39;une distance le long de ce segment à partir d&#39;un point donné"@fr ;
+  skos:definition "선형 지리 피처의 조각과 그 조각에 위치한 점까지의 거리를 통해 위치를 식별하는 참조 체계"@ko ;
+  skos:definition "координатная система отсчета, в которой местоположение определяется указанием на отрезок линейного пространственного   объекта и расстоянием до заданной точки, измеренным вдоль этого отрезка"@ru ;
+  skos:definition "sistema de referencia que identifica una localización mediante la referencia a un segmento de un objeto geográfico lineal y una distancia a lo largo de ese segmento desde un punto dado"@es ;
+  skos:definition "通过参照线性地理要素的路段及沿该路段到给定点距离进行定位的参照系。"@zh ;
+  
+  skos:prefLabel "linear reference system"@en ;
+  skos:prefLabel "نظام مرجعي طولي"@ar ;
+  skos:prefLabel "lineares Referenzsystem"@de ;
+  skos:prefLabel "lineaarinen vertausjärjestelmä"@fi ;
+  skos:prefLabel "système de référence (référentiel) linéaire"@fr ;
+  skos:prefLabel "선형 참조 체계"@ko ;
+  skos:prefLabel "линейная система отсчета"@ru ;
+  skos:prefLabel "sistema de referencia lineal"@es ;
+  skos:prefLabel "线性参照系（静态）"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                # lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail, notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#linear_referencing_system
+:linear_referencing_system rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info273;
+          geolexica:hasReview reviews:Review273;
+          geolexica:hasLDAPI ldapi:ldapi273-json ,
+                             ldapi:ldapi273-jsonld ,
+                             ldapi:ldapi273-rdfxml ,
+                             ldapi:ldapi273-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 273;
+          skos:notation 273;
+          rdfs:label "linear referencing system" ;
+
+  skos:definition "positioning system that measures distance from a reference point along a route (feature)"@en ;
+  skos:definition "نظام تحديد أماكن يقيس المسافة انطلاقا من نقطة مرجعية تقع على طولمسار (معلم )"@ar ;
+  skos:definition "Menge linearer Referenzierungsverfahren und Richtlinien, Datensätze und Prozeduren für deren Implementierung"@de ;
+  skos:definition "paikannusjärjestelmä, jossa mitataan etäisyys vertauspisteestä reittiä (kohdetta) pitkin"@fi ;
+  skos:definition "système de positionnement qui mesure la distance à un point de référence le long d&#39;un itinéraire (entité)"@fr ;
+  skos:definition "참조 점으로부터 경로를 따라 거리를 측정하는 측위 시스템"@ko ;
+  skos:definition "система позиционирования, которая определяет расстояние от точки отсчета вдоль маршрута (линейного пространственного объекта)"@ru ;
+  skos:definition "sistema de posicionamiento que mide la distancia desde un punto de referencia a lo largo de una ruta (objeto geográfico)"@es ;
+  skos:definition "koordinatsystem där en position anges som ett avstånd från en referenspunkt längs en linje"@sv ;
+  skos:definition "从参照点开始沿路径（要素）量测距离的定位系统。"@zh ;
+  
+  skos:prefLabel "linear referencing system"@en ;
+  skos:prefLabel "نظام إرجاع طولي"@ar ;
+  skos:prefLabel "lineares Referenzierungssystem"@de ;
+  skos:prefLabel "lineaarinen vertausjärjestelmä"@fi ;
+  skos:prefLabel "système de référencement linéaire"@fr ;
+  skos:prefLabel "선형 참조 시스템"@ko ;
+  skos:prefLabel "линейная система позиционирования"@ru ;
+  skos:prefLabel "sistema de referencia lineal"@es ;
+  skos:prefLabel "linjärt referenssystem"@sv ;
+  skos:prefLabel "线性参考系（动态）"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#link
+:link rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info274;
+        #   geolexica:hasReview reviews:Review274;
+          geolexica:hasLDAPI ldapi:ldapi274-json ,
+                             ldapi:ldapi274-jsonld ,
+                             ldapi:ldapi274-rdfxml ,
+                             ldapi:ldapi274-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 274;
+          skos:notation 274;
+          rdfs:label "link" ;
+
+  skos:definition "directed topological connection between two nodes (junctions), consisting of an edge and a direction"@en ;
+  skos:definition "وصلة ربط طوبولوجية موجهة بين عقدتين (نقطتي وصل) ، تشتمل على حافة واتجاه"@ar ;
+  skos:definition "kahden solmupisteen välinen suunnattu topologinen yhteys, joka muodostuu särmästä ja sen suunnasta"@fi ;
+  skos:definition "connexion topologique orientée entre deux nœuds (jonctions), consistant en une arête et une direction"@fr ;
+  skos:definition "변과 방향으로 구성되어 있는, 두 절점(교차점) 간의 방향성 있는 위상적 연결"@ko ;
+  skos:definition "hubungan topologi terarah antara dua nod (persimpangan), yang terdiri daripada pinggir dan arah"@ms ;
+  skos:definition "ориентированное топологическое соединение двух узлов (примыкание), содержащее ребро графа и направление"@ru ;
+  skos:definition "conexión topológica dirigida entre dos nodos (cruces) que consta de un arco y una dirección"@es ;
+  skos:definition "(i nät) endimensionellt topologiskt element med definierad riktning och som begränsas av en eller två noder"@sv ;
+  skos:definition "两个结点（连接点）之间有向的拓扑连接，由一条边和一个方向组成。"@zh ;
+  
+  skos:prefLabel "link"@en ;
+  skos:prefLabel "وصلة"@ar ;
+  skos:prefLabel "Link"@de ;
+  skos:prefLabel "linkki"@fi ;
+  skos:prefLabel "lien"@fr ;
+  skos:prefLabel "링크"@ko ;
+  skos:prefLabel "link"@ms ;
+  skos:prefLabel "дуга"@ru ;
+  skos:prefLabel "enlace"@es ;
+  skos:prefLabel "länk"@sv ;
+  skos:prefLabel "有向路段"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail, notes:NoteTransUnavail ;
+        lang:lang-msa notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff ;
+        lang:lang-swe notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#link_position
+:link_position rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info275;
+        #   geolexica:hasReview reviews:Review275;
+          geolexica:hasLDAPI ldapi:ldapi275-json ,
+                             ldapi:ldapi275-jsonld ,
+                             ldapi:ldapi275-rdfxml ,
+                             ldapi:ldapi275-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 275;
+          skos:notation 275;
+          rdfs:label "link position" ;
+
+  skos:definition "position within a network on a link defined by some strictly monotonic measure associated with that link"@en ;
+  skos:definition "موقع ضمن شبكة وعلى وصلة محددة بقياس شديد الرتابة يرتبط بتلك الوصلة"@ar ;
+  skos:definition "verkoston suunnatulla linkillä oleva sijaintipiste, joka on määritelty jonkin kyseiseen linkkiin liittyvän, järjestyksen säilyttävän suureen avulla"@fi ;
+  skos:definition "position au sein d&#39;un réseau sur un lien, définie par une mesure strictement monotone associée à ce lien"@fr ;
+  skos:definition "해당 링크에 대해 엄격한 단일 측정을 통해 정의된 링크상의 네트워크 내 위치"@ko ;
+  skos:definition "положение точки на дуге  в сети, определяемое строго монотонной мерой, ассоциированной с дугой"@ru ;
+  skos:definition "posición en una red sobre un enlace definida por alguna medida estrictamente monótona asociada a este enlace"@es ;
+  skos:definition "länks position"@sv ;
+  skos:definition "在网络中，与有向路段相关的某种严格单调的度量方法定义的一个有向路段上的位置。"@zh ;
+  
+  skos:prefLabel "link position"@en ;
+  skos:prefLabel "موقع وصلة"@ar ;
+  skos:prefLabel "Positionslink"@de ;
+  skos:prefLabel "linkkisijainti"@fi ;
+  skos:altLabel "sijainti linkillä"@fi ;
+  skos:prefLabel "position sur un lien"@fr ;
+  skos:prefLabel "링크 위치"@ko ;
+  skos:prefLabel "точка дуги"@ru ;
+  skos:prefLabel "posición de un enlace"@es ;
+  skos:prefLabel "länkposition"@sv ;
+  skos:prefLabel "路段位置"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail, notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff ;
+        lang:lang-swe notes:NoteTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#location
+:location rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info276;
+          geolexica:hasReview reviews:Review276;
+          geolexica:hasLDAPI ldapi:ldapi276-json ,
+                             ldapi:ldapi276-jsonld ,
+                             ldapi:ldapi276-rdfxml ,
+                             ldapi:ldapi276-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 276;
+          skos:notation 276;
+          rdfs:label "location" ;
+
+  skos:definition "identifiable geographic place"@en ;
+  skos:definition "مكان جغرافي يمكن التعرف عليه"@ar ;
+  skos:definition "identifizierbare geographische Stelle"@de ;
+  skos:definition "paikka, jossa jokin sijaitsee"@fi ;
+  skos:definition "lieu géographique identifiable"@fr ;
+  skos:definition "識別可能な地理的場所。"@ja ;
+  skos:definition "식별 가능한 지리적 장소"@ko ;
+  skos:definition "опознаваемое географическое место"@ru ;
+  skos:definition "lugar geográfico identificable"@es ;
+  skos:definition "identifierbar plats"@sv ;
+  skos:definition "地理上可识别的地方。"@zh ;
+  
+  skos:prefLabel "location"@en ;
+  skos:prefLabel "موقع"@ar ;
+  skos:prefLabel "Ort"@de ;
+  skos:prefLabel "sijainti"@fi ;
+  skos:prefLabel "localisation"@fr ;
+  skos:prefLabel "場所"@ja ;
+  skos:prefLabel "위치"@ko ;
+  skos:prefLabel "местоположение"@ru ;
+  skos:prefLabel "localización"@es ;
+  skos:prefLabel "läge"@sv ;
+  skos:prefLabel "地点"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:ExTransUnavail ;
+        lang:lang-swe notes:ExTransUnavail .
+
+
+###  https://isotc211.geolexica.org/api/concepts#location_based_service
+:location_based_service rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info278;
+        #   geolexica:hasReview reviews:Review278;
+          geolexica:hasLDAPI ldapi:ldapi278-json ,
+                             ldapi:ldapi278-jsonld ,
+                             ldapi:ldapi278-rdfxml ,
+                             ldapi:ldapi278-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 278;
+          skos:notation 278;
+          rdfs:label "location based service" ;
+
+  skos:definition "service whose return or other property is dependent on the location of the client requesting the service or of some other thing, object or person"@en ;
+  skos:definition "خدمة يعتمد عائدها أو خصائصها الأخرى على موقع العميل  طالب الخدمة أو موقع شيء أو كائن أو شخص آخر"@ar ;
+  skos:definition "palvelu, jonka palaute tai muu ominaisuus riippuu palvelulle pyynnön esittävän asiakassovelluksen tai jonkin muun asian, objektin tai henkilön sijainnista"@fi ;
+  skos:definition "service dont la réponse (ou autre propriété) dépend de la localisation du client (ou d&#39;autre chose, objet ou personne) demandant le service"@fr ;
+  skos:definition "서비스를 요구하는 클라이언트, 객체, 사람 등의 위치에 따라 서비스의 응답이나 기타 특성이 결정되는 서비스"@ko ;
+  skos:definition "сервис, который  дает ответ на запрос клиента, либо другого предмета, объекта или лица, о его местоположении и других  обстоятельствах, зависимых от его местоположения"@ru ;
+  skos:definition "servicio cuya respuesta o alguna otra propiedad depende de la localización del cliente que requiere el servicio o de la localización de cualquier otra cosa, persona u objeto"@es ;
+  skos:definition "positionsbaserad tjänst"@sv ;
+  skos:definition "返回的服务或其他属性与请求服务的客户位置或者其他事物、对象或个人的位置相关。"@zh ;
+  
+  skos:prefLabel "location based service"@en ;
+  skos:prefLabel "الخدمة المبنية على الموقع"@ar ;
+  skos:prefLabel "Location Based Service"@de ;
+  skos:prefLabel "paikannukseen perustuva palvelu"@fi ;
+  skos:altLabel "paikannukseen perustuva palvelu"@fi ;
+  skos:prefLabel "service basé sur la localisation"@fr ;
+  skos:prefLabel "위치 기반 서비스"@ko ;
+  skos:prefLabel "сервис, основанный на местоположении"@ru ;
+  skos:prefLabel "servicio basado en la localización"@es ;
+  skos:prefLabel "positionsbaserad tjänst"@sv ;
+  skos:prefLabel "基于位置的服务"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#location_dependent_service
+:location_dependent_service rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info279;
+        #   geolexica:hasReview reviews:Review279;
+          geolexica:hasLDAPI ldapi:ldapi279-json ,
+                             ldapi:ldapi279-jsonld ,
+                             ldapi:ldapi279-rdfxml ,
+                             ldapi:ldapi279-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 279;
+          skos:notation 279;
+          rdfs:label "location dependent service" ;
+
+  skos:definition "service whose availability is dependent upon the location of the client"@en ;
+  skos:definition "خدمة تعتمد إمكانية تقديمها على مكان وجود العميل"@ar ;
+  skos:definition "palvelu, jonka saatavuus riippuu asiakassovelluksen sijainnista"@fi ;
+  skos:definition "service dont la disponibilité dépend de la localisation du client"@fr ;
+  skos:definition "클라이언트 위치에 따라 서비스의 활용 여부가 결정되는 서비스"@ko ;
+  skos:definition "сервис, наличие которого зависит от местоположения клиента"@ru ;
+  skos:definition "servicio cuya disponibilidad depende de la localización del cliente"@es ;
+  skos:definition "tjänst som endast är tillgänglig från en viss position eller ett visst område"@sv ;
+  skos:definition "有效性依赖于客户的位置的服务。"@zh ;
+  
+  skos:prefLabel "location dependent service"@en ;
+  skos:prefLabel "الخدمة المعتمدة على الموقع"@ar ;
+  skos:prefLabel "Location Dependent Service"@de ;
+  skos:prefLabel "paikannuksesta riippuva palvelu"@fi ;
+  skos:prefLabel "service dépendant de la localisation"@fr ;
+  skos:prefLabel "위치 종속 서비스"@ko ;
+  skos:prefLabel "сервис, зависящий от местоположения"@ru ;
+  skos:prefLabel "servicio dependiente de la localización"@es ;
+  skos:prefLabel "positionsberoende tjänst"@sv ;
+  skos:prefLabel "位置受限的服务"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#main_road_rule
+:main_road_rule rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+          skos:inScheme geolexica:GeolexicaConceptScheme ;
+          geolexica:hasInfo info:Info280;
+        #   geolexica:hasReview reviews:Review280;
+          geolexica:hasLDAPI ldapi:ldapi280-json ,
+                             ldapi:ldapi280-jsonld ,
+                             ldapi:ldapi280-rdfxml ,
+                             ldapi:ldapi280-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                        # lang:dan ,
+                        lang:deu ,
+                        lang:eng ,
+                        lang:fin ,
+                        lang:fra ,
+                        lang:kor ,
+                        # lang:nld ,
+                        # lang:pol ,
+                        # lang:jpn ,
+                        # lang:msa ,
+                        lang:rus ,
+                        lang:spa ,
+                        lang:swe ,
+                        lang:zho ;
+          dcterms:identifier 280;
+          skos:notation 280;
+          rdfs:label "main-road rule" ;
+
+  skos:definition "set of criteria used at a turn in lieu of a route instruction; default instruction used at a node"@en ;
+  skos:definition "مجموعة معايير تستخدم عند منحنى بديلا من إرشادات الطريق ؛ إرشادات افتراضية تستخدم عند عقدة أو مفترق"@ar ;
+  skos:definition "kriteeristö, jota käytetään käännöksessä reittiohjeistuksen sijasta; solmupisteessä käytettävä oletusohjeistus"@fi ;
+  skos:definition "ensemble de critères utilisés à une intersection comme instruction d&#39;itinéraire; instruction par défaut utilisée à un nœud"@fr ;
+  skos:definition "경로 지시 대신에 차량의 회전에 사용되는 기준들의 집합; 절점에 사용된 기본지시"@ko ;
+  skos:definition "набор критериев, используемый при прохождении поворота взамен путевой инструкции;  инструкция, применяемая в узле по умолчанию+I927"@ru ;
+  skos:definition "conjunto de criterios usados en un giro en lugar de una instrucción de ruta; instrucción por defecto usada en un nodo"@es ;
+  skos:definition "kriterier som gäller i en sväng i stället för ruttinstruktionen; förutbestämd instruktion i en nod"@sv ;
+  skos:definition "在转向处采用的路径指令准则；在结点处采用的缺省指令。"@zh ;
+  
+  skos:prefLabel "main-road rule"@en ;
+  skos:prefLabel "قاعدة الطريق الرئيسي"@ar ;
+  skos:prefLabel "Hauptstraßenregel"@de ;
+  skos:prefLabel "kulkemisen pääsääntö"@fi ;
+  skos:prefLabel "règle de routage vers route principale"@fr ;
+  skos:prefLabel "주요 도로 규칙"@ko ;
+  skos:prefLabel "правило главной дороги"@ru ;
+  skos:prefLabel "regla de la vía principal"@es ;
+  skos:prefLabel "huvudvägval"@sv ;
+  skos:prefLabel "主路规则"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+        lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#maneuver_manœuvre
+:maneuver_manœuvre rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info281;
+        #   geolexica:hasReview reviews:Review281;
+        geolexica:hasLDAPI ldapi:ldapi281-json ,
+                        ldapi:ldapi281-jsonld ,
+                        ldapi:ldapi281-rdfxml ,
+                        ldapi:ldapi281-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                # lang:nld ,
+                # lang:pol ,
+                # lang:jpn ,
+                # lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 281;
+        skos:notation 281;
+        rdfs:label "maneuver, manœuvre" ;
+
+        skos:definition "collection of related links and turns used in a route in combination"@en ;
+        skos:definition "مجموعة من وصلات الربط والمنحنيات ذات العلاقة تستخدم مجتمعة في مسار"@ar ;
+        skos:definition "kokoelma toisiinsa liittyviä linkkejä ja käännöksiä, joiden yhdistelmää käytetään reitillä"@fi ;
+        skos:definition "collection combinée de routes et intersections utilisée dans un itinéraire"@fr ;
+        skos:definition "경로의 조합에 사용된 관련 링크와 회전의 모음"@ko ;
+        skos:definition "совокупность связанных между собой дуг и поворотов,  совместно используемых  в маршруте"@ru ;
+        skos:definition "colección de enlaces y giros relacionados usados en combinación en una ruta"@es ;
+        skos:definition "sekvens av länkar och svängar som kombineras för att använda i en ruttinstruktion"@sv ;
+        skos:definition "在组合路径中所使用的有关有向路段和转向的集合。"@zh ;
+        
+        skos:prefLabel "maneuver,manœuvre"@en ;
+        skos:prefLabel "مناورة"@ar ;
+        skos:prefLabel "Manövrieren"@de ;
+        skos:prefLabel "manööveri"@fi ;
+        skos:prefLabel "manœuvre"@fr ;
+        skos:prefLabel "기동"@ko ;
+        skos:prefLabel "маневр"@ru ;
+        skos:prefLabel "maniobra"@es ;
+        skos:prefLabel "manöver"@sv ;
+        skos:prefLabel "行进策略"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        geolexica:note "Note to entry: Maneuvers are used to cluster turns into convenient and legal combinations. They may be as simple as a single turn, a combination of quick turns (\"jogs\" in the American mid-west consisting of a turn followed immediately by a turn in the opposite direction) or very complex combinations consisting of entry, exit, and connecting roadways (\"magic roundabouts\" in the UK)."@en ;
+        geolexica:note "ملاحظة: تستخدم المناورات لتجميع المنعطفات في شكل مجموعات مؤتلفة من المنعطفات المريحة والقانونية. ويمكن للمنعطفات أن تكون بسيطة جدا بحيث لا تزيد عن منعطف واحد أو مجموعة منعطفات سريعة (\"المنعطفات الحادة\" في الغرب الأوسط الأمريكي تتكون من منعطف يليه مباشرة منعطف في الاتجاه المضاد) أو مجموعات مؤتلفة شديدة التعقيد تتكون من مدخل , ومخرج وطرق مرور موصلة (\"الطرق الدائرية السحرية\" بالمملكة المتحدة)."@ar ;
+        geolexica:note "HUOM.: Manöövereillä käännökset liitetään toisiinsa sopiviksi ja laillisiksi yhdistelmiksi. Manööveri voi olla yksinkertainen, esimerkiksi vain yhdestä käännöksestä koostuva, tai yhdistelmä nopeita käännöksiä (Yhdysvaltojen keskilännessä käännökseen ja sitä välittömästi seuraavaan vastakkaissuuntaiseen käännökseen viitataan sanalla jog) tai erittäin monimutkainen yhdistelmä, joka koostuu sisääntulo- ja poistumisteistä ja niitä yhdistävistä ajoteistä (Isossa-Britanniassa \"magic roundabout\")."@fi ;
+        geolexica:note "비고: 기동은 편리하고 정당한 조합으로 회전을 군집화하는 데 사용된다. 이는 단일 회전과 빠른 회전들의 조합(회전하고 즉시 반대 방향으로 회전하는 미국 중서부에서는 \"jogs\")처럼 단순할 수도 있고, 혹은 입구, 출구 및 연결 도로(영국의\"magicroundabouts\")로 구성되는 매우 복잡한 조합일 수 있다. "@ko ;
+        geolexica:note "Примечание: Маневры используют для сборки поворотов в удобные и разрешенные правилами комбинации. Они могут быть так просты, как единственный поворот; могут быть комбинацией быстрых поворотов (так называемых «jogs» - жаргонное слово, обозначающее на Американском среднем западе поворот, непосредственно за которым следует поворот в противоположную сторону) или представлять собой очень сложную комбинацию, состоящую из въездов, съездов и соединительных дорожных полос (называемых в Великобритании «magic roundabouts» -«магические объездные пути»)"@ru ;
+        geolexica:note "Nota: Las maniobras se utilizan para agrupar giros en una combinación legal y conveniente. Pueden ser tan simples como un giro simple, una combinación de giros cortos (\"jogs\", quiebros, en el medio oeste americano, consistente en un giro seguido inmediatamente de otro giro en dirección opuesta) o en una combinación muy compleja de entradas, salidas y caminos de conexión (\"magic roundabouts\", rotondas mágicas, en el Reino Unido)."@es ;
+        geolexica:note "注： 行进策略用于将多个转向分解为方便的合法组合。它们可以简单为只是一个单一转向或是快速转向组合（在美国中西部\"jogs”由一个转向紧跟一个反方向转向组成），也可能是由入口、出口和连接车道构成的非常复杂的组合（在英国称为\"magic roundabouts\")。"@zh ;
+
+        lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#map
+:map rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info282;
+        #   geolexica:hasReview reviews:Review282;
+        geolexica:hasLDAPI ldapi:ldapi282-json ,
+                        ldapi:ldapi282-jsonld ,
+                        ldapi:ldapi282-rdfxml ,
+                        ldapi:ldapi282-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                # lang:nld ,
+                lang:pol ,
+                # lang:jpn ,
+                lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 282;
+        skos:notation 282;
+        rdfs:label "map" ;
+
+        skos:definition "portrayal of geographic information as a digital image file suitable for display on a computer screen"@en ;
+        skos:definition "تمثيل للمعلومات الجغرافية في شكل ملف رقمي للصور يصلح للعرض على شاشة كمبيوتر"@ar ;
+        skos:definition "Darstellung von Geoinformation als digitale Bilddatei zur Anzeige auf einem Computerbildschirm"@de ;
+        skos:definition "paikkatiedon esittäminen tietokoneen ruudulla näytettävänä kuvatiedostona"@fi ;
+        skos:definition "présentation de l&#39;information géographique sous forme de fichier d&#39;image numérique visualisable sur un écran d&#39;ordinateur"@fr ;
+        skos:definition "지리 정보를 컴퓨터 화면에 표시하기 적합한 수치 영상 파일로 묘화한 것"@ko ;
+        skos:definition "dokumen saintifik bercetak atau berdigit yang mengandungi sebahagian atau keseluruhan permukaan bumi berskala dalam bentuk grafik atau fotografi"@ms ;
+        skos:definition "prezentacja informacji geograficznej w postaci pliku obrazu cyfrowego nadającego się do wyświetlenia na ekranie komputera"@pl ;
+        skos:definition "графическое представление географической информации в виде файла в цифровом графическом формате, пригодного для отображения на экране компьютера"@ru ;
+        skos:definition "representación de información geográfica como un fichero de imagen digital apropiado para mostrarse en una pantalla de ordenador"@es ;
+        skos:definition "tvådimensionell, förminskad, redigerad avbildning av en del av jordens eller annan planets yta i bestämd skala och projektion"@sv ;
+        skos:definition "适合在计算机屏幕上显示的数字图像文件的地理信息的图示表达。"@zh ;
+        
+        skos:prefLabel "map"@en ;
+        skos:prefLabel "خارطة"@ar ;
+        skos:prefLabel "Karte"@de ;
+        skos:prefLabel "esittää karttana"@fi ;
+        skos:prefLabel "carte"@fr ;
+        skos:prefLabel "지도"@ko ;
+        skos:prefLabel "peta"@ms ;
+        skos:prefLabel "mapa"@pl ;
+        skos:prefLabel "(электронная) карта"@ru ;
+        skos:prefLabel "mapa"@es ;
+        skos:prefLabel "karta"@sv ;
+        skos:prefLabel "地图"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        # lang:lang-eng note: " "@en ;
+        # lang:lang-ara note: " "@ar ;
+        # lang:lang-fin note: " "@fi ;
+        # lang:lang-kor note: " "@ko ;
+        # lang:lang-rus note: " "@ru ;
+        # lang:lang-spa note: " "@es ;
+        # lang:lang-zho note: " "@zh ;
+        
+        # lang:lang-deu notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        # lang:lang-swe notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#mean_sea_level
+:mean_sea_level rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info284;
+          geolexica:hasReview reviews:Review284;
+        geolexica:hasLDAPI ldapi:ldapi284-json ,
+                        ldapi:ldapi284-jsonld ,
+                        ldapi:ldapi284-rdfxml ,
+                        ldapi:ldapi284-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                lang:nld ,
+                lang:pol ,
+                # lang:jpn ,
+                lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 284;
+        skos:notation 284;
+        rdfs:label "mean sea level" ;
+
+        skos:definition "average level of the surface of the sea over all stages of tide and seasonal variations"@en ;
+        skos:definition "المستوى المتوسط لسطح البحر خلال جميع مراحل المد والجزر والاختلافات الموسمية"@ar ;
+        skos:definition "mittlere Meereshöhe, gemittelt über die Gezeitenstufen und saisonalen Schwankungen"@de ;
+        skos:definition "merenpinnan keskimääräinen taso, jossa on huomioitu vuorovesivaiheet ja vuodenaikavaihtelut"@fi ;
+        skos:definition "niveau moyen de la surface de la mer après avoir éliminé les perturbations liées aux marées et aux variations saisonnières"@fr ;
+        skos:definition "모든 단계의 조수위와 계절 변화에 대한 해수면의 평균 높이"@ko ;
+        skos:definition "Purata aras ketinggian permukaan laut, iaitu purata kesemua aras pasang surut bagi kawasan tertentu"@ms ;
+        skos:definition "gemiddeld niveau van het oppervlak van de zee over alle getijfasen en seizoensgebonden variaties"@nl ;
+        skos:definition "średni poziom powierzchni morza z uwzględnieniem pływów i zmian sezonowych"@pl ;
+        skos:definition "средний уровень морской поверхности для всех стадий прилива"@ru ;
+        skos:definition "nivel medio de la superficie del mar sobre todos los periodos de marea y variaciones estacionales"@es ;
+        skos:definition "genomsnittligt värde av havets nivå, mätt under en lång period"@sv ;
+        skos:definition "遍历潮汐和季节变化的所有阶段海面的平均值。"@zh ;
+        
+        skos:prefLabel "mean sea level"@en ;
+        skos:prefLabel "متوسط منسوب سطح البحر"@ar ;
+        skos:prefLabel "mittlere Meereshöhe"@de ;
+        skos:prefLabel "keskimerenpinta"@fi ;
+        skos:prefLabel "niveau moyen des mers"@fr ;
+        skos:prefLabel "평균 해수면"@ko ;
+        skos:prefLabel "min aras laut"@ms ;
+        skos:prefLabel "gemiddeld zeeniveau"@nl ;
+        skos:prefLabel "średni poziom morza"@pl ;
+        skos:prefLabel "средний уровень моря"@ru ;
+        skos:prefLabel "nivel medio del mar"@es ;
+        skos:prefLabel "medelvattenstånd"@sv ;
+        skos:prefLabel "平均海平面"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        geolexica:note "Note to entry: Mean sea level in a local context normally means mean sea level for the region calculated from observations at one or more points over a given period of time. Mean sea level in a global context differs from a global geoid by not more than 2 m. "@en ;
+        geolexica:note "ملاحظة: متوسط منسوب سطح البحر, إذا نظر إليه في سياق محلي , يعني عادة متوسط منسوب سطح البحر بالنسبة للمنطقة بعد حسابه من خلال عمليات رصد نفذت عند نقطة واحدة أو أكثر على امتداد فترة زمنية معينة. أما إذا نظر إليه في سياق عالمي فإنه يختلف عن الجويد العالمي بما لا يزيد عن مترين. "@ar ;
+        geolexica:note "HUOM.: Paikallisesti tarkasteltuna keskimerenpinta tarkoittaa tavallisesti alueen keskimerenpintaa, joka lasketaan yhdestä tai useammasta pisteestä tiettynä ajanjaksona. Maailmanlaajuisesti tarkasteltuna keskimerenpinta poikkeaa globaalista geoidista korkeintaan kaksi metriä. "@fi ;
+        geolexica:note "비고: 통상, 지역적 의미로 평균 해수면은, 하나 이상의 지점을 일정한 기간 동안 관측한 그 영역의 평균 해수면을 말한다. 전지구적인 의미로 평균 해수면은 전지구적인 지오이드와 2m 이하의 차로 받아들여진다. "@ko ;
+        geolexica:note "OPMERKING: Gemiddeld zeeniveau in de lokale context betekent meestal het gemiddeld zeeniveau voor die regio berekend uit waarnemingen op één of meer punten over een gegeven tijdvak. Gemiddeld zeeniveau in de globale context verschilt nooit meer dan 2 meter van de globale geoïde. "@nl ;
+        geolexica:note "UWAGA: Średni poziom morza w sensie lokalnym na ogół oznacza średni poziom morza w danym regionie wyznaczany na podstawie obserwacji co najmniej jednego punktu przez określony czas. W sensie globalnym średni poziom morza różni się od geoidy nie więcej niż o 2 m."@pl ;
+        geolexica:note "Примечание: Средний уровень моря обычно означает средний уровень для региона, определенный по измерениям на одном или нескольких уровенных постах в заданный период времени"@ru ;
+        geolexica:note "Nota: Nivel del mar en un contexto local normalmente significa el nivel medio del mar en la región, calculado a partir de las observaciones en uno o más puntos en un periodo de tiempo dado. El nivel medio del mar en un contexto global difiere del geoide pero no más de 2 m."@es ;
+        geolexica:note "注： 局部环境的平均海平面通常是指，在给定的时间周期内，在该地区一个或多个点观测的海平面平均值。全球范围平均海平面与全球大地水准面相差不超过2m。"@zh ;
+        
+        lang:lang-deu notes:NoteTransUnavail ;
+        lang:lang-msa notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail ;
+        lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#measureGML
+:measureGML rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info286;
+          geolexica:hasReview reviews:Review286;
+        geolexica:hasLDAPI ldapi:ldapi286-json ,
+                        ldapi:ldapi286-jsonld ,
+                        ldapi:ldapi286-rdfxml ,
+                        ldapi:ldapi286-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                # lang:nld ,
+                # lang:pol ,
+                # lang:jpn ,
+                # lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 286;
+        skos:notation 286;
+        rdfs:label "measure (GML)" ;
+
+  skos:definition "value described using a numeric amount with a scale or using a scalar reference system"@en ;
+  skos:definition "قيمة توصف باستخدام كمية رقمية بميزان أو باستخدام نظام مرجعي مدرج"@ar ;
+  skos:definition "Wert, der durch eine Zahl mit einer Einheit oder durch Anwendung eines skalierten Referenzsystems beschrieben wird"@de ;
+  skos:definition "arvo, joka on kuvattu käyttämällä skaalattua numeerista määrää tai skalaarista vertausjärjestelmää"@fi ;
+  skos:definition "valeur décrite en utilisant une valeur numérique avec une échelle ou en utilisant un système de référence scalaire"@fr ;
+  skos:definition "축척에 의한 수치나 스칼라 참조 체계를 이용하여 표시한 값"@ko ;
+  skos:definition "значение, описываемое  с использованием числовой величины и масштаба шкалы или скалярной системы отсчета"@ru ;
+  skos:definition "valor que se describe usando una cantidad numérica con una escala o usando un sistema de referencia escalar"@es ;
+  skos:definition "tal som uttrycker det numeriska värdet på en linjär dimension"@sv ;
+  skos:definition "(GML)用标（度）量或标量坐标参照系描述的值。"@zh ;
+  
+  skos:prefLabel "measure (GML)"@en ;
+  skos:prefLabel "قياس"@ar ;
+  skos:prefLabel "Maß (GML)"@de ;
+  skos:prefLabel "määrä (GML)"@fi ;
+  skos:altLabel "mitta (GML)"@fi ;
+  skos:prefLabel "mesure (GML)"@fr ;
+  skos:prefLabel "측정 (GML)"@ko ;
+  skos:prefLabel "мера (GML)"@ru ;
+  skos:prefLabel "medida (GML)"@es ;
+  skos:prefLabel "mått (GML)"@sv ;
+  skos:prefLabel "度量"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                # lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        geolexica:note "Note to entry: When used as a noun, measure is a synonym for physical quantity."@en ;
+        geolexica:note "ملاحظة: كلمة قياس حينما تستخدم كاسم فإنها تصبح مرادفة لـ \" كمية حسية \"."@ar ;
+        geolexica:note "HUOM.: Substantiivisesti käytettynä englanninkielinen termi measure on termin physical quantity synonyymi."@fi ;
+        geolexica:note "비고: 명사로 사용할 경우, 측정은 물리량과 동일한 의미이다."@ko ;
+        # geolexica:note ""@nl ;
+        # geolexica:note ""@pl ;
+        geolexica:note "Примечание: Будучи используемой в единственном числе, мера представляет собой синоним физической величины"@ru ;
+        geolexica:note "Nota: Cuando se usa como un nombre, medida es un sinónimo de cantidad física."@es ;
+        geolexica:note "注： 当作为名词时,度量是一个物理量的代名词。"@zh ;
+        
+        lang:lang-deu notes:NoteTransUnavail ;
+        # lang:lang-msa notes:NoteTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail .
+        # lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#medium
+:medium rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info287;
+          geolexica:hasReview reviews:Review287;
+        geolexica:hasLDAPI ldapi:ldapi287-json ,
+                        ldapi:ldapi287-jsonld ,
+                        ldapi:ldapi287-rdfxml ,
+                        ldapi:ldapi287-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                # lang:nld ,
+                # lang:pol ,
+                # lang:jpn ,
+                lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 287;
+        skos:notation 287;
+        rdfs:label "medium" ;
+
+  skos:definition "substance or agency for storing or transmitting data"@en ;
+  skos:definition "مادة أو جهة لتخزين أو نقل البيانات"@ar ;
+  skos:definition "tiedon tallentamiseen tai välittämiseen tarkoitettu väline (media)"@fi ;
+  skos:definition "support de stockage ou moyen de transmission des données"@fr ;
+  skos:definition "데이터를 저장 또는 전달하기 위한 물질 또는 중개 수단"@ko ;
+  skos:definition "bahan atau sesuatu yg menjadi perantara bagi menghasilkan sesuatu kesan"@ms ;
+  skos:definition "материал, устройство или среда для хранения или передачи данных"@ru ;
+  skos:definition "sustancia o agente para almacenar o transmitir datos"@es ;
+  skos:definition "medel för lagring eller överföring av data"@sv ;
+  skos:definition "存储或传输数据的材料或媒介。"@zh ;
+  
+  skos:prefLabel "medium"@en ;
+  skos:prefLabel "وسيط"@ar ;
+  skos:prefLabel "Medium"@de ;
+  skos:prefLabel "tietoväline"@fi ;
+  skos:prefLabel "medium"@fr ;
+  skos:prefLabel "매체"@ko ;
+  skos:prefLabel "medium"@ms ;
+  skos:prefLabel "носитель"@ru ;
+  skos:prefLabel "medio"@es ;
+  skos:prefLabel "medium"@sv ;
+  skos:prefLabel "介质"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                # lang:polRegistry ,
+                lang:msaRegistry ,
+                # lang:nldRegistry ,
+                # lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        geolexica:example "EXAMPLE Compact disc, internet [1], radio waves, etc."@en ;
+        geolexica:example "مثال قرص مدمج , انترنت[1] , موجات لاسلكية ... خلافه."@ar ;
+        geolexica:example "ESIM. cd-levy, Internet, radioaallot."@fi ;
+        geolexica:example " "@ko ;
+        # geolexica:example ""@nl ;
+        # geolexica:example ""@pl ;
+        geolexica:example "Пример Компактный диск, интернет, радиоволны и т.п."@ru ;
+        geolexica:example "EJEMPLO Disco compacto, Internet[1], ondas de radio, etc.."@es ;
+        geolexica:example "示例 光盘（CD)，因特网，无线电波等。"@zh ;
+
+        # lang:lang-eng note: "Note to entry: When used as a noun, measure is a synonym for physical quantity."@en ;
+        # lang:lang-ara note: "ملاحظة: كلمة قياس حينما تستخدم كاسم فإنها تصبح مرادفة لـ "\ كمية حسية \"."@ar ;
+        # lang:lang-fin note: "HUOM.: Substantiivisesti käytettynä englanninkielinen termi measure on termin physical quantity synonyymi."@fi ;
+        # lang:lang-kor note: "비고: 명사로 사용할 경우, 측정은 물리량과 동일한 의미이다."@ko ;
+        # # lang:lang-nld note: ""@nl ;
+        # # lang:lang-pol note: ""@pl ;
+        # lang:lang-rus note: "Примечание: Будучи используемой в единственном числе, мера представляет собой синоним физической величины"@ru ;
+        # lang:lang-spa note: "Nota: Cuando se usa como un nombre, medida es un sinónimo de cantidad física."@es ;
+        # lang:lang-zho note: "注： 当作为名词时,度量是一个物理量的代名词。"@zh ;
+        
+        lang:lang-deu notes:NoteTransUnavail , notes:ExTransUnavail ;
+        lang:lang-msa notes:ExTransUnavail ;
+        lang:lang-swe notes:ExTransUnavail .
+        # lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#metadata
+:metadata rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info289;
+          geolexica:hasReview reviews:Review289;
+        geolexica:hasLDAPI ldapi:ldapi289-json ,
+                        ldapi:ldapi289-jsonld ,
+                        ldapi:ldapi289-rdfxml ,
+                        ldapi:ldapi289-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                lang:nld ,
+                lang:pol ,
+                lang:jpn ,
+                lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 289;
+        skos:notation 289;
+        rdfs:label "metadata" ;
+
+  skos:definition "data about data"@en ;
+  skos:definition "بيانات عن البيانات"@ar ;
+  skos:definition "Daten zur Beschreibung von Daten"@de ;
+  skos:definition "resurssia kuvaileva tieto"@fi ;
+  skos:definition "données décrivant des données"@fr ;
+  skos:definition "データに関するデータ。"@ja ;
+  skos:definition "데이터에 관한 데이터"@ko ;
+  skos:definition "gegevens over gegevens"@nl ;
+  skos:definition "dane o danych"@pl ;
+  skos:definition "данные о данных"@ru ;
+  skos:definition "datos acerca de los datos"@es ;
+  skos:definition "关于数据的数据。"@zh ;
+
+  skos:prefLabel "metadata"@en ;
+  skos:prefLabel "توصيف البيانات"@ar ;
+  skos:prefLabel "Metadaten"@de ;
+  skos:prefLabel "metatieto"@fi ;
+  skos:prefLabel "métadonnées"@fr ;
+  skos:prefLabel "メタデータ"@ja ;
+  skos:prefLabel "메타데이터"@ko ;
+  skos:prefLabel "metadata"@nl ;
+  skos:prefLabel "metadane"@pl ;
+  skos:prefLabel "метаданные"@ru ;
+  skos:prefLabel "metadatos"@es ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                lang:msaRegistry ,
+                lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        # lang:lang-eng example: "EXAMPLE Compact disc, internet [1], radio waves, etc."@en ;
+        # lang:lang-ara example: "مثال قرص مدمج , انترنت[1] , موجات لاسلكية ... خلافه."@ar ;
+        # lang:lang-fin example: "ESIM. cd-levy, Internet, radioaallot."@fi ;
+        # lang:lang-kor example: " "@ko ;
+        geolexica:note "OPMERKING: In de Richtlijn Metagegevens Overheidsinformatie wordt metadata omschreven als: \"Gegevens over informatieobjecten. Zij maken het mogelijk informatieobjecten te vinden, uit te wisselen en te beheren.\""@nl .
+        # lang:lang-pol note: ""@pl ;
+        # lang:lang-rus example: "Пример Компактный диск, интернет, радиоволны и т.п."@ru ;
+        # lang:lang-spa example: "EJEMPLO Disco compacto, Internet[1], ondas de radio, etc.."@es ;
+        # lang:lang-zho example: "示例 光盘（CD)，因特网，无线电波等。"@zh ;
+
+        # lang:lang-eng note: "Note to entry: When used as a noun, measure is a synonym for physical quantity."@en ;
+        # lang:lang-ara note: "ملاحظة: كلمة قياس حينما تستخدم كاسم فإنها تصبح مرادفة لـ "\ كمية حسية \"."@ar ;
+        # lang:lang-fin note: "HUOM.: Substantiivisesti käytettynä englanninkielinen termi measure on termin physical quantity synonyymi."@fi ;
+        # lang:lang-kor note: "비고: 명사로 사용할 경우, 측정은 물리량과 동일한 의미이다."@ko ;
+        # # lang:lang-nld note: ""@nl ;
+        # # lang:lang-pol note: ""@pl ;
+        # lang:lang-rus note: "Примечание: Будучи используемой в единственном числе, мера представляет собой синоним физической величины"@ru ;
+        # lang:lang-spa note: "Nota: Cuando se usa como un nombre, medida es un sinónimo de cantidad física."@es ;
+        # lang:lang-zho note: "注： 当作为名词时,度量是一个物理量的代名词。"@zh ;
+        
+        # lang:lang-deu notes:NoteTransUnavail , notes:ExTransUnavail ;
+        # lang:lang-msa notes:ExTransUnavail ;
+        # lang:lang-swe notes:ExTransUnavail .
+        # lang:lang-fra notes:NoteTransDiff .
+
+
+###  https://isotc211.geolexica.org/api/concepts#metadata_element
+:metadata_element rdf:type owl:NamedIndividual ,
+                   skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+        geolexica:hasInfo info:Info290;
+          geolexica:hasReview reviews:Review290;
+        geolexica:hasLDAPI ldapi:ldapi290-json ,
+                        ldapi:ldapi290-jsonld ,
+                        ldapi:ldapi290-rdfxml ,
+                        ldapi:ldapi290-skosrdf ;
+        geolexica:hasLangCode lang:ara ,
+                # lang:dan ,
+                lang:deu ,
+                lang:eng ,
+                lang:fin ,
+                lang:fra ,
+                lang:kor ,
+                lang:nld ,
+                lang:pol ,
+                lang:jpn ,
+                # lang:msa ,
+                lang:rus ,
+                lang:spa ,
+                lang:swe ,
+                lang:zho ;
+        dcterms:identifier 290;
+        skos:notation 290;
+        rdfs:label "metadata element" ;
+
+  skos:definition "discrete unit of metadata"@en ;
+  skos:definition "وحدة مستقلة من توصيف البيانات"@ar ;
+  skos:definition "selbstständiges Element von Metadaten"@de ;
+  skos:definition "yksittäinen, nimettävissä oleva osa metatietoa"@fi ;
+  skos:definition "unité élémentaire de métadonnée"@fr ;
+  skos:definition "メタデータの個々の構成単位。"@ja ;
+  skos:definition "메타데이터를 구성하는 단위"@ko ;
+  skos:definition "dyskretna jednostka metadanych"@pl ;
+  skos:definition "дискретная единица метаданных"@ru ;
+  skos:definition "unidad discreta de metadatos"@es ;
+  skos:definition "separat och urskiljbar del av metadata"@sv ;
+  skos:definition "元数据的基本单元。"@zh ;
+  
+  skos:prefLabel "metadata element"@en ;
+  skos:prefLabel "عنصر توصيف بيانات"@ar ;
+  skos:prefLabel "Metadatenelement"@de ;
+  skos:prefLabel "metatietoelementti"@fi ;
+  skos:prefLabel "élément de métadonnées"@fr ;
+  skos:prefLabel "メタデータ要素"@ja ;
+  skos:prefLabel "메타데이터 요소"@ko ;
+  skos:prefLabel "element metadanych"@pl ;
+  skos:prefLabel "элемент метаданных"@ru ;
+  skos:prefLabel "elemento de metadatos"@es ;
+  skos:prefLabel "metadataelement"@sv ;
+  skos:prefLabel "元数据元素"@zh ;
+
+  geolexica:origin lang:araRegistry ,
+                # lang:danRegistry ,
+                lang:deuRegistry ,
+                lang:engRegistry ,
+                lang:finRegistry ,
+                lang:fraRegistry ,
+                lang:korRegistry ,
+                lang:polRegistry ,
+                # lang:msaRegistry ,
+                lang:nldRegistry ,
+                lang:jpnRegistry ,
+                lang:rusRegistry ,
+                lang:spaRegistry ,
+                lang:sweRegistry ,
+                lang:zhoRegistry ;
+
+        # lang:lang-eng example: "Note 1unique within a metadata entity."@en ;
+        # lang:lang-eng example: "Note 2 to entry: Equivalent to an attribute in UML terminology."@en ;
+        # lang:lang-ara example: "مثال قرص مدمج , انترنت[1] , موجات لاسلكية ... خلافه."@ar ;
+        # lang:lang-fin example: "ESIM. cd-levy, Internet, radioaallot."@fi ;
+        # lang:lang-kor example: ""@ko ;
+        # lang:lang-nld example: ""@nl ;
+        # lang:lang-pol example: ""@pl ;
+        # lang:lang-rus example: "Пример Компактный диск, интернет, радиоволны и т.п."@ru ;
+        # lang:lang-spa example: "EJEMPLO Disco compacto, Internet[1], ondas de radio, etc.."@es ;
+        # lang:lang-zho example: "示例 光盘（CD)，因特网，无线电波等。"@zh ;
+
+        geolexica:note "Note 1 to entry: Metadata elements are unique within a metadata entity."@en ;
+        geolexica:note "Note 2 to entry: Equivalent to an attribute in UML terminology."@en ;
+        geolexica:note "ملاحظة 1: تكون عناصر بيانات توصيف البيانات فريدة وغير متكررة ضمن كيان بيانات توصيف البيانات."@ar ;
+        geolexica:note "ملاحظة 2: يعادل \"صفة\" في مصطلحات اللغة الموحدة للنمذجة UML."@ar ;
+        geolexica:note "HUOM. 1: Metatietoryhmän metatietoelementit ovat yksikäsitteisiä."@fi ;
+        geolexica:note "HUOM. 2: Metatietoelementti vastaa UML-käsitettä attribuutti."@fi ;
+        geolexica:note "備考 1： メタデータ要素は，メタデータ要素体の中で一意とする。"@ja ;
+        geolexica:note "備考 2： UMLの専門用語集におけるクラスと同等のものとする。"@ja ;
+        geolexica:note "비고 1: 메타데이터 요소는 메타데이터 개체 내에서 유일하다"@ko ;
+        geolexica:note "비고 2: UML 용어에서 속성과 대응되는 용어이다. "@ko ;
+        geolexica:note "UWAGA 1: Elementy metadanych są jednoznaczne w ramach encji metadanych"@pl ;
+        geolexica:note "UWAGA 2: Odpowiednik atrybutu w terminologii UML."@pl ;
+        geolexica:note "Примечание 1: Элементы метаданных уникальны в пределах сущности метаданных. В терминологии UML элемент метаданных эквивалентен атрибуту"@ru ;
+        geolexica:note "Примечание 2: Эквивалентен атрибуту в терминологии UML"@ru ;
+        geolexica:note "Nota 1: Los elementos de metadatos son únicos dentro de una entidad de metadatos."@es ;
+        geolexica:note "Nota 2: Equivalente a un atributo en la terminología UML."@es ;
+        geolexica:note "注 1： 元数据元素在元数据实体中是惟一的。"@zh ;
+        geolexica:note "注 2： 与UML术语中的属性同义。"@zh ;
+        # geolexica:note ""@nl ;
+
+        lang:lang-deu notes:NoteTransUnavail ;
+        # lang:lang-msa notes:ExTransUnavail ;
+        lang:lang-swe notes:NoteTransUnavail .
+        # lang:lang-fra notes:NoteTransDiff .
+
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
