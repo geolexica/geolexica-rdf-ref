@@ -1,0 +1,10 @@
+# all resources : "abbreviation"@en
+# remove language datatype/tag if not indicated in resource. 
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+select ?resource
+    where { 
+        ?resource a skos:Concept ; rdfs:label "abbreviation" .
+     #  ?resource a skos:Concept ; rdfs:label "abbreviation"@en . ## will not match like the previous triple
+    }

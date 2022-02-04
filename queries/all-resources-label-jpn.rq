@@ -2,12 +2,13 @@
 
 
 PREFIX geolexica: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX lang: <https://isotc211.geolexica.org/api/language#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 select ?resource ?label 
         where { 
    
             { GRAPH <https://isotc211.geolexica.org/api/concepts#> {
-                ?resource geolexica:hasLangCode geolexica:jpn ;
+                ?resource geolexica:hasLangCode lang:jpn ;
                           rdfs:label ?label . } }
     		}

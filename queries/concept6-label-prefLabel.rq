@@ -5,5 +5,5 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 select * 
-FROM <https://isotc211.geolexica.org/api/ld/concepts/6/>
+FROM <https://isotc211.geolexica.org/api/concepts/6/>
     where { ?subject a skos:Concept ; rdfs:label ?label ; skos:prefLabel ?prefLabel } 

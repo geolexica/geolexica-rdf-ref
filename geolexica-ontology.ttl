@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+# @prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
@@ -82,13 +82,6 @@ xsd:string rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://isotc211.geolexica.org/api/geolexica#hasConcept
-:hasConcept rdf:type owl:ObjectProperty ;
-            owl:inverseOf :hasTermID ;
-            rdfs:domain :TermID ;
-            rdfs:range skos:Concept .
-
-
 ###  https://isotc211.geolexica.org/api/geolexica#hasInfo
 :hasInfo rdf:type owl:ObjectProperty ;
          rdfs:domain skos:Concept ;
@@ -131,12 +124,6 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:range :Source .
 
 
-###  https://isotc211.geolexica.org/api/geolexica#hasTermID
-:hasTermID rdf:type owl:ObjectProperty ;
-           rdfs:domain skos:Concept ;
-           rdfs:range :TermID .
-
-
 #################################################################
 #    Data properties
 #################################################################
@@ -149,12 +136,6 @@ dcterms:identifier rdf:type owl:DatatypeProperty ;
                    rdfs:label "dcterms:identifier property" .
 
 
-###  http://www.linkedmodel.org/schema/vaem#abbreviation
-vaem:abbreviation rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "vaem:abbreviation property" .
-
-
 ###  https://isotc211.geolexica.org/api/geolexica#abbreviation
 :abbreviation rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string ;
@@ -164,7 +145,7 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
 ###  https://isotc211.geolexica.org/api/geolexica#classification
 :classification rdf:type owl:DatatypeProperty ;
                 rdfs:range xsd:string ;
-                rdfs:label "geolexica:abbreviation property" .
+                rdfs:label "geolexica:classification property" .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#clause
@@ -297,6 +278,8 @@ vaem:abbreviation rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:anyURI ;
               rdfs:label "geolexica:tbxisoxmlURI property" .
 
+# ###  http://www.w3.org/2004/02/skos/core#prefLabel
+# skos:prefLabel rdf:type owl:DatatypeProperty .
 
 #################################################################
 #    Classes
@@ -317,6 +300,11 @@ dcterms:MediaType rdf:type owl:Class .
 ###  https://isotc211.geolexica.org/api/geolexica#DefnUnavail
 :DefnUnavail rdf:type owl:Class ;
              rdfs:subClassOf :Note .
+
+
+###  https://isotc211.geolexica.org/api/geolexica#ExampleUnavail
+:ExampleUnavail rdf:type owl:Class ;
+                rdfs:subClassOf :Note .
 
 
 ###  https://isotc211.geolexica.org/api/geolexica#JSON
@@ -383,10 +371,6 @@ dcterms:MediaType rdf:type owl:Class .
 ###  https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML
 :TBX-ISO-XML rdf:type owl:Class ;
              rdfs:subClassOf :LinkedDataAPI .
-
-
-###  https://isotc211.geolexica.org/api/geolexica#TermID
-:TermID rdf:type owl:Class .
 
 
 #################################################################

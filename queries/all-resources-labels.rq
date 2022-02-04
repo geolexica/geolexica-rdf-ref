@@ -10,4 +10,4 @@ select ?resource ?label
         { GRAPH <https://isotc211.geolexica.org/api/concepts#> 
                 {?resource rdfs:label ?label ; a skos:Concept .            
         } }
-    }
+    } ORDER BY DESC(?label)

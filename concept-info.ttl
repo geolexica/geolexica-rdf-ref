@@ -14,7 +14,6 @@
 
 <https://isotc211.geolexica.org/api/info#> a owl:Ontology ;
 	owl:versionIRI <https://isotc211.geolexica.org/api/info/v0.1.0> ;
-	owl:imports <https://isotc211.geolexica.org/api/geolexica> ;
 	dcterms:conformsTo <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
 	dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
 	dcterms:created "2022-01-24"^^xsd:date ;
@@ -27,901 +26,1301 @@
 	vann:preferredNamespacePrefix "info" ;
 	vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/info#" ;
 	rdfs:label "Concept Info RDF Dataset (MLGT)"@en .
- 
-
-# dctype:Dataset owl:sameAs void:Dataset .
-
+# 
+# 
 # #################################################################
 # #
 # #    Annotation properties
 # #
 # #################################################################
 # 
+# 
 # http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo a owl:AnnotationProperty .
-# http://purl.org/dc/terms/created
-dcterms:created a owl:AnnotationProperty .
-# http://purl.org/dc/terms/issued
-dcterms:issued a owl:AnnotationProperty .
-# http://purl.org/dc/terms/license
-dcterms:license a owl:AnnotationProperty .
-# http://purl.org/dc/terms/modified
-dcterms:modified a owl:AnnotationProperty .
-# http://purl.org/dc/terms/publisher
-dcterms:publisher a owl:AnnotationProperty .
-# http://purl.org/dc/terms/source
-dcterms:source a owl:AnnotationProperty .
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
-# http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri a owl:AnnotationProperty .
 
+dcterms:conformsTo a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/contributor
+
+dcterms:contributor a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/created
+
+dcterms:created a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/creator
+
+dcterms:creator a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/description
+
+dcterms:description a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/issued
+
+dcterms:issued a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/license
+
+dcterms:license a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/modified
+
+dcterms:modified a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/publisher
+
+dcterms:publisher a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/source
+
+dcterms:source a owl:AnnotationProperty .
+# 
+# http://purl.org/dc/terms/title
+
+dcterms:title a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+# 
+# https://isotc211.geolexica.org/api/geolexica#:entry_status
+
+geolexica::entry_status a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+
+xsd:date a rdfs:Datatype .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://isotc211.geolexica.org/api/geolexica#hasSource
+
+geolexica:hasSource a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://isotc211.geolexica.org/api/geolexica#classification
+
+geolexica:classification a owl:DatatypeProperty .
+# 
+# https://isotc211.geolexica.org/api/geolexica#clause
+
+geolexica:clause a owl:DatatypeProperty .
+# 
+# https://isotc211.geolexica.org/api/geolexica#date_accepted
+
+geolexica:date_accepted a owl:DatatypeProperty .
+# 
+# https://isotc211.geolexica.org/api/geolexica#date_amended
+
+geolexica:date_amended a owl:DatatypeProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://isotc211.geolexica.org/api/geolexica#ConceptInfo
+
+geolexica:ConceptInfo a owl:Class .
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Individuals
 # #
 # #################################################################
 # 
+# 
 # https://isotc211.geolexica.org/api/info#Info10
+
 :Info10 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
-	geolexica:classification "preferred"@en ;
+	geolexica:hasSource sources:ISO-1087-1-2000 .
+
+sources:ISO-1087-1-2000 a owl:NamedIndividual .
+
+:Info10 geolexica:classification "preferred"@en ;
 	geolexica:clause "3.4.16, modified — the Note 1 to entry has been added." ;
 	geolexica:date_accepted "2008-11-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
-# https://isotc211.geolexica.org/api/info#Info11
-:Info11 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:UML-1x ;
+# https://isotc211.geolexica.org/api/info#Info100
+
+:Info100 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19123-2005 .
+
+sources:ISO-19123-2005 a owl:NamedIndividual .
+
+:Info100 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-08-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info101
+
+:Info101 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19123-2005 ;
 	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.17" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info102
+
+:Info102 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 .
+
+sources:ISO-19107-2003 a owl:NamedIndividual .
+
+:Info102 geolexica:date_accepted "2003-05-01 "^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired "@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info103
+
+:Info103 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01 "^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired "@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info104
+
+:Info104 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-IEC-2382-1-1993 .
+
+sources:ISO-IEC-2382-1-1993 a owl:NamedIndividual .
+
+:Info104 geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
+# https://isotc211.geolexica.org/api/info#Info105
+
+:Info105 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19118-2005 .
+
+sources:ISO-19118-2005 a owl:NamedIndividual .
+
+:Info105 geolexica:clause "4.9" ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica:date_amended "2011-10-15"^^xsd:date ;
+	geolexica::entry_status "retired "@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info107
+
+:Info107 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19118-2011 .
+
+sources:ISO-19118-2011 a owl:NamedIndividual .
+
+:Info107 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info108
+
+:Info108 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-2002 .
+
+sources:ISO-19101-2002 a owl:NamedIndividual .
+
+:Info108 geolexica:clause "4.8" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica:date_amended "2014-11-01"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info11
+
+:Info11 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:UML-1x .
+
+sources:UML-1x a owl:NamedIndividual .
+
+:Info11 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info110
+
+:Info110 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19131-2007 .
+
+sources:ISO-19131-2007 a owl:NamedIndividual .
+
+:Info110 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2007-04-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info111
+
+:Info111 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19131-2007 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2007-04-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info112
+
+:Info112 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 .
+
+sources:ISO-19113-2002 a owl:NamedIndividual .
+
+:Info112 geolexica:clause "4.4" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info113
+
+:Info113 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-2002 ;
+	geolexica:clause "4.9" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica:date_amended "2014-11-01"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info114
+
+:Info114 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.6" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info115
+
+:Info115 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.7" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info116
+
+:Info116 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-2002 ;
+	geolexica:clause "4.10" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica:date_amended "2014-11-01"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info117
+
+:Info117 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.9" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info118
+
+:Info118 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.10" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info119
+
+:Info119 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.11" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
 # https://isotc211.geolexica.org/api/info#Info12
+
 :Info12 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19116-2004 ;
-	geolexica:date_accepted "2004-07-01"^^xsd:date ;
+	geolexica:hasSource sources:ISO-19116-2004 .
+
+sources:ISO-19116-2004 a owl:NamedIndividual .
+
+:Info12 geolexica:date_accepted "2004-07-01"^^xsd:date ;
 	geolexica:date_amended "2008-07-15"^^xsd:date ;
 	geolexica::entry_status "superseded"@en .
 # 
-# https://isotc211.geolexica.org/api/info#Info13
-:Info13 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19117-2012 ;
+# https://isotc211.geolexica.org/api/info#Info120
+
+:Info120 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.12" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info121
+
+:Info121 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19113-2002 ;
+	geolexica:clause "4.13" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info122
+
+:Info122 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19118-2011 ;
 	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.10" ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info123
+
+:Info123 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19103-2015 .
+
+sources:ISO-19103-2015 a owl:NamedIndividual .
+
+:Info123 geolexica:classification "preferred"@en ;
+	geolexica:clause "4.14" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info124
+
+:Info124 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19115-1-2014 .
+
+sources:ISO-19115-1-2014 a owl:NamedIndividual .
+
+:Info124 geolexica:classification "preferred"@en ;
+	geolexica:clause "4.3" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info125
+
+:Info125 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19115-2003 .
+
+sources:ISO-19115-2003 a owl:NamedIndividual .
+
+:Info125 geolexica:clause "4.3" ;
+	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2014-04-01"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info127
+
+:Info127 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19108-2002 .
+
+sources:ISO-19108-2002 a owl:NamedIndividual .
+
+:Info127 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2002-09-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info128
+
+:Info128 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-1087-1-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "3.3.1" ;
+	geolexica:date_accepted "2008-11-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info129
+
+:Info129 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19123-2005 , sources:ISO-IEC-19501 .
+
+sources:ISO-IEC-19501 a owl:NamedIndividual .
+
+:Info129 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date , "2005-08-15"^^xsd:date ;
+	geolexica:date_amended "2015-12-01"^^xsd:date ;
+	geolexica::entry_status "superseded"@en , "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info13
+
+:Info13 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19117-2012 .
+
+sources:ISO-19117-2012 a owl:NamedIndividual .
+
+:Info13 geolexica:classification "preferred"@en ;
 	geolexica:clause "4.1" ;
 	geolexica:date_accepted "2005-06-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
-# https://isotc211.geolexica.org/api/info#Info14
-:Info14 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
+# https://isotc211.geolexica.org/api/info#Info130
+
+:Info130 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-IEC-19501 ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica:date_amended "2015-12-01"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info131
+
+:Info131 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-1087-1-2000 ;
 	geolexica:classification "preferred"@en ;
+	geolexica:clause "3.4.17" ;
+	geolexica:date_accepted "2008-11-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info133
+
+:Info133 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19133-2005 .
+
+sources:ISO-19133-2005 a owl:NamedIndividual .
+
+:Info133 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-10-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info134
+
+:Info134 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19157-2013 .
+
+sources:ISO-19157-2013 a owl:NamedIndividual .
+
+:Info134 geolexica:classification "preferred"@en ;
+	geolexica:clause "4.10" ;
+	geolexica:date_accepted "2003-08-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info135
+
+:Info135 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 .
+
+sources:ISO-19136-1-2020 a owl:NamedIndividual .
+
+:Info135 geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.20" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info136
+
+:Info136 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 .
+
+sources:ISO-19107-2019 a owl:NamedIndividual .
+
+:Info136 geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.23" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info137
+
+:Info137 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.24" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info138
+
+:Info138 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.25" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info139
+
+:Info139 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.26" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info14
+
+:Info14 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-1-2014 .
+
+sources:ISO-19101-1-2014 a owl:NamedIndividual .
+
+:Info14 geolexica:classification "preferred"@en ;
 	geolexica:clause "4.1.1" ;
 	geolexica:date_accepted "2002-07-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
+# https://isotc211.geolexica.org/api/info#Info140
+
+:Info140 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
 # https://isotc211.geolexica.org/api/info#Info15
+
 :Info15 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
+	geolexica:hasSource sources:ISO-19101-1-2014 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:clause "4.1.2" ;
 	geolexica:date_accepted "2002-07-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info17
+
 :Info17 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
+	geolexica:hasSource sources:ISO-IEC-19501 ;
 	geolexica:clause "4.1.2" ;
 	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica:date_amended "2015-07-01"^^xsd:date ;
 	geolexica::entry_status "superseded"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info18
+
 :Info18 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
+	geolexica:hasSource sources:ISO-IEC-19501 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:clause "(E), 3.3" ;
 	geolexica:date_accepted "2004-07-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info19
+
 :Info19 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-2382-2015 ;
-	geolexica:classification "preferred"@en ;
+	geolexica:hasSource sources:ISO-IEC-2382-2015 .
+
+sources:ISO-IEC-2382-2015 a owl:NamedIndividual .
+
+:Info19 geolexica:classification "preferred"@en ;
 	geolexica:clause "2121440, modified — Note 1 to entry replaces Notes 1 and 2 to entry." ;
 	geolexica:date_accepted "2009-02-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info2
+
 :Info2 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
+	geolexica:hasSource sources:ISO-1087-1-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:clause "3.4.9" ;
 	geolexica:date_accepted "2008-11-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info20
+
 :Info20 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:UML-1x ;
+	geolexica:hasSource sources:UML-1x ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info24
+
 :Info24 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003  ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
 	geolexica:date_accepted "2003-05-01"^^xsd:date ;
 	geolexica:date_amended "2019-12-02"^^xsd:date ;
 	geolexica::entry_status "retired"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info26
+
 :Info26 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19106-2004  ;
-	geolexica:classification "preferred"@en ;
+	geolexica:hasSource sources:ISO-19106-2004 .
+
+sources:ISO-19106-2004 a owl:NamedIndividual .
+
+:Info26 geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2004-07-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info27
+
 :Info27 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000  ;
-	geolexica:classification "preferred"@en ;
+	geolexica:hasSource sources:ISO-19105-2000 .
+
+sources:ISO-19105-2000 a owl:NamedIndividual .
+
+:Info27 geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info28
+
 :Info28 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501-2005 ;
-	geolexica:clause "(Adapted from)" ;
+	geolexica:hasSource sources:ISO-IEC-19501-2005 .
+
+sources:ISO-IEC-19501-2005 a owl:NamedIndividual .
+
+:Info28 geolexica:clause "(Adapted from)" ;
 	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica:date_amended "2015-12-01"^^xsd:date ;
 	geolexica::entry_status "retired"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info29
+
 :Info29 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.6" ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
 	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.6" ;
 	geolexica:date_accepted "2003-05-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info3
+
 :Info3 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info30
+
 :Info30 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
 	geolexica:date_accepted "2003-05-01"^^xsd:date ;
 	geolexica:date_amended "2019-12-02"^^xsd:date ;
 	geolexica::entry_status "superseded"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info31
+
 :Info31 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19108-2002 ;
+	geolexica:hasSource sources:ISO-19108-2002 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2002-09-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
-# https://isotc211.geolexica.org/api/info#Info4
-:Info4 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
+# https://isotc211.geolexica.org/api/info#Info32
+
+:Info32 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19108-2002 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2002-09-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info34
+
+:Info34 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19133-2005 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-10-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info35
+
+:Info35 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info36
+
+:Info36 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:UML-1x ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info37
+
+:Info37 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19111-2007 .
+
+sources:ISO-19111-2007 a owl:NamedIndividual .
+
+:Info37 geolexica:clause "4.2" ;
+	geolexica:date_accepted "2003-02-15"^^xsd:date ;
+	geolexica:date_amended "2015-08-15"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info39
+
+:Info39 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-IEC-2382-1-1993 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2002-08-16"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info4
+
+:Info4 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info41
+
+:Info41 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info43
+
+:Info43 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:UML-1x ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info44
+
+:Info44 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-IEC-19501 ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica:date_amended "2015-12-01"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info45
+
+:Info45 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19128-2005 .
+
+sources:ISO-19128-2005 a owl:NamedIndividual .
+
+:Info45 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-12-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info46
+
+:Info46 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info47
+
+:Info47 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19132-2007 .
+
+sources:ISO-19132-2007 a owl:NamedIndividual .
+
+:Info47 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2007-10-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info48
+
+:Info48 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.9" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info49
+
+:Info49 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info5
+
 :Info5 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info50
+
+:Info50 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.7" ;
+	geolexica:date_accepted "2007-09-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info51
+
+:Info51 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.8" ;
+	geolexica:date_accepted "2007-09-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info52
+
+:Info52 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19109-2015 .
+
+sources:ISO-19109-2015 a owl:NamedIndividual .
+
+:Info52 geolexica:classification "preferred"@en ;
+	geolexica:clause "4.3" ;
+	geolexica:date_accepted "2005-06-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info55
+
+:Info55 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.9" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info56
+
+:Info56 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.10" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info57
+
+:Info57 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19136-1-2020 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.1.11" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info6
+
 :Info6 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info61
+
+:Info61 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info62
+
+:Info62 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info63
+
+:Info63 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-10746-3-1996 .
+
+sources:ISO-10746-3-1996 a owl:NamedIndividual .
+
+:Info63 geolexica:date_accepted "2005-02-15"^^xsd:date ;
+	geolexica:date_amended "2008-06-01"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info64
+
+:Info64 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-1087-1-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "3.2.1" ;
+	geolexica:date_accepted "2008-11-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info66
+
+:Info66 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-1087-1-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "3.2.11" ;
+	geolexica:date_accepted "2008-11-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info67
+
+:Info67 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-1-2014 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.1.4" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info68
+
+:Info68 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-1-2014 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.1.5" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info69
+
+:Info69 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-1-2014 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.1.6" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
 # https://isotc211.geolexica.org/api/info#Info7
+
 :Info7 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
 	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2000-12-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
 # 
-# https://isotc211.geolexica.org/api/info#Info8
-:Info8 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-3534-1-1993 ;
+# https://isotc211.geolexica.org/api/info#Info70
+
+:Info70 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19101-1-2014 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.1.7" ;
+	geolexica:date_accepted "2002-07-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info71
+
+:Info71 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info72
+
+:Info72 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info73
+
+:Info73 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info74
+
+:Info74 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19114-2003 .
+
+sources:ISO-19114-2003 a owl:NamedIndividual .
+
+:Info74 geolexica:clause "4.1" ;
 	geolexica:date_accepted "2002-12-01"^^xsd:date ;
+	geolexica:date_amended "2013-12-15"^^xsd:date ;
+	geolexica::entry_status "retired"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info75
+
+:Info75 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info76
+
+:Info76 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info77
+
+:Info77 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19105-2000 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2000-12-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info78
+
+:Info78 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica:date_amended "2019-12-02"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info79
+
+:Info79 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "(E), 3.12" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info8
+
+:Info8 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-3534-1-1993 .
+
+sources:ISO-3534-1-1993 a owl:NamedIndividual .
+
+:Info8 geolexica:date_accepted "2002-12-01"^^xsd:date ;
 	geolexica:date_amended "2008-07-15"^^xsd:date ;
 	geolexica::entry_status "superseded"@en .
 # 
+# https://isotc211.geolexica.org/api/info#Info81
+
+:Info81 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-IEC-19501 ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica:date_amended "2015-07-01"^^xsd:date ;
+	geolexica::entry_status "superseded"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info82
+
+:Info82 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-TS-19129-2009 .
+
+sources:ISO-TS-19129-2009 a owl:NamedIndividual .
+
+:Info82 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2009-04-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info83
+
+:Info83 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19123-2005 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-08-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info84
+
+:Info84 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19135-1-2015 .
+
+sources:ISO-19135-1-2015 a owl:NamedIndividual .
+
+:Info84 geolexica:classification "preferred"@en ;
+	geolexica:clause "4.1.2" ;
+	geolexica:date_accepted "2005-10-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info85
+
+:Info85 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19118-2011 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "4.7" ;
+	geolexica:date_accepted "2005-07-15"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info86
+
+:Info86 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19107-2019 ;
+	geolexica:classification "preferred"@en ;
+	geolexica:clause "3.15" ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info87
+
+:Info87 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:Dictionary_Computing .
+
+sources:Dictionary_Computing a owl:NamedIndividual .
+
+:Info87 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2003-05-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
+# https://isotc211.geolexica.org/api/info#Info88
+
+:Info88 a owl:NamedIndividual , geolexica:ConceptInfo ;
+	geolexica:hasSource sources:ISO-19111-2007 ;
+	geolexica:date_accepted "2003-02-15"^^xsd:date ;
+	geolexica:date_amended "2019-01-31"^^xsd:date ;
+	geolexica::entry_status "superseded "@en .
+# 
 # https://isotc211.geolexica.org/api/info#Info9
+
 :Info9 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501-2005 ;
+	geolexica:hasSource sources:ISO-IEC-19501-2005 ;
 	geolexica:clause "(Adapted from)"@en ;
 	geolexica:date_accepted "2005-07-15"^^xsd:date ;
 	geolexica:date_amended "2015-12-01"^^xsd:date ;
 	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info32
-:Info32 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19108-2002 ;
-	geolexica:date_accepted "2002-09-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info34
-:Info34 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19133-2005 ;
-	geolexica:date_accepted "2005-10-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info35
-:Info35 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info36
-:Info36 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:UML-1x ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info37
-:Info37 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19111-2007 ;
-	geolexica:clause "4.2" ;
-	geolexica:date_accepted "2003-02-15"^^xsd:date ;
-	geolexica:date_amended "2015-08-15"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info39
-:Info39 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-2382-1-1993 ;
-	geolexica:date_accepted "2002-08-16"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info41
-:Info41 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info43
-:Info43 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:UML-1x ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info44
-:Info44 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:date_amended "2015-12-01"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info45
-:Info45 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19128-2005 ;
-	geolexica:date_accepted "2005-12-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info46
-:Info46 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info47
-:Info47 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19132-2007 ;
-	geolexica:date_accepted "2007-10-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info48
-:Info48 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.9" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info49
-:Info49 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info50
-:Info50 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.7" ;
-	geolexica:date_accepted "2007-09-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info51
-:Info51 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.8" ;
-	geolexica:date_accepted "2007-09-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info52
-:Info52 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19109-2015 ;
-	geolexica:clause "4.3" ;
-	geolexica:date_accepted "2005-06-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info55
-:Info55 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.9" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info56
-:Info56 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.10" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info57
-:Info57 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.11" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info61
-:Info61 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info62
-:Info62 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info63
-:Info63 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-10746-3-1996 ;
-	geolexica:date_accepted "2005-02-15"^^xsd:date ;
-	geolexica:date_amended "2008-06-01"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info64
-:Info64 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
-	geolexica:clause "3.2.1" ;
-	geolexica:date_accepted "2008-11-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info66
-:Info66 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
-	geolexica:clause "3.2.11" ;
-	geolexica:date_accepted "2008-11-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info67
-:Info67 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
-	geolexica:clause "4.1.4" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info68
-:Info68 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
-	geolexica:clause "4.1.5" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info69
-:Info69 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
-	geolexica:clause "4.1.6" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info70
-:Info70 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-1-2014 ;
-	geolexica:clause "4.1.7" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info71
-:Info71 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info72
-:Info72 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info73
-:Info73 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info74
-:Info74 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19114-2003 ;
-	geolexica:clause "4.1" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info75
-:Info75 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info76
-:Info76 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info77
-:Info77 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19105-2000 ;
-	geolexica:date_accepted "2000-12-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info78
-:Info78 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info79
-:Info79 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.12" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info81
-:Info81 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:date_amended "2015-07-01"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info82
-:Info82 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-TS-19129-2009 ;
-	geolexica:date_accepted "2009-04-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info83
-:Info83 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19123-2005 ;
-	geolexica:date_accepted "2005-08-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info84
-:Info84 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19135-1-2015 ;
-	geolexica:clause "4.1.2" ;
-	geolexica:date_accepted "2005-10-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info85
-:Info85 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19118-2011 ;
-	geolexica:clause "4.7" ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info86
-:Info86 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "3.15" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info87
-:Info87 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:Dictionary_Computing ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info88
-:Info88 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19111-2007 ;
-	geolexica:date_accepted "2003-02-15"^^xsd:date ;
-	geolexica:date_amended "2019-01-31"^^xsd:date ;
-	geolexica::entry_status "superseded "@en .
-
+# 
 # https://isotc211.geolexica.org/api/info#Info90
+
 :Info90 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
+	geolexica:hasSource sources:ISO-19107-2003 ;
 	geolexica:date_accepted "2003-05-01"^^xsd:date ;
 	geolexica:date_amended "2019-12-02"^^xsd:date ;
 	geolexica::entry_status "superseded "@en .
-
+# 
 # https://isotc211.geolexica.org/api/info#Info91
+
 :Info91 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19111-2007 ;
+	geolexica:hasSource sources:ISO-19111-2007 ;
 	geolexica:date_accepted "2003-02-15"^^xsd:date ;
 	geolexica:date_amended "2019-01-31"^^xsd:date ;
 	geolexica::entry_status "superseded "@en .
-
+# 
 # https://isotc211.geolexica.org/api/info#Info93
+
 :Info93 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19111-2019 ;
+	geolexica:hasSource sources:ISO-19111-2019 .
+
+sources:ISO-19111-2019 a owl:NamedIndividual .
+
+:Info93 geolexica:classification "preferred"@en ;
 	geolexica:clause "(E), 3.1.11" ;
 	geolexica:date_accepted "2003-02-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
 	geolexica::entry_status "valid"@en .
-
+# 
 # https://isotc211.geolexica.org/api/info#Info96
+
 :Info96 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ITU-R-Rec-TF-686-1 ;
-	geolexica:date_accepted "2002-09-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
+	geolexica:hasSource sources:ITU-R-Rec-TF-686-1 .
 
+sources:ITU-R-Rec-TF-686-1 a owl:NamedIndividual .
+
+:Info96 geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2002-09-01"^^xsd:date ;
+	geolexica::entry_status "valid"@en .
+# 
 # https://isotc211.geolexica.org/api/info#Info97
+
 :Info97 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19133-2005 ;
-	geolexica:date_accepted "2005-10-15"^^xsd:date ;
+	geolexica:hasSource sources:ISO-19133-2005 ;
 	geolexica:classification "preferred"@en ;
+	geolexica:date_accepted "2005-10-15"^^xsd:date ;
 	geolexica::entry_status "valid"@en .
-
+# 
 # https://isotc211.geolexica.org/api/info#Info99
+
 :Info99 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19123-2005 ;
+	geolexica:hasSource sources:ISO-19123-2005 ;
+	geolexica:classification "preferred"@en ;
 	geolexica:date_accepted "2005-08-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
 	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info100
-:Info100 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19123-2005 ;
-	geolexica:date_accepted "2005-08-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info101
-:Info101 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19123-2005 ;
-	geolexica:clause "(E), 3.1.17" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info102
-:Info102 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01 "^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired "@en .
-
-# https://isotc211.geolexica.org/api/info#Info103
-:Info103 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01 "^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired "@en .
-
-# https://isotc211.geolexica.org/api/info#Info104
-:Info104 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-2382-1-1993 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info105
-:Info105 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19118-2005 ;
-	geolexica:clause "4.9" ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:date_amended "2011-10-15"^^xsd:date ;
-	geolexica::entry_status "retired "@en .
-
-# https://isotc211.geolexica.org/api/info#Info107
-:Info107 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19118-2011 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info108
-:Info108 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-2002 ;
-	geolexica:clause "4.8" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:date_amended "2014-11-01"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info110
-:Info110 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19131-2007 ;
-	geolexica:date_accepted "2007-04-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info111
-:Info111 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19131-2007 ;
-	geolexica:date_accepted "2007-04-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info112
-:Info112 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.4" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info113
-:Info113 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-2002 ;
-	geolexica:clause "4.9" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:date_amended "2014-11-01"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info114
-:Info114 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.6" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-
-# https://isotc211.geolexica.org/api/info#Info115
-:Info115 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.7" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info116
-:Info116 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19101-2002 ;
-	geolexica:clause "4.10" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:date_amended "2014-11-01"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info117
-:Info117 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.9" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info118
-:Info118 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.10" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info119
-:Info119 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.11" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info120
-:Info120 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.12" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info121
-:Info121 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19113-2002 ;
-	geolexica:clause "4.13" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2013-12-15"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info122
-:Info122 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19118-2011 ;
-	geolexica:clause "4.10" ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info123
-:Info123 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19103-2015 ;
-	geolexica:clause "4.14" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info124
-:Info124 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19115-1-2014 ;
-	geolexica:clause "4.3" ;
-	geolexica:date_accepted "2002-07-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info125
-:Info125 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19115-2003 ;
-	geolexica:clause "4.3" ;
-	geolexica:date_accepted "2002-12-01"^^xsd:date ;
-	geolexica:date_amended "2014-04-01"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
-# https://isotc211.geolexica.org/api/info#Info127
-:Info127 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19108-2002 ;
-	geolexica:date_accepted "2002-09-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info128
-:Info128 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
-	geolexica:clause "3.3.1" ;
-	geolexica:date_accepted "2008-11-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info129
-:Info129 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19123-2005 ;
-	geolexica:date_accepted "2005-08-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info129
-:Info129 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:date_amended "2015-12-01"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info130
-:Info130 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-IEC-19501 ;
-	geolexica:date_accepted "2005-07-15"^^xsd:date ;
-	geolexica:date_amended "2015-12-01"^^xsd:date ;
-	geolexica::entry_status "superseded"@en .
-
-# https://isotc211.geolexica.org/api/info#Info131
-:Info131 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-1087-1-2000 ;
-	geolexica:clause "3.4.17" ;
-	geolexica:date_accepted "2008-11-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info133
-:Info133 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19133-2005 ;
-	geolexica:date_accepted "2005-10-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info134
-:Info134 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19157-2013 ;
-	geolexica:clause "4.10" ;
-	geolexica:date_accepted "2003-08-15"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info135
-:Info135 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19136-1-2020 ;
-	geolexica:clause "(E), 3.1.20" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info136
-:Info136 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.23" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info137
-:Info137 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.24" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info138
-:Info138 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.25" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info139
-:Info139 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2019 ;
-	geolexica:clause "(E), 3.26" ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:classification "preferred"@en ;
-	geolexica::entry_status "valid"@en .
-
-# https://isotc211.geolexica.org/api/info#Info140
-:Info140 a owl:NamedIndividual , geolexica:ConceptInfo ;
-    geolexica:hasSource sources:ISO-19107-2003 ;
-	geolexica:date_accepted "2003-05-01"^^xsd:date ;
-	geolexica:date_amended "2019-12-02"^^xsd:date ;
-	geolexica::entry_status "retired"@en .
-
+# 
+# https://isotc211.geolexica.org/api/sources#Dictionary_Computing
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-10746-3-1996
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-1087-1-2000
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19101-1-2014
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19101-2002
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19103-2015
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19105-2000
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19106-2004
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19107-2003
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19107-2019
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19108-2002
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19109-2015
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19111-2019
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19113-2002
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19114-2003
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19115-1-2014
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19115-2003
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19116-2004
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19117-2012
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19118-2005
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19118-2011
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19123-2005
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19128-2005
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19131-2007
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19132-2007
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19133-2005
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19135-1-2015
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-19157-2013
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-3534-1-1993
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-IEC-19501
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-IEC-19501-2005
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-1-1993
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-2015
+# 
+# https://isotc211.geolexica.org/api/sources#ISO-TS-19129-2009
+# 
+# https://isotc211.geolexica.org/api/sources#ITU-R-Rec-TF-686-1
+# 
+# https://isotc211.geolexica.org/api/sources#UML-1x
+# 
 # Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
