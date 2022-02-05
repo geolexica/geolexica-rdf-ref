@@ -4463,6 +4463,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                       skos:Concept ;
              skos:inScheme geolexica:GeolexicaConceptScheme ;
              geolexica:hasInfo info:Info71 ;
+            #  geolexica:hasReview reviews:Review71 ;
              geolexica:hasLDAPI ldapi:ldapi71-json ,
                                 ldapi:ldapi71-jsonld ,
                                 ldapi:ldapi71-rdfxml ,
@@ -4939,9 +4940,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                lang:sweRegistry ,
                                lang:zhoRegistry ;
            geolexica:hasReview reviews:Review78 ;
-           dcterms:identifier 77 ;
-           skos:notation 77 ;
+           dcterms:identifier 78 ;
+           skos:notation 78 ;
            rdfs:label "connected" ;
+           
+            lang:ara-note "ملاحظة: يكون الكيان الطوبولوجي موصولا فقط إذا كانت جميع شروط تحققه الهندسية موصولة. ولم يتم إدراج هذه المعلومة باعتبارها تعريفاً لأنها مترتبة على نظرية طوبولوجية"@ar ;
+            lang:dan-note "Bemærk til posten: Et topologisk objekt er forbundet hvis og kun hvis alle dets geometriske realiseringer er forbundet. Dette er ikke medtaget som en definition, da det følger af en topologisk læresætning."@da ;
+            lang:eng-note "Note to entry: A topological object is connected if and only if all its geometric realizations are connected. This is not included as a definition because it follows from a theorem of topology."@en ;
+            lang:fin-note "HUOM.: Topologinen objekti on yhtenäinen, jos ja vain jos kaikki sen geometriset ilmentymät ovat yhtenäisiä. Tätä ehtoa ei ole tässä yhteydessä otettu käsitteen määritelmäksi, sillä se on seuraus eräästä topologian teoreemasta."@fi ;
+            lang:jpn-note "備考： 位相オブジェクトは，幾何実現が連結である場合にだけ，連結である。これは，位相幾何学の定理から導かれるので，定義には含まない。"@ja ;
+            lang:kor-note "비고: 위상 객체는 기하 실현이 실제로 연결되어 있어야만 '연결되었다'라고 할 수 있다. 이는 위상학적 규칙을 따라야 하는 것으로 정의에 포함되지는 않는다."@ko ;
+            lang:pol-note "UWAGA: Obiekt topologiczny jest spójny wtedy i tylko wtedy, gdy wszystkie jego realizacje geometryczne są spójne. Zasada ta nie jest zawarta w definicji, ponieważ wynika z teorii topologii."@pl ;
+            lang:rus-note "Примечание: Топологический объект является связным тогда и только тогда, когда все его геометрические реализации являются связными. Это положение не следует считать определением, поскольку следует из теоремы топологии"@ru ;
+            lang:spa-note "Nota: Un objeto topológico está conectado sí y sólo si todas sus realizaciones geométricas están conectadas. Esto no se incluye como definición porque procede de un teorema de topología."@es ;
+            lang:zho-note "注： 当且仅当一个拓扑对象的所有几何实现是连通的，这个拓扑对象才是连通的。由于它源自拓扑法则，所以未写在定义内。"@zh ;
+
            skos:definition "(inom geometri); sådan att en linje genom två  godtyckligt valda punkter hos ett geometriskt objekt befinner sig inom objektet"@sv ,
                            "egenskab ved et geometrisk objekt, som angiver, at enhver af to direkte positioner på objektet kan placeres på en kurve, der forbliver helt inde i objektet"@da ,
                            "geometrisen objektin ominaisuus, joka edellyttää, että mitkä hyvänsä kaksi objektin pistettä voidaan sijoittaa käyrälle, joka on kokonaan objektin sisällä"@fi ,
@@ -5077,6 +5090,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                dcterms:identifier 81 ;
                skos:notation 81 ;
                rdfs:label "constraint (UML)" ;
+
+            lang:ara-note "ملاحظة: بعض القيود المعيَّنة يتم تحديدها مسبقا في لغة UML بينما يترك أمر بعضها الآخر للمستخدمين لتحديده. القيود هي إحدى آليات ثلاث لقابلية المد في اللغة الموحدة للنمذجةUML. أنظر: قيمة موضحة ، نموذج نمطي ثابت."@ar ;
+            lang:dan-note "Bemærk til posten: Nogle restriktioner er prædefinerede i UML, andre kan være brugerdefinerede. Restriktioner er en af tre udvidelsesmekanismer i UML. Se: tagged værdi, stereotype."@da ;
+            lang:eng-note "Note to entry: Certain constraints are predefined in the UML, others may be user defined. Constraints are one of three extensibility mechanisms in UML. See: tagged value, stereotype."@en ;
+            lang:fin-note "HUOM.: Jotkut UML:n rajoitteista ovat ennalta määrättyjä, toiset käyttäjän määritettävissä. Rajoitteet ovat yksi UML:n kolmesta laajennusmekanismista. Katso myös leima (tagged value) ja stereotyyppi."@fi ;
+            lang:kor-note "비고: 영역은 속성, 연산자, 함수에 대한 영역 집합 및 범위 집합을 정의하는데 사용된다."@ko ;
+            lang:rus-note "Примечание: Некоторые ограничения предопределены как стандартные элементы UML, другие могут быть определены пользователем. Ограничения являются одним из трех основных типов конструкций для расширения возможностей UML. См. термины «именованное значение», «стереотип»"@ru ;
+            lang:spa-note "Nota: ciertas restricciones están predefinidas en el UML, otras pueden ser definidas por el usuario. Las restricciones son uno de los tres mecanismos de extensión de UML. Véase: valor etiquetado, estereotipo."@es ;
+            lang:zho-note "注： 某些约束在UML中预先定义，在其他情况下可以是用户定义。约束是UML三种扩展机制之一。"@zh ;
+            
                skos:definition "(i UML); begränsning i beteende för en klass"@sv ,
                                "condition ou restriction sémantique"@fr ,
                                "restricción o  condición semántica"@es ,
@@ -5129,6 +5152,12 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                dcterms:identifier 82 ;
                skos:notation 82 ;
                rdfs:label "content model" ;
+
+            lang:ara-note "ملاحظة: مصطلح \"مشهد معلوماتي\" مأخوذ من نموذج الآيزو المرجعي للمعالجة المفتوحة الموزعة التي ورد توصيفها في المقياس 19101-2."@ar ;
+            lang:eng-note "Note to entry: The term \"information view\" comes from the ISO Reference Model for Open Distributed Processing (RM-ODP) as specified in 19101-2."@en ;
+            lang:rus-note "Примечание: Термин “представление информации” взят из ISO Reference Model for Open Distributed Processing (RM-ODP)согласно определению в 19101-2."@ru ;
+            lang:spa-note "Nota: El término \"vista informativa\" procede del Modelo de Referencia ISO para el Procesamiento Distribuido Abierto (RM-ODP) tal y como se especifica en la Norma ISO 19101-2."@es ;
+
                skos:definition "information view of an application schemas"@en ,
                                "informationsperspektiv på ett applikationsschema"@sv ,
                                "vista informativa de un esquema de aplicación"@es ,
@@ -5186,6 +5215,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                      dcterms:identifier 83 ;
                      skos:notation 83 ;
                      rdfs:label "continuous coverage" ;
+
                      skos:definition "cobertura que devuelve valores diferentes para el mismo atributo de objeto geográfico en diferentes posiciones directas dentro de un único objeto espacial, objeto temporal, u objeto espacio-temporal en su dominio"@es ,
                                      "couverture qui retourne des valeurs différentes pour le même attribut d&#39;entité à différentes positions directes à l&#39;intérieur de tout objet spatial, temporel ou spatiotemporel dans son domaine"@fr ,
                                      "coverage that returns different values for the same feature attribute at different direct positions within a single spatial object, temporal object, or spatiotemporal object in its domain"@en ,
@@ -5210,6 +5240,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                     "تغطية مستمرة"@ar ,
                                     "连续覆盖"@zh ,
                                     "연속 커버리지"@ko ;
+
+                  lang:ara-note "ملاحظة: رغم أن مجال التغطية المستمرة يكون في الأحوال العادية محدداً بحدود معلومة حسب امتداده المكاني أو الزماني ، أو بالامتدادين معاً , إلا أنه قابل للتقسيم إلى أقسام فرعية من المواقع المباشرة بعدد لا متناهٍ ."@ar ;
+                  lang:dan-note "Bemærk til posten: Skønt en sammenhængende coverages domæne sædvanligvis er afgrænset ved sin rumlige og/eller tidsmæssige udbredelse, kan den underinddeles i et uendeligt antal direkte positioner."@da ;
+                  lang:eng-note "Note to entry: Although the domain of a continuous coverage is ordinarily bounded in terms of its spatial and/or temporal extent, it can be subdivided into an infinite number of direct positions."@en ;
+                  lang:fin-note "HUOM.: Vaikka jatkuvan paikkatietojatkumon kattama alue on tavallisesti spatiaalisesti ja/tai temporaalisesti rajattu, se voidaan jakaa äärettömään määrään koordinaattipisteitä."@fi ;
+                  lang:kor-note "비고: 연속 커버리지의 영역이 통상적으로 시간 또는 공간 범위의 표현으로 한정될지라도, 이는 무한한 수의 위치로 세분될 수 있다."@ko ;
+                  lang:pol-note "UWAGA: Mimo, że dziedzina pokrycia ciągłego jest zwykle ograniczona przestrzennie i/lub czasowo, to może być dzielona na nieskończoną ilość położeń bezpośrednich."@pl ;
+                  lang:rus-note "Примечание: Хотя область определения непрерывного покрытия обычно ограничивают, используя понятия пространственной и/или временнóй протяженности, она может быть подразделена на бесконечное количество точек"@ru ;
+                  lang:spa-note "Nota: Aunque el dominio de una cobertura continua está habitualmente limitado en términos de su extensión espacial y/o temporal, puede subdividirse en un número infinito de posiciones directas."@es ;
+                  lang:zho-note "注： 虽然连续数据覆盖域通常受空间范围和/或时间范围的限制,但是它可以再分成无限个直接位置。"@zh ;
+
                      lang:deu-note notes:DefnTransUnavail ,
                                    notes:NoteTransUnavail ;
                      lang:fra-note notes:NoteTransDiff ;
@@ -5381,6 +5422,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
              dcterms:identifier 86 ;
              skos:notation 86 ;
              rdfs:label "convex hull" ;
+
              skos:altLabel "konveksi verho"@fi ;
              skos:definition "conjunto convexo más pequeño que contiene un objeto geométrico dado"@es ,
                              "den minsta konvexa mängden som innehåller ett givet geometriskt objekt"@sv ,
@@ -5403,6 +5445,15 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                             "هيكل محدَّب"@ar ,
                             "凸包"@zh ,
                             "볼록 외곽"@ko ;
+         
+            lang:ara-note "'ملاحظة: يقصد ب -أصغر- المستوى الأصغر المحدد أو المضبوط نظرياً , وليس في ذلك دلالة على إجراء أي نوع من القياس. ويمكن إعادة صياغة التعريف على النحو التالي: -تقاطع جميع المجموعات المحدَّبة التي تحتوي الكيان الهندسي-."@ar ;
+            lang:eng-note "\"Smallest\" is the set theoretic smallest, not an indication of a measurement. The definition can be rewritten as \"the intersection of all convex sets that contain the geometric object\". Another definition in a Euclidean space bbb\"E\"^n is the union of all lines with both end points in the given geometric object."@en , "C = A.\"convexHull\" <=> [C.\"convex\" = \"TRUE\"] ^^ [A sub C] ^^ [[B.\"convex\" = \"true\", A sub B] => [A sube C sube B]]"@en ;
+            lang:fin-note "HUOM.: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@fi , "'HUOM. Määritelmän sana \"pienin\" viittaa teoreettisesti pienimpään joukkoon, ei mittaustulokseen. Määritelmä voidaan ilmaista myös \"kaikkien tietyn geometrisen objektin sisältävien konveksien joukkojen leikkaus\"."@fi ;
+            lang:kor-note "비고: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry '"@ko , "'비고: \"최소\"는 이론상 가장 작은 것으로, 이는 측정 결과를 말하는 것은 아니다. 볼록 외곽은 \"기하 객체를 포함하는 모든 볼록 집합의 교차점\"으로 재정의될 수 있다."@ko ;
+            lang:rus-note "Примечание: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry"@ru , "\'«Наименьшее»  означает наименьшее в теоретическом понимании и не является единицей измерения. Данное определение можно сформулировать таким образом: «пересечение всех выпуклых множеств, которые содержат геометрический объект»"@ru ;
+            lang:spa-note "Nota: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@es , "'NOTA \"más pequeño\" es el conjunto teóricamente menor, no es una indicación de medida. La definición puede reescribirse como \"la intersección de todos los conjuntos convexos que contienen al objeto geométrico\""@es ;
+            lang:zho-note " 注： 'Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@zh , "\'注：“最小”是集合理论上最小，并不是指尺度上。这个定义也可以重写为“包含所给定的几何元素的所有凸集的并集”。"@zh ;
+
              lang:deu-note notes:DefnTransUnavail ,
                            notes:NoteTransUnavail .
 
@@ -5463,8 +5514,16 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            "مجموعة محدَّبة"@ar ,
                            "凸集"@zh ,
                            "볼록 집합"@ko ;
-            lang:deu-note notes:DefnTransUnavail ,
-                          notes:NoteTransUnavail ;
+
+            lang:ara-note "ملاحظة: المجموعات المحدَّبة \"متصلة اتصالا بسيطاً\" بمعنى أنها لا تحتوى على ثقوب داخلية, ويمكن أن تعتبر بشكل عادي مماثلة طوبولوجيا لكرة من كرات إقليدس لها أبعاد تتناسب معها. لذا يمكننا اعتبار السطح الكروي محدَّباً جيوديسيا."@ar ;
+            lang:eng-note "Note to entry: Convex sets are \"simply connected\", meaning that they have no interior holes, and can normally be considered topologically isomorphic to a Euclidean ball of the appropriate dimension. So the surface of a sphere can be considered to be geodesically convex."@en ;
+            lang:dan-note "Bemærk til posten: Konvekse mængder er \"simpelt forbundne\", dvs. at de ikke har indre huller, og de kan derfor normalt betragtes som værende topologisk isomorfe i forhold til en euklidisk bold af en passende størrelse. Derfor kan overfladen af en kugle anses for at være geodætisk konveks."@da ;
+            lang:fin-note "HUOM.: Konveksit joukot ovat \"yhtenäisiä\", eli niillä ei ole sisäpuolisia reikiä, ja niitä voidaan tavallisesti pitää isomorfisina soveltuvan ulottuvuuden euklidisen pallon kanssa. Näin ollen pallon pintaa voidaan pitää geodeettisesti konveksina."@fi ;
+            lang:rus-note "Примечание: Выпуклые множества являются простыми связными в том смысле, что они не имеют внутренних полостей (отверстий) и могут считаться топологически изоморфными Евклидову шару соответствующей размерности. Таким образом, поверхность сферы можно рассматривать как геодезически выпуклую"@ru ;
+            lang:spa-note "Nota: Los conjuntos convexos están \"simplemente conectados\", esto significa que no tienen agujeros interiores, y, normalmente, pueden considerarse topológicamente isomórficos al espacio Euclídeo de la dimensión apropiada. Así, la superficie de una esfera se puede considerar geodésicamente convexa."@es ;
+            lang:zho-note "注： 凸集间是“简单连接”，这意味着他们没有内部孔洞，并且通常可以认为在拓扑上是与适当维数的欧几里德球同构的，所以，球的表面可以被认为是几何凸集。"@zh ;
+
+            lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
             lang:swe-note notes:NoteTransUnavail .
 
 
@@ -5538,10 +5597,21 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                            "إحداثي"@ar ,
                            "坐标"@zh ,
                            "좌표"@ko ;
+                        
+            lang:ara-note "ملاحظة: في نظام الإحداثيات المرجعي توصف أعداد الإحداثيات بالوحدات."@ar ;
+            lang:eng-note "Note to entry: In a coordinate reference system, the coordinate numbers are qualified by units."@en ;
+            lang:dan-note "Bemærk 1 til posten: I et koordinatsystem skal tallene bestemmes ved hjælp af enheder."@da ;
+            lang:dan-note "Bemærk 2 til posten: En koordinatoperation udføres på koordinater i et kildesystem, der resulterer i koordinater i et målsystem."@da ;
+            lang:fin-note "HUOM.: Koordinaattijärjestelmässä koordinaatteihin on liitetty mittayksiköt."@fi ;
+            lang:kor-note "비고: 좌표 참조 체계에서 좌표를 나타내는 숫자는 적합한 단위를 사용해야 한다."@ko ;
+            lang:nld-note "OPMERKING: In een coördinaatreferentiesysteem worden de coördinaatwaarden gekwalificeerd door eenheden."@nl ;
+            lang:pol-note "UWAGA: W systemie odniesienia liczby te są oznaczone jednostkami."@pl ;
+            lang:spa-note "Nota: En un sistema de referencia de coordenadas, los números de las coordenadas están calificados con unidades."@es ;
+            lang:zho-note "注： 在一个坐标参照系中,坐标数值受限于单位。"@zh ;
+
             lang:deu-note notes:DefnTransUnavail ;
             lang:msa-note notes:NoteTransUnavail ;
             lang:swe-note notes:NoteTransUnavail .
-
 
 ###  https://isotc211.geolexica.org/api/concepts#coordinate_dimension
 :coordinate_dimension rdf:type owl:NamedIndividual ,
@@ -5676,6 +5746,18 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                      "عملية إحداثية"@ar ,
                                      "坐标操作"@zh ,
                                      "좌표 연산"@ko ;
+                     
+                     lang:ara-note "ملاحظة: .ملاحظة: نوع متفوق من تغير النظام الإحداثي و التحويل الإحداثي"@ar ;
+                     lang:dan-note "Bemærk til posten: Supertype af koordinattransformation og koordinatkonvertering."@da ;
+                     lang:eng-note "Note to entry: Supertype of coordinate transformation and coordinate conversion."@en ;
+                     lang:fin-note "HUOM.: Koordinaatteihin liittyvä laskentaoperaatio on koordinaattimuunnoksen ja koordinaattikonversion yläkäsite."@fi ;
+                     lang:kor-note "비고: 좌표 변환과 좌표 전환의 상위 유형"@ko ;
+                     lang:nld-note "OPMERKING: Een supertype van de coördinaat transformatie en de coördinaat conversie."@nl ;
+                     lang:pol-note "UWAGA: Jest to nadtyp transformacji współrzędnych i konwersji współrzędnych."@pl ;
+                     lang:rus-note "Примечание: Общий случай трансформирования или перевычисления"@ru ;
+                     lang:spa-note "Nota: Es el supertipo de transformación de coordenadas y conversión de coordenadas."@es ;
+                     lang:zho-note "注： 坐标变换和坐标转换的父类型。"@zh ;
+
                       lang:deu-note notes:DefnTransUnavail ;
                       lang:swe-note notes:DefnTransUnavail .
 
@@ -5802,8 +5884,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                               "دالة التكلفة"@ar ,
                               "成本函数"@zh ,
                               "비용 함수"@ko ;
-               lang:deu-note notes:DefnTransUnavail ,
-                             notes:NoteTransUnavail ;
+
+               lang:ara-note "ملاحظة: الآلية العادية هي تطبيق التكلفة على كل جزء من أجزاء الطريق, وتحديد التكلفة الكلية للطريق بأنها تساوي مجموع تكاليف الأجزاء. ويعتبر هذا الإجراء ضرورياً لتغيل خوارزمات الملاحة التي يشيع استخدامها أكثر من غيرها. وحدات دالات التكلفة ليست مقتصرة على التكاليف والقيم النقدية فقط بل تشمل قياسات أخرى مثل الوقت والمسافة كما قد تشمل غيرها أيضاً. والشرط الوحيد هو أن تكون الدالة إضافية additive وألا تكون سالبة على أقل تقدير. وهذا المعيار الأخير يمكن تخفيفه ما دام أنه ليست هناك تكلفة صفرية أو تكلفة متدنية ترتبط بأي حلقة في الشبكة حيث أن هذا سيؤدي إلى عدم وجود طريق تصل تكلفته إلى - الحد الأدنى للتكلفة -."@ar ;
+               lang:dan-note "Bemærk til posten: Den normale mekanisme er at tilskrive hver del af en rute en omkostning og at definere de totale ruteomkostninger som summen af delenes omkostninger. Dette er nødvendigt for at de mest almindelige navigationsalgoritmer kan fungere. Omkostningsfunktionernes enheder er ikke udelukkende begrænset til penge og værdier, men omfatter også sådanne mål som tid, afstand og andre forhold. Det eneste krav er, at funktionen er additiv og i det mindste ikke-negativ. Der kan slækkes på dette sidste kriterium, så længe ingen omkostning på nul eller mindre forbindes med et loop i netværket, da dette vil betyde at der ikke kan være en \"minimal-omkostnings-rute\"."@da ;
+               lang:eng-note "Note to entry: The normal mechanism is to apply a cost to each part of a route, and to define the total route cost as the sum of the cost of the parts. This is necessary for the operation of the most common navigation algorithms. The units of cost functions are not limited to monetary costs and values only, but include such measures as time, distance, and possibly others. The only requirement is that the function be additive and at least non-negative. This last criteria can be softened as long as no zero or less cost is associated with any loop in the network, as this will prevent the existence of a \"minimal cost\" route. "@en ;
+               lang:fin-note "HUOM.: Normaali käytäntö on laskea reitin kunkin osan kustannukset ja määritellä reitin kokonaiskustannus osien kustannusten summaksi. Tavallisimmat navigointialgoritmit edellyttävät tätä. Kustannusfunktiossa käytettävät yksiköt liittyvät paitsi rahallisiin kustannuksiin ja arvoihin, myös muun muassa aikaan ja välimatkaan. Ainoa edellytys on, että funktio on additiivinen eikä se ole negatiivinen. Viimeistä ehtoa voidaan lieventää, jos verkoston mihinkään silmukkaan ei liity nollan suuruista tai sitä pienempää kustannusta, sillä tämä estää minimikustannusreitin olemassaolon. "@fi ;
+               lang:kor-note "비고: 보통의 메커니즘은 경로의 각 부분에 비용을 할당하고, 전체 경로에 대한 비용을 각 부분 비용의 합으로 정의하는 것이다. 이는 대부분의 일반적인 내비게이션 알고리듬 연산에 필수적으로 사용된다. 비용 함수의 단위는 화폐 비용이나 가치만으로 제한되지 않으며, 시간, 거리 등 다양한 척도가 사용될 수 있다. 다만 함수는 덧셈이 가능해야 하며, 음의 값을 가질 수 없다. 이 마지막 기준은 값이 0이 아니거나 또는 비용이 네트워크상의 루프와 연관되어야 하는 것으로 완화될 수 있으며, 이는 \"최소 비용\" 경로의 존재를 예방한다."@ko ;
+               lang:rus-note "Примечание: Нормальный механизм заключается в применение стоимости к каждому участку маршрута и определении стоимости всего маршрута как суммарной стоимости его частей, что является необходимым для большинства распространенных алгоритмов навигации. Значения функции стоимости не ограничиваются только денежными и оценочными значениями, а включают такие единицы как время, расстояние и, возможно, какие-либо другие. Единственным требованием к функции является то, что она должна быть аддитивной и , по крайней мере, неотрицательной. Этот последний критерий может быть не столь строгим до тех пор, пока нулевая или меньшая стоимость связана с любой петлей в сети, не допуская этим существование маршрута «минимальной стоимости»"@ru ;
+               lang:spa-note "Nota: El mecanismo normal es aplicar un coste a cada parte de una ruta y definir el coste total de una ruta como la suma de costes de las partes. Esto es necesario para la operación de la mayoría de los algoritmos más comunes de navegación. Las unidades de las funciones de coste no están limitadas al coste y valores monetarios, sino que incluyen medidas como tiempo, distancia y posiblemente otras. El único requisito es que la función sea aditiva, y como mínimo no negativa. Este último criterio puede relajarse mientras que no se asocie a ningún bucle en la red un coste cero o menor, ya que esto evitará la existencia de una ruta de \"coste mínimo\"."@es ;
+               lang:zho-note "注： 通常的做法是给路径的每一部分赋一个成本值，把总路径成本值定义为各部分成本的总和。这一函数对于大多数常用导航算法的运算是很有必要的。成本函数的单位不仅局限于货币的成本和价值，而且还包括诸如时间、距离和其他可能的度量。惟一的要求是函数为增加的，并且至少是非负的。非负这一要求可以弱化为与网络中任意环路相关的成本值非零或非负，以证明“最小成本”的路径存在。"@zh ;
+
+               lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
                lang:fra-note notes:NoteTransDiff ;
                lang:swe-note notes:NoteTransUnavail .
 
@@ -5872,6 +5963,29 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                          "التغطية"@ar ,
                          "覆盖"@zh ,
                          "커버리지"@ko ;
+
+      geolexica:examples "EXAMPLE Examples include a raster image, polygon overlay, or digital elevation matrix."@en ;
+      geolexica:examples "مثال الأمثلة تشمل صورة متجهات , أو شفافة مضلعات أو مصفوفة ارتفاعات رقمية."@ar ;
+      geolexica:examples "EKSEMPEL Eksempler er fx et rasterbillede, polygonoverlay eller digital højdematrix"@da ;
+      geolexica:examples "ESIM. Rasterikuva, monikulmiopeite ja digitaalinen korkeusruudukko."@fi ;
+      geolexica:examples ""@ja ;
+      geolexica:examples "보기 래스터 이미지, 다각형 중첩, DEM"@ko ;
+      geolexica:examples "PRZYKŁAD Obraz rastrowy, pokrycie wielobokowe lub macierz numerycznego modelu terenu."@pl ;
+      geolexica:examples "Пример ами являются растровое изображение, полигональный оверлей или цифровая матрица высот"@ru ;
+      geolexica:examples "EJEMPLO Los ejemplos incluyen una imagen ráster, una capa de polígonos o una matriz digital de elevaciones."@es ;
+      geolexica:examples "示例 实例包括栅格影像、多边形覆盖或数字高程矩阵。"@zh ;
+
+         lang:ara-note "ملاحظة: وبعبارة أخرى التغطية هي عبارة عن معلم له قيم متعددة لكل نوع من الصفات, بحيث أن كل موقع مباشر يقع ضمن التمثيل الهندسي للمعلم تكون له قيمة واحدة لكل نوع من الصفات."@ar ;
+         lang:dan-note "Bemærk til posten: Med andre ord er en coverage en feature, som har flere mulige værdier for hver attributtype, hvor hver direkte position i den geometriske repræsentation af featuren har én værdi for hver attributtype."@da ;
+         lang:eng-note "Note to entry: In other words, a coverage is a feature that has multiple values for each attribute type, where each direct position within the geometric representation of the feature has a single value for each attribute type."@en ;
+         lang:fin-note "HUOM.: Paikkatietojatkumo on siis kohde, jolla on kullekin attribuuttityypille useita arvoja; kohteen geometriailmentymän sisällä olevassa koordinaattipisteessä kullakin attribuuttityypillä on puolestaan vain yksi arvo."@fi ;
+         lang:kor-note "비고: 커버리지는 다른 말로 각각의 속성 유형에 대한 다양한 값을 갖는 피처이며, 피처의 기하학적 표현 내에서 각각의 직접 위치는 각 속성 유형별로 하나의 값을 갖는다."@ko ;
+         lang:pol-note "UWAGA: Innymi słowy, pokrycie jest obiektem, który ma wiele wartości dla każdego typu atrybutu, przy czym dla każdego bezpośredniego położenia w ramach geometrycznej reprezentacji tego obiektu ma po jednej wartości dla każdego typu atrybutu."@pl ;
+         lang:rus-note "Примечание: Иными словами, покрытие является пространственным объектом, который имеет многочисленные значения для каждого типа атрибута, где каждая точка внутри геометрического представления пространственного объекта имеет одно и то же значение для каждого типа атрибута"@ru ;
+         lang:spa-note "Nota: En otras palabras, una cobertura es un objeto geográfico que tienen valores múltiples para cada tipo de atributo, donde cada posición directa de la representación geométrica del objeto geográfico tiene un valor único para cada tipo de atributo."@es ;
+         lang:swe-note "Anm. till termpost: Termen \"coverage\" översätts ofta med \"yttäckande representation\". Det begrepp som används i standarden (ISO 19123) avser dock såväl linjetäckande, yttäckande som volymtäckande och kan vara 2D (platt på marken) eller 3D samt ha med tidsdimensionen. till termpost: Rasterdata kan beskrivas av en domänobjekttyp. Anm. 3 till termpost: En instans av en domänobjekttyp är ett domänobjekt."@sv ;
+         lang:zho-note "注： 换句话说，一个数据覆盖是一个要素，这个要素的每个属性类型有多个值，而在要素的几何表达的每个直接位置，每个属性类型有单独的一个值。"@zh ;
+
           lang:deu-note notes:DefnTransUnavail ,
                         notes:NoteTransUnavail ;
           lang:fra-note notes:NoteTransDiff ;
@@ -6012,9 +6126,20 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                       "曲線"@ja ,
                       "曲线"@zh ,
                       "곡선"@ko ;
+      
+      lang:ara-note "ملاحظة: حدود المنحنى هي مجموعة النقاط الواقعة على كل طرف من طرفيه.  فإذا كان المنحنى حلقة كان طرفاه متطابقين , وفي هذه الحالة يعتبر المنحنى ( إذا كان مغلقاً طوبولوجيا) منحنى ليست له حدود. النقطة الأولى تسمى نقطة الابتداء , والنقطة الأخيرة تسمى نقطة الانتهاء. الربط المنطقي للمنحنى مضمون بموجب عبارة \" الصورة المستمرة لخط ما\". هناك نظرية طوبولوجية تنص على أن الصورة المستمرة لمجموعة متصلة ببعضها هي أيضاً متصلة."@ar ;
+      lang:dan-note "Bemærk til posten: Afgrænsningen af en kurve er mængden af punkter i hver ende af kurven. Hvis en kurve er en ring, er de to endepunkter identiske, og kurven (hvis den er topologisk lukket) opfattes som ikke havende nogen afgrænsning. Det første punkt på kurven kaldes for startpunktet og det sidste for slutpunktet. Kurvens konnektivitet er sikret ved princippet om \"et sammenhængende billede af en linje\". En topologisk læresætning siger, at et kontinuert billede af en forbunden mængde også er forbundet i sig selv."@da ;
+      lang:eng-note "Note to entry: The boundary of a curve is the set of points at either end of the curve. If the curve is a cycle, the two ends are identical, and the curve (if topologically closed) is considered to not have a boundary. The first point is called the start point, and the last is the end point. Connectivity of the curve is guaranteed by the \"continuous image of a line\" clause. A topological theorem states that a continuous image of a connected set is connected."@en ;
+      lang:fin-note "HUOM.: Käyrän rajaus muodostuu käyrän kummassakin päässä olevista pisteistä. Jos käyrä on silmukka, jonka molemmat päät ovat identtiset, katsotaan, ettei käyrällä (jos se on topologisesti suljettu) ole rajausta. Ensimmäistä pistettä kutsutaan alkupisteeksi ja viimeistä loppupisteeksi. Käyrän yhtenäisyyden takaa ehto \"jatkuva viivan kuva\". Erään topologian teoreeman mukaan yhtenäisen joukon jatkuva kuva on yhtenäinen."@fi ;
+      lang:jpn-note "備考： 曲線の境界は，その両端の点の集合である。曲線が閉路の場合，二つの端は同一であり，その曲線は（位相的に閉じている場合には），境界をもたないとみなす。最初の点を始点，最後のものを終点と呼ぶ。“直線の連続的な像”という定義文の語句によって，曲線の連結性が保証される。位相幾何学の定理は，連結している集合の連続的な像は連結であることを規定している。"@ja ;
+      lang:kor-note "비고: 곡선의 경계는 곡선의 양쪽 끝 점의 집합이다. 만약 곡선이 순환한다면(위상적으로 폐합되어 있다면), 두 끝점은 동일하며 곡선은 경계를 갖지 않는다. 첫 번째 점은 시작점으로, 마지막 점은 끝점으로 불린다. 곡선의 연결성은 \"선의 연속 이미지\"라는 절에 기술되어 있으며, \"연결 집합의 연속 이미지는 연결되어 있다\"라고 위상적으로 정의된다."@ko ;
+      lang:pol-note "UWAGA: Granicą krzywej jest zbiór punktów leżących na obu końcach krzywej. Jeżeli krzywa jest cyklem, wówczas oba jej końce są identyczne, samą krzywą zaś (o ile jest zamknięta topologicznie) można traktować tak, jakby nie miała granicy. Pierwszy punkt jest nazywany punktem początkowym, a ostatni – punktem końcowym. Spójność krzywej jest zapewniona poprzez warunek \"ciągłości obrazu linii\". Teoria topologii stwierdza, że ciągły obraz zbioru spójnego jest spójny."@pl ;
+      lang:rus-note "Примечание: Границей кривой является множество точек на обеих ее концах. Если кривая является циклом, то два конца идентичны и кривая (если она топологически замкнута) считается не имеющей границы. Первая точка называется начальной, последняя – концевой. Связность кривой обеспечивается условием «непрерывности образа линии». Из теоремы топологии следует, что непрерывный образ связного множества является связным"@ru ;
+      lang:spa-note "Nota: La frontera de una curva es el conjunto de puntos en cualquiera de sus extremos. Si la curva es un ciclo los dos extremos son idénticos y se considera que la curva (topológicamente cerrada) no tiene frontera. El primer punto se denomina punto inicial y el último punto final. La continuidad de la curva queda garantizada por la expresión \"imagen continua de una línea\". Un teorema topológico establece que una imagen continua de un conjunto conectado, está conectado."@es ;
+      lang:zho-note "注： 一条曲线的边界是曲线的两端的点的集合。如果曲线是一个圈，两个端点相同，并且这条曲线（如果拓扑上是闭合的）被认为没有边界。这第一个点被称作起点，最后一个点被称作终点，曲线的连通性被“一条线的连续映射”条款所保证。拓扑法则认为一个连续集合的连续映射是连续的。"@zh ;
+
        lang:deu-note notes:NoteTransUnavail ;
        lang:msa-note notes:NoteTransUnavail .
-
 
 ###  https://isotc211.geolexica.org/api/concepts#curve_segment
 :curve_segment rdf:type owl:NamedIndividual ,
@@ -6080,6 +6205,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                               "曲線分"@ja ,
                               "曲线段"@zh ,
                               "곡선 분절"@ko ;
+
+               lang:ara-note "ملاحظة: المجموعة الهندسية التي تمثَل بمقطع واحد من مقاطع المنحنى مساوية للمنحنى كله."@ar ;
+               lang:dan-note "Bemærk til posten: Den geometriske mængde, der repræsenteres af et enkelt kurvesegment, svarer til en kurve."@da ;
+               lang:eng-note "Note to entry: The geometric set represented by a single curve segment is equivalent to a curve."@en ;
+               lang:fin-note "HUOM.: Yksittäistä käyräsegmenttiä vastaava geometrinen joukko on yhtä kuin käyrä."@fi ;
+               lang:jpn-note "備考： 単一の曲線分によって表現される幾何集合は，一つの曲線と等しい。"@ja ;
+               lang:kor-note "비고: 단일 곡선 분절에 의해 표현되는 기하 집합은 곡선과 같다."@ko ;
+               lang:pol-note "UWAGA: Zbiór geometryczny reprezentowany przez pojedynczy segment krzywej jest równoważny krzywej."@pl ;
+               lang:spa-note "Nota: El conjunto geométrico representado por un único segmento de curva es equivalente a una curva."@es ;
+               lang:zho-note "注： 用一个单独的曲线段表达的几何集合与一条曲线等价。"@zh ;
+
                lang:deu-note notes:DefnTransUnavail ,
                              notes:NoteTransUnavail .
 
@@ -6148,6 +6284,20 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                "圈"@zh ,
                                "輪体"@ja ,
                                "순환(기하)"@ko ;
+
+                  lang:ara-note "ملاحظة: تستخدم الحلقات لوصف مكونات الحدود الخارجية (انظر هيكل واجهة shell وطوق ring ). والحلقة ليس لها حد خارجي لأنها تنغلق على ذاتها , لكنها محددة (أي أنها ليست ممتدة امتدادا لامتناهيا). والدائرة أو الكرة , مثلاً , ليس لها حد خارجي ولكنها محددة كذلك."@ar ;
+                  lang:dan-note "Bemærk til posten: Egenskaben lukket anvendes til at beskrive grænsekomponenter (se rand). Når et objekt er lukket, har det ingen grænse, da det afslutter sig selv, men det er afgrænset (dvs. det har ikke uendelig udbredelse). En cirkel eller kugle har eksempelvis ingen grænse, men er afgrænset."@da ;
+                  lang:deu-note ""@de ;
+                  lang:eng-note "Note to entry: Cycles are used to describe boundary components (see shell, ring). A cycle has no boundary because it closes on itself, but it is bounded (i.e., it does not have infinite extent). A circle or a sphere, for example, has no boundary, but is bounded."@en ;
+                  lang:fin-note "HUOM.: Silmukoita käytetään rajauskomponenttien (katso käsitteet kuori ja piiri) kuvaamiseen. Silmukalla ei ole rajausta, sillä se sulkeutuu itseensä, mutta se on rajattu (eli sen laajuus ei ole ääretön). Esimerkiksi ympyrällä tai pallolla ei ole rajausta, mutta ne ovat rajattuja."@fi ;
+                  lang:jpn-note "備考： 輪体は境界の構成要素［殻(shell)及び輪(ring)を参照］を記述するために使用する。輪体は，それ自身の上で閉じているため境界をもたないが，有界である（すなわち，範囲は無限ではない）。例えば，円周又は球面は，境界をもたないが有界である。"@ja ;
+                  lang:kor-note "비고: 순환은 경계 컴포넌트(외면, 링)의 기술에 사용된다. 순환은 스스로 완결되어 있지만 묶여 있기 때문에 경계가 없다. 예를 들어 원이나 구는 경계가 없지만 묶여 있다."@ko ;
+                  lang:pol-note "UWAGA: Cykle są wykorzystywane do opisu składników granic (patrz powłoka, pierścień). Cykl nie ma granicy, ponieważ zamyka się sam na sobie, jest jednak ograniczony (to znaczy nie ma nieskończonego zasięgu). Na przykład, okrąg i sfera nie mają granicy, lecz są ograniczone."@pl ;
+                  lang:rus-note "Примечание: Циклы используют для описания граничных компонентов (см.: оболочка, кольцо). Цикл не имеет границы, поскольку замыкается на себе, тем не менее, он ограничен (т.е. не бесконечен в пространстве). Например, окружность или сфера не имеют границ, но они ограничены"@ru ;
+                  lang:spa-note "Nota: Los ciclos se usan para describir componentes de los límites (ver definición de armazón, anillo). Un ciclo no tiene límite porque cierra consigo mismo, aunque está acotado (es decir, no tiene una extensión infinita). Un círculo o una esfera, por ejemplo, no tienen límite, pero están acotados."@es ;
+                  lang:swe-note "Anm. till termpost: Begränsningsytan hos ett klot är ett cykliskt objekt."@sv ;
+                  lang:zho-note "注： 圈用来描述边界组成部分（参见壳、环）。圈没有边界，因为它自身闭合，但它是有界的（即它不具有无限的外延）。例如，圆环或球，没有边界，但却是有界的。"@zh ;
+
                 lang:deu-note notes:DefnTransUnavail ,
                               notes:NoteTransUnavail .
 
@@ -6501,6 +6651,23 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                            "مواصفات منتج بيانات"@ar ,
                                            "数据产品规范"@zh ,
                                            "데이터 제품 사양"@ko ;
+
+                           lang:ara-note "ملاحظة: مواصفات منتح البيانات تحتوي على وصف المجال المستهدف بالبحث أو الاهتمام ومواصفات لتمثيل المجال المستهدف بالبحث أو الاهتمام وفقاً لمجموعة بيانات معينة. ويمكن استخدام هذه المواصفات للإنتاج , أو للمبيعات , أو للاستخدام النهائي أو لأغراض أخرى."@ar ;
+                           lang:dan-note ""@da ;
+                           lang:deu-note ""@de ;
+                           lang:eng-note "Note to entry: A data product specification provides a description of the universe of discourse and a specification for mapping the universe of discourse to a dataset. It may be used for production, sales, end-use or other purposes."@en ;
+                           lang:fin-note "HUOM.: Tietotuotemäärittely sisältää kuvauksen kohdemaailmasta ja tiedot kohdemaailman kuvaamisesta tietoaineistoon. Sitä voidaan hyödyntää mm. tuotannon, myynnin ja loppukäytön yhteydessä."@fi ;
+                           lang:fra-note ""@fr ;
+                           lang:jpn-note ""@ja ;
+                           lang:kor-note "비고: 데이터 제품 사양은 논의의 영역에 대한 설명과 그 논의의 영역과 데이터셋을 매핑하기 위한 사양을 제공한다. 데이터 제품 사양은 생산, 판매, 최종 사용 또는 기타 목적을 위해 사용할 수 있다."@ko ;
+                           lang:msa-note ""@ms ;
+                           lang:nld-note ""@nl ;
+                           lang:pol-note ""@pl ;
+                           lang:rus-note "Примечание: В спецификации информационного продукта дается описание предметной области и требования к отображению предметной области набором данных. Она может быть использована для производства, продажи, конечного использования информационного продукта и в других целях"@ru ;
+                           lang:spa-note "Nota: Unas especificaciones de producto de datos proporcionan una descripción del universo de discurso y unas especificaciones para transformar el universo de discurso en un conjunto de datos. Puede ser utilizada para producción, venta, uso final o para otros propósitos."@es ;
+                           lang:swe-note ""@sv ;
+                           lang:zho-note "注： 数据产品规范提供了对论域的说明，以及将论域映射到数据集的详细描述。可用于生产、销售、最终应用或其他目"@zh ;
+
                             lang:deu-note notes:DefnTransUnavail ;
                             lang:fra-note notes:NoteTransDiff .
 
@@ -6626,6 +6793,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                      "عنصر جودة البيانات"@ar ,
                                      "数据质量元素"@zh ,
                                      "데이터 품질 요소"@ko ;
+                     
+                     lang:ara-note "ملاحظة: إمكانية تطبيق عنصر جودة بيانات معيَّن على مجموعة للبيانات تعتمد على أمرين هما محتوى مجموعة البيانات المعنية من جهة ومواصفات المنتج الخاصة بها من الجهة الأخرى ؛ والنتيجة هي أنه قد لا يمكن تطبيق كل عناصر البيانات على كل مجموعات البيانات."@ar ;
+                     lang:dan-note "Bemærk til posten: Anvendeligheden af et datakvalitetselement i et datasæt afhænger både af datasættets indhold og af dets produktspecifikation; det betyder, at alle dataelementer ikke nødvendigvis kan anvendes i alle datasæt."@da ;
+                     lang:deu-note ""@de ;
+                     lang:eng-note "Note to entry: The applicability of a data quality element to a dataset depends on both the dataset's content and its product specification; the result being that all data elements may not be applicable to all datasets."@en ;
+                     lang:fin-note "HUOM.: Mitattavan laatutekijän sovellettavuus tietoaineistoon riippuu tietoaineiston sisällöstä ja tuotemäärittelystä. Kaikkia tietoelementtejä ei näin ollen voi välttämättä soveltaa kaikkiin tietoaineistoihin."@fi ;
+                     lang:kor-note "비고: 데이터셋에 대한 데이터 품질 요소의 적용 여부는 데이터셋의 내용과 그 제품 사양 모두에 달려 있다. 모든 데이터 요소를 모든 데이터셋에 적용하는 것은 어려울 수 있다."@ko ;
+                     lang:rus-note "Примечание: Применимость элемента качества данных к набору данных зависит от содержания набора данных и спецификации продукта. Возможна ситуация, когда не все элементы качества данных будут применимы ко всем наборам данных"@ru ;
+                     lang:spa-note "Nota: La aplicabilidad de un elemento de la calidad de datos a un conjunto de datos depende tanto del contenido del conjunto de datos como de su especificación de producto; como resultado, todos los elementos de la calidad de datos pueden no ser aplicables a todos los conjuntos de datos. "@es ;
+                     lang:zho-note "注： 数据质量元素对数据集的适用性依赖于数据集的内容及其产品规范；究其原因不是所有的数据质量元素适用于所有的数据集。"@zh ;
+
                       lang:deu-note notes:DefnTransUnavail ,
                                     notes:NoteTransUnavail ;
                       lang:swe-note notes:NoteTransUnavail .
@@ -6760,8 +6938,19 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                      "データ品質評価尺度"@ja ,
                                      "数据质量度量"@zh ,
                                      "데이터 품질 측정"@ko ;
-                      lang:deu-note notes:DefnTransUnavail ,
-                                    notes:ExTransUnavail ;
+
+                     geolexica:examples "EXAMPLE The percentage of the values of an attribute that are correct."@en ;
+                     geolexica:examples "مثال النسبة المئوية للقيم الصحيحة للبيانات الوصفية"@ar ;
+                     geolexica:examples "EKSEMPEL Procentdelen af værdierne af en bestemt attribut, som er korrekte."@da ;
+                     geolexica:examples "ESIM. erkiksi jonkin ominaisuuden virheettömien arvojen prosenttiosuus."@fi ;
+                     geolexica:examples "例 　属性値が正しいものの百分率。"@ja ;
+                     geolexica:examples "보기 백분율로 표현된 속성 값 "@ko ;
+                     geolexica:examples "PRZYKŁAD Procent poprawnych wartości atrybutu"@pl ;
+                     geolexica:examples "Пример Количество корректных значений атрибута в процентах"@ru ;
+                     geolexica:examples "EJEMPLO El porcentaje de los valores de un atributo que son correctos."@es ;
+                     geolexica:examples "示例 属性值正确的百分率。"@zh ;
+
+                      lang:deu-note notes:DefnTransUnavail , notes:ExTransUnavail ;
                       lang:swe-note notes:ExTransUnavail .
 
 
@@ -6821,8 +7010,17 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                           "عنصر الاستعراض العام لجودة البيانات"@ar ,
                                           "数据质量概述元素"@zh ,
                                           "데이터 품질 개관 요소"@ko ;
-                           lang:deu-note notes:DefnTransUnavail ,
-                                         notes:NoteTransUnavail ;
+
+                           lang:ara-note "ملاحظة: المعلومات عن الغرض من مجموعة البيانات , واستخدامها وسلالاتها هي معلومات غير كمية."@ar ;
+                           lang:dan-note "Bemærk til posten: Informationer om formål, anvendelse og historik af et datasæt er ikke-kvantitativ information."@da ;
+                           lang:eng-note "Note to entry: Information about the purpose, usage, and lineage of a dataset is non-quantitative information."@en ;
+                           lang:fin-note "HUOM.: Kuvailevia laatutekijöitä ovat tietoaineiston tarkoitus, käyttö ja historiatiedot."@fi ;
+                           lang:kor-note "비고: 데이터셋의 목적, 사용법, 그리고 연혁에 대한 정보는 비정량적 정보이다."@ko ;
+                           lang:rus-note "Примечание: Неколичественная информация о качестве – назначение, использование и происхождение набора данных"@ru ;
+                           lang:spa-note "Nota: La información acerca del propósito, utilización y linaje de un conjunto de datos es información no-cuantitativa."@es ;
+                           lang:zho-note "注： 关于数据集的目的、应用和数据志的信息是非定量信息。"@zh ;
+
+                           lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
                            lang:swe-note notes:NoteTransUnavail .
 
 
@@ -6886,8 +7084,19 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                     "データ品質評価結果"@ja ,
                                     "数据质量结果"@zh ,
                                     "데이터 품질 결과"@ko ;
-                     lang:deu-note notes:DefnTransUnavail ,
-                                   notes:ExTransUnavail ;
+
+                     geolexica:examples "EXAMPLE A data quality result of \"90\" with a data quality value type of \"percentage\" reported for the data quality element and its data quality subelement \"completeness, commission\" is an example of a value resulting from applying a data quality measure to the data specified by a data quality scope. A data quality result of \"true\" with a data quality value type of \"boolean variable\" is an example of comparing the value (90) against a specified acceptable conformance quality level (85) and reporting an evaluation of a kind, pass or fail."@en ;
+                     geolexica:examples "مثال نتيجة جودة البيانات (90) مع قيمة نوع جودة البيانات \"نسبة مئوية\" التي يفاد بها عن عنصر جودة البيانات وعنصر جودة البيانات الفرعي التابع له \"اكتمال , تجهيز للتشغيل\" هي مثال على قيمة ناتجة عن تطبيق عملية قياس جودة بيانات على البيانات التي يحددها نطاق جودة بيانات معيَّن. أما نتيجة فحص جودة البيانات \"صحيح\" المقترنة بقيمة نوع جودة البيانات \"متغير جبري\" فهي مثال لمقارنة القيمة (90) بمستوى مطابقة جودة مقبول (85) حسب المواصفات والإفادة عن ذلك في شكل تقييم لدرجة المطابقة بالنجاح أو الفشل."@ar ;
+                     geolexica:examples "EKSEMPEL Hvis der rapporteres et datakvalitetsresultat på \"90\" med \"procent\" som værditype for datakvalitetselementet og dets delelement \"fuldstændighed\" er det et eksempel på en værdi, der opnås ved at anvende et mål for datakvalitet på dataene specificeret ved et bestemt omfang af datakvalitet. I forlængelse heraf er datakvalitetsresultatet \"sandt\" med \"Boolean\" som værditype for datakvalitet et eksempel på sammenligning af værdien (90) med tærskelværdien 85 som kvalitetsniveau for overensstemmelse, og der kan rapporteres en evaluering: godkendt eller ikke godkendt."@da ;
+                     geolexica:examples "ESIM. Laatutulos ”90” laatuarvotyypille ”prosentti” on esimerkki laatumittarista, joka on sovellettu mitattavan laadun tekijälle ”täydellisyys, mukana olo” laatukuvauksen laajuudessa määritettyihin tietoihin. Laatutulos ”tosi” laatuarvotyypille ”totuusarvo” on esimerkki laatumittarista, jossa laatutulosta (”90”) verrataan laatuvaatimustasoon (”85”) ja lopputuloksena raportoidaan laatutestauksen läpäisy."@fi ;
+                     geolexica:examples "例 　データ品質要素及びその副要素“完全性，過剰”を報告する場合，“百分率”をデータ品質評価値型とする“90”というデータ品質評価結果は，データ品質適用範囲で定めるデータ品質評価尺度を適用した結果の値の一例である。“ブール変数”をデータ品質評価値型とする“真”というデータ品質評価結果は，取得した値（90）を規定された合格適合品質水準（85）と比較した結果の例であり，また，合否の評価報告の一例でもある。"@ja ;
+                     geolexica:examples "보기 데이터 품질 요소의 보고를 위한 데이터 품질 값 유형인 \"백분율\"에 대한 데이터 품질 결과인 \"90\"과 이것의 데이터 품질 하위 요소 \"완전 위임\"은 데이터 품질 범위에 규정된 데이터 품질 측정 결과의 사례이다. 데이터 품질 값 유형인 \"불린 변수\"에 따라 보고된 산출 결과인 \"참\"은 통과 또는 실패를 결정짓는 품질 적합성 수준 (85)를 만족하는 값 (90)에 대한 사례이다."@ko ;
+                     geolexica:examples "PRZYKŁAD Wynik oceny jakości danych o wartości \"90\" z typem wartości jakości danych \"procent\" przedstawiony dla elementu jakości danych \"kompletność\" i jego elementu podrzędnego \"nadmiar\" jest przykładem wartości wynikającej z zastosowania miary jakości danych określonych przez zakres jakości danych. Wynik oceny jakości danych o wartości \"prawda\" z typem wartości jakości danych \"zmienna boolowska\" jest przykładem porównania wartości (90) z określonym wymaganym poziomem jakości (85) przedstawiającym ocenę typu:spełniony lub niespełniony."@pl ;
+                     geolexica:examples "Пример ом значения, полученного от применения меры качества данных к данным, определенным областью определения качества, является результат оценки качества данных «90» (при типе значения качества данных «процент»), выдаваемый для элемента качества данных «полнота» и его подэлемента «присутствие». Результат оценки качества данных «истинный» с типом значения «булева переменная » является примером сравнения значения (90) с определенным допустимым уровнем качества (85) и заключения по результату оценки качества данных (успех или провал)"@ru ;
+                     geolexica:examples "EJEMPLO Un resultado para la calidad de unos datos de \"90\", con un valor de tipo \"porcentaje\" referido al elemento \"compleción\" y al subelemento \"comisión\" es un ejemplo de valor que resulta de la aplicación de una medida a los datos especificados por el ámbito. Un resultado de \"verdadero\", al que le corresponde un tipo \"variable booleana\", es un ejemplo de comparación del valor (90%) frente un nivel de conformidad específico (85%) y a su informe de evaluación en la forma de \"conforme\" o \"no conforme\"."@es ;
+                     geolexica:examples "示例 数据质量元素及其数据质量子元素“完整性，多余错误”的数据质量评价结果为“90”、数据质量值类型为“百分比”是对数据质量范围指定数据进行数据质量度量而得到的示例。数据质量评价结果为“真”、数据质量值类型为“布尔型变量”是将值（90）同规定的一致性质量等级（85）相比较的示例，评价结果为良好、合格或不合格。"@zh ;
+
+                     lang:deu-note notes:DefnTransUnavail , notes:ExTransUnavail ;
                      lang:swe-note notes:ExTransUnavail .
 
 
@@ -6955,6 +7164,18 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                    "データ品質適用範囲"@ja ,
                                    "数据质量范围"@zh ,
                                    "데이터 품질 범위"@ko ;
+
+                  lang:ara-note "ملاحظة: نطاق جودة البيانات بالنسبة لأي مجموعة بيانات يمكن أن يتألف من سلسلة مجموعة بيانات تنتمي إليها مجموعة البيانات المذكورة , أو من مجموعة البيانات نفسها , أو تجمُّع أصغر من البيانات التي تقع فعلياً ضمن مجموعة البيانات وتشترك معها في خصائص مشتركة بينها. والخصائص المشتركة قد تكون في هذه الحالة نوعاً محدداً من المعالم , أو صفة من صفات المعالم , أو علاقة ربط تربط بالمعلم ؛ أو معايير لجمع البيانات , أو مصدر أصلي , أو حدود امتداد جغرافي أو زماني معلومة."@ar ;
+                  lang:dan-note "Bemærk til posten: Datakvalitetsomfang for et datasæt kan omfatte en datasætserie, som datasættet hører til, datasættet selv eller en mindre gruppe af data i datasættet, som deler de samme egenskaber. Samme egenskaber kan være en identificeret featuretype, featureattribut eller featurerelation, dataindsamlingskriterier, oprindelig kilde eller en specificeret geografisk eller temporal udbredelse."@da ;
+                  lang:eng-note "Note to entry: A data quality scope for a dataset can comprise a dataset series to which the dataset belongs, the dataset itself, or a smaller grouping of data located physically within the dataset sharing common characteristics. Common characteristics can be an identified feature type, feature attribute, or feature relationship; data collection criteria; original source; or a specified geographic or temporal extent."@en ;
+                  lang:fin-note "HUOM.: Tietoaineiston laatukuvauksen laajuus voi kattaa tietoaineistosarjan, jonka osa tietoaineisto on, tietoaineiston itsensä tai tietoaineiston sisäisen pienemmän tietoryhmän, jonka jäseniä yhdistävät tietyt piirteet. Tällaisia yhteisiä piirteitä voivat olla kohdetyyppi, kohteen ominaisuus tai kohteiden välinen suhde, tiedon keruukriteerit, alkuperäinen lähde tai maantieteellinen tai ajallinen laajuus."@fi ;
+                  lang:jpn-note "備考： 　データ集合のデータ品質適用範囲は，データ集合が属するデータ集合群，そのデータ集合，又はそのデータ集合に物理的に含まれる共通の特性をもつ，より小さいグループのデータとすることができる。他と識別できる共通の特性とは，地物型，地物属性若しくは地物関係，データ収集の基準，原資料，又は特定の空間的若しくは時間的範囲であってもよい。"@ja ;
+                  lang:kor-note "비고: 데이터셋에 대한 데이터 품질 범위는 데이터셋에 속하거나, 데이터셋 자체 또는 공통적인 특징을 공유하는 데이터셋 내에 물리적으로 위치하는 보다 작은 그룹의 데이터와 같은 데이터셋 시리즈를 포함한다. 식별된 피처 유형, 피처 속성, 피처 관계(데이터 수집 기준, 원천 데이터, 특정한 지리적 또는 시간적 범위)가 공통적인 특징이 될 수 있다."@ko ;
+                  lang:pol-note "UWAGA: Zakres jakości danych dla zbioru danych może obejmować serię zbiorów danych, do której zbiór danych należy, zbiór danych sam w sobie lub mniejszą grupę danych należącą fizycznie do zbioru danych i mających wspólne cechy. Tymi wspólnymi cechami mogą być: określony typ obiektu, atrybut obiektu lub związek pomiędzy obiektami, kryterium zbierania danych, oryginalne źródło; określony zasięg przestrzenny lub czasowy."@pl ;
+                  lang:rus-note "Примечание: Область определения качества данных для некоторого набора данных может представлять собой комплект наборов данных, к которому такой набор данных относится, сам набор данных или меньшую группу данных, расположенную физически в пределах общих характеристик набора данных. Общими характеристиками могут быть определенный тип объекта, его атрибут или отношения, критерий сбора данных, источник данных, специфическая географическая или временнáя информация"@ru ;
+                  lang:spa-note "Nota: Un ámbito de la calidad relativo a un conjunto de datos puede comprender una serie a la que dicho conjunto pertenece, el propio conjunto o una agrupación más reducida, perteneciente físicamente a dicho conjunto y que comparte características comunes. Estas características comunes pueden ser la identificación de un tipo concreto de objetos geográficos, de atributos o de relaciones entre objetos geográficos, criterios de captura de datos, la fuente original, o una extensión geográfica o temporal específica"@es ;
+                  lang:zho-note "注： 一个数据集的数据质量范围可以由该数据集所属的数据集系列组成，也可以由该数据集本身，或是物理上位于数据集中、拥有共同特性的较小的数据组组成。共同特性可以是相同的要素类型、要素属性或要素关系；可以是相同的数据采集标准；或是一个指定的地理或时间范围。 "@zh ;
+
                     lang:deu-note notes:DefnTransUnavail ,
                                   notes:NoteTransUnavail ;
                     lang:swe-note notes:NoteTransUnavail .
@@ -7089,12 +7310,30 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
                                         "データ品質評価値型"@ja ,
                                         "数据质量值类型"@zh ,
                                         "데이터 품질 값 유형"@ko ;
-                         lang:deu-note notes:DefnTransUnavail ,
-                                       notes:ExTransUnavail ,
-                                       notes:NoteTransUnavail ;
-                         lang:swe-note notes:ExTransUnavail ,
-                                       notes:NoteTransUnavail .
 
+                        lang:ara-note "ملاحظة: يتم دائماً الإشارة إلى نوع القيمة الخاصة بجودة البيانات لكل نتيجة من النتائج المتعلقة بجودة البيانات."@ar ;
+                        lang:eng-note "Note to entry: A data quality value type is always provided for a data quality result."@en ;
+                        lang:fin-note "HUOM.: Laatutulokselle annetaan aina laatuarvotyyppi."@fi ;
+                        lang:jpn-note "備考： 　データ品質評価値型は，常にデータ品質評価結果に対して定める。 "@ja ;
+                        lang:kor-note "비고: 데이터 품질 값 유형은 항상 데이터 품질 결과를 규정한다."@ko ;
+                        lang:pol-note "UWAGA: Typ wartości jakości danych jest zawsze określany dla wyniku oceny jakości danych."@pl ;
+                        lang:rus-note "Примечание: Тип значения качества данных всегда присутствует в результате оценки качества"@ru ;
+                        lang:spa-note "Nota: Siempre se ha de indicar un tipo de valor para cada resultado."@es ;
+                        lang:zho-note "注： 每个数据质量评价结果都提供数据质量值类型。"@zh ;
+
+                        geolexica:examples "EXAMPLE \"boolean variable\", \"percentage\", \"ratio\""@en ;
+                        geolexica:examples " مثال \"متغير جبري\" , \"نسبة مئوية\" , \"نسبة\". "@ar ;
+                        geolexica:examples "EKSEMPEL \"boolsk variabel\", \"procent\", \"ratio\""@da ;
+                        geolexica:examples "ESIM. Totuusarvo, prosenttiluku, suhdeluku."@fi ;
+                        geolexica:examples "例 　“ブール変数”，“百分率”，“比率”。"@ja ;
+                        geolexica:examples "보기 부울린 변수, 백분율, 비율"@ko ;
+                        geolexica:examples "PRZYKŁAD \"zmienna boole'owska\", \"procent\", \"współczynnik\""@pl ;
+                        geolexica:examples "Пример «Булева переменная», «процент», «коэффициент»"@ru ;
+                        geolexica:examples "EJEMPLO \"variable booleana\", \"porcentaje\", \"razón\"."@es ;
+                        geolexica:examples "示例 “布尔型变量”、“百分比”、“比率”。"@zh ;
+
+                         lang:deu-note notes:DefnTransUnavail , notes:ExTransUnavail , notes:NoteTransUnavail ;
+                         lang:swe-note notes:ExTransUnavail , notes:NoteTransUnavail .
 
 ###  https://isotc211.geolexica.org/api/concepts#data_quality_value_unit
 :data_quality_value_unit rdf:type owl:NamedIndividual ,
