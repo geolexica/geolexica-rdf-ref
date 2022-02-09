@@ -27437,14 +27437,14 @@ skos:notation 698 ;
   skos:definition "colección de componentes de esquema dentro del mismo espacio de nombres destino (target namespace)"@es ;
   skos:definition "在同一个目标命名空间内模式组成部分的集合。"@zh ;
   
-  skos:prefLabel "schema &lt;XML Schema&gt;"@en ;
-  skos:prefLabel "مخطط &lt; مخطط XML &gt;"@ar ;
-  skos:prefLabel "Schema &lt;XML Schema&gt;"@de ;
-  skos:prefLabel "skeema &lt;XML Schema&gt;"@fi ;
-  skos:prefLabel "schéma &lt;XML Schema&gt;"@fr ;
-  skos:prefLabel "스키마 &lt;XML 스키마&gt;"@ko ;
-  skos:prefLabel "схема &lt;XML- схема&gt;"@ru ;
-  skos:prefLabel "esquema &lt;XML Schema&gt;"@es ;
+  skos:prefLabel "schema (XML Schema)"@en ;
+  skos:prefLabel "مخطط ( مخطط XML )"@ar ;
+  skos:prefLabel "Schema (XML Schema)"@de ;
+  skos:prefLabel "skeema (XML Schema)"@fi ;
+  skos:prefLabel "schéma (XML Schema)"@fr ;
+  skos:prefLabel "스키마 (XML 스키마)"@ko ;
+  skos:prefLabel "схема (XML- схема)"@ru ;
+  skos:prefLabel "esquema (XML Schema)"@es ;
   skos:prefLabel "模式"@zh ;
 
 geolexica:examples "EXAMPLE Schema components of W3C XML Schema are types, elements, attributes, groups, etc."@en ;
@@ -27493,7 +27493,7 @@ skos:notation 699 ;
   skos:prefLabel "esquema de aplicación UML"@es ;
   skos:prefLabel "UML应用模式"@zh .
 
-###  https://isotc211.geolexica.org/api/concepts#UML_application_schema
+###  https://isotc211.geolexica.org/api/concepts#compound_coord_ref_system
 :compound_coord_ref_system rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:inScheme geolexica:GeolexicaConceptScheme ;
@@ -27547,4 +27547,2095 @@ lang:zho-note "注： 两个坐标参照系相互对立的，在一个坐标参�
 
 lang:deu-note notes:NoteTransUnavail ;
 lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#coord_ref_system
+:coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info703 ;
+geolexica:hasReview reviews:Review703 ;
+
+geolexica:hasLDAPI ldapi:ldapi703-json , ldapi:ldapi703-jsonld , ldapi:ldapi703-rdfxml , ldapi:ldapi703-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "coordinate reference system" ;
+dcterms:identifier 703 ;
+skos:notation 703 ;
+
+  skos:definition "coordinate system that is related to an object by a datum"@en ;
+  skos:definition "نظام إحداثيات مرتبطبمعلم معين من خلال مرجع للإسناد"@ar ;
+  skos:definition "koordinatsystem, der er relateret til et datum i den virkelige verden"@da ;
+  skos:definition "Koordinatensystem, das durch ein Datum auf ein Objekt bezogen ist"@de ;
+  skos:definition "järjestelmä, joka muodostuu datumin avulla reaalimaailmaan kiinnitetystä koordinaatistosta"@fi ;
+  skos:definition "Système de coordonnées attaché à un objet relativement à un référentiel"@fr ;
+  skos:definition "데이텀에 의해 객체와 관련된 좌표 체계"@ko ;
+  skos:definition "Titik kedudukan dalam sistem grafik yang menggunakan rujukan sudut dan jarak dari satu titik pusat sebagai cara untuk menentukan kedudukan titik"@ms ;
+  skos:definition "coördinaatsysteem dat aan een object is gerelateerd door een datum"@nl ;
+  skos:definition "układ współrzędnych powiązany ze światem rzeczywistym poprzez układ odniesienia"@pl ;
+  skos:definition "система координат, связанная с объектом исходными датами"@ru ;
+  skos:definition "sistema de coordenadas que está relacionado con un objeto a través de un datum"@es ;
+  skos:definition "koordinatsystem knutet till ett referenssystem som är baserat på ett geodetiskt datum"@sv ;
+  skos:definition "通过基准与现实世界相关联的坐标系"@zh ;
+  
+  skos:prefLabel "coordinate reference system"@en ;
+  skos:prefLabel "نظام إحداثيات مرجعي"@ar ;
+  skos:prefLabel "koordinatreferencesystem"@da ;
+  skos:prefLabel "Koordinatenreferenzsystem"@de ;
+  skos:prefLabel "koordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système de coordonnées de référence"@fr ;
+  skos:prefLabel "좌표 참조 체계"@ko ;
+  skos:prefLabel "sistem rujukan koordinat"@ms ;
+  skos:prefLabel "coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "system odniesienia oparty na współrzędnych"@pl ;
+  skos:prefLabel "координатная система отсчета"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas"@es ;
+  skos:prefLabel "koordinatbaserat referenssystem"@sv ;
+  skos:prefLabel "坐标参照系"@zh ;
+  
+lang:eng-note "Note to entry: For geodetic and vertical datums, the object will be the Earth."@en ;
+lang:ara-note "ملاحظة: بالنسبة لمراجع الإسناد الجيوديسية والرأسية يكون المعلم هو كوكب الأرض."@ar ;
+lang:dan-note "Bemærk til posten: For geodætiske og vertikale datummer vil koordinatsystemet blive relateret til jorden."@da ;
+lang:fin-note "HUOM.: Geodeettisen datumin ja korkeusdatumin tapauksissa sijainti ilmaistaan Maan suhteen."@fi ;
+lang:kor-note "비고: 측지 원점 및 수직 데이텀의 경우, \"객체\"는 지구이다. "@ko ;
+lang:nld-note "OPMERKING: Voor geodetische en verticale datums is het object de aarde."@nl ;
+lang:pol-note "UWAGA: Dla geodezyjnego i pionowego ukladu odniesienia obiektem jezt Ziemia."@pl ;
+lang:rus-note "Примечание: Для геодезических и вертикальных дат объектом является Земля"@ru ;
+lang:spa-note "Nota: Para datums geodésicos y verticales, el objeto es la Tierra."@es ;
+lang:zho-note "注： 对大地基准和高程基准而言，对象是地球。"@zh ;
+
+lang:deu-note notes:NoteTransUnavail ;
+lang:msa-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#datum
+:datum rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info704 ;
+geolexica:hasReview reviews:Review704 ;
+
+geolexica:hasLDAPI ldapi:ldapi704-json , ldapi:ldapi704-jsonld , ldapi:ldapi704-rdfxml , ldapi:ldapi704-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "datum" ;
+dcterms:identifier 704 ;
+skos:notation 704 ;
+
+  skos:definition "parameter or set of parameters that define the position of the origin, the scale, and the orientation of a coordinate system"@en ;
+  skos:definition "متغير  أو مجموعة متغيرات تحدد موقع أصل ومقياس واتجاه نظام إحداثيات ما"@ar ;
+  skos:definition "parameter eller sæt af parametre, der tjener som reference eller grundlag for beregning af andre parametre"@da ;
+  skos:definition "ein oder mehrere Parameter, die die Position des Ursprungs, den Maßstab und die Orientierung eines Koordinatensystems definieren"@de ;
+  skos:definition "parametri tai parametrijoukko, joka määrittelee koordinaatiston origon, mittakaavan ja orientaation"@fi ;
+  skos:definition "paramètre ou ensemble de paramètres définissant la position de l&#39;origine, l&#39;échelle et l&#39;orientation d&#39;un système de coordonnées"@fr ;
+  skos:definition "좌표 체계의 기점, 축척, 방향을 정의하는 매개 변수 또는 매개 변수의 집합"@ko ;
+  skos:definition "Tanda kekal, semula jadi atau buatan di suatu titik yang diketahui ketinggi- annya daripada suatu datum tertentu yang diterima."@ms ;
+  skos:definition "parameter of set van parameters voor het definiëren van het nulpunt, de schaal en de oriëntatie van een coördinaatsysteem"@nl ;
+  skos:definition "parametr lub zbiór parametrów definiujące położenie początku układu, skalę i orientację układu współrzędnych"@pl ;
+  skos:definition "термин, обобщающий геодезические, высотные и местные даты"@ru ;
+  skos:definition "parámetro o conjunto de parámetros que definen la posición del origen, la escala y la orientación de un sistema de coordenadas"@es ;
+  skos:definition "en parameter eller en uppsättning parametrar som definierar ett referenssystems origo, skala och orientering"@sv ;
+  skos:definition "由参数或参数集合定义的坐标系的原点位置、比例尺和定向。"@zh ;
+  
+  skos:prefLabel "datum"@en ;
+  skos:prefLabel "مرجع إسناد"@ar ;
+  skos:prefLabel "datum"@da ;
+  skos:prefLabel "Datum (Plural: Datume)"@de ;
+  skos:prefLabel "datumi"@fi ;
+  skos:prefLabel "référentiel"@fr ;
+  skos:prefLabel "데이텀"@ko ;
+  skos:prefLabel "datum"@ms ;
+  skos:prefLabel "datum"@nl ;
+  skos:prefLabel "układ odniesienia"@pl ;
+  skos:prefLabel "исходные даты"@ru ;
+  skos:prefLabel "datum"@es ;
+  skos:prefLabel "datum"@sv ;
+  skos:prefLabel "基准"@zh ;
+  
+lang:dan-note "Bemærk til posten: Et datum definerer positionen af nulpunkt, målestok og orientering af akserne i et koordinatsystem."@da ;
+lang:fra-note "Note à l'article: Alternative: datum"@fr ;
+lang:rus-note "Примечание: Даты определяют положение начала, масштаб и ориентировку осей системы координат по отношению к Земле"@ru .
+
+###  https://isotc211.geolexica.org/api/concepts#engin_coord_ref_system
+:engin_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info706 ;
+geolexica:hasReview reviews:Review706 ;
+
+geolexica:hasLDAPI ldapi:ldapi706-json , ldapi:ldapi706-jsonld , ldapi:ldapi706-rdfxml , ldapi:ldapi706-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "engineering coordinate reference system" ;
+dcterms:identifier 706 ;
+skos:notation 706 ;
+
+  skos:definition "coordinate reference system based on an engineering datum"@en ;
+  skos:definition "نظام إحداثيات مرجعي مبني على مرجع إسناد هندسي"@ar ;
+  skos:definition "Koordinatenreferenzsystem auf der Basis eines lokalen Datums"@de ;
+  skos:definition "koordinaattijärjestelmä, joka perustuu erillisdatumiin"@fi ;
+  skos:definition "système de coordonnées de référence basé sur un référentiel d&#39;ingénierie"@fr ;
+  skos:definition "공학 데이텀에 기반한 좌표 참조 체계"@ko ;
+  skos:definition "coördinaatreferentiesysteem gebaseerd op een lokaal datum"@nl ;
+  skos:definition "system odniesienia bazujący na inżynieryjnym układzie odniesienia"@pl ;
+  skos:definition "координатная система отсчета, основанная на инженерных исходных датах"@ru ;
+  skos:definition "sistema de referencia de coordenadas basado en un datum de ingeniería"@es ;
+  skos:definition "基于工程基准的坐标参照系。"@zh ;
+  
+  skos:prefLabel "engineering coordinate reference system"@en ;
+  skos:prefLabel "نظام إحداثيات مرجعي هندسي"@ar ;
+  skos:prefLabel "lokales Koordinatenreferenzsystem"@de ;
+  skos:prefLabel "erilliskoordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système de coordonnées de référence d&#39;ingénierie"@fr ;
+  skos:prefLabel "공학 좌표계"@ko ;
+  skos:prefLabel "sistem rujukan koordinat kejuruteraan"@ms ;
+  skos:prefLabel "lokaal coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "inżynieryjny system odniesienia"@pl ;
+  skos:prefLabel "инженерная координатная система отсчета"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas para ingeniería"@es ;
+  skos:prefLabel "工程坐标参照系"@zh ;
+  
+geolexica:examples "EXAMPLE Local engineering and architectural grids; coordinate reference system local to a ship or an orbiting spacecraft."@en ;
+geolexica:examples "مثال أمثلة: الشبكات الهندسية والمعمارية المحلية , نظام إحداثيات مرجعي محلي بالنسبة لسفينة أو مركبة فضائية دائرة في فلك."@ar ;
+geolexica:examples "Note à l'article: Alternative suggérée: système de coordonnées de référence local"@fr ;
+geolexica:examples "ESIM. Paikalliset rakentamiseen liittyvät koordinaatistot; laivan tai Maata kiertävän avaruusaluksen paikallinen koordinaattijärjestelmä."@fi ;
+geolexica:examples "보기 지역적 공학 및 구조적 격자; 항해나 비행을 위한 지역적 좌표 참조 체계 "@ko ;
+geolexica:examples "VOORBEELD EN Lokale bouwkundige stramienen, coördinaatreferentiesystemen op een vaartuig of ruimtevaartuig."@nl ;
+geolexica:examples "PRZYKŁAD Lokalna siatka współrzędnych w zagadnieniach inżynieryjnych i architektonicznych (budowlanych). Lokalny układ współrzędnych dla statku lub orbitującego statku kosmicznego."@pl ;
+geolexica:examples "Пример Локальные инженерные и архитектурные сетки; координатная система отсчета, отнесенная к судну или орбитальному космическому летательному аппарату"@ru ;
+geolexica:examples "EJEMPLO S Mallas locales en ingeniería y arquitectura; sistema de referencia de coordenadas locales situados en un barco o en una nave en órbita."@es ;
+geolexica:examples "示例 地方工程和建筑格网；相对于地方船舶或轨道上的航天器的坐标参照系。"@zh ;
+
+lang:deu-note notes:NoteTransUnavail ;
+lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#geodetic__coord_ref_system
+:geodetic_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info707 ;
+geolexica:hasReview reviews:Review707 ;
+
+geolexica:hasLDAPI ldapi:ldapi707-json , ldapi:ldapi707-jsonld , ldapi:ldapi707-rdfxml , ldapi:ldapi707-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geodetic coordinate reference system" ;
+dcterms:identifier 707 ;
+skos:notation 707 ;
+
+  skos:definition "coordinate reference system based on a geodetic datum"@en ;
+  skos:definition "نظام إحداثيات مرجعي مبني على مرجع إسناد جيوديسي"@ar ;
+  skos:definition "Koordinatenreferenzsystem, das auf einem geodätischen Datum basiert"@de ;
+  skos:definition "koordinaattijärjestelmä, joka perustuu geodeettiseen datumiin"@fi ;
+  skos:definition "système de référence de coordonnées basé sur un référentiel géodésique"@fr ;
+  skos:definition "측지 원점을 바탕으로하는 좌표 참조 체계"@ko ;
+  skos:definition "coördinaatreferentiesysteem gebaseerd op een geodetisch datum"@nl ;
+  skos:definition "system odniesienia bazujący na geodezyjnym układzie odniesienia"@pl ;
+  skos:definition "координатная система отсчета,  основанная на геодезических датах"@ru ;
+  skos:definition "sistema de referencia de coordenadas basado en un datum geodésico"@es ;
+  skos:definition "koordinatbaserat referenssystem baserat på ett geodetiskt datum"@sv ;
+  skos:definition "基于大地基准的坐标参照系。"@zh ;
+  
+  skos:prefLabel "geodetic coordinate reference system"@en ;
+  skos:prefLabel "نظام إحداثيات مرجعي جيوديسي"@ar ;
+  skos:prefLabel "geodätisches Koordinatenreferenzsystem"@de ;
+  skos:prefLabel "geodeettinen koordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système géodésique de coordonnées de référence"@fr ;
+  skos:prefLabel "측지 좌표 참조 체계"@ko ;
+  skos:prefLabel "geodetisch coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "geodezyjny system odniesienia"@pl ;
+  skos:prefLabel "геодезическая координатная система отсчета"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas geodésico"@es ;
+  skos:prefLabel "geodetiskt koordinatbaserat referenssystem"@sv ;
+  skos:prefLabel "大地坐标参照系"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#geodetic_datum
+:geodetic_datum rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info708 ;
+geolexica:hasReview reviews:Review708 ;
+
+geolexica:hasLDAPI ldapi:ldapi708-json , ldapi:ldapi708-jsonld , ldapi:ldapi708-rdfxml , ldapi:ldapi708-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geodetic datum" ;
+dcterms:identifier 708 ;
+skos:notation 708 ;
+
+  skos:definition "datum describing the relationship of a two- or three-dimensional coordinate system to the Earth"@en ;
+  skos:definition "مرجع إسناد يصف علاقة نظام إحداثيات ثنائي الأبعاد أو ثلاثي الأبعاد بالأرض"@ar ;
+  skos:definition "datum, der beskriver relationen mellem et koordinatsystem og jorden"@da ;
+  skos:definition "Datum, das die Beziehung eines zwei- oder dreidimensionalen Koordinatensystems zur Erde beschreibt"@de ;
+  skos:definition "datumi, joka kuvaa kaksi- tai kolmiulotteisen koordinaatiston suhdetta Maahan"@fi ;
+  skos:definition "référentiel décrivant la relation entre un système de coordonnées à deux ou trois dimensions et la Terre"@fr ;
+  skos:definition "지구에 대한 2차원 또는 3차원 좌표 체계의 관계를 기술하는 데이텀"@ko ;
+  skos:definition "datum welke de relatie tussen een twee- of driedimensionaal coördinaatsysteem ten opzichte van de aarde beschrijft"@nl ;
+  skos:definition "układ odniesienia opisujący związek dwu lub trójwymiarowego układu współrzędnych z Ziemią"@pl ;
+  skos:definition "набор параметров, описывающих связь координатной системы с Землей"@ru ;
+  skos:definition "datum que describe la relación de un sistema de coordenadas bi o tridimensional con la Tierra"@es ;
+  skos:definition "en uppsättning parametrar som beskriver relationen mellan ett referenssystem och den fysiska jorden"@sv ;
+  skos:definition "描述地球二维或三维坐标系关系的基准。"@zh ;
+  
+  skos:prefLabel "geodetic datum"@en ;
+  skos:prefLabel "مرجع الإسناد الجيوديسي"@ar ;
+  skos:prefLabel "geodætisk datum"@da ;
+  skos:prefLabel "geodätisches Datum"@de ;
+  skos:prefLabel "geodeettinen datumi"@fi ;
+  skos:prefLabel "référentiel géodésique"@fr ;
+  skos:prefLabel "측지 원점"@ko ;
+  skos:altLabel "측지 데이텀"@ko ;
+  skos:prefLabel "geodetisch datum"@nl ;
+  skos:prefLabel "geodezyjny układ odniesienia"@pl ;
+  skos:prefLabel "геодезические даты"@ru ;
+  skos:prefLabel "datum geodésico"@es ;
+  skos:prefLabel "geodetiskt datum"@sv ;
+  skos:prefLabel "大地基准"@zh ;
+
+lang:dan-note "Bemærk til posten: I de fleste tilfælde indeholder det geodætiske datum en ellipsoidedefinition. "@da ;
+lang:kor-note "지구에 대한 2차원 또는 3차원 좌표 체계의 관계를 기술하는 데이텀"@ko ;
+lang:swe-note "Anm. till termpost: I de flesta fall innehåller det geodetiska datumet även en definition av ellipsoiden I "@sv .
+
+###  https://isotc211.geolexica.org/api/concepts#image_coord_ref_system
+:image_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info709 ;
+# geolexica:hasReview reviews:Review709 ;
+
+geolexica:hasLDAPI ldapi:ldapi709-json , ldapi:ldapi709-jsonld , ldapi:ldapi709-rdfxml , ldapi:ldapi709-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "image coordinate reference system" ;
+dcterms:identifier 709 ;
+skos:notation 709 ;
+
+  skos:definition "coordinate reference system based on an image datum"@en ;
+  skos:definition "نظام إحداثيات مرجعي مبني على مرجع إسناد صوره"@ar ;
+  skos:definition "Koordinatenreferenzsystem auf der Basis eines Bilddatums"@de ;
+  skos:definition "koordinaattijärjestelmä, joka perustuu kuvadatumiin"@fi ;
+  skos:definition "système de coordonnées de référence basé sur un référentiel image"@fr ;
+  skos:definition "영상 데이텀을 바탕으로하는 좌표 참조 체계"@ko ;
+  skos:definition "coördinaatreferentiesysteem gebaseerd op een beelddatum"@nl ;
+  skos:definition "układ współrzędnych bazujący na układzie odniesienia obrazu"@pl ;
+  skos:definition "координатная система отсчета,  основанная на исходных датах изображения"@ru ;
+  skos:definition "sistema de referencia de coordenadas basado en un datum imagen"@es ;
+  skos:definition "koordinatsystem relaterad till bild"@sv ;
+  skos:definition "基于影像基准的坐标参照系。"@zh ;
+  
+  skos:prefLabel "image coordinate reference system"@en ;
+  skos:prefLabel "نظام إحداثيات مرجعي للصوره"@ar ;
+  skos:prefLabel "Bildkoordinatenreferenzsystem"@de ;
+  skos:prefLabel "kuvakoordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système de coordonnées image de référence"@fr ;
+  skos:prefLabel "영상 좌표 참조 체계"@ko ;
+  skos:prefLabel "beeld coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "system odniesienia obrazu"@pl ;
+  skos:prefLabel "координатная система отсчета изображения"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas de imagen"@es ;
+  skos:prefLabel "bildkoordinatsystem"@sv ;
+  skos:prefLabel "影像坐标参照系m"@zh ;
+
+lang:dan-note "Bemærk til posten: I de fleste tilfælde indeholder det geodætiske datum en ellipsoidedefinition. "@da ;
+lang:kor-note "지구에 대한 2차원 또는 3차원 좌표 체계의 관계를 기술하는 데이텀"@ko ;
+lang:swe-note "Anm. till termpost: I de flesta fall innehåller det geodetiska datumet även en definition av ellipsoiden I "@sv ;
+
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#image_datum
+:image_datum rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info710 ;
+geolexica:hasReview reviews:Review710 ;
+
+geolexica:hasLDAPI ldapi:ldapi710-json , ldapi:ldapi710-jsonld , ldapi:ldapi710-rdfxml , ldapi:ldapi710-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "image datum" ;
+dcterms:identifier 710 ;
+skos:notation 710 ;
+
+  skos:definition "engineering datum which defines the relationship of a coordinate system to an image"@en ;
+  skos:definition "مرجع إسناد هندسي يحدد علاقة نظام للإحداثيات بالصوره"@ar ;
+  skos:definition "lokales Datum, das die Beziehung zu einem Bildkoordinatensystem beschreibt"@de ;
+  skos:definition "paikallinen datumi, joka määrittää koordinaatiston suhteen kuvaan"@fi ;
+  skos:definition "référentiel d&#39;ingénierie qui définit la relation d&#39;un système de coordonnées à une image"@fr ;
+  skos:definition "영상과 좌표 체계의 관계를 정의하는 공학 데이텀"@ko ;
+  skos:definition "lokaal datum welk de relatie definieert tussen een coördinaatsysteem en een beeld"@nl ;
+  skos:definition "inżynieryjny układ odniesienia definijący związek układu wspołrzędnych z obrazem"@pl ;
+  skos:definition "инженерные исходные даты, которые определяют связь системы координат с изображением"@ru ;
+  skos:definition "datum de ingeniería que define la relación de un sistema de coordenadas con una imagen"@es ;
+  skos:definition "engineering datum which defines the relationship of a coordinate system to an image"@sv ;
+  skos:definition "定义了影像与坐标系关系的工程基准。"@zh ;
+  
+  skos:prefLabel "image datum"@en ;
+  skos:prefLabel "مرجع إسناد صوره"@ar ;
+  skos:prefLabel "Bilddatum"@de ;
+  skos:prefLabel "kuvadatumi"@fi ;
+  skos:prefLabel "référentiel image"@fr ;
+  skos:prefLabel "영상 데이텀"@ko ;
+  skos:prefLabel "beelddatum"@nl ;
+  skos:prefLabel "układ odniesienia obrazu"@pl ;
+  skos:prefLabel "исходные даты изображения"@ru ;
+  skos:prefLabel "datum de imagen"@es ;
+  skos:prefLabel "image datum"@sv ;
+  skos:prefLabel "影像基准"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#meridian
+:meridian rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info711 ;
+geolexica:hasReview reviews:Review711 ;
+
+geolexica:hasLDAPI ldapi:ldapi711-json , ldapi:ldapi711-jsonld , ldapi:ldapi711-rdfxml , ldapi:ldapi711-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "meridian" ;
+dcterms:identifier 711 ;
+skos:notation 711 ;
+
+  skos:definition "intersection of an ellipsoid by a plane containing the shortest axis of the ellipsoid"@en ;
+  skos:definition "تقاطع مجسم القطع الناقص مع مستوٍ يحتوي على أقصر محور للمجسم"@ar ;
+  skos:definition "Schnitt des Ellipsoids mit der Ebene, die die kürzeste Achse des Ellipsoids enthält"@de ;
+  skos:definition "pyörähdysellipsoidin lyhyemmän akselin sisältävän tason ja pyörähdysellipsoidin leikkauskäyrän kaari navalta navalle"@fi ;
+  skos:definition "intersection d&#39;un ellipsoïde par un plan contenant le petit axe de l&#39;ellipsoïde"@fr ;
+  skos:definition "타원체와 그 타원체의 최단 반경을 포함하는 평면 간의 교차선"@ko ;
+  skos:definition "doorsnijding van een ellipsoïde door een vlak welke de kortste as van de ellipsoïde bevat"@nl ;
+  skos:definition "przekrój elipsoidy płaszczyzną zawierającą małą półoś elipsoidy"@pl ;
+  skos:definition "сечение эллипсоида плоскостью, содержащей малую полуось эллипсоида"@ru ;
+  skos:definition "intersección de un elipsoide con un plano que contiene el eje menor del elipsoide"@es ;
+  skos:definition "snittlinje som erhålles då en sfär eller rotationsellipsoid skäres med ett plan innehållande rotationsaxeln"@sv ;
+  skos:definition "包含椭球短半轴的平面与椭球的交线。"@zh ;
+  
+  skos:prefLabel "meridian"@en ;
+  skos:prefLabel "خط التنصيف الطولي"@ar ;
+  skos:prefLabel "Meridian (Syn.: Längengrad)"@de ;
+  skos:prefLabel "pituuspiiri"@fi ;
+  skos:altLabel "meridiaani"@fi ;
+  skos:prefLabel "méridien"@fr ;
+  skos:prefLabel "자오선"@ko ;
+  skos:prefLabel "meridian"@ms ;
+  skos:prefLabel "meridiaan"@nl ;
+  skos:prefLabel "południk"@pl ;
+  skos:prefLabel "меридиан"@ru ;
+  skos:prefLabel "meridiano"@es ;
+  skos:prefLabel "meridian"@sv ;
+  skos:prefLabel "子午线"@zh ;
+
+lang:eng-note "Note to entry: This term is often used for the pole-to-pole arc rather than the complete closed figure. "@en ;
+lang:ara-note "ملاحظة: يستخدم هذا المصطلح في كثير من الأحيان للإشارة إلى القوس الممتد من القطب إلى القطب بدلاً من الشكل الكامل المغلق."@ar ;
+lang:fin-note "HUOM.: Ellipsoidin ja ellipsoidin lyhyimmän akselin sisältävän tason leikkaus. Tätä termiä käytetään usein viittaamaan navalta navalle ulottuvaan kaareen koko suljetun kuvion sijaan."@fi ;
+lang:kor-note "비고: 이 용어는 완벽하게 폐합된 지형지물이라기 보다는 극과 극을 연결하는 호로 사용된다."@ko ;
+lang:nld-note "OPMERKING: Deze term wordt vaak gebruikt voor de pool tot pool boog in plaats van de volledige, gesloten omtrek."@nl ;
+lang:pol-note "UWAGA: Pojęcie to jest częściej używane dla łuku łączącego bieguny niż dla całej figury (elipsy)."@pl ;
+lang:rus-note "Примечание: Этот термин чаще используется для дуги от полюса до полюса, чем для полного сечения"@ru ;
+lang:spa-note "Nota: Este término se usa a menudo para el arco que va de un polo al otro polo en vez de la figura completa cerrada."@es ;
+lang:zho-note "注： 该术语经常用于南极点到北极点的弧段，而不是完全封闭的圆(figure)。"@zh ;
+
+lang:deu-note notes:NoteTransUnavail ;
+lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#spherical_coord_system
+:spherical_coord_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info713 ;
+geolexica:hasReview reviews:Review713 ;
+
+geolexica:hasLDAPI ldapi:ldapi713-json , ldapi:ldapi713-jsonld , ldapi:ldapi713-rdfxml , ldapi:ldapi713-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "spherical coordinate system" ;
+dcterms:identifier 713 ;
+skos:notation 713 ;
+
+  skos:definition "three-dimensional coordinate system with one distance measured from the origin and two angular coordinates, commonly associated with a geodetic coordinate reference system"@en ;
+  skos:definition "نظام إحداثيات ثلاثي الأبعاد تقاس فيه مسافة واحدة من نقطة الأصل ومن إحداثيتين زاوِيَّتين ، ويترافق عادة بنظام إحداثيات جيوديسية"@ar ;
+  skos:definition "dreidimensionales Koordinatensystem mit einer Abstandskoordinate vom Koordinatenursprung und zwei Winkelkoordinaten, die üblicherweise an ein geodätisches Koordinatenreferenzsystem gekoppelt sind"@de ;
+  skos:definition "kolmiulotteinen koordinaatisto, jossa sijainti ilmaistaan kahden kulman ja origosta mitattavan etäisyyden avulla"@fi ;
+  skos:definition "système de coordonnées tridimensionnel avec une distance mesurée à l&#39;origine et deux coordonnées angulaires, généralement associé à un système de référence géodésique"@fr ;
+  skos:definition "일반적으로 측지 좌표 참조 체계와 연관되어 원점으로부터의 측정된 하나의 길이와 두 개의 각도 좌표를 갖는 3차원 좌표 체계"@ko ;
+  skos:definition "Sistem koordinat tiga dimensi dengan satu jarak diukur dari kedudukan asal dan dua koordinat sudut, biasanya dikaitkan dengan sistem rujukan koordinat geodetik"@ms ;
+  skos:definition "driedimensionaal coördinaatsysteem waarbij één afstand en twee hoeken vanuit de oorsprong worden bepaald, vaak verbonden aan een geodetisch coördinaatreferentiesysteem"@nl ;
+  skos:definition "trójwymiarowy układ współrzędnych określający położenie za pomocą odległości od początku układu oraz dwóch kątów, zazwyczaj powiązany z geodezyjnym układem odniesienia"@pl ;
+  skos:definition "трехмерная система координат с одним расстоянием и двумя угловыми координатами"@ru ;
+  skos:definition "sistema de coordenadas tridimensional con una distancia medida desde el origen y dos coordenadas angulares, generalmente asociadas con un sistema de referencia de coordenadas geodésicas"@es ;
+  skos:definition "tredimensionellt koordinatsystem där en punkts position anges som avståndet från origo, vinkeln mellan den positiva z-axeln och linjen från origo till punkten samt vinkeln mellan den positiva x-axeln och projektionen av linjen från origo till punkten på xy-planet"@sv ;
+  skos:definition "由相对于原点的距离和两个角度坐标构成的三维坐标系，一般该坐标系与大地坐标参照系相关。"@zh ;
+  
+  skos:prefLabel "spherical coordinate system"@en ;
+  skos:prefLabel "نظام إحداثيات كروية"@ar ;
+  skos:prefLabel "sphärisches Koordinatensystem"@de ;
+  skos:prefLabel "pallokoordinaatisto"@fi ;
+  skos:prefLabel "système de coordonnées sphériques"@fr ;
+  skos:prefLabel "구면 좌표계"@ko ;
+  skos:prefLabel "sistem koordinat sfera"@ms ;
+  skos:prefLabel "bol coördinaatsysteem"@nl ;
+  skos:prefLabel "sferyczny układ współrzędnych"@pl ;
+  skos:prefLabel "сферическая система координат"@ru ;
+  skos:prefLabel "sistema de coordenadas esféricas"@es ;
+  skos:prefLabel "sfäriskt koordinatsystem"@sv ;
+  skos:prefLabel "球面坐标系"@zh ;
+
+lang:eng-note "Note to entry: Not to be confused with an ellipsoidal coordinate system based on an ellipsoid 'degenerated' into a sphere."@en ;
+lang:ara-note "ملاحظة: يجب الحذر من الوقوع في أي خلط أو لبس ينتج عن نظام إحداثيات مبني على مجسم قطع ناقص تحول إلى شكل كروي."@ar ;
+lang:nld-note "OPMERKING: Niet te verwarren met een ellipsoidaal coördinaat systeem gebaseerd op een ellipsoïde die 'gedegenereerd' is in een bol."@nl ;
+lang:pol-note "UWAGA: Nie należy mylić z układem współrzędnych elipsoidalnych zredukowanych do sfery."@pl ;
+lang:rus-note "Примечание: Не путать с эллипсоидальной системой координат"@ru ;
+lang:spa-note "Nota: No confundir con un sistema de coordenadas elipsoidales basado en un elipsoide \"degenerado\" en una esfera."@es ;
+lang:zho-note "注： 不要将基于椭球退化为球的坐标系统与椭球坐标系相混淆。"@zh ;
+
+lang:deu-note notes:NoteTransUnavail ;
+lang:msa-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#vertical_coord_ref_system
+:vertical_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info715 ;
+geolexica:hasReview reviews:Review715 ;
+
+geolexica:hasLDAPI ldapi:ldapi715-json , ldapi:ldapi715-jsonld , ldapi:ldapi715-rdfxml , ldapi:ldapi715-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "vertical coordinate reference system" ;
+dcterms:identifier 715 ;
+skos:notation 715 ;
+
+  skos:definition "one-dimensional coordinate reference system based on a vertical datum"@en ;
+  skos:definition "نظام إحداثيات أحادي البعد مبنى على المرجع الرأسي"@ar ;
+  skos:definition "eindimensionales Koordinatenreferenzsystem basierend auf einem vertikalen Datum"@de ;
+  skos:definition "yksiulotteinen koordinaattijärjestelmä, joka perustuu korkeusdatumiin"@fi ;
+  skos:definition "système de coordonnées de référence, à une dimension, basé sur un référentiel vertical"@fr ;
+  skos:definition "수직 데이텀을 바탕으로한 1차원 좌표 참조 체계"@ko ;
+  skos:definition "eendimensionaal coördinaatreferentiesysteem gebaseerd op een verticaal datum"@nl ;
+  skos:definition "jednowymiarowy system odniesienia bazujący na pionowym układzie odniesienia"@pl ;
+  skos:definition "одномерная координатная система отсчета, основанная на высотных [вертикальных]  датах"@ru ;
+  skos:definition "sistema de referencia de coordenadas unidimensional basado en un datum vertical"@es ;
+  skos:definition "endimensionellt koordinatsystem för angivande av tyngdkraftsrelaterad höjd respektive djup"@sv ;
+  skos:definition "基于高程基准的一维坐标参照系。"@zh ;
+  
+  skos:prefLabel "vertical coordinate reference system"@en ;
+  skos:prefLabel "نظام مرجعي للاحداثيات الرأسيه"@ar ;
+  skos:prefLabel "vertikales Koordinatenreferenzsystem"@de ;
+  skos:prefLabel "korkeusjärjestelmä"@fi ;
+  skos:altLabel "vertikaalinen koordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système de coordonnées vertical de référence"@fr ;
+  skos:prefLabel "수직 좌표 참조 체계"@ko ;
+  skos:prefLabel "verticaal coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "pionowy system współrzędnych"@pl ;
+  skos:prefLabel "высотная [вертикальная] координатная  система отсчета"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas vertical"@es ;
+  skos:prefLabel "vertikalt kooordinatsystem"@sv .
+
+###  https://isotc211.geolexica.org/api/concepts#vertical_coord_system
+:vertical_coord_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info716 ;
+geolexica:hasReview reviews:Review716 ;
+
+geolexica:hasLDAPI ldapi:ldapi716-json , ldapi:ldapi716-jsonld , ldapi:ldapi716-rdfxml , ldapi:ldapi716-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "vertical coordinate system" ;
+dcterms:identifier 716 ;
+skos:notation 716 ;
+
+  skos:definition "one-dimensional coordinate system used for gravity-related height or depth measurements"@en ;
+  skos:definition "نظام إحداثيات أحادي البعد يستخدم للقياسات ذات العلاقة بالإرتفاعات والأعماق للجاذبية الأرضية"@ar ;
+  skos:definition "eindimensionales Koordinatenreferenzsystem, das als Bezugssystem für Erdschwerefeld-basierte Höhen- oder Tiefenmessungen dient"@de ;
+  skos:definition "yksiulotteinen koordinaatisto, jota käytetään painovoimaan perustuvan korkeuden tai syvyyden mittaamiseen"@fi ;
+  skos:definition "système de coordonnée à une dimension utilisé pour les mesures de hauteur ou de profondeur relatives à la gravité"@fr ;
+  skos:definition "중력 높이 또는 깊이의 측정에 사용되는 1차원 좌표 체계"@ko ;
+  skos:definition "een dimensionaal coördinaatsysteem gebruikt voor zwaartekracht gerelateerde hoogte- of dieptemetingen"@nl ;
+  skos:definition "jednowymiarowy system współrzędnych używany do pomiarów wysokości fizycznej lub głębokości"@pl ;
+  skos:definition "одномерная система координат, используемая для измерений высоты или глубины, связанных с гравитационным полем (Земли)"@ru ;
+  skos:definition "sistema de coordenadas unidimensional usado para medidas de alturas o profundidades relacionadas con la gravedad"@es ;
+  skos:definition "endimensionellt referenssystem baserat på ett verikalt datum"@sv ;
+  skos:definition "用于重力高度或深度测量的一维坐标系。"@zh ;
+  
+  skos:prefLabel "vertical coordinate system"@en ;
+  skos:prefLabel "نظام إحداثيات رأسي"@ar ;
+  skos:prefLabel "vertikales Koordinatensystem"@de ;
+  skos:prefLabel "korkeuskoordinaatisto"@fi ;
+  skos:altLabel "vertikaalinen koordinaatisto"@fi ;
+  skos:prefLabel "système de coordonnées vertical"@fr ;
+  skos:prefLabel "수직 좌표계"@ko ;
+  skos:prefLabel "verticaal coördinaatsysteem"@nl ;
+  skos:prefLabel "pionowy układ współrzędnych"@pl ;
+  skos:prefLabel "высотная [вертикальная] система координат"@ru ;
+  skos:prefLabel "sistema de coordenadas vertical"@es ;
+  skos:prefLabel "vertikalt referenssystem"@sv ;
+  skos:prefLabel "高程坐标系"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#base_rep_moving_features
+:base_rep_moving_features rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info717 ;
+# geolexica:hasReview reviews:Review717 ;
+
+geolexica:hasLDAPI ldapi:ldapi717-json , ldapi:ldapi717-jsonld , ldapi:ldapi717-rdfxml , ldapi:ldapi717-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "base representation (moving features)" ;
+dcterms:identifier 717 ;
+skos:notation 717 ;
+
+  skos:definition "representation, using a local origin and local ordinate vectors, of a geometric object at a given reference time"@en ;
+  skos:definition "تمثيل ، باستخدام نقطة اصل محلية واحداثيات محلية، لكائن هندسي في وقت مرجعي معطى."@ar ;
+  skos:definition "특정 기준시간에 기하 객체의 지역 원점과 지역 종좌표 벡터를 이용한 표현"@ko ;
+  skos:definition "представление геометрического объекта, использующее локальное начало координат и локальные векторы ординат,  при заданном времени отсчёта"@ru ;
+  skos:definition "representación de un objeto geométrico en un tiempo de referencia dado, usando un origen local y vectores ordinales locales"@es ;
+  
+  skos:prefLabel "base representation (moving features)"@en ;
+  skos:prefLabel "تمثيل أساسي ( معالم متحركة)"@ar ;
+  skos:prefLabel "Basisdarstellung (moving  features)"@de ;
+  skos:prefLabel "기저 표현 (이동 특성)"@ko ;
+  skos:prefLabel "базовое представление (движущиеся объекты)"@ru ;
+  skos:prefLabel "representación base (objetos geográficos móviles)"@es ;
+  
+lang:eng-note "Note 1 to entry: A rigid geometric object may undergo translation or rotation, but remains congruent with its base representation."@en , "Note 2 to entry: The local origin and ordinate vectors establish an engineering coordinate reference system (ISO 19111), also called a local frame or a local Euclidean coordinate system."@en ;
+lang:ara-note "ملاحظة 1: قد يتعرض الجسم الهندسي الثابت للتحول أو الدوران لكنه يظل مطابقا لتمثيله الأساسي."@ar , "ملاحظة 2: يتأسس على متجهات المنشأ المحلي ومتجهات الإحداثي الرأسي المحلي نظام إحداثيات مرجعي هندسي (مقياس آيزو 19111) يسمى نظام إحداثيات إطار محلي أو نظام إحداثيات إقليدسي محلي."@ar ;
+lang:rus-note "Примечание 1: Жесткий геометрический объект может подвергаться трансляции или ротации, но остается соответствующим своему базовому представлению"@ru , "Примечание 2: локальное начало отсчета и векторы локального ординат устанавливают инженерную систему координат (ISO 19111), также называемую локальным фреймом или локальной Евклидовой системой координат."@ru ;
+lang:spa-note "Nota 1: Un objeto geométrico rígido puede sufrir traslaciones o rotaciones pero continua siendo congruente con su representación base."@es ;
+lang:spa-note "Nota 2: El origen local y los vectores ordinales establecen un sistema de referencia de coordenadas de ingeniería (Norma ISO 19111), también llamado marco local o sistema de coordenadas euclidiano local."@es ;
+
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:kor-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#sensor_model
+:sensor_model rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info720 ;
+geolexica:hasReview reviews:Review720 ;
+
+geolexica:hasLDAPI ldapi:ldapi720-json , ldapi:ldapi720-jsonld , ldapi:ldapi720-rdfxml , ldapi:ldapi720-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "sensor model" ;
+dcterms:identifier 720 ;
+skos:notation 720 ;
+
+  skos:definition "description of the radiometric and geometric characteristics of a sensor"@en ;
+  skos:definition "وصف للخصائص الاشعاعية والهندسية لجهاز استشعار"@ar ;
+  skos:definition "Beschreibung der radiometrischen und geometrischen Eigenschaften eines Sensors"@de ;
+  skos:definition "센서의 지리적 및 방사적 특징을 묘사한 것"@ko ;
+  skos:definition "описание радиометрических и геометрических характеристик датчика"@ru ;
+  skos:definition "descripción de las características geométricas y radiométricas de un sensor"@es ;
+  skos:definition "beskrivning av en sensors radiometriska och geometriska egenskaper"@sv ;
+  
+  skos:prefLabel "sensor model"@en ;
+  skos:prefLabel "نموذج جهاز استشعار"@ar ;
+  skos:prefLabel "Sensormodell"@de ;
+  skos:prefLabel "센서/탐지 모델"@ko ;
+  skos:prefLabel "модель датчика"@ru ;
+  skos:prefLabel "modelo de sensor"@es ;
+  skos:prefLabel "sensormodell"@sv .
+
+###  https://isotc211.geolexica.org/api/concepts#componentUML
+:componentUML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info724 ;
+geolexica:hasReview reviews:Review724 ;
+
+geolexica:hasLDAPI ldapi:ldapi724-json , ldapi:ldapi724-jsonld , ldapi:ldapi724-rdfxml , ldapi:ldapi724-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "component (UML)" ;
+dcterms:identifier 724 ;
+skos:notation 724 ;
+
+  skos:definition "modular, deployable, and replaceable part of a system that encapsulates implementation and exposes a set of interfaces"@en ;
+  skos:definition "جزء من نظام  قابل للاستعمال والاستبدال ويغلق عملية التنفيذ ويعض مجموعة من الواجهات التطبيقية"@ar ;
+  skos:definition "modulær, umiddelbart brugbar og udskiftelig del af et system, der sammenfatter implementering og som passer til  og realiserer et sæt grænseflader"@da ;
+  skos:definition "moduuleista koostuva, sijoiteltavissa ja korvattavissa oleva järjestelmän osa, joka kätkee toteutuksen ja paljastaa joukon rajapintoja"@fi ;
+  skos:definition "élément modulaire, déployable et remplaçable d&#39;un système qui encapsule l&#39;implémentation et expose un ensemble d&#39;interfaces"@fr ;
+  skos:definition "내부 구현을 캡슐화하고 인터페이스의 집합을 노출시킨, 적용 및 교체가 가능한 모듈화된 시스템의 한 부분"@ko ;
+  skos:definition "bahagian yg melengkapi atau yg mencukupkan sesuatu"@ms ;
+  skos:definition "модульная, разворачиваемая и замещаемая часть системы, которая инкапсулирует реализацию и предоставляет заданный набор интерфейсов"@ru ;
+  skos:definition "parte modular, desplegable y reemplazable de un sistema, que encapsula una implementación y expone un conjunto de interfaces"@es ;
+  skos:definition "modular, deployable, and replaceable part of a system that encapsulates implementation and exposes a set of interfaces"@sv ;
+  skos:definition "系统的模块化的、可配制的、可替代的部分，它封装了实现，并提供一系列接口。"@zh ;
+  
+  skos:prefLabel "component (UML)"@en ;
+  skos:prefLabel "مكوِّن (UML)"@ar ;
+  skos:prefLabel "komponent (UML)"@da ;
+  skos:prefLabel "Komponente (UML)"@de ;
+  skos:prefLabel "komponentti (UML)"@fi ;
+  skos:prefLabel "composant (UML)"@fr ;
+  skos:prefLabel "컴포넌트 (UML)"@ko ;
+  skos:prefLabel "komponen"@ms ;
+  skos:prefLabel "компонент(UML)"@ru ;
+  skos:prefLabel "componente (UML)"@es ;
+  skos:prefLabel "component (UML)"@sv ;
+  skos:prefLabel "组件(UML)"@zh ;
+  
+lang:eng-note "Note to entry: A component represents a physical piece of implementation of a system, including software code (source, binary or executable) or equivalents such as scripts or command files."@en ;
+lang:ara-note "ملاحظة: المكون يمثل جزءاً ملموساً من تنفيذ نظام ما بما في ذلك شفرة البرنامج (سواء كانت مصدرية أو ثنائية أو قابلة للتنفيذ) أو ما يعادلها مثل النصوص الكتابية أو ملفات الأوامر."@ar ;
+lang:dan-note "Bemærk til posten: En komponent repræsenterer en fysisk del af implementeringen af et system, inkl. softwarekode (kilde, binær eller eksekverbar) eller tilsvarende såsom scripts eller kommandofiler."@da ;
+lang:fin-note "HUOM.: Komponentti on järjestelmän fyysinen toteutusosa, sisältäen ohjelmakoodin (lähdekoodi, binäärinen tai suorituskelpoinen koodi) tai vastaavan, kuten komentosarjan tai komentotiedoston."@fi ;
+lang:kor-note "비고: 컴포넌트는 소프트웨어 코드, 명령 파일 또는 스크립트 등을 포함하는 시스템의 물리적 구현 단위이다. "@ko ;
+lang:rus-note "Примечание: Компонент представляет собой физическую часть реализации системы, включая программный код (исходный, бинарный или выполнимый), или эквиваленты, такие как сценарии или командные файлы"@ru ;
+lang:spa-note "Nota: un componente representa una pieza física de implementación de un sistema, incluyendo el software de código (fuente, binario o ejecutable) u otros equivalentes como los scripts o ficheros de comandos. "@es ;
+lang:zho-note "注： 组件表示一个系统物理实现的组分，包括软件代码（源、二进制或可执行的）、等效的脚本或命令文件。"@zh ;
+  
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:msa-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#compositionUML
+:compositionUML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info725 ;
+geolexica:hasReview reviews:Review725 ;
+
+geolexica:hasLDAPI ldapi:ldapi725-json , ldapi:ldapi725-jsonld , ldapi:ldapi725-rdfxml , ldapi:ldapi725-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "composition (UML)" ;
+dcterms:identifier 725 ;
+skos:notation 725 ;
+
+  skos:definition "form of aggregation which requires that a part instance be included in at most one composite at a time, and that the composite object is responsible for the creation and destruction of the parts"@en ;
+  skos:definition "شكل من أشكال التجميع الذي يتطلب تضمين جزء مثيل في مركب واحد على الأكثر في وقت واحد وهذا الكائي المركب هو مسئولاً عن إنشاء وتدمير الأجزاء المكوِّنة له"@ar ;
+  skos:definition "form for aggregering, der kræver, at en del indgår i højst én helhed ad gangen, og at helheden er ansvarlig for at delene skabes og/eller forsvinder. Med andre ord lever og dør delene sammen med helheden."@da ;
+  skos:definition "koosteen muoto, jossa osailmentymä voi sisältyä enintään yhteen komposiittiin kerrallaan ja jossa komposiittiobjekti on vastuussa osiensa luomisesta ja tuhoamisesta"@fi ;
+  skos:definition "forme d&#39;agrégation exigeant qu&#39;une instance composante soit incluse dans au plus un composite à la fois, et que l&#39;objet composite soit responsable de la création et de la destruction des instances composantes"@fr ;
+  skos:definition "부분 인스턴스는 동시에 하나의 합성에 포함되며, 합성 객체가 부분들의 생성, 제거에 대한 책임을 갖는 집합 연관의 형태"@ko ;
+  skos:definition "форма агрегации, при которой экземпляр – часть в любой момент входит не более, чем в один композит, причем, композит отвечает за создание и уничтожение этой части"@ru ;
+  skos:definition "forma de agregación que requiere que una instancia componente sea incluida como mucho en un compuesto al mismo tiempo y que el objeto compuesto sea responsable de la creación y destrucción de las partes"@es ;
+  skos:definition "form of aggregation which requires that a part instance be included in at most one composite at a time, and that the composite object is responsible for the creation and destruction of the parts"@sv ;
+  skos:definition "一种聚合形式，要求其组成成分的实例最多在聚合中出现一次。组合对象负责其组成成分的构造和析构。"@zh ;
+  
+  skos:prefLabel "composition (UML)"@en ;
+  skos:prefLabel "تكوين (UML)"@ar ;
+  skos:prefLabel "sammensætning (UML)"@da ;
+  skos:prefLabel "Komposition (UML)"@de ;
+  skos:prefLabel "vahva kooste (UML)"@fi ;
+  skos:altLabel "kompositio (UML)"@fi ;
+  skos:prefLabel "composition (UML)"@fr ;
+  skos:prefLabel "합성 (UML)"@ko ;
+  skos:prefLabel "композиция (UML)"@ru ;
+  skos:prefLabel "composición (UML)"@es ;
+  skos:prefLabel "composition (UML)"@sv ;
+  skos:prefLabel "组合(UML)"@zh ;
+  
+lang:eng-note "Note to entry: Parts with non-fixed multiplicity may be created after the composite itself, but once created they live and die with it (i.e., they share lifetimes). Such parts can also be explicitly removed before the death of the composite. Composition may be recursive. Synonym: composite aggregation."@en ;
+lang:ara-note "ملاحظة: يمكن إنشاء أجزاء متعددة تعددا غير ثابت على نمط المركَّب نفسه , ولكن ما أن يتم إنشاء هذه الأجزاء حتى ترتبط حياتها بالمركب الأصل (أي أن مدة حياتها وحياته تكون واحدة). ويمكن لهذه الأجزاء أن تزال بشكل واضح وصريح قبل أن يموت المركب. التركيب قد يكون قادراً على تكرار نفسه بشكل ذاتي. المرادف اللغوي: تجميع المركب."@ar ;
+lang:dan-note "Bemærk til posten: Dele med ikke-fast multiplicitet kan skabes efter selve helheden, men når de er skabt, lever og dør de med den (dvs. de har samme levetid). Sådanne dele kan også fjernes eksplicit, inden helheden dør. Sammensætning kan være rekursiv. Synonym: sammensat aggregering."@da ;
+lang:fin-note "HUOM.: Osia, joiden kerrannaisuutta ei ole kiinnitetty, voidaan luoda komposiitin jälkeen, mutta sen jälkeen kun osat on luotu, ne elävät ja kuolevat komposiitin kanssa (osilla ja komposiitilla on sama elinikä). Edellämainitun kaltaisia osia voi myös eksplisiittisesti poistaa ennen komposiitin kuolemaa. Vahva kooste voi olla rekursiivinen. Englannin kielessä termin composition synonyymi on termi composite aggregation."@fi ;
+lang:kor-note "비고: 합성 이후 정해지지 않은 다중성이 추가 생성될 수 있지만, 한번 생성된 부분들은 합성과 생명 주기를 같이한다. 물론 이러한 부분들은 합성 연관이 해체되기 전, 명시적으로 제거할 수 있다. 합성은 순환적일 수 있다. 동의어: 합성 연관 "@ko ;
+lang:rus-note "Примечание: Части с нефиксированной множественностью могут быть созданы и после самого композита, однако, будучи созданными, живут и умирают вместе с ним (иными словами, имеют общий жизненный цикл). Такие части могут также быть удалены еще до смерти композиции. Композиция может быть рекурсивной. См. термины «агрегация», «композиция»"@ru ;
+lang:spa-note "Nota: Las partes que no tienen una multiplicidad fija deben crearse depués de la composición misma, pero una vez creadas viven y mueren con ella (es decir, comparten ciclos de vida). Dichas partes también pueden eliminarse explicitamente antes de la muerte del compuesto. La composición puede ser recursiva. Sinónimo: agregación composición."@es ;
+lang:zho-note "注： 组合本身可以创建多重性的组成成分，但是一旦创建后，其组成成分随其存在和消失（也就是，他们共享生存期）。这样的组成成分在该聚合消失前，还可以显式地移走。聚合可以是递归的。同义词：聚合聚集。 "@zh ;
+  
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#generalizationUML
+:generalizationUML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info726 ;
+geolexica:hasReview reviews:Review726 ;
+
+geolexica:hasLDAPI ldapi:ldapi726-json , ldapi:ldapi726-jsonld , ldapi:ldapi726-rdfxml , ldapi:ldapi726-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "generalization (UML)" ;
+dcterms:identifier 726 ;
+skos:notation 726 ;
+
+  skos:definition "taxonomic relationship between a more general element and a more specific element that is fully consistent with the more general element and contains additional information"@en ;
+  skos:definition "علاقة تصنيفية بين عنصر أكثر عمومية وعنصر أكثر تحديداً تنسجم انسجاماً تاماً مع العنصر الأكثر عمومية وتحتوي على معلومات إضافية"@ar ;
+  skos:definition "taksonomisk relation mellem et mere generelt element og et mere specifikt element, som er i fuld overensstemmelse med det mere generelle element og indeholder yderligere information"@da ;
+  skos:definition "taksonominen suhde yleisemmän elementin ja sellaisen yksityiskohtaisemman elementin välillä, joka on täysin yhdenmukainen yleisemmän elementin kanssa ja sisältää myös lisätietoa"@fi ;
+  skos:definition "relation taxonomique entre un élément plus général et un élément plus spécifique qui est entièrement en accord avec l&#39;élément plus général et contient des informations supplémentaires"@fr ;
+  skos:definition "구성 항목의 상속을 표시하는 기법으로, 하나의 구성 요소가 보다 일반화되며 다른 구성 요소는 보다 세분화됨을 표시하는 관계"@ko ;
+  skos:definition "таксономическое отношение между более общим элементом и более специализированным элементом, который полностью  совместим с более общим элементом и содержит некоторую дополнительную информацию"@ru ;
+  skos:definition "relación taxonómica entre un elemento más general y un elemento más específico que es completamente consistente con el elemento más general y contiene además información adicional"@es ;
+  skos:definition "taxonomic relationship between a more general element and a more specific element that is fully consistent with the more general element and contains additional information"@sv ;
+  skos:definition "一般元素和特殊元素之间的分类关系，该特殊元素与一般元素完全一致，且包含更多的信息。"@zh ;
+  
+  skos:prefLabel "generalization (UML)"@en ;
+  skos:prefLabel "تعميم ) UML ("@ar ;
+  skos:prefLabel "generalisering (UML)"@da ;
+  skos:prefLabel "Generalisierung (UML)"@de ;
+  skos:prefLabel "yleistys (UML)"@fi ;
+  skos:prefLabel "généralisation (UML)"@fr ;
+  skos:prefLabel "일반화 (UML)"@ko ;
+  skos:prefLabel "pengitlakan"@ms ;
+  skos:prefLabel "обобщение (UML)"@ru ;
+  skos:prefLabel "generalización (UML)"@es ;
+  skos:prefLabel "generalization (UML)"@sv ;
+  skos:prefLabel "泛化"@zh ;
+  
+lang:eng-note "Note to entry: An instance of the more specific element may be used where the more general element is allowed. See: inheritance."@en ;
+lang:ara-note "ملاحظة: يمكن استخدام مثال للعنصر الأكثر تحديدا في المواضع التي يسمح فيها بالعنصر الأكثر عمومية. أنظر \"إرث\"."@ar ;
+lang:dan-note "Bemærk til posten: En instans af det mere specifikke element kan bruges, hvor det mere generelle element er tilladt. Se: arv"@da ;
+lang:fin-note "HUOM.: Yksityiskohtaisemman elementin ilmentymää voidaan käyttää yhteyksissä, joissa yleisempi elementti on sallittu. Katso periytyminen."@fi ;
+lang:kor-note "비고: 보다 일반적인 요소가 허용되는 곳에 보다 상세 요소의 인스턴스를 사용할 수 있다. 상속을 참조하라."@ko ;
+lang:rus-note "Примечание: Экземпляр более специализированного элемента можно использовать везде, где объявлен более общий элемент. См. термин «наследование»"@ru ;
+lang:spa-note "Nota: Una instancia del elemento más específico se puede usar donde se admita el elemento más general. Véase: Herencia."@es ;
+lang:zho-note "注： 特殊元素与一般元素保持完全的一致性，并且包含其他的信息。如果一般元素允许，可以使用特殊元素的实例。"@zh ;
+  
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#instanceUML
+:instanceUML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info727 ;
+geolexica:hasReview reviews:Review727 ;
+
+geolexica:hasLDAPI ldapi:ldapi727-json , ldapi:ldapi727-jsonld , ldapi:ldapi727-rdfxml , ldapi:ldapi727-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "instance (UML)" ;
+dcterms:identifier 727 ;
+skos:notation 727 ;
+
+  skos:definition "entity that has unique identity, a set of operations can be applied to it, and state that stores the effects of the operations"@en ;
+  skos:definition "كيان له هوية فريدة ، ويمكن تطبيق عدد من العمليات عليه ، وحالة تحفظ آثار العمليات المذكورة"@ar ;
+  skos:definition "entitet med entydig identitet, et sæt operationer, der skal anvendes på den, og er i stand til at lagre resultatet af operationerne"@da ;
+  skos:definition "kokonaisuus, jolla on yksikäsitteinen identiteetti, sarja kokonaisuuteen sovellettavissa olevia toimintoja ja tila, joka tallentaa toimintojen vaikutukset"@fi ;
+  skos:definition "entité qui a une identité unique, à laquelle un ensemble d&#39;opérations peut être appliquée, et un état stockant les effets des opérations"@fr ;
+  skos:definition "유일한 식별특성을 가지며, 연산의 집합이 적용될 수 있고, 연산의 효과를 저장할 수 있는 상태를 갖는 개체"@ko ;
+  skos:definition "cущность, обладающая уникальной индивидуальностью, набором применимых к ней операций и состоянием, сохраняющим результаты операций"@ru ;
+  skos:definition "entidad que tiene una entidad única, un conjunto de operaciones que pueden serle aplicadas y un estado que almacena los efectos de las operaciones"@es ;
+  skos:definition "objekt tillhörande en viss objekttyp eller klass"@sv ;
+  skos:definition "具有惟一标识且可对其执行一组操作的实体和存储操作结果的说明。"@zh ;
+  
+  skos:prefLabel "instance (UML)"@en ;
+  skos:prefLabel "مثيل(UML)"@ar ;
+  skos:prefLabel "instans (UML)"@da ;
+  skos:prefLabel "Instanz (UML)"@de ;
+  skos:prefLabel "ilmentymä (UML)"@fi ;
+  skos:prefLabel "instance (UML)"@fr ;
+  skos:prefLabel "인스턴스 (UML)"@ko ;
+  skos:prefLabel "экземпляр (UML)"@ru ;
+  skos:prefLabel "instancia (UML)"@es ;
+  skos:prefLabel "instans (UML)"@sv ;
+  skos:prefLabel "实例(UML)"@zh ;
+  
+lang:eng-note "Note to entry: See: object."@en ;
+lang:ara-note "ملاحظة: أنظر \" كيان \""@ar ;
+lang:dan-note "Bemærk til posten: Se: objekt."@da ;
+lang:fin-note "HUOM.: Katso objekti."@fi ;
+lang:kor-note "비고: 객체를 참조하라."@ko ;
+lang:rus-note "Примечание: См. термин « объект»"@ru ;
+lang:spa-note "Nota: Véase objeto"@es ;
+lang:zho-note "注： 参见：对象<UML>。"@zh ;
+  
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#type
+:typeUML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info728 ;
+geolexica:hasReview reviews:Review728 ;
+
+geolexica:hasLDAPI ldapi:ldapi728-json , ldapi:ldapi728-jsonld , ldapi:ldapi728-rdfxml , ldapi:ldapi728-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "type (UML)" ;
+dcterms:identifier 728 ;
+skos:notation 728 ;
+
+  skos:definition "stereotyped class that specifies a domain of objects together with the operations applicable to the objects, without defining the physical implementation of those objects"@en ;
+  skos:definition "فئة نمطيه تحدد مواصفات مجال من الكائنات مع العمليات التي يمكن تطبيقها على تلك الكائنات ، بدون تحديد للتنفيذ الفعلي لتلك الكائنات"@ar ;
+  skos:definition "stereotyypitetty luokka, joka määrittelee objektijoukon sekä objekteihin sovellettavissa olevat operaatiot, mutta ei objektien fyysistä toteutusta"@fi ;
+  skos:definition "classe stéréotypée qui spécifie un domaine d&#39;objets avec les opérations applicables aux objets, sans définir l&#39;implémentation physique de ces objets"@fr ;
+  skos:definition "대상 객체의 물리적 구현을 정의하지 않고, 객체에 적용할 수 있는 연산으로 객체의 영역을 기술한 정형화된 클래스"@ko ;
+  skos:definition "стереотипный класс, предназначенный для определения  множества объектов и операций, которые применимы к этим объектам,  но не определяющий методы их физической реализации"@ru ;
+  skos:definition "clase estereotipada que especifica un dominio de objetos junto con las operaciones aplicables a los objetos, sin definir la implementación física de tales objetos"@es ;
+  skos:definition "stereotyped class that specifies a domain of objects together with the operations applicable to the objects, without defining the physical implementation of those objects"@sv ;
+  skos:definition "类的一种构造型，用于规定对象的域，以及可应用于这些对象的操作，但不定义这些对象的物理实现。"@zh ;
+  
+  skos:prefLabel "type (UML)"@en ;
+  skos:prefLabel "نوع (UML)"@ar ;
+  skos:prefLabel "tyyppi (UML)"@fi ;
+  skos:prefLabel "type (UML)"@fr ;
+  skos:prefLabel "유형 (UML)"@ko ;
+  skos:prefLabel "тип (UML)"@ru ;
+  skos:prefLabel "tipo (UML)"@es ;
+  skos:prefLabel "type (UML)"@sv ;
+  skos:prefLabel "类型(UML)"@zh ;
+  
+lang:eng-note "Note to entry: A type may have attributes and associations."@en ;
+lang:ara-note "ملاحظة: قد يكون للنوع بيانات وصفية وارتباطات أخرى."@ar ;
+lang:fin-note "HUOM.: Tyypillä voi olla attribuutteja ja assosiaatioita."@fi ;
+lang:kor-note "비고: 유형은 속성과 연관을 가질 수 있다."@ko ;
+lang:rus-note "Примечание: Тип может иметь атрибуты и ассоциации"@ru ;
+lang:spa-note "Nota: Un tipo puede tener atributos y asociaciones."@es ;
+lang:zho-note "注： 类型可有属性和关联。"@zh ;
+  
+lang:rus-note notes:NoteTransDiff ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#coordinate_set
+:coordinate_set rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info729 ;
+geolexica:hasReview reviews:Review729 ;
+
+geolexica:hasLDAPI ldapi:ldapi729-json , ldapi:ldapi729-jsonld , ldapi:ldapi729-rdfxml , ldapi:ldapi729-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "coordinate set" ;
+dcterms:identifier 729 ;
+skos:notation 729 ;
+
+  skos:definition "collection of coordinate tuples related to the same coordinate reference system"@en ;
+  skos:definition "مجموعة من الإحداثيات المرتبة والمرتبطة بنظام إحداثيات مرجعي واحد"@ar ;
+  skos:definition "Sammlung von auf dasselbe Koordinatenreferenzsystem bezogenen Koordinatentupels"@de ;
+  skos:definition "kokoelma samaan koordinaattijärjestelmään liittyviä koordinaattimonikkoja"@fi ;
+  skos:definition "collection de n-uplets de coordonnées dans le même système de coordonnées de référence"@fr ;
+  skos:definition "동일한 좌표 참조 체계를 사용하는 좌표 튜플의 모음"@ko ;
+  skos:definition "verzameling coördinaattupels gerelateerd aan hetzelfde coördinaatreferentiesysteem"@nl ;
+  skos:definition "zbiór krotek współrzędnych odniesionych do tego samego układu współrzędnych"@pl ;
+  skos:definition "совокупность кортежей координат в одной и той же координатной системе отсчета"@ru ;
+  skos:definition "colección de tuplas de coordenadas relacionadas con el mismo sistema de referencia de coordenadas"@es ;
+  skos:definition "(mängd av koordinater som relaterar till samma koordinatsystem)"@sv ;
+  skos:definition "相对于同一坐标系的坐标元组的集合。"@zh ;
+  
+  skos:prefLabel "coordinate set"@en ;
+  skos:prefLabel "مجموعة إحداثية"@ar ;
+  skos:prefLabel "Koordinatensatz"@de ;
+  skos:prefLabel "koordinaattijoukko"@fi ;
+  skos:prefLabel "ensemble de coordonnées"@fr ;
+  skos:prefLabel "좌표 집합"@ko ;
+  skos:prefLabel "coördinaten set"@nl ;
+  skos:prefLabel "kolekcja wspólrzędnych"@pl ;
+  skos:prefLabel "набор координат"@ru ;
+  skos:prefLabel "conjunto de coordenadas"@es ;
+  skos:prefLabel "koordinatmängd"@sv ;
+  skos:prefLabel "坐标集合"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#altitude
+:altitude rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info733 ;
+# geolexica:hasReview reviews:Review733 ;
+
+geolexica:hasLDAPI ldapi:ldapi733-json , ldapi:ldapi733-jsonld , ldapi:ldapi733-rdfxml , ldapi:ldapi733-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "altitude" ;
+dcterms:identifier 733 ;
+skos:notation 733 ;
+
+  skos:definition "height where the chosen reference surface is mean sea level"@en ;
+  skos:definition "الارتفاع عند ما يكون سطح الإسناد المرجعي هو متوسط منسوب سطح البحر"@ar ;
+  skos:definition "Höhe, bei der die gewählte Bezugsfläche das Normalnull ist"@de ;
+  skos:definition "keskimerenpinnan suhteen ilmoitettu korkeus"@fi ;
+  skos:definition "선택된 기준면과 평균 해수면이 같은 높이"@ko ;
+  skos:definition "высота, где выбранная поверхность отсчета  представляет собой средний уровень моря"@ru ;
+  skos:definition "altura cuya superficie de referencia es el nivel medio del mar"@es ;
+  
+  skos:prefLabel "altitude"@en ;
+  skos:prefLabel "الارتفاع"@ar ;
+  skos:prefLabel "Höhe"@de ;
+  skos:prefLabel "korkeus"@fi ;
+  skos:prefLabel "고도"@ko ;
+  skos:prefLabel "альтитуда"@ru ;
+  skos:altLabel "высота"@ru ;
+  skos:prefLabel "altitud ortométrica"@es ;
+  skos:prefLabel "altitud höjd över havet"@sv ;
+  
+  lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#constraint
+:constraint rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info734 ;
+# geolexica:hasReview reviews:Review734 ;
+
+geolexica:hasLDAPI ldapi:ldapi734-json , ldapi:ldapi734-jsonld , ldapi:ldapi734-rdfxml , ldapi:ldapi734-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "constraint" ;
+dcterms:identifier 734 ;
+skos:notation 734 ;
+
+  skos:definition "restriction on how a link or turn may be traversed by a vehicle, such as vehicle classification, physical or temporal constraint"@en ;
+  skos:definition "تحيد كيفية مرور عربة عبر وصلة أو منعطف مثل تصنيف العربة أو قيد حسي أو زمني"@ar ;
+  skos:definition "begrænsning af, hvordan et køretøj kan følge et link eller et sving, såsom køretøjsklassifikation, fysisk eller tidsmæssig restriktion"@da ;
+  skos:definition "käsitteellinen ehto tai rajoitus, joka sisältyy tietomalliin"@fi ;
+  skos:definition "restriction relative à la manière selon laquelle un lien ou jonction peut être traversé par un véhicule, telle que la classification du véhicule, une contrainte physique ou temporelle"@fr ;
+  skos:definition "차종, 물리적 또는 시간적 제약 조건과 같이, 차량에 의한 링크 또는 회전의 제한"@ko ;
+  skos:definition "had yang dikenakan"@ms ;
+  skos:definition "ограничивающее условие на режим прохождения дуги или поворота транспортным средством, например, класс транспортного средства, физическое или временнóе ограничения"@ru ;
+  skos:definition "limitación sobre cómo un enlace o un giro puede ser recorrido por un vehículo,  por ejemplo, según la categoría del vehículo, o sus restricciones físicas o temporales"@es ;
+  skos:definition "restriktion för hur en länk eller sväng får trafikeras av fordon, såsom fordonsklass, fysisk begränsning eller tidsmässig begränsning"@sv ;
+  skos:definition "对车辆经过的有向路段或转向处的约束，例如车辆分类约束，物理上的或时间上的约束。"@zh ;
+  
+  skos:prefLabel "constraint"@en ;
+  skos:prefLabel "قيد"@ar ;
+  skos:prefLabel "restriktion"@da ;
+  skos:prefLabel "Einschränkung"@de ;
+  skos:prefLabel "rajoite"@fi ;
+  skos:prefLabel "contrainte (navigation)"@fr ;
+  skos:prefLabel "제약 조건"@ko ;
+  skos:prefLabel "kekangan"@ms ;
+  skos:prefLabel "ограничение"@ru ;
+  skos:prefLabel "restricción"@es ;
+  skos:prefLabel "trafikbegränsning"@sv ;
+  skos:prefLabel "限制"@zh ;
+  
+  lang:deu-note notes:DefnTransUnavail ;
+  lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#coordinate_tuple
+:coordinate_tuple rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info735 ;
+geolexica:hasReview reviews:Review735 ;
+
+geolexica:hasLDAPI ldapi:ldapi735-json , ldapi:ldapi735-jsonld , ldapi:ldapi735-rdfxml , ldapi:ldapi735-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "coordinate tuple" ;
+dcterms:identifier 735 ;
+skos:notation 735 ;
+
+  skos:definition "tuple composed of a sequence of coordinates"@en ;
+  skos:definition "مجموعة ترابطية مكونة من سلسلة إحداثيات متتابعة"@ar ;
+  skos:definition "Tupel, zusammengesetzt aus einer Folge von Koordinaten"@de ;
+  skos:definition "monikko, joka koostuu koordinaattien jonosta"@fi ;
+  skos:definition "n-uplet composé d&#39;une séquence de coordonnées"@fr ;
+  skos:definition "좌표의 연속으로 구성된 튜플"@ko ;
+  skos:definition "tupel bestaande uit een serie coördinaten"@nl ;
+  skos:definition "krotka składająca się z sekwencji współrzędnych"@pl ;
+  skos:definition "кортеж, состоящий из последовательности координат"@ru ;
+  skos:definition "tupla compuesta por una secuencia de coordenadas"@es ;
+  skos:definition "ordnade tal som entydigt anger positionen för en punkt i ett koordinatsystem"@sv ;
+  skos:definition "由有顺序的坐标所构成的坐标串。"@zh ;
+
+  skos:prefLabel "coordinate tuple"@en ;
+  skos:prefLabel "مجموعة إحداثيات ترابطية"@ar ;
+  skos:prefLabel "Koordinatentupel"@de ;
+  skos:prefLabel "koordinaattimonikko"@fi ;
+  skos:prefLabel "n-uplet de coordonnées"@fr ;
+  skos:prefLabel "좌표 튜플"@ko ;
+  skos:prefLabel "coördinaattupel"@nl ;
+  skos:prefLabel "krotka współrzędnych"@pl ;
+  skos:prefLabel "кортеж координат"@ru ;
+  skos:prefLabel "tupla de coordenadas"@es ;
+  skos:prefLabel "koordinater"@sv ;
+  skos:prefLabel "坐标元组"@zh ;
+  
+lang:eng-note "Note to entry: The number of coordinates in the coordinate tuple equals the dimension of the coordinate system; the order of coordinates in the coordinate tuple is identical to the order of the axes of the coordinate system. "@en ;
+lang:ara-note "ملاحظة: عدد الإحداثيات في مجموعة الإحداثيات الترابطية مساوٍ لبعد النظام الإحداثي؛ ترتيب الإحداثيات في مجموعة الإحداثيات الترابطية مطابق لترتيب محاور النظام الإحداثي."@ar ;
+lang:fin-note "HUOM.: Koordinaattimonikon koordinaattien lukumäärä on yhtä suuri kuin koordinaatiston ulottuvuus, ja niiden järjestys on sama kuin koordinaatiston akseleiden järjestys. "@fi ;
+lang:kor-note "비고: 좌표 튜플의 좌표 개수는 좌표 체계의 차원과 같다. 좌표 튜플의 좌표 순서는 좌표 체계의 축 순서와 같다."@ko ;
+lang:nld-note "OPMERKING: Het aantal coördinaten in een coördinaattupel is gelijk aan de dimensie van het coördinaatsysteem; de volgorde van de coördinaten in een coördinaattupel is gelijk aan de volgorde van de assen van het coördinaatsysteem."@nl ;
+lang:pol-note "UWAGA: Liczba współrzędnych w krotce współrzędnych jest równa wymiarowi systemu współrzędnych. Kolejność współrzędnych w zestawie jest taka sama jak kolejność osi w układzie współrzędnych."@pl ;
+lang:rus-note "Примечание: Число координат в кортеже соответствует размерности системы координат; порядок координат в кортеже идентичен порядку осей в системе координат"@ru ;
+lang:spa-note "Nota: El número de coordenadas en la tupla de coordenadas es igual a la dimensión del sistema de coordenadas; el orden de las coordenadas en la tupla de coordenadas es idéntico al orden de los ejes del sistema de coordenadas. "@es ;
+lang:zho-note "注： 在坐标元组中，坐标个数等同于坐标系的维数；坐标的顺序等同于坐标系轴的顺序。"@zh ;
+
+  lang:deu-note notes:NoteTransUnavail ;
+  lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#correctness
+:correctness rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info736 ;
+geolexica:hasReview reviews:Review736 ;
+
+geolexica:hasLDAPI ldapi:ldapi736-json , ldapi:ldapi736-jsonld , ldapi:ldapi736-rdfxml , ldapi:ldapi736-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "correctness" ;
+dcterms:identifier 736 ;
+skos:notation 736 ;
+
+  skos:definition "correspondence with the universe of discourse"@en ;
+  skos:definition "مطابقة المجموعة الشاملة محل البحث"@ar ;
+  skos:definition "Übereinstimmung mit dem Gegenstandsbereich"@de ;
+  skos:definition "tietoaineiston ominaisuus, joka ilmentää sitä, että aineiston tiedot vastaavat riittävästi todellisuutta"@fi ;
+  skos:definition "correspondance avec l&#39;univers du discours"@fr ;
+  skos:definition "논의의 영역에 대한 부합 정도"@ko ;
+  skos:definition "соответствие предметной области"@ru ;
+  skos:definition "correspondencia con el universo de discurso"@es ;
+  skos:definition "grad av överensstämmelse med verklighetsutsnittet"@sv ;
+  skos:definition "与论域一致。"@zh ;
+  
+  skos:prefLabel "correctness"@en ;
+  skos:prefLabel "الصِحَّة والضبط"@ar ;
+  skos:prefLabel "Richtigkeit"@de ;
+  skos:prefLabel "oikeellisuus"@fi ;
+  skos:prefLabel "justesse"@fr ;
+  skos:prefLabel "정확성"@ko ;
+  skos:prefLabel "корректность"@ru ;
+  skos:prefLabel "corrección"@es ;
+  skos:prefLabel "korrekthet"@sv ;
+  skos:prefLabel "正确性"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#error
+:error rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info738 ;
+geolexica:hasReview reviews:Review738 ;
+
+geolexica:hasLDAPI ldapi:ldapi738-json , ldapi:ldapi738-jsonld , ldapi:ldapi738-rdfxml , ldapi:ldapi738-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "error" ;
+dcterms:identifier 738 ;
+skos:notation 738 ;
+
+  skos:definition "discrepancy with the universe of discourse"@en ;
+  skos:definition "التعارض مع المجموعة الشاملة محل البحث"@ar ;
+  skos:definition "mitatun arvon poikkeama oikeana pidetystä arvosta"@fi ;
+  skos:definition "divergence avec l&#39;univers du discours"@fr ;
+  skos:definition "논의의 영역과의 불일치"@ko ;
+  skos:definition "расхождение  с предметной областью"@ru ;
+  skos:definition "discrepancia con el universo del discurso"@es ;
+  skos:definition "uppmätt kvantitativt värde minus motsvarande referensvärde"@sv ;
+  skos:definition "与论域的差异。"@zh ;
+
+  skos:prefLabel "error"@en ;
+  skos:prefLabel "خطأ"@ar ;
+  skos:prefLabel "Fehler"@de ;
+  skos:prefLabel "virhe"@fi ;
+  skos:altLabel "virheellisyys"@fi ;
+  skos:prefLabel "erreur"@fr ;
+  skos:prefLabel "오류"@ko ;
+  skos:altLabel "에러"@ko ;
+  skos:prefLabel "ralat"@ms ;
+  skos:prefLabel "ошибка"@ru ;
+  skos:prefLabel "error"@es ;
+  skos:prefLabel "kvantitativ avvikelse"@sv ;
+  skos:prefLabel "误差"@zh ;
+
+lang:deu-note notes:DefnTransUnavail ;
+lang:msa-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#navigation_constraint
+:navigation_constraint rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info740 ;
+# geolexica:hasReview reviews:Review740 ;
+
+geolexica:hasLDAPI ldapi:ldapi740-json , ldapi:ldapi740-jsonld , ldapi:ldapi740-rdfxml , ldapi:ldapi740-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "navigation constraint" ;
+dcterms:identifier 740 ;
+skos:notation 740 ;
+
+  skos:definition "restriction on how a link or turn may be traversed by a vehicle, such as vehicle classification, physical or temporal constraint"@en ;
+  skos:definition "قيد يوضع على كيفية اجتياز وصلة أو منحنى بواسطة مركبة ما مثل تصنيف المركبة ، أو قيد عيني أو قيد يتعلق بالوقت ."@ar ;
+  skos:definition "rajoitus sille, miten linkin tai käännöksen kautta voidaan kulkea; esimerkiksi ajoneuvoluokitus tai fyysinen tai aikaan liittyvä rajoitus"@fi ;
+  skos:definition "restriction d&#39;un chemin ou d&#39;une jonction qui peut être utilisé par un véhicule, tel que la classification du véhicule, la contrainte physique ou temporelle"@fr ;
+  skos:definition "차종, 물리적, 시간적 제약 조건과 같이 차량의 링크나 회전에 대한 제약 조건"@ko ;
+  skos:definition "ограничивающее условие на способы прохождения дуги или поворота транспортным средством, например, класс транспортного средства, физическое или временнóе ограничения"@ru ;
+  skos:definition "limitación sobre como un enlace o un giro puede ser recorrido por un vehículo, por ejemplo, según la clasificación del vehículo, sus restricciones físicas o temporales"@es ;
+  skos:definition "restriktion för hur en länk kan följas eller sväng kan utföras av ett fordon"@sv ;
+  skos:definition "对车辆经过的有向路段或转向处所做的限制，例如车辆分类限制，物理上的或时间上的限制。"@zh ;
+  
+  skos:prefLabel "navigation constraint"@en ;
+  skos:prefLabel "تقييد الملاحة"@ar ;
+  skos:prefLabel "Navigationseinschränkung"@de ;
+  skos:prefLabel "navigointirajoite"@fi ;
+  skos:prefLabel "contrainte de navigation"@fr ;
+  skos:prefLabel "내비게이션 제약 조건"@ko ;
+  skos:prefLabel "навигационное ограничение"@ru ;
+  skos:prefLabel "restricción de navegación"@es ;
+  skos:prefLabel "trafikrestriktion"@sv ;
+  skos:prefLabel "导航限制"@zh ;
+
+lang:deu-note notes:DefnTransUnavail ;
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#traveller
+:traveller rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info744 ;
+# geolexica:hasReview reviews:Review744 ;
+
+geolexica:hasLDAPI ldapi:ldapi744-json , ldapi:ldapi744-jsonld , ldapi:ldapi744-rdfxml , ldapi:ldapi744-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "traveller" ;
+dcterms:identifier 744 ;
+skos:notation 744 ;
+
+  skos:definition "person subject to being navigated or tracked"@en ;
+  skos:definition "شخص معرض لان يكون هدفا للملاحة أو المتابعة والرصد"@ar ;
+  skos:definition "navigoinnin tai seurannan kohteena oleva henkilö"@fi ;
+  skos:definition "personne soumise à la navigation ou au suivi"@fr ;
+  skos:definition "내비게이션 또는 추적될 수 있는 사람 주체(차량과 비교)"@ko ;
+  skos:definition "orang yang akan tertakluk kepada yang dipandu arah atau dikesan"@ms ;
+  skos:definition "лицо или объект, являющиеся предметом навигации или слежения"@ru ;
+  skos:definition "persona sujeta a navegación o seguimiento"@es ;
+  skos:definition "person som färdas i transportmedel eller rör sig på väg eller gata"@sv ;
+  skos:definition "被导航或被跟踪的人。"@zh ;
+  
+  skos:prefLabel "traveller"@en ;
+  skos:altLabel "vehicle"@en ;
+  skos:prefLabel "مسافر"@ar ;
+  skos:altLabel "vehicle"@ar ;
+  skos:prefLabel "zu navigierende Person"@de ;
+  skos:altLabel "vehicle"@de ;
+  skos:prefLabel "seurantakohde"@fi ;
+  skos:altLabel "kulkuneuvo"@fi ;
+  skos:prefLabel "voyageur"@fr ;
+  skos:altLabel "vehicle"@fr ;
+  skos:prefLabel "여행자"@ko ;
+  skos:prefLabel "pengembara"@ms ;
+  skos:altLabel "vehicle"@ms ;
+  skos:prefLabel "участник дорожного движения"@ru ;
+  skos:altLabel "транспортное средство"@ru ;
+  skos:prefLabel "viajero"@es ;
+  skos:altLabel "vehículo"@es ;
+  skos:prefLabel "trafikant"@sv ;
+  skos:altLabel "vehicle"@sv ;
+  skos:prefLabel "出行者"@zh ;
+  skos:altLabel "vehicle"@zh ;
+
+lang:eng-note "Note to entry: Includes pedestrians. See ISO 14825. In this International Standard, traveller can be replaced by vehicle without any change of intent."@en ;
+lang:ara-note "ملاحظة: يشمل المشاة. أنظر المقياس آيزو 14825. في هذا المقياس الدولي , يمكن استبدال مصطلح \"متنقل\" بمصطلح \"مركبة\" دون أن يؤدي ذلك إلى تغيير المعنى."@ar ;
+lang:dan-note ""@da ;
+lang:deu-note ""@de ;
+lang:fin-note "HUOM.: Englanninkielinen termi traveller viittaa käsitteeseen, johon sisältyvät myös jalankulkijat. Katso ISO 14825 -standardi. Tässä kansainvälisessä standardissa englanninkielisiä termejä traveller ja vehicle voidaan käyttää toistensa sijaan ilman, että merkitys muuttuu."@fi ;
+lang:kor-note "비고: 보행자를 포함한다. KS X ISO 14825를 참고하라. 본 표준에서는 어떠한 의도 변경 없이, 여행자가 차량으로 대체될 수 있다."@ko ;
+lang:rus-note "Примечание: Включает в себя также и пешеходов. См. ISO 14825. В данном документе понятие «пешеход» может быть заменено на понятие «транспортное средство» без искажения смысла"@ru ;
+lang:spa-note "Nota: Incluye a peatones. Véase la Norma ISO 14825. En esta norma internacional, viajero se puede sustituir por vehículo sin ningún cambio de sentido."@es ;
+lang:swe-note ""@sv ;
+lang:zho-note "注： 包括行人。参见ISO 14825 。在本标准中，出行者可被车辆代替而不改变含义。 "@zh ;
+
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail ;
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#vehicle
+:vehicle rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info745 ;
+# geolexica:hasReview reviews:Review745 ;
+
+geolexica:hasLDAPI ldapi:ldapi745-json , ldapi:ldapi745-jsonld , ldapi:ldapi745-rdfxml , ldapi:ldapi745-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "vehicle" ;
+dcterms:identifier 745 ;
+skos:notation 745 ;
+
+  skos:definition "object subject to being navigated or tracked"@en ;
+  skos:definition "كائن معرض لأن يكون هدفا للملاحة أو المتابعة والرصد"@ar ;
+  skos:definition "navigoinnin tai seurannan kohteena oleva objekti"@fi ;
+  skos:definition "objet soumis à la navigation ou au suivi"@fr ;
+  skos:definition "내비게이션 또는 추적될 수 있는 객체(여행자와 비교)"@ko ;
+  skos:definition "mesin, biasanya dengan roda dan enjin, digunakan untuk mengangkut orang atau barangan di darat"@ms ;
+  skos:definition "объект, который может быть предметом навигации или слежения"@ru ;
+  skos:definition "objeto sujeto a navegación o seguimiento"@es ;
+  skos:definition "anordning avsedd för transport på marken"@sv ;
+  skos:definition "被导航或跟踪的对象。"@zh ;
+  
+  skos:prefLabel "vehicle"@en ;
+  skos:altLabel "traveller"@en ;
+  skos:prefLabel "مركبة"@ar ;
+  skos:altLabel "traveller"@ar ;
+  skos:prefLabel "zu navigierendes Fahrzeug"@de ;
+  skos:altLabel "traveller"@de ;
+  skos:prefLabel "ajoneuvo"@fi ;
+  skos:altLabel "kulkuneuvo"@fi ;
+  skos:prefLabel "véhicule"@fr ;
+  skos:altLabel "traveller"@fr ;
+  skos:prefLabel "차량"@ko ;
+  skos:prefLabel "kenderaan"@ms ;
+  skos:altLabel "traveller"@ms ;
+  skos:prefLabel "транспортное средство"@ru ;
+  skos:altLabel "участник дорожного движения"@ru ;
+  skos:prefLabel "vehículo"@es ;
+  skos:altLabel "viajero"@es ;
+  skos:prefLabel "fordon"@sv ;
+  skos:altLabel "traveller"@sv ;
+  skos:prefLabel "车辆"@zh ;
+  skos:altLabel "traveller"@zh ;
+
+lang:eng-note "Note to entry: Includes pedestrians. See ISO 14825. In this International Standard, vehicle can be replaced by traveller without any change of intent."@en ;
+lang:ara-note "ملاحظة: يشمل المشاة ؛ أنظر المقياس آيزو 14825. في هذا المقياس الدولي ، يمكن استبدال مصطلح \"مركبة\" بمصطلح \"متنقل\" دون أن يؤدي ذلك إلى تغيير المعنى."@ar ;
+lang:fin-note "HUOM.: Englanninkielinen termi vehicle viittaa käsitteeseen, johon sisältyvät myös jalankulkijat. Katso ISO 14825 -standardi. Tässä kansainvälisessä standardissa englanninkielisiä termejä vehicle ja traveller voidaan käyttää toistensa sijaan ilman, että merkitys muuttuu."@fi ;
+lang:kor-note "비고: 보행자를 포함한다. KS X ISO 14825를 참고하라. 본 표준에서는 어떠한 의도 변경 없이, 차량이 여행자로 대체될 수 있다."@ko ;
+lang:rus-note "Примечание: Включает в себя и пешеходов. См. ISO 14825. В данном международном стандарте понятие «транспортное средство» может быть заменено на понятие «пешеход» без искажения смысла"@ru ;
+lang:spa-note "Nota: Incluye a peatones. Véase la Norma ISO 14825. En esta norma internacional, vehículo se puede sustituir por viajero sin ningún cambio de sentido"@es ;
+lang:zho-note "注： 包括行人。参见ISO 14825.在该国际标准中，车辆可被出行者代替而不改变含义。"@zh ;
+
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:msa-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail ;
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#version_temporal
+:version_temporal rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info746 ;
+# geolexica:hasReview reviews:Review746 ;
+
+geolexica:hasLDAPI ldapi:ldapi746-json , ldapi:ldapi746-jsonld , ldapi:ldapi746-rdfxml , ldapi:ldapi746-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "version (temporal)" ;
+dcterms:identifier 746 ;
+skos:notation 746 ;
+
+  skos:definition "complete representation of an object at a given instance in time"@en ;
+  skos:definition "تمثيل كامل لكائن مافي أي لحظه من الوقت"@ar ;
+  skos:definition "objektin täydellinen esitys tiettynä ajanhetkenä"@fi ;
+  skos:definition "représentation complète d&#39;un objet à un instant donné"@fr ;
+  skos:definition "특정 시간에 제시된 인스턴스 객체의 완전성에 대한 표현"@ko ;
+  skos:definition "полное  представление объекта в некоторый момент времени"@ru ;
+  skos:definition "representación completa de un objeto en un momento determinado en el tiempo"@es ;
+  skos:definition "对给定对象的实例的及时地完整表示。"@zh ;
+  
+  skos:prefLabel "version (temporal)"@en ;
+  skos:prefLabel "نسخة ( زمنية )"@ar ;
+  skos:prefLabel "versio (temporaalinen)"@fi ;
+  skos:prefLabel "version (temporelle)"@fr ;
+  skos:prefLabel "버전(시간)"@ko ;
+  skos:prefLabel "версия (временная)"@ru ;
+  skos:prefLabel "versión (temporal)"@es ;
+  skos:prefLabel "版本(temporal)"@zh ;
+
+lang:eng-note "Note to entry: Temporal versions differ from samples in that a complete description is required. In this sense a version is a complete sample able to be considered outside the domain of the temporal sequence to which it may belong."@en ;
+lang:ara-note "ملاحظة: تختلف النسخ الزمنية عن العينات من حيث أنه يشترط لها وصف شامل. وبهذا الفهم يقال إن النسخة هي عبارة عن عينة شاملة يمكن أن ينظر إليها خارج نطاق التتابع الزمني الذي قد تنتمي إليه."@ar ;
+lang:fin-note "HUOM.: Käsite temporaalinen versio poikkeaa käsitteestä näyte siten, että versio edellyttää täydellistä kuvausta. Tässä mielessä versio on täydellinen näyte, jota voidaan tarkastella sen ajallisen sekvenssin ulkopuolella, johon se mahdollisesti kuuluu."@fi ;
+lang:kor-note "비고: 시간 버전은 완벽한 설명이 필요한 샘플과 구별된다. 이 점에서 버전은 이것이 포함될 수 있는 시간 연속 영역 외부의 완전한 샘플이다."@ko ;
+lang:rus-note "Примечание: Временные версии отличаются от образцов тем, что для них требуется завершенное описание. В этом смысле версия является завершенным образцом, который возможно рассматривать за пределами области временной последовательности, к которой он может принадлежать"@ru ;
+lang:spa-note "Nota: Las versiones temporales difieren de las muestras en que se requiere una descripción completa. En este sentido, una versión es una muestra completa que se puede considerar fuera del ámbito de la secuencia temporal a la que puede pertenecer."@es ;
+lang:zho-note "注： 时间版本与样本不同,主要在于时间版本要求一个完整的描述。从这个意义讲，一个版本是一个完整的样本,它原本属于时间序列域，但可以认为它在时间序列域外。"@zh ;
+
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#design_coord_ref_system
+:design_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info754 ;
+# geolexica:hasReview reviews:Review754 ;
+
+geolexica:hasLDAPI ldapi:ldapi754-json , ldapi:ldapi754-jsonld , ldapi:ldapi754-rdfxml , ldapi:ldapi754-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "design coordinate reference system" ;
+dcterms:identifier 754 ;
+skos:notation 754 ;
+
+  skos:definition "engineering coordinate reference system in which the base representation of a moving object is specified"@en ;
+  skos:definition "نظام مرجع إحداثيات هندسي حيث يكون تمثيل كائن متحرك محدد"@ar ;
+  skos:definition "이동 개체에 대한 기저 표현이 상술 되었을 시 공학 좌표 기준 체계"@ko ;
+  skos:definition "инженерная система  координат, в которой задано базовое представление движущегося объекта"@ru ;
+  skos:definition "sistema de referencia de coordenadas de ingeniería en el que se especifica la representación base de un objeto en movimiento"@es ;
+  
+  skos:prefLabel "design coordinate reference system"@en ;
+  skos:prefLabel "نظام مرجع إحداثيات  تصميم"@ar ;
+  skos:prefLabel "Auslegungskoordinatenreferenzsystem"@de ;
+  skos:prefLabel "디자인 좌표 기준 체계"@ko ;
+  skos:prefLabel "проектная система координат"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas de diseño"@es ;
+
+lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#graphical_language
+:graphical_language rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info755 ;
+geolexica:hasReview reviews:Review755 ;
+
+geolexica:hasLDAPI ldapi:ldapi755-json , ldapi:ldapi755-jsonld , ldapi:ldapi755-rdfxml , ldapi:ldapi755-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "graphical language" ;
+dcterms:identifier 755 ;
+skos:notation 755 ;
+
+  skos:definition "language whose syntax is expressed in terms of graphical symbols"@en ;
+  skos:definition "لغة تصاغ جملها على شكل رموز مرسومة"@ar ;
+  skos:definition "sprog, hvis syntaks udtrykkes ved hjælp af grafiske symboler"@da ;
+  skos:definition "kieli, jonka syntaksi on ilmaistu graafisilla symboleilla"@fi ;
+  skos:definition "langage dont la syntaxe est exprimée en termes de symboles graphiques"@fr ;
+  skos:definition "그래픽 기호를 통해 문법을 표현하는 언어"@ko ;
+  skos:definition "язык, синтаксис которого выражается  посредством графических символов"@ru ;
+  skos:definition "lenguaje cuya sintaxis se expresa en términos de símbolos gráficos"@es ;
+  skos:definition "språk vars syntax uttrycks med grafiska symboler"@sv ;
+  skos:definition "用图形符号表达语法的语言。"@zh ;
+  
+  skos:prefLabel "graphical language"@en ;
+  skos:prefLabel "لغة الرسم"@ar ;
+  skos:prefLabel "grafisk sprog"@da ;
+  skos:prefLabel "graphische Sprache"@de ;
+  skos:prefLabel "graafinen kieli"@fi ;
+  skos:prefLabel "langage graphique"@fr ;
+  skos:prefLabel "그래픽 언어"@ko ;
+  skos:prefLabel "графический язык"@ru ;
+  skos:prefLabel "lenguaje gráfico"@es ;
+  skos:prefLabel "grafiskt språk"@sv ;
+  skos:prefLabel "图形语言"@zh ;
+
+lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#graph
+:graph rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info756 ;
+geolexica:hasReview reviews:Review756 ;
+
+geolexica:hasLDAPI ldapi:ldapi756-json , ldapi:ldapi756-jsonld , ldapi:ldapi756-rdfxml , ldapi:ldapi756-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "graph" ;
+dcterms:identifier 756 ;
+skos:notation 756 ;
+
+  skos:definition "set of nodes, some of which are joined by edges"@en ;
+  skos:definition "مجموعة من العقد بعضها موصله بالحواف"@ar ;
+  skos:definition "mængde af knuder, hvoraf nogle er forbundet ved kanterne"@da ;
+  skos:definition "yhtenäinen yksiulotteinen topologinen kompleksi, joka koostuu solmupisteistä ja niitä yhdistävistä särmistä, jotka eivät leikkaa toisiaan muualla kuin solmupisteissä"@fi ;
+  skos:definition "ensemble de nœuds, dont certains sont joints par des arêtes"@fr ;
+  skos:definition "一部がエッジによって結合されているノードの集合。"@ja ;
+  skos:definition "변에 의해 결합된 절점의 집합"@ko ;
+  skos:definition "kelompok nod-nod yang sebahagiannya di hubungkan dengan bucu-bucu"@ms ;
+  skos:definition "zbiór węzłów, spośród których niektóre są połączone krawędziami"@pl ;
+  skos:definition "множество узлов, часть которых соединена ребрами"@ru ;
+  skos:definition "conjunto de nodos, algunos de los cuales están unidos por arcos"@es ;
+  skos:definition "samling av noder av vilka vissa förenas av länkar"@sv ;
+  skos:definition "结点集，有些结点与边相连。"@zh ;
+  
+  skos:prefLabel "graph"@en ;
+  skos:prefLabel "رسم بياني"@ar ;
+  skos:prefLabel "graf"@da ;
+  skos:prefLabel "Graph"@de ;
+  skos:prefLabel "verkko"@fi ;
+  skos:altLabel "graafi"@fi ;
+  skos:prefLabel "graphe"@fr ;
+  skos:prefLabel "グラフ"@ja ;
+  skos:prefLabel "그래프"@ko ;
+  skos:prefLabel "graf"@ms ;
+  skos:prefLabel "graf"@pl ;
+  skos:prefLabel "граф"@ru ;
+  skos:prefLabel "grafo"@es ;
+  skos:prefLabel "graf"@sv ;
+  skos:prefLabel "图"@zh ;
+
+lang:eng-note "Note to entry: In geographic information systems, a graph can have more than one edge joining two nodes, and can have an edge that has the same node at both ends."@en ;
+lang:ara-note "ملاحظة: في المعلومات الجغرافية , يمكن للرسم البياني أن يشتمل على أكثر من حافة واحدة تربط بين عقدتين , كما يمكن أن يشتمل على حافة لها نفس العقدة على الطرفين ."@ar ;
+lang:dan-note "Bemærk til posten: I GIS-systemer kan en graf have mere end én kant, der forbinder to knuder, og have en kant, som har samme knude ved begge ender."@da ;
+lang:fin-note "HUOM.: Paikkatietojärjestelmissä verkon kahta solmua voi yhdistää useampi kuin yksi linkki, ja verkossa voi olla linkki, jolla on sama solmu molemmissa päissä."@fi ;
+lang:jpn-note "備考： 地理情報システムでは，グラフは，二つのノードに結合するエッジを複数もつことができ，同じノードを両端にもつエッジをもつこともできる。"@ja ;
+lang:kor-note "비고: 지리 정보 시스템에서, 그래프는 두 개 절점을 연결하는 하나 이상의 변과, 두 개의 끝점이 같은 절점으로 된 변으로 구성될 수 있다."@ko ;
+lang:pol-note "UWAGA: W systemach informacji geograficznej graf może zawierać więcej niż jedną krawędź łączącą dwa węzły, jak również może zawierać krawędź, która ma ten sam węzeł na obu końcach."@pl ;
+lang:rus-note "Примечание: В геоинформационных системах граф может иметь более одного ребра, соединяющего два узла, и ребро, имеющее один и тот же узел на обоих концах"@ru ;
+lang:spa-note "Nota: En los sistemas de información geográfica, un grafo puede tener más de un arco que una dos nodos, y puede tener un arco que tenga el mismo nodo a ambos extremos."@es ;
+lang:zho-note "注： 在地理信息系统中，一个图可以有多于一条边连在两个结点上，也可以一条边的首尾结点相同。"@zh ;
+
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:msa-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#geometry_value_object
+:geometry_value_object rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info757 ;
+# geolexica:hasReview reviews:Review757 ;
+
+geolexica:hasLDAPI ldapi:ldapi757-json , ldapi:ldapi757-jsonld , ldapi:ldapi757-rdfxml , ldapi:ldapi757-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geometry value object" ;
+dcterms:identifier 757 ;
+skos:notation 757 ;
+
+  skos:definition "object composed of a set of geometry value pairs"@en ;
+  skos:definition "كائن مؤلف من مجموعة أزواج ذات قيم هندسية"@ar ;
+  skos:definition "objekt sammensat af et sæt af geometriske værdipar"@da ;
+  skos:definition "objekti, joka koostuu joukosta geometria-arvopareja"@fi ;
+  skos:definition "objet composé d&#39;un ensemble de paires géométrie - valeur"@fr ;
+  skos:definition "기하 값 쌍의 집합으로 구성된 객체"@ko ;
+  skos:definition "obiekt złożony ze zbioru par wartości geometrii"@pl ;
+  skos:definition "объект,  составленный из пар «геометрический элемент – значение»"@ru ;
+  skos:definition "objeto compuesto de un conjunto de pares de valores geométricos"@es ;
+  skos:definition "samling av samhörande geometri-värdepar"@sv ;
+  skos:definition "由一组几何数值对组成的对象。"@zh ;
+  
+  skos:prefLabel "geometry value object"@en ;
+  skos:prefLabel "كائن ذو قيمة هندسية"@ar ;
+  skos:prefLabel "geometrisk værdiobjekt"@da ;
+  skos:prefLabel "geometrisches Werteobjekt"@de ;
+  skos:prefLabel "geometria-arvo-objekti"@fi ;
+  skos:prefLabel "objet géométrie - valeur"@fr ;
+  skos:prefLabel "기하 값 객체"@ko ;
+  skos:prefLabel "obiekt wartości geometrii"@pl ;
+  skos:prefLabel "объект «геометрия -значение»"@ru ;
+  skos:prefLabel "objeto valor geométrico"@es ;
+  skos:prefLabel "geometri-värdeobjekt"@sv ;
+  skos:prefLabel "几何值对象"@zh ;
+
+lang:deu-note notes:DefnTransUnavail ;
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#geometry_value_pair
+:geometry_value_pair rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info758 ;
+# geolexica:hasReview reviews:Review758 ;
+
+geolexica:hasLDAPI ldapi:ldapi758-json , ldapi:ldapi758-jsonld , ldapi:ldapi758-rdfxml , ldapi:ldapi758-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geometry value pair" ;
+dcterms:identifier 758 ;
+skos:notation 758 ;
+
+  skos:definition "ordered pair composed of a spatial object, a temporal object or a spatiotemporal object and a record of feature attribute values"@en ;
+  skos:definition "زوج مرتب يتألف من كائن مكاني ، أو كائن زماني أو كائن مكاني-زماني وسجل من قيم بيانات وصف المعالم"@ar ;
+  skos:definition "ordnet par sammensat af et rumligt objekt, et temporalt objekt eller et rumligt-temporalt objekt og en record af featureattribut-værdier"@da ;
+  skos:definition "järjestetty pari, joka koostuu spatiaalisesta, temporaalisesta tai spatiotemporaalisesta objektista ja kohteen ominaisuuden arvoista"@fi ;
+  skos:definition "paire ordonnée composée d&#39;un objet spatial, temporel ou spatiotemporel et d&#39;un enregistrement de valeurs d&#39;attributs d&#39;entité"@fr ;
+  skos:definition "공간 객체, 시간 객체, 시공간 객체 및 피처 속성 값의 레코드로 구성된 일련의 값 쌍"@ko ;
+  skos:definition "uporządkowana para złożona z obiektu przestrzennego, czasowego lub czasoprzestrzennego oraz rekordu wartości atrybutów obiektu"@pl ;
+  skos:definition "упорядоченная пара, составленная из объекта (в пространстве, времени или пространстве - времени) и атрибутивного значения"@ru ;
+  skos:definition "par ordenado compuesto de un objeto espacial, un objeto temporal o un objeto espacio-temporal y un registro de valores de atributos de objetos geográficos"@es ;
+  skos:definition "kombinationen av ett rumsligt, temporalt eller rumstemporalt objekt som ingår i ett domänobjekt och de uppgifter som gäller där"@sv ;
+  skos:definition "由空间对象、时间对象或时空对象和要素属性值记录组成的有序数值对。"@zh ;
+  
+  skos:prefLabel "geometry value pair"@en ;
+  skos:prefLabel "زوج ذو قيمة هندسية"@ar ;
+  skos:prefLabel "geometrisk værdipar"@da ;
+  skos:prefLabel "geometrisches Wertepaar"@de ;
+  skos:prefLabel "geometria-arvopari"@fi ;
+  skos:prefLabel "paire géométrie - valeur"@fr ;
+  skos:prefLabel "기하 값 쌍"@ko ;
+  skos:prefLabel "para wartości geometrii"@pl ;
+  skos:prefLabel "пара «геометрический элемент – значение»"@ru ;
+  skos:prefLabel "par de valores geométricos"@es ;
+  skos:prefLabel "geometri-värdepar"@sv ;
+  skos:prefLabel "几何数值对"@zh ;
+
+lang:deu-note notes:DefnTransUnavail ;
+lang:fra-note notes:NoteTransDiff .
+
+###  https://isotc211.geolexica.org/api/concepts#coordinate_conversion
+:coordinate_conversion rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info762 ;
+geolexica:hasReview reviews:Review762 ;
+
+geolexica:hasLDAPI ldapi:ldapi762-json , ldapi:ldapi762-jsonld , ldapi:ldapi762-rdfxml , ldapi:ldapi762-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "coordinate conversion" ;
+dcterms:identifier 762 ;
+skos:notation 762 ;
+
+  skos:definition "coordinate operation in which both coordinate reference systems are based on the same datum"@en ;
+  skos:definition "عملية إحداثية يكون نظاما الإحداثيات المرجعية فيهما مبنيين على مرجع إسناد واحد (Datum)"@ar ;
+  skos:definition "ændring af koordinater baseret på en 1 til 1-relation fra et koordinatsystem til et andet baseret på samme datum"@da ;
+  skos:definition "Umrechnung von Koordinaten (Koordinatenkonversion), deren Koordinatenreferenzsysteme auf dem gleichen Datum basieren"@de ;
+  skos:definition "menetelmä, jolla muunnetaan koordinaatteja kahden samaan datumiin perustuvan koordinaattijärjestelmän välillä"@fi ;
+  skos:definition "opération sur les coordonnées dans laquelle les deux systèmes de coordonnées de référence sont basés sur le même référentiel"@fr ;
+  skos:definition "동일한 데이텀을 기준으로 하는 두 개의 좌표 참조 체계에서의 좌표 연산"@ko ;
+  skos:definition "coördinaatbewerking waarbij beide coördinaatreferentiesystemen op hetzelfde datum gebaseerd zijn."@nl ;
+  skos:definition "operacja na współrzędnych, gdy oba systemy odniesienia oparte są na tym samym układzie odniesienia"@pl ;
+  skos:definition "операция с координатами пространственных объектов, основанная на математически строго определенной связи, при переходе из одной системы координат в другую, используя одни и и те же исходные геодезические даты"@ru ;
+  skos:definition "operación de coordenadas en la que ambos sistemas de referencia de coordenadas están basados en el mismo datum"@es ;
+  skos:definition "koordinatomräkning där de  två koordinatbaserade referenssystemen har samma datum"@sv ;
+  skos:definition "基于同一基准的，从一个坐标参照系到另一个坐标参照系一一对应的坐标操作。"@zh ;
+  
+  skos:prefLabel "coordinate conversion"@en ;
+  skos:prefLabel "تحويل إحداثي"@ar ;
+  skos:prefLabel "koordinatkonvertering"@da ;
+  skos:prefLabel "Koordinatenumwandlung"@de ;
+  skos:prefLabel "koordinaattikonversio"@fi ;
+  skos:prefLabel "conversion de coordonnées"@fr ;
+  skos:prefLabel "좌표 전환"@ko ;
+  skos:prefLabel "Coördinaat conversie"@nl ;
+  skos:prefLabel "konwersja wspólrzędnych"@pl ;
+  skos:prefLabel "перевычисление координат"@ru ;
+  skos:prefLabel "conversión de coordenadas"@es ;
+  skos:prefLabel "koordinatkonvertering"@sv ;
+  skos:prefLabel "坐标转换"@zh ;
+
+lang:eng-note "Note to entry: A coordinate conversion uses parameters which have specified values that are not determined empirically."@en ;
+lang:ara-note "ملاحظة: التحويل الإحداثي يستخدم متغيِّرات ذات قيم محددة لا يتم تحديدها بالتجربة العملية."@ar ;
+lang:dan-note "Bemærk til posten: Ved en koordinatkonvertering anvendes parametre med konstante værdier."@da ;
+lang:deu-note ""@de ;
+lang:fin-note "HUOM.: Koordinaattikonversiossa käytetään parametreja, joilla on tietyt, ei kokemusperäisesti määritetyt arvot."@fi ;
+lang:kor-note "비고: 좌표 전환은 경험적으로 산출된 값이 아닌 특정 값을 매개 변수로 사용한다. "@ko ;
+lang:nld-note "VOPMERKING: Een coördinaat conversie gebruikt parameters die gespecificeerde waarden hebben die niet empirisch bepaald zijn."@nl ;
+lang:pol-note "UWAGA: W konwersji współrzędnych użyte parametry nie są określane w sposób empiryczny."@pl ;
+lang:rus-note "Примечание: При перевычислении координат используют параметры, являющиеся постоянными величинами"@ru ;
+lang:spa-note "Nota: Una conversión de coordenadas usa parámetros que tienen valores especificados que no son determinados empíricamente."@es ;
+lang:zho-note "注： 坐标转换使用具有明确值的参数，这些值不是凭经验决定的。"@zh ;
+
+geolexica:examples "EXAMPLE Conversion from an ellipsoidal coordinate reference system based on the WGS84 datum to a Cartesian coordinate reference system also based on the WGS84 datum, or change of units such as from radians to degrees or feet to metres."@en ;
+geolexica:examples "مثال التحويل من نظام إحداثيات مرجعية كروية مبني على مرجع إسناد النظام الجيوديسي العالمي WGS84 إلى نظام إحداثيات مرجعي ديكارتي مبني أيضاً على مرجع إسناد نظام WGS84 , أو تغيير الوحدات مثلاً من زوايا نصف قطرية إلى درجات أو من أقدام إلى أمتار."@ar ;
+geolexica:examples "EKSEMPEL Mellem geodætiske og kartesiske koordinatsystemer, eller mellem geodætiske og projicerede koordinater, eller ændring af enheder fx fra radianer til grader eller fra fod til meter."@da ;
+geolexica:examples "VOORBEELD Conversie van een ellipsoidaal coördinaatreferentiesysteem op basis van het WGS84 datum naar een Cartesiaans coördinaatreferentiesysteem wat ook op het WGS84 datum is gebaseerd of een verandering in eenheden zoals van radialen naar graden of voeten naar meters."@nl ;
+geolexica:examples "ESIM. Konversio WGS84-datumiin perustuvasta ellipsoidisesta koordinaattijärjestelmästä karteesiseen, samaan datumiin perustuvaan koordinaattijärjestelmään tai yksikkömuunnos, kuten muunnos radiaaneista asteiksi tai jaloista metreiksi."@fi ;
+geolexica:examples "보기 WGS84 데이텀 기준 타원체 좌표 참조 체계에서 WGS84 데이텀 기준 수직 좌표 참조 체계로의 변환, 또는 라디안에서 각도로, 또는 피트에서 미터로의 단위 변경"@ko ;
+geolexica:examples "PRZYKŁAD Konwersja z elipsoidalnego układu współrzędnych bazującego na układzie odniesienia WGS 84 do kartezjańskiego układu współrzędnych, również bazującego na układzie odniesienia WGS 84, lub zamiana jednostek z radianów na stopnie lub stóp na metry."@pl ;
+geolexica:examples "Пример Перевычисление из геодезической системы координат, основанной на исходных данных WGS84, в прямоугольную систему координат, также основанную на исходных данных WGS84, или перевод единиц измерения из радиан в градусы или из футов в метры"@ru ;
+geolexica:examples "EJEMPLO Conversión de un sistema de referencia de coordenadas elipsoidales basado en el datum WGS84 a un sistema de referencia de coordenadas cartesianas también basado en el datum WGS84, o cambio de unidades tales como de radianes a grados o de pies a metros."@es ;
+geolexica:examples "示例 大地坐标系和笛卡尔坐标系之间的改变，或大地坐标和投影坐标之间的改变，或度量单位的改变，如从弧度到度，或从英尺到米。 "@zh ;
+
+lang:deu-note notes:DefnTransUnavail , notes:ExTransUnavail ;
+lang:swe-note notes:DefnTransUnavail , notes:ExTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#coordinate_transformation
+:coordinate_transformation rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info763 ;
+geolexica:hasReview reviews:Review763 ;
+
+geolexica:hasLDAPI ldapi:ldapi763-json , ldapi:ldapi763-jsonld , ldapi:ldapi763-rdfxml , ldapi:ldapi763-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "coordinate transformation" ;
+dcterms:identifier 763 ;
+skos:notation 763 ;
+
+  skos:definition "coordinate operation in which the two coordinate reference systems are based on different datums"@en ;
+  skos:definition "عملية إحداثية يكون نظاما الإحداثيات المرجعية فيهما مبنيين على مرجعي إسناد مختلفين (Datums)"@ar ;
+  skos:definition "ændring af koordinater fra et koordinatsystem til et andet koordinatsystem baseret på et andet datum i en 1 til 1-relation"@da ;
+  skos:definition "Umrechnung von Koordinaten (Koordinatentransformation), deren Koordinatenreferenzsysteme auf unterschiedlichen Datumen basieren"@de ;
+  skos:definition "menetelmä, jolla muunnetaan koordinaatteja kahden eri datumiin perustuvan koordinaattijärjestelmän välillä"@fi ;
+  skos:definition "opération sur les coordonnées dans laquelle les deux systèmes de coordonnées de référence sont basés sur des référentiels distincts"@fr ;
+  skos:definition "서로 다른 데이텀을 기준으로 하는 두 개의 좌표 참조 체계에서의 좌표 연산"@ko ;
+  skos:definition "coördinaatbewerking waarbij de twee coördinaatreferentiesystemen zijn gebaseerd op verschillende datums"@nl ;
+  skos:definition "operacja na współrzędnych,w której dwa systemy odniesienia opierają się na różnych układach odniesienia"@pl ;
+  skos:definition "операция с координатами пространственных объектов при переходе от одной координатной системы отсчета к координатной системе отсчета, основанной на других датах"@ru ;
+  skos:definition "operación de coordenadas en la que los dos sistemas de referencia de coordenadas están basados en diferentes datums"@es ;
+  skos:definition "koordinatomräkning där de  två koordinatbaserade referenssystemen har olika datum"@sv ;
+  skos:definition "基于不同基准的，从一个坐标参照系到另一个坐标参照系一一对应的坐标操作。"@zh ;
+  
+  skos:prefLabel "coordinate transformation"@en ;
+  skos:prefLabel "تحويل الإحداثيات"@ar ;
+  skos:prefLabel "koordinattransformation"@da ;
+  skos:prefLabel "Koordinatentransformation"@de ;
+  skos:prefLabel "koordinaattimuunnos"@fi ;
+  skos:prefLabel "transformation de coordonnées"@fr ;
+  skos:prefLabel "좌표 변환"@ko ;
+  skos:prefLabel "transformasi koordinat"@ms ;
+  skos:prefLabel "coördinaat transformatie"@nl ;
+  skos:prefLabel "transformacja współrzędnych"@pl ;
+  skos:prefLabel "трансформирование координат"@ru ;
+  skos:prefLabel "transformación de coordenadas"@es ;
+  skos:prefLabel "koordinattransformaion"@sv ;
+  skos:prefLabel "坐标变换"@zh ;
+
+lang:eng-note "Note to entry: A coordinate transformation uses parameters which are derived empirically by a set of points with known coordinates in both coordinate reference systems."@en ;
+lang:ara-note "ملاحظة: تغير النظام الإحداثي يستخدم متغيِّرات يتم اشتقاقها بالتجريب العملي من خلال مجموعة نقاط ذات إحداثيات معلومة في كلا النظامين الإحداثيين."@ar ;
+lang:dan-note "Bemærk til posten: Ved en koordinattransformation anvendes parametre, der er afledt empirisk af en mængde af punkter med kendte koordinater i begge koordinatsystemer."@da ;
+lang:fin-note "HUOM.: Koordinaattimuunnoksessa käytetään parametreja, jotka on johdettu empiirisesti joukosta pisteitä, joiden koordinaatit kummassakin koordinaattijärjestelmässä tunnetaan."@fi ;
+lang:kor-note "비고: 좌표 변환은 경험적 매개 변수를 사용한다. 이는 두 개의 좌표 참조 체계에서 미리 알려진 좌표 점의 집합을 통해 도출된 것이다."@ko ;
+lang:nld-note "OPMERKING: Een coördinaat transformatie gebruikt parameters die empirisch zijn afgeleid uit een set punten met bekende coördinaten in beide coördinaatreferentiesystemen."@nl ;
+lang:pol-note "UWAGA: Transformacja współrzędnych wykorzystuje parametry pozyskane empirycznie na podstawie zbioru punktów o znanych współrzędnych w obu systemach odniesienia."@pl ;
+lang:rus-note "Примечание: При трансформировании координат используют параметры, которые могут быть определены опытным путем с использованием набора пунктов, общих для обеих координатных систем отсчета"@ru ;
+lang:spa-note "Nota: Una transformación de coordenadas usa parámetros obtenidos empíricamente a partir de un conjunto de puntos con coordenadas conocidas en ambos sistemas de referencia de coordenadas."@es ;
+lang:zho-note "注： 使用一组在两种坐标参照系中已知坐标的点，通过经验公式推导出参数进行坐标操作。"@zh ;
+
+lang:deu-note notes:DefnTransUnavail ;
+lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:swe-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#geoid
+:geoid rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info764 ;
+geolexica:hasReview reviews:Review764 ;
+
+geolexica:hasLDAPI ldapi:ldapi764-json , ldapi:ldapi764-jsonld , ldapi:ldapi764-rdfxml , ldapi:ldapi764-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geoid" ;
+dcterms:identifier 764 ;
+skos:notation 764 ;
+
+  skos:definition "equipotential surface of the Earth&#39;s gravity field which is everywhere perpendicular to the direction of gravity and which best fits mean sea level either locally or globally"@en ;
+  skos:definition "سطح متساوي الجهد في مجال جاذبية الأرض متعامد مع اتجاه الجاذبية في كل مكان ويتطابق بشكل أمثل مع متوسط منسوب سطح البحر سواء محليا أو عالميا"@ar ;
+  skos:definition "plan overflade, der bedst passer til havenes middelvandstand enten lokalt eller globalt"@da ;
+  skos:definition "Äquipotentialfläche des Erdschwerefeldes, die überall senkrecht zur Richtung der Schwerkraft steht und die entweder lokal oder global am besten der mittleren Meereshöhe angepasst ist"@de ;
+  skos:definition "Maan painovoimakentän potentiaalin tasa-arvopinta, joka parhaiten kuvaa meren keskivedenpintaa joko globaalisti tai paikallisesti"@fi ;
+  skos:definition "surface équipotentielle du champ de gravité de la Terre partout perpendiculaire à la direction de gravité et qui correspond au mieux au niveau moyen local ou global de la mer"@fr ;
+  skos:definition "어디에서나 중력 방향에 수직이며, 국지적 또는 전지구적으로 평균 해수면에 가장 근접하는 지구 중력 등위 표면"@ko ;
+  skos:definition "Jasad berbentuk bumi dianggap sama ada sebagai min permukaan aras laut yang diunjur berterusan merentasi benua atau sebagai sebuah permukaan tak selanjar lebih rendah daripada permukaan sferoid di bawah lautan tetapi lebih tinggi di bawah benua."@ms ;
+  skos:definition "equipotentiaal vlak van het zwaartekrachtveld van de aarde dat overal loodrecht staat op de richting van de zwaartekracht en dat het best aansluit bij het lokale of globale gemiddeld zeeniveau"@nl ;
+  skos:definition "powierzchnia ekwipotencjalna ziemskiego pola grawitacjnego, w każdym miejscu prostopadła do kierunku wektora siły ciężkości, najlepiej wpasowana do średniego poziomu morza zarówno lokalnie, jak i globalnie"@pl ;
+  skos:definition "уровенная поверхность, наилучшим образом аппроксимирующая уровень моря как в локальном, так и в глобальном случаях"@ru ;
+  skos:definition "superficie equipotencial del campo de gravedad de la Tierra, que es en todas partes perpendicular a la dirección del vector gravedad, y que mejor ajusta el nivel medio del mar tanto local como globalmente"@es ;
+  skos:definition "nivåyta i jordens tyngdkraftsfält, överallt vinkelrät mot lodlinjen, som bäst sammanfaller med havets medelvattenyta lokalt eller globalt"@sv ;
+  skos:definition "大地水准面是地球重力场的等势面（equipotential surface),它在任何地方都与重力方向垂直，并与局部或全球平均海平面最佳拟合的水准面。"@zh ;
+  
+  skos:prefLabel "geoid"@en ;
+  skos:prefLabel "الجويد"@ar ;
+  skos:prefLabel "geoide"@da ;
+  skos:prefLabel "Geoid"@de ;
+  skos:prefLabel "geoidi"@fi ;
+  skos:prefLabel "géoïde"@fr ;
+  skos:prefLabel "지오이드"@ko ;
+  skos:prefLabel "geoid"@ms ;
+  skos:prefLabel "geoide"@nl ;
+  skos:prefLabel "geoida"@pl ;
+  skos:prefLabel "геоид"@ru ;
+  skos:prefLabel "geoide"@es ;
+  skos:prefLabel "geoid(en)"@sv ;
+  skos:prefLabel "大地水准面"@zh ;
+
+lang:dan-note "Bemærk til posten: \"Plan overflade\" betyder en ækvipotential flade i jordens tyngdefelt, der overalt er vinkelret på tyngdekraftens retning."@da ;
+lang:rus-note "Примечание: Уровенная поверхность является эквипотенциальной поверхностью земного гравитационного поля, которая везде перпендикулярна к направлению отвесной линии"@ru .
+
+###  https://isotc211.geolexica.org/api/concepts#projected_coord_ref_system
+:projected_coord_ref_system rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info765 ;
+geolexica:hasReview reviews:Review765 ;
+
+geolexica:hasLDAPI ldapi:ldapi765-json , ldapi:ldapi765-jsonld , ldapi:ldapi765-rdfxml , ldapi:ldapi765-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "projected coordinate reference system" ;
+dcterms:identifier 765 ;
+skos:notation 765 ;
+
+  skos:definition "coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection"@en ;
+  skos:definition "نظام إحداثيات مرجعي يتم اشتقاقه من نظام إحداثيات مرجعي جيوديسي ثنائي الأبعاد باستخدام مسقط خريطة"@ar ;
+  skos:definition "Koordinatenreferenzsystem, das durch eine Kartenprojektion von einem zweidimensionalen geodätischen Koordinatenreferenzsystem abgeleitet wird"@de ;
+  skos:definition "kaksiulotteiseen tasoon muodostettu, yleensä suorakulmainen koordinaattijärjestelmä"@fi ;
+  skos:definition "système de coordonnées de référence dérivé par projection cartographique d&#39;un système de coordonnées de référence bidimentionnel"@fr ;
+  skos:definition "2차원 측지 좌표 참조 체계로부터 지도 투영을 통해 파생된 좌표 참조 체계"@ko ;
+  skos:definition "coördinaatreferentiesysteem afgeleid van een tweedimensionaal geodetisch referentiesysteem door het toepassen van een kaartprojectie"@nl ;
+  skos:definition "system odniesienia utworzony z dwuwymiarowego geodezyjnego systemu odniesienia poprzez zastosowanie odwzorowania"@pl ;
+  skos:definition "координатная система отсчета, получаемая из двумерной геодезической системы отсчета применением картографической проекции"@ru ;
+  skos:definition "sistema de referencia de coordenadas derivado de un sistema de referencia de coordenadas geodésicas bidimensional aplicando una proyección cartográfica"@es ;
+  skos:definition "coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection"@sv ;
+  skos:definition "通过地图投影从二维大地坐标参照系得到的坐标参照系。"@zh ;
+  
+  skos:prefLabel "projected coordinate reference system"@en ;
+  skos:prefLabel "نظام إحداثيات مرجعي ذو إسقاط"@ar ;
+  skos:prefLabel "projiziertes Koordinatenreferenzsystem"@de ;
+  skos:prefLabel "tasokoordinaattijärjestelmä"@fi ;
+  skos:prefLabel "système de coordonnées projetées de référence"@fr ;
+  skos:prefLabel "투영 좌표 참조 체계"@ko ;
+  skos:prefLabel "geprojecteerd coördinaatreferentiesysteem"@nl ;
+  skos:prefLabel "płaski system odniesienia"@pl ;
+  skos:prefLabel "координатная система отсчета проекции"@ru ;
+  skos:prefLabel "sistema de referencia de coordenadas proyectadas"@es ;
+  skos:prefLabel "projected coordinate reference system"@sv ;
+  skos:prefLabel "投影坐标参照系"@zh .
+
+###  https://isotc211.geolexica.org/api/concepts#feature_reference
+:feature_reference rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info774 ;
+# geolexica:hasReview reviews:Review774 ;
+
+geolexica:hasLDAPI ldapi:ldapi774-json , ldapi:ldapi774-jsonld , ldapi:ldapi774-rdfxml , ldapi:ldapi774-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "feature reference" ;
+dcterms:identifier 774 ;
+skos:notation 774 ;
+
+  skos:definition "Uniform Resource Identifier that identifies a feature"@en ;
+  skos:definition "معرِّف مصدر موحَّد لتحديد المعلم"@ar ;
+  skos:definition "Uniform Resource Identifier (URI), der ein Feature identifiziert"@de ;
+  skos:definition "지형지물의 속성을 밝하는 균질 속성 식별자"@ko ;
+  skos:definition "pengenal sumber seragam yang mengenalpasti suatu fitur"@ms ;
+  skos:definition "унифицированный идентификатор ресурса, который идентифицирует объект"@ru ;
+  skos:definition "Identificador de Recurso Uniforme, URI,  que identifica a un objeto geográfico"@es ;
+  skos:definition "URI som avser en specifik dataförekomst av en objekttyp"@sv ;
+  
+  skos:prefLabel "feature reference"@en ;
+  skos:prefLabel "مرجع المعلم"@ar ;
+  skos:prefLabel "Feature-Referenz"@de ;
+  skos:prefLabel "지형지물 참조"@ko ;
+  skos:prefLabel "Rujukan  fitur"@ms ;
+  skos:prefLabel "ссылка на объект"@ru ;
+  skos:prefLabel "referencia a objeto geográfico"@es ;
+  skos:prefLabel "objektreferens"@sv .
+
+###  https://isotc211.geolexica.org/api/concepts#traversalXML
+:traversalXML rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info785 ;
+# geolexica:hasReview reviews:Review785 ;
+
+geolexica:hasLDAPI ldapi:ldapi785-json , ldapi:ldapi785-jsonld , ldapi:ldapi785-rdfxml , ldapi:ldapi785-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "traversal (XML)" ;
+dcterms:identifier 785 ;
+skos:notation 785 ;
+
+  skos:definition "using or following an XLink link for any purpose"@en ;
+  skos:definition "استخدام أو اتباع رابط XLink لأي غرض"@ar ;
+  skos:definition "Nutzung oder Verfolgung einer Xlink-Verknüpfung"@de ;
+  skos:definition "특정 목적으로 Xlink 링크를 따르거나 사용하는 것"@ko ;
+  skos:definition "использование или следование по ссылке XLink с любой целью"@ru ;
+  skos:definition "utilización o seguimiendo de un enlace XLink para cualquier propósito"@es ;
+
+  skos:prefLabel "traversal (XML)"@en ;
+  skos:prefLabel "اجتياز (XML)"@ar ;
+  skos:prefLabel "Durchquerung (XML)"@de ;
+  skos:prefLabel "횡단/순회/운행 확장 가능 마크 업 언어"@ko ;
+  skos:prefLabel "переход (XML)"@ru ;
+  skos:prefLabel "enlazado (XML)"@es .
+
+###  https://isotc211.geolexica.org/api/concepts#digital_elevation_model
+:digital_elevation_model rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info789 ;
+geolexica:hasReview reviews:Review789 ;
+
+geolexica:hasLDAPI ldapi:ldapi789-json , ldapi:ldapi789-jsonld , ldapi:ldapi789-rdfxml , ldapi:ldapi789-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "digital elevation model" ;
+dcterms:identifier 789 ;
+skos:notation 789 ;
+
+  skos:definition "dataset of elevation values that are assigned algorithmically to 2-dimensional coordinates"@en ;
+  skos:definition "مجموعة بيانات لقيم الارتفاعات التي تم تعييينها حسابيا في  إحداثيات ثنائية الأبعاد"@ar ;
+  skos:definition "2차원 좌표체계에 알고리즘적으로 할당된 높이값의 데이터셋"@ko ;
+  skos:definition "набор данных значений высоты, которые алгоритмически присваиваются двумерным координатам"@ru ;
+  skos:definition "conjunto de datos de valores de elevación que se asignan algorítmicamente a un sistema de coordenadas bidimensional"@es ;
+  skos:definition "datamängd av höjdvärden som algoritmiskt åsatts tvådimensionella koordinater"@sv ;
+  
+  skos:prefLabel "digital elevation model"@en ;
+  skos:prefLabel "نموذج الارتفاعات الرقمي"@ar ;
+  skos:prefLabel "Digitales Höhenmodel"@de ;
+  skos:prefLabel "수치표고모델"@ko ;
+  skos:prefLabel "цифровая модель рельефа"@ru ;
+  skos:prefLabel "modelo digital de elevación"@es ;
+  skos:prefLabel "höjdmodell"@sv ;
+  
+  lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#digital_number
+:digital_number rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info790 ;
+geolexica:hasReview reviews:Review790 ;
+
+geolexica:hasLDAPI ldapi:ldapi790-json , ldapi:ldapi790-jsonld , ldapi:ldapi790-rdfxml , ldapi:ldapi790-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "digital number" ;
+dcterms:identifier 790 ;
+skos:notation 790 ;
+
+  skos:definition "integer value representing a measurement as detected by a sensor"@en ;
+  skos:definition "قيمة عدد صحيح يمثل القياس المكتشف عن طريق جهاز الاستشعار"@ar ;
+  skos:definition "센서에 의해 탐지되는 측정값을 대표하는 정수값"@ko ;
+  skos:definition "sebarang angka dr 0 hingga 9"@ms ;
+  skos:definition "целочисленное значение, представляющее измерение, зарегистрированное датчиком"@ru ;
+  skos:definition "valor entero que representa la medición detectada por un sensor"@es ;
+  
+  skos:prefLabel "digital number"@en ;
+  skos:prefLabel "عدد رقمي"@ar ;
+  skos:prefLabel "수치값"@ko ;
+  skos:prefLabel "nombor digit"@ms ;
+  skos:prefLabel "дискретное число"@ru ;
+  skos:prefLabel "número digital"@es ;
+  
+  lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#geographic_imagery
+:geographic_imagery rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info792 ;
+geolexica:hasReview reviews:Review792 ;
+
+geolexica:hasLDAPI ldapi:ldapi792-json , ldapi:ldapi792-jsonld , ldapi:ldapi792-rdfxml , ldapi:ldapi792-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geographic imagery" ;
+dcterms:identifier 792 ;
+skos:notation 792 ;
+
+  skos:definition "imagery associated with a location relative to the Earth"@en ;
+  skos:definition "صور مرتبطة بموقع ذو صلة بالكرة الأرضية"@ar ;
+  skos:definition "지구의 위치와 연관된 영상"@ko ;
+  skos:definition "изображения, связанные с местоположением относительно Земли"@ru ;
+  skos:definition "producción de imágenes asociadas con una ubicación relativa a la Tierra"@es ;
+  skos:definition "avbildning associerad med en plats relativt jorden"@sv ;
+  
+  skos:prefLabel "geographic imagery"@en ;
+  skos:prefLabel "صور جغرافية"@ar ;
+  skos:prefLabel "geographische Bilddarstellung"@de ;
+  skos:prefLabel "지리적 영상"@ko ;
+  skos:prefLabel "географические изображения"@ru ;
+  skos:prefLabel "producción de imágenes geográficas"@es ;
+  skos:prefLabel "geografisk avbildning"@sv ;
+  
+  lang:deu-note notes:DefnTransUnavail .
+  
+###  https://isotc211.geolexica.org/api/concepts#geographic_imagery_scene
+:geographic_imagery_scene rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info793 ;
+geolexica:hasReview reviews:Review793 ;
+
+geolexica:hasLDAPI ldapi:ldapi793-json , ldapi:ldapi793-jsonld , ldapi:ldapi793-rdfxml , ldapi:ldapi793-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "geographic imagery scene" ;
+dcterms:identifier 793 ;
+skos:notation 793 ;
+
+  skos:definition "geographic imagery whose data consists of measurements or simulated measurements of the natural world produced relative to a specified vantage point and at a specified time"@en ;
+  skos:definition "صور جغرافية تشتمل بياناتها على قياسات أو قيسات تشبيهية للواقع الطبيعي تم إنتاجها نسبة إلى نقطة أفضلية محددة وفي وقت محدد."@ar ;
+  skos:definition "특정 시간 및 상황에 관계하여 생성된 자연계의 측정 및 가상 측정된 자료로 이루어진 지리적 영상"@ko ;
+  skos:definition "географические изображения, данные которых состоят из измерений или смоделированных измерений природного мира, произведенных относительно заданной точки обзора и в заданное время"@ru ;
+  skos:definition "imágenes geográficas cuyos datos consisten en mediciones, reales o  simuladas, del mundo natural producidas en relación a un punto de vista y a un tiempo especifico"@es ;
+  skos:definition "geografisk avbildning vars data består av verkliga eller simulerade mätningar av naturen och som framställts utifrån en bestämd observationspunkt och vid en bestämd tid"@sv ;
+  
+  skos:prefLabel "geographic imagery scene"@en ;
+  skos:prefLabel "مشهد صور جغرافية"@ar ;
+  skos:prefLabel "geographischer Bildausschnitt"@de ;
+  skos:prefLabel "지리적 영상 장면"@ko ;
+  skos:prefLabel "сцена географических изображений"@ru ;
+  skos:prefLabel "escena de imágenes geográficas"@es ;
+  skos:prefLabel "geografisk avbildningsvy"@sv ;
+  
+lang:eng-note "Note to entry: A geographic imagery scene is a representation of an environmental landscape; it may correspond to a remotely sensed view of the natural world or to a computer-generated virtual scene simulating such a view"@en ;
+lang:ara-note "ملاحظة: مشهد الصور الجغرافية هو عبارة عن تمثيل لمنظر طبيعي بيئي: وقد يكون المشهد مطابقا لمشهد من الواقع الطبيعي مصور بالاستشعار عن بعد أو منتجا بواسطة الحاسب الآلي على شكل محاكاة لمشهد من الواقع الطبيعي."@ar ;
+lang:rus-note "Примечание: Сцена географических изображений есть представление окружающего ландшафта; ее можно соотнести к дистанционно воспринимаемому виду естественного мира или виртуальной, разработанной с помощью ЭВМ сцене, имитирующей такой вид."@ru ;
+lang:spa-note "Nota: Una escena de imagen geográfica es una representación de un paisaje medioambiental; puede corresponder a una vista del mundo natural detectada remotamente o bien a una escena virtual generada por computador que simula dicha vista"@es ;
+
+  lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+  lang:kor-note notes:NoteTransUnavail ;
+  lang:swe-note notes:NoteTransUnavail .
+  
+###  https://isotc211.geolexica.org/api/concepts#metric_traceability
+:metric_traceability rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info794 ;
+geolexica:hasReview reviews:Review794 ;
+
+geolexica:hasLDAPI ldapi:ldapi794-json , ldapi:ldapi794-jsonld , ldapi:ldapi794-rdfxml , ldapi:ldapi794-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "metric traceability" ;
+dcterms:identifier 794 ;
+skos:notation 794 ;
+
+  skos:definition "property of the result of a measurement or the value of a standard whereby it can be related to stated references, usually national or international standards, through an unbroken chain of comparisons all having stated uncertainties"@en ;
+  skos:definition "خاصية  نتيجة قياس أو قيمة  معيار يمكن من خلاله ان يكون ذا صلة بمراجع مذكورة، عادة ما تكون معايير وطنية أو عالمية ، وذلك من خلال سلسلة غير معروفة من المقارنات لكل منها شكوك مذكورة"@ar ;
+  skos:definition "명시된 불확실성이 존재하는 일련의 상호간 비교를 통해 국내 또는 국제적 기준등과 같은 참조사항들과 연계될 수 있는 표준값 또는 측정결과치"@ko ;
+  skos:definition "свойство результата измерения или значение стандарта, посредством которого оно может быть связано с указанными ссылками, как правило, национальными или международными стандартами, посредством непрерывной цепочки сравнений"@ru ;
+  skos:definition "propiedad del resultado de una medición o del valor de un estándar, por la cuál se puede relacionar con referencias establecidas, por lo general normas nacionales o internacionales, mediante una cadena ininterrumpida de comparaciones con incertidumbres establecidas"@es ;
+  
+  skos:prefLabel "metric traceability"@en ;
+  skos:prefLabel "تتبع متري"@ar ;
+  skos:prefLabel "metrische Verfolgbarkeit"@de ;
+  skos:prefLabel "계량 추적성"@ko ;
+  skos:prefLabel "метрическая прослеживаемость"@ru ;
+  skos:prefLabel "trazabilidad métrica"@es ;
+
+  lang:deu-note notes:DefnTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#orthoimage
+:orthoimage rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info795 ;
+geolexica:hasReview reviews:Review795 ;
+
+geolexica:hasLDAPI ldapi:ldapi795-json , ldapi:ldapi795-jsonld , ldapi:ldapi795-rdfxml , ldapi:ldapi795-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "orthoimage" ;
+dcterms:identifier 795 ;
+skos:notation 795 ;
+
+  skos:definition "image in which by orthogonal projection to a reference surface, displacement of image points due to sensor orientation and terrain relief has been removed"@en ;
+  skos:definition "صورة تمت ازالة نقاط الازاحة فيها بسبب توجيه جهاز الاستشعار وتضاريس المنطقة عن طريق الإسقاط المتعامد على سطح  مرجعي"@ar ;
+  skos:definition "표고시차가 제거되고 센서 방향 변위로 인해 영상점이 이동하고 기준해수면에 직교 투영된 영상"@ko ;
+  skos:definition "изображение в ортогональной проекциии на опорную поверхность,в котором устранены искажения из-за ориентации датчика исмещение точек изображения из-за рельефа местности"@ru ;
+  skos:definition "imagen a la cuál se le ha eliminado el desplazamiento de los puntos imagen debido a la orientación del sensor y al relieve del terreno, por medio de una proyección ortogonal a la superficie de referencia"@es ;
+  skos:definition "bild där förskjutning av bildpunkter på grund av sensorns inplacering och terrängens relief korrigeras via ortogonalprojektion till en referensyta"@sv ;
+  
+  skos:prefLabel "orthoimage"@en ;
+  skos:prefLabel "صورة مصححة"@ar ;
+  skos:prefLabel "Orthophoto"@de ;
+  skos:prefLabel "직교 투영 영상"@ko ;
+  skos:prefLabel "ортоизображение"@ru ;
+  skos:prefLabel "ortoimagen"@es ;
+  skos:prefLabel "ortofoto"@sv ;
+
+lang:eng-note "Note to entry: The amount of displacement depends on the resolution and the level of detail of the elevation information and on the software implementation."@en ;
+lang:ara-note "ملاحظة: مقدار الإزاحة يعتمد على حدة الوضوح ومستوى التفصيل في معلومات الارتفاع وعلى تطبيق البرنامج."@ar ;
+lang:rus-note "Примечание: величина смещения зависит от разрешения и уровня детализации информации о высоте и от реализации программного обеспечения."@ru ;
+lang:spa-note "Nota: El valor del desplazamiento depende de la resolución, del nivel de detalle de la información de la elevación y del software de implementación."@es ;
+
+lang:deu-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:kor-note notes:NoteTransUnavail ;
+lang:swe-note notes:NoteTransUnavail .
+
+###  https://isotc211.geolexica.org/api/concepts#transfer_unit
+:transfer_unit rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info800 ;
+# geolexica:hasReview reviews:Review800 ;
+
+geolexica:hasLDAPI ldapi:ldapi800-json , ldapi:ldapi800-jsonld , ldapi:ldapi800-rdfxml , ldapi:ldapi800-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "transfer unit" ;
+dcterms:identifier 800 ;
+skos:notation 800 ;
+
+  skos:definition "collection of data for the purpose of a data transfer"@en ;
+  skos:definition "자료 전송을 목적으로 한 자료 수집 집합"@ko ;
+  skos:definition "совокупность данных для цели передачи данных"@ru ;
+  skos:definition "conjunto de datos destinados a las transferencia de datos"@es ;
+  
+  skos:prefLabel "transfer unit"@en ;
+  skos:prefLabel "전송 단위"@ko ;
+  skos:prefLabel "unit perpindahan/ pemindahan"@ms ;
+  skos:prefLabel "блок передачи"@ru ;
+  skos:prefLabel "unidad de transferencia"@es ;
+
+lang:eng-note "Note to entry: A transfer unit does not have to be identifiable like a dataset."@en ;
+lang:ara-note "Примечание: Блок передачи не обязательно должен идентифицироваться как набор данных."@ar ;
+lang:spa-note "Nota: Una unidad de transferencia no tiene que ser identificable como un conjunto de datos."@es ;
+
+lang:msa-note notes:DefnTransUnavail , notes:NoteTransUnavail ;
+lang:kor-note notes:NoteTransUnavail .
 
