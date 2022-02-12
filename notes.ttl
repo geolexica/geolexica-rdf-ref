@@ -13,9 +13,15 @@
 @prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
 @base <https://isotc211.geolexica.org/api/notes> .
 
-<https://isotc211.geolexica.org/api/notes> rdf:type owl:Ontology ;
+<https://isotc211.geolexica.org/api/notes> rdf:type dctype:Dataset ;
                                             owl:versionIRI <https://isotc211.geolexica.org/api/notes/v1.0/> ;
                                             rdfs:label "Notes RDF Dataset (MLGT)" .
+                                            dcterms:license "Copyright 2022 OSGeo" ;
+                                            dcterms:modified "2022-02-12"^^xsd:date ;
+                                            dcterms:title "Notes RDF Dataset"@en ;
+                                            vann:preferredNamespacePrefix "notes" ;
+                                            vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/notes#" ;
+                                            rdfs:label "Notes Reference RDF Dataset (MLGT)" .
 
 #################################################################
 #    Classes
