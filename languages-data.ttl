@@ -11,422 +11,375 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
+@base <https://isotc211.geolexica.org/api/language#> .
 
-<https://isotc211.geolexica.org/api/language#> a owl:Ontology ;
-	owl:versionIRI <https://isotc211.geolexica.org/api/language/v1.0/> ;
-	dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-	dcterms:created "2022-01-27"^^xsd:date ;
-	dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-	dcterms:issued " " ;
-	dcterms:license "Copyright 2022 OSGeo" ;
-	dcterms:modified "2022-01-27"^^xsd:date ;
-	dcterms:publisher <https://www.osgeo.org/> ;
-	dcterms:title "Language Reference RDF Dataset"@en ;
-	vann:preferredNamespacePrefix "lang" ;
-	vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/language#" ;
-	rdfs:label "Language Reference RDF Dataset (MLGT)" .
-# 
-# 
-# #################################################################
-# #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/terms/contributor
+<https://isotc211.geolexica.org/api/language#> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://isotc211.geolexica.org/api/language/v1.0/> ;
+                                                dcterms:created "2022-01-27"^^xsd:date ;
+                                                # dcterms:issued " " ;
+                                                dcterms:license "Copyright 2022 OSGeo" ;
+                                                dcterms:modified "2022-02-12"^^xsd:date ;
+                                                dcterms:title "Language Reference RDF Dataset"@en ;
+                                                vann:preferredNamespacePrefix "lang" ;
+                                                vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/language#" ;
+                                                rdfs:label "Language Reference RDF Dataset (MLGT)" .
 
-dcterms:contributor a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/created
 
-dcterms:created a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/creator
+#################################################################
+#    Data properties
+#################################################################
 
-dcterms:creator a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/issued
+###  https://isotc211.geolexica.org/api/language#ISO_639_1_code
+:ISO_639_1_code rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-dcterms:issued a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/license
+###  https://isotc211.geolexica.org/api/language#ara-note
+:ara-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-dcterms:license a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/modified
 
-dcterms:modified a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/publisher
+###  https://isotc211.geolexica.org/api/language#dan-note
+:dan-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-dcterms:publisher a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/source
 
-dcterms:source a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/title
+###  https://isotc211.geolexica.org/api/language#deu-note
+:deu-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-dcterms:title a owl:AnnotationProperty .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
 
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
+###  https://isotc211.geolexica.org/api/language#eng-note
+:eng-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-vann:preferredNamespaceUri a owl:AnnotationProperty .
-# 
-# http://www.w3.org/2004/02/skos/core#altLabel
 
-skos:altLabel a owl:AnnotationProperty .
-# 
-# http://www.w3.org/2004/02/skos/core#prefLabel
+###  https://isotc211.geolexica.org/api/language#fin-note
+:fin-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-skos:prefLabel a owl:AnnotationProperty .
-# 
-# https://isotc211.geolexica.org/api/language#ISO_639_1_code
 
-:ISO_639_1_code a owl:AnnotationProperty .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# https://isotc211.geolexica.org/api/language#ara-note
+###  https://isotc211.geolexica.org/api/language#fra-note
+:fra-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:ara-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#dan-note
 
-:dan-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#deu-note
+###  https://isotc211.geolexica.org/api/language#jpn-note
+:jpn-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:deu-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#eng-note
 
-:eng-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#fin-note
+###  https://isotc211.geolexica.org/api/language#kor-note
+:kor-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:fin-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#fra-note
 
-:fra-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#jpn-note
+###  https://isotc211.geolexica.org/api/language#msa-note
+:msa-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:jpn-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#kor-note
 
-:kor-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#msa-note
+###  https://isotc211.geolexica.org/api/language#pol-note
+:pol-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:msa-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#pol-note
 
-:pol-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#rus-note
+###  https://isotc211.geolexica.org/api/language#rus-note
+:rus-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:rus-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#spa-note
 
-:spa-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#swe-note
+###  https://isotc211.geolexica.org/api/language#spa-note
+:spa-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-:swe-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# https://isotc211.geolexica.org/api/language#zho-note
 
-:zho-note a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:string .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/dcmitype/Dataset
+###  https://isotc211.geolexica.org/api/language#swe-note
+:swe-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-dctype:Dataset a owl:Class .
-# 
-# http://www.w3.org/2004/02/skos/core#Concept
-# 
-# https://isotc211.geolexica.org/api/geolexica#LangCode
 
-geolexica:LangCode a owl:Class .
-# 
-# https://isotc211.geolexica.org/api/geolexica#Origin
+###  https://isotc211.geolexica.org/api/language#zho-note
+:zho-note rdf:type owl:DatatypeProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range xsd:string .
 
-geolexica:Origin a owl:Class .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# https://isotc211.geolexica.org/api/language#
 
-<https://isotc211.geolexica.org/api/language#> a owl:NamedIndividual , dctype:Dataset .
-# 
-# https://isotc211.geolexica.org/api/language#ara
+#################################################################
+#    Classes
+#################################################################
 
-:ara a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Arabic" ;
-	skos:altLabel "ARA" ;
-	skos:prefLabel "ara"@en ;
-	:ISO_639_1_code "ar" .
-# 
-# https://isotc211.geolexica.org/api/language#araRegistry
+###  http://purl.org/dc/dcmitype/Dataset
+dctype:Dataset rdf:type owl:Class .
 
-:araRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
-	rdfs:label "Arabic Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#dan
 
-:dan a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Danish" ;
-	skos:altLabel "DAN" ;
-	skos:prefLabel "dan"@en ;
-	:ISO_639_1_code "da" .
-# 
-# https://isotc211.geolexica.org/api/language#danRegistry
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
 
-:danRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
-	rdfs:label "Danish Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#deu
 
-:deu a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "German" ;
-	skos:altLabel "DEU" ;
-	skos:prefLabel "deu"@en ;
-	:ISO_639_1_code "de" .
-# 
-# https://isotc211.geolexica.org/api/language#deuRegistry
+###  https://isotc211.geolexica.org/api/geolexica#LangCode
+geolexica:LangCode rdf:type owl:Class .
 
-:deuRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
-	rdfs:label "German Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#eng
 
-:eng a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "English" ;
-	skos:altLabel "ENG" ;
-	skos:prefLabel "eng"@en ;
-	:ISO_639_1_code "en" .
-# 
-# https://isotc211.geolexica.org/api/language#engRegistry
+###  https://isotc211.geolexica.org/api/geolexica#Origin
+geolexica:Origin rdf:type owl:Class .
 
-:engRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
-	rdfs:label "English Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#fin
 
-:fin a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Finnish" ;
-	skos:altLabel "FIN" ;
-	skos:prefLabel "fin"@en ;
-	:ISO_639_1_code "fi" .
-# 
-# https://isotc211.geolexica.org/api/language#finRegistry
+#################################################################
+#    Individuals
+#################################################################
 
-:finRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
-	rdfs:label "Finnish Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#fra
+###  https://isotc211.geolexica.org/api/language#ara
+:ara rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Arabic" ;
+     skos:altLabel "ARA" ;
+     skos:prefLabel "ara"@en ;
+     :ISO_639_1_code "ar" .
 
-:fra a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "French" ;
-	skos:altLabel "FRA" ;
-	skos:prefLabel "fra"@en ;
-	:ISO_639_1_code "fr" .
-# 
-# https://isotc211.geolexica.org/api/language#fraRegistry
 
-:fraRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
-	rdfs:label "French Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#jpn
+###  https://isotc211.geolexica.org/api/language#araRegistry
+:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
 
-:jpn a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Japanese" ;
-	skos:altLabel "JPN" ;
-	skos:prefLabel "jpn"@en ;
-	:ISO_639_1_code "ja" .
-# 
-# https://isotc211.geolexica.org/api/language#jpnRegistry
 
-:jpnRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
-	rdfs:label "Japanese Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#kor
+###  https://isotc211.geolexica.org/api/language#dan
+:dan rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Danish" ;
+     skos:altLabel "DAN" ;
+     skos:prefLabel "dan"@en ;
+     :ISO_639_1_code "da" .
 
-:kor a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Korean" ;
-	skos:altLabel "KOR" ;
-	skos:prefLabel "kor"@en ;
-	:ISO_639_1_code "ko" .
-# 
-# https://isotc211.geolexica.org/api/language#korRegistry
 
-:korRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
-	rdfs:label "Korean Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#msa
+###  https://isotc211.geolexica.org/api/language#danRegistry
+:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
 
-:msa a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Malay" ;
-	skos:altLabel "MSA" ;
-	skos:prefLabel "msa"@en ;
-	:ISO_639_1_code "ms" .
-# 
-# https://isotc211.geolexica.org/api/language#msaRegistry
 
-:msaRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
-	rdfs:label "Malay Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#nld
+###  https://isotc211.geolexica.org/api/language#deu
+:deu rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "German" ;
+     skos:altLabel "DEU" ;
+     skos:prefLabel "deu"@en ;
+     :ISO_639_1_code "de" .
 
-:nld a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Dutch, Flemish" ;
-	skos:altLabel "NLD" ;
-	skos:prefLabel "nld"@en ;
-	:ISO_639_1_code "nl" .
-# 
-# https://isotc211.geolexica.org/api/language#nldRegistry
 
-:nldRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
-	rdfs:label "Nederlands Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#pol
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
 
-:pol a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Polish" ;
-	skos:altLabel "POL" ;
-	skos:prefLabel "pol"@en ;
-	:ISO_639_1_code "pl" .
-# 
-# https://isotc211.geolexica.org/api/language#polRegistry
 
-:polRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
-	rdfs:label "Polish Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#rus
+###  https://isotc211.geolexica.org/api/language#eng
+:eng rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "English" ;
+     skos:altLabel "ENG" ;
+     skos:prefLabel "eng"@en ;
+     :ISO_639_1_code "en" .
 
-:rus a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Russian" ;
-	skos:altLabel "RUS" ;
-	skos:prefLabel "rus"@en ;
-	:ISO_639_1_code "ru" .
-# 
-# https://isotc211.geolexica.org/api/language#rusRegistry
 
-:rusRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
-	rdfs:label "Russian Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#spa
+###  https://isotc211.geolexica.org/api/language#engRegistry
+:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
 
-:spa a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Spanish" ;
-	skos:altLabel "SPA" ;
-	skos:prefLabel "spa"@en ;
-	:ISO_639_1_code "es" .
-# 
-# https://isotc211.geolexica.org/api/language#spaRegistry
 
-:spaRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
-	rdfs:label "Spanish Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#swe
+###  https://isotc211.geolexica.org/api/language#fin
+:fin rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Finnish" ;
+     skos:altLabel "FIN" ;
+     skos:prefLabel "fin"@en ;
+     :ISO_639_1_code "fi" .
 
-:swe a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Swedish" ;
-	skos:altLabel "SWE" ;
-	skos:prefLabel "swe"@en ;
-	:ISO_639_1_code "sv" .
-# 
-# https://isotc211.geolexica.org/api/language#sweRegistry
 
-:sweRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
-	rdfs:label "Swedish Registry"@en .
-# 
-# https://isotc211.geolexica.org/api/language#zho
+###  https://isotc211.geolexica.org/api/language#finRegistry
+:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
 
-:zho a owl:NamedIndividual , geolexica:LangCode ;
-	rdfs:label "Chinese" ;
-	skos:altLabel "ZHO" ;
-	skos:prefLabel "zho"@en ;
-	:ISO_639_1_code "zh" .
-# 
-# https://isotc211.geolexica.org/api/language#zhoRegistry
 
-:zhoRegistry a owl:NamedIndividual , geolexica:Origin ;
-	dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
-	rdfs:label "Chinese Registry"@en .
-# 
-# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://isotc211.geolexica.org/api/language#fra
+:fra rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "French" ;
+     skos:altLabel "FRA" ;
+     skos:prefLabel "fra"@en ;
+     :ISO_639_1_code "fr" .
+
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#jpn
+:jpn rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Japanese" ;
+     skos:altLabel "JPN" ;
+     skos:prefLabel "jpn"@en ;
+     :ISO_639_1_code "ja" .
+
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#kor
+:kor rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Korean" ;
+     skos:altLabel "KOR" ;
+     skos:prefLabel "kor"@en ;
+     :ISO_639_1_code "ko" .
+
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#msa
+:msa rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Malay" ;
+     skos:altLabel "MSA" ;
+     skos:prefLabel "msa"@en ;
+     :ISO_639_1_code "ms" .
+
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#nld
+:nld rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Dutch, Flemish" ;
+     skos:altLabel "NLD" ;
+     skos:prefLabel "nld"@en ;
+     :ISO_639_1_code "nl" .
+
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#pol
+:pol rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Polish" ;
+     skos:altLabel "POL" ;
+     skos:prefLabel "pol"@en ;
+     :ISO_639_1_code "pl" .
+
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#rus
+:rus rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Russian" ;
+     skos:altLabel "RUS" ;
+     skos:prefLabel "rus"@en ;
+     :ISO_639_1_code "ru" .
+
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#spa
+:spa rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Spanish" ;
+     skos:altLabel "SPA" ;
+     skos:prefLabel "spa"@en ;
+     :ISO_639_1_code "es" .
+
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#swe
+:swe rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Swedish" ;
+     skos:altLabel "SWE" ;
+     skos:prefLabel "swe"@en ;
+     :ISO_639_1_code "sv" .
+
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+
+###  https://isotc211.geolexica.org/api/language#zho
+:zho rdf:type owl:NamedIndividual ,
+              geolexica:LangCode ;
+     rdfs:label "Chinese" ;
+     skos:altLabel "ZHO" ;
+     skos:prefLabel "zho"@en ;
+     :ISO_639_1_code "zh" .
+
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
