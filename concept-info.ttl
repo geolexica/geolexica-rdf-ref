@@ -14,18 +14,17 @@
 @base <https://isotc211.geolexica.org/api/info#> .
 
 <https://isotc211.geolexica.org/api/info#> rdf:type dctype:Dataset ;
-        owl:versionIRI <https://isotc211.geolexica.org/api/info/v1.0> ;
-        owl:imports <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
-        dcterms:created "2022-01-24"^^xsd:date ;
-        dcterms:description "Serialization of concept info in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
-        # dcterms:issued " " ; 
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-02-12"^^xsd:date ;
-        dcterms:title "Concept Info RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        vann:preferredNamespacePrefix "info" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/info#" ;
-        rdfs:label "Concept Info RDF Dataset (MLGT)"@en .
+                                            owl:versionIRI <https://isotc211.geolexica.org/api/info/v1.0> ;
+                                            owl:imports <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+                                            dcterms:conformsTo <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+                                            dcterms:created "2022-01-24"^^xsd:date ;
+                                            dcterms:description "Serialization of concept info in the ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
+                                            dcterms:license "Copyright 2022 OSGeo" ;
+                                            dcterms:modified "2022-02-12"^^xsd:date ;
+                                            dcterms:title "Concept Info RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+                                            vann:preferredNamespacePrefix "info" ;
+                                            vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/info#" ;
+                                            rdfs:label "Concept Info RDF Dataset (MLGT)"@en .
 
 #################################################################
 #    Individuals
@@ -1566,193 +1565,206 @@
         geolexica:classification "preferred"@en ;
         geolexica:date_accepted "2005-08-15"^^xsd:date .
 
+###  https://isotc211.geolexica.org/api/info#Info221
+:Info221 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date .
 
-# ###  https://isotc211.geolexica.org/api/sources#Dictionary_Computing
-# sources:Dictionary_Computing rdf:type owl:NamedIndividual .
+###  https://isotc211.geolexica.org/api/info#Info221
+:Info222 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date .
 
+###  https://isotc211.geolexica.org/api/sources#Dictionary_Computing
+sources:Dictionary_Computing rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-1996
-# sources:ISO-10746-3-1996 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-1996
+sources:ISO-10746-3-1996 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-2009
-# sources:ISO-10746-3-2009 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-2009
+sources:ISO-10746-3-2009 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-1087-1-2000
-# sources:ISO-1087-1-2000 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-1087-1-2000
+sources:ISO-1087-1-2000 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19101-1-2014
-# sources:ISO-19101-1-2014 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19101-1-2014
+sources:ISO-19101-1-2014 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19101-2002
-# sources:ISO-19101-2002 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19101-2002
+sources:ISO-19101-2002 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19103-2015
-# sources:ISO-19103-2015 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19103-2015
+sources:ISO-19103-2015 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19105-2000
-# sources:ISO-19105-2000 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19105-2000
+sources:ISO-19105-2000 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19106-2004
-# sources:ISO-19106-2004 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19106-2004
+sources:ISO-19106-2004 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19107-2003
-# sources:ISO-19107-2003 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19107-2003
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19107-2019
-# sources:ISO-19107-2019 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19107-2019
+sources:ISO-19107-2019 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19108-2002
-# sources:ISO-19108-2002 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19108-2002
+sources:ISO-19108-2002 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19109-2015
-# sources:ISO-19109-2015 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19109-2015
+sources:ISO-19109-2015 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19110-2016
-# sources:ISO-19110-2016 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19110-2016
+sources:ISO-19110-2016 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
-# sources:ISO-19111-2007 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19111-2019
-# sources:ISO-19111-2019 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2019
+sources:ISO-19111-2019 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19112-2003
-# sources:ISO-19112-2003 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19112-2003
+sources:ISO-19112-2003 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19112-2019
-# sources:ISO-19112-2019 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19112-2019
+sources:ISO-19112-2019 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19113-2002
-# sources:ISO-19113-2002 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19113-2002
+sources:ISO-19113-2002 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19114-2003
-# sources:ISO-19114-2003 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19114-2003
+sources:ISO-19114-2003 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19115-1-2014
-# sources:ISO-19115-1-2014 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-1-2014
+sources:ISO-19115-1-2014 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19115-2003
-# sources:ISO-19115-2003 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-2003
+sources:ISO-19115-2003 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19116-2004
-# sources:ISO-19116-2004 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19116-2004
+sources:ISO-19116-2004 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19117-2005
-# sources:ISO-19117-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19117-2005
+sources:ISO-19117-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19117-2012
-# sources:ISO-19117-2012 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19117-2012
+sources:ISO-19117-2012 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19118-2005
-# sources:ISO-19118-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19118-2005
+sources:ISO-19118-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19118-2011
-# sources:ISO-19118-2011 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19118-2011
+sources:ISO-19118-2011 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19123-2005
-# sources:ISO-19123-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19123-2005
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19125-2-2004
-# sources:ISO-19125-2-2004 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19125-2-2004
+sources:ISO-19125-2-2004 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19128-2005
-# sources:ISO-19128-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19128-2005
+sources:ISO-19128-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19129-2009
-# sources:ISO-19129-2009 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19129-2009
+sources:ISO-19129-2009 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19131-2007
-# sources:ISO-19131-2007 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19131-2007
+sources:ISO-19131-2007 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19132-2007
-# sources:ISO-19132-2007 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19132-2007
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19133-2005
-# sources:ISO-19133-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19133-2005
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19135-1-2015
-# sources:ISO-19135-1-2015 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19135-1-2015
+sources:ISO-19135-1-2015 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
-# sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-19157-2013
-# sources:ISO-19157-2013 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-19157-2013
+sources:ISO-19157-2013 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-3534-1-1993
-# sources:ISO-3534-1-1993 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-3534-1-1993
+sources:ISO-3534-1-1993 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-8601-2000
-# sources:ISO-8601-2000 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-8601-2000
+sources:ISO-8601-2000 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-IEC-10746-2-2009
-# sources:ISO-IEC-10746-2-2009 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-10746-2-2009
+sources:ISO-IEC-10746-2-2009 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501
-# sources:ISO-IEC-19501 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501
+sources:ISO-IEC-19501 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501-2005
-# sources:ISO-IEC-19501-2005 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501-2005
+sources:ISO-IEC-19501-2005 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-1-1993
-# sources:ISO-IEC-2382-1-1993 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-1-1993
+sources:ISO-IEC-2382-1-1993 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-2015
-# sources:ISO-IEC-2382-2015 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-2015
+sources:ISO-IEC-2382-2015 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ISO-TS-19129-2009
-# sources:ISO-TS-19129-2009 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ISO-TS-19129-2009
+sources:ISO-TS-19129-2009 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#ITU-R-Rec-TF-686-1
-# sources:ITU-R-Rec-TF-686-1 rdf:type owl:NamedIndividual .
 
+###  https://isotc211.geolexica.org/api/sources#ITU-R-Rec-TF-686-1
+sources:ITU-R-Rec-TF-686-1 rdf:type owl:NamedIndividual .
 
-# ###  https://isotc211.geolexica.org/api/sources#UML-1x
-# sources:UML-1x rdf:type owl:NamedIndividual .
+
+###  https://isotc211.geolexica.org/api/sources#UML-1x
+sources:UML-1x rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
