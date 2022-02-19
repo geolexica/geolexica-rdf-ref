@@ -33887,6 +33887,42 @@ skos:notation 971 ;
   skos:prefLabel "наклонная плоскость (SAR)"@ru ;
   skos:prefLabel "plano oblicuo (slant plane) (SAR)"@es .
 
+
+###  https://isotc211.geolexica.org/api/concepts#slant_range_SAR
+:slant_range_SAR rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:inScheme geolexica:GeolexicaConceptScheme ;
+
+geolexica:hasInfo info:Info972 ;
+geolexica:hasReview reviews:Review972 ;
+
+geolexica:hasLDAPI ldapi:ldapi972-json , ldapi:ldapi972-jsonld , ldapi:ldapi972-rdfxml , ldapi:ldapi972-skosrdf ;
+geolexica:hasLangCode lang:ara , lang:deu , lang:eng , lang:fin , lang:fra , lang:kor , lang:msa , lang:jpn , lang:nld , lang:pol , lang:rus , lang:spa , lang:swe , lang:zho ;
+geolexica:hasOrigin lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:finRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry ,  lang:polRegistry , lang:msaRegistry , lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry ;
+
+rdfs:label "slant range (SAR)" ;
+dcterms:identifier 972 ;
+skos:notation 972 ;
+
+  skos:definition "magnitude of the range vector"@en ;
+  skos:definition "حجم متجه المدى"@ar ;
+  skos:definition "Länge des Messrichtungsvektor"@de ;
+  skos:definition "범위 벡터의 크기"@ko ;
+  skos:definition "Величина вектора дальности"@ru ;
+  skos:definition "magnitud del vector alcance"@es ;
+  skos:definition "avstånd mellan radarantenn och mål, mätt längs målriktningen"@sv ;
+  
+  skos:prefLabel "slant range (SAR)"@en ;
+  skos:prefLabel "مدى مائل (سار)"@ar ;
+  skos:prefLabel "Schrägstrecke (SAR) (Syn.: Schrägentfernung)"@de ;
+  skos:prefLabel "경사/사선/직거리"@ko ;
+  skos:prefLabel "julat sendeng SAR"@ms ;
+  skos:prefLabel "наклонная дальность(SAR)"@ru ;
+  skos:prefLabel "alcance oblicuo (slant range) (SAR)"@es ;
+  skos:prefLabel "lutande avstånd (SAR)"@sv ;
+
+lang:msa-note notes:DefnTransUnavail .
+
 ###  https://isotc211.geolexica.org/api/concepts#slant_range_direction_SAR
 :slant_range_direction_SAR rdf:type owl:NamedIndividual ,
                  skos:Concept ;
@@ -47888,8 +47924,8 @@ skos:notation 2125 ;
 
   skos:definition "postal address component that has a well-defined conceptual meaning with significance for customer or postal processing purposes and is not itself made up of subordinate components"@en ;
   
-  skos:prefLabel "element &lt;postal address&gt;"@en ;
-  skos:altLabel "postal address element &lt;postal address&gt;"@en ;
+  skos:prefLabel "element (postal address)"@en ;
+  skos:altLabel "postal address element (postal address)"@en ;
 
 lang:eng-note "Note 1 to entry: The elements are specified in 6.4."@en , "Note 2 to entry: For convenience, the preferred term “postal address element” has been shortened to the admitted term “element” throughout this document."@en .
 
@@ -49317,7 +49353,7 @@ rdfs:label "greatest lower bound (mathematics)" ;
 dcterms:identifier 2236 ;
 skos:notation 2236 ;
 
-  skos:definition "largest element smaller than or equal to all elements of a set contained in an ordered domain &lt;&lt;math&gt;&gt;"@en ;
+  skos:definition "largest element smaller than or equal to all elements of a set contained in an ordered domain ((math))"@en ;
   skos:prefLabel "greatest lower bound (mathematics)"@en ;
   skos:altLabel "minimum (mathematics)"@en ;
 
@@ -49441,7 +49477,7 @@ dcterms:identifier 2244 ;
 skos:notation 2244 ;
 
   skos:definition "vector perpendicular (orthogonal) to the geometric object (curve or surface) at the point"@en ;
-  skos:prefLabel "normal &lt;differential geometry, geodesy&gt;"@en ;
+  skos:prefLabel "normal (differential geometry, geodesy)"@en ;
 
 lang:eng-note "Note to entry: The normal will be parallel to the \"upward\" normal for surfaces in 𝔼3 defined in the surface interface in ISO 19107:2019, 6.4.17.2."@en .
 
@@ -49483,7 +49519,7 @@ dcterms:identifier 2246 ;
 skos:notation 2246 ;
 
   skos:definition "set of real-valued functions all over the same domain whose arithmetic sum at every domain value is 1"@en ;
-  skos:prefLabel "partition of unity &lt;mathematics&gt;"@en .
+  skos:prefLabel "partition of unity (mathematics)"@en .
 
 ###  https://isotc211.geolexica.org/api/concepts#plane_curve_geom
 :plane_curve_geom rdf:type owl:NamedIndividual ,
