@@ -1,0 +1,13 @@
+# all sources : labels :uri
+
+
+PREFIX geolexica: <https://isotc211.geolexica.org/api/geolexica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+select ?source ?label ?title ?uri
+
+where { 
+    ?source a geolexica:Source ; rdfs:label ?label ; dcterms:title ?title .
+     OPTIONAL { ?source dcterms:source ?uri }
+    } ORDER BY ?uri
