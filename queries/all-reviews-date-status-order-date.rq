@@ -1,0 +1,12 @@
+## all reviews : date : status : order date
+
+PREFIX geolexica: <https://isotc211.geolexica.org/api/geolexica#>
+
+select ?review ?date ?status
+
+    where { ?review a geolexica:ConceptReview ; 
+                    geolexica:review_date ?date ;
+                    geolexica:review_status ?status .
+           } 
+           
+        ORDER BY ASC(?date)
