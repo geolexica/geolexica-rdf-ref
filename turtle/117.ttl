@@ -1,0 +1,198 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/117/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/117/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "data quality result" ;
+        vann:preferredNamespacePrefix  "concept117" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/117/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/117/> .
+
+###########################################################
+
+:data_quality_result  a        skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "data quality result" ;
+        dcterms:identifier     117 ;
+        skos:definition        "数据质量度量得到的一个值或一组值，或者将获取一个值或一组值同规定的一致性质量级别相比较得到的评价结果。"@zh , "значение или набор значений, получаемые в результате применения меры качества данных, или результат сопоставления полученного значения (набора значений) с заданным уровнем соответствия качеству"@ru , "arvo tai arvojoukko, joka saadaan soveltamalla laatumittaria tai vertaamalla mitattuja tuloksia ennalta määrättyyn laatuvaatimustasoon, tai tekstimuotoinen, subjektiiviseen arvioon perustuva kuvaus laadusta"@fi , "value or set of values resulting from applying a data quality measure or the outcome of evaluating the obtained value or set of values against a specified conformance quality level"@en , "데이터 품질 측정의 결과 값이나 값의 집합 또는 이를 정해진 적합성 품질 수준에 따라 평가한 결과"@ko , "wartość lub zbiór wartości wynikających z zastosowania miary jakości danych lub rezultat oceny otrzymanej wartości lub zbioru wartości względem określonego wymaganego poziomu jakości"@pl , "データ品質評価尺度を適用した結果の値若しくは値の集合，又は規定された適合品質水準を満たすか否かを，取得した値又は値の集合を用いて評価した結果。"@ja , "1) værdi eller sæt af værdier opnået ved at anvende et mål for datakvalitet. 2) resultatet af at evaluere de(n) opnåede værdi(er) i forhold til et specificeret kvalitetsniveau af overensstemmelse."@da , "värden som erhålls vid tillämpning av ett datakvalitetsmått eller vid utvärdering av sådana värden mot en specificerad överensstämmelsenivå för datakvalitet"@sv , "valeur ou ensemble de valeurs résultant de l&#39;application d&#39;une mesure de qualité de donnée ou le résultat de la comparaison de la valeur obtenue (ou ensemble de valeurs) par rapport au niveau de conformité spécifié"@fr , "valor, o conjunto de valores, que resultan de la aplicación de una medida de calidad, o bien proceden de la evaluación del valor, o conjunto de valores obtenidos, frente a un nivel de calidad de conformidad especificado"@es , "قيمة أو مجموعة قيم ناتجة عن تطبيق قياس معيَّن لجودة البيانات أو ناتج تقييم القيمة أو القيم المتحصلة مقابل مستوى محدد من الجودة المطابقة"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          117 ;
+        skos:prefLabel         "wynik oceny jakości danych"@pl , "データ品質評価結果"@ja , "результат оценки качества данных"@ru , "نتيجة جودة البيانات"@ar , "데이터 품질 결과"@ko , "datakvalitetsresultat"@da , "data quality result"@en , "datakvalitetsreultat"@sv , "laatutulos"@fi , "résultat de qualité des données"@fr , "Datenqualitätsangabe"@de , "resultado de la calidad de datos"@es , "数据质量结果"@zh ;
+        lang:deu-note          notes:DefnTransUnavail , notes:ExTransUnavail ;
+        lang:swe-note          notes:ExTransUnavail ;
+        geolexica:examples     "ESIM. Laatutulos ”90” laatuarvotyypille ”prosentti” on esimerkki laatumittarista, joka on sovellettu mitattavan laadun tekijälle ”täydellisyys, mukana olo” laatukuvauksen laajuudessa määritettyihin tietoihin. Laatutulos ”tosi” laatuarvotyypille ”totuusarvo” on esimerkki laatumittarista, jossa laatutulosta (”90”) verrataan laatuvaatimustasoon (”85”) ja lopputuloksena raportoidaan laatutestauksen läpäisy."@fi , "보기 데이터 품질 요소의 보고를 위한 데이터 품질 값 유형인 \"백분율\"에 대한 데이터 품질 결과인 \"90\"과 이것의 데이터 품질 하위 요소 \"완전 위임\"은 데이터 품질 범위에 규정된 데이터 품질 측정 결과의 사례이다. 데이터 품질 값 유형인 \"불린 변수\"에 따라 보고된 산출 결과인 \"참\"은 통과 또는 실패를 결정짓는 품질 적합성 수준 (85)를 만족하는 값 (90)에 대한 사례이다."@ko , "PRZYKŁAD Wynik oceny jakości danych o wartości \"90\" z typem wartości jakości danych \"procent\" przedstawiony dla elementu jakości danych \"kompletność\" i jego elementu podrzędnego \"nadmiar\" jest przykładem wartości wynikającej z zastosowania miary jakości danych określonych przez zakres jakości danych. Wynik oceny jakości danych o wartości \"prawda\" z typem wartości jakości danych \"zmienna boolowska\" jest przykładem porównania wartości (90) z określonym wymaganym poziomem jakości (85) przedstawiającym ocenę typu:spełniony lub niespełniony."@pl , "示例 数据质量元素及其数据质量子元素“完整性，多余错误”的数据质量评价结果为“90”、数据质量值类型为“百分比”是对数据质量范围指定数据进行数据质量度量而得到的示例。数据质量评价结果为“真”、数据质量值类型为“布尔型变量”是将值（90）同规定的一致性质量等级（85）相比较的示例，评价结果为良好、合格或不合格。"@zh , "EXAMPLE A data quality result of \"90\" with a data quality value type of \"percentage\" reported for the data quality element and its data quality subelement \"completeness, commission\" is an example of a value resulting from applying a data quality measure to the data specified by a data quality scope. A data quality result of \"true\" with a data quality value type of \"boolean variable\" is an example of comparing the value (90) against a specified acceptable conformance quality level (85) and reporting an evaluation of a kind, pass or fail."@en , "例 　データ品質要素及びその副要素“完全性，過剰”を報告する場合，“百分率”をデータ品質評価値型とする“90”というデータ品質評価結果は，データ品質適用範囲で定めるデータ品質評価尺度を適用した結果の値の一例である。“ブール変数”をデータ品質評価値型とする“真”というデータ品質評価結果は，取得した値（90）を規定された合格適合品質水準（85）と比較した結果の例であり，また，合否の評価報告の一例でもある。"@ja , "مثال نتيجة جودة البيانات (90) مع قيمة نوع جودة البيانات \"نسبة مئوية\" التي يفاد بها عن عنصر جودة البيانات وعنصر جودة البيانات الفرعي التابع له \"اكتمال , تجهيز للتشغيل\" هي مثال على قيمة ناتجة عن تطبيق عملية قياس جودة بيانات على البيانات التي يحددها نطاق جودة بيانات معيَّن. أما نتيجة فحص جودة البيانات \"صحيح\" المقترنة بقيمة نوع جودة البيانات \"متغير جبري\" فهي مثال لمقارنة القيمة (90) بمستوى مطابقة جودة مقبول (85) حسب المواصفات والإفادة عن ذلك في شكل تقييم لدرجة المطابقة بالنجاح أو الفشل."@ar , "EJEMPLO Un resultado para la calidad de unos datos de \"90\", con un valor de tipo \"porcentaje\" referido al elemento \"compleción\" y al subelemento \"comisión\" es un ejemplo de valor que resulta de la aplicación de una medida a los datos especificados por el ámbito. Un resultado de \"verdadero\", al que le corresponde un tipo \"variable booleana\", es un ejemplo de comparación del valor (90%) frente un nivel de conformidad específico (85%) y a su informe de evaluación en la forma de \"conforme\" o \"no conforme\"."@es , "EKSEMPEL Hvis der rapporteres et datakvalitetsresultat på \"90\" med \"procent\" som værditype for datakvalitetselementet og dets delelement \"fuldstændighed\" er det et eksempel på en værdi, der opnås ved at anvende et mål for datakvalitet på dataene specificeret ved et bestemt omfang af datakvalitet. I forlængelse heraf er datakvalitetsresultatet \"sandt\" med \"Boolean\" som værditype for datakvalitet et eksempel på sammenligning af værdien (90) med tærskelværdien 85 som kvalitetsniveau for overensstemmelse, og der kan rapporteres en evaluering: godkendt eller ikke godkendt."@da , "Пример ом значения, полученного от применения меры качества данных к данным, определенным областью определения качества, является результат оценки качества данных «90» (при типе значения качества данных «процент»), выдаваемый для элемента качества данных «полнота» и его подэлемента «присутствие». Результат оценки качества данных «истинный» с типом значения «булева переменная » является примером сравнения значения (90) с определенным допустимым уровнем качества (85) и заключения по результату оценки качества данных (успех или провал)"@ru ;
+        geolexica:hasInfo      info:Info117 ;
+        geolexica:hasLDAPI     ldapi:ldapi117-json , ldapi:ldapi117-jsonld , ldapi:ldapi117-rdfxml , ldapi:ldapi117-skosrdf ;
+        geolexica:hasLangCode  lang:deu , lang:dan , lang:eng , lang:zho , lang:swe , lang:ara , lang:spa , lang:fin , lang:kor , lang:fra , lang:rus ;
+        geolexica:hasOrigin    lang:zhoRegistry , lang:fraRegistry , lang:rusRegistry , lang:korRegistry , lang:spaRegistry , lang:sweRegistry , lang:deuRegistry , lang:araRegistry , lang:engRegistry , lang:finRegistry , lang:danRegistry ;
+        geolexica:hasReview    reviews:Review117 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+
+############################################################
+
+info:Info117 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19113-2002 ;
+         geolexica:clause "4.9" ;
+         geolexica:date_accepted "2002-12-01"^^xsd:date ;
+         geolexica:date_amended "2013-12-15"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
+
+############################################################
+
+reviews:Review117 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2013-12-15"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of ISO 19157:2013"@en ;
+           geolexica:review_decision_notes "The entry has been omitted from the superseding standard (ISO 19157:2013)."@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19113-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Quality principles"@en ;
+                dcterms:source "https://www.iso.org/standard/26018.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19113:2002" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi117-json
+ldapi:ldapi117-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/117.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi117-jsonld
+ldapi:ldapi117-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/117.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi117-rdfxml
+ldapi:ldapi117-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/117.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi117-skosrdf
+ldapi:ldapi117-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/117.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

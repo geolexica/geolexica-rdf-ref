@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/101/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/101/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "curve" ;
+        vann:preferredNamespacePrefix  "concept101" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/101/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/101/> .
+
+###########################################################
+
+:curve  a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "curve" ;
+        dcterms:identifier     101 ;
+        skos:definition        "endimensionellt geometriskt grundelement"@sv , "одномерный геометрический примитив, представляющий непрерывный образ линии"@ru , "sesuatu yg bentuknya melengkung"@ms , "선의 연속적 이미지를 표현하는 1차원 기하 원시 객체"@ko , "1-dimensional geometric primitive, representing the continuous image of a line"@en , "直線の連続な像を表現する一次元の幾何プリミティブ。"@ja , "primitive géométrique à une dimension représentant l&#39;image continue d&#39;une ligne"@fr , "eindimensionales geometrisches Primitiv, das das kontinuierliche Abbild einer Linie darstellt"@de , "1-wymiarowy prosty element geometryczny reprezentujący ciągły obraz linii"@pl , "primitiva geométrica unidimensional que representa la imagen continua de una línea"@es , "一维几何单形，表达一条线的连续映像。"@zh , "1-dimensional geometrisk grundform, der repræsenterer et kontinuert billede af en linje"@da , "عنصر هندسي بسيط ذو بعد واحد يمثل الصورة المتصلة  للخط"@ar , "yksiulotteinen geometrinen primitiivi, joka muodostuu joukosta peräkkäisiä toisiinsa yhdistettyjä pisteitä"@fi ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          101 ;
+        skos:prefLabel         "曲线"@zh , "käyrä"@fi , "곡선"@ko , "lengkungan"@ms , "曲線"@ja , "krzywa"@pl , "منحنى"@ar , "Kurve"@de , "curva"@es , "кривая"@ru , "courbe"@fr , "linje"@sv , "curve"@en , "kurve"@da ;
+        lang:ara-note          "ملاحظة: حدود المنحنى هي مجموعة النقاط الواقعة على كل طرف من طرفيه.  فإذا كان المنحنى حلقة كان طرفاه متطابقين , وفي هذه الحالة يعتبر المنحنى ( إذا كان مغلقاً طوبولوجيا) منحنى ليست له حدود. النقطة الأولى تسمى نقطة الابتداء , والنقطة الأخيرة تسمى نقطة الانتهاء. الربط المنطقي للمنحنى مضمون بموجب عبارة \" الصورة المستمرة لخط ما\". هناك نظرية طوبولوجية تنص على أن الصورة المستمرة لمجموعة متصلة ببعضها هي أيضاً متصلة."@ar ;
+        lang:dan-note          "Bemærk til posten: Afgrænsningen af en kurve er mængden af punkter i hver ende af kurven. Hvis en kurve er en ring, er de to endepunkter identiske, og kurven (hvis den er topologisk lukket) opfattes som ikke havende nogen afgrænsning. Det første punkt på kurven kaldes for startpunktet og det sidste for slutpunktet. Kurvens konnektivitet er sikret ved princippet om \"et sammenhængende billede af en linje\". En topologisk læresætning siger, at et kontinuert billede af en forbunden mængde også er forbundet i sig selv."@da ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: The boundary of a curve is the set of points at either end of the curve. If the curve is a cycle, the two ends are identical, and the curve (if topologically closed) is considered to not have a boundary. The first point is called the start point, and the last is the end point. Connectivity of the curve is guaranteed by the \"continuous image of a line\" clause. A topological theorem states that a continuous image of a connected set is connected."@en ;
+        lang:fin-note          "HUOM.: Käyrän rajaus muodostuu käyrän kummassakin päässä olevista pisteistä. Jos käyrä on silmukka, jonka molemmat päät ovat identtiset, katsotaan, ettei käyrällä (jos se on topologisesti suljettu) ole rajausta. Ensimmäistä pistettä kutsutaan alkupisteeksi ja viimeistä loppupisteeksi. Käyrän yhtenäisyyden takaa ehto \"jatkuva viivan kuva\". Erään topologian teoreeman mukaan yhtenäisen joukon jatkuva kuva on yhtenäinen."@fi ;
+        lang:jpn-note          "備考： 曲線の境界は，その両端の点の集合である。曲線が閉路の場合，二つの端は同一であり，その曲線は（位相的に閉じている場合には），境界をもたないとみなす。最初の点を始点，最後のものを終点と呼ぶ。“直線の連続的な像”という定義文の語句によって，曲線の連結性が保証される。位相幾何学の定理は，連結している集合の連続的な像は連結であることを規定している。"@ja ;
+        lang:kor-note          "비고: 곡선의 경계는 곡선의 양쪽 끝 점의 집합이다. 만약 곡선이 순환한다면(위상적으로 폐합되어 있다면), 두 끝점은 동일하며 곡선은 경계를 갖지 않는다. 첫 번째 점은 시작점으로, 마지막 점은 끝점으로 불린다. 곡선의 연결성은 \"선의 연속 이미지\"라는 절에 기술되어 있으며, \"연결 집합의 연속 이미지는 연결되어 있다\"라고 위상적으로 정의된다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Granicą krzywej jest zbiór punktów leżących na obu końcach krzywej. Jeżeli krzywa jest cyklem, wówczas oba jej końce są identyczne, samą krzywą zaś (o ile jest zamknięta topologicznie) można traktować tak, jakby nie miała granicy. Pierwszy punkt jest nazywany punktem początkowym, a ostatni – punktem końcowym. Spójność krzywej jest zapewniona poprzez warunek \"ciągłości obrazu linii\". Teoria topologii stwierdza, że ciągły obraz zbioru spójnego jest spójny."@pl ;
+        lang:rus-note          "Примечание: Границей кривой является множество точек на обеих ее концах. Если кривая является циклом, то два конца идентичны и кривая (если она топологически замкнута) считается не имеющей границы. Первая точка называется начальной, последняя – концевой. Связность кривой обеспечивается условием «непрерывности образа линии». Из теоремы топологии следует, что непрерывный образ связного множества является связным"@ru ;
+        lang:spa-note          "Nota: La frontera de una curva es el conjunto de puntos en cualquiera de sus extremos. Si la curva es un ciclo los dos extremos son idénticos y se considera que la curva (topológicamente cerrada) no tiene frontera. El primer punto se denomina punto inicial y el último punto final. La continuidad de la curva queda garantizada por la expresión \"imagen continua de una línea\". Un teorema topológico establece que una imagen continua de un conjunto conectado, está conectado."@es ;
+        lang:zho-note          "注： 一条曲线的边界是曲线的两端的点的集合。如果曲线是一个圈，两个端点相同，并且这条曲线（如果拓扑上是闭合的）被认为没有边界。这第一个点被称作起点，最后一个点被称作终点，曲线的连通性被“一条线的连续映射”条款所保证。拓扑法则认为一个连续集合的连续映射是连续的。"@zh ;
+        geolexica:hasInfo      info:Info101 ;
+        geolexica:hasLDAPI     ldapi:ldapi101-skosrdf , ldapi:ldapi101-jsonld , ldapi:ldapi101-rdfxml , ldapi:ldapi101-json ;
+        geolexica:hasLangCode  lang:ara , lang:rus , lang:jpn , lang:pol , lang:dan , lang:msa , lang:spa , lang:fra , lang:eng , lang:fin , lang:kor , lang:deu , lang:zho , lang:swe ;
+        geolexica:hasOrigin    lang:engRegistry , lang:msaRegistry , lang:polRegistry , lang:danRegistry , lang:korRegistry , lang:jpnRegistry , lang:spaRegistry , lang:sweRegistry , lang:zhoRegistry , lang:finRegistry , lang:fraRegistry , lang:deuRegistry , lang:araRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review101 .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info101 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19136-1-2020 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:clause "(E), 3.1.17" ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review101 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2018-06-08"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Supersession of ISO 19107:2003 and publication of ISO 19136-1:2020"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19136-1:2020(E), 3.1.17. Lineage source added as ISO 19107:2003"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi101-json
+ldapi:ldapi101-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/101.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi101-jsonld
+ldapi:ldapi101-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/101.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi101-rdfxml
+ldapi:ldapi101-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/101.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi101-skosrdf
+ldapi:ldapi101-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/101.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

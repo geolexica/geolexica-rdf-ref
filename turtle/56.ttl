@@ -1,0 +1,206 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/56/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/56/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "composite solid" ;
+        vann:preferredNamespacePrefix  "concept56" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/56/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/56/> .
+
+###########################################################
+
+:composite_solid  a            owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "composite solid" ;
+        dcterms:identifier     56 ;
+        skos:definition        "مجموعة مجسمات متصلة ومجاورة بعضها ببعض على طول أسطح الحدود المشتركه"@ar , "verbundene Menge von Körpern, die gegenseitig entlang von gemeinsamen Grenzflächen verbunden sind"@de , "ensemble de solides connectés attenants l&#39;un à l&#39;autre le long d&#39;une frontière surfacique partagée"@fr , "沿着共享边界曲面相邻且相连的体的集合。"@zh , "samlet sæt af legemer, der er forbundet med hinanden langs fælles grænseflader"@da , "connected set of solids adjoining one another along shared boundary surfaces"@en , "связное  множество тел, примыкающих друг к другу по общим ограничивающим поверхностям"@ru , "共有された境界曲面に沿って互いに隣接する立体の連結した集合。"@ja , "samling kroppar där varje kropp delar gränsyta med minst en av de övriga kropparna"@sv , "공유 경계 표면을 따라 서로 연결된 입방체의 집합"@ko , "conjunto conectado de sólidos que son colindantes unos con otros a través de las superficies de frontera que comparten"@es , "set terhubung pepejal bersebelahan di sepanjang permukaan sempadan yang dikongsi"@ms , "komposiitti, joka koostuu toisissaan kiinni olevista kappaleista"@fi , "spójny zbiór brył dołączonych, przylegających jedna do drugiej poprzez współdzielone powierzchnie graniczne"@pl ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          56 ;
+        skos:prefLabel         "sammensat legeme"@da , "composite solid"@en , "sammansatt kropp"@sv , "pepejal komposit"@ms , "bryła kompozytowa"@pl , "составное тело"@ru , "مجسم مركب"@ar , "solide composite"@fr , "합성 입방체"@ko , "sólido compuesto"@es , "komposiittikappale"@fi , "组合体"@zh , "zusammenhängender Körper"@de , "合成立体"@ja ;
+        lang:ara-note          "المجسم المركب ، باعتباره مجموعة مواقع مباشرة ، تتوفر فيه جميع خصائص المجسم."@ar ;
+        lang:dan-note          "Et sammensat legeme er i realiteten et antal direkte positioner og har de samme egenskaber som et legeme."@da ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "A composite solid, as a set of direct positions, has all the properties of a solid."@en ;
+        lang:fin-note          "Komposiittikappaleella on kaikki kappaleen ominaisuudet."@fi ;
+        lang:jpn-note          "合成曲線は，直接位置の集合として，曲線のすべての性質をもつ。"@ja ;
+        lang:kor-note          "직접 위치의 집합으로서의 합성 곡선은 곡선의 모든 특성을 갖는다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "Krzywa kompozytowa, jako zbiór położeń bezpośrednich ma wszystkie właściwości krzywej."@pl ;
+        lang:rus-note          "Составная кривая, как множество точек, имеет те же свойства, которые присущи кривой"@ru ;
+        lang:spa-note          "Una curva compuesta, como conjunto de posiciones directas, tiene todas las propiedades de una curva."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "组合体作为直接位置的集合，具有体的所有特征。"@zh ;
+        geolexica:hasInfo      info:Info56 ;
+        geolexica:hasLDAPI     ldapi:ldapi56-rdfxml , ldapi:ldapi56-json , ldapi:ldapi56-jsonld , ldapi:ldapi56-skosrdf ;
+        geolexica:hasLangCode  lang:ara , lang:fin , lang:zho , lang:msa , lang:dan , lang:eng , lang:swe , lang:kor , lang:pol , lang:rus , lang:spa , lang:deu , lang:fra , lang:jpn ;
+        geolexica:hasOrigin    lang:zhoRegistry , lang:polRegistry , lang:korRegistry , lang:finRegistry , lang:deuRegistry , lang:araRegistry , lang:msaRegistry , lang:sweRegistry , lang:spaRegistry , lang:danRegistry , lang:engRegistry , lang:jpnRegistry , lang:rusRegistry , lang:fraRegistry ;
+        geolexica:hasReview    reviews:Review56 .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info56 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19136-1-2020 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "(E), 3.1.10" ;
+        geolexica:date_accepted "2003-05-01"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review56 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2018-06-08"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Supersession of ISO 19107:2003 and publication of ISO 19136-1:2020"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19136-1:2020(E), 3.1.10. Lineage source added as ISO 19107:2003"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi56-json
+ldapi:ldapi56-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/56.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi56-jsonld
+ldapi:ldapi56-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/56.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi56-rdfxml
+ldapi:ldapi56-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/56.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi56-skosrdf
+ldapi:ldapi56-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/56.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

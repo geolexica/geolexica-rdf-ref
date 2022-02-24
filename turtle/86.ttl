@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/86/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/86/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "convex hull" ;
+        vann:preferredNamespacePrefix  "concept86" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/86/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/86/> .
+
+###########################################################
+
+:convex_hull  a                owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "convex hull" ;
+        dcterms:identifier     86 ;
+        skos:altLabel          "konveksi verho"@fi ;
+        skos:definition        "기하 객체를 포함하는 최소의 볼록 집합"@ko , "conjunto convexo más pequeño que contiene un objeto geométrico dado"@es , "den minsta konvexa mängden som innehåller ett givet geometriskt objekt"@sv , "mindste konvekse mængde, der kan indeholde et givet geometrisk objekt"@da , "plus petit ensemble convexe contenant un objet géométrique donné"@fr , "наименьшее из выпуклых множеств, содержащее данный геометрический объект"@ru , "pienin konveksi joukko, joka sisältää annetun geometrisen objektin"@fi , "smallest convex set containing a given geometric object"@en , "أصغر مجموعة محدَّبة تحتوي على جسم هندسي محدَّد"@ar , "包含给定的几何对象的最小凸集。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          86 ;
+        skos:prefLabel         "konvexe Hülle"@de , "enveloppe convexe"@fr , "هيكل محدَّب"@ar , "cierre convexo"@es , "볼록 외곽"@ko , "выпуклая оболочка"@ru , "konvekst hylster"@da , "konvext hölje"@sv , "凸包"@zh , "konveksi peite"@fi , "convex hull"@en ;
+        lang:ara-note          "'ملاحظة: يقصد ب -أصغر- المستوى الأصغر المحدد أو المضبوط نظرياً , وليس في ذلك دلالة على إجراء أي نوع من القياس. ويمكن إعادة صياغة التعريف على النحو التالي: -تقاطع جميع المجموعات المحدَّبة التي تحتوي الكيان الهندسي-."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "\"Smallest\" is the set theoretic smallest, not an indication of a measurement. The definition can be rewritten as \"the intersection of all convex sets that contain the geometric object\". Another definition in a Euclidean space bbb\"E\"^n is the union of all lines with both end points in the given geometric object."@en , "C = A.\"convexHull\" <=> [C.\"convex\" = \"TRUE\"] ^^ [A sub C] ^^ [[B.\"convex\" = \"true\", A sub B] => [A sube C sube B]]"@en ;
+        lang:fin-note          "HUOM.: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@fi , "'HUOM. Määritelmän sana \"pienin\" viittaa teoreettisesti pienimpään joukkoon, ei mittaustulokseen. Määritelmä voidaan ilmaista myös \"kaikkien tietyn geometrisen objektin sisältävien konveksien joukkojen leikkaus\"."@fi ;
+        lang:kor-note          "'비고: \"최소\"는 이론상 가장 작은 것으로, 이는 측정 결과를 말하는 것은 아니다. 볼록 외곽은 \"기하 객체를 포함하는 모든 볼록 집합의 교차점\"으로 재정의될 수 있다."@ko , "비고: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry '"@ko ;
+        lang:rus-note          "'«Наименьшее»  означает наименьшее в теоретическом понимании и не является единицей измерения. Данное определение можно сформулировать таким образом: «пересечение всех выпуклых множеств, которые содержат геометрический объект»"@ru , "Примечание: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry"@ru ;
+        lang:spa-note          "'NOTA \"más pequeño\" es el conjunto teóricamente menor, no es una indicación de medida. La definición puede reescribirse como \"la intersección de todos los conjuntos convexos que contienen al objeto geométrico\""@es , "Nota: Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@es ;
+        lang:zho-note          " 注： 'Provisional translation: 19107:2019, 3.15 -- Note 1 to entry "@zh , "'注：“最小”是集合理论上最小，并不是指尺度上。这个定义也可以重写为“包含所给定的几何元素的所有凸集的并集”。"@zh ;
+        geolexica:hasInfo      info:Info86 ;
+        geolexica:hasLDAPI     ldapi:ldapi86-json , ldapi:ldapi86-jsonld , ldapi:ldapi86-rdfxml , ldapi:ldapi86-skosrdf ;
+        geolexica:hasLangCode  lang:kor , lang:zho , lang:rus , lang:spa , lang:dan , lang:eng , lang:swe , lang:ara , lang:fin , lang:fra , lang:deu ;
+        geolexica:hasOrigin    lang:zhoRegistry , lang:finRegistry , lang:spaRegistry , lang:araRegistry , lang:rusRegistry , lang:korRegistry , lang:engRegistry , lang:deuRegistry , lang:sweRegistry , lang:danRegistry , lang:fraRegistry ;
+        geolexica:hasReview    reviews:Review86 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info86 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19107-2019 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "3.15" ;
+        geolexica:date_accepted "2003-05-01"^^xsd:date ;
+        geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review86 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2019-12-02"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of ISO 19107:2019(E)"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from Dictionary of Computing, Fourth Edition, Oxford University Press to ISO 19107:2019, 3.15 . Lineage source added as ISO 19107:2003(E)"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19107-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi86-json
+ldapi:ldapi86-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/86.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi86-jsonld
+ldapi:ldapi86-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/86.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi86-rdfxml
+ldapi:ldapi86-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/86.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi86-skosrdf
+ldapi:ldapi86-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/86.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

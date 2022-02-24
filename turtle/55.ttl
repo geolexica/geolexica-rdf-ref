@@ -1,0 +1,216 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/55/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/55/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "composite curve" ;
+        vann:preferredNamespacePrefix  "concept55" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/55/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/55/> .
+
+###########################################################
+
+:composite_curve  a            skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "composite curve" ;
+        dcterms:identifier     55 ;
+        skos:definition        "Sequenz von Kurven, wobei jede Kurve (außer der ersten) am Endpunkt der vorhergehenden Kurve einer Sequenz beginnt"@de , "sekvens av linjer där varje linje utom den första startar där föregående linje slutar"@sv , "sequence of curves such that each curve (except the first) starts at the end point of the previous curve in the sequence"@en , "sekwencja krzywych, w której każda krzywa (poza pierwszą) zaczyna się w punkcie końcowym poprzedniej krzywej w sekwencji"@pl , "첫 번째 곡선을 제외한 각각의 곡선이 연속적으로 앞 곡선의 끝점에서 시작되는 곡선의 연속"@ko , "séquence de courbes telle que chaque courbe (sauf la première) commence au point final de la courbe précédente dans la séquence"@fr , "列の各曲線が（最初のものを除き）直前の曲線の終点から開始するような曲線の列。"@ja , "последовательность кривых, каждая из которых (за исключением первой)  начинается в конечной точке предшествующей ей кривой"@ru , "sekvens af kurver dannet således, at hver kurve (undtagen den første) starter ved slutpunktet af den foregående kurve i sekvensen."@da , "سلسلة من المنحنيات  بحيث أن كل منحنى منها (باستثناء المنحنى الأول) يبدأ من النقطة التي ينتهي عندها المنحنى الذي يسبقه"@ar , "komposiitti, joka koostuu toisissaan kiinni olevista peräkkäisistä käyristä"@fi , "曲线的序列，其每条（第一条除外）在该序列的上一条曲线的结尾处开始。"@zh , "secuencia de curvas tal que cada curva (excepto la primera) empieza en el punto final de la curva anterior en la secuencia"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          55 ;
+        skos:prefLabel         "curva compuesta"@es , "zusammenhängende Kurve"@de , "合成曲線"@ja , "sammansatt linje"@sv , "sammensat kurve"@da , "составная кривая"@ru , "lengkok gabungan"@ms , "courbe composite"@fr , "합성 곡선"@ko , "组合曲线"@zh , "krzywa kompozytowa"@pl , "composite curve"@en , "komposiittikäyrä"@fi , "منحنى مركَّب"@ar ;
+        lang:ara-note          "المنحنى المركب , باعتباره مجموعة مواقع مباشرة ، تتوفر فيه جميع خصائص المنحنى."@ar ;
+        lang:dan-note          "En sammensat kurve er i realiteten et antal direkte positioner og har de samme egenskaber som en kurve."@da ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "A composite curve, as a set of direct positions, has all the properties of a curve."@en ;
+        lang:fin-note          "Komposiittikäyrällä on kaikki käyrän ominaisuudet."@fi ;
+        lang:jpn-note          "合成曲線は，直接位置の集合として，曲線のすべての性質をもつ。"@ja ;
+        lang:kor-note          "직접 위치의 집합으로서의 합성 곡선은 곡선의 모든 특성을 갖는다."@ko ;
+        lang:msa-note          "A composite curve, as a set of direct positions, has all the properties of a curve."@ms ;
+        lang:msa-note          notes:NoteTransDiff , notes:DefnTransUnavail ;
+        lang:pol-note          "Krzywa kompozytowa, jako zbiór położeń bezpośrednich ma wszystkie właściwości krzywej."@pl ;
+        lang:rus-note          "Составная кривая, как множество точек, имеет те же свойства, которые присущи кривой"@ru ;
+        lang:spa-note          "Una curva compuesta, como conjunto de posiciones directas, tiene todas las propiedades de una curva."@es ;
+        lang:swe-note          "A composite curve, as a set of direct positions, has all the properties of a curve."@sv ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "组合曲线作为直接位置的集合，具有曲线的所有特征。"@zh ;
+        geolexica:hasInfo      info:Info55 ;
+        geolexica:hasLDAPI     ldapi:ldapi55-json , ldapi:ldapi55-rdfxml , ldapi:ldapi55-jsonld , ldapi:ldapi55-skosrdf ;
+        geolexica:hasLangCode  lang:deu , lang:jpn , lang:swe , lang:msa , lang:spa , lang:zho , lang:ara , lang:kor , lang:fin , lang:dan , lang:pol , lang:rus , lang:fra , lang:eng ;
+        geolexica:hasOrigin    lang:polRegistry , lang:jpnRegistry , lang:rusRegistry , lang:araRegistry , lang:engRegistry , lang:korRegistry , lang:spaRegistry , lang:zhoRegistry , lang:msaRegistry , lang:sweRegistry , lang:fraRegistry , lang:finRegistry , lang:danRegistry , lang:deuRegistry ;
+        geolexica:hasReview    reviews:Review55 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual ,
+                        geolexica:NoteSourceDiff ;
+               rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info55 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19136-1-2020 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "(E), 3.1.9" ;
+        geolexica:date_accepted "2003-05-01"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review55 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2018-06-08"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Supersession of ISO 19107:2003 and publication of ISO 19136-1:2020"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19136-1:2020(E), 3.1.9. Lineage source added as ISO 19107:2003"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi55-json
+ldapi:ldapi55-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/55.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi55-jsonld
+ldapi:ldapi55-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/55.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi55-rdfxml
+ldapi:ldapi55-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/55.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi55-skosrdf
+ldapi:ldapi55-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/55.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

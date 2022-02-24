@@ -1,0 +1,219 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/70/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/70/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "conceptual schema language" ;
+        vann:preferredNamespacePrefix  "concept70" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/70/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/70/> .
+
+###########################################################
+
+:conceptual_schema_language
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "conceptual schema language" ;
+        dcterms:identifier     70 ;
+        skos:definition        "لغة رسمية مبنية على التكوين المفاهيمي  لغرض تمثيل المخططات المفاهيمية( التصورية)"@ar , "langage formel basé sur un formalisme conceptuel destiné à représenter des schémas conceptuels"@fr , "формальный язык представления концептуальных схем, основанный на концептуальном формализме"@ru , "lenguaje formal basado en un formalismo conceptual con el propósito de representar esquemas conceptuales"@es , "formal language based on a conceptual formalism for the purpose of representing conceptual schemas"@en , "määrämuotoinen kieli käsiteskeemojen tuottamista varten"@fi , "formelt sprog baseret på en konceptuel formalisme til repræsentation af konceptuelle skemaer"@da , "表达概念模式的形式化语言。"@zh , "개념적 스키마의 표현을 위해 개념적 형식에 근거한 형식 언어"@ko , "formale Sprache, die auf einem konzeptuellen Formalismus zur Darstellung konzeptueller Schemata basiert"@de , "formellt språk som är baserat på begreppsformalism och som används för att representera begreppsscheman"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          70 ;
+        skos:prefLabel         "язык концептуальных схем"@ru , "概念模式语言"@zh , "Modellierungsprache"@de , "langage de schéma conceptuel"@fr , "begreppsschemaspråk"@sv , "skema bahasa  Konseptual"@ms , "lenguaje de esquemas conceptuales"@es , "konceptuelt modelleringssprog"@da , "개념적 스키마 언어"@ko , "لغة المُخطَّطْ المفاهيمي"@ar , "conceptual schema language"@en , "mallinnuskieli"@fi ;
+        lang:ara-note          "ملاحظة: لغة المخطط التصوري يمكن أن تكون لفظية كما يمكن أن تكون مرسومة أو مصورة ، حيث أن العديد من المخطط التصوري يمكن أن تعتمد على نفس الشكلية التصورية ."@ar ;
+        lang:dan-note          "Bemærk til posten: Et konceptuelt modelleringssprog kan enten bestå af ord eller være grafisk. Flere forskellige konceptuelle modelleringssprog kan være baseret på den samme konceptuelle formalisme. "@da ;
+        lang:dan-note          notes:ExTransUnavail ;
+        lang:deu-note          notes:DefnTransUnavail , notes:ExTransUnavail ;
+        lang:eng-note          "Note to entry: A conceptual schema language may be lexical or graphical. Several conceptual schema languages can be based on the same conceptual formalism."@en ;
+        lang:fin-note          "HUOM.: Käsitemallinnuskieli voi olla leksikaalinen tai graafinen. Eri mallinnuskielet saattavat perustua samaan käsitteelliseen formalismiin."@fi ;
+        lang:kor-note          "비고: 개념적 스키마 언어는 어휘적이거나 그래픽적일 수 있다. 몇몇 개념적 스키마 언어들은 동일한 개념적 형식에 근거할 수 있다."@ko ;
+        lang:kor-note          notes:ExTransUnavail ;
+        lang:msa-note          notes:ExTransUnavail , notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:rus-note          "Примечание: Язык концептуальных схем может быть лексическим или графическим. Различные языки концептуальных схем могут основываться на одном и том же концептуальном формализме"@ru ;
+        lang:spa-note          "Nota: Un lenguaje de esquema conceptual puede ser léxico o gráfico. Distintos lenguajes de esquema conceptual pueden basarse en el mismo formalismo conceptual."@es ;
+        lang:swe-note          notes:NoteTransUnavail , notes:ExTransUnavail ;
+        lang:zho-note          "概念模式语言可以是文字或图形，多种概念模式语言可基于同一概念形式。"@zh ;
+        geolexica:examples     "لغة UML , لغة EXPRESS , لغة IDEF 1X."@ar , "UML, EXPRESS, IDEF1X。"@zh , "Пример UML, EXPRESS, IDEF 1X "@ru , "UML, EXPRESS, IDEF1X"@en , "Meta-modelo UML, meta-modelo EXPRESS."@es , "ESIM. UML, EXPRESS ja IDEFIX."@fi ;
+        geolexica:hasInfo      info:Info70 ;
+        geolexica:hasLDAPI     ldapi:ldapi70-rdfxml , ldapi:ldapi70-jsonld , ldapi:ldapi70-json , ldapi:ldapi70-skosrdf ;
+        geolexica:hasLangCode  lang:rus , lang:fin , lang:fra , lang:zho , lang:msa , lang:deu , lang:eng , lang:ara , lang:dan , lang:kor , lang:spa , lang:swe ;
+        geolexica:hasOrigin    lang:korRegistry , lang:spaRegistry , lang:araRegistry , lang:finRegistry , lang:msaRegistry , lang:fraRegistry , lang:engRegistry , lang:sweRegistry , lang:deuRegistry , lang:zhoRegistry , lang:danRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review70 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual ,
+                         geolexica:ExampleUnavail ;
+                rdfs:label "This example has not been translated."@en .
+
+############################################################
+
+info:Info70 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19101-1-2014 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "4.1.7" ;
+        geolexica:date_accepted "2002-07-01"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review70 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2010-10-12"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of ISO 19101-1:2014"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from ISO 19101:2002 to ISO 19101-1:2014. Lineage source added as ISO 19101:2002."@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19101-1-2014 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/59164.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-1:2014" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi70-json
+ldapi:ldapi70-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/70.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi70-jsonld
+ldapi:ldapi70-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/70.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi70-rdfxml
+ldapi:ldapi70-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/70.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi70-skosrdf
+ldapi:ldapi70-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/70.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

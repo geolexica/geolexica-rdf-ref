@@ -1,158 +1,208 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/7/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/7/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/7/> .
-
-<https://isotc211.geolexica.org/ld/concepts/7/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/7/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "acceptance testing (user)" ;
-        rdfs:label "acceptance testing (user)" ;
-        vann:preferredNamespacePrefix "concept7" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/7/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/concepts/7/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "acceptance testing (user)" ;
+        vann:preferredNamespacePrefix  "concept7" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/7/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/7/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+:acceptance_testing  a         owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "acceptance testing (user)" ;
+        dcterms:identifier     7 ;
+        skos:definition        "процесс, позволяющий оценить, удовлетворяет ли реализация критериям приемлемости и дающий пользователю возможность вынести решение об этом"@ru , "proces til bestemmelse af, om en implementering opfylder acceptance-kriterier og sætter brugeren i stand til at afgøre, om implementeringen skal accepteres"@da , "processus déterminant si une implémentation satisfait un critère d&#39;acceptation et permet à l&#39;utilisateur de déterminer s&#39;il accepte l&#39;implémentation"@fr , "prosessi, jossa määritetään, täyttääkö toteutus hyväksyttävyyskriteerit ja jossa käyttäjälle annetaan mahdollisuus päättää toteutuksen hyväksymisestä"@fi , "(用户)决定一个实现是否满足验收准则以及用户能否决定接受该实现的过程。"@zh , "구현된 결과가 검수 기준을 만족하는지에 대한 결정 과정"@ko , "ある実装が利用者の受入基準を満たすかどうかを決定し，利用者がそれを受け入れるかどうかを判断するための試験。"@ja , "proceso de determinación de si una implementación satisface o no los criterios de aceptación y permite al usuario determinar si acepta o no la implementación"@es , "testning i syfte att bestämma om en implementering ska accepteras eller ej med hänsyn till användarnas behov och krav"@sv , "process of determining whether an implementation satisfies acceptance criteria and enables the user to determine whether to accept the implementation"@en , "عملية تحديد ما إذا كان التنفيذ يحقق معيار القبول ويمكن المستخدم من قبول التنفيذ ."@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          7 ;
+        skos:prefLabel         "test d&#39;acceptation (utilisateur)"@fr , "acceptance testing (user)"@en , "prueba de aceptación (usuario)"@es , "ujian penerimaan"@ms , "검수 시험(사용자)"@ko , "验收测试(用户)"@zh , "Akzeptanzprüfung"@de , "acceptance test (bruger)"@da , "受入試験"@ja , "hyväksymistestaus (käyttäjän)"@fi , "اختبار القبول (المستخدم)"@ar , "тестирование на приемлемость для пользователя"@ru , "acceptanstestning"@sv ;
+        lang:ara-note          "ملاحظة 2: هذا لا يشكل جزءا من اختبار المطابقة."@ar , "ملاحظة 1: هذا يشمل تخطيط وتنفيذ عدة أنواع من الاختبارات (مثل الاختبارات الوظيفية واختبارات الحجم واختبارات الأداء) التي تثبت أن التنفيذ يفي بجميع شروط ومتطلبات المستخدم"@ar ;
+        lang:dan-note          "Bemærk 1 til posten: Dette omfatter planlægning og gennemførelse af forskellige slags test (fx funktions-, volumen-, performancetest), som viser, at implementeringen opfylder brugerens krav."@da , "Bemærk 2 til posten: Dette indgår ikke i overensstemmelsestest."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note 1 to entry: This includes the planning and execution of several kinds of tests (e.g. functional, volume, performance tests) that demonstrate that the implementation satisfies the user requirements."@en , "Note 2 to entry: This is not a part of conformance testing "@en ;
+        lang:fin-note          "HUOM. 1: Hyväksymistestaukseen kuuluu monenlaisten käyttäjävaatimusten täyttymistä mittaavien testien (esim. toiminnallisuus-, kuormitus- ja suorituskykytestit) suunnittelua ja toteuttamista."@fi , "HUOM. 2: Hyväksymistestaus ei kuulu vaatimuksenmukaisuuden testaukseen."@fi ;
+        lang:fra-note          notes:NoteTransUnavail ;
+        lang:jpn-note          "備考 2： 受入試験は，適合性試験の一部ではない。"@ja , "備考 1： 受入試験には，実装が利用者の要求を満たしていることを立証するための，種々の試験（機能性試験，数量試験，性能試験など）の計画及び実行が含まれる。"@ja ;
+        lang:kor-note          "비고 2: 검수 시험은 적합성 시험의 일부가 아니다."@ko , "비고 1: 사용자 요구 사항에 맞게 구현되는지를 시연하는 여러 종류의 시험(기능 시험, 용량 시험, 성능 시험 등)을 기획하고 실행하는 것이 검수 시험에 포함된다."@ko ;
+        lang:rus-note          "Примечание 2: Не является частью тестирования на соответствие"@ru , "Примечание 1: Включает планирование и выполнение различных видов тестов, например, на функциональность, полноту, эффективность, которые показывают, удовлетворяет ли реализация требованиям пользователя"@ru ;
+        lang:spa-note          "Nota 1: Esto incluye la planificación y ejecución de varias clases de pruebas (por ejemplo funcionales, de volumen, de desempeño) que demues¬tran que la implementación satisface los requisitos de usuario."@es , "Nota 2: No es una parte de la prueba de conformidad."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注 1： 这个过程包括几种类型测试（例如：功能、容量、性能测试）的设计和执行，用来表明该实现是否满足的用户要求。"@zh , "注 2： 验收测试不作为一致性测试的组成部分。"@zh ;
+        geolexica:hasInfo      info:Info7 ;
+        geolexica:hasLDAPI     ldapi:ldapi7-jsonld , ldapi:ldapi7-rdfxml , ldapi:ldapi7-skosrdf , ldapi:ldapi7-json ;
+        geolexica:hasLangCode  lang:msa , lang:spa , lang:kor , lang:eng , lang:jpn , lang:dan , lang:zho , lang:ara , lang:fin , lang:rus , lang:fra , lang:deu , lang:swe ;
+        geolexica:hasOrigin    lang:finRegistry , lang:jpnRegistry , lang:rusRegistry , lang:zhoRegistry , lang:sweRegistry , lang:spaRegistry , lang:msaRegistry , lang:deuRegistry , lang:engRegistry , lang:danRegistry , lang:araRegistry , lang:fraRegistry , lang:korRegistry .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/7/
+###  https://isotc211.geolexica.org/api/info#Info7
+:Info7 rdf:type owl:NamedIndividual ,
+                geolexica:ConceptInfo ;
+       geolexica:hasSource sources:ISO-19105-2000 ;
+       geolexica:classification "preferred"@en ;
+       geolexica:date_accepted "2000-12-15"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
 
-:acceptance_testing rdf:type owl:NamedIndividual ,
-                             skos:Concept ;
-                    skos:inScheme geolexica:GeolexicaConceptScheme ;
-                    geolexica:hasInfo info:Info7 ;
-                    geolexica:hasLDAPI ldapi:ldapi7-json ,
-                                       ldapi:ldapi7-jsonld ,
-                                       ldapi:ldapi7-rdfxml ,
-                                       ldapi:ldapi7-skosrdf ;
-                    geolexica:hasLangCode lang:ara ,
-                                          lang:dan ,
-                                          lang:deu ,
-                                          lang:eng ,
-                                          lang:fin ,
-                                          lang:fra ,
-                                          lang:jpn ,
-                                          lang:kor ,
-                                          lang:msa ,
-                                          lang:rus ,
-                                          lang:spa ,
-                                          lang:swe ,
-                                          lang:zho ;
-                    dcterms:identifier 7 ;
-                    skos:notation 7 ;
-                    lang:ara-note "ملاحظة 1: هذا يشمل تخطيط وتنفيذ عدة أنواع من الاختبارات (مثل الاختبارات الوظيفية واختبارات الحجم واختبارات الأداء) التي تثبت أن التنفيذ يفي بجميع شروط ومتطلبات المستخدم"@ar ,
-                                  "ملاحظة 2: هذا لا يشكل جزءا من اختبار المطابقة."@ar ;
-                    lang:dan-note "Bemærk 1 til posten: Dette omfatter planlægning og gennemførelse af forskellige slags test (fx funktions-, volumen-, performancetest), som viser, at implementeringen opfylder brugerens krav."@da ,
-                                  "Bemærk 2 til posten: Dette indgår ikke i overensstemmelsestest."@da ;
-                    lang:eng-note "Note 1 to entry: This includes the planning and execution of several kinds of tests (e.g. functional, volume, performance tests) that demonstrate that the implementation satisfies the user requirements."@en ,
-                                  "Note 2 to entry: This is not a part of conformance testing "@en ;
-                    lang:fin-note "HUOM. 1: Hyväksymistestaukseen kuuluu monenlaisten käyttäjävaatimusten täyttymistä mittaavien testien (esim. toiminnallisuus-, kuormitus- ja suorituskykytestit) suunnittelua ja toteuttamista."@fi ,
-                                  "HUOM. 2: Hyväksymistestaus ei kuulu vaatimuksenmukaisuuden testaukseen."@fi ;
-                    lang:jpn-note "備考 1： 受入試験には，実装が利用者の要求を満たしていることを立証するための，種々の試験（機能性試験，数量試験，性能試験など）の計画及び実行が含まれる。"@ja ,
-                                  "備考 2： 受入試験は，適合性試験の一部ではない。"@ja ;
-                    lang:kor-note "비고 1: 사용자 요구 사항에 맞게 구현되는지를 시연하는 여러 종류의 시험(기능 시험, 용량 시험, 성능 시험 등)을 기획하고 실행하는 것이 검수 시험에 포함된다."@ko ,
-                                  "비고 2: 검수 시험은 적합성 시험의 일부가 아니다."@ko ;
-                    lang:rus-note "Примечание 1: Включает планирование и выполнение различных видов тестов, например, на функциональность, полноту, эффективность, которые показывают, удовлетворяет ли реализация требованиям пользователя"@ru ,
-                                  "Примечание 2: Не является частью тестирования на соответствие"@ru ;
-                    lang:spa-note "Nota 1: Esto incluye la planificación y ejecución de varias clases de pruebas (por ejemplo funcionales, de volumen, de desempeño) que demues¬tran que la implementación satisface los requisitos de usuario."@es ,
-                                  "Nota 2: No es una parte de la prueba de conformidad."@es ;
-                    lang:zho-note "注 1： 这个过程包括几种类型测试（例如：功能、容量、性能测试）的设计和执行，用来表明该实现是否满足的用户要求。"@zh ,
-                                  "注 2： 验收测试不作为一致性测试的组成部分。"@zh ;
-                    rdfs:label "acceptance testing (user)" ;
-                    skos:definition "(用户)决定一个实现是否满足验收准则以及用户能否决定接受该实现的过程。"@zh ,
-                                    "proces til bestemmelse af, om en implementering opfylder acceptance-kriterier og sætter brugeren i stand til at afgøre, om implementeringen skal accepteres"@da ,
-                                    "proceso de determinación de si una implementación satisface o no los criterios de aceptación y permite al usuario determinar si acepta o no la implementación"@es ,
-                                    "process of determining whether an implementation satisfies acceptance criteria and enables the user to determine whether to accept the implementation"@en ,
-                                    "processus déterminant si une implémentation satisfait un critère d&#39;acceptation et permet à l&#39;utilisateur de déterminer s&#39;il accepte l&#39;implémentation"@fr ,
-                                    "prosessi, jossa määritetään, täyttääkö toteutus hyväksyttävyyskriteerit ja jossa käyttäjälle annetaan mahdollisuus päättää toteutuksen hyväksymisestä"@fi ,
-                                    "testning i syfte att bestämma om en implementering ska accepteras eller ej med hänsyn till användarnas behov och krav"@sv ,
-                                    "процесс, позволяющий оценить, удовлетворяет ли реализация критериям приемлемости и дающий пользователю возможность вынести решение об этом"@ru ,
-                                    "عملية تحديد ما إذا كان التنفيذ يحقق معيار القبول ويمكن المستخدم من قبول التنفيذ ."@ar ,
-                                    "ある実装が利用者の受入基準を満たすかどうかを決定し，利用者がそれを受け入れるかどうかを判断するための試験。"@ja ,
-                                    "구현된 결과가 검수 기준을 만족하는지에 대한 결정 과정"@ko ;
-                    skos:prefLabel "Akzeptanzprüfung"@de ,
-                                   "acceptance test (bruger)"@da ,
-                                   "acceptance testing (user)"@en ,
-                                   "acceptanstestning"@sv ,
-                                   "hyväksymistestaus (käyttäjän)"@fi ,
-                                   "prueba de aceptación (usuario)"@es ,
-                                   "test d&#39;acceptation (utilisateur)"@fr ,
-                                   "ujian penerimaan"@ms ,
-                                   "тестирование на приемлемость для пользователя"@ru ,
-                                   "اختبار القبول (المستخدم)"@ar ,
-                                   "受入試験"@ja ,
-                                   "验收测试(用户)"@zh ,
-                                   "검수 시험(사용자)"@ko ;
-                    geolexica:origin lang:araRegistry ,
-                                     lang:danRegistry ,
-                                     lang:deuRegistry ,
-                                     lang:engRegistry ,
-                                     lang:finRegistry ,
-                                     lang:fraRegistry ,
-                                     lang:jpnRegistry ,
-                                     lang:korRegistry ,
-                                     lang:msaRegistry ,
-                                     lang:rusRegistry ,
-                                     lang:spaRegistry ,
-                                     lang:sweRegistry ,
-                                     lang:zhoRegistry ;
-                    lang:deu-note notes:DefnTransUnavail ,
-                                  notes:NoteTransUnavail ;
-                    lang:fra-note notes:NoteTransUnavail ;
-                    lang:swe-note notes:NoteTransUnavail .
+############################################################
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19105-2000
+sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Conformance and testing"@en ;
+                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19105:2000" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi7-json
+:ldapi7-json rdf:type owl:NamedIndividual ,
+                      geolexica:JSON ;
+             geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/7.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi7-jsonld
+:ldapi7-jsonld rdf:type owl:NamedIndividual ,
+                        geolexica:JSON-LD ;
+               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/7.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi7-rdfxml
+:ldapi7-rdfxml rdf:type owl:NamedIndividual ,
+                        geolexica:RDF-XML ;
+               geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/7.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi7-skosrdf
+:ldapi7-skosrdf rdf:type owl:NamedIndividual ,
+                         geolexica:SKOS-RDF ;
+                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/7.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

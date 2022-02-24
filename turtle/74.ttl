@@ -1,0 +1,192 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/74/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/74/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "conformance quality level" ;
+        vann:preferredNamespacePrefix  "concept74" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/74/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/74/> .
+
+###########################################################
+
+:conformance_quality_level
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "conformance quality level" ;
+        dcterms:identifier     74 ;
+        skos:definition        "valor umbral o conjunto de valores umbral, para los resultados de la calidad de datos, empleados para determinar lo bien que un conjunto de datos se adecua a los criterios expuestos en sus especificaciones de producto o en los requerimientos de usuario"@es , "пороговое значение или набор пороговых значений для  оценки качества данных, по которым определяют степень соответствия  спецификации продукта или потребностям пользователя"@ru , "valeur seuil ou ensemble de valeurs seuil devant être atteint par des résultats d&#39;évaluation de la qualité et utilisé pour déterminer dans quelle mesure un jeu de données respecte les critères exposés dans sa spécification de produit ou les exigences utilisateur"@fr , "ett eller flera tröskelvärden för datas kvalitet vilka används för att bedöma hur väl en datamängd uppfyller användarkraven eller kraven i dataproduktspecifikationen"@sv , "القيمة الحدية أو مجموعة القيم الحدية لنتائج فحص الجودة التي تستخدم لمعرفة مدى مطابقة مجموعة بيانات للمعايير المحددة لمواصفات إنتاجها أو لمتطلبات المستخدم"@ar , "tærskelværdi eller sæt af tærskelværdier for resultater af datakvalitet, som anvendes til at bestemme, hvor godt et datasæt opfylder kriterierne i produktspecifikationen eller brugerkravene"@da , "데이터셋이 제품 사양이나 사용자의 요구사항을 만족했는지를 결정하는데 사용되는 데이터 품질 결과에 대한 임계 값 또는 임계 값의 집합"@ko , "threshold value or set of threshold values for data quality results used to determine how well a dataset meets the criteria set forth in its product specification or user requirements"@en , "数据质量结果的一个或一组阀值，用于确定数据集符合产品规范所规定或用户要求的程度。"@zh , "kynnysarvo tai kynnysarvojen joukko, jonka avulla voidaan selvittää, kuinka hyvin tietoaineisto vastaa käyttäjän vaatimuksia tai tietotuotemäärittelyä"@fi , "Schwellenwert oder Reihe von Schwellenwerten zur Ermittlung der Qualität von Daten, mit denen bestimmt wird, wie gut ein Datensatz die in dessen Datenprodukt-Spezifikation oder den Benutzeranforderungen festgelegten Kriterien erfüllt"@de ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          74 ;
+        skos:prefLabel         "Qualitätskonformitätsschwellwert"@de , "nivel de calidad de conformidad"@es , "laatuvaatimustaso"@fi , "overensstemmelse, kvalitetsniveau af"@da , "적합성 품질 수준"@ko , "niveau de conformité"@fr , "conformance quality level"@en , "уровень соответствия качества"@ru , "مستوى جودة المطابقة"@ar , "målvärde för datakvalitet"@sv , "一致性质量级别"@zh ;
+        geolexica:hasInfo      info:Info74 ;
+        geolexica:hasLDAPI     ldapi:ldapi74-rdfxml , ldapi:ldapi74-skosrdf , ldapi:ldapi74-jsonld , ldapi:ldapi74-json ;
+        geolexica:hasLangCode  lang:zho , lang:ara , lang:eng , lang:fra , lang:swe , lang:spa , lang:deu , lang:jpn , lang:kor , lang:dan , lang:rus , lang:fin ;
+        geolexica:hasOrigin    lang:araRegistry , lang:danRegistry , lang:deuRegistry , lang:fraRegistry , lang:korRegistry , lang:msaRegistry , lang:zhoRegistry , lang:finRegistry , lang:engRegistry , lang:spaRegistry , lang:sweRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review74 .
+
+############################################################
+
+
+
+############################################################
+
+info:Info74 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19114-2003 ;
+        geolexica:clause "4.1" ;
+        geolexica:date_accepted "2002-12-01"^^xsd:date ;
+        geolexica:date_amended "2013-12-15"^^xsd:date ;
+       geolexica:entry_status "retired"@en .
+
+############################################################
+
+reviews:Review74 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2010-07-09"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of ISO 19157:2013"@en ;
+          geolexica:review_decision_notes "The entry has been superseded. An entry with a revised definition has been published in ISO 19157:2013"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19114-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Quality evaluation procedures"@en ;
+                dcterms:source "https://www.iso.org/standard/26019.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19114:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi74-json
+ldapi:ldapi74-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/74.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi74-jsonld
+ldapi:ldapi74-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/74.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi74-rdfxml
+ldapi:ldapi74-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/74.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi74-skosrdf
+ldapi:ldapi74-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/74.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

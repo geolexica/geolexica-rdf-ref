@@ -1,143 +1,193 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/31/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/31/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/31/> .
-
-<https://isotc211.geolexica.org/ld/concepts/31/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/31/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "calendar" ;
-        rdfs:label "calendar" ;
-        vann:preferredNamespacePrefix "concept31" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/31/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/concepts/31/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "calendar" ;
+        vann:preferredNamespacePrefix  "concept31" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/31/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/31/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+:calendar  a                   skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "calendar" ;
+        dcterms:identifier     31 ;
+        skos:altLabel          "버퍼"@ko ;
+        skos:definition        "离散的时间参照系，提供了定义分辨率为一日的时间位置的基础。"@zh , "نظام مرجعي زمني متميِّز يعتبر أساسا لتعريف الموضع الزمني بدرجة دقة تصل إلى يوم واحد"@ar , "sistema de referencia temporal característico, que constituye una base para definir la posición temporal con una resolución de un día"@es , "system av regler för hur tid indelas och mäts"@sv , "dyskretny czasowy system odniesienia będący podstawą do definiowania położenia w czasie z dokładnością do jednego dnia"@pl , "système de référence temporelle discret fournissant une base pour définir la position temporelle avec une résolution d&#39;un jour"@fr , "дискретная система отсчета времени, которая образует основу для определения времени с разрешением в одни сутки"@ru , "diskret tidsmæssigt referencesystem, der danner grundlag for at definere tidsmæssig position med en nøjagtighed på 1 døgn"@da , "일 단위 시간 위치의 정의 근거를 제시하는 불연속 시간 참조 체계"@ko , "diskreetti ajan vertausjärjestelmä, joka toimii pohjana temporaalisen sijainnin määrittelemiselle yhden vuorokauden tarkkuudella"@fi , "一日をその分解能とする時間位置を定義するための基礎となる離散的な時間参照系の一つ。"@ja , "senarai atau daftar hari bulan; takwim"@ms , "discrete temporal reference system that provides a basis for defining temporal position to a resolution of one day"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          31 ;
+        skos:prefLabel         "календарь"@ru , "kalender"@da , "달력"@ko , "calendar"@en , "暦"@ja , "Kalender"@de , "calendario"@es , "kalender tideräkning"@sv , "calendrier"@fr , "kalenteri"@fi , "kalendar"@ms , "日历"@zh , "تقويم"@ar , "kalendarz"@pl ;
+        lang:deu-note          notes:DefnTransUnavail ;
+        geolexica:hasInfo      info:Info31 ;
+        geolexica:hasLDAPI     ldapi:ldapi31-json , ldapi:ldapi31-jsonld , ldapi:ldapi31-skosrdf , ldapi:ldapi31-rdfxml ;
+        geolexica:hasLangCode  lang:rus , lang:msa , lang:swe , lang:zho , lang:dan , lang:kor , lang:jpn , lang:deu , lang:spa , lang:fin , lang:eng , lang:ara , lang:pol , lang:fra ;
+        geolexica:hasOrigin    lang:msaRegistry , lang:danRegistry , lang:zhoRegistry , lang:finRegistry , lang:spaRegistry , lang:polRegistry , lang:fraRegistry , lang:sweRegistry , lang:engRegistry , lang:araRegistry , lang:korRegistry , lang:deuRegistry , lang:rusRegistry , lang:jpnRegistry .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/31/
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
 
-:calendar rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:inScheme geolexica:GeolexicaConceptScheme ;
-          geolexica:hasInfo info:Info31 ;
-          geolexica:hasLDAPI ldapi:ldapi31-json ,
-                             ldapi:ldapi31-jsonld ,
-                             ldapi:ldapi31-rdfxml ,
-                             ldapi:ldapi31-skosrdf ;
-          geolexica:hasLangCode lang:ara ,
-                                lang:dan ,
-                                lang:deu ,
-                                lang:eng ,
-                                lang:fin ,
-                                lang:fra ,
-                                lang:jpn ,
-                                lang:kor ,
-                                lang:msa ,
-                                lang:pol ,
-                                lang:rus ,
-                                lang:spa ,
-                                lang:swe ,
-                                lang:zho ;
-          dcterms:identifier 31 ;
-          skos:notation 31 ;
-          rdfs:label "calendar" ;
-          skos:altLabel "버퍼"@ko ;
-          skos:definition "discrete temporal reference system that provides a basis for defining temporal position to a resolution of one day"@en ,
-                          "diskreetti ajan vertausjärjestelmä, joka toimii pohjana temporaalisen sijainnin määrittelemiselle yhden vuorokauden tarkkuudella"@fi ,
-                          "diskret tidsmæssigt referencesystem, der danner grundlag for at definere tidsmæssig position med en nøjagtighed på 1 døgn"@da ,
-                          "dyskretny czasowy system odniesienia będący podstawą do definiowania położenia w czasie z dokładnością do jednego dnia"@pl ,
-                          "senarai atau daftar hari bulan; takwim"@ms ,
-                          "sistema de referencia temporal característico, que constituye una base para definir la posición temporal con una resolución de un día"@es ,
-                          "system av regler för hur tid indelas och mäts"@sv ,
-                          "système de référence temporelle discret fournissant une base pour définir la position temporelle avec une résolution d&#39;un jour"@fr ,
-                          "дискретная система отсчета времени, которая образует основу для определения времени с разрешением в одни сутки"@ru ,
-                          "نظام مرجعي زمني متميِّز يعتبر أساسا لتعريف الموضع الزمني بدرجة دقة تصل إلى يوم واحد"@ar ,
-                          "一日をその分解能とする時間位置を定義するための基礎となる離散的な時間参照系の一つ。"@ja ,
-                          "离散的时间参照系，提供了定义分辨率为一日的时间位置的基础。"@zh ,
-                          "일 단위 시간 위치의 정의 근거를 제시하는 불연속 시간 참조 체계"@ko ;
-          skos:prefLabel "Kalender"@de ,
-                         "calendar"@en ,
-                         "calendario"@es ,
-                         "calendrier"@fr ,
-                         "kalendar"@ms ,
-                         "kalendarz"@pl ,
-                         "kalender"@da ,
-                         "kalender tideräkning"@sv ,
-                         "kalenteri"@fi ,
-                         "календарь"@ru ,
-                         "تقويم"@ar ,
-                         "日历"@zh ,
-                         "暦"@ja ,
-                         "달력"@ko ;
-          geolexica:origin lang:araRegistry ,
-                           lang:danRegistry ,
-                           lang:deuRegistry ,
-                           lang:engRegistry ,
-                           lang:finRegistry ,
-                           lang:fraRegistry ,
-                           lang:jpnRegistry ,
-                           lang:korRegistry ,
-                           lang:msaRegistry ,
-                           lang:polRegistry ,
-                           lang:rusRegistry ,
-                           lang:spaRegistry ,
-                           lang:sweRegistry ,
-                           lang:zhoRegistry ;
-          lang:deu-note notes:DefnTransUnavail .
+############################################################
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://isotc211.geolexica.org/api/info#Info32
+info:Info32 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19108-2002 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:date_accepted "2002-09-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19108-2002
+sources:ISO-19108-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26013.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19108:2002" .
+
+############################################################
+ 
+###  https://isotc211.geolexica.org/api/ldapi#ldapi31-json
+ldapi:ldapi31-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/31.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi31-jsonld
+ldapi:ldapi31-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/31.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi31-rdfxml
+ldapi:ldapi31-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/31.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi31-skosrdf
+ldapi:ldapi31-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/31.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

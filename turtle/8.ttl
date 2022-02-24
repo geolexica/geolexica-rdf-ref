@@ -1,148 +1,216 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/8/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/8/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/8/> .
-
-<https://isotc211.geolexica.org/ld/concepts/8/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/8/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "accuracy" ;
-        rdfs:label "accuracy" ;
-        vann:preferredNamespacePrefix "concept8" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/8/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/concepts/8/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "accuracy" ;
+        vann:preferredNamespacePrefix  "concept8" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/8/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/8/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+:accuracy  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "accuracy" ;
+        dcterms:identifier     8 ;
+        skos:definition        "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"@da , "品質評価の試験結果得られた値と参照値との近さ。"@ja , "closeness of agreement between a test result and the accepted reference value"@en , "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"@ar , "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"@fi , "justesse de l&#39;accord entre un résultat de test et la valeur de référence"@fr , "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"@ms , "시험 결과와 기준 값 간의 일치도를 표시하는 척도"@ko , "测试结果与公认的参考值间的接近程度。"@zh , "близость результата проверки к принятому нормальному значению величины"@ru , "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"@sv , "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          8 ;
+        skos:prefLabel         "accuracy"@en , "noggrannhet"@sv , "正確度"@ja , "exactitude"@fr , "ulkoinen tarkkuus"@fi , "准确度"@zh , "ketepatan"@ms , "정확도"@ko , "точность"@ru , "الدقة"@ar , "exactitud"@es , "nøjagtighed"@da ;
+        lang:ara-note          "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
+        lang:dan-note          "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da ;
+        lang:eng-note          "A test result can be observations or measurements."@en ;
+        lang:fin-note          "HUOM.: Testitulos voi olla havainto tai mittaus."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:jpn-note          "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja , "備考 2： 参照値は，論議領域を実現するものとして採択された値である。"@ja ;
+        lang:kor-note          "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru ;
+        lang:spa-note          "Nota: Un resultado pueden ser observaciones o medidas"@es ;
+        lang:swe-note          "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv ;
+        lang:zho-note          "注： 测试结果可以是观测结果或量测结果。"@zh ;
+        geolexica:hasInfo      info:Info8 ;
+        geolexica:hasLDAPI     ldapi:ldapi8-jsonld , ldapi:ldapi8-rdfxml , ldapi:ldapi8-json , ldapi:ldapi8-skosrdf ;
+        geolexica:hasLangCode  lang:fin , lang:spa , lang:ara , lang:swe , lang:rus , lang:dan , lang:msa , lang:jpn , lang:zho , lang:eng , lang:kor , lang:fra ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:zhoRegistry , lang:sweRegistry , lang:danRegistry , lang:engRegistry , lang:spaRegistry , lang:rusRegistry , lang:korRegistry , lang:msaRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry ;
+        geolexica:hasReview    reviews:Review8 .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/8/
+###  https://isotc211.geolexica.org/api/info#Info8
+info:Info8 rdf:type owl:NamedIndividual ,
+                geolexica:ConceptInfo ;
+       geolexica:hasSource sources:ISO-3534-1-1993 ;
+       geolexica:date_accepted "2002-12-01"^^xsd:date ;
+       geolexica:date_amended "2008-07-15"^^xsd:date ;
+        geolexica:entry_status "superseded"@en .
 
-:accuracy rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:inScheme geolexica:GeolexicaConceptScheme ;
-          geolexica:hasInfo info:Info8 ;
-          geolexica:hasLDAPI ldapi:ldapi8-json ,
-                             ldapi:ldapi8-jsonld ,
-                             ldapi:ldapi8-rdfxml ,
-                             ldapi:ldapi8-skosrdf ;
-          geolexica:hasLangCode lang:ara ,
-                                lang:dan ,
-                                lang:eng ,
-                                lang:fin ,
-                                lang:fra ,
-                                lang:jpn ,
-                                lang:kor ,
-                                lang:msa ,
-                                lang:rus ,
-                                lang:spa ,
-                                lang:swe ,
-                                lang:zho ;
-          geolexica:hasReview reviews:Review8 ;
-          dcterms:identifier 8 ;
-          skos:notation 8 ;
-          lang:ara-note "ملاحظة: نتيجة الاختبار يمكن أن تكون عملية مراقبة ورصد أو عملية قياس"@ar ;
-          lang:dan-note "Bemærk til posten: Et testresultat kan være observationer eller målinger."@da ;
-          lang:eng-note "A test result can be observations or measurements."@en ;
-          lang:fin-note "HUOM.: Testitulos voi olla havainto tai mittaus."@fi ;
-          lang:jpn-note "備考 1： 試験結果は，観測値又は測定値として得ることができる。"@ja ,
-                        "備考 2： 参照値は，論議領域を実現するものとして採択された値である。"@ja ;
-          lang:kor-note "비고: 시험 결과는 관측 값 또는 측정 값이 될 수 있다."@ko ;
-          lang:rus-note "Примечание: Результат проверки может быть получен путем наблюдения или измерения"@ru ;
-          lang:spa-note "Nota: Un resultado pueden ser observaciones o medidas"@es ;
-          lang:swe-note "Anm. till termpost: Ibland talar man hellre om onoggrannhet istället för noggrannhet, om medelfelet ökar, ökar också onoggrannheten."@sv ;
-          lang:zho-note "注： 测试结果可以是观测结果或量测结果。"@zh ;
-          rdfs:label "accuracy" ;
-          skos:definition "Nilai pengukuran yang sama atau menghampiri nilai kiraan atau jangkaan"@ms ,
-                          "closeness of agreement between a test result and the accepted reference value"@en ,
-                          "grad af overensstemmelse mellem et testresultat og den accepterede referenceværdi"@da ,
-                          "graden av överensstämmelse mellan ett observerat, beräknat eller skattat värde och ett värde som betraktas som sant"@sv ,
-                          "grado de acuerdo entre el resultado de una prueba y el valor de referencia aceptado"@es ,
-                          "justesse de l&#39;accord entre un résultat de test et la valeur de référence"@fr ,
-                          "testituloksen ja hyväksytyn viitearvon yhtäpitävyys"@fi ,
-                          "близость результата проверки к принятому нормальному значению величины"@ru ,
-                          "درجة اقتراب نتيجة الاختبار من القيمة المرجعية المعتمدة"@ar ,
-                          "品質評価の試験結果得られた値と参照値との近さ。"@ja ,
-                          "测试结果与公认的参考值间的接近程度。"@zh ,
-                          "시험 결과와 기준 값 간의 일치도를 표시하는 척도"@ko ;
-          skos:prefLabel "accuracy"@en ,
-                         "exactitud"@es ,
-                         "exactitude"@fr ,
-                         "ketepatan"@ms ,
-                         "noggrannhet"@sv ,
-                         "nøjagtighed"@da ,
-                         "ulkoinen tarkkuus"@fi ,
-                         "точность"@ru ,
-                         "الدقة"@ar ,
-                         "准确度"@zh ,
-                         "正確度"@ja ,
-                         "정확도"@ko ;
-          geolexica:origin lang:araRegistry ,
-                           lang:danRegistry ,
-                           lang:engRegistry ,
-                           lang:finRegistry ,
-                           lang:fraRegistry ,
-                           lang:jpnRegistry ,
-                           lang:korRegistry ,
-                           lang:msaRegistry ,
-                           lang:rusRegistry ,
-                           lang:spaRegistry ,
-                           lang:sweRegistry ,
-                           lang:zhoRegistry ;
-          lang:fra-note notes:NoteTransDiff ;
-          lang:msa-note notes:NoteTransUnavail .
+############################################################
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://isotc211.geolexica.org/api/reviews#Review8
+reviews:Review8 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptReview ;
+         geolexica:review_date "2007-12-07"^^xsd:date ;
+         geolexica:review_decision " " ;
+         geolexica:review_decision_event "Result of FDIS Ballot for ISO 6709:2008"@en ;
+         geolexica:review_decision_notes "Definition originally taken from ISO 3534-1 was later superseded by definition in ISO 3534-2:2006"@en ;
+         geolexica:review_status " " .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-3534-1-1993
+sources:ISO-3534-1-1993 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"@en ;
+                 dcterms:source "https://www.iso.org/standard/8919.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 3534-1:1993" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual ,
+                        geolexica:NoteSourceDiff ;
+               rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi8-json
+ldapi:ldapi8-json rdf:type owl:NamedIndividual ,
+                      geolexica:JSON ;
+             geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/8.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi8-jsonld
+ldapi:ldapi8-jsonld rdf:type owl:NamedIndividual ,
+                        geolexica:JSON-LD ;
+               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/8.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi8-rdfxml
+ldapi:ldapi8-rdfxml rdf:type owl:NamedIndividual ,
+                        geolexica:RDF-XML ;
+               geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/8.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi8-skosrdf
+ldapi:ldapi8-skosrdf rdf:type owl:NamedIndividual ,
+                         geolexica:SKOS-RDF ;
+                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/8.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

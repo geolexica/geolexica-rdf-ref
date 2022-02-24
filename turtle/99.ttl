@@ -1,0 +1,210 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/99/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/99/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "coverage" ;
+        vann:preferredNamespacePrefix  "concept99" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/99/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/99/> .
+
+###########################################################
+
+:coverage  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "coverage" ;
+        dcterms:identifier     99 ;
+        skos:definition        "Feature, das in Form einer Funktion für jeden räumlichen, zeitlichen oder raum-zeitlichen Punkt innerhalb seines Definitionsbereichs einen Wertevektor liefert"@de , "objekttyp vars objekt definierar ett rumslig, temporal eller rumstemporal domän inom vilket objektets uppgifter kan variera med positionen"@sv , "objeto geográfico que actúa como una función que devuelve valores de su rango para cualquier posición directa dentro de su dominio  espacial, temporal o espacio-temporal"@es , "在空间域、时间域或时空域中，为任意直接位置充当函数，从其值域中返回数值的要素。"@zh , "obiekt , który działa jak funkcja zwracająca wartości ze swojego zakresu dla każdego położenia bezpośredniego należącego do jej dziedziny przestrzennej, czasowej lub czasoprzestrzennej"@pl , "feature, der virker som en funktion, som returnerer værdier fra sin værdimængde, for enhver direkte position inden for dens rumlige, temporale eller rumlig-temporale domæne"@da , "модель объекта, представляющая собой функцию, возвращающую значения из диапазона допустимых значений для каждой точки в пространственной, временнóй или пространственно-временнóй области определения"@ru , "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain"@en , "시공간 영역(공간, 시간, 시공간) 내에서 함수처럼 그 범위 내의 특정 직접 위치에 대한 값을 반환하는 피처"@ko , "sesuatu yg meliputi (menyeliputi, memenuhi, menutupi) sesuatu"@ms , "معلم يعمل كوظيفة لإعادة القيم من نطاق تفاوته بالنسبة لأي موقع مباشر يقع ضمن نطاقه المكاني أو نطاقه الزماني أو نطاقه المكاني-الزماني"@ar , "alueen kattavana jatkumona esitetty paikkatietokohde"@fi , "entité agissant comme une fonction retournant des valeurs de sa gamme de valeurs pour toute position directe dans son domaine spatial, temporel ou spatiotemporel"@fr ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          99 ;
+        skos:prefLabel         "couverture"@fr , "покрытие"@ru , "pokrycie"@pl , "التغطية"@ar , "coverage"@en , "coverage"@da , "domänobjekttyp"@sv , "liputan"@ms , "cobertura"@es , "Coverage"@de , "paikkatietojatkumo"@fi , "覆盖"@zh , "커버리지"@ko ;
+        lang:ara-note          "ملاحظة: وبعبارة أخرى التغطية هي عبارة عن معلم له قيم متعددة لكل نوع من الصفات, بحيث أن كل موقع مباشر يقع ضمن التمثيل الهندسي للمعلم تكون له قيمة واحدة لكل نوع من الصفات."@ar ;
+        lang:dan-note          "Bemærk til posten: Med andre ord er en coverage en feature, som har flere mulige værdier for hver attributtype, hvor hver direkte position i den geometriske repræsentation af featuren har én værdi for hver attributtype."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: In other words, a coverage is a feature that has multiple values for each attribute type, where each direct position within the geometric representation of the feature has a single value for each attribute type."@en ;
+        lang:fin-note          "HUOM.: Paikkatietojatkumo on siis kohde, jolla on kullekin attribuuttityypille useita arvoja; kohteen geometriailmentymän sisällä olevassa koordinaattipisteessä kullakin attribuuttityypillä on puolestaan vain yksi arvo."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 커버리지는 다른 말로 각각의 속성 유형에 대한 다양한 값을 갖는 피처이며, 피처의 기하학적 표현 내에서 각각의 직접 위치는 각 속성 유형별로 하나의 값을 갖는다."@ko ;
+        lang:msa-note          notes:ExTransUnavail , notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Innymi słowy, pokrycie jest obiektem, który ma wiele wartości dla każdego typu atrybutu, przy czym dla każdego bezpośredniego położenia w ramach geometrycznej reprezentacji tego obiektu ma po jednej wartości dla każdego typu atrybutu."@pl ;
+        lang:rus-note          "Примечание: Иными словами, покрытие является пространственным объектом, который имеет многочисленные значения для каждого типа атрибута, где каждая точка внутри геометрического представления пространственного объекта имеет одно и то же значение для каждого типа атрибута"@ru ;
+        lang:spa-note          "Nota: En otras palabras, una cobertura es un objeto geográfico que tienen valores múltiples para cada tipo de atributo, donde cada posición directa de la representación geométrica del objeto geográfico tiene un valor único para cada tipo de atributo."@es ;
+        lang:swe-note          "Anm. till termpost: Termen \"coverage\" översätts ofta med \"yttäckande representation\". Det begrepp som används i standarden (ISO 19123) avser dock såväl linjetäckande, yttäckande som volymtäckande och kan vara 2D (platt på marken) eller 3D samt ha med tidsdimensionen. till termpost: Rasterdata kan beskrivas av en domänobjekttyp. Anm. 3 till termpost: En instans av en domänobjekttyp är ett domänobjekt."@sv ;
+        lang:swe-note          notes:ExTransUnavail ;
+        lang:zho-note          "注： 换句话说，一个数据覆盖是一个要素，这个要素的每个属性类型有多个值，而在要素的几何表达的每个直接位置，每个属性类型有单独的一个值。"@zh ;
+        geolexica:examples     "Пример ами являются растровое изображение, полигональный оверлей или цифровая матрица высот"@ru , "示例 实例包括栅格影像、多边形覆盖或数字高程矩阵。"@zh , "PRZYKŁAD Obraz rastrowy, pokrycie wielobokowe lub macierz numerycznego modelu terenu."@pl , "EKSEMPEL Eksempler er fx et rasterbillede, polygonoverlay eller digital højdematrix"@da , "ESIM. Rasterikuva, monikulmiopeite ja digitaalinen korkeusruudukko."@fi , "مثال الأمثلة تشمل صورة متجهات , أو شفافة مضلعات أو مصفوفة ارتفاعات رقمية."@ar , "EXAMPLE Examples include a raster image, polygon overlay, or digital elevation matrix."@en , ""@ja , "보기 래스터 이미지, 다각형 중첩, DEM"@ko , "EJEMPLO Los ejemplos incluyen una imagen ráster, una capa de polígonos o una matriz digital de elevaciones."@es ;
+        geolexica:hasInfo      info:Info99 ;
+        geolexica:hasLDAPI     ldapi:ldapi99-skosrdf , ldapi:ldapi99-json , ldapi:ldapi99-jsonld , ldapi:ldapi99-rdfxml ;
+        geolexica:hasLangCode  lang:dan , lang:deu , lang:zho , lang:msa , lang:kor , lang:spa , lang:fra , lang:pol , lang:swe , lang:eng , lang:fin , lang:rus , lang:ara ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:zhoRegistry , lang:danRegistry , lang:deuRegistry , lang:msaRegistry , lang:rusRegistry , lang:polRegistry , lang:fraRegistry , lang:finRegistry , lang:spaRegistry , lang:korRegistry , lang:araRegistry , lang:engRegistry .
+    
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+
+############################################################
+
+info:Info99 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19123-2005 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:date_accepted "2005-08-15"^^xsd:date ;
+        geolexica:entry_status "valid"@en .
+
+############################################################
+
+
+
+############################################################
+
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi99-json
+ldapi:ldapi99-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/99.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi99-jsonld
+ldapi:ldapi99-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/99.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi99-rdfxml
+ldapi:ldapi99-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/99.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi99-skosrdf
+ldapi:ldapi99-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/99.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

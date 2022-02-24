@@ -1,152 +1,219 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/13/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/13/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/13/> .
-
-<https://isotc211.geolexica.org/ld/concepts/13/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/13/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "annotation" ;
-        rdfs:label "annotation" ;
-        vann:preferredNamespacePrefix "concept13" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/13/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/concepts/13/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "annotation" ;
+        vann:preferredNamespacePrefix  "concept13" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/13/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/13/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+###  https://isotc211.geolexica.org/api/concepts#annotation
+:annotation  a                 owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "annotation" ;
+        dcterms:identifier     13 ;
+        skos:definition        "以说明为目的，在诠释材料上作的标记。"@zh , "jakiekolwiek oznaczenie na materiale ilustracyjnym, stosowane w celach wyjaśniających"@pl , "any marking on illustrative material for the purpose of clarification"@en , "любые пояснительные метки, размещаемые на иллюстративном материале"@ru , "note explicative sur un objet illustratif dans un but de clarification"@fr , "cualquier marca hecha en las ilustraciones con el objetivo de clarificar"@es , "markering på illustrativt materiale med henblik på tydeliggørelse"@da , "kort kommentar eller anteckning"@sv , "mikä hyvänsä selvennykseksi tarkoitettu merkintä havainnollistavassa aineistossa"@fi , "jede Kennzeichnung für illustrierendes Material zur Klarstellung"@de , "명시를 목적으로 해설 자료에 넣는 표기"@ko , "nota atau catatan (sbg penerangan, komen dsb) yg ditambahkan pd teks penulisan sastera atau bahan bertulis yg lain."@ms , "أي كتابة تكتب على مادة توضيحية بقصد التفسير والإيضاح"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          13 ;
+        skos:prefLabel         "annotation"@sv , "annotation"@fr , "annotation"@en , "annotation"@da , "주석"@ko , "注记"@zh , "viitemerkintä"@fi , "حاشية"@ar , "Anotasi"@ms , "аннотация"@ru , "anotación"@es , "adnotacja"@pl , "Anmerkung"@de ;
+        lang:ara-note          "ملاحظة: الأرقام والحروف والرموز والعلامات كلها أمثلة للحاشية"@ar ;
+        lang:dan-note          "Bemærk til posten: Tal, bogstaver, symboler og signaturer er eksempler på annotation."@da ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: Numbers, letters, symbols, and signs are examples of annotation"@en ;
+        lang:fin-note          "HUOM.: Viitemerkintöjä ovat esimerkiksi numerot, kirjaimet, symbolit ja merkit."@fi ;
+        lang:kor-note          "비고: 숫자, 문자, 기호 및 부호 등"@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Przykładami adnotacji są liczby, litery, symbole i znak."@pl ;
+        lang:rus-note          "Примечание: Примерами аннотаций служат цифры, буквы, обозначения и подписи"@ru ;
+        lang:rus-note          notes:NoteTransDiff ;
+        lang:spa-note          "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 数字,字母,符号和标记是注记的例子。"@zh ;
+        geolexica:hasInfo      info:Info13 ;
+        geolexica:hasLDAPI     ldapi:ldapi13-jsonld , ldapi:ldapi13-skosrdf , ldapi:ldapi13-json , ldapi:ldapi13-rdfxml ;
+        geolexica:hasLangCode  lang:rus , lang:kor , lang:spa , lang:ara , lang:zho , lang:deu , lang:pol , lang:fra , lang:msa , lang:eng , lang:swe , lang:dan , lang:fin ;
+        geolexica:hasOrigin    lang:engRegistry , lang:danRegistry , lang:msaRegistry , lang:finRegistry , lang:korRegistry , lang:fraRegistry , lang:polRegistry , lang:sweRegistry , lang:deuRegistry , lang:zhoRegistry , lang:spaRegistry , lang:rusRegistry , lang:araRegistry ;
+        geolexica:hasReview    reviews:Review13 .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/13/
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
 
-:annotation rdf:type owl:NamedIndividual ,
-                     skos:Concept ;
-            skos:inScheme geolexica:GeolexicaConceptScheme ;
-            geolexica:hasInfo info:Info13 ;
-            geolexica:hasLDAPI ldapi:ldapi13-json ,
-                               ldapi:ldapi13-jsonld ,
-                               ldapi:ldapi13-rdfxml ,
-                               ldapi:ldapi13-skosrdf ;
-            geolexica:hasLangCode lang:ara ,
-                                  lang:dan ,
-                                  lang:deu ,
-                                  lang:eng ,
-                                  lang:fin ,
-                                  lang:fra ,
-                                  lang:kor ,
-                                  lang:msa ,
-                                  lang:pol ,
-                                  lang:rus ,
-                                  lang:spa ,
-                                  lang:swe ,
-                                  lang:zho ;
-            geolexica:hasReview reviews:Review13 ;
-            dcterms:identifier 13 ;
-            skos:notation 13 ;
-            lang:ara-note "ملاحظة: الأرقام والحروف والرموز والعلامات كلها أمثلة للحاشية"@ar ;
-            lang:dan-note "Bemærk til posten: Tal, bogstaver, symboler og signaturer er eksempler på annotation."@da ;
-            lang:eng-note "Note to entry: Numbers, letters, symbols, and signs are examples of annotation"@en ;
-            lang:fin-note "HUOM.: Viitemerkintöjä ovat esimerkiksi numerot, kirjaimet, symbolit ja merkit."@fi ;
-            lang:kor-note "비고: 숫자, 문자, 기호 및 부호 등"@ko ;
-            lang:pol-note "UWAGA: Przykładami adnotacji są liczby, litery, symbole i znak."@po ;
-            lang:rus-note "Примечание: Примерами аннотаций служат цифры, буквы, обозначения и подписи"@ru ;
-            lang:spa-note "Nota: son ejemplos de anotaciones los números, letras, símbolos y signos."@es ;
-            lang:zho-note "注： 数字,字母,符号和标记是注记的例子。"@zh ;
-            rdfs:label "annotation" ;
-            skos:definition "any marking on illustrative material for the purpose of clarification"@en ,
-                            "cualquier marca hecha en las ilustraciones con el objetivo de clarificar"@es ,
-                            "jakiekolwiek oznaczenie na materiale ilustracyjnym, stosowane w celach wyjaśniających"@pl ,
-                            "jede Kennzeichnung für illustrierendes Material zur Klarstellung"@de ,
-                            "kort kommentar eller anteckning"@sv ,
-                            "markering på illustrativt materiale med henblik på tydeliggørelse"@da ,
-                            "mikä hyvänsä selvennykseksi tarkoitettu merkintä havainnollistavassa aineistossa"@fi ,
-                            "nota atau catatan (sbg penerangan, komen dsb) yg ditambahkan pd teks penulisan sastera atau bahan bertulis yg lain."@ms ,
-                            "note explicative sur un objet illustratif dans un but de clarification"@fr ,
-                            "любые пояснительные метки, размещаемые на иллюстративном материале"@ru ,
-                            "أي كتابة تكتب على مادة توضيحية بقصد التفسير والإيضاح"@ar ,
-                            "以说明为目的，在诠释材料上作的标记。"@zh ,
-                            "명시를 목적으로 해설 자료에 넣는 표기"@ko ;
-            skos:prefLabel "Anmerkung"@de ,
-                           "Anotasi"@ms ,
-                           "adnotacja"@pl ,
-                           "annotation"@da ,
-                           "annotation"@en ,
-                           "annotation"@fr ,
-                           "annotation"@sv ,
-                           "anotación"@es ,
-                           "viitemerkintä"@fi ,
-                           "аннотация"@ru ,
-                           "حاشية"@ar ,
-                           "注记"@zh ,
-                           "주석"@ko ;
-            geolexica:origin lang:araRegistry ,
-                             lang:danRegistry ,
-                             lang:deuRegistry ,
-                             lang:engRegistry ,
-                             lang:finRegistry ,
-                             lang:fraRegistry ,
-                             lang:korRegistry ,
-                             lang:msaRegistry ,
-                             lang:polRegistry ,
-                             lang:rusRegistry ,
-                             lang:spaRegistry ,
-                             lang:sweRegistry ,
-                             lang:zhoRegistry ;
-            lang:deu-note notes:NoteTransUnavail ;
-            lang:msa-note notes:NoteTransUnavail ;
-            lang:rus-note notes:NoteTransDiff ;
-            lang:swe-note notes:NoteTransUnavail .
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual ,
+                        geolexica:NoteSourceDiff ;
+               rdfs:label "This translated term may not be from the same source as the normative term."@en .
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+############################################################
+
+###  https://isotc211.geolexica.org/api/info#Info13
+info:Info13 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19117-2012 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "4.1" ;
+        geolexica:date_accepted "2005-06-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/reviews#Review13
+reviews:Review13 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2009-11-25"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of ISO 19117:2012"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from ISO 19117:2005 to ISO 19117:2012. Lineage source added as ISO 19117:2005."@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19117-2012
+sources:ISO-19117-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Portrayal"@en ;
+                dcterms:source "https://www.iso.org/standard/46226.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19117:2012" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi13-json
+ldapi:ldapi13-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/13.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi13-jsonld
+ldapi:ldapi13-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/13.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi13-rdfxml
+ldapi:ldapi13-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/13.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi13-skosrdf
+ldapi:ldapi13-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/13.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,207 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/103/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/103/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "cycle (geometry)" ;
+        vann:preferredNamespacePrefix  "concept103" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/103/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/103/> .
+
+###########################################################
+
+:cycle_geometry  a             skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "cycle (geometry)" ;
+        dcterms:identifier     103 ;
+        skos:definition        "(geometria) obiekt przestrzenny bez granicy"@pl , "rumsligt objekt med ändlig utsträckning men utan avgränsning"@sv , "пространственный объект, не имеющий границы"@ru , "objet spatial sans frontière"@fr , "(几何学)没有边界的空间对象。"@zh , "spatial object without a boundary"@en , "sijaintiobjekti, jolla ei ole rajausta"@fi , "경계가 없는 공간 객체"@ko , "كيان مكاني بلا حدود"@ar , "om rumligt objekt uden en grænse"@da , "境界をもたない空間オブジェクト。"@ja , "objeto espacial sin frontera"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          103 ;
+        skos:prefLabel         "ciclo (geometría)"@es , "Ring (Geometrie)"@de , "cykl"@pl , "輪体"@ja , "圈"@zh , "цикл (геометрия)"@ru , "cykliskt objekt"@sv , "silmukka (geometria)"@fi , "دورة (هندسة)"@ar , "cycle(geometry)"@en , "순환(기하)"@ko , "lukket(geometri)"@da , "cycle (géométrie)"@fr ;
+        lang:ara-note          "ملاحظة: تستخدم الحلقات لوصف مكونات الحدود الخارجية (انظر هيكل واجهة shell وطوق ring ). والحلقة ليس لها حد خارجي لأنها تنغلق على ذاتها , لكنها محددة (أي أنها ليست ممتدة امتدادا لامتناهيا). والدائرة أو الكرة , مثلاً , ليس لها حد خارجي ولكنها محددة كذلك."@ar ;
+        lang:dan-note          "Bemærk til posten: Egenskaben lukket anvendes til at beskrive grænsekomponenter (se rand). Når et objekt er lukket, har det ingen grænse, da det afslutter sig selv, men det er afgrænset (dvs. det har ikke uendelig udbredelse). En cirkel eller kugle har eksempelvis ingen grænse, men er afgrænset."@da ;
+        lang:deu-note          ""@de ;
+        lang:deu-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note to entry: Cycles are used to describe boundary components (see shell, ring). A cycle has no boundary because it closes on itself, but it is bounded (i.e., it does not have infinite extent). A circle or a sphere, for example, has no boundary, but is bounded."@en ;
+        lang:fin-note          "HUOM.: Silmukoita käytetään rajauskomponenttien (katso käsitteet kuori ja piiri) kuvaamiseen. Silmukalla ei ole rajausta, sillä se sulkeutuu itseensä, mutta se on rajattu (eli sen laajuus ei ole ääretön). Esimerkiksi ympyrällä tai pallolla ei ole rajausta, mutta ne ovat rajattuja."@fi ;
+        lang:jpn-note          "備考： 輪体は境界の構成要素［殻(shell)及び輪(ring)を参照］を記述するために使用する。輪体は，それ自身の上で閉じているため境界をもたないが，有界である（すなわち，範囲は無限ではない）。例えば，円周又は球面は，境界をもたないが有界である。"@ja ;
+        lang:kor-note          "비고: 순환은 경계 컴포넌트(외면, 링)의 기술에 사용된다. 순환은 스스로 완결되어 있지만 묶여 있기 때문에 경계가 없다. 예를 들어 원이나 구는 경계가 없지만 묶여 있다."@ko ;
+        lang:pol-note          "UWAGA: Cykle są wykorzystywane do opisu składników granic (patrz powłoka, pierścień). Cykl nie ma granicy, ponieważ zamyka się sam na sobie, jest jednak ograniczony (to znaczy nie ma nieskończonego zasięgu). Na przykład, okrąg i sfera nie mają granicy, lecz są ograniczone."@pl ;
+        lang:rus-note          "Примечание: Циклы используют для описания граничных компонентов (см.: оболочка, кольцо). Цикл не имеет границы, поскольку замыкается на себе, тем не менее, он ограничен (т.е. не бесконечен в пространстве). Например, окружность или сфера не имеют границ, но они ограничены"@ru ;
+        lang:spa-note          "Nota: Los ciclos se usan para describir componentes de los límites (ver definición de armazón, anillo). Un ciclo no tiene límite porque cierra consigo mismo, aunque está acotado (es decir, no tiene una extensión infinita). Un círculo o una esfera, por ejemplo, no tienen límite, pero están acotados."@es ;
+        lang:swe-note          "Anm. till termpost: Begränsningsytan hos ett klot är ett cykliskt objekt."@sv ;
+        lang:zho-note          "注： 圈用来描述边界组成部分（参见壳、环）。圈没有边界，因为它自身闭合，但它是有界的（即它不具有无限的外延）。例如，圆环或球，没有边界，但却是有界的。"@zh ;
+        geolexica:hasInfo      info:Info103 ;
+        geolexica:hasLDAPI     ldapi:ldapi103-rdfxml , ldapi:ldapi103-json , ldapi:ldapi103-jsonld , ldapi:ldapi103-skosrdf ;
+        geolexica:hasLangCode  lang:kor , lang:rus , lang:eng , lang:dan , lang:ara , lang:swe , lang:zho , lang:pol , lang:fin , lang:spa , lang:fra , lang:jpn , lang:deu ;
+        geolexica:hasOrigin    lang:danRegistry , lang:rusRegistry , lang:zhoRegistry , lang:engRegistry , lang:polRegistry , lang:araRegistry , lang:sweRegistry , lang:fraRegistry , lang:korRegistry , lang:finRegistry , lang:spaRegistry , lang:jpnRegistry , lang:deuRegistry ;
+        geolexica:hasReview    reviews:Review103 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info103 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01 "^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
+
+############################################################
+
+reviews:Review103 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of documentISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi103-json
+ldapi:ldapi103-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/103.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi103-jsonld
+ldapi:ldapi103-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/103.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi103-rdfxml
+ldapi:ldapi103-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/103.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi103-skosrdf
+ldapi:ldapi103-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/97.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

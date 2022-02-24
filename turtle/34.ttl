@@ -1,0 +1,212 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/34/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/34/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "candidate route" ;
+        vann:preferredNamespacePrefix  "concept34" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/34/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/34/> .
+
+###########################################################
+
+:candidate_route  a            owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "candidate route" ;
+        dcterms:identifier     34 ;
+        skos:definition        "any route that satisfies all constraints of the routing request with the possible exception of optimality of the cost function"@en , "除了成本函数最优路径之外，还包含任何可满足路径请求的所有限制条件的路径。"@zh , "любой из маршрутов, удовлетворяющий всем ограничениям из запроса, за исключением, возможно, требования на минимум функции  стоимости"@ru , "itinéraire satisfaisant toutes les contraintes d&#39;une requête de routage à l&#39;exception possible de l&#39;optimalité de la fonction de coût"@fr , "varje rutt som uppfyller kraven i ruttförfrågan, eventuellt frånsett kostnadsoptimering"@sv , "cualquier ruta que satisfaga todas las restricciones de una petición de enrutamiento con la posible excepción de la optimización de la función de costo"@es , "أي مسلك يكون مستوفيا لجميع القيود المشمولة في طلب تحديد مسلك أو مسار مع احتمال استثناء أفضلية دالة التكلفة"@ar , "reitti, joka täyttää kaikki reitinhakupyynnön ehdot mahdollisesti lukuunottamatta kustannusten optimointitoimintoa"@fi , "enhver rute, der opfylder alle betingelser i ruteforespørgslen, dog evt. med undtagelse af optimering af omkostningsfunktionen"@da , "라우팅 요청의 제약 조건에 대하여 최적화된 비용 함수를 만족시키는 경로"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          34 ;
+        skos:prefLabel         "ruta candidata"@es , "reittiehdokas"@fi , "후보 경로"@ko , "候选路径"@zh , "ruteforslag"@da , "itinéraire candidat"@fr , "mögliche Route"@de , "вариант маршрута"@ru , "مسلك مرشح"@ar , "candidate route"@en , "ruttkandidat"@sv ;
+        lang:ara-note          "الملاحة هي عملية إيجاد المسار المرشح الذي يعطي أفضل النتائج بناء على دالة تكلفة مختارة"@ar ;
+        lang:dan-note          "Bemærk til posten: Navigation er den proces, der anvendes til at finde det ruteforslag, der optimerer den valgte omkostningsfunktion."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Navigation is the process of finding the candidate route that optimizes a chosen cost function."@en ;
+        lang:fin-note          "HUOM.: Navigoinnissa pyritään löytämään reittiehdokas, joka parhaiten täyttää valitun kustannusten optimointifunktion ehdot."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 내비게이션은 선택된 비용 함수를 최적화하는 후보 경로를 찾는 과정이다."@ko ;
+        lang:rus-note          "Примечание: Навигация – это процесс нахождения варианта маршрута, который оптимизирует выбранную функцию стоимости"@ru ;
+        lang:spa-note          "Nota: Navegación es el proceso de encontrar la ruta candidata que optimice la función de coste requerida."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 导航就是在备选路径中寻找最优化成本函数的过程。"@zh ;
+        geolexica:hasInfo      info:Info34 ;
+        geolexica:hasLDAPI     ldapi:ldapi34-skosrdf , ldapi:ldapi34-json , ldapi:ldapi34-jsonld , ldapi:ldapi34-rdfxml ;
+        geolexica:hasLangCode  lang:spa , lang:eng , lang:zho , lang:fra , lang:fin , lang:swe , lang:rus , lang:ara , lang:kor , lang:dan , lang:deu ;
+        geolexica:hasOrigin    lang:finRegistry , lang:engRegistry , lang:danRegistry , lang:spaRegistry , lang:deuRegistry , lang:rusRegistry , lang:fraRegistry , lang:zhoRegistry , lang:araRegistry , lang:sweRegistry , lang:korRegistry .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual ,
+                        geolexica:NoteSourceDiff ;
+               rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/info#Info34
+info:Info34 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19133-2005 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19133-2005
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi34-json
+ldapi:ldapi34-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/34.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi34-jsonld
+ldapi:ldapi34-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/34.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi34-rdfxml
+ldapi:ldapi34-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/34.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi34-skosrdf
+ldapi:ldapi34-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/34.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

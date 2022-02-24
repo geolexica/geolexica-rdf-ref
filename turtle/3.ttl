@@ -1,147 +1,222 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/3/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/3/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/3/> .
-
-<https://isotc211.geolexica.org/ld/concepts/3/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/3/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "abstract test case" ;
-        rdfs:label "abstract test case" ;
-        vann:preferredNamespacePrefix "concept3" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/3/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/ld/concepts/3/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "abstract test case" ;
+        vann:preferredNamespacePrefix  "concept3" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/3/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/3/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+:abstract_test_case  a         owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "abstract test case" ;
+        dcterms:identifier     3 ;
+        skos:definition        "prueba generalizada para un requisito particular"@es , "اختبار عام لمتطلب محدد"@ar , "针对特定要求的一般性测试。"@zh , "generalized test for a particular requirement"@en , "обобщенный тест на соответствие конкретным требованиям"@ru , "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"@sv , "특정한 요구 사항을 수행하기 위한 일반화된 시험"@ko , "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"@fi , "test généralisé relatif à une exigence particulière"@fr , "generaliseret test for et bestemt krav"@da , "特定の要件のために作成された試験"@ja ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          3 ;
+        skos:prefLabel         "cas de test abstrait"@fr , "abstrakt testforløb"@da , "abstract test case"@en , "abstrakter Testfall"@de , "抽象試験項目"@ja , "抽象测试用例"@zh , "abstrakti testitapaus"@fi , "абстрактный тест"@ru , "추상 시험 케이스"@ko , "prueba abstracta"@es , "حالة اختبار تجريدي"@ar , "abstrakt testfall"@sv ;
+        lang:ara-note          "ملاحظة: حالة الاختبار التجريدي هي عبارة عن أساس منهجي لاشتقاق حالات اختبار قابلة للتطبيق. ويتم التعبير بشكل واضح ومقتضب عن غرض اختبار واحد أو أكثر في حالة الاختبار التجريدية. وتكون حالة الاختبار التجريدية مستقلة عن كل من التنفيذ والقيم. وينبغي أن تكون مكتملة بمعنى أن تشكل أساسا كافيا لإصدار حكم واضح وغير ملتبس مبني على نتيجة كل اختبار يتم إجراؤه ويخضع للملاحظة ( أي سلسلة الأحداث المتتالية للاختبار)"@ar ;
+        lang:dan-note          "Bemærk til posten: Et abstrakt testforløb er et formelt grundlag for at kunne udvikle eksekverbare testforløb. Et eller flere testformål er samlet i det abstrakte testforløb. Et abstrakt testforløb er både uafhængigt af implementeringen og af værdierne. Testforløbet bør være fuldstændigt, dvs. tilstrækkeligt omfattende til at fremkomme med en testafgørelse, som kan knyttes utvetydigt til ethvert muligt testudfald (fx en sekvens af test events)."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: An abstract test case is a formal basis for deriving executable test cases One or more test purposes are encapsulated in the abstract test case. An abstract test case is independent of both the implementation and the values. It should be complete in the sense that it is sufficient to enable a test verdict to be assigned unambiguously to each potentially observable test outcome (i.e. sequence of test events)."@en ;
+        lang:fin-note          "HUOM.: Abstrakti testitapaus on suoritettavissa olevien testitapausten johtamisen muodollinen perusta. Abstraktiin testitapaukseen liittyy yksi tai useampi testaustarkoitus. Abstrakti testitapaus on toteutuksesta ja arvoista riippumaton. Abstraktin testitapauksen tulisi olla täydellinen, eli sen tulisi mahdollistaa yksikäsitteisen lausunnon (hyväksyntä/hylkäys) antaminen jokaiselle mahdollisesti havaittavalle testitulokselle (testitapahtumajonolle)."@fi ;
+        lang:jpn-note          "備考： 抽象試験項目は，実行可能試験項目を導き出すための基礎として用いられる。抽象試験項目は，一つ以上の試験目的を含む。抽象試験項目は，実装及び値の両方から独立している。観測可能なすべての試験結果（試験中の一連の出力）に対して，あいまい性がなく試験判定を下すことができるという意味で，抽象試験項目は，完全であることが望ましい"@ja ;
+        lang:kor-note          "비고: 추상 시험 케이스는 실행 가능 시험 케이스에 대한 형식적인 틀을 제공하며 하나 이상의 시험 목적을 갖는다. 추상 시험 케이스는 구현과 값의 양쪽에 모두 독립해 있다. 관측 가능한 모든 시험 결과는 시험 판정을 내릴 수 있도록 명확해야 한다(예: 시험 이벤트의 연속)"@ko ;
+        lang:rus-note          "Примечание: Абстрактный тест является формальной основой для случаев исполняемого теста. Абстрактный тест не зависит ни от реализации объекта, ни от определенных значений. Абстрактный тест должен быть выполнен в таком объеме, чтобы по его итогам можно было подготовить непротиворечивое заключение для каждого потенциально возможного результата тестирования (т.е. последовательности шагов тестирования) "@ru ;
+        lang:spa-note          "Nota: Una prueba genérica es una base formal para obtener pruebas ejecutables. Uno o más propósitos de prueba se encapsulan en una prueba genérica. Una prueba genérica es independiente tanto de la implementación como de los valores. Debería ser completa en el sentido de ser suficiente para permitir asignar inequívocamente un veredicto de prueba a cada resultado de la prueba potencialmente observable (es decir secuencia de eventos de ensayo)."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 抽象测试用例是导出可执行测试用例的形式化基础。在抽象测试用例里包含有一个或多个测试目的。一个抽象测试用例不取决于实现，也不取决于数值。它应当是完整的，足以将测试判定被明确地分配到每个潜在的可观察的测试结"@zh , "果（即：测试事件的序列）当中。"@zh .
+        # geolexica:hasInfo      info:Info3 ;
+        # geolexica:hasLDAPI     ldapi:ldapi3-skosrdf , ldapi:ldapi3-rdfxml , ldapi:ldapi3-jsonld , ldapi:ldapi3-json ;
+        # geolexica:hasLangCode  lang:spa , lang:deu , lang:eng , lang:kor , lang:rus , lang:swe , lang:zho , lang:fra , lang:ara , lang:fin , lang:jpn , lang:dan ;
+        # geolexica:hasOrigin    lang:deuRegistry , lang:araRegistry , lang:finRegistry , lang:sweRegistry , lang:zhoRegistry , lang:fraRegistry , lang:jpnRegistry , lang:engRegistry , lang:danRegistry , lang:korRegistry , lang:spaRegistry , lang:rusRegistry ;
+        # geolexica:hasReview    reviews:Review3 .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/3/
 
-:abstract_test_case rdf:type owl:NamedIndividual ,
-                             skos:Concept ;
-                    skos:inScheme geolexica:GeolexicaConceptScheme ;
-                    geolexica:hasInfo info:Info3 ;
-                    geolexica:hasLDAPI ldapi:ldapi3-json ,
-                                       ldapi:ldapi3-jsonld ,
-                                       ldapi:ldapi3-rdfxml ,
-                                       ldapi:ldapi3-skosrdf ;
-                    geolexica:hasLangCode lang:ara ,
-                                          lang:dan ,
-                                          lang:deu ,
-                                          lang:eng ,
-                                          lang:fin ,
-                                          lang:fra ,
-                                          lang:jpn ,
-                                          lang:kor ,
-                                          lang:rus ,
-                                          lang:spa ,
-                                          lang:swe ,
-                                          lang:zho ;
-                    geolexica:hasReview reviews:Review3 ;
-                    dcterms:identifier 3 ;
-                    skos:notation 3 ;
-                    lang:ara-note "ملاحظة: حالة الاختبار التجريدي هي عبارة عن أساس منهجي لاشتقاق حالات اختبار قابلة للتطبيق. ويتم التعبير بشكل واضح ومقتضب عن غرض اختبار واحد أو أكثر في حالة الاختبار التجريدية. وتكون حالة الاختبار التجريدية مستقلة عن كل من التنفيذ والقيم. وينبغي أن تكون مكتملة بمعنى أن تشكل أساسا كافيا لإصدار حكم واضح وغير ملتبس مبني على نتيجة كل اختبار يتم إجراؤه ويخضع للملاحظة ( أي سلسلة الأحداث المتتالية للاختبار)"@ar ;
-                    lang:dan-note "Bemærk til posten: Et abstrakt testforløb er et formelt grundlag for at kunne udvikle eksekverbare testforløb. Et eller flere testformål er samlet i det abstrakte testforløb. Et abstrakt testforløb er både uafhængigt af implementeringen og af værdierne. Testforløbet bør være fuldstændigt, dvs. tilstrækkeligt omfattende til at fremkomme med en testafgørelse, som kan knyttes utvetydigt til ethvert muligt testudfald (fx en sekvens af test events)."@da ;
-                    lang:eng-note "Note to entry: An abstract test case is a formal basis for deriving executable test cases One or more test purposes are encapsulated in the abstract test case. An abstract test case is independent of both the implementation and the values. It should be complete in the sense that it is sufficient to enable a test verdict to be assigned unambiguously to each potentially observable test outcome (i.e. sequence of test events)."@en ;
-                    lang:fin-note "HUOM.: Abstrakti testitapaus on suoritettavissa olevien testitapausten johtamisen muodollinen perusta. Abstraktiin testitapaukseen liittyy yksi tai useampi testaustarkoitus. Abstrakti testitapaus on toteutuksesta ja arvoista riippumaton. Abstraktin testitapauksen tulisi olla täydellinen, eli sen tulisi mahdollistaa yksikäsitteisen lausunnon (hyväksyntä/hylkäys) antaminen jokaiselle mahdollisesti havaittavalle testitulokselle (testitapahtumajonolle)."@fi ;
-                    lang:jpn-note "備考： 抽象試験項目は，実行可能試験項目を導き出すための基礎として用いられる。抽象試験項目は，一つ以上の試験目的を含む。抽象試験項目は，実装及び値の両方から独立している。観測可能なすべての試験結果（試験中の一連の出力）に対して，あいまい性がなく試験判定を下すことができるという意味で，抽象試験項目は，完全であることが望ましい"@ja ;
-                    lang:kor-note "비고: 추상 시험 케이스는 실행 가능 시험 케이스에 대한 형식적인 틀을 제공하며 하나 이상의 시험 목적을 갖는다. 추상 시험 케이스는 구현과 값의 양쪽에 모두 독립해 있다. 관측 가능한 모든 시험 결과는 시험 판정을 내릴 수 있도록 명확해야 한다(예: 시험 이벤트의 연속)"@ko ;
-                    lang:rus-note "Примечание: Абстрактный тест является формальной основой для случаев исполняемого теста. Абстрактный тест не зависит ни от реализации объекта, ни от определенных значений. Абстрактный тест должен быть выполнен в таком объеме, чтобы по его итогам можно было подготовить непротиворечивое заключение для каждого потенциально возможного результата тестирования (т.е. последовательности шагов тестирования) "@ru ;
-                    lang:spa-note "Nota: Una prueba genérica es una base formal para obtener pruebas ejecutables. Uno o más propósitos de prueba se encapsulan en una prueba genérica. Una prueba genérica es independiente tanto de la implementación como de los valores. Debería ser completa en el sentido de ser suficiente para permitir asignar inequívocamente un veredicto de prueba a cada resultado de la prueba potencialmente observable (es decir secuencia de eventos de ensayo)."@es ;
-                    lang:zho-note "果（即：测试事件的序列）当中。"@zh ,
-                                  "注： 抽象测试用例是导出可执行测试用例的形式化基础。在抽象测试用例里包含有一个或多个测试目的。一个抽象测试用例不取决于实现，也不取决于数值。它应当是完整的，足以将测试判定被明确地分配到每个潜在的可观察的测试结"@zh ;
-                    rdfs:label "abstract test case" ;
-                    skos:definition "generaliseret test for et bestemt krav"@da ,
-                                    "generalized test for a particular requirement"@en ,
-                                    "prueba generalizada para un requisito particular"@es ,
-                                    "specifikation av de åtgärder som ska vidtas för att avgöra om ett visst krav är uppfyllt eller ej"@sv ,
-                                    "test généralisé relatif à une exigence particulière"@fr ,
-                                    "tietyn vaatimuksen täyttymistä mittaava yleistetty testi"@fi ,
-                                    "обобщенный тест на соответствие конкретным требованиям"@ru ,
-                                    "اختبار عام لمتطلب محدد"@ar ,
-                                    "特定の要件のために作成された試験"@ja ,
-                                    "针对特定要求的一般性测试。"@zh ,
-                                    "특정한 요구 사항을 수행하기 위한 일반화된 시험"@ko ;
-                    skos:prefLabel "abstract test case"@en ,
-                                   "abstrakt testfall"@sv ,
-                                   "abstrakt testforløb"@da ,
-                                   "abstrakter Testfall"@de ,
-                                   "abstrakti testitapaus"@fi ,
-                                   "cas de test abstrait"@fr ,
-                                   "prueba abstracta"@es ,
-                                   "абстрактный тест"@ru ,
-                                   "حالة اختبار تجريدي"@ar ,
-                                   "抽象测试用例"@zh ,
-                                   "抽象試験項目"@ja ,
-                                   "추상 시험 케이스"@ko ;
-                    geolexica:origin lang:araRegistry ,
-                                     lang:danRegistry ,
-                                     lang:deuRegistry ,
-                                     lang:engRegistry ,
-                                     lang:finRegistry ,
-                                     lang:fraRegistry ,
-                                     lang:jpnRegistry ,
-                                     lang:korRegistry ,
-                                     lang:rusRegistry ,
-                                     lang:spaRegistry ,
-                                     lang:sweRegistry ,
-                                     lang:zhoRegistry ;
-                    lang:deu-note notes:DefnTransUnavail ,
-                                  notes:NoteTransUnavail ;
-                    lang:swe-note notes:NoteTransUnavail .
+###  https://isotc211.geolexica.org/api/info#Info3
+info:Info3 rdf:type owl:NamedIndividual ,
+                geolexica:ConceptInfo ;
+       geolexica:hasSource sources:ISO-19105-2000 ;
+       geolexica:classification "preferred"@en ;
+       geolexica:date_accepted "2000-12-15"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
+############################################################
+
+
+###  https://isotc211.geolexica.org/api/reviews#Review3
+reviews:Review3 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptReview ;
+         geolexica:review_date "2019-07-05"^^xsd:date ;
+         geolexica:review_status "pending"@en .
+
+
+############################################################
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19105-2000
+sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Conformance and testing"@en ;
+                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19105:2000" .
+
+
+############################################################
+
+
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
+
+
+############################################################
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi3-json
+ldapi:ldapi3-json rdf:type owl:NamedIndividual ,
+                      geolexica:JSON ;
+             geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/3.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi3-jsonld
+ldapi:ldapi3-jsonld rdf:type owl:NamedIndividual ,
+                        geolexica:JSON-LD ;
+               geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/3.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi3-rdfxml
+ldapi:ldapi3-rdfxml rdf:type owl:NamedIndividual ,
+                        geolexica:RDF-XML ;
+               geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/3.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi3-skosrdf
+ldapi:ldapi3-skosrdf rdf:type owl:NamedIndividual ,
+                         geolexica:SKOS-RDF ;
+                geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/3.ttl"^^xsd:anyURI .
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

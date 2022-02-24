@@ -1,145 +1,216 @@
-@prefix : <https://isotc211.geolexica.org/ld/concepts/18/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://isotc211.geolexica.org/ld/info#> .
-@prefix lang: <https://isotc211.geolexica.org/ld/language#> .
-@prefix ldapi: <https://isotc211.geolexica.org/ld/ldapi#> .
-@prefix notes: <https://isotc211.geolexica.org/ld/notes#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix void: <http://vocab.deri.ie/void#> .
+
+@prefix :      <https://isotc211.geolexica.org/concepts/18/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix reviews: <https://isotc211.geolexica.org/ld/reviews#> .
-@prefix sources: <https://isotc211.geolexica.org/ld/sources#> .
-@prefix geolexica: <https://isotc211.geolexica.org/ld/geolexica#> .
-@base <https://isotc211.geolexica.org/ld/concepts/18/> .
-
-<https://isotc211.geolexica.org/ld/concepts/18/> rdf:type dctype:Dataset ;
-
-        owl:versionIRI <https://isotc211.geolexica.org/ld/concepts/18/> ;
-        owl:imports <https://isotc211.geolexica.org/ld/geolexica> ,
-                                                               info: ,
-                                                               lang: ,
-                                                               notes: ,
-                                                               reviews: ,
-                                                               ldapi: ,
-                                                               sources: ;
-        dcterms:conformsTo <https://isotc211.geolexica.org/ld/geolexica/v1.0/> ;
-        dcterms:contributor <https://www.linkedin.com/in/rhtse/> ;
-        dcterms:created "2022-01-20"^^xsd:date ;
-        dcterms:creator <https://www.linkedin.com/in/lanemk> ;
-        dcterms:issued " " ;
-        dcterms:license "Copyright 2022 OSGeo" ;
-        dcterms:modified "2022-01-28"^^xsd:date ;
-        dcterms:title "attitude" ;
-        rdfs:label "attitude" ;
-        vann:preferredNamespacePrefix "concept18" ;
-        vann:preferredNamespaceUri "https://isotc211.geolexica.org/ld/concepts/18/" .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-dctype:Dataset owl:sameAs void:Dataset .
+<https://isotc211.geolexica.org/concepts/18/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "attitude" ;
+        vann:preferredNamespacePrefix  "concept18" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/18/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/18/> .
 
-#################################################################
-#    Annotation properties
-#################################################################
+############################################################
 
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/issued
-dcterms:issued rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/license
-dcterms:license rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/modified
-dcterms:modified rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/publisher
-dcterms:publisher rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-###  http://purl.org/dc/terms/conformsTo
-dcterms:conformsTo rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+:attitude  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "attitude" ;
+        dcterms:identifier     18 ;
+        skos:definition        "kappaleen suunta, joka on ilmaistu kappaleen paikallisen koordinaatiston akseleiden ja ulkoisen koordinaatiston akseleiden välisten kulmien avulla"@fi , "orientation d&#39;un objet décrite par les angles entre les axes du système de coordonnées de cet objet et les axes du système de coordonnées externe"@fr , "(vid positionering) riktning hos ett objekt, beskrivet som vinklar mellan axlarna hos objektets interna koordinatsystem och axlarna i ett valt referenssystem"@sv , "orientation of a body, described by the angles between the axes of that body&#39;s coordinate system and the axes of an external coordinate system"@en , "orientación de un cuerpo, descrita mediante los ángulos entre los ejes del sistema de coordenadas del cuerpo y los ejes de un sistema de coordenadas externo"@es , "orientering af et legeme beskrevet ved vinklerne mellem akserne i legemets koordinatsystem og akserne i et eksternt koordinatsystem"@da , "물체의 좌표 체계 축과 외부 좌표 체계 축 사이의 각도를 통해 기술되는 물체의 방향"@ko , "一个物体的定向，由物体坐标系的轴和外部坐标系的轴之间的夹角来描述。"@zh , "perbuatan atau pandangan yg berdasarkan sesuatu pendapat"@ms , "ориентация тела, описываемая углами между осями его [собственной] системы координат и осями внешней системы координат"@ru , "اتجاه جسم ما كما تصفه الزوايا التي بين محاور نظام إحداثيات ذلك الجسم ومحاور نظام إحداثيات خارجي آخر"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          18 ;
+        skos:prefLabel         "姿态"@zh , "пространственное положение"@ru , "الوضع"@ar , "attityd"@sv , "suuntaus"@fi , "ydre orientering"@da , "sikap"@ms , "Einstellung"@de , "자세"@ko , "actitud"@es , "attitude"@fr , "attitude"@en ;
+        lang:ara-note          "ملاحظة: في خدمات تحديد المواقع ، يشير هذا عادة إلى اتجاه قواعد أداء المعدات لدى المستخدم مثل الطائرة ، أو المركب (قارب) أو السيارة"@ar ;
+        lang:dan-note          "Bemærk til posten: I stedsbestemmelsestjenester er dette normalt orienteringen af brugerens platform, såsom et luftfartøj, en båd eller en bil."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: In positioning services, this is usually the orientation of the user's platform, such as an aircraft, boat, or automobile."@en ;
+        lang:fin-note          "HUOM.: Paikannuspalveluissa termillä suuntaus viitataan tavallisesti käyttäjän alustan, esimerkiksi lentokoneen, laivan tai auton, suuntaan."@fi ;
+        lang:kor-note          "비고: 측위 서비스의 경우, 보통 항공기, 배, 자동차 등 사용자 플랫폼의 방향을 의미한다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: В системах позиционирования это обычно ориентация платформы пользователя, например, самолета, судна или автомобиля"@ru ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"@zh ;
+        geolexica:hasInfo      info:Info18 ;
+        geolexica:hasLDAPI     ldapi:ldapi18-json , ldapi:ldapi18-skosrdf , ldapi:ldapi18-jsonld , ldapi:ldapi18-rdfxml ;
+        geolexica:hasLangCode  lang:fin , lang:rus , lang:ara , lang:swe , lang:msa , lang:fra , lang:spa , lang:deu , lang:eng , lang:dan , lang:zho , lang:kor ;
+        geolexica:hasOrigin    lang:zhoRegistry , lang:korRegistry , lang:msaRegistry , lang:deuRegistry , lang:engRegistry , lang:fraRegistry , lang:spaRegistry , lang:araRegistry , lang:finRegistry , lang:danRegistry , lang:sweRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review18 .
 
-#################################################################
-#    Individuals
-#################################################################
+############################################################
 
-###  https://isotc211.geolexica.org/ld/concepts/18/
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
 
-:attitude rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:inScheme geolexica:GeolexicaConceptScheme ;
-          geolexica:hasInfo info:Info18 ;
-          geolexica:hasLDAPI ldapi:ldapi18-json ,
-                             ldapi:ldapi18-jsonld ,
-                             ldapi:ldapi18-rdfxml ,
-                             ldapi:ldapi18-skosrdf ;
-          geolexica:hasLangCode lang:ara ,
-                                lang:dan ,
-                                lang:deu ,
-                                lang:eng ,
-                                lang:fin ,
-                                lang:fra ,
-                                lang:kor ,
-                                lang:msa ,
-                                lang:rus ,
-                                lang:spa ,
-                                lang:swe ,
-                                lang:zho ;
-          geolexica:hasReview reviews:Review18 ;
-          dcterms:identifier 18 ;
-          skos:notation 18 ;
-          lang:ara-note "ملاحظة: في خدمات تحديد المواقع ، يشير هذا عادة إلى اتجاه قواعد أداء المعدات لدى المستخدم مثل الطائرة ، أو المركب (قارب) أو السيارة"@ar ;
-          lang:dan-note "Bemærk til posten: I stedsbestemmelsestjenester er dette normalt orienteringen af brugerens platform, såsom et luftfartøj, en båd eller en bil."@da ;
-          lang:eng-note "Note to entry: In positioning services, this is usually the orientation of the user's platform, such as an aircraft, boat, or automobile."@en ;
-          lang:fin-note "HUOM.: Paikannuspalveluissa termillä suuntaus viitataan tavallisesti käyttäjän alustan, esimerkiksi lentokoneen, laivan tai auton, suuntaan."@fi ;
-          lang:kor-note "비고: 측위 서비스의 경우, 보통 항공기, 배, 자동차 등 사용자 플랫폼의 방향을 의미한다."@ko ;
-          lang:rus-note "Примечание: В системах позиционирования это обычно ориентация платформы пользователя, например, самолета, судна или автомобиля"@ru ;
-          lang:zho-note "注： 在定位服务中，这通常是指用户平台（如：飞行器、轮船或汽车）的定向。"@zh ;
-          rdfs:label "attitude" ;
-          skos:definition "(vid positionering) riktning hos ett objekt, beskrivet som vinklar mellan axlarna hos objektets interna koordinatsystem och axlarna i ett valt referenssystem"@sv ,
-                          "kappaleen suunta, joka on ilmaistu kappaleen paikallisen koordinaatiston akseleiden ja ulkoisen koordinaatiston akseleiden välisten kulmien avulla"@fi ,
-                          "orientación de un cuerpo, descrita mediante los ángulos entre los ejes del sistema de coordenadas del cuerpo y los ejes de un sistema de coordenadas externo"@es ,
-                          "orientation d&#39;un objet décrite par les angles entre les axes du système de coordonnées de cet objet et les axes du système de coordonnées externe"@fr ,
-                          "orientation of a body, described by the angles between the axes of that body&#39;s coordinate system and the axes of an external coordinate system"@en ,
-                          "orientering af et legeme beskrevet ved vinklerne mellem akserne i legemets koordinatsystem og akserne i et eksternt koordinatsystem"@da ,
-                          "perbuatan atau pandangan yg berdasarkan sesuatu pendapat"@ms ,
-                          "ориентация тела, описываемая углами между осями его [собственной] системы координат и осями внешней системы координат"@ru ,
-                          "اتجاه جسم ما كما تصفه الزوايا التي بين محاور نظام إحداثيات ذلك الجسم ومحاور نظام إحداثيات خارجي آخر"@ar ,
-                          "一个物体的定向，由物体坐标系的轴和外部坐标系的轴之间的夹角来描述。"@zh ,
-                          "물체의 좌표 체계 축과 외부 좌표 체계 축 사이의 각도를 통해 기술되는 물체의 방향"@ko ;
-          skos:prefLabel "Einstellung"@de ,
-                         "actitud"@es ,
-                         "attitude"@en ,
-                         "attitude"@fr ,
-                         "attityd"@sv ,
-                         "sikap"@ms ,
-                         "suuntaus"@fi ,
-                         "ydre orientering"@da ,
-                         "пространственное положение"@ru ,
-                         "الوضع"@ar ,
-                         "姿态"@zh ,
-                         "자세"@ko ;
-          geolexica:origin lang:araRegistry ,
-                           lang:danRegistry ,
-                           lang:deuRegistry ,
-                           lang:engRegistry ,
-                           lang:finRegistry ,
-                           lang:fraRegistry ,
-                           lang:korRegistry ,
-                           lang:msaRegistry ,
-                           lang:rusRegistry ,
-                           lang:spaRegistry ,
-                           lang:sweRegistry ,
-                           lang:zhoRegistry ;
-          lang:deu-note notes:DefnTransUnavail ,
-                        notes:NoteTransUnavail ;
-          lang:msa-note notes:NoteTransUnavail ;
-          lang:swe-note notes:NoteTransUnavail .
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:NoteUnavail ;
+                  rdfs:label "This note has not been translated."@en .
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+############################################################
+
+###  https://isotc211.geolexica.org/api/info#Info18
+info:Info18 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19116-2019 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "(E), 3.3" ;
+        geolexica:date_accepted "2004-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/reviews#Review18
+reviews:Review18 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2009-08-31"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of ISO 19150-2:2015(E)"@en ;
+          geolexica:review_decision_notes "This entry is superseded by the entry for \"association <UML>\" in ISO 19150-2:2015"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19116-2019
+sources:ISO-19116-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/70882.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi18-json
+ldapi:ldapi18-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/18.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi18-jsonld
+ldapi:ldapi18-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/18.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi18-rdfxml
+ldapi:ldapi18-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/18.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi18-skosrdf
+ldapi:ldapi18-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/18.ttl"^^xsd:anyURI .
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

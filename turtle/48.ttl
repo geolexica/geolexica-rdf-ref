@@ -1,0 +1,214 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/48/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/48/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "coboundary" ;
+        vann:preferredNamespacePrefix  "concept48" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/48/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/48/> .
+
+###########################################################
+
+:coboundary  a                 owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "coboundary" ;
+        dcterms:identifier     48 ;
+        skos:definition        "conjunto de primitivas topológicas, de dimensión topológica mayor, asociadas a un objeto topológico particular de tal modo, que este objeto topológico está en cada una de las fronteras del conjunto"@es , "zbiór prostych elementów topologicznych o większym wymiarze topologicznym, powiązanych z danym obiektem topologicznym w taki sposób, że ten topologiczny obiekt należy do granicy każdego z nich"@pl , "samling av de topologiska objekt för vilka ett och samma topologiska objekt ingår i avgränsningen"@sv , "joukko korkeamman topologisen ulottuvuuden omaavia topologisia primitiivejä, jotka liittyvät tiettyyn topologiseen objektiin siten, että tämä topologinen objekti on mukana jokaisen primitiivin rajauksessa"@fi , "ensemble de primitives topologiques de dimension topologique supérieure associé à un objet topologique particulier, tel que cet objet topologique appartient à la frontière de chacune d&#39;elles."@fr , "특정 위상 객체를 구성하는 높은 위상 차원의 위상 원시 객체 집합으로, 이 위상 객체는 위상 원시 객체의 각 경계에 존재함"@ko , "مجموعة عناصر طوبولوجية بدائية ذات بعد طوبولوجي أعلى ترتبط بكيان طوبولوجي معيَّن  بحيث يكون هذا الكيان الطوبولوجي في حدود كل منها"@ar , "множество топологических примитивов более высокой топологической размерности, так ассоциированных с определенным топологическим объектом,  что  данный  топологический объект принадлежит границе каждого из них"@ru , "en mængde af topologiske grundformer af højere topologisk dimension, som er forbundet med et bestemt topologisk objekt, således at dette topologiske objekt er i hver af deres afgrænsning"@da , "set of topological primitives of higher topological dimension associated with a particular topological object, such that this topological object is in each of their boundaries"@en , "与特定的拓扑对象相关联，具有更高维数的拓扑单形的集合，这个拓扑对象在这些更高维数的拓扑单形的边界上。"@zh , "ある位相オブジェクトに対応して，その位相オブジェクトを境界としてもつ，より高い位相次元の位相プリミティブの集合。"@ja ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          48 ;
+        skos:prefLabel         "coboundary"@en , "кограница"@ru , "余边界"@zh , "fællesgrænse"@da , "współgranica,  kogranica"@pl , "cofrontera"@es , "双対境界"@ja , "공유 경계"@ko , "yhteisrajaus"@fi , "kosempadan"@ms , "حدود مشتركة"@ar , "kettenartig verknüpfte Grenze"@de , "gränsberörda objekt"@sv , "co-frontière"@fr ;
+        lang:ara-note          "ملاحظة: إذا كانت هناك عقدة تقع على حد حافة ما فإن تلك الحافة تكون واقعة على الحد المشترك لتلك العقدة . كما أن أي متغيِّر يتعلق بالاتجاه يرتبط بإحدى تلكما العلاقتين يكون مرتبطاً أيضا بالأخرى. وذلك بأنه إذا كانت العقدة هي العقدة النهائية للحافة المذكورة (وتعَّرف بأنها نهاية الحافة الموجهة اتجاها موجبا) , فإن الاتجاه الموجب للعقدة (وتعَّرف بأنها العقدة الموجهة اتجاها موجبا) ستقع الحافة على حده المشترك ، أنظر المقياس آيزو 19107 , الشكل 35."@ar ;
+        lang:dan-note          "Bemærk til posten: Hvis en knude støder op til grænsen af en kant, har kanten og knuden en fællesgrænse. Enhver orienteringsparameter, der er forbundet med en af disse relationer, vil også blive forbundet med den anden. Hvis knuden er kantens slutknude (defineret som enden af den positive retningsbestemte kant), så vil knudens positive orientering (defineret som den positive retningsbestemte knude) have kanten på deres fællesgrænse, se ISO 19107, figur 35."@da ;
+        lang:deu-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note to entry: If a node is on the boundary of an edge, that edge is on the coboundary of that node. Any orientation parameter associated to one of these relations would also be associated to the other. So that if the node is the end node of the edge (defined as the end of the positive directed edge), then the positive orientation of the node (defined as the positive directed node) would have the edge on its coboundary, see ISO 19107 Figure 35."@en ;
+        lang:fin-note          "HUOM.: Jos solmupiste on linkin rajauksella, kyseinen linkki on kyseisen solmupisteen yhteisrajauksella. Suuntaparametri, joka liittyy jompaan kumpaan näistä suhteista, liittyy myös toiseen suhteeseen. Jos siis kyseinen solmupiste on linkin loppusolmu (määritelmän mukaan positiivisen suunnatun linkin loppupää), positiivinen suunta solmupisteellä olisi kyseiseen linkkiin yhteisrajauksella. Katso ISO 19107 -standardin kuva 35."@fi ;
+        lang:jpn-note          "備考： ノードがエッジの境界に存在する場合，このエッジは，そのノードの双対境界上にある。この二つの関係のいずれか一つに関連付けられた任意の方向パラメタは，もう一方の関係に対しても関連付けられる。これは，ノードがエッジの終点ノードである（正の有向エッジの終端として定義される）場合，そのノードの正の方向（正の有向ノードとして定義される）が双対境界上にエッジをもつようにするためである（図35参照）。"@ja ;
+        lang:kor-note          "비고: 만약 절점이 변의 경계에 위치한다면, 변은 절점의 공유 경계에 위치한다. 이러한 관계를 갖는 하나의 방향 매개 변수는 또한 반대의 경우와도 연관된다. 절점이 (양의 방향성 변의 끝으로 정의된) 변의 끝 절점이라면, (양의 방향성 절점으로 정의된) 절점의 양의 방향이 그 공유 경계상의 변을 가질 수 있다(KS X ISO 19107 그림35 참조)."@ko ;
+        lang:msa-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:pol-note          "UWAGA: Jeśli węzeł jest na granicy pewnej krawędzi, wówczas krawędź ta jest na współgranicy tego węzła. Każdy parametr orientacji powiązany z jedną z tych relacji powinien być powiązany także z drugą. A zatem, jeśli dany węzeł jest węzłem końcowym krawędzi (czyli zdefiniowanym jako koniec krawędzi skierowanej dodatnio), wówczas dodatnia orientacja tego węzła (czyli węzła zdefiniowanego jako węzeł skierowany dodatnio) powinna mieć tę krawędź na swojej współgranicy.patrz Rysunek35."@pl ;
+        lang:rus-note          "Примечание: Если узел расположен на границе ребра, то это ребро находится на когранице этого узла. Любой параметр ориентации, связанный с одним из таких отношений, будет также связан и с другим. Таким образом, если узел является концевым узлом ребра (определенный как конец положительно направленного ребра), то положительная ориентация этого узла (определенного как направленный положительный узел), будет иметь это ребро на своей когранице, см. ISO 19107, Рисунок 35"@ru ;
+        lang:spa-note          "Nota: Si un nodo está en la frontera de un arco, el arco está en la cofrontera de dicho nodo. Cualquier parámetro de orientación asociado a una de esas relaciones también debería estar asociado a la otra. Por lo tanto, si el nodo es el nodo final de un arco (definido como el final de un arco orientado positivamente), entonces la orientación positiva del nodo (definido como el nodo orientado positivamente) debe tener al arco es su cofrontera, véase la Norma Internacional ISO 19107 figura 35."@es ;
+        lang:zho-note          "注： 如果一个结点在边的边界上，则这个边就在这个结点的余边界上。任何方向参数，只要与这些关系中的一个相关联也就与其他的关系相关联。所以，如果一个结点是一条边的终结点（定义为边的正方向的终点），那么这个结点的正方向（定义为正向结点）将有边在它的余边界上。见 ISO 19107 图35。"@zh ;
+        geolexica:hasInfo      info:Info48 ;
+        geolexica:hasLDAPI     ldapi:ldapi48-skosrdf , ldapi:ldapi48-rdfxml , ldapi:ldapi48-jsonld , ldapi:ldapi48-json ;
+        geolexica:hasLangCode  lang:rus , lang:swe , lang:dan , lang:deu , lang:kor , lang:fin , lang:ara , lang:fra , lang:eng , lang:spa , lang:pol , lang:zho ;
+        geolexica:hasOrigin    lang:danRegistry , lang:finRegistry , lang:jpnRegistry , lang:sweRegistry , lang:araRegistry , lang:engRegistry , lang:rusRegistry , lang:fraRegistry , lang:msaRegistry , lang:korRegistry , lang:deuRegistry , lang:zhoRegistry , lang:polRegistry , lang:spaRegistry ;
+        geolexica:hasReview    reviews:Review48 .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
+notes:DefnTransUnavail rdf:type owl:NamedIndividual ,
+                           geolexica:DefnUnavail ;
+                  rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual ,
+                        geolexica:NoteSourceDiff ;
+               rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info48 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19107-2019 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:clause "(E), 3.9" ;
+        geolexica:date_accepted "2003-05-01"^^xsd:date ;
+       geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review48 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2019-12-02"^^xsd:date ;
+          geolexica:review_decision "accepted"@en ;
+          geolexica:review_decision_event "Publication of document ISO 19107:2019(E)"@en ;
+          geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19107:2019(E), 3.9. Lineage source added as ISO 19107:2003(E)"@en ;
+          geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19107-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi48-json
+ldapi:ldapi48-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/48.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi48-jsonld
+ldapi:ldapi48-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/48.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi48-rdfxml
+ldapi:ldapi48-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/48.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi48-skosrdf
+ldapi:ldapi48-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/48.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,200 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/87/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/87/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "convex set" ;
+        vann:preferredNamespacePrefix  "concept87" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/87/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/87/> .
+
+###########################################################
+
+:convex_set  a                 owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "convex set" ;
+        dcterms:identifier     87 ;
+        skos:definition        "一种几何集，在几何集中连接任意两个直接位置的直线段上的任意直接位置都包含在该几何集合中。"@zh , "геометрическое множество, в котором любой отрезок прямой, соединяющий две любые точки данного множества, также принадлежит этому геометрическому множеству"@ru , "내부의 임의 두 직접 위치를 잇는 직선 조각상의 모든 점을 포함할 수 있는 기하 집합"@ko , "مجموعة هندسية يكون كل موقع مباشر على المقطع المستقيم الذي يصل بين أي موقعين مباشرين فيها مشمولا هو الآخر في المجموعة"@ar , "geometrisk mængde, i hvilket det gælder, at uanset hvilke to punkter vi tager i mængden og tager linjestykket mellem disse, er linjestykket fuldt indeholdt i mængden."@da , "geometric set in which any direct position on the straight-line segment joining any two direct positions in the geometric set is also contained in the geometric set"@en , "punktmängd sådan att varje punkt längs en sträcka mellan två godtyckligt valda punkter i mängden också ligger i mängden"@sv , "conjunto geométrico en el que cualquier posición directa del segmento que une dos posiciones directas cualesquiera del conjunto geométrico, también está contenida en el conjunto geométrico"@es , "geometrinen joukko, jossa mikä hyvänsä kahta pistettä yhdistävällä suoralla oleva piste sisältyy tähän geometriseen joukkoon"@fi , "ensemble géométrique dans laquelle n&#39;importe quelle position directe sur le segment de droite joignant deux points dans l&#39;ensemble géométrique est également contenue dans l&#39;ensemble géométrique"@fr ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          87 ;
+        skos:prefLabel         "convex set"@en , "konvexe Menge"@de , "مجموعة محدَّبة"@ar , "凸集"@zh , "ensemble convexe"@fr , "conjunto convexo"@es , "konveksi joukko"@fi , "выпуклое множество"@ru , "konveks mængde"@da , "볼록 집합"@ko , "konvex mängd"@sv ;
+        lang:ara-note          "ملاحظة: المجموعات المحدَّبة \"متصلة اتصالا بسيطاً\" بمعنى أنها لا تحتوى على ثقوب داخلية, ويمكن أن تعتبر بشكل عادي مماثلة طوبولوجيا لكرة من كرات إقليدس لها أبعاد تتناسب معها. لذا يمكننا اعتبار السطح الكروي محدَّباً جيوديسيا."@ar ;
+        lang:dan-note          "Bemærk til posten: Konvekse mængder er \"simpelt forbundne\", dvs. at de ikke har indre huller, og de kan derfor normalt betragtes som værende topologisk isomorfe i forhold til en euklidisk bold af en passende størrelse. Derfor kan overfladen af en kugle anses for at være geodætisk konveks."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: Convex sets are \"simply connected\", meaning that they have no interior holes, and can normally be considered topologically isomorphic to a Euclidean ball of the appropriate dimension. So the surface of a sphere can be considered to be geodesically convex."@en ;
+        lang:fin-note          "HUOM.: Konveksit joukot ovat \"yhtenäisiä\", eli niillä ei ole sisäpuolisia reikiä, ja niitä voidaan tavallisesti pitää isomorfisina soveltuvan ulottuvuuden euklidisen pallon kanssa. Näin ollen pallon pintaa voidaan pitää geodeettisesti konveksina."@fi ;
+        lang:rus-note          "Примечание: Выпуклые множества являются простыми связными в том смысле, что они не имеют внутренних полостей (отверстий) и могут считаться топологически изоморфными Евклидову шару соответствующей размерности. Таким образом, поверхность сферы можно рассматривать как геодезически выпуклую"@ru ;
+        lang:spa-note          "Nota: Los conjuntos convexos están \"simplemente conectados\", esto significa que no tienen agujeros interiores, y, normalmente, pueden considerarse topológicamente isomórficos al espacio Euclídeo de la dimensión apropiada. Así, la superficie de una esfera se puede considerar geodésicamente convexa."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 凸集间是“简单连接”，这意味着他们没有内部孔洞，并且通常可以认为在拓扑上是与适当维数的欧几里德球同构的，所以，球的表面可以被认为是几何凸集。"@zh ;
+        geolexica:hasInfo      info:Info87 ;
+        geolexica:hasLDAPI     ldapi:ldapi87-jsonld , ldapi:ldapi87-json , ldapi:ldapi87-rdfxml , ldapi:ldapi87-skosrdf ;
+        geolexica:hasLangCode  lang:spa , lang:fra , lang:zho , lang:ara , lang:fin , lang:eng , lang:swe , lang:rus , lang:deu , lang:dan , lang:kor ;
+        geolexica:hasOrigin    lang:danRegistry , lang:araRegistry , lang:spaRegistry , lang:sweRegistry , lang:rusRegistry , lang:finRegistry , lang:zhoRegistry , lang:deuRegistry , lang:engRegistry , lang:fraRegistry , lang:korRegistry ;
+        geolexica:hasReview    reviews:Review87 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info87 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:Dictionary_Computing ;
+        geolexica:classification "preferred"@en ;
+        geolexica:date_accepted "2003-05-01"^^xsd:date ;
+        geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review87 rdf:type owl:NamedIndividual ,
+                   geolexica:ConceptReview ;
+          geolexica:review_date "2016-02-15"^^xsd:date ;
+          geolexica:review_status "pending"@en .
+
+############################################################
+
+sources:Dictionary_Computing rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Dictionary of Computing, Fourth Edition, Oxford University Press" ;
+                      skos:prefLabel "Dictionary of Computing, Fourth Edition, Oxford University Press"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi87-json
+ldapi:ldapi87-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/87.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi87-jsonld
+ldapi:ldapi87-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/87.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi87-rdfxml
+ldapi:ldapi87-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/87.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi87-skosrdf
+ldapi:ldapi87-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/87.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/97/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/97/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "cost function" ;
+        vann:preferredNamespacePrefix  "concept97" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/97/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/97/> .
+
+###########################################################
+
+:cost_function  a              owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "cost function" ;
+        dcterms:identifier     97 ;
+        skos:definition        "функция, связывающая меру  (стоимость) передвижения с маршрутом движения"@ru , "(inom ekonomi) funktion som anger samband mellan kostnad och produktion"@sv , "与路径关联的成本的函数。"@zh , "function that associates a measure (cost) to a route"@en , "fonction qui associe une mesure (coût) à un itinéraire"@fr , "funktion, der forbinder et mål (omkostning) med en rute"@da , "toiminto, joka liittää reittiin mitattavan kustannussuureen"@fi , "función que asocia una medida (costo) a una ruta"@es , "경로 측정(비용)과 관련된 함수"@ko , "دالة تربط بين القياس (التكلفة) وطريق أو مسار معين"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          97 ;
+        skos:prefLabel         "функция стоимости"@ru , "función de costo"@es , "fonction de coût"@fr , "kostnadsfunktion"@sv , "kustannusfunktio"@fi , "omkostningsfunktion"@da , "成本函数"@zh , "Kostenfunktion"@de , "دالة التكلفة"@ar , "비용 함수"@ko , "cost function"@en ;
+        lang:ara-note          "ملاحظة: الآلية العادية هي تطبيق التكلفة على كل جزء من أجزاء الطريق, وتحديد التكلفة الكلية للطريق بأنها تساوي مجموع تكاليف الأجزاء. ويعتبر هذا الإجراء ضرورياً لتغيل خوارزمات الملاحة التي يشيع استخدامها أكثر من غيرها. وحدات دالات التكلفة ليست مقتصرة على التكاليف والقيم النقدية فقط بل تشمل قياسات أخرى مثل الوقت والمسافة كما قد تشمل غيرها أيضاً. والشرط الوحيد هو أن تكون الدالة إضافية additive وألا تكون سالبة على أقل تقدير. وهذا المعيار الأخير يمكن تخفيفه ما دام أنه ليست هناك تكلفة صفرية أو تكلفة متدنية ترتبط بأي حلقة في الشبكة حيث أن هذا سيؤدي إلى عدم وجود طريق تصل تكلفته إلى - الحد الأدنى للتكلفة -."@ar ;
+        lang:dan-note          "Bemærk til posten: Den normale mekanisme er at tilskrive hver del af en rute en omkostning og at definere de totale ruteomkostninger som summen af delenes omkostninger. Dette er nødvendigt for at de mest almindelige navigationsalgoritmer kan fungere. Omkostningsfunktionernes enheder er ikke udelukkende begrænset til penge og værdier, men omfatter også sådanne mål som tid, afstand og andre forhold. Det eneste krav er, at funktionen er additiv og i det mindste ikke-negativ. Der kan slækkes på dette sidste kriterium, så længe ingen omkostning på nul eller mindre forbindes med et loop i netværket, da dette vil betyde at der ikke kan være en \"minimal-omkostnings-rute\"."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: The normal mechanism is to apply a cost to each part of a route, and to define the total route cost as the sum of the cost of the parts. This is necessary for the operation of the most common navigation algorithms. The units of cost functions are not limited to monetary costs and values only, but include such measures as time, distance, and possibly others. The only requirement is that the function be additive and at least non-negative. This last criteria can be softened as long as no zero or less cost is associated with any loop in the network, as this will prevent the existence of a \"minimal cost\" route. "@en ;
+        lang:fin-note          "HUOM.: Normaali käytäntö on laskea reitin kunkin osan kustannukset ja määritellä reitin kokonaiskustannus osien kustannusten summaksi. Tavallisimmat navigointialgoritmit edellyttävät tätä. Kustannusfunktiossa käytettävät yksiköt liittyvät paitsi rahallisiin kustannuksiin ja arvoihin, myös muun muassa aikaan ja välimatkaan. Ainoa edellytys on, että funktio on additiivinen eikä se ole negatiivinen. Viimeistä ehtoa voidaan lieventää, jos verkoston mihinkään silmukkaan ei liity nollan suuruista tai sitä pienempää kustannusta, sillä tämä estää minimikustannusreitin olemassaolon. "@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 보통의 메커니즘은 경로의 각 부분에 비용을 할당하고, 전체 경로에 대한 비용을 각 부분 비용의 합으로 정의하는 것이다. 이는 대부분의 일반적인 내비게이션 알고리듬 연산에 필수적으로 사용된다. 비용 함수의 단위는 화폐 비용이나 가치만으로 제한되지 않으며, 시간, 거리 등 다양한 척도가 사용될 수 있다. 다만 함수는 덧셈이 가능해야 하며, 음의 값을 가질 수 없다. 이 마지막 기준은 값이 0이 아니거나 또는 비용이 네트워크상의 루프와 연관되어야 하는 것으로 완화될 수 있으며, 이는 \"최소 비용\" 경로의 존재를 예방한다."@ko ;
+        lang:rus-note          "Примечание: Нормальный механизм заключается в применение стоимости к каждому участку маршрута и определении стоимости всего маршрута как суммарной стоимости его частей, что является необходимым для большинства распространенных алгоритмов навигации. Значения функции стоимости не ограничиваются только денежными и оценочными значениями, а включают такие единицы как время, расстояние и, возможно, какие-либо другие. Единственным требованием к функции является то, что она должна быть аддитивной и , по крайней мере, неотрицательной. Этот последний критерий может быть не столь строгим до тех пор, пока нулевая или меньшая стоимость связана с любой петлей в сети, не допуская этим существование маршрута «минимальной стоимости»"@ru ;
+        lang:spa-note          "Nota: El mecanismo normal es aplicar un coste a cada parte de una ruta y definir el coste total de una ruta como la suma de costes de las partes. Esto es necesario para la operación de la mayoría de los algoritmos más comunes de navegación. Las unidades de las funciones de coste no están limitadas al coste y valores monetarios, sino que incluyen medidas como tiempo, distancia y posiblemente otras. El único requisito es que la función sea aditiva, y como mínimo no negativa. Este último criterio puede relajarse mientras que no se asocie a ningún bucle en la red un coste cero o menor, ya que esto evitará la existencia de una ruta de \"coste mínimo\"."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 通常的做法是给路径的每一部分赋一个成本值，把总路径成本值定义为各部分成本的总和。这一函数对于大多数常用导航算法的运算是很有必要的。成本函数的单位不仅局限于货币的成本和价值，而且还包括诸如时间、距离和其他可能的度量。惟一的要求是函数为增加的，并且至少是非负的。非负这一要求可以弱化为与网络中任意环路相关的成本值非零或非负，以证明“最小成本”的路径存在。"@zh ;
+        geolexica:hasInfo      info:Info97 ;
+        geolexica:hasLDAPI     ldapi:ldapi97-skosrdf , ldapi:ldapi97-jsonld , ldapi:ldapi97-rdfxml , ldapi:ldapi97-json ;
+        geolexica:hasLangCode  lang:swe , lang:fin , lang:spa , lang:fra , lang:dan , lang:rus , lang:zho , lang:deu , lang:ara , lang:kor , lang:eng ;
+        geolexica:hasOrigin    lang:deuRegistry , lang:zhoRegistry , lang:engRegistry , lang:sweRegistry , lang:danRegistry , lang:korRegistry , lang:rusRegistry , lang:fraRegistry , lang:araRegistry , lang:finRegistry , lang:spaRegistry .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransUnavail
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+###  https://isotc211.geolexica.org/api/notes#NoteTransDiff
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info97 rdf:type owl:NamedIndividual ,
+                 geolexica:ConceptInfo ;
+        geolexica:hasSource sources:ISO-19133-2005 ;
+        geolexica:classification "preferred"@en ;
+        geolexica:date_accepted "2005-10-15"^^xsd:date ;
+        geolexica:entry_status "valid"@en .
+
+############################################################
+
+
+
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi97-json
+ldapi:ldapi97-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/97.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi97-jsonld
+ldapi:ldapi97-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/97.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi97-rdfxml
+ldapi:ldapi97-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/97.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi97-skosrdf
+ldapi:ldapi97-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/97.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
