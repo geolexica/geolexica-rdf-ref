@@ -1,132 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:ldapi="https://isotc211.geolexica.org/ld/ldapi#"
-    xmlns:lang="https://isotc211.geolexica.org/ld/language#"
-    xmlns="https://isotc211.geolexica.org/ld/concepts/27/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:geolexica="https://isotc211.geolexica.org/ld/geolexica#"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:notes="https://isotc211.geolexica.org/ld/notes#"
-    xmlns:sources="https://isotc211.geolexica.org/ld/sources#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dctype="http://purl.org/dc/dcmitype/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:void="http://vocab.deri.ie/void#"
-    xmlns:info="https://isotc211.geolexica.org/ld/info#"
-    xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:reviews="https://isotc211.geolexica.org/ld/reviews#" > 
-  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
-    <owl:sameAs rdf:resource="http://vocab.deri.ie/void#Dataset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/ld/concepts/27/basic_test">
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#korRegistry"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#zhoRegistry"/>
-    <skos:definition xml:lang="ko">부적합 경우와 적합한 경우를 명확하게 식별하기 위해 실시하는 최초의 기능 시험</skos:definition>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#jpn"/>
-    <skos:definition xml:lang="en">initial capability test intended to identify clear cases of non-conformance</skos:definition>
-    <skos:prefLabel xml:lang="sv">grundtest</skos:prefLabel>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi27-skosrdf"/>
-    <skos:prefLabel xml:lang="ru">базовый  тест</skos:prefLabel>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#ara"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#finRegistry"/>
-    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</dcterms:identifier>
-    <lang:deu-note rdf:resource="https://isotc211.geolexica.org/ld/notes#DefnTransUnavail"/>
-    <skos:prefLabel xml:lang="da">basistest</skos:prefLabel>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#jpnRegistry"/>
-    <skos:prefLabel xml:lang="ja">基本試験</skos:prefLabel>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#spa"/>
-    <geolexica:hasReview rdf:resource="https://isotc211.geolexica.org/ld/reviews#Review27"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#deuRegistry"/>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi27-json"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#araRegistry"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="zh">基本测试</skos:prefLabel>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#engRegistry"/>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi27-jsonld"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#fra"/>
-    <skos:definition xml:lang="fi">aluksi suoritettava kelpoisuustesti, jonka tarkoituksena on tunnistaa tapaukset, joissa vaatimuksenmukaisuusehdot eivät selvästi täyty</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <skos:definition xml:lang="sv">duglighetstest som görs som första steg för att identifiera uppenbara fall av icke-överensstämmelse</skos:definition>
-    <skos:prefLabel xml:lang="fr">test de base</skos:prefLabel>
-    <rdfs:label>basic test</rdfs:label>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#dan"/>
-    <skos:definition xml:lang="es">prueba de funcionalidad inicial que pretende identificar casos claros de no conformidad</skos:definition>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#fraRegistry"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#danRegistry"/>
-    <skos:prefLabel xml:lang="ar">اختبار أساسي</skos:prefLabel>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#swe"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#eng"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#zho"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#fin"/>
-    <skos:definition xml:lang="da">indledende egnethedstest, der har til formål at identificere tydelige tilfælde af afvigelse</skos:definition>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#sweRegistry"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#kor"/>
-    <skos:definition xml:lang="ru">начальный тест на функциональное соответствие,  предназначенный для выявления очевидных случаев несоответствия</skos:definition>
-    <skos:definition xml:lang="ar">اختبار قدرة أولي الغرض منه تحديد الحالات الواضحة من عدم المطابقة</skos:definition>
-    <skos:prefLabel xml:lang="fi">perustesti</skos:prefLabel>
-    <skos:prefLabel xml:lang="en">basic test</skos:prefLabel>
-    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</skos:notation>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#rus"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#spaRegistry"/>
-    <skos:definition xml:lang="fr">test fonctionnel initial ayant pour but d&amp;#39;identifier clairement des cas de non-conformité</skos:definition>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#rusRegistry"/>
-    <skos:definition xml:lang="ja">明らかな不適合のケースを識別するために実施する最初の機能試験。</skos:definition>
-    <geolexica:hasInfo rdf:resource="https://isotc211.geolexica.org/ld/info#Info27"/>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi27-rdfxml"/>
-    <skos:prefLabel xml:lang="ko">기본 시험</skos:prefLabel>
-    <skos:definition xml:lang="zh">初始能力测试，目的是确定那些明显的不一致内容。</skos:definition>
-    <skos:prefLabel xml:lang="es">prueba básica</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://isotc211.geolexica.org/ld/geolexica#GeolexicaConceptScheme"/>
-    <skos:prefLabel xml:lang="de">Basistest</skos:prefLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/ld/concepts/27/">
-    <dcterms:conformsTo rdf:resource="https://isotc211.geolexica.org/ld/geolexica/v1.0/"/>
-    <vann:preferredNamespacePrefix>concept27</vann:preferredNamespacePrefix>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/notes#"/>
-    <dcterms:issued> </dcterms:issued>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/reviews#"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/sources#"/>
-    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
-    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
-    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/ld/concepts/27/</vann:preferredNamespaceUri>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/info#"/>
-    <dcterms:title>basic test</dcterms:title>
-    <rdfs:label>basic test</rdfs:label>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/geolexica"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-28</dcterms:modified>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/language#"/>
-    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
-    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-20</dcterms:created>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/ldapi#"/>
-    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
-    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/ld/concepts/27/"/>
-  </rdf:Description>
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#araRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-ara</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Arabic Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#danRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-dan</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Danish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#deuRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-deu</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">German Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#engRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-eng</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">English Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#finRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-fin</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Finnish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#fraRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-fra</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">French Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#jpnRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-jpn</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Japanese Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#korRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-kor</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Korean Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#msaRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-msa</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Malay Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#nldRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-nld</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Nederlands Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#polRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-pol</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Polish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#rusRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-rus</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Russian Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#spaRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-spa</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Spanish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#sweRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-swe</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Swedish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#zhoRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-zho</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Chinese Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/sources#ISO-19105-2000">
+	<description xmlns="http://purl.org/dc/terms/" xml:lang="en">Geographic information — Conformance and testing</description>
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/standard/26010.html</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Source"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">ISO 19105:2000</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/concepts/27/">
+	<conformsTo xmlns="http://purl.org/dc/terms/" rdf:resource="https://isotc211.geolexica.org/geolexica/v1.0/"/>
+	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-20</created>
+	<license xmlns="http://purl.org/dc/terms/">Copyright 2022 OSGeo</license>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-23</modified>
+	<title xmlns="http://purl.org/dc/terms/">base standard</title>
+	<preferredNamespacePrefix xmlns="http://purl.org/vocab/vann/">concept27</preferredNamespacePrefix>
+	<preferredNamespaceUri xmlns="http://purl.org/vocab/vann/">https://isotc211.geolexica.org/concepts/27/</preferredNamespaceUri>
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+	<imports xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="https://isotc211.geolexica.org/geolexica"/>
+	<versionIRI xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="https://isotc211.geolexica.org/concepts/27/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/concepts/27/basic_test">
+	<identifier xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</identifier>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">basic test</label>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">اختبار قدرة أولي الغرض منه تحديد الحالات الواضحة من عدم المطابقة</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">indledende egnethedstest, der har til formål at identificere tydelige tilfælde af afvigelse</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">initial capability test intended to identify clear cases of non-conformance</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="es">prueba de funcionalidad inicial que pretende identificar casos claros de no conformidad</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">aluksi suoritettava kelpoisuustesti, jonka tarkoituksena on tunnistaa tapaukset, joissa vaatimuksenmukaisuusehdot eivät selvästi täyty</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">test fonctionnel initial ayant pour but d&amp;#39;identifier clairement des cas de non-conformité</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ja">明らかな不適合のケースを識別するために実施する最初の機能試験。</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ko">부적합 경우와 적합한 경우를 명확하게 식별하기 위해 실시하는 최초의 기능 시험</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ru">начальный тест на функциональное соответствие,  предназначенный для выявления очевидных случаев несоответствия</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="sv">duglighetstest som görs som första steg för att identifiera uppenbara fall av icke-överensstämmelse</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">初始能力测试，目的是确定那些明显的不一致内容。</definition>
+	<inScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://isotc211.geolexica.org/geolexica#GeolexicaConceptScheme"/>
+	<notation xmlns="http://www.w3.org/2004/02/skos/core#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</notation>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">اختبار أساسي</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">basistest</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Basistest</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">basic test</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="es">prueba básica</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">perustesti</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">test de base</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ja">基本試験</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ko">기본 시험</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ru">базовый  тест</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="sv">grundtest</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">基本测试</prefLabel>
+	<deu-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#DefnTransUnavail"/>
+	<hasInfo xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/info#Info27"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi27-json"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi27-jsonld"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi27-rdfxml"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi27-skosrdf"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#ara"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#dan"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#eng"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fin"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fra"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#jpn"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#kor"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#rus"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#spa"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#swe"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#zho"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#araRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#danRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#deuRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#engRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#finRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fraRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#jpnRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#korRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#rusRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#spaRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#sweRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#zhoRegistry"/>
+	<hasReview xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/reviews#Review27"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/info#Info27">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#ConceptInfo"/>
+	<classification xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">preferred</classification>
+	<date_accepted xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-15</date_accepted>
+	<entry_status xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">valid</entry_status>
+	<hasSource xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/sources#ISO-19105-2000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi27-json">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#JSON"/>
+	<jsonURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/27.json</jsonURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi27-jsonld">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#JSON-LD"/>
+	<jsonldURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/27.jsonld</jsonldURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi27-rdfxml">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#RDF-XML"/>
+	<rdfxmlURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/27.rdf</rdfxmlURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi27-skosrdf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#SKOS-RDF"/>
+	<skosrdfURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/27.ttl</skosrdfURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/notes#DefnTransUnavail">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#DefnUnavail"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Definition not provided in this language.</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/reviews#Review27">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#ConceptReview"/>
+	<review_date xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-05</review_date>
+	<review_status xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">pending</review_status>
+</rdf:Description>
+
 </rdf:RDF>

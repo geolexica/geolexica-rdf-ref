@@ -1,151 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
-    xmlns="https://isotc211.geolexica.org/ld/concepts/20/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:ldapi="https://isotc211.geolexica.org/ld/ldapi#"
-    xmlns:lang="https://isotc211.geolexica.org/ld/language#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:geolexica="https://isotc211.geolexica.org/ld/geolexica#"
-    xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:notes="https://isotc211.geolexica.org/ld/notes#"
-    xmlns:sources="https://isotc211.geolexica.org/ld/sources#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dctype="http://purl.org/dc/dcmitype/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:void="http://vocab.deri.ie/void#"
-    xmlns:info="https://isotc211.geolexica.org/ld/info#"
-    xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:reviews="https://isotc211.geolexica.org/ld/reviews#" > 
-  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
-    <owl:sameAs rdf:resource="http://vocab.deri.ie/void#Dataset"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/ld/concepts/20/">
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/language#"/>
-    <dcterms:issued> </dcterms:issued>
-    <dcterms:creator rdf:resource="https://www.linkedin.com/in/lanemk"/>
-    <vann:preferredNamespacePrefix>concept20</vann:preferredNamespacePrefix>
-    <dcterms:title>attribute (UML)</dcterms:title>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/info#"/>
-    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/notes#"/>
-    <dcterms:contributor rdf:resource="https://www.linkedin.com/in/rhtse/"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/ldapi#"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/geolexica"/>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/reviews#"/>
-    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-20</dcterms:created>
-    <owl:imports rdf:resource="https://isotc211.geolexica.org/ld/sources#"/>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-28</dcterms:modified>
-    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/ld/concepts/20/</vann:preferredNamespaceUri>
-    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/ld/concepts/20/"/>
-    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
-    <dcterms:conformsTo rdf:resource="https://isotc211.geolexica.org/ld/geolexica/v1.0/"/>
-    <rdfs:label>attribute (UML)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://isotc211.geolexica.org/ld/concepts/20/attributeUML">
-    <lang:swe-note rdf:resource="https://isotc211.geolexica.org/ld/notes#NoteTransUnavail"/>
-    <skos:prefLabel xml:lang="en">attribute (UML)</skos:prefLabel>
-    <lang:zho-note xml:lang="zh">注 1： 一个属性语义上等同于一个组合关联，但是，目的和用途是不同的。</lang:zho-note>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="sv">UML-attribut</skos:prefLabel>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#zhoRegistry"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#finRegistry"/>
-    <skos:definition xml:lang="es">aspecto dentro de un clasificador, que describe un rango de valores que las instancias del clasificador pueden tener</skos:definition>
-    <skos:prefLabel xml:lang="es">atributo (UML)</skos:prefLabel>
-    <skos:definition xml:lang="ru">свойство в классификаторе, описывающее множество значений, которые могут принимать экземпляры данного классификатора</skos:definition>
-    <skos:prefLabel xml:lang="ar">صفة (UML)</skos:prefLabel>
-    <lang:deu-note rdf:resource="https://isotc211.geolexica.org/ld/notes#NoteTransUnavail"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#nldRegistry"/>
-    <skos:definition xml:lang="fi">luokittelijaan sisältyvä piirre, joka määrittelee niiden arvojen joukon, joita luokittelijan ilmentymät voivat saada</skos:definition>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#spaRegistry"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#zho"/>
-    <skos:definition xml:lang="nl">element binnen een objecttype waarmee waarden worden beschreven die instanties van het object kunnen hebben</skos:definition>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#ara"/>
-    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</skos:notation>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#dan"/>
-    <lang:rus-note xml:lang="ru">Примечание 1: Атрибут семантически эквивалентен ассоциации композиции, однако их содержание и использование обычно различаются</lang:rus-note>
-    <skos:definition xml:lang="en">feature within a classifier that describes a range of values that instances of the classifier may hold</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <skos:prefLabel xml:lang="de">Attribut (UML)</skos:prefLabel>
-    <skos:altLabel xml:lang="fi">määrite (UML)</skos:altLabel>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi20-rdfxml"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#rusRegistry"/>
-    <skos:definition xml:lang="zh">类元的特性，描述该类元的实例可能有的值的范围。</skos:definition>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#eng"/>
-    <skos:definition xml:lang="ar">ميزة المصنِّف التي تصف نطاق من القيم التي يمكن لعناصر ذلك المصنِّف أن تحملها</skos:definition>
-    <geolexica:hasReview rdf:resource="https://isotc211.geolexica.org/ld/reviews#Review20"/>
-    <lang:spa-note xml:lang="es">Nota 2: -Aspecto- tal y como se ha usado en esta definición, tiene el significado UML del término y no aquel definido en el apartado 4.1 de esta Especificación Técnica.</lang:spa-note>
-    <lang:ara-note xml:lang="ar">ملاحظة 2: استخدم مصطلح (معلم) في هذا التعريف بمعناه المعتمد في اللغة الموحَّدة للنمذجة UML وهو مختلف عن تعريفه المنصوص عليه في الفقرة 4-1 من هذه المواصفة الفنية.</lang:ara-note>
-    <lang:deu-note rdf:resource="https://isotc211.geolexica.org/ld/notes#DefnTransUnavail"/>
-    <lang:dan-note xml:lang="da">Bemærk til posten: En attribut svarer semantisk til en sammensætningsassociation; men formål og anvendelse er normalt forskellig fra denne.</lang:dan-note>
-    <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</dcterms:identifier>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#korRegistry"/>
-    <rdfs:label>attribute (UML)</rdfs:label>
-    <lang:eng-note xml:lang="en">Note 1 to entry: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different.</lang:eng-note>
-    <skos:definition xml:lang="ko">분류자의 특성으로 분류자의 인스턴스가 가질 수 있는 값의 범위를 기술</skos:definition>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#spa"/>
-    <skos:definition xml:lang="sv">kombination av en attributtyp och ett attributvärde, knutet till ett visst objekt</skos:definition>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#danRegistry"/>
-    <skos:prefLabel xml:lang="nl">attribuut (UML)</skos:prefLabel>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#fra"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#kor"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#araRegistry"/>
-    <skos:prefLabel xml:lang="ko">속성 (UML)</skos:prefLabel>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#nld"/>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi20-skosrdf"/>
-    <lang:rus-note xml:lang="ru">Примечание 2: -Объект-, исходя из этого определения, это объект в терминологии UML.</lang:rus-note>
-    <lang:rus-note rdf:resource="https://isotc211.geolexica.org/ld/notes#NoteTransDiff"/>
-    <lang:eng-note xml:lang="en">Note 2 to entry:-Feature- used in this definition is the UML meaning of the term and is not meant as defined in 4.1 of this Technical Specification. </lang:eng-note>
-    <skos:prefLabel xml:lang="zh">属性(UML)</skos:prefLabel>
-    <lang:nld-note rdf:resource="https://isotc211.geolexica.org/ld/notes#NoteTransUnavail"/>
-    <lang:spa-note xml:lang="es">Nota 1: Un atributo es semánticamente equivalente a una asociación de composición; sin embargo, la intención y el uso normalmente es diferente.</lang:spa-note>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#swe"/>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi20-json"/>
-    <lang:kor-note xml:lang="ko">비고 1: 속성은 의미적으로 합성 연관과 동일하다. 그러나 의미와 용법은 일반적으로 다르다.</lang:kor-note>
-    <lang:kor-note xml:lang="ko">비고 2: 정의에 사용된 “특성(Feature)”은 KS X ISO 19103에 정의된 의미가 아닌 UML 용어이다.</lang:kor-note>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#engRegistry"/>
-    <lang:zho-note xml:lang="zh">注 2： 该定义使用的“特性（feature)”是UML的术语含义，不是本技术规范第4.1章定义的含义。</lang:zho-note>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#sweRegistry"/>
-    <geolexica:hasInfo rdf:resource="https://isotc211.geolexica.org/ld/info#Info20"/>
-    <skos:definition xml:lang="fr">caractéristique d&amp;#39;un classificateur décrivant une gamme de valeurs que les instances du classificateur peuvent avoir</skos:definition>
-    <skos:prefLabel xml:lang="fi">attribuutti (UML)</skos:prefLabel>
-    <lang:kor-note rdf:resource="https://isotc211.geolexica.org/ld/notes#NoteTransUnavail"/>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#fraRegistry"/>
-    <skos:prefLabel xml:lang="fr">attribut (UML)</skos:prefLabel>
-    <skos:prefLabel xml:lang="da">attribut (UML)</skos:prefLabel>
-    <geolexica:origin rdf:resource="https://isotc211.geolexica.org/ld/language#deuRegistry"/>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#rus"/>
-    <skos:prefLabel xml:lang="ru">атрибут(UML)</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://isotc211.geolexica.org/ld/geolexica#GeolexicaConceptScheme"/>
-    <lang:ara-note xml:lang="ar">ملاحظة 1: الصفة لغة تعادل ربط التركيب ؛ ولكن المقصد والاستخدام يختلفان دائما</lang:ara-note>
-    <geolexica:hasLDAPI rdf:resource="https://isotc211.geolexica.org/ld/ldapi#ldapi20-jsonld"/>
-    <skos:definition xml:lang="da">egenskab ved en klassifikator, der beskriver en række værdier, som instanser af klassifikatoren kan indeholde</skos:definition>
-    <geolexica:hasLangCode rdf:resource="https://isotc211.geolexica.org/ld/language#fin"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#araRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-ara</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Arabic Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#danRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-dan</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Danish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#deuRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-deu</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">German Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#engRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-eng</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">English Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#finRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-fin</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Finnish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#fraRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-fra</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">French Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#jpnRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-jpn</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Japanese Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#korRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-kor</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Korean Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#msaRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-msa</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Malay Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#nldRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-nld</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Nederlands Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#polRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-pol</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Polish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#rusRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-rus</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Russian Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#spaRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-spa</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Spanish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#sweRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-swe</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Swedish Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/language#zhoRegistry">
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/registers/#language-zho</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Origin"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Chinese Registry</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/api/sources#UML-1x">
+	<description xmlns="http://purl.org/dc/terms/" xml:lang="en">The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system.</description>
+	<source xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.omg.org/spec/UML/1.1/</source>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#Source"/>
+	<comment xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Earliest 1.x version found: https://www.omg.org/spec/UML/1.1/</comment>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Unified Modeling Language 1.x</label>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">UML 1</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/concepts/20/">
+	<conformsTo xmlns="http://purl.org/dc/terms/" rdf:resource="https://isotc211.geolexica.org/geolexica/v1.0/"/>
+	<created xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-20</created>
+	<license xmlns="http://purl.org/dc/terms/">Copyright 2022 OSGeo</license>
+	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-23</modified>
+	<title xmlns="http://purl.org/dc/terms/">attribute (UML)</title>
+	<preferredNamespacePrefix xmlns="http://purl.org/vocab/vann/">concept20</preferredNamespacePrefix>
+	<preferredNamespaceUri xmlns="http://purl.org/vocab/vann/">https://isotc211.geolexica.org/concepts/20/</preferredNamespaceUri>
+	<rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+	<imports xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="https://isotc211.geolexica.org/geolexica"/>
+	<versionIRI xmlns="http://www.w3.org/2002/07/owl#" rdf:resource="https://isotc211.geolexica.org/concepts/20/"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/concepts/20/attributeUML">
+	<identifier xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</identifier>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">attribute (UML)</label>
+	<altLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">määrite (UML)</altLabel>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">ميزة المصنِّف التي تصف نطاق من القيم التي يمكن لعناصر ذلك المصنِّف أن تحملها</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">egenskab ved en klassifikator, der beskriver en række værdier, som instanser af klassifikatoren kan indeholde</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">feature within a classifier that describes a range of values that instances of the classifier may hold</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="es">aspecto dentro de un clasificador, que describe un rango de valores que las instancias del clasificador pueden tener</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">luokittelijaan sisältyvä piirre, joka määrittelee niiden arvojen joukon, joita luokittelijan ilmentymät voivat saada</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">caractéristique d&amp;#39;un classificateur décrivant une gamme de valeurs que les instances du classificateur peuvent avoir</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ko">분류자의 특성으로 분류자의 인스턴스가 가질 수 있는 값의 범위를 기술</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="nl">element binnen een objecttype waarmee waarden worden beschreven die instanties van het object kunnen hebben</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ru">свойство в классификаторе, описывающее множество значений, которые могут принимать экземпляры данного классификатора</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="sv">kombination av en attributtyp och ett attributvärde, knutet till ett visst objekt</definition>
+	<definition xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">类元的特性，描述该类元的实例可能有的值的范围。</definition>
+	<inScheme xmlns="http://www.w3.org/2004/02/skos/core#" rdf:resource="https://isotc211.geolexica.org/geolexica#GeolexicaConceptScheme"/>
+	<notation xmlns="http://www.w3.org/2004/02/skos/core#" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</notation>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">صفة (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="da">attribut (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Attribut (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="en">attribute (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="es">atributo (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">attribuutti (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">attribut (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ko">속성 (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="nl">attribuut (UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="ru">атрибут(UML)</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="sv">UML-attribut</prefLabel>
+	<prefLabel xmlns="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">属性(UML)</prefLabel>
+	<ara-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ar">ملاحظة 1: الصفة لغة تعادل ربط التركيب ؛ ولكن المقصد والاستخدام يختلفان دائما</ara-note>
+	<ara-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ar">ملاحظة 2: استخدم مصطلح (معلم) في هذا التعريف بمعناه المعتمد في اللغة الموحَّدة للنمذجة UML وهو مختلف عن تعريفه المنصوص عليه في الفقرة 4-1 من هذه المواصفة الفنية.</ara-note>
+	<dan-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="da">Bemærk til posten: En attribut svarer semantisk til en sammensætningsassociation; men formål og anvendelse er normalt forskellig fra denne.</dan-note>
+	<deu-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#DefnTransUnavail"/>
+	<deu-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#NoteTransUnavail"/>
+	<eng-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="en">Note 1 to entry: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different.</eng-note>
+	<eng-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="en">Note 2 to entry:-Feature- used in this definition is the UML meaning of the term and is not meant as defined in 4.1 of this Technical Specification. </eng-note>
+	<kor-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#NoteTransUnavail"/>
+	<kor-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ko">비고 1: 속성은 의미적으로 합성 연관과 동일하다. 그러나 의미와 용법은 일반적으로 다르다.</kor-note>
+	<kor-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ko">비고 2: 정의에 사용된 “특성(Feature)”은 KS X ISO 19103에 정의된 의미가 아닌 UML 용어이다.</kor-note>
+	<nld-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#NoteTransUnavail"/>
+	<rus-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#NoteTransDiff"/>
+	<rus-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ru">Примечание 1: Атрибут семантически эквивалентен ассоциации композиции, однако их содержание и использование обычно различаются</rus-note>
+	<rus-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="ru">Примечание 2: -Объект-, исходя из этого определения, это объект в терминологии UML.</rus-note>
+	<spa-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="es">Nota 1: Un atributo es semánticamente equivalente a una asociación de composición; sin embargo, la intención y el uso normalmente es diferente.</spa-note>
+	<spa-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="es">Nota 2: -Aspecto- tal y como se ha usado en esta definición, tiene el significado UML del término y no aquel definido en el apartado 4.1 de esta Especificación Técnica.</spa-note>
+	<swe-note xmlns="https://isotc211.geolexica.org/api/language#" rdf:resource="https://isotc211.geolexica.org/notes#NoteTransUnavail"/>
+	<zho-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="zh">注 1： 一个属性语义上等同于一个组合关联，但是，目的和用途是不同的。</zho-note>
+	<zho-note xmlns="https://isotc211.geolexica.org/api/language#" xml:lang="zh">注 2： 该定义使用的“特性（feature)”是UML的术语含义，不是本技术规范第4.1章定义的含义。</zho-note>
+	<hasInfo xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/info#Info20"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi20-json"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi20-jsonld"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi20-rdfxml"/>
+	<hasLDAPI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/ldapi#ldapi20-skosrdf"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#ara"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#dan"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#eng"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fin"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fra"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#kor"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#nld"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#rus"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#spa"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#swe"/>
+	<hasLangCode xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#zho"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#araRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#danRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#deuRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#engRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#finRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#fraRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#korRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#nldRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#rusRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#spaRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#sweRegistry"/>
+	<hasOrigin xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/language#zhoRegistry"/>
+	<hasReview xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/reviews#Review20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/info#Info20">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#ConceptInfo"/>
+	<classification xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">preferred</classification>
+	<date_accepted xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-07-15</date_accepted>
+	<entry_status xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">valid</entry_status>
+	<hasSource xmlns="https://isotc211.geolexica.org/geolexica#" rdf:resource="https://isotc211.geolexica.org/api/sources#UML-1x"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi20-json">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#JSON"/>
+	<jsonURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/20.json</jsonURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi20-jsonld">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#JSON-LD"/>
+	<jsonldURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/20.jsonld</jsonldURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi20-rdfxml">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#RDF-XML"/>
+	<rdfxmlURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/20.rdf</rdfxmlURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/ldapi#ldapi20-skosrdf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#SKOS-RDF"/>
+	<skosrdfURI xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://isotc211.geolexica.org/api/ldapi/20.ttl</skosrdfURI>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/notes#DefnTransUnavail">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#DefnUnavail"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Definition not provided in this language.</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/notes#NoteTransDiff">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#NoteSourceDiff"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">This translated term may not be from the same source as the normative term.</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/notes#NoteTransUnavail">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#NoteUnavail"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">This note has not been translated.</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://isotc211.geolexica.org/reviews#Review20">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="https://isotc211.geolexica.org/geolexica#ConceptReview"/>
+	<review_date xmlns="https://isotc211.geolexica.org/geolexica#" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-14</review_date>
+	<review_decision xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">accepted</review_decision>
+	<review_decision_event xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">Publication of ISO 19103:2015</review_decision_event>
+	<review_decision_notes xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">Authoritative reference changed from ISO/IEC 19501:2005 (Adapted from) to UML 1. Lineage source added as ISO/TS 19103:2005</review_decision_notes>
+	<review_status xmlns="https://isotc211.geolexica.org/geolexica#" xml:lang="en">final</review_status>
+</rdf:Description>
+
 </rdf:RDF>
