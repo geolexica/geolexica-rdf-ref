@@ -1,0 +1,196 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/255/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/255/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "interoperability" ;
+        vann:preferredNamespacePrefix  "concept255" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/255/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/255/> .
+
+###########################################################
+
+:interoperability  a           skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "interoperability" ;
+        dcterms:identifier     255 ;
+        skos:definition        "一种能力，在要求用户几乎不了解，或者完全不了解各功能单元的独特特征的情况下，能在这些功能单元之间进行通讯、执行程序或传送数据。"@zh , "Keupayaan menggandingkan satu sistem dengan satu sistem yang lain."@ms , "возможность устанавливать связь, исполнять программы или осуществлять передачу данных между различными функциональными блоками таким образом, чтобы от пользователя требовались немногие (или не требовались вообще) знания об уникальных характеристиках этих блоков"@ru , "Fähigkeit zur Kommunikation, zur Ausführung von Programmen oder zur Übertragung von Daten zwischen verschiedenen Funktionseinheiten in einer solchen Weise, dass der Anwender nur geringe oder keine Kenntnisse über die einzelnen Merkmale dieser Einheiten besitzen muss"@de , "förmåga att fungera ihop utan att särskilda åtgärder måste vidtas"@sv , "mogelijkheid van verschillende autonome, heterogene eenheden, systemen of partijen om met elkaar te communiceren en interacteren"@nl , "tietojärjestelmien kyky viestiä keskenään sellaisella tavalla tai siinä laajuudessa, että ne voivat rutiinimaisesti käyttää toistensa tuloksia"@fi , "zdolność do komunikowania, wykonywania programów lub dokonywania transferu danych między różnymi jednostkami funkcjonalnymi w sposób, który w niewielkim stopniu lub w ogóle nie wymaga od użytkownika wiedzy o indywidualnych cechach tych jednostek"@pl , "القدرة على الاتصال ، أو تنفيذ البرامج أو نقل البيانات بين مختلف الوحدات العاملة بطريقة لا يحتاج فيها المستخدم إلى معرفة الخصائص الفريده لتلك الوحدات أو  فقط إلى القليل منها"@ar , "capacidad de comunicarse, ejecutar programas o transferir datos entre distintas unidades funcionales de modo que el usuario sólo necesite un conocimiento escaso o nulo sobre las características particulares de tales unidades"@es , "capacité de communiquer, d&#39;exécuter des programmes, ou transférer des données entre des unités fonctionnelles diverses, d&#39;une façon n&#39;exigeant de l&#39;utilisateur que peu ou pas de connaissance des caractéristiques spécifiques de ces unités"@fr , "사용자가 기능적 구성 단위들의 고유 특성을 알지 못해도, 다양한 구성 단위 간의 데이터 전송, 프로그램 실행, 의사소통을 가능하게 하는 성능"@ko , "capability to communicate, execute programs, or transfer data among various functional units in a manner that requires the user to have little or no knowledge of the unique characteristics of those units"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          255 ;
+        skos:prefLabel         "Interoperabilität"@de , "interoperabilitet"@sv , "상호 운용성"@ko , "zdolność do współdziałania"@pl , "interopérabilité"@fr , "interoperabiliteit"@nl , "interoperability"@en , "التوافقيه"@ar , "interoperabilidad"@es , "互操作性"@zh , "yhteentoimivuus"@fi , "интероперабельность"@ru , "saling kendali"@ms ;
+        lang:lang-msa          notes:NoteTransDiff ;
+        lang:lang-rus          notes:NoteTransDiff ;
+        geolexica:hasInfo      info:Info255 ;
+        geolexica:hasLDAPI     ldapi:ldapi255-rdfxml , ldapi:ldapi255-json , ldapi:ldapi255-skosrdf , ldapi:ldapi255-jsonld ;
+        geolexica:hasLangCode  lang:msa , lang:deu , lang:fin , lang:jpn , lang:eng , lang:nld , lang:rus , lang:kor , lang:zho , lang:spa , lang:swe , lang:pol , lang:ara , lang:fra ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:deuRegistry , lang:polRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry , lang:engRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry , lang:rusRegistry , lang:finRegistry , lang:msaRegistry , lang:araRegistry ;
+        geolexica:hasReview    reviews:Review255 .
+
+############################################################
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info255 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-IEC-2382-2009 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-02-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review255 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2012-08-11"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of ISO 19119:2016"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO/IEC 2382-1:1993 to ISO/IEC 2382:2009, 2121317. Lineage source added as ISO 19119:2005"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-IEC-2382-2009 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 2382:2009, 2121317" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi255-json
+ldapi:ldapi255-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/255.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi255-jsonld
+ldapi:ldapi255-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/255.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi255-rdfxml
+ldapi:ldapi255-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/255.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi255-skosrdf
+ldapi:ldapi255-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/255.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,201 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/220/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/220/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "Gregorian calendar" ;
+        vann:preferredNamespacePrefix  "concept220" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/220/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/220/> .
+
+###########################################################
+
+:Gregorian_calendar  a         skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "Gregorian calendar" ;
+        dcterms:identifier     220 ;
+        skos:definition        "calendar in general use; first introduced in 1582 to define a year that more closely approximated the tropical year than the Julian calendar"@en , "общепринятый календарь, впервые введенный в 1582 г.  с целью установить календарный год, дающий более точное приближение тропического года, чем  Юлианский  календарь"@ru , "التقويم الشائع الاستعمال ، عمل به لأول مرة في عام 1592م حيث حدد السنة بشكل جعلها أقرب إلى السنة الاستوائية من تقويم الإمبراطور يوليوس قيصر"@ar , "율리우스력(曆)에 비하여 회귀 연도에 보다 근사하게 윤년을 정의하는, 1582년에 최초로 도입된 범용달력"@ko , "1582年引入的通用日历，所定义的年比儒略历的更接近回归年。"@zh , "ユリウス暦よりも一年の長さが太陽年によって近くなるよう定義するため，1582年に最初に導入された，はん用的な暦(JIS X 0301参照)。"@ja , "calendario de uso general; fue introducido en 1582 para definir un año que más aproximado al año trópico que el calendario juliano"@es , "almindeligt brugt kalender; indført i 1582 for at definere et år, der lignede det tropiske år mere end den julianske kalender"@da , "kalendar secara umum; mula diperkenalkan pada 1582 untuk menentukan satu tahun yang lebih dekat dengan tahun tropika daripada kalendar Julian"@ms , "allmänt använd kalender som togs i bruk 1582 för att rätta ett fel i den julianska kalendern"@sv , "yleisessä käytössä oleva kalenteri; otettiin käyttöön vuonna 1582, jotta saatiin määritellyksi vuosi lähemmäksi trooppista vuotta kuin juliaanisessa kalenterissa"@fi , "calendrier d&#39;usage courant; introduit pour la première fois en 1582 pour définir l&#39;année qui approximait plus précisément l&#39;année tropique que le calendrier Julien"@fr ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          220 ;
+        skos:prefLabel         "التقويم الميلادي"@ar , "그레고리안 달력"@ko , "Gregorian calendar"@en , "kalendar Gregory"@ms , "公历"@zh , "gregorianska kalendern"@sv , "Григорианский  календарь"@ru , "gregoriansk kalender"@da , "gregoriaaninen kalenteri"@fi , "gregorianischer Kalender"@de , "グレゴリオ暦"@ja , "calendario gregoriano"@es , "calendrier Grégorien"@fr ;
+        lang:lang-deu          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:lang-fra          notes:NoteTransDiff ;
+        lang:lang-jpn          notes:NoteTransDiff ;
+        lang:lang-msa          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info220 ;
+        geolexica:hasLDAPI     ldapi:ldapi220-json , ldapi:ldapi220-jsonld , ldapi:ldapi220-skosrdf , ldapi:ldapi220-rdfxml ;
+        geolexica:hasLangCode  lang:swe , lang:dan , lang:jpn , lang:msa , lang:zho , lang:kor , lang:fra , lang:fin , lang:deu , lang:ara , lang:eng , lang:spa , lang:rus ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:zhoRegistry , lang:jpnRegistry , lang:araRegistry , lang:deuRegistry , lang:sweRegistry , lang:danRegistry , lang:rusRegistry , lang:finRegistry , lang:msaRegistry , lang:engRegistry , lang:korRegistry , lang:spaRegistry ;
+        geolexica:note         "비고: 그레고리안 달력은 율리우스력의 누적된 오차를 보정하기 위해 도입되었다. 그레고리안 달력에서는 대개 1년은 365일을 가지고 윤년은 366일을 가지며 12개의 연속적인 달로 나뉜다."@ko , "Nota: La introducción del calendario gregoriano supuso la cancelación de las inexactitudes acumuladas del año juliano. En el calendario gregoriano un año puede ser regular o bisiesto; cada año se divide en doce meses."@es , "HUOM.: Gregoriaanisen kalenterin käyttöönoton myötä poistuivat myös juliaanisen vuoden käytöstä aiheutuneet epätarkkuudet. Gregoriaanisessa kalenterissa kalenterivuosi on joko normaali tai karkausvuosi ja kukin vuosi on jaettu 12 peräkkäiseen kuukauteen."@fi , "ملاحظة: لقد كان اعتماد التقويم الميلادي ( أو تقويم البابا جريجوري ) بمثابة إلغاء فعلي لحالات عدم الدقة المتكررة لتقويم الإمبراطور الروماني يوليوس قيصر. ففي التقويم الميلادي ( الجريجوري ) تكون السنة الشمسية إما عامة ( بسيطة ) أو سنة كبيسة , وتقسم كل سنة إلى 12 شهراً متتابعة ."@ar , "Note to entry: The introduction of the Gregorian calendar included the cancellation of the accumulated inaccuracies of the Julian year. In the Gregorian calendar, a calendar year is either a common year or a leap year; each year is divided into 12 sequential months."@en , "Bemærk til posten: Overgangen til den gregorianske kalender medførte, at de akkumulerede unøjagtigheder i det julianske år blev fjernet. I den gregorianske kalender er et kalenderår enten et almindeligt år eller et skudår; hvert år er inddelt i 12 fortløbende måneder."@da , "注： 公历的引入消除了儒略年的累积误差。在公历中，历年或为平年，或为闰年，均分为12个顺序月。"@zh , "備考： 　グレゴリオ暦の導入には，ユリウス暦で積み重なってきた誤差を解消するという意味も含まれていた。グレゴリオ暦の暦年は，平年又はうるう年となっており，一年は，12に分割された月の列からなる。"@ja , "Примечание: С введением Григорианского календаря были устранены накопившиеся неточности в расчете юлианского года. В Григорианском календаре календарный год является либо обычным, либо високосным, но при этом каждый год разделен на 12 последовательных месяцев"@ru .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info220 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-8601-2000 ;
+         geolexica:clause "(Adapted from)" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2002-09-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+
+
+############################################################
+
+sources:ISO-8601-2000 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Data elements and interchange formats — Information interchange — Representation of dates and times"@en ;
+                   dcterms:source "https://www.iso.org/standard/26780.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 8601:2000" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi220-json
+ldapi:ldapi220-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/220.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi220-jsonld
+ldapi:ldapi220-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/220.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi220-rdfxml
+ldapi:ldapi220-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/220.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi220-skosrdf
+ldapi:ldapi220-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/220.ttl"^^xsd:anyURI .
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

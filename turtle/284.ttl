@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/284/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/284/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "mean sea level" ;
+        vann:preferredNamespacePrefix  "concept284" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/284/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/284/> .
+
+###########################################################
+
+:mean_sea_level  a             owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "mean sea level" ;
+        dcterms:identifier     284 ;
+        skos:definition        "nivel medio de la superficie del mar sobre todos los periodos de marea y variaciones estacionales"@es , "mittlere Meereshöhe, gemittelt über die Gezeitenstufen und saisonalen Schwankungen"@de , "Purata aras ketinggian permukaan laut, iaitu purata kesemua aras pasang surut bagi kawasan tertentu"@ms , "gemiddeld niveau van het oppervlak van de zee over alle getijfasen en seizoensgebonden variaties"@nl , "średni poziom powierzchni morza z uwzględnieniem pływów i zmian sezonowych"@pl , "المستوى المتوسط لسطح البحر خلال جميع مراحل المد والجزر والاختلافات الموسمية"@ar , "niveau moyen de la surface de la mer après avoir éliminé les perturbations liées aux marées et aux variations saisonnières"@fr , "遍历潮汐和季节变化的所有阶段海面的平均值。"@zh , "merenpinnan keskimääräinen taso, jossa on huomioitu vuorovesivaiheet ja vuodenaikavaihtelut"@fi , "средний уровень морской поверхности для всех стадий прилива"@ru , "모든 단계의 조수위와 계절 변화에 대한 해수면의 평균 높이"@ko , "average level of the surface of the sea over all stages of tide and seasonal variations"@en , "genomsnittligt värde av havets nivå, mätt under en lång period"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          284 ;
+        skos:prefLabel         "średni poziom morza"@pl , "平均海平面"@zh , "متوسط منسوب سطح البحر"@ar , "평균 해수면"@ko , "keskimerenpinta"@fi , "gemiddeld zeeniveau"@nl , "nivel medio del mar"@es , "mean sea level"@en , "min aras laut"@ms , "niveau moyen des mers"@fr , "средний уровень моря"@ru , "medelvattenstånd"@sv , "mittlere Meereshöhe"@de ;
+        lang:lang-deu          notes:NoteTransUnavail ;
+        lang:lang-fra          notes:NoteTransDiff ;
+        lang:lang-msa          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info284 ;
+        geolexica:hasLDAPI     ldapi:ldapi284-jsonld , ldapi:ldapi284-skosrdf , ldapi:ldapi284-rdfxml , ldapi:ldapi284-json ;
+        geolexica:hasLangCode  lang:msa , lang:nld , lang:kor , lang:zho , lang:swe , lang:eng , lang:fin , lang:rus , lang:pol , lang:spa , lang:fra , lang:deu , lang:ara ;
+        geolexica:hasOrigin    lang:korRegistry , lang:rusRegistry , lang:deuRegistry , lang:zhoRegistry , lang:finRegistry , lang:msaRegistry , lang:fraRegistry , lang:polRegistry , lang:araRegistry , lang:nldRegistry , lang:sweRegistry , lang:engRegistry , lang:spaRegistry ;
+        geolexica:hasReview    reviews:Review284 ;
+        geolexica:note         "OPMERKING: Gemiddeld zeeniveau in de lokale context betekent meestal het gemiddeld zeeniveau voor die regio berekend uit waarnemingen op één of meer punten over een gegeven tijdvak. Gemiddeld zeeniveau in de globale context verschilt nooit meer dan 2 meter van de globale geoïde. "@nl , "HUOM.: Paikallisesti tarkasteltuna keskimerenpinta tarkoittaa tavallisesti alueen keskimerenpintaa, joka lasketaan yhdestä tai useammasta pisteestä tiettynä ajanjaksona. Maailmanlaajuisesti tarkasteltuna keskimerenpinta poikkeaa globaalista geoidista korkeintaan kaksi metriä. "@fi , "비고: 통상, 지역적 의미로 평균 해수면은, 하나 이상의 지점을 일정한 기간 동안 관측한 그 영역의 평균 해수면을 말한다. 전지구적인 의미로 평균 해수면은 전지구적인 지오이드와 2m 이하의 차로 받아들여진다. "@ko , "Nota: Nivel del mar en un contexto local normalmente significa el nivel medio del mar en la región, calculado a partir de las observaciones en uno o más puntos en un periodo de tiempo dado. El nivel medio del mar en un contexto global difiere del geoide pero no más de 2 m."@es , "Примечание: Средний уровень моря обычно означает средний уровень для региона, определенный по измерениям на одном или нескольких уровенных постах в заданный период времени"@ru , "ملاحظة: متوسط منسوب سطح البحر, إذا نظر إليه في سياق محلي , يعني عادة متوسط منسوب سطح البحر بالنسبة للمنطقة بعد حسابه من خلال عمليات رصد نفذت عند نقطة واحدة أو أكثر على امتداد فترة زمنية معينة. أما إذا نظر إليه في سياق عالمي فإنه يختلف عن الجويد العالمي بما لا يزيد عن مترين. "@ar , "UWAGA: Średni poziom morza w sensie lokalnym na ogół oznacza średni poziom morza w danym regionie wyznaczany na podstawie obserwacji co najmniej jednego punktu przez określony czas. W sensie globalnym średni poziom morza różni się od geoidy nie więcej niż o 2 m."@pl , "注： 局部环境的平均海平面通常是指，在给定的时间周期内，在该地区一个或多个点观测的海平面平均值。全球范围平均海平面与全球大地水准面相差不超过2m。"@zh , "Note to entry: Mean sea level in a local context normally means mean sea level for the region calculated from observations at one or more points over a given period of time. Mean sea level in a global context differs from a global geoid by not more than 2 m. "@en .
+
+############################################################
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info284 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2019 ;
+         geolexica:clause "(E), 3.1.41" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2003-02-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+        
+############################################################
+
+reviews:Review284 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19111:2007 to ISO 19111:2019(E), 3.1.41. Lineage source added as ISO 19111:2003"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19111-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/74039.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi284-json
+ldapi:ldapi284-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/284.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi284-jsonld
+ldapi:ldapi284-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/284.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi284-rdfxml
+ldapi:ldapi284-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/284.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi284-skosrdf
+ldapi:ldapi284-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/284.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

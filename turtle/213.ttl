@@ -1,0 +1,197 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/213/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/213/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "geometric dimension" ;
+        vann:preferredNamespacePrefix  "concept213" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/213/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/213/> .
+
+###########################################################
+
+:geometric_dimension_1
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "geometric dimension" ;
+        dcterms:identifier     213 ;
+        skos:definition        "número n mayor tal que cada posición directa de un conjunto geométrico puede ser asociada con un subconjunto que tiene esa posición diecta en su interior y que es similar (isomorfo) a Rn, el espacio euclídeo n-dimensional"@es , "największa liczba n taka, że każde położenie bezpośrednie w zbiorze geometrycznym może być powiązane z podzbiorem, do którego wnętrza to położenie bezpośrednie należy i który jest podobny (izomorficzny) do n - wymiarowej przestrzeni euklidesowej Rn"@pl , "det största heltal n sådant att varje koodinatangiven position i en positionsmängd kan förknippas med en delmängd som har sin koodinatangivna position i dess innanförmängd och liknar (är isomorf med) ett  n-dimensionellt euklidiskt rum"@sv , "suurin sellainen lukumäärä n, että jokainen geometriseen joukkoon kuuluva piste voidaan liittää pisteen sisältävään osajoukkoon, joka on yhtäläinen (isomorfinen) n-ulotteisen euklidisen avaruuden (R n) kanssa"@fi , "наибольшее число n такое, что каждой точке в пределах данного геометрического множества может быть сопоставлено некоторое подмножество, содержащее внутри данную точку и подобное (изоморфное) Евклидову  n-мерному пространству Rn"@ru , "幾何集合の中のどの直接位置も，その直接位置を内部に含みn次元ユークリッド空間R　と相似（同形）な部分集合と関連付けることができるような数nの最大値。"@ja , "største antal n, således at enhver direkte position i en geometrisk mængde kan forbindes med en delmængde, som den direkte position ligger inden i og som ligner (er isomorf med) Rn, Euklidisk n-rum"@da , "기하 집합에서 각각의 직접 위치가 그 부분 집합 내부의 위치와 연관될 수 있는 최대의 수. 유클리드 n 공간의 Rn과 유사함"@ko , "largest number n such that each direct position in a geometric set can be associated with a subset that has the direct position in its interior and is similar (isomorphic) to Rn, Euclidean n-space"@en , "plus grand nombre n tel que chaque position directe dans un ensemble géométrique peut être associée à un sous-ensemble ayant la position directe dans son intérieur et est semblable (isomorphique) à Rn, espace euclidien de dimension n"@fr , "العدد الأكبر (ن) بحيث أن كل موقع مباشر فيمجموعة هندسية ممكن ربطها مع المجموعة الفرعية التي لها موقع مباشر في داخلها وومتساوية (متماثلة) بالنسبة إلى       ( Rn)، وفي هندسة إقليدس هي (ن -حيز) n-space"@ar , "在几何集内每一个直接位置都可以与其内部具有该直接位置的子集相关联，且相似（同构）于n维欧几里德空间的Rn的最大数目n。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          213 ;
+        skos:prefLabel         "geometridimension"@sv , "геометрическая размерность"@ru , "wymiar geometryczny"@pl , "기하 차원"@ko , "geometrisk dimension"@da , "几何维数"@zh , "geometric dimension"@en , "幾何次元"@ja , "dimension geométrica"@es , "dimension géométrique"@fr , "geometrische Dimension"@de , "geometrinen ulottuvuus"@fi , "البعد الهندسي"@ar ;
+        lang:lang-deu          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info213 ;
+        geolexica:hasLDAPI     ldapi:ldapi213-jsonld , ldapi:ldapi213-rdfxml , ldapi:ldapi213-json , ldapi:ldapi213-skosrdf ;
+        geolexica:hasLangCode  lang:rus , lang:jpn , lang:ara , lang:pol , lang:kor , lang:spa , lang:dan , lang:deu , lang:zho , lang:fin , lang:fra , lang:eng , lang:swe ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:korRegistry , lang:sweRegistry , lang:jpnRegistry , lang:araRegistry , lang:danRegistry , lang:finRegistry , lang:spaRegistry , lang:fraRegistry , lang:deuRegistry , lang:polRegistry , lang:engRegistry , lang:zhoRegistry ;
+        geolexica:hasReview    reviews:Review213 .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info213 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+        
+############################################################
+
+reviews:Review213 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for geometric dimension <geometry, topology> in ISO 19107:2019(E)"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi213-json
+ldapi:ldapi213-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/213.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi213-jsonld
+ldapi:ldapi213-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/213.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi213-rdfxml
+ldapi:ldapi213-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/213.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi213-skosrdf
+ldapi:ldapi213-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/213.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

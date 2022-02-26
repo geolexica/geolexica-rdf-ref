@@ -1,0 +1,194 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/306/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/306/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "navigation" ;
+        vann:preferredNamespacePrefix  "concept306" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/306/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/306/> .
+
+###########################################################
+
+:navigation  a                 skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "navigation" ;
+        dcterms:identifier     306 ;
+        skos:definition        "Pelayaran atau proses mencari maklumat dalam tapak web dengan mengklik hiperpautan yang akan membawa pengguna dari satu laman ke satu laman yang lain. Sambil mengemudi, pengguna mungkin berpindah dari satu komputer ke satu komputer lain atau dari satu pelayan ke satu pelayan lain tanpa disedari."@ms , "yhdistelmä reititystä, reitin kulkemista ja reittiseurantaa"@fi , "라우팅, 경로 운행 및 추적의 조합"@ko , "مزيج من التوجيه ، واجتياز المسار وتتبع خط السير"@ar , "路径、路径遍历和跟踪的组合。"@zh , "fastställande av position och färdväg"@sv , "combinación de enrutamiento, recorrido de ruta y seguimiento"@es , "combination of routing, route traversal and tracking"@en , "combinaison de routage, guidage et suivi d&#39;itinéraire"@fr , "сочетание маршрутизации, движения по маршруту и слежения"@ru ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          306 ;
+        skos:prefLabel         "navigointi"@fi , "навигация"@ru , "ملاحة"@ar , "navegación"@es , "pengemudian"@ms , "navigering"@sv , "Navigation"@de , "navigation"@fr , "navigation"@en , "导航"@zh , "내비게이션"@ko ;
+        lang:ara-note          "ملاحظة: المقصود هنا بشكل أساسي هو مصطلح \"الملاحة\" الشائع المعروف لكن التعريف يحل العملية ويردها إلى مصطلحات استخدمت في الحزم المحددة في هذا المقياس الدولي."@ar ;
+        lang:eng-note          "Note to entry: This is essentially the common term navigation, but the definition decomposes the process in terms used in the packages defined in this International Standard."@en ;
+        lang:fin-note          "HUOM.: Termillä navigointi tarkoitetaan tässä olennaisilta osin samaa kuin yleisessä kielenkäytössä (käyttäjän valintoihin perustuva ja tiettyyn määränpäähän löytämistä tukeva toiminta), mutta määritelmässä navigointiprosessin sisältö on jaettu tässä kansainvälisessä standardissa määriteltyjen ryhmittelyjen mukaisiin osiin."@fi ;
+        lang:kor-note          "비고: '내비게이션'은 일반적 용어로 사용되나, 본 표준의 용어 정의에서는 각 절차를 분할한다."@ko ;
+        lang:lang-deu          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-fra          notes:NoteTransDiff ;
+        lang:lang-msa          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Это, по существу, самое распространенное определение термина «навигация», но это определение разбивает весь процесс навигации на термины, используемые в пакетах, описанных в ISO 19133"@ru ;
+        lang:spa-note          "Nota: Este es esencialmente el término común \"navegación\", pero la definición descompone el proceso en términos usados en los paquetes definidos en esta norma internacional."@es ;
+        lang:zho-note          "注： 这是最基本的导航通用术语，但本定义把它分解为本国际标准中定义的各个过程中的术语。"@zh ;
+        geolexica:hasInfo      info:Info306 ;
+        geolexica:hasLDAPI     ldapi:ldapi306-json , ldapi:ldapi306-skosrdf , ldapi:ldapi306-rdfxml , ldapi:ldapi306-jsonld ;
+        geolexica:hasLangCode  lang:pol , lang:ara , lang:jpn , lang:zho , lang:eng , lang:kor , lang:msa , lang:deu , lang:fra , lang:fin , lang:spa , lang:nld , lang:swe , lang:rus ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:fraRegistry , lang:korRegistry , lang:jpnRegistry , lang:engRegistry , lang:msaRegistry , lang:araRegistry , lang:rusRegistry , lang:spaRegistry , lang:polRegistry , lang:zhoRegistry , lang:finRegistry , lang:deuRegistry , lang:nldRegistry .
+
+############################################################
+
+############################################################
+
+info:Info306 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
+         geolexica:clause "4.24" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+           
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi306-json
+ldapi:ldapi306-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/306.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi306-jsonld
+ldapi:ldapi306-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/306.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi306-rdfxml
+ldapi:ldapi306-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/306.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi306-skosrdf
+ldapi:ldapi306-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/306.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,196 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/281/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/281/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "maneuver, manœuvre" ;
+        vann:preferredNamespacePrefix  "concept281" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/281/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/281/> .
+
+###########################################################
+
+:maneuver_manœuvre  a          skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "maneuver, manœuvre" ;
+        dcterms:identifier     281 ;
+        skos:definition        "kokoelma toisiinsa liittyviä linkkejä ja käännöksiä, joiden yhdistelmää käytetään reitillä"@fi , "sekvens av länkar och svängar som kombineras för att använda i en ruttinstruktion"@sv , "경로의 조합에 사용된 관련 링크와 회전의 모음"@ko , "مجموعة من وصلات الربط والمنحنيات ذات العلاقة تستخدم مجتمعة في مسار"@ar , "collection of related links and turns used in a route in combination"@en , "collection combinée de routes et intersections utilisée dans un itinéraire"@fr , "совокупность связанных между собой дуг и поворотов,  совместно используемых  в маршруте"@ru , "在组合路径中所使用的有关有向路段和转向的集合。"@zh , "colección de enlaces y giros relacionados usados en combinación en una ruta"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          281 ;
+        skos:prefLabel         "行进策略"@zh , "مناورة"@ar , "maniobra"@es , "maneuver,manœuvre"@en , "manöver"@sv , "Manövrieren"@de , "manœuvre"@fr , "маневр"@ru , "manööveri"@fi , "기동"@ko ;
+        lang:lang-deu          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-fra          notes:NoteTransDiff ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info281 ;
+        geolexica:hasLDAPI     ldapi:ldapi281-json , ldapi:ldapi281-rdfxml , ldapi:ldapi281-skosrdf , ldapi:ldapi281-jsonld ;
+        geolexica:hasLangCode  lang:deu , lang:ara , lang:fin , lang:fra , lang:eng , lang:swe , lang:zho , lang:kor , lang:spa , lang:rus ;
+        geolexica:hasOrigin    lang:zhoRegistry , lang:deuRegistry , lang:korRegistry , lang:spaRegistry , lang:fraRegistry , lang:finRegistry , lang:rusRegistry , lang:engRegistry , lang:araRegistry , lang:sweRegistry ;
+        geolexica:note         "비고: 기동은 편리하고 정당한 조합으로 회전을 군집화하는 데 사용된다. 이는 단일 회전과 빠른 회전들의 조합(회전하고 즉시 반대 방향으로 회전하는 미국 중서부에서는 \"jogs\")처럼 단순할 수도 있고, 혹은 입구, 출구 및 연결 도로(영국의\"magicroundabouts\")로 구성되는 매우 복잡한 조합일 수 있다. "@ko , "ملاحظة: تستخدم المناورات لتجميع المنعطفات في شكل مجموعات مؤتلفة من المنعطفات المريحة والقانونية. ويمكن للمنعطفات أن تكون بسيطة جدا بحيث لا تزيد عن منعطف واحد أو مجموعة منعطفات سريعة (\"المنعطفات الحادة\" في الغرب الأوسط الأمريكي تتكون من منعطف يليه مباشرة منعطف في الاتجاه المضاد) أو مجموعات مؤتلفة شديدة التعقيد تتكون من مدخل , ومخرج وطرق مرور موصلة (\"الطرق الدائرية السحرية\" بالمملكة المتحدة)."@ar , "HUOM.: Manöövereillä käännökset liitetään toisiinsa sopiviksi ja laillisiksi yhdistelmiksi. Manööveri voi olla yksinkertainen, esimerkiksi vain yhdestä käännöksestä koostuva, tai yhdistelmä nopeita käännöksiä (Yhdysvaltojen keskilännessä käännökseen ja sitä välittömästi seuraavaan vastakkaissuuntaiseen käännökseen viitataan sanalla jog) tai erittäin monimutkainen yhdistelmä, joka koostuu sisääntulo- ja poistumisteistä ja niitä yhdistävistä ajoteistä (Isossa-Britanniassa \"magic roundabout\")."@fi , "Nota: Las maniobras se utilizan para agrupar giros en una combinación legal y conveniente. Pueden ser tan simples como un giro simple, una combinación de giros cortos (\"jogs\", quiebros, en el medio oeste americano, consistente en un giro seguido inmediatamente de otro giro en dirección opuesta) o en una combinación muy compleja de entradas, salidas y caminos de conexión (\"magic roundabouts\", rotondas mágicas, en el Reino Unido)."@es , "Note to entry: Maneuvers are used to cluster turns into convenient and legal combinations. They may be as simple as a single turn, a combination of quick turns (\"jogs\" in the American mid-west consisting of a turn followed immediately by a turn in the opposite direction) or very complex combinations consisting of entry, exit, and connecting roadways (\"magic roundabouts\" in the UK)."@en , "注： 行进策略用于将多个转向分解为方便的合法组合。它们可以简单为只是一个单一转向或是快速转向组合（在美国中西部\"jogs”由一个转向紧跟一个反方向转向组成），也可能是由入口、出口和连接车道构成的非常复杂的组合（在英国称为\"magic roundabouts\")。"@zh , "Примечание: Маневры используют для сборки поворотов в удобные и разрешенные правилами комбинации. Они могут быть так просты, как единственный поворот; могут быть комбинацией быстрых поворотов (так называемых «jogs» - жаргонное слово, обозначающее на Американском среднем западе поворот, непосредственно за которым следует поворот в противоположную сторону) или представлять собой очень сложную комбинацию, состоящую из въездов, съездов и соединительных дорожных полос (называемых в Великобритании «magic roundabouts» -«магические объездные пути»)"@ru .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info281 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+        
+############################################################
+
+
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi281-json
+ldapi:ldapi281-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/281.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi281-jsonld
+ldapi:ldapi281-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/281.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi281-rdfxml
+ldapi:ldapi281-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/281.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi281-skosrdf
+ldapi:ldapi281-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/281.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

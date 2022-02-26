@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/300/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/300/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "month" ;
+        vann:preferredNamespacePrefix  "concept300" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/300/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/300/> .
+
+###########################################################
+
+:month  a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "month" ;
+        dcterms:identifier     300 ;
+        skos:definition        "月の循環周期の持続時間とほぼ等しい期間。"@ja , "约等于月亮朔望周期时间所持续的时段。"@zh , "período aproximadamente igual en duración al tiempo periódico de un ciclo lunar"@es , "فترة زمنية تساوي بالتقريب المدة التي تستغرقها الدورة القمرية"@ar , "(inom astronomi) det tidsintervall under vilken månen fullbordar ett omlopp kring jorden"@sv , "ajanjakso, jonka kesto on suunnilleen sama kuin kuunkierron"@fi , "период, приблизительно равный продолжительности лунного цикла [периода обращения Луны вокруг Земли]"@ru , "달의 순환주기와 명목상 같은 지속 기간을 갖는 기간"@ko , "période égale approximativement dans sa durée à la période d&#39;un cycle lunaire"@fr , "okres w przybliżeniu równy czasem trwania czasowi cyklicznemu cyklu N1) księżycowego"@pl , "period approximately equal in duration to the periodic time of a lunar cycle"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          300 ;
+        skos:prefLabel         "månad"@sv , "달"@ko , "miesiąc"@pl , "month"@en , "mes"@es , "kuukausi"@fi , "月"@zh , "月"@ja , "mois"@fr , "месяц"@ru , "Monat"@de , "شهر"@ar ;
+        lang:ara-note          "ملاحظة: المدة الزمنية للشهر هي عبارة عن عدد من الأيام تساوي عدداً صحيحا. عدد الأيام في الشهر تحدده القواعد الخاصة بتقويم معين."@ar ;
+        lang:eng-note          "Note to entry: The duration of a month is an integer number of days. The number of days in a month is determined by the rules of the particular calendar."@en ;
+        lang:fin-note          "HUOM.: Kuukauden kesto päivinä on kokonaisluku. Kuukauden päivien lukumäärä määräytyy käytettävän kalenterin sääntöjen mukaan."@fi ;
+        lang:jpn-note          "備考： 　１か月の持続時間は整数で表す日数である。１か月の日数は個々の暦の規則で定められている。"@ja ;
+        lang:kor-note          "비고: 한 달의 기간은 일로 표현되는 정수이다. 한 달에서 날짜 수는 특정 달력의 규칙에 의해 결정된다."@ko ;
+        lang:lang-deu          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:lang-fra          notes:NoteTransDiff ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Czas trwania miesiąca jest całkowitą liczbą dni. Liczba dni w miesiącu zależy od reguł danego kalendarza"@pl ;
+        lang:rus-note          "Примечание: Продолжительность месяца определяется целым числом дней. Число дней в месяце определяется правилами конкретного календаря"@ru ;
+        lang:spa-note          "Nota: La duración de un mes es un número entero de días. El número de días de un mes se determina por las reglas de un determinado calendario."@es ;
+        lang:zho-note          "注： 一个月持续时间是整日数。一个月中的日数由特定的日历规则确定。"@zh ;
+        geolexica:hasInfo      info:Info300 ;
+        geolexica:hasLDAPI     ldapi:ldapi300-skosrdf , ldapi:ldapi300-rdfxml , ldapi:ldapi300-jsonld , ldapi:ldapi300-json ;
+        geolexica:hasLangCode  lang:kor , lang:zho , lang:eng , lang:fra , lang:spa , lang:msa , lang:ara , lang:nld , lang:deu , lang:swe , lang:pol , lang:jpn , lang:rus , lang:fin ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:msaRegistry , lang:araRegistry , lang:deuRegistry , lang:engRegistry , lang:nldRegistry , lang:zhoRegistry , lang:fraRegistry , lang:korRegistry , lang:spaRegistry , lang:jpnRegistry , lang:polRegistry , lang:finRegistry , lang:rusRegistry .
+
+############################################################
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info300 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19108-2002 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2002-09-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19108-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26013.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19108:2002" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi300-json
+ldapi:ldapi300-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/300.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi300-jsonld
+ldapi:ldapi300-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/300.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi300-rdfxml
+ldapi:ldapi300-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/300.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi300-skosrdf
+ldapi:ldapi300-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/300.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

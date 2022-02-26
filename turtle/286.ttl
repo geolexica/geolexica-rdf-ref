@@ -1,0 +1,199 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/286/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/286/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "measure (GML)" ;
+        vann:preferredNamespacePrefix  "concept286" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/286/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/286/> .
+
+###########################################################
+
+:measureGML  a                 owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "measure (GML)" ;
+        dcterms:identifier     286 ;
+        skos:altLabel          "mitta (GML)"@fi ;
+        skos:definition        "value described using a numeric amount with a scale or using a scalar reference system"@en , "قيمة توصف باستخدام كمية رقمية بميزان أو باستخدام نظام مرجعي مدرج"@ar , "arvo, joka on kuvattu käyttämällä skaalattua numeerista määrää tai skalaarista vertausjärjestelmää"@fi , "Wert, der durch eine Zahl mit einer Einheit oder durch Anwendung eines skalierten Referenzsystems beschrieben wird"@de , "valor que se describe usando una cantidad numérica con una escala o usando un sistema de referencia escalar"@es , "(GML)用标（度）量或标量坐标参照系描述的值。"@zh , "значение, описываемое  с использованием числовой величины и масштаба шкалы или скалярной системы отсчета"@ru , "valeur décrite en utilisant une valeur numérique avec une échelle ou en utilisant un système de référence scalaire"@fr , "tal som uttrycker det numeriska värdet på en linjär dimension"@sv , "축척에 의한 수치나 스칼라 참조 체계를 이용하여 표시한 값"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          286 ;
+        skos:prefLabel         "määrä (GML)"@fi , "度量"@zh , "mått (GML)"@sv , "measure (GML)"@en , "Maß (GML)"@de , "мера (GML)"@ru , "측정 (GML)"@ko , "medida (GML)"@es , "قياس"@ar , "mesure (GML)"@fr ;
+        lang:lang-deu          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info286 ;
+        geolexica:hasLDAPI     ldapi:ldapi286-json , ldapi:ldapi286-jsonld , ldapi:ldapi286-rdfxml , ldapi:ldapi286-skosrdf ;
+        geolexica:hasLangCode  lang:rus , lang:kor , lang:deu , lang:ara , lang:zho , lang:eng , lang:spa , lang:fin , lang:swe , lang:fra ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:rusRegistry , lang:sweRegistry , lang:spaRegistry , lang:korRegistry , lang:deuRegistry , lang:zhoRegistry , lang:finRegistry , lang:araRegistry , lang:engRegistry ;
+        geolexica:hasReview    reviews:Review286 ;
+        geolexica:note         "HUOM.: Substantiivisesti käytettynä englanninkielinen termi measure on termin physical quantity synonyymi."@fi , "Note to entry: When used as a noun, measure is a synonym for physical quantity."@en , "Nota: Cuando se usa como un nombre, medida es un sinónimo de cantidad física."@es , "注： 当作为名词时,度量是一个物理量的代名词。"@zh , "비고: 명사로 사용할 경우, 측정은 물리량과 동일한 의미이다."@ko , "ملاحظة: كلمة قياس حينما تستخدم كاسم فإنها تصبح مرادفة لـ \" كمية حسية \"."@ar , "Примечание: Будучи используемой в единственном числе, мера представляет собой синоним физической величины"@ru .
+
+############################################################
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info286 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19136-1-2020 ;
+         geolexica:clause "(E), 3.1.41" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-09-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+        
+############################################################
+
+reviews:Review286 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2020-01-09"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_decision_event "Publication of ISO 19136-1:2020(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19136:2007 to ISO 19136-1:2020(E), 3.1.41. Lineage source added as ISO 19136:2007(E)"@en ;
+           geolexica:review_status "final"@en .
+
+############################################################
+
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi286-json
+ldapi:ldapi286-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/286.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi286-jsonld
+ldapi:ldapi286-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/286.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi286-rdfxml
+ldapi:ldapi286-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/286.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi286-skosrdf
+ldapi:ldapi286-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/286.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
