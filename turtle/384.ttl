@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/384/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,80 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/384/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "response" ;
+        vann:preferredNamespacePrefix  "concept384" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/384/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/384/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:response  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "response" ;
+        dcterms:identifier     384 ;
+        skos:altLabel          "vaste"@fi ;
+        skos:definition        "результат операции, возвращаемый сервером клиенту"@ru , "tietokoneen tai ohjelman toiselle tietokoneelle tai ohjelmalle palauttama toiminnon tulos"@fi , "Hasil operasi proses yang dibuat oleh pelayan/server dikembalikan kepada pelanggan"@ms , "résultat d’une opération renvoyé d’un serveur à un client"@fr , "서버로부터 클라이언트로 반환되는 연산의 결과"@ko , "نتيجة عملية معينة عائدة من الحاسب الخادم إلى العميل"@ar , "wynik operacji zwrócony klientowi przez serwer"@pl , "由服务器端返回给客户端的一个操作结果。"@zh , "(från program) resultat som returneras"@sv , "Ergebnis einer Operation, das von einem Server an einen Client zurückgegeben wird"@de , "resultado de una operación devuelta por un servidor a un cliente"@es , "result of an operation returned from a server to a client"@en ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          384 ;
+        skos:prefLabel         "tindak balas"@ms , "Antwort (Syn.: Ergebnis)"@de , "respuesta"@es , "响应"@zh , "vastaus"@fi , "استجابة"@ar , "odpowiedź"@pl , "réponse"@fr , "отклик"@ru , "svar"@sv , "response"@en , "응답"@ko ;
+        lang:fra-note          notes:NoteTransDiff ;
+        geolexica:hasInfo      info:Info384 ;
+        geolexica:hasLDAPI     ldapi:ldapi384-rdfxml , ldapi:ldapi384-json , ldapi:ldapi384-jsonld , ldapi:ldapi384-skosrdf ;
+        geolexica:hasLangCode  lang:msa , lang:ara , lang:eng , lang:nld , lang:kor , lang:spa , lang:fra , lang:swe , lang:jpn , lang:rus , lang:pol , lang:deu , lang:zho , lang:fin ;
+        geolexica:hasOrigin    lang:finRegistry , lang:araRegistry , lang:sweRegistry , lang:korRegistry , lang:deuRegistry , lang:zhoRegistry , lang:spaRegistry , lang:jpnRegistry , lang:polRegistry , lang:rusRegistry , lang:msaRegistry , lang:nldRegistry , lang:engRegistry , lang:fraRegistry .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
-
 notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info384 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19128-2005 ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-12-01"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19128-2005 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Web map server interface"@en ;
+                dcterms:source "https://www.iso.org/standard/32546.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19128:2005" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi384-json
+ldapi:ldapi384-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/384.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi384-jsonld
+ldapi:ldapi384-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/384.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi384-rdfxml
+ldapi:ldapi384-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/384.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi384-skosrdf
+ldapi:ldapi384-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/384.ttl"^^xsd:anyURI .
 
 ############################################################
 

@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/389/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,34 +17,40 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/389/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "route instruction" ;
+        vann:preferredNamespacePrefix  "concept389" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/389/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/389/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:route_instruction  a          owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "route instruction" ;
+        dcterms:identifier     389 ;
+        skos:definition        "información necesaria en un punto a lo largo de una ruta en una red que permite recorrer la ruta"@es , "在允许路径遍历的网络中，沿路径的点继续行进所需要的信息。"@zh , "information som behövs vid en position längs en rutt i ett nätverk och som medverkar till att rutten följs"@sv , "informations nécessaires en un point le long de l&#39;itinéraire dans un réseau permettant à l&#39;itinéraire d&#39;être parcouru"@fr , "운행 가능한 경로 네트워크 상의 점에 필요한 정보"@ko , "информация, необходимая в определенной точке маршрута в пределах сети и позволяющая следовать по этому маршруту"@ru , "information needed at a point along a route in a network that allows that route to be traversed"@en , "المعلومات اللازمة عند نقطة معينة على طول مسار في الشبكة للسماح باجتياز ذلك المسار"@ar , "verkostoon kuuluvan reitin pisteissä tarvittava tieto, jonka avulla kyseinen reitti voidaan kulkea"@fi ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          389 ;
+        skos:prefLabel         "instrucciones de ruta"@es , "ruttinstruktion"@sv , "تعليمات المسار"@ar , "路径指令"@zh , "instruction d&#39;itinéraire"@fr , "путевая инструкция"@ru , "reittiohjeistus"@fi , "경로 지시"@ko , "route instruction"@en ;
+        lang:ara-note          "ملاحظة: لتقليل عدد الإرشادات أو التعليمات المطلوبة لإكمال عملية اجتياز مسلك معين, يمكن تبني تعليمات افتراضية عند ملتقيات الطرق بدون الأخذ بتعليمات محددة ترتبط بذلك. وهذه التعليمات الافتراضية تسمى\"قاعدة الطريق الرئيسي\"."@ar ;
+        lang:eng-note          "Note to entry: To minimize the number of instructions needed to complete a route traversal, a default instruction can be assumed at junctions without specifically associated instructions. This default is called the main-road rule."@en ;
+        lang:fin-note          "HUOM.: Jotta reitin kulkemiseen tarvittavien ohjeiden määrä voidaan pitää mahdollisimman pienenä, voidaan risteyssolmuissa, joihin ei liity erityistä ohjeistusta, soveltaa oletusohjeistusta. Oletusohjeistusta kutsutaan kulkemisen pääsäännöksi."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 경로 운행에 필요한 지시를 최소화하기 위해 기본지시는 특별한 지시가 없는 교차점을 가질 수 있다. 이 기본 지시를 주요 도로 규칙이라 한다."@ko ;
+        lang:rus-note          "Примечание: С целью минимизации количества инструкций, необходимых для движения по маршруту, к примыканиям может быть приписана инструкция по умолчанию, т.е. примыкания не связаны с какими-либо специальными инструкциями. Эта инструкция называется «правило главной дороги»"@ru ;
+        lang:spa-note          "Nota: Para minimizar el número de instrucciones necesarias para completar el recorrido de una ruta, se supone una instrucción por defecto en cruces sin instrucciones específicamente asociadas. Esta instrucción por defecto es la llamada regla de la carretera principal."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 为了尽量减少完成路径遍历所需要的指令数量，把缺省的指令认定为是一组没有特殊关联指令的连接点。这个缺省指令被称为主路规则。"@zh ;
+        geolexica:hasInfo      info:Info389 ;
+        geolexica:hasLDAPI     ldapi:ldapi389-rdfxml , ldapi:ldapi389-jsonld , ldapi:ldapi389-skosrdf , ldapi:ldapi389-json ;
+        geolexica:hasLangCode  lang:nld , lang:kor , lang:fin , lang:swe , lang:fra , lang:pol , lang:rus , lang:msa , lang:ara , lang:spa , lang:jpn , lang:eng , lang:deu , lang:zho ;
+        geolexica:hasOrigin    lang:polRegistry , lang:korRegistry , lang:araRegistry , lang:zhoRegistry , lang:spaRegistry , lang:finRegistry , lang:fraRegistry , lang:jpnRegistry , lang:msaRegistry , lang:rusRegistry , lang:engRegistry , lang:nldRegistry , lang:sweRegistry , lang:deuRegistry .
 
 ############################################################
 notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
@@ -54,48 +60,47 @@ notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info389 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi389-json
+ldapi:ldapi389-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/389.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi389-jsonld
+ldapi:ldapi389-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/389.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi389-rdfxml
+ldapi:ldapi389-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/389.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi389-skosrdf
+ldapi:ldapi389-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/389.ttl"^^xsd:anyURI .
 
 ############################################################
 

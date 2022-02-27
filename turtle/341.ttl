@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/341/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,92 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/341/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "population" ;
+        vann:preferredNamespacePrefix  "concept341" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/341/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/341/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:population  a                 owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "population" ;
+        dcterms:identifier     341 ;
+        skos:definition        "totality of items under consideration"@en , "totalidad de ítems bajo consideración"@es , "вся совокупность рассматриваемых объектов"@ru , "고려해야 할 모든 항목"@ko , "kaikkien tarkasteltavana olevien tietokohteiden muodostama kokonaisuus"@fi , "المجموع الكلي للبنود محل النظر."@ar , "被考虑的数据项的全体。"@zh , "totalité des objets considérés"@fr ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          341 ;
+        skos:prefLabel         "모집단"@ko , "population"@fr , "population"@en , "población"@es , "популяция"@ru , "Grundgesamtheit"@de , "总体"@zh , "perusjoukko"@fi , "مجموع"@ar ;
+        lang:lang-deu          notes:DefnTransUnavail , notes:ExTransUnavail ;
+        geolexica:examples     "示例 1 数据集中的所有的点。"@zh , "EXAMPLE 2 Names of all roads in a certain geographic area."@en , "示例 2 在一个确定地理范围内所有道路的名称。"@zh , "مثال 1 جميع النقاط المشمولة في مجموعة للبيانات."@ar , "Пример 2 Наименования всех дорог в определенной географической области"@ru , "보기 1 데이터셋 내의 모든 점"@ko , "EXAMPLE 1 All points in a dataset."@en , "Пример 1 Все точки в наборе данных"@ru , "ESIM. 1 Kaikki tietoaineiston pisteet."@fi , "مثال 2 أسماء جميع الطرق في منطقة جغرافية معينة."@ar , "보기 2 특정 지역의 모든 도로명"@ko , "ESIM. 2 Kaikki tietyn maantieteellisen alueen katujen nimet."@fi , "EJEMPLO Todos los puntos en un conjunto de datos."@es ;
+        geolexica:hasInfo      info:Info341 ;
+        geolexica:hasLDAPI     ldapi:ldapi341-jsonld , ldapi:ldapi341-skosrdf , ldapi:ldapi341-rdfxml , ldapi:ldapi341-json ;
+        geolexica:hasLangCode  lang:rus , lang:pol , lang:jpn , lang:spa , lang:ara , lang:nld , lang:msa , lang:kor , lang:eng , lang:zho , lang:deu , lang:fra , lang:swe , lang:fin ;
+        geolexica:hasOrigin    lang:engRegistry , lang:sweRegistry , lang:deuRegistry , lang:korRegistry , lang:nldRegistry , lang:zhoRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:spaRegistry , lang:rusRegistry , lang:fraRegistry , lang:polRegistry , lang:msaRegistry ;
+        geolexica:hasReview    reviews:Review341 .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
 
-notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
-    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info341 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
-         geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
-         geolexica:entry_status "valid"@en .
+         geolexica:hasSource sources:ISO-3534-2-2006 ;
+         geolexica:date_accepted "2003-08-15"^^xsd:date ;
+         geolexica:date_amended "2013-12-15"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
 
 ############################################################
 
+reviews:Review341 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2013-12-15"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19157:2013"@en ;
+           geolexica:review_decision_notes "The entry has been omitted from the superseding standard (ISO 19157:2013)."@en .
+
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
-                         geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+sources:ISO-3534-2-2006 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Statistics — Vocabulary and symbols — Part 2: Applied statistics"@en ;
+                 dcterms:source "https://www.iso.org/standard/40147.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 3534-2:2006" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi341-json
+ldapi:ldapi341-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/341.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi341-jsonld
+ldapi:ldapi341-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/341.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi341-rdfxml
+ldapi:ldapi341-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/341.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi341-skosrdf
+ldapi:ldapi341-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/341.ttl"^^xsd:anyURI .
 
 ############################################################
 

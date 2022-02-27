@@ -1,0 +1,209 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/328/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/328/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "performance indicator" ;
+        vann:preferredNamespacePrefix  "concept328" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/328/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/328/> .
+
+###########################################################
+
+:performance_indicator
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "performance indicator" ;
+        dcterms:identifier     328 ;
+        skos:altLabel          "suoritusmittari"@fi ;
+        skos:definition        "表示达到的性能水平的定位系统内部参数。"@zh , "внутренние параметры систем позиционирования, позволяющие оценить достигнутый уровень их  эффективности"@ru , "متغيرات أو مؤشرات داخلية لأنظمة تحديد الأماكن تدل على مستوى الأداء الذي تم تحقيقه"@ar , "paikannusjärjestelmien sisäiset muuttujat, jotka ilmaisevat saavutetun suoritustason"@fi , "paramètres internes des systèmes de positionnement indiquant le niveau de performance atteint"@fr , "성능수준을 나타내는 측위 시스템의 내부 매개 변수"@ko , "parámetros internos de los sistemas de posicionamiento indicadores del nivel de prestaciones conseguido"@es , "internal parameters of positioning systems indicative of the level of performance achieved"@en , "parameter dalaman bagi sistem kedudukan dalam menunjukkan tahap prestasi yang dicapai"@ms , "parameter som tillsammans med andra parametrar indikerar hur väl något fungerar"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          328 ;
+        skos:prefLabel         "Leistungsindikator"@de , "indicador de rendimiento"@es , "показатель эффективности в работе"@ru , "performance indicator"@en , "indicateur de performance"@fr , "prestandaindikator"@sv , "petunjuk prestasi"@ms , "suoritusindikaattori"@fi , "성능 표시"@ko , "مؤشر الأداء"@ar , "性能指标"@zh ;
+        lang:ara-note          "ملاحظة: يمكن استخدام مؤشرات الأداء كدليل على فحص جودة نظام تحديد الأماكن و/أو كحل لتحديد الأماكن. وظائف فحص الجودة الداخلية قد تشمل عوامل مثل قوة الإشارة عند استقبال الإشارات اللاسلكية [نسبة الإشارة إلى الضوضاءSNR] , والأرقام الدالة على تخفيف درجة الدقة نتيجة لقيود هندسية في نظم التحديد اللاسلكية , ورقم الاستحقاق الخاص بالنظام."@ar ;
+        lang:eng-note          "Note to entry: Performance indicators can be used as quality-control evidence of the positioning system and/or positioning solution. Internal quality control may include such factors as signal strength of received radio signals [signal-to-noise ratio (SNR)], figures indicating the dilution of precision (DOP) due to geometric constraints in radiolocation systems, and system-specific figure of merit (FOM)."@en ;
+        lang:fin-note          "HUOM.: Suoritusindikaattoreita voidaan käyttää ilmaisuna paikannusjärjestelmän tai paikannusratkaisun laadunvalvonnasta. Sisäinen laadunvalvonta voi liittyä mm. vastaanotettujen radiosignaalien vahvuuteen (signaali/kohina-suhde, SNR); nämä luvut ilmaisevat radiopaikannusjärjestelmien geometrisistä rajoituksista johtuvaa tarkkuuden epävarmuutta (dilution of precision, DOP) sekä järjestelmäkohtaisen hyvyyden (figure of merit, FOM)."@fi ;
+        lang:kor-note          "비고: 성능 표시는 측위 시스템과/또는 측위 솔루션의 품질관리의 증거로서 사용될 수 있다. 내부 품질 관리는 수신 전파 강도(신호대 잡음비(SNR)), 전파 측위 시스템에서의 기하학적 제약 조건에 의한 정밀도 저하율(DOP)을 나타내는 수치 및 시스템 고유의 성능 계수((FOM)과 같은 요소를 포함할 수 있다."@ko ;
+        lang:lang-deu          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:lang-msa          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Показатели эффективности могут использоваться в управлении качеством для установления уровня качества системы позиционирования и/или результата позиционирования. Внутреннее управление качеством может включать такие факторы, как «отношение сигнал-шум» (SNR), коэффициент потери точности (DOP), как результат геометрических ограничений в радиолокационных системах и особые критерии качества системы (FOM)."@ru ;
+        lang:spa-note          "Nota: Los indicadores de prestaciones pueden ser utilizados como una prueba de control de calidad de los sistemas de posicionamiento y/o solución de posición. El control interno de calidad puede incluir factores como la potencia de la señal de radio recibida [en relación señal/ruido (SNR)], cifras que indiquen la dilución de precisión (DOP) debida a restricciones geométricas en los sistemas de radiolocalización, y cualquier otro valor significativo digno de mención específico de un determinado sistema (Factor de calidad, FOM)."@es ;
+        lang:zho-note          "注： 性能指标能被用作定位系统和/或定位方案的质量控制的证据。内部质量控制可包括这些因素，如接受的无线电信号的强度（信噪比（SNR))、由于电波探测器探测系统中的几何限制引起的精度衰减因子（DOP)等数据，以及系统的最优值（FOM)。"@zh ;
+        geolexica:hasInfo      info:Info328 ;
+        geolexica:hasLDAPI     ldapi:ldapi328-jsonld , ldapi:ldapi328-skosrdf , ldapi:ldapi328-rdfxml , ldapi:ldapi328-json ;
+        geolexica:hasLangCode  lang:rus , lang:ara , lang:pol , lang:swe , lang:msa , lang:kor , lang:zho , lang:deu , lang:nld , lang:fin , lang:eng , lang:jpn , lang:fra , lang:spa ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:nldRegistry , lang:araRegistry , lang:msaRegistry , lang:korRegistry , lang:engRegistry , lang:polRegistry , lang:fraRegistry , lang:finRegistry , lang:spaRegistry , lang:jpnRegistry , lang:deuRegistry , lang:sweRegistry , lang:zhoRegistry ;
+        geolexica:hasReview    reviews:Review328 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+############################################################
+
+info:Info328 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19116-2019 ;
+         geolexica:clause "(E), 3.21" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2004-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review328 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19116:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19116:2004 to ISO 19116:2019(E), 3.21. Lineage source added as ISO 19116:2004(E)"@en .
+
+############################################################
+
+sources:ISO-19116-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/70882.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2019" .
+
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi328-json
+ldapi:ldapi328-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/328.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi328-jsonld
+ldapi:ldapi328-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/328.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi328-rdfxml
+ldapi:ldapi328-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/328.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi328-skosrdf
+ldapi:ldapi328-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/328.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

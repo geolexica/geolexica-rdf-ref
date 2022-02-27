@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/329/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,34 +17,41 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/329/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "performance testing" ;
+        vann:preferredNamespacePrefix  "concept329" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/329/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/329/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:performance_testing  a        owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "performance testing" ;
+        dcterms:identifier     329 ;
+        skos:definition        "다양한 조건 하에서 처리량, 반응도 등 IUT의 성능에 대한 측정"@ko , "testattavana olevan toteutuksen (Implementation Under Test, IUT) suoritusominaisuuksien, kuten suoritustehon, vasteherkkyyden tai muun sellaisen, mittaaminen eri olosuhteissa"@fi , "medida de las características de desempeño de una implementación bajo prueba (IUT), tales como su rendimiento, respuesta, etcétera, bajo varias condiciones"@es , "mesures des caractéristiques de performance d&#39;une implémentation soumise à test, telles que sa sortie, sa réponse etc, dans des conditions diverses"@fr , "对IUT性能特性的测量，例如，不同情况下的吞吐量、响应能力等。"@zh , "処理能力，応答性など，種々の条件下での試験対象(IUT)の性能上の特性を測定する試験。"@ja , "قياس خصائص أداء التنفيذ تحت الاختبار (IUT ) مثل أدائه الإجمالي ، وقدرته على الاستجابة ، وخلافه في ظروف متنوعة ومختلفة"@ar , "testning vars syfte är att utvärdera ett systems prestationsförmåga"@sv , "измерение рабочих параметров тестируемой реализации (UIT) , например,  производительности, оперативности и т.п. в различных условиях"@ru , "measurement of the performance characteristics of an Implementation Under Test (IUT), such as its throughput, responsiveness, etc., under various conditions"@en ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
+        skos:notation          329 ;
+        skos:prefLabel         "essais de performance"@fr , "Leistungsprüfung"@de , "тестирование эффективности"@ru , "性能测试"@zh , "performance testing"@en , "性能試験"@ja , "prestandatestning"@sv , "اختبار الأداء"@ar , "prueba de desempeño"@es , "suorituskykytestaus"@fi , "성능 시험"@ko ;
+        lang:ara-note          "ملاحظة: هذا لا يشكل جزءا من اختبار المطابقة."@ar ;
+        lang:eng-note          "Note to entry: This is not a part of conformance testing"@en ;
+        lang:fin-note          "HUOM.: Suorituskykytestaus ei kuulu vaatimuksenmukaisuuden testaukseen."@fi ;
+        lang:jpn-note          "備考： 性能試験は，適合性試験の一部ではない。"@ja ;
+        lang:kor-note          "비고: 성능 시험은 적합성 시험의 일부가 아니다."@ko ;
+        lang:lang-deu          notes:NoteTransUnavail , notes:DefnTransUnavail ;
         lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        lang:lang-swe          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Не является частью тестирования на соответствие"@ru ;
+        lang:zho-note          "注： 性能测试不作为一致性测试的一个部分。"@zh ;
+        geolexica:hasInfo      info:Info329 ;
+        geolexica:hasLDAPI     ldapi:ldapi329-jsonld , ldapi:ldapi329-json , ldapi:ldapi329-skosrdf , ldapi:ldapi329-rdfxml ;
+        geolexica:hasLangCode  lang:nld , lang:zho , lang:fra , lang:rus , lang:kor , lang:eng , lang:ara , lang:jpn , lang:swe , lang:spa , lang:msa , lang:fin , lang:pol , lang:deu ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:engRegistry , lang:araRegistry , lang:korRegistry , lang:finRegistry , lang:rusRegistry , lang:msaRegistry , lang:zhoRegistry , lang:deuRegistry , lang:jpnRegistry , lang:nldRegistry , lang:spaRegistry , lang:fraRegistry , lang:polRegistry .
 
 ############################################################
 notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
@@ -52,9 +59,12 @@ notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
 
 notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info329 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
          geolexica:hasSource sources:ISO-19105-2000 ;
          geolexica:classification "preferred"@en ;
@@ -71,31 +81,30 @@ sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
                 dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
                 rdfs:label "ISO 19105:2000" .
 
-
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi329-json
+ldapi:ldapi329-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/329.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi329-jsonld
+ldapi:ldapi329-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/329.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi329-rdfxml
+ldapi:ldapi329-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/329.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi329-skosrdf
+ldapi:ldapi329-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/329.ttl"^^xsd:anyURI .
 
 ############################################################
 

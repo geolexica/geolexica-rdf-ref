@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/335/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,91 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/335/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "planar topological complex" ;
+        vann:preferredNamespacePrefix  "concept335" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/335/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/335/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:planar_topo_complex  a        owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "planar topological complex" ;
+        dcterms:identifier     335 ;
+        skos:definition        "具有一个可以嵌到欧几里德二维空间中的几何实现的拓扑复形。"@zh , "مركب طوبولوجيذو أدراك هندسي يمكن تضمينه  في حيز إقليدي"@ar , "topologiskt komplex som har en geometrisk realisering som kan hysas i ett   2-dimensionellt euklidiskt rum"@sv , "topologinen kompleksi, jolla on 2-ulotteiseen euklidiseen avaruuteen sisällytettävissä oleva geometrinen ilmentymä"@fi , "compleo topológico que tiene una realización compleja que puede ser embebida en un espacio euclídeo bidimensional"@es , "топологический комплекс, имеющий геометрическую реализацию, которая может быть помещена в двумерное Евклидово пространство"@ru , "złożony element topologiczny mający realizację geometryczną, która może być osadzona w 2-wymiarowej przestrzeni euklidesowej"@pl , "二次元ユークリッド空間に埋め込むことができる幾何実現をもつ位相複体。"@ja , "유클리드 기하학의 2공간에 내재될 수 있는 기하 실현을 갖는 위상 복합체"@ko , "topological complex that has a geometric realization that can be embedded in Euclidean 2 space"@en , "complexe topologique ayant une réalisation géométrique qui peut être intégrée dans un espace Euclidien de dimension 2"@fr ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          335 ;
+        skos:prefLabel         "平面位相複体"@ja , "complexe topologique plan"@fr , "planarer topologischer Complex"@de , "планарный топологический комплекс"@ru , "planar topological complex"@en , "平面拓扑复形"@zh , "plant topologiskt komplex"@sv , "płaski złożony element topologiczny"@pl , "평면 위상 복합체"@ko , "tasomainen topologinen kompleksi"@fi , "complejo topológico planar"@es , "مركب طوبولوجي مستوي"@ar ;
+        lang:lang-deu          notes:DefnTransUnavail ;
+        geolexica:hasInfo      info:Info335 ;
+        geolexica:hasLDAPI     ldapi:ldapi335-json , ldapi:ldapi335-jsonld , ldapi:ldapi335-skosrdf , ldapi:ldapi335-rdfxml ;
+        geolexica:hasLangCode  lang:nld , lang:msa , lang:zho , lang:eng , lang:swe , lang:ara , lang:deu , lang:pol , lang:spa , lang:fin , lang:rus , lang:kor , lang:fra , lang:jpn ;
+        geolexica:hasOrigin    lang:deuRegistry , lang:zhoRegistry , lang:rusRegistry , lang:fraRegistry , lang:polRegistry , lang:spaRegistry , lang:finRegistry , lang:araRegistry , lang:sweRegistry , lang:korRegistry , lang:nldRegistry , lang:engRegistry , lang:jpnRegistry , lang:msaRegistry ;
+        geolexica:hasReview    reviews:Review335 .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
 
-notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
-    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info335 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19107-2019 ;
+         geolexica:clause "(E), 3.77" ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
+reviews:Review335 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19107:2019(E), 3.77. Lineage source added as ISO 19107:2003(E)"@en .
+
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19107-2019 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi335-json
+ldapi:ldapi335-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/335.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi335-jsonld
+ldapi:ldapi335-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/335.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi335-rdfxml
+ldapi:ldapi335-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/335.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi335-skosrdf
+ldapi:ldapi335-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/335.ttl"^^xsd:anyURI .
 
 ############################################################
 

@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/336/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,102 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/336/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "point" ;
+        vann:preferredNamespacePrefix  "concept336" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/336/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/336/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:point  a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "point" ;
+        dcterms:identifier     336 ;
+        skos:definition        "primitiva geométrica de dimensión 0 que representa una posición"@es , "位置を表現する零次元の幾何プリミティブ。"@ja , "0-wymiarowy prosty element geometryczny, reprezentujący położenie"@pl , "nulldimensionales geometrisches Primitiv, das eine Position darstellt"@de , "нульмерный геометрический примитив, представляющий позицию"@ru , "nollaulotteinen geometrinen primitiivi, joka määrittää sijainnin koordinaatistossa"@fi , "위치를 표현하는 0차원의 기하 원시 객체"@ko , "表示位置的0维几何单形。"@zh , "0-dimensional geometric primitive, representing a position"@en , "nolldimensionellt geometriskt grundelement"@sv , "Biasanya merujuk kepada bentuk ukuran yang dijalankan berdasarkan titik-titik tertentu yang telah ditetapkan.Unsur geometri yang ditakrifkan mewakili kedudukan dalam bentuk koordinat x, y"@ms , "عنصر هندسي بدائي صفري الابعاد يمثل موقعاً"@ar , "primitive géographique de dimension 0 représentant une position"@fr ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
+        skos:notation          336 ;
+        skos:prefLabel         "Punkt"@de , "punto"@es , "punkt"@sv , "punkt"@pl , "titik"@ms , "точка"@ru , "점"@ko , "نقطة"@ar , "point"@fr , "point"@en , "点"@zh , "点"@ja , "piste"@fi ;
+        lang:ara-note          "ملاحظة: الحد الخارجي للنقطة هو المجموعة الفارغة."@ar ;
+        lang:eng-note          "Note to entry: The boundary of a point is the empty set."@en ;
+        lang:fin-note          "HUOM.: Pisteen rajaus on tyhjä joukko."@fi ;
+        lang:jpn-note          "備考： 点の境界は，空集合である。 "@ja ;
+        lang:kor-note          "비고: 점의 경계는 공집합이다."@ko ;
         lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        lang:lang-msa          notes:NoteTransUnavail ;
+        lang:lang-swe          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Granicą punktu jest zbiór pusty."@pl ;
+        lang:rus-note          "Примечание: Границей точки является пустое множество"@ru ;
+        lang:spa-note          "Nota: La frontera de un punto es el conjunto vacío."@es ;
+        lang:zho-note          "注： 点的边界是空集。"@zh ;
+        geolexica:hasInfo      info:Info336 ;
+        geolexica:hasLDAPI     ldapi:ldapi336-jsonld , ldapi:ldapi336-rdfxml , ldapi:ldapi336-json , ldapi:ldapi336-skosrdf ;
+        geolexica:hasLangCode  lang:eng , lang:msa , lang:jpn , lang:ara , lang:spa , lang:zho , lang:rus , lang:fra , lang:pol , lang:kor , lang:swe , lang:nld , lang:deu , lang:fin ;
+        geolexica:hasOrigin    lang:polRegistry , lang:engRegistry , lang:korRegistry , lang:rusRegistry , lang:deuRegistry , lang:jpnRegistry , lang:zhoRegistry , lang:fraRegistry , lang:msaRegistry , lang:spaRegistry , lang:sweRegistry , lang:nldRegistry , lang:araRegistry , lang:finRegistry ;
+        geolexica:hasReview    reviews:Review336 .
 
 ############################################################
+
 notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
     rdfs:label "This note has not been translated."@en .
 
-notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
-    rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info336 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19136-1-2020 ;
+         geolexica:clause "(E), 3.1.47" ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2002-09-01"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
+reviews:Review336 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2018-06-08"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Supersession of ISO 19107:2003 and publication of ISO 19136-1:2020"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19136-1:2020(E), 3.1.47. Lineage source added as ISO 19107:2003"@en .
+
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
-                         geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi336-json
+ldapi:ldapi336-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/336.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi336-jsonld
+ldapi:ldapi336-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/336.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi336-rdfxml
+ldapi:ldapi336-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/336.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi336-skosrdf
+ldapi:ldapi336-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/336.ttl"^^xsd:anyURI .
 
 ############################################################
 

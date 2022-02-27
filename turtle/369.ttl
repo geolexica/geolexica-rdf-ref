@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/369/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,36 +17,46 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/369/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "referenceable grid" ;
+        vann:preferredNamespacePrefix  "concept369" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/369/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/369/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:referenceable_grid  a         owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "referenceable grid" ;
+        dcterms:identifier     369 ;
+        skos:definition        "siatka związana z transformacją, która może być użyta do konwersji wartości współrzędnych siatki na wartości współrzędnych odnoszących się do zewnętrznego systemu odniesień przestrzennych"@pl , "malla asociada con una transformación que puede usarse para convertir valores de coordenadas de la malla a valores de coordenadas referidas a un sistema de referencia de coordenadas externo"@es , "与一个变换相关联的格网，该变换常用来将格网坐标值转换成参照外部坐标参照系的坐标值。"@zh , "сетка, связанная с преобразованием, позволяющим перерасчитывать значения сеточных координат в значения во внешней координатной системе отсчета"@ru , "grille associée à une transformation pouvant être utilisée pour convertir des valeurs de coordonnée de grille en valeurs de coordonnées référencées à un système de référence de coordonnées externe"@fr , "شبكة مرتبطة بتحويل يمكن استخدامه لتحويل قيم إحداثيات الشبكة إلى قيم إحداثيات ترجع إلى نظام إحداثيات مرجعي خارجي"@ar , "격자 좌표 값을 외부 좌표 참조 체계의 좌표값으로 변환시키는 데 사용될 수 있는 변환과 연관된 격자"@ko , "grid associated with a transformation that can be used to convert grid coordinate values to values of coordinates referenced to an external coordinate reference system"@en , "hila, jolle on olemassa muunnos, jolla hilan koordinaattiarvot voidaan muuntaa ulkoisen koordinaattijärjestelmän koordinaattiarvoiksi"@fi ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          369 ;
+        skos:prefLabel         "referenceable grid"@en , "grille référençable"@fr , "malla referenciada"@es , "참조 가능 격자"@ko , "соотносимая сетка"@ru , "referenzierbares Gitter"@de , "شبكة ذات مرجع"@ar , "referoitava hila"@fi , "参照格网"@zh , "siatka transformowalna"@pl ;
+        lang:ara-note          "ملاحظة: إذا كان النظام الإحداثي المرجعي متصلاً بالأرض من خلال مرجع للإسناد , فإن الشبكة تكون قابلة للإسناد المرجعي الجغرافي."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: If the coordinate reference system is related to the earth by a datum, the grid is a georeferenceable grid."@en ;
+        lang:fin-note          "HUOM.: Jos koordinaattijärjestelmä on datumin avulla kiinnitetty Maahan, kyseessä on georeferoitava hila."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 좌표 참조 체계가 데이텀에 의해 지구와 관련된다면, 해당 격자는 지리 참조 가능 격자이다."@ko ;
+        lang:pol-note          "UWAGA: Jeśli ten system odniesień przestrzennych jest powiązany z Ziemią przezukład odniesienia, to siatka jest siatką geotransformowalną."@pl ;
+        lang:rus-note          "Примечание: Если координатная система отсчета привязана к Земле исходными датами, сетка является геосоотносимой сеткой"@ru ;
+        lang:spa-note          "Nota: Si el sistema de referencia de coordenadas está relacionado mediante un datum con La Tierra, la malla es una malla georeferenciada."@es ;
+        lang:zho-note          "注： 如果坐标参照系以地球为基准，该格网就是地理参照格网。"@zh ;
+        geolexica:hasInfo      info:Info369 ;
+        geolexica:hasLDAPI     ldapi:ldapi369-json , ldapi:ldapi369-rdfxml , ldapi:ldapi369-skosrdf , ldapi:ldapi369-jsonld ;
+        geolexica:hasLangCode  lang:spa , lang:eng , lang:zho , lang:ara , lang:msa , lang:fin , lang:swe , lang:jpn , lang:deu , lang:kor , lang:pol , lang:rus , lang:nld , lang:fra ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:sweRegistry , lang:rusRegistry , lang:nldRegistry , lang:korRegistry , lang:finRegistry , lang:zhoRegistry , lang:jpnRegistry , lang:engRegistry , lang:deuRegistry , lang:spaRegistry , lang:msaRegistry , lang:araRegistry , lang:polRegistry .
 
 ############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
 notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
     rdfs:label "This note has not been translated."@en .
 
@@ -54,48 +64,47 @@ notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info369 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi369-json
+ldapi:ldapi369-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/369.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi369-jsonld
+ldapi:ldapi369-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/369.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi369-rdfxml
+ldapi:ldapi369-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/369.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi369-skosrdf
+ldapi:ldapi369-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/369.ttl"^^xsd:anyURI .
 
 ############################################################
 

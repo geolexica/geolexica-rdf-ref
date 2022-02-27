@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/367/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,92 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/367/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "rectified grid" ;
+        vann:preferredNamespacePrefix  "concept367" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/367/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/367/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:rectified_grid  a             owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "rectified grid" ;
+        dcterms:identifier     367 ;
+        skos:definition        "Gitter, für das es eine Affintransformation zwischen den Gitterkoordinaten und den Koordinaten eines externen Koordinatensystems gibt"@de , "شبكة لها تحويل ارتباطي بين إحداثيات الشبكة وإحداثيات نظام إحداثيات مرجعي خارجي"@ar , "hila, jolle on olemassa affiininen muunnos hilan koordinaattien ja ulkoisen koordinaattijärjestelmän koordinaattien välillä"@fi , "格网坐标和外部坐标参照系坐标之间存在仿射变换的格网。"@zh , "malla en la que hay una transformación afín entre las coordenadas de la malla y las coordenadas de un sistema de referencia de coordenadas externo"@es , "grille pour laquelle il y a une transformation affine entre les coordonnées dans la grille et les coordonnées dans un système de référence de coordonnées externe"@fr , "grid for which there is an affine transformation between the grid coordinates and the coordinates of an external coordinate reference system"@en , "격자 좌표와 외부 좌표 참조 체계의 좌표 간의 어파인 변환을 거친 격자"@ko , "сетка, для которой существует аффинное преобразование между сеточными координатами и координатами внешней координатной системы отсчета"@ru , "rutnät för vilket det finns en affin transformation mellan rutnätets koordinater och koordinaterna i ett externt koordinatsystem"@sv , "siatka, dla której istnieje transformacja afiniczna między jej współrzędnymi a współrzędnymi jakiegoś zewnętrznego systemu odniesień przestrzennych"@pl ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          367 ;
+        skos:prefLabel         "oikaistu hila"@fi , "校正格网"@zh , "siatka zrektyfikowana"@pl , "شبكة مصممه"@ar , "malla rectificada"@es , "grille rectifiée"@fr , "ректифицированная сетка"@ru , "rektifierat rutnät"@sv , "rectified grid"@en , "entzerrtes Gitter"@de , "정사 격자"@ko ;
+        lang:ara-note          "ملاحظة: إذا كان النظام الإحداثي المرجعي متصلاً بالأرض من خلال مرجع للإسناد , فإن شبكة التربيع تكون شبكة مصححة جغرافياً."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: If the coordinate reference system is related to the earth by a datum, the grid is a georectified grid."@en ;
+        lang:fin-note          "HUOM.: Jos koordinaattijärjestelmä on datumin avulla liitetty Maahan, kyseessä on geo-oikaistu hila."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 좌표 참조 체계가 데이텀에 의해 지구와 관련된다면, 해당 격자는 지리 정사 격자이다."@ko ;
+        lang:pol-note          "UWAGA: Jeśli ten system odniesień przestrzennych jest powiązany z Ziemią przez układ odniesienia, to siatka jest siatką georektyfikowaną."@pl ;
+        lang:rus-note          "Примечание: Если координатная система отсчета привязана к Земле исходными датами, сетка является георектифицированной сеткой"@ru ;
+        lang:spa-note          "Nota: Si el sistema de referencia de coordenadas está relacionado mediante un datum con La Tierra, la malla es una malla georectificada."@es ;
+        lang:swe-note          "Anm. till termpost: En affin transformation tar hänsyn till bristande rätvinklighet mellan koordinataxlarna, olikheter i koordinatsystemens axelorientering, varierande skala i x- och y-led, olika placering av origo och hur koordinatsystemen är roterade i förhållande till varandra."@sv ;
+        lang:zho-note          "注： 如果某个坐标参照系通过基准与地球相关，该格网就是地理校正格网。"@zh ;
+        geolexica:hasInfo      info:Info367 ;
+        geolexica:hasLDAPI     ldapi:ldapi367-json , ldapi:ldapi367-jsonld , ldapi:ldapi367-skosrdf , ldapi:ldapi367-rdfxml ;
+        geolexica:hasLangCode  lang:ara , lang:deu , lang:fin , lang:zho , lang:rus , lang:msa , lang:fra , lang:swe , lang:nld , lang:spa , lang:eng , lang:kor , lang:pol , lang:jpn ;
+        geolexica:hasOrigin    lang:msaRegistry , lang:rusRegistry , lang:zhoRegistry , lang:araRegistry , lang:fraRegistry , lang:polRegistry , lang:deuRegistry , lang:finRegistry , lang:sweRegistry , lang:jpnRegistry , lang:nldRegistry , lang:engRegistry , lang:spaRegistry , lang:korRegistry .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
-
 notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info367 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi367-json
+ldapi:ldapi367-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/367.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi367-jsonld
+ldapi:ldapi367-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/367.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi367-rdfxml
+ldapi:ldapi367-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/367.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi367-skosrdf
+ldapi:ldapi367-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/367.ttl"^^xsd:anyURI .
 
 ############################################################
 

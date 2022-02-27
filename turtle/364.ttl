@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/364/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,36 +17,48 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/364/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "raster" ;
+        vann:preferredNamespacePrefix  "concept364" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/364/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/364/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:raster  a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "raster" ;
+        dcterms:identifier     364 ;
+        skos:definition        "음극 선관에 표시를 형성하거나 또는 그에 대응하는 평행 스캐닝 선의 일반적 직사각형의 패턴"@ko , "tavallisesti suorakaiteen muotoinen yhdensuuntaisten skannausviivojen näyttölaitteelle muodostama kuvio"@fi , "najczęściej prostokątny wzór równoległych linii skaningowych, tworzących obraz lub odpowiadających obrazowi na lampie katodowej"@pl , "прямоугольная, как правило, решетка [сетка] параллельных линий сканирования,  формирующая изображение на электронно-лучевой трубке или соответствующая такому изображению"@ru , "通常由平行扫描线形成的或者与阴极射线管显示相对应的矩形图案。"@zh , "usually rectangular pattern of parallel scanning lines forming or corresponding to the display on a cathode ray tube"@en , "fysisk eller logisk tvådimensionell struktur där elementen ordnas i rader och kolumner"@sv , "patrón, normalmente rectangular, de líneas de barrido paralelas que forman o se corresponden a la visualización sobre un tubo de rayos catódicos"@es , "Satu teknik untuk mewakili imej gambar sebagai satu matrik dot. Imej grafik raster juga dikenali sebagai imej peta bit. Grafik raster dijana menggunakan piksel (unsur gambar). Contoh fail imej raster ialah BMP, TIFF, GIF dan JPEG."@ms , "structure habituellement rectangulaire de lignes de balayage parallèles formant ou correspondant à l&#39;affichage sur un tube cathodique"@fr , "في العادة نمط مستطيل الشكل مكون من خطوط مسح ضوئي متوازية يشكل أو يقابل العرض على أنبوب أشعة الكاثود"@ar ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          364 ;
+        skos:prefLabel         "raster"@sv , "raster"@pl , "raster"@ms , "rasteur"@fr , "raster"@en , "Raster"@de , "نقطي"@ar , "栅格"@zh , "래스터"@ko , "rasteri"@fi , "ráster"@es , "растр"@ru ;
+        lang:ara-note          "ملاحظة: المتجه هو نوع من شبكات التربيع."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A raster is a type of grid."@en ;
+        lang:fin-note          "HUOM.: Rasteri on eräänlainen hila."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 래스터는 격자의 유형이다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Raster jest typem siatki."@pl ;
+        lang:rus-note          "Примечание: Растр является типом сетки"@ru ;
+        lang:spa-note          "Nota: Una matriz es un tipo de malla."@es ;
+        lang:swe-note          "Anm. till termpost: En bildskärm är uppbyggd för att visa bilder i form av ett raster."@sv ;
+        lang:zho-note          "注： 栅格是格网的一种类型。"@zh ;
+        geolexica:hasInfo      info:Info364 ;
+        geolexica:hasLDAPI     ldapi:ldapi364-json , ldapi:ldapi364-skosrdf , ldapi:ldapi364-rdfxml , ldapi:ldapi364-jsonld ;
+        geolexica:hasLangCode  lang:eng , lang:rus , lang:spa , lang:kor , lang:nld , lang:pol , lang:ara , lang:fra , lang:swe , lang:msa , lang:zho , lang:fin , lang:deu , lang:jpn ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:korRegistry , lang:araRegistry , lang:nldRegistry , lang:polRegistry , lang:engRegistry , lang:jpnRegistry , lang:deuRegistry , lang:sweRegistry , lang:msaRegistry , lang:rusRegistry , lang:zhoRegistry , lang:finRegistry , lang:spaRegistry .
 
 ############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
 notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
     rdfs:label "This note has not been translated."@en .
 
@@ -54,48 +66,47 @@ notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info364 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi364-json
+ldapi:ldapi364-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/364.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi364-jsonld
+ldapi:ldapi364-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/364.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi364-rdfxml
+ldapi:ldapi364-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/364.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi364-skosrdf
+ldapi:ldapi364-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/364.ttl"^^xsd:anyURI .
 
 ############################################################
 

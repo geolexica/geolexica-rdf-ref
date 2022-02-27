@@ -1,0 +1,196 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/347/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/347/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "position" ;
+        vann:preferredNamespacePrefix  "concept347" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/347/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/347/> .
+
+###########################################################
+
+:position  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "position" ;
+        dcterms:identifier     347 ;
+        skos:definition        "描述一个点、或者一个对象或人所占据的几何空间的数据类型。"@zh , "نوع من البيانات يصف نقطة أو شكل هندسي محتمل أن يشغلها معلم أو شخص"@ar , "type de données décrivant un point ou une géométrie potentiellement occupée par un objet ou une personne"@fr , "paikka, jossa jokin sijaitsee"@fi , "data type that describes a point or geometry potentially occupied by an object or person"@en , "tipo de datos que describe un punto o lugar geométrico potencialmente ocupado por un objeto o persona"@es , "тип данных, описывающий точку или геометрический элемент, которую (-ый) может занимать объект или человек"@ru , "객체 또는 사람이 잠정적으로 차지하는 하나의 점이나 기하를 기술하는 데이터 유형"@ko , "Datentyp, der einen Punkt oder eine Geometrie beschreibt, der/die möglicherweise durch ein Objekt oder eine Person besetzt ist"@de , "lägesangivelse i förhållande till ett väldefinierat referenssystem"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          347 ;
+        skos:prefLabel         "위치"@ko , "موقع"@ar , "Position"@de , "posición"@es , "位置"@zh , "position"@fr , "sijainti"@fi , "position"@en , "положение"@ru , "lägesbestämning"@sv ;
+        lang:ara-note          "ملاحظة: الموقع المباشر هو من حيث الدلالة اللفظية نوع فرعي متفرع من الموقع. المواقع المباشرة كما جاء في وصفها يمكن فقط أن تحدد نقطة وبالتالي يمكن القول بأنه لا يمكن تمثيل كل المواقع بالموقع المباشر . وينسجم هذا مع -نوع العلاقة الكونية-. هندسة المقياس الدولي 19107 هي أيضاً موقع , ولكنه ليس موقعاً مباشراً."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A direct position is a semantic subtype of position. Direct positions as described can only define a point and therefore not all positions can be represented by a direct position. That is consistent with the \"is type of\" relation. An 19107 geometry is also a position, just not a direct position."@en ;
+        lang:fin-note          "HUOM. 1: Suora sijainti on semanttisesti sijainnin erikoistapaus. Määritelmän mukaiset suorat sijainnit voivat määrittää vain pisteitä, ja tämän vuoksi kaikkia sijainteja ei voi esittää suorina sijainteina. Myös standardin 19107 geometria on sijainti, muttei suora sijainti."@fi , "HUOM. 2: ISO 19100 -standardisarjassa englannin termillä position viitataan sijainnin ilmaisevaan tietotyyppiin ja termillä location paikkaan."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 직접 위치는 의미론적으로 위치의 하위 유형이다. 직접 위치는 단지 점으로만 기술되며, 모든 위치를 직접 위치로 표현할 수는 없다. 이는 관계의 \"유형(is type of)\"과 일관성을 갖는다. KS X ISO 19107의 기하 또한 위치이며, 반드시 직접 위치는 아니다."@ko ;
+        lang:rus-note          "Примечание: Прямое положение (4.3) представляет собой семантический подтип положения. Прямые положения в соответствии с описанием могут определять только точку, и поэтому прямое положение может представлять не все положения. Это соответствует отношению “тип”. Геометрия в соответствии со стандартом ISO 19107 также представляет собой положение, но не прямое положение [ИСО 19148]."@ru ;
+        lang:spa-note          "Nota: Una posición directa es un subtipo semántico de posición. Una posición directa como la descrita sólo puede definir un punto y por lo tanto no todas las posiciones pueden ser representadas de forma directa. Esto es consistente con la relación \"es tipo de\". Una geometría según la Norma ISO 19107 es también una posición, no sólo una posición directa."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 直接位置是点的一种语义子类型。直接位置只能描述一个确定点,因此并不是所有的位置都可以由直接位置来表示。这与\"类型\"的关系相符合。ISO 19107中的几何是位置,但不直接位置。"@zh ;
+        geolexica:hasInfo      info:Info347 ;
+        geolexica:hasLDAPI     ldapi:ldapi347-rdfxml , ldapi:ldapi347-json , ldapi:ldapi347-jsonld , ldapi:ldapi347-skosrdf ;
+        geolexica:hasLangCode  lang:kor , lang:jpn , lang:eng , lang:deu , lang:rus , lang:msa , lang:spa , lang:fin , lang:zho , lang:nld , lang:fra , lang:pol , lang:ara , lang:swe ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:zhoRegistry , lang:sweRegistry , lang:engRegistry , lang:fraRegistry , lang:nldRegistry , lang:finRegistry , lang:polRegistry , lang:jpnRegistry , lang:spaRegistry , lang:araRegistry , lang:korRegistry , lang:deuRegistry , lang:msaRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info347 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi347-json
+ldapi:ldapi347-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/347.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi347-jsonld
+ldapi:ldapi347-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/347.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi347-rdfxml
+ldapi:ldapi347-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/347.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi347-skosrdf
+ldapi:ldapi347-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/347.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

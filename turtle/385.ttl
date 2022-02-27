@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/385/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,97 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/385/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "ring" ;
+        vann:preferredNamespacePrefix  "concept385" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/385/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/385/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:ring   a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "ring" ;
+        dcterms:identifier     385 ;
+        skos:definition        "yhtenäinen käyrä, jonka alkupiste on sama kuin loppupiste"@fi , "curva simple que es un ciclo"@es , "순환하는 단순 곡선"@ko , "輪体である単純曲線。"@ja , "simple curve which is a cycle"@en , "простая кривая, являющаяся циклом"@ru , "prosta krzywa, która jest cyklem"@pl , "cykliskt objekt som består av en geometriskt enkel linje"@sv , "courbe simple qui est un cycle"@fr , "是圈的简单曲线。"@zh , "منحنى بسيط هو عبارة عن دائرة"@ar ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          385 ;
+        skos:prefLabel         "pierścień"@pl , "环"@zh , "حلقة"@ar , "кольцо"@ru , "ring"@en , "輪"@ja , "anillo"@es , "anneau"@fr , "geometrisk ring"@sv , "Umring"@de , "piiri"@fi , "링"@ko ;
+        lang:ara-note          "ملاحظة: تستخدم الأطواق لوصف مكونات الحدود الخارجية للأسطح في نظم الإحداثيات ذات البعدين والثلاثة أبعاد."@ar ;
+        lang:eng-note          "Note to entry: Rings are used to describe boundary components of surfaces in 2D and 3D coordinate systems."@en ;
+        lang:fin-note          "HUOM.: Piirejä käytetään kuvaamaan pintojen rajauskomponentteja kaksi- ja kolmiulotteisissa koordinaatistoissa."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:jpn-note          "備考： 輪は二次元及び三次元座標系における曲面の境界の要素を記述するために用いる。"@ja ;
+        lang:kor-note          "비고: 링은 2차원 및 3차원 좌표 체계에서 표면의 경계 컴포넌트를 기술하는 데 사용된다."@ko ;
+        lang:pol-note          "UWAGA: Pierścienie są stosowane do opisu składowych granic powierzchni w 2- wymiarowych i 3-wymiarowych układach współrzędnych."@pl ;
+        lang:rus-note          "Примечание: Кольца используют для описания граничных компонентов поверхностей в двумерных и трехмерных системах координат"@ru ;
+        lang:spa-note          "Nota: Los anillos se usan para describir los componentes de los límites de superficies en sistemas de coordenadas de 2 y 3 dimensiones."@es ;
+        lang:zho-note          "注： 环是用来描述在二维和三维坐标系中的曲面的边界组分。"@zh ;
+        geolexica:hasInfo      info:Info385 ;
+        geolexica:hasLDAPI     ldapi:ldapi385-json , ldapi:ldapi385-rdfxml , ldapi:ldapi385-jsonld , ldapi:ldapi385-skosrdf ;
+        geolexica:hasLangCode  lang:swe , lang:zho , lang:eng , lang:pol , lang:nld , lang:ara , lang:spa , lang:deu , lang:fin , lang:msa , lang:kor , lang:jpn , lang:fra , lang:rus ;
+        geolexica:hasOrigin    lang:deuRegistry , lang:nldRegistry , lang:engRegistry , lang:spaRegistry , lang:msaRegistry , lang:zhoRegistry , lang:jpnRegistry , lang:finRegistry , lang:korRegistry , lang:fraRegistry , lang:rusRegistry , lang:sweRegistry , lang:polRegistry , lang:araRegistry ;
+        geolexica:hasReview    reviews:Review385 .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
-
 notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info385 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
-         geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
-         geolexica:entry_status "valid"@en .
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
 
 ############################################################
 
+reviews:Review385 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en .
+
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
                          geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi385-json
+ldapi:ldapi385-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/385.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi385-jsonld
+ldapi:ldapi385-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/385.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi385-rdfxml
+ldapi:ldapi385-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/385.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi385-skosrdf
+ldapi:ldapi385-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/385.ttl"^^xsd:anyURI .
 
 ############################################################
 

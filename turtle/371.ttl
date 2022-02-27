@@ -1,5 +1,5 @@
 
-@prefix :      <https://isotc211.geolexica.org/concepts/326/> .
+@prefix :      <https://isotc211.geolexica.org/concepts/371/> .
 @prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
 @prefix notes: <https://isotc211.geolexica.org/notes#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
@@ -17,85 +17,96 @@
 @prefix info:  <https://isotc211.geolexica.org/info#> .
 
 
-<https://isotc211.geolexica.org/concepts/326/>
+<https://isotc211.geolexica.org/concepts/371/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-02-23"^^xsd:date ;
-        dcterms:title                  "pass verdict" ;
-        vann:preferredNamespacePrefix  "concept326" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/326/" ;
+        dcterms:title                  "register" ;
+        vann:preferredNamespacePrefix  "concept371" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/371/" ;
         owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/326/> .
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/371/> .
 
 ###########################################################
 
-:pass_verdict  a               skos:Concept , owl:NamedIndividual ;
-        rdfs:label             "pass verdict" ;
-        dcterms:identifier     326 ;
-        skos:altLabel          "hyväksyvä päätelmä"@fi ;
-        skos:definition        "test verdict of conformance"@en , "verdict (résultat) de succès de test de conformité"@fr , "اختبار اجتياز المطابقه"@ar , "(vid test) resultat som anger överensstämmelse med angivna krav"@sv , "заключение о тестировании, подтверждающее соответствие"@ru , "適合と報告された試験判定。"@ja , "시험 적합 판정"@ko , "vaatimuksenmukaisuuden osoittava testitulos"@fi , "具有一致性的测试判定。"@zh , "veredicto de prueba de conformidad"@es ;
+:register  a                   skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "register" ;
+        dcterms:identifier     371 ;
+        skos:altLabel          "레지스터"@ko ;
+        skos:definition        "набор файлов, содержащий идентификаторы объектов с описаниями объектов"@ru , "zbiór plików zawierających identyfikatory przyporządkowane pozycjom wraz z opisami powiązanych pozycji"@pl , "verzameling van bestanden van identificatiecodes gerelateerd aan items met de beschrijving van de gerelateerde items"@nl , "set of files containing identifiers assigned to items with descriptions of the associated items"@en , "systematiskt ordnad förteckning"@sv , "Menge an Dateien, welche Identifikatoren und Beschreibungen zu Einträgen enthalten"@de , "연관 항목의 설명과 함께 항목에 부여된 식별자를 포함하는 파일의 집합"@ko , "包含注册项标识符和相关项说明的文件集合。"@zh , "ensemble de fichiers contenant des identifiants assignés à des éléments ainsi que les descriptions de ces éléments"@fr , "tietovarasto, joka sisältää tunnisteita ja määrittelyjä"@fi , "مجموعة ملفات تشتمل على رموز تعريف مخصصة لبنود مع وصف لتلك البنود"@ar , "conjunto de ficheros que contienen identificadores asignados a ítems con descripciones de los ítems asociados"@es ;
         skos:inScheme          geolexica:GeolexicaConceptScheme ;
-        skos:notation          326 ;
-        skos:prefLabel         "erfolgreicher Prüfnachweis"@de , "veredicto de aprobado"@es , "hyväksyntä"@fi , "合格判定"@zh , "合格判定"@ja , "godkänt resultat"@sv , "verdict de conformité"@fr , "حكم اجتياز"@ar , "положительное заключение"@ru , "pass verdict"@en , "통과 판정"@ko ;
-        lang:lang-deu          notes:NoteTransUnavail ;
-        lang:lang-fra          notes:NoteTransDiff ;
-        geolexica:hasInfo      info:Info326 ;
-        geolexica:hasLDAPI     ldapi:ldapi326-rdfxml , ldapi:ldapi326-json , ldapi:ldapi326-skosrdf , ldapi:ldapi326-jsonld ;
-        geolexica:hasLangCode  lang:zho , lang:ara , lang:rus , lang:fin , lang:kor , lang:fra , lang:pol , lang:deu , lang:eng , lang:jpn , lang:swe , lang:msa , lang:spa , lang:nld ;
-        geolexica:hasOrigin    lang:korRegistry , lang:polRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:zhoRegistry , lang:sweRegistry .
+        skos:notation          371 ;
+        skos:prefLabel         "register"@sv , "register"@nl , "register"@en , "реестр"@ru , "registre"@fr , "rekisteri"@fi , "注册表"@zh , "registro"@es , "등록물"@ko , "daftar; tingkat nada; laras bahasa; penghala; kena jadi; tingkat suara"@ms , "rejestr"@pl , "سجل"@ar , "Register"@de ;
+        lang:msa-note          notes:DefnTransUnavail , notes:NoteTransDiff ;
+        lang:rus-note          notes:NoteTransDiff ;
+        geolexica:hasInfo      info:Info371 ;
+        geolexica:hasLDAPI     ldapi:ldapi371-rdfxml , ldapi:ldapi371-skosrdf , ldapi:ldapi371-json , ldapi:ldapi371-jsonld ;
+        geolexica:hasLangCode  lang:rus , lang:swe , lang:kor , lang:msa , lang:spa , lang:fra , lang:ara , lang:nld , lang:zho , lang:pol , lang:eng , lang:deu , lang:fin , lang:jpn ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:deuRegistry , lang:rusRegistry , lang:nldRegistry , lang:araRegistry , lang:msaRegistry , lang:sweRegistry , lang:finRegistry , lang:fraRegistry , lang:polRegistry , lang:zhoRegistry , lang:engRegistry , lang:korRegistry , lang:jpnRegistry ;
+        geolexica:hasReview    reviews:Review371 .
 
 ############################################################
-notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
-    rdfs:label "This note has not been translated."@en .
+
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
 
 notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
     rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
 ############################################################
 
-info:Info326 rdf:type owl:NamedIndividual ,
+info:Info371 rdf:type owl:NamedIndividual ,
                   geolexica:ConceptInfo ;
-         geolexica:hasSource sources:ISO-19105-2000 ;
+         geolexica:hasSource sources:ISO-19135-1-2015 ;
+         geolexica:clause "4.1.9" ;
          geolexica:classification "preferred"@en ;
-         geolexica:date_accepted "2000-12-15"^^xsd:date ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
          geolexica:entry_status "valid"@en .
 
 ############################################################
 
+reviews:Review371 rdf:type owl:NamedIndividual ,
+                    geolexica:ConceptReview ;
+           geolexica:review_date "2010-10-19"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19135-1:2015"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from Annex E, ISO/IEC JTC1 Procedures (Adapted from) to ISO 19135-1:2015, 4.1.9. Lineage source added as ISO 19135:2005"@en .
+
 ############################################################
 
-sources:ISO-19105-2000 rdf:type owl:NamedIndividual ,
-                         geolexica:Source ;
-                dcterms:description "Geographic information — Conformance and testing"@en ;
-                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
-                rdfs:label "ISO 19105:2000" .
-
+sources:ISO-19135-1-2015 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Procedures for item registration — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/54721.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19135-1:2015" .
 
 ############################################################
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-json
-ldapi:ldapi326-json rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi371-json
+ldapi:ldapi371-json rdf:type owl:NamedIndividual ,
                         geolexica:JSON ;
-               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/326.json"^^xsd:anyURI .
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/371.json"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-jsonld
-ldapi:ldapi326-jsonld rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi371-jsonld
+ldapi:ldapi371-jsonld rdf:type owl:NamedIndividual ,
                           geolexica:JSON-LD ;
-                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/326.jsonld"^^xsd:anyURI .
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/371.jsonld"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-rdfxml
-ldapi:ldapi326-rdfxml rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi371-rdfxml
+ldapi:ldapi371-rdfxml rdf:type owl:NamedIndividual ,
                           geolexica:RDF-XML ;
-                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/326.rdf"^^xsd:anyURI .
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/371.rdf"^^xsd:anyURI .
 
 
-###  https://isotc211.geolexica.org/api/ldapi#ldapi326-skosrdf
-ldapi:ldapi326-skosrdf rdf:type owl:NamedIndividual ,
+###  https://isotc211.geolexica.org/api/ldapi#ldapi371-skosrdf
+ldapi:ldapi371-skosrdf rdf:type owl:NamedIndividual ,
                            geolexica:SKOS-RDF ;
-                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/326.ttl"^^xsd:anyURI .
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/371.ttl"^^xsd:anyURI .
 
 ############################################################
 
