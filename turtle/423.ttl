@@ -1,0 +1,199 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/423/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/423/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "spatiotemporal domain (coverage)" ;
+        vann:preferredNamespacePrefix  "concept423" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/423/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/423/> .
+
+###########################################################
+
+:spatiotemp_domain_coverage
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "spatiotemporal domain (coverage)" ;
+        dcterms:identifier     423 ;
+        skos:definition        "由时空对象所组成的域。"@zh , "시공간 객체로 구성된 영역"@ko , "область, составленная из пространственно-временных объектов"@ru , "(pokrycie)Dziedzina złożona z obiektów czasoprzestrzennych"@pl , "domaine composé d&#39;objets spatio-temporels"@fr , "مجال مؤلف من كائنات مكانية – زمانية"@ar , "&quot;cobertura&quot; dominio compuesto de objetos espacio-temporales"@es , "domain composed of spatiotemporal objects"@en , "(för domänobjekt):samling av rumstemporala objekt"@sv , "spatiotemporaalisista objekteista koostuva määritysjoukko"@fi ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          423 ;
+        skos:prefLabel         "مجال مكاني – زماني (تغطية)"@ar , "spatiotemporal domain (coverage)"@en , "dominio espacio-temporal (cobertura)"@es , "시공간 영역 (커버리지)"@ko , "dziedzina czasoprzestrzenna"@pl , "пространственно-временнáя область (покрытие)"@ru , "时空域(覆盖)"@zh , "spatiotemporaalinen joukko (paikkatietojakauma)"@fi , "domän"@sv , "domaine spatio-temporel (couverture)"@fr ;
+        lang:ara-note          "ملاحظة: يتكون المجال المكاني- الزماني للتغطية المستمرة من مجموعة من المواقع المباشرة يتم تعريفها من خلال العلاقة بينها وبين مجموعة من الكيانات المكانية-الزمانية."@ar ;
+        lang:eng-note          "Note to entry: The spatiotemporal domain of a continuous coverage consists of a set of direct positions defined in relation to a collection of spatiotemporal objects."@en ;
+        lang:fin-note          "HUOM.: Jatkuvan paikkatietojakauman spatiotemporaalinen joukko koostuu pistejoukosta, joka on määritetty suhteessa joukkoon spatiotemporaalisia objekteja."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 연속 커버리지의 시공간 영역은 시공간객체의 모음에 대한 관계로 정의된 직접 위치의 집합으로 구성된다."@ko ;
+        lang:pol-note          "UWAGA: Dziedzina czasoprzestrzenna pokrycia ciągłego jest zbiorem bezpośrednich położeń zdefiniowanych w relacji do kolekcji obiektów czasoprzestrzennych."@pl ;
+        lang:rus-note          "Примечание: Пространственно-временнáя область непрерывного покрытия состоит из множества точек, определенных относительно совокупности пространственно-временных объектов"@ru ;
+        lang:spa-note          "Nota: El dominio espacio-temporal de una cobertura continua consta de un conjunto de posiciones directas definidas en relación con una colección de objetos espacio-temporales."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 连续覆盖的时空域包括一组直接位置，它们与几何对象集合相关联。"@zh ;
+        geolexica:hasInfo      info:Info423 ;
+        geolexica:hasLDAPI     ldapi:ldapi423-skosrdf , ldapi:ldapi423-rdfxml , ldapi:ldapi423-json , ldapi:ldapi423-jsonld ;
+        geolexica:hasLangCode  lang:deu , lang:nld , lang:pol , lang:zho , lang:kor , lang:eng , lang:swe , lang:spa , lang:rus , lang:jpn , lang:fra , lang:fin , lang:ara , lang:msa ;
+        geolexica:hasOrigin    lang:polRegistry , lang:zhoRegistry , lang:finRegistry , lang:fraRegistry , lang:araRegistry , lang:rusRegistry , lang:nldRegistry , lang:spaRegistry , lang:msaRegistry , lang:engRegistry , lang:sweRegistry , lang:korRegistry , lang:deuRegistry , lang:jpnRegistry .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+############################################################
+
+info:Info423 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi423-json
+ldapi:ldapi423-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/423.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi423-jsonld
+ldapi:ldapi423-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/423.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi423-rdfxml
+ldapi:ldapi423-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/423.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi423-skosrdf
+ldapi:ldapi423-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/423.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

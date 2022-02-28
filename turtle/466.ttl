@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/466/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/466/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "topological object" ;
+        vann:preferredNamespacePrefix  "concept466" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/466/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/466/> .
+
+###########################################################
+
+:topological_object  a         skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "topological object" ;
+        dcterms:identifier     466 ;
+        skos:definition        "معلم مكاني يمثل خصائص مكانية تظل ثابتة مع التحولات المستمرة"@ar , "변형이 계속되어도 변하지 않는 공간적 특성을 나타내는 공간 객체"@ko , "объект пространства, представляющий пространственные свойства, инвариантные по отношению к непрерывным преобразованиям"@ru , "sijaintiobjekti, joka kuvaa kohteen topologiaa"@fi , "element przestrzenny mający właściwości przestrzenne niezmienne wobec przekształceń ciągłych"@pl , "連続した変換のもとでも変わらない空間特性を表す空間オブジェクト。"@ja , "objet spatial représentant des caractéristiques spatiales invariantes sous des transformations continues"@fr , "表达在连续变换中空间特性保持不变的空间对象。"@zh , "raumbezogenes Objekt mit räumlichen Eigenschaften, die unveränderbar gegenüber stetigen Abbildungen sind"@de , "objeto espacial que representa las características espaciales que son invariantes ante transformaciones continuas"@es , "spatial object representing spatial characteristics that are invariant under continuous transformations"@en , "objekt (i UML) för representation av topologisk egenskap"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          466 ;
+        skos:prefLabel         "objeto topológico"@es , "objet topologique"@fr , "位相オブジェクト"@ja , "topologisches Objekt"@de , "topological object"@en , "위상 객체"@ko , "拓扑对象"@zh , "كائي طوبولوجي"@ar , "obiekt topologiczny"@pl , "топологический объект"@ru , "topologiskt objekt"@sv , "topologinen objekti"@fi ;
+        lang:ara-note          "ملاحظة: الكيان الطوبولوجي يمكن أن يكون عنصراً طوبولوجياً أولياً , أو مجموعة من العناصر الطوبولوجية الأولية أو مركباً طوبولوجياً."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A topological object is a topological primitive, a collection of topological primitives, or a topological complex."@en ;
+        lang:fin-note          "HUOM.: Topologinen objekti voi olla topologinen primitiivi, topologisten primitiivien kokoelma tai topologinen kompleksi."@fi ;
+        lang:jpn-note          "備考： 位相オブジェクトは，位相プリミティブ，位相プリミティブの集まり又は位相複体である。"@ja ;
+        lang:kor-note          "비고: 위상 객체는 위상 원시 객체, 위상 원시 객체 모음 또는 위상 복합체이다."@ko ;
+        lang:pol-note          "UWAGA: Obiektem topologicznym jest prosty element topologiczny, kolekcja prostych elementów topologicznych lub złożony element topologiczny."@pl ;
+        lang:rus-note          "Примечание: Топологическим объектом является топологический примитив, совокупность топологических примитивов или топологический комплекс"@ru ;
+        lang:spa-note          "Nota: Un objeto topológico es una primitiva topológica, una colección de primitivas topológicas o un complejo topológico."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 一个拓扑对象是一个拓扑单形、若干拓扑单形的一个集合或一个拓扑复形。 "@zh ;
+        geolexica:hasInfo      info:Info466 ;
+        geolexica:hasLDAPI     ldapi:ldapi466-rdfxml , ldapi:ldapi466-jsonld , ldapi:ldapi466-json , ldapi:ldapi466-skosrdf ;
+        geolexica:hasLangCode  lang:zho , lang:spa , lang:rus , lang:jpn , lang:msa , lang:eng , lang:ara , lang:pol , lang:deu , lang:fra , lang:nld , lang:swe , lang:fin , lang:kor ;
+        geolexica:hasOrigin    lang:korRegistry , lang:sweRegistry , lang:araRegistry , lang:msaRegistry , lang:deuRegistry , lang:nldRegistry , lang:rusRegistry , lang:zhoRegistry , lang:polRegistry , lang:fraRegistry , lang:engRegistry , lang:finRegistry , lang:spaRegistry , lang:jpnRegistry ;
+        geolexica:hasReview    reviews:Review466 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info466 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2019 ;
+         geolexica:clause "(E), 3.99" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review466 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19107:2019(E), 3.99. Lineage source added as ISO 19107:2003€"@en .
+
+############################################################
+
+sources:ISO-19107-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi466-json
+ldapi:ldapi466-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/466.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi466-jsonld
+ldapi:ldapi466-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/466.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi466-rdfxml
+ldapi:ldapi466-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/466.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi466-skosrdf
+ldapi:ldapi466-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/466.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

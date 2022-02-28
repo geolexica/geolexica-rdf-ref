@@ -1,0 +1,198 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/493/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/493/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "vehicle classification" ;
+        vann:preferredNamespacePrefix  "concept493" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/493/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/493> .
+
+###########################################################
+
+:vehicle_classification
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "vehicle classification" ;
+        dcterms:identifier     493 ;
+        skos:definition        "tipo de vehículo, según la naturaleza de su fabricación o utilidad prevista"@es , "ajoneuvotyyppi, jonka määrittely pohjautuu ajoneuvon rakenteeseen tai käyttötarkoitukseen"@fi , "의도된 목적 또는 구조 특성을 바탕으로한 차량의 유형"@ko , "тип  транспортного средства, определяемый его конструктивными особенностями и целевым назначением"@ru , "基于构造性质或设计用途的车辆类型。"@zh , "نوع المركبة ، وذلك بناء على طبيعة تركيبتها أو الغرض المقصود منها"@ar , "type of vehicle, based on the nature of its construction or intended purpose."@en , "typ av fordon i enlighet med angivna indelningskriterier"@sv , "jenis kenderaan, berdasarkan jenis pembinaannya atau tujuan ia dibina"@ms , "type de véhicule, basé sur la nature de sa construction ou son usage nominal"@fr ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          493 ;
+        skos:prefLabel         "clasificación del vehículo"@es , "classification de véhicule"@fr , "pengelasan kenderaan"@ms , "fordonstyp"@sv , "класс транспортного средства"@ru , "차종"@ko , "تصنيف المركبة"@ar , "车辆分类"@zh , "ajoneuvoluokitus"@fi ;
+        lang:ara-note          "ملاحظة: التصنيفات المبنية على التركيب أو البنية تشمل مفردات مثل سيارة ، شاحنة ، حافلة، دراجة هوائية .. وخلافة. التطبيقات المبنية على الغرض تشمل مفردات مثل سيارة أجرة ، سيارة إسعاف .. وخلافه. يمكن استخدام تصنيف المركبات الآلية لتحديد تطبيقات قيود الملاحة."@ar ;
+        lang:eng-note          "Note to entry: Classifications based on construction include automobile, truck, bus, bicycle, etc. Classifications based on purpose include taxi, emergency vehicle, etc. Vehicle classification can be used to determine the application of navigation constraints."@en ;
+        lang:fin-note          "HUOM.: Rakenteeseen pohjautuvia luokituksia ovat henkilöauto, kuorma-auto, bussi, polkupyörä jne. Käyttötarkoituksen pohjalta tehtyjä luokituksia ovat taksi, hätäajoneuvo jne. Ajoneuvoluokitus voi vaikuttaa navigaatiorajoitusten soveltamiseen."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 구조를 바탕으로 한 분류로는 자동차, 트럭, 버스, 자전거 등이 있다. 목적을 바탕으로 한 분류에는 택시, 응급차량 등이 있다. 차종은 내비게이션 제약 조건을 고려한 응용의 결정에 사용될 수 있다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Классификации на основе конструктивных особенностей включают автомобиль, грузовой автомобиль, автобус, велосипед и т.п. Классификации по признаку назначение включают такси, транспортные средства скорой помощи и т.п. Классификацию транспортных средств можно использовать для определения применения навигационных ограничений"@ru ;
+        lang:spa-note          "Nota: Las clasificaciones basadas en la fabricación incluyen automóviles, camiones, autobuses, bicicletas, etc. Las clasificaciones basadas en su propósito incluyen taxi, vehículos de emergencia, etc. Se puede usar la clasificación del vehículo para determinar la aplicación de las restric¬ciones de navegación."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 基于构造的分类包括汽车、卡车、公交车、自行车等。基于用途的分类包括出租车和救护车。车辆分类可应用于决定导航限制。"@zh ;
+        geolexica:hasInfo      info:Info493 ;
+        geolexica:hasLDAPI     ldapi:ldapi493-rdfxml , ldapi:ldapi493-jsonld , ldapi:ldapi493-json , ldapi:ldapi493-skosrdf ;
+        geolexica:hasLangCode  lang:pol , lang:kor , lang:ara , lang:fra , lang:fin , lang:nld , lang:spa , lang:jpn , lang:rus , lang:zho , lang:deu , lang:eng , lang:swe , lang:msa ;
+        geolexica:hasOrigin    lang:jpnRegistry , lang:spaRegistry , lang:finRegistry , lang:zhoRegistry , lang:nldRegistry , lang:sweRegistry , lang:engRegistry , lang:araRegistry , lang:msaRegistry , lang:korRegistry , lang:deuRegistry , lang:polRegistry , lang:fraRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review493 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info493 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+        
+############################################################
+
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi493-json
+ldapi:ldapi493-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/493.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi493-jsonld
+ldapi:ldapi493-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/493.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi493-rdfxml
+ldapi:ldapi493-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/493.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi493-skosrdf
+ldapi:ldapi493-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/493.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

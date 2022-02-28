@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/433/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/433/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "strong substitutability" ;
+        vann:preferredNamespacePrefix  "concept433" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/433/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/433/> .
+
+###########################################################
+
+:strong_substitutability
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "strong substitutability" ;
+        dcterms:identifier     433 ;
+        skos:definition        "egenskap hos en instans att utan restriktioner kunna ersätta en instans från sin basklass"@sv , "capacité pour toute instance de classe qui descend par héritage ou réalisation d&#39;une autre classe, type ou interface à être utilisée au lieu d&#39;une instance de son ancêtre dans n&#39;importe quel contexte"@fr , "あるクラス，型又はインタフェースを継承又は実現した下位クラスの任意のインスタンスを，その原型のインスタンスの代わりとして任意の状況において用いることのできる能力。"@ja , "zdolność każdej instancji klasy, która jest potomkiem (w sensie dziedziczenia lub realizacji) innej klasy, typu lub interfejsu, do użycia w jej miejsce instancji jej przodka w dowolnym kontekście"@pl , "클래스의 특정 인스턴스를 위한 능력으로, 이는 상속을 통한 자손이거나, 특정 상황에서 그것의 조상의 인스턴스 대신 사용되는 다른 클래스, 유형 또는 인터페이스의 실현을 의미"@ko , "قدرة أي مثال لفئة الوراثة أو التحقق منحدرة تحت فئة أخرى أو نوع آخر أو واجهة أخرى لإمكانية استخدامها كبدل لمثيل السجل في أي سياق  ."@ar , "继承或实现另一个类、类型或接口的派生类的任何实例在任何相关环境中用于替代其祖先实例的能力。"@zh , "luokan ilmentymän kyky toimia aina kyseisen luokan yläluokan ilmentymän tilalla"@fi , "capacidad de cualquier instancia de una clase que es descendiente por herencia o una realización de otra clase, tipo o interfaz, para ser usada en lugar de una instancia de su antecesor en cualquier contexto"@es , "возможность в любом контексте использовать любой экземпляр класса, выступающего в отношениях наследования либо реализации наследником другого класса, типа или интерфейса  - вместо экземпляра сущности – предка"@ru , "ability for any instance of a class that is a descendant under inheritance or realization of another class, type or interface to be used in lieu of an instance of its ancestor in any context"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          433 ;
+        skos:prefLabel         "silna zastępowalność"@pl , "قوة الابدالية"@ar , "strong substitutability"@en , "строгая  заменяемость"@ru , "强可替换性"@zh , "intercambiabilidad fuerte"@es , "capacité de substitution forte"@fr , "강한 대체성"@ko , "強代替性"@ja , "stark utbytbarhet"@sv , "voimakas korvautuvuus"@fi ;
+        lang:ara-note          "ملاحظة: الأشكال الأضعف لقابلية الاستبدال تضع قيوداً مختلفة على سياق الاستبدال المفترض ."@ar ;
+        lang:eng-note          "Note to entry: The weaker forms of substitutability make various restrictions on the context of the implied substitution."@en ;
+        lang:fin-note          "HUOM.: Korvautuvuuden heikommat muodot ovat rajattuja asiayhteyden mukaan."@fi ;
+        lang:jpn-note          "備考： 代替性の弱い形式は，暗黙の代替を行う状況に様々な制限を設ける。"@ja ;
+        lang:kor-note          "비고: 보다 약한 유형의 대체성은 함축된 대용의 상황에서 다양한 제한을 만든다."@ko ;
+        lang:pol-note          "UWAGA: Słabsze formy zastępowalności ustalają różne ograniczenia co do kontekstu implikowanego zastąpienia."@pl ;
+        lang:rus-note          "Примечание: Менее строгие формы заменяемости накладывают различные ограничения на контекст предполагаемой замены"@ru ;
+        lang:spa-note          "Nota: Las formas más débiles de intercambiabilidad implican varias restricciones en el contexto de la sustitución subyacente."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 弱替换类型使得在替换中对环境有各种各样的限制。"@zh ;
+        geolexica:hasInfo      info:Info433 ;
+        geolexica:hasLDAPI     ldapi:ldapi433-json , ldapi:ldapi433-skosrdf , ldapi:ldapi433-rdfxml , ldapi:ldapi433-jsonld ;
+        geolexica:hasLangCode  lang:fra , lang:rus , lang:swe , lang:fin , lang:eng , lang:kor , lang:spa , lang:zho , lang:ara , lang:msa , lang:jpn , lang:nld , lang:deu , lang:pol ;
+        geolexica:hasOrigin    lang:polRegistry , lang:nldRegistry , lang:spaRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:sweRegistry , lang:zhoRegistry , lang:fraRegistry , lang:korRegistry , lang:msaRegistry , lang:jpnRegistry , lang:deuRegistry , lang:rusRegistry ;
+        geolexica:hasReview    reviews:Review433 .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info433 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
+
+############################################################
+
+reviews:Review433 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi433-json
+ldapi:ldapi433-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/433.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi433-jsonld
+ldapi:ldapi433-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/433.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi433-rdfxml
+ldapi:ldapi433-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/433.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi433-skosrdf
+ldapi:ldapi433-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/433.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

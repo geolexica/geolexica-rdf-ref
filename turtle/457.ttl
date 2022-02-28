@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/457/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/457/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "tessellation" ;
+        vann:preferredNamespacePrefix  "concept457" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/457/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/457/> .
+
+###########################################################
+
+:tessellation  a               owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "tessellation" ;
+        dcterms:identifier     457 ;
+        skos:altLabel          "테셀러이션"@ko ;
+        skos:definition        "partición de un espacio en un conjunto de subespacios contiguos que tienen la misma dimensión que el espacio dividido"@es , "partitioning of a space into a set of conterminous subspaces having the same dimension as the space being partitioned"@en , "avaruuden jakaminen joukkoon vierekkäisiä aliavaruuksia, joilla on sama ulottuvuus kuin jaettavalla avaruudella"@fi , "разбиение пространства на множество смежных подпространств той же пространственной размерности, что и исходное"@ru , "uppdelning av ett plan eller ett rum i sammanhängande delar"@sv , "Corak yang terhasil apabila beberapa jenis bentuk disusun rapat tanpa bertindih untuk menutup keseluruhan satah"@ms , "podział przestrzeni na zbiór sąsiadujących ze sobą podprzestrzeni o tym samym wymiarze co dzielona przestrzeń"@pl , "découpage d&#39;un espace en un ensemble de sous-espaces coïncidents de même dimension que l&#39;espace partitionné"@fr , "تجزئة حيز مكاني إلى مجموعة من الأجزاء الفرعية ذات حدود مشتركة لها نفس أبعاد الحيز المكاني الخاضع للتجزئة"@ar , "분할되는 공간과 같은 차원을 갖는 인접한 부분 공간의 집합으로의 공간의 분할"@ko , "将空间分割成相同维数的相接的一组子空间。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          457 ;
+        skos:prefLabel         "tesselaatio"@fi , "tesselering"@sv , "mosaico"@es , "partition"@fr , "التضليع"@ar , "镶嵌式分割"@zh , "teselacja"@pl , "teselasi"@ms , "мозаика"@ru , "공간 분할"@ko , "tessellation"@en ;
+        lang:ara-note          "ملاحظة: الترصيع بالمضلعات الرباعية الذي يتكون من مضلعات منتظمة متطابقة أو متعددة السطوح هو ترصيع منتظم بالمضلعات الرباعية. أما الترصيع بالمضلعات الرباعية المكون من مضلعات منتظمة ولكنها غير متطابقة أو غير متعددة السطوح فهو شبه منتظم. وعدا عن ذلك يكون الترصيع بالمضلعات غير منتظم."@ar ;
+        lang:eng-note          "Note to entry: A tessellation composed of congruent regular polygons or polyhedra is a regular tessellation. One composed of regular, but non-congruent polygons or polyhedra is a semi-regular tessellation. Otherwise the tessellation is irregular."@en ;
+        lang:fin-note          "HUOM.: Yhtenevistä säännöllisistä monikulmioista tai monitahokkaista koostuva tesselaatio on säännöllinen. Säännöllisistä mutta epäyhtenevistä monikulmioista tai monitahokkaista koostuva tesselaatio on puolisäännöllinen. Muunlaiset tesselaatiot ovat epäsäännöllisiä."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 합동 정다각형 또는 정다면체로 구성된 테셀러이션은 정규 테셀러이션이다. 정다각형 또는 정다면체이긴 하지만, 합동이 아닌 것은 반-정규 테셀러이션이다. 그렇지 않으면 테셀러이션은 불규칙하다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail , notes:ExTransUnavail ;
+        lang:pol-note          "UWAGA: Teselacja złożona z przystających regularnych wieloboków lub wielościanów jest teselacją regularną. Teselacja złożona z regularnych, ale nieprzystających wieloboków lub wielościanów jest teselacją półregularną. W innych przypadkach teselacja jest nieregularna."@pl ;
+        lang:rus-note          "Примечание: Мозаика, составленная из конгруэнтных регулярных полигонов или многогранника, является регулярной мозаикой. Мозаика, составленная их регулярных, но не конгруэнтных полигонов или многогранника, является полурегулярной мозаикой. В иных случаях мозаика является нерегулярной"@ru ;
+        lang:spa-note          "Nota: Un mosaico compuesto de polígonos o poliedros regulares y congruentes es un mosaico regular. Uno compuesto de polígonos o poliedros regulares pero no congruentes es un mosaico semi-regular. En otro caso se trata de un mosaico irregular."@es ;
+        lang:swe-note          notes:NoteTransUnavail , notes:ExTransUnavail ;
+        lang:zho-note          "注： 由全等正多边形或正多面体组成的镶嵌称为规则镶嵌，由不全等的正多边形或正多面体组成的镶嵌称为半规则镶嵌，否则称为不规则镶嵌。"@zh ;
+        geolexica:examples     "示例 在标准（ISO 19123）图11，13，20，22可看到镶嵌的图解实例。"@zh , "مثال أمثلة: يمكن الاطلاع على أمثلة الترصيع بالمضلعات الرباعية في شكل رسومات تشتمل عليها الأشكال 11 , و 13 , و 20 , و 22 من هذا المقياس الدولي."@ar , "EJEMPLO S Pueden encontrarse ejemplos gráficos de mosaicos en las figuras 11, 13, 20 y 22 de esta norma internacional."@es , "PRZYKŁAD Y Graficzne przykłady teselacji pokazano na Rysunkach 11, 13, 20 i 22 niniejszej Normy Międzynarodowej."@pl , "보기 KS X ISO 19123의 그림 11, 13, 20 ,22 참고"@ko , "Пример Графические примеры мозаик представлены на рис.11, 13, 20 и 22 ISO 19123"@ru , "ESIM. Piirrosesimerkkejä tesselaatioista löytyy tämän kansainvälisen standardin kuvista 11, 13, 20 ja 22."@fi , "EXAMPLE Graphic examples of tessellations may be found in Figures 11, 13, 20 and 22 of this International Standard"@en ;
+        geolexica:hasInfo      info:Info457 ;
+        geolexica:hasLDAPI     ldapi:ldapi457-rdfxml , ldapi:ldapi457-skosrdf , ldapi:ldapi457-jsonld , ldapi:ldapi457-json ;
+        geolexica:hasLangCode  lang:nld , lang:eng , lang:spa , lang:deu , lang:jpn , lang:fra , lang:rus , lang:pol , lang:swe , lang:ara , lang:msa , lang:zho , lang:kor , lang:fin ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:polRegistry , lang:jpnRegistry , lang:araRegistry , lang:fraRegistry , lang:korRegistry , lang:sweRegistry , lang:engRegistry , lang:finRegistry , lang:nldRegistry , lang:msaRegistry , lang:deuRegistry , lang:zhoRegistry , lang:spaRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+############################################################
+
+info:Info457 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+# reviews
+
+############################################################
+
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi457-json
+ldapi:ldapi457-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/457.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi457-jsonld
+ldapi:ldapi457-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/457.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi457-rdfxml
+ldapi:ldapi457-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/457.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi457-skosrdf
+ldapi:ldapi457-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/457.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

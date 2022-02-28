@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/491/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/491/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "vector" ;
+        vann:preferredNamespacePrefix  "concept491" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/491/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/491> .
+
+###########################################################
+
+:vector  a                     owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "vector" ;
+        dcterms:identifier     491 ;
+        skos:definition        "wielkość mająca zarówno kierunek, jak i wielkość"@pl , "cantidad que tiene tanto dirección como magnitud"@es , "quantité ayant une direction et une amplitude"@fr , "有方向且有大小的量。"@zh , "كمية لها اتجاه ولها حجم"@ar , "величина, характеризуемая числовым значением и направлением"@ru , "storhet som har både storlek och riktning"@sv , "크기와 방향을 함께 갖는 양"@ko , "suure, jolla on suunta ja suuruus"@fi , "quantity having direction as well as magnitude"@en , "Unsur yang mempunyai sifat arah dan magnitud"@ms ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          491 ;
+        skos:prefLabel         "矢量"@zh , "vecteur"@fr , "wektor"@pl , "متجهات"@ar , "벡터"@ko , "вектор"@ru , "vektori"@fi , "vektor"@sv , "vektor"@ms , "Vektor"@de , "vector"@es , "vector"@en ;
+        lang:ara-note          "ملاحظة: يمكن لجزء موجه من خط ما أن يمثل بيانات متجهة إذا كان طول واتجاه ذلك الجزء من الخط مساويين لحجم واتجاه البيانات المتجهة المعنيَّة. المصطلح \"بيانات متجهة\" هو إشارة إلى بيانات تمثل الصورة المكانية للمعالم كمجموعة موجهة لأجزاء الخطوط."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A directed line segment represents a vector if the length and direction of the line segment are equal to the magnitude and direction of the vector. The term vector data refers to data that represents the spatial configuration of features as a set of directed line segments."@en ;
+        lang:fin-note          "HUOM.: Suunnattu viivasegmentti vastaa vektoria, jos viivasegmentin pituus ja suunta ovat yhtä suuret kuin vektorin suuruus ja suunta. Termillä vektoritieto viitataan tietoon, joka kuvaa paikkatietokohteita suunnattujen viivasegmenttien joukkona."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 선 조각의 길이 및 방향이 벡터의 크기 및 방향과 같다면, 방향성 선 조각은 벡터를 표현한다. 벡터 데이터라는 용어는 피처의 공간 구성을 방향성 선 조각의 집합으로 표현하는 데이터를 의미한다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Skierowany odcinek linii reprezentuje wektor, jeśli długość i kierunek tego odcinka linii są równe wielkości i kierunkowi danego wektora. Termin dane wektorowe odnosi się do danych, które reprezentują przestrzenną konfigurację obiektów w postaci zbioru skierowanych odcinków linii."@pl ;
+        lang:rus-note          "Примечание: Направленный линейный сегмент представляет собой вектор, если его длина и направление соответствуют числовому значению и направлению вектора. Термин «векторные данные» относится к данным, которые описывают конфигурацию объектов в пространстве как набора направленных линейных сегментов"@ru ;
+        lang:spa-note          "Nota: Un segmento lineal dirigido representa un vector si la longitud y la dirección del segmento lineal es igual a la magnitud y la dirección del vector. El término datos vectoriales se refiere a los datos que representan la configuración espacial de los objetos geográficos como un conjunto de segmentos lineales dirigidos."@es ;
+        lang:swe-note          "Anm. till termpost: Termen vektordata avser data som beskriver rumsliga aspekter med hjälp av raklinjesegment där varje sådant utgår från en position och har en längd och en riktning."@sv ;
+        lang:zho-note          "注： 如果一条线段的长度和方向等价于一个矢量的大小和方向，则该有向线段可以表示该矢量。术语矢量数据是指把表达要素空间结构的数据看作一个有向线段的集合。"@zh ;
+        geolexica:hasInfo      info:Info491 ;
+        geolexica:hasLDAPI     ldapi:ldapi491-json , ldapi:ldapi491-skosrdf , ldapi:ldapi491-rdfxml , ldapi:ldapi491-jsonld ;
+        geolexica:hasLangCode  lang:fin , lang:fra , lang:nld , lang:eng , lang:deu , lang:jpn , lang:zho , lang:rus , lang:ara , lang:spa , lang:msa , lang:kor , lang:swe , lang:pol ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:jpnRegistry , lang:zhoRegistry , lang:msaRegistry , lang:fraRegistry , lang:engRegistry , lang:nldRegistry , lang:polRegistry , lang:korRegistry , lang:rusRegistry , lang:finRegistry , lang:araRegistry , lang:sweRegistry , lang:deuRegistry .
+
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info491 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+        
+############################################################
+
+############################################################
+
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi491-json
+ldapi:ldapi491-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/491.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi491-jsonld
+ldapi:ldapi491-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/491.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi491-rdfxml
+ldapi:ldapi491-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/491.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi491-skosrdf
+ldapi:ldapi491-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/491.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

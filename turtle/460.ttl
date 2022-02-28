@@ -1,0 +1,184 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/460/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/460/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "Thiessen polygon" ;
+        vann:preferredNamespacePrefix  "concept460" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/460/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/460/> .
+
+###########################################################
+
+:Thiessen_polygon  a           skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "Thiessen polygon" ;
+        dcterms:identifier     460 ;
+        skos:definition        "مضلع يطوق واحدة من مجموعة نقط على سطح مستو بغرض احتواء جميع المواقع المباشرة الأكثر قربا من النقطة المذكورة من أي نقطة أخرى في المجموعة"@ar , "包围平面上点集中的一个点的多边形，它包括了距离这个点比距离点集中其他点都近的所有直接位置。"@zh , "monikulmio, joka rajaa tasolla sijaitsevista pisteistä yhden pisteen siten, että monikulmio kattaa kaikki ne suorat sijainnit, jotka sijaitsevat lähempänä kyseistä pistettä kuin joukon muita pisteitä"@fi , "집합 내의 어떤 직접 위치에서도 다각형 내부에 위치한 점까지의 거리가 다른 다각형 내에 위치한 거리보다 가까운 다각형"@ko , "polygone comportant un ensemble de points (parmi tous les ensembles de points) sur un plan de façon à inclure toutes les positions directes qui sont plus proches de ce point que de tout autre point de l&#39;ensemble"@fr , "polígono que encierra un punto de un conjunto de puntos de un plano, de manera que incluye todas las posiciones directas que están más cercanas a ese punto que a cualquier otro punto del conjunto"@es , "polygon that encloses one of a set of points on a plane so as to include all direct positions that are closer to that point than to any other point in the set"@en , "Poligon yang terbentuk oleh pembahagi dua-sama tegak lurus beberapa garis lurus yang menghubungkan stesen curahan hujan yang berdampingan"@ms , "wielobok, który otacza jeden z punktów zbioru na płaszczyźnie w taki sposób, że obejmuje wszystkie położenia bezpośrednie, które są bliższe temu punktowi niż dowolnemu innemu punktowi z tego zbioru"@pl , "полигон, окружающий одну точку из некоторого плоского множества и содержащий все позиции, расположенные ближе к данной точке, чем к любой иной точке указанного множества"@ru , "yta i form av en sluten polygon vilken innehåller en observationspunkt och är utformad så att en godtycklig punkt inom ytan alltid befinner sig närmare den egna ytans observationspunkt än en angränsande ytas observationspunkt"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          460 ;
+        skos:prefLabel         "泰森多边形"@zh , "مضلع\" ثيسين\""@ar , "полигон Тиссена"@ru , "polígono de Thiessen"@es , "Thiessenin monikulmio"@fi , "Thiessen polygon"@en , "poligon Thiessen"@ms , "wielobok Thiessena"@pl , "티센 다각형"@ko , "Thiessenpolygon"@sv , "polygone de Thiessen"@fr ;
+        lang:fre-note          notes:NoteTransDiff ;
+        geolexica:hasInfo      info:Info460 ;
+        geolexica:hasLDAPI     ldapi:ldapi460-rdfxml , ldapi:ldapi460-json , ldapi:ldapi460-jsonld , ldapi:ldapi460-skosrdf ;
+        geolexica:hasLangCode  lang:swe , lang:ara , lang:kor , lang:pol , lang:spa , lang:eng , lang:deu , lang:nld , lang:fin , lang:rus , lang:fra , lang:msa , lang:jpn , lang:zho ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:rusRegistry , lang:fraRegistry , lang:zhoRegistry , lang:engRegistry , lang:araRegistry , lang:msaRegistry , lang:finRegistry , lang:polRegistry , lang:deuRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry , lang:spaRegistry .
+
+############################################################
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info460 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19123-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-08-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi460-json
+ldapi:ldapi460-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/460.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi460-jsonld
+ldapi:ldapi460-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/460.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi460-rdfxml
+ldapi:ldapi460-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/460.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi460-skosrdf
+ldapi:ldapi460-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/460.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

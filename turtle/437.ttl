@@ -1,0 +1,206 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/437/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/437/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "surface" ;
+        vann:preferredNamespacePrefix  "concept437" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/437/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/437/> .
+
+###########################################################
+
+:surface  a                    skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "surface" ;
+        dcterms:identifier     437 ;
+        skos:definition        "평면 구역의 연속 영상을 국지적으로 표현하는 2차원 기하 원시 객체"@ko , "primitive géométrique bidimensionnelle représentant localement une image continue d&#39;une région d&#39;un plan"@fr , "2-dimensional geometric primitive, locally representing a continuous image of a region of a plane"@en , "kaksiulotteinen geometrinen primitiivi, joka kuvaa yhtenäistä aluetta"@fi , "二维几何单形，局部表示某平面的一个区域的连续映像。"@zh , "عنصر هندسي بسيط ثنائي الأبعاد يمثل موضعيا صورة مستمرة لمنطقة معينة من سطح مستو"@ar , "2-wymiarowy prosty element geometryczny, lokalnie reprzentujący ciągły obraz części płaszczyzny"@pl , "zweidimensionales geometrisches Primitiv, das das kontinuierliche Abbild eines Teils der Ebene darstellt"@de , "tvådimensionellt geometriskt grundelement som är sammanhängande och begränsat"@sv , "двумерный геометрический примитив, локально представляющий  непрерывный образ области на плоскости"@ru , "primitiva geométrica bidimensional que localmente representa una imagen continua de una región de un plano"@es , "Lapisan luar atau lapisan atas pada suatu objek."@ms , "局所的に平面領域の連続な像を表す二次元の幾何プリミティブ。"@ja ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          437 ;
+        skos:prefLabel         "pinta"@fi , "permukaan"@ms , "powierzchnia"@pl , "surface"@fr , "surface"@en , "سطح"@ar , "поверхность"@ru , "yta"@sv , "superficie"@es , "曲面"@zh , "曲面"@ja , "Fläche"@de , "표면"@ko ;
+        lang:ara-note          "ملاحظة: الحد الخارجي لسطح ما يتمثل في مجموعة من المنحنيات الموجهة والمغلقة التي تصف حدود السطح المذكور. الأسطح التي تكون أجزاؤها مشابهة لأجزاء جسم كروي , أو لأجزاء حلقة مرساة (ع) (شكل طوبولوجي كروي له \"مقابض\" بعدد (ع)) ليس لها حد خارجي. مثل هذه الأسطح تسمى دورات cycles."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: The boundary of a surface is the set of oriented, closed curves that delineate the limits of the surface. Surfaces that are isomorphic to a sphere, or to an n-torus (a topological sphere with n \"handles\") have no boundary. Such surfaces are called cycles."@en ;
+        lang:fin-note          "HUOM.: Pinnan rajaus on niiden suunnattujen, suljettujen käyrien joukko, jotka muodostavat pinnan rajat. Pinnoilla, jotka ovat isomorfisia pallopinnan tai n-toruksen (topologinen pallo, jolla on n \"kahvaa\") kanssa, ei ole rajausta. Tällaiset pinnat ovat silmukoita."@fi ;
+        lang:jpn-note          "備考： 曲面の境界は，曲面の限界の輪郭を描く向きをもつ閉曲線である。球面又はn次元トーラス（n次元“把”をもつ位相球面）と同形である曲面は，境界をもたない。このような曲面を輪体と呼ぶ。 "@ja ;
+        lang:kor-note          "비고: 표면의 경계는 표면의 한계를 그리는 방향성을 갖는, 폐합 곡선의 집합이다. 구 또는 n-원환제(n\"핸들\"을 갖는 위상구)와 동형인 표면은 경계를 갖지 않는다. 이러한 표면을 순환이라고 부른다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:pol-note          "UWAGA: Granicą powierzchni jest zbiór zorientowanych krzywych zamkniętych, które wyznaczają zasięg tej powierzchni.Powierzchnie izomorficzne względem sfery lub n-torusa (sfery topologicznej z n \"uchwytami\") nie mają granicy. Takie powierzchnie są nazywane cyklami."@pl ;
+        lang:rus-note          "Примечание: Границей поверхности является мно;жество направленных, замкнутых кривых, которые очерчивают пределы поверхности. Поверхности, изоморфные сфере или n-мерному тору, не имеют границы. Такие поверхности называют циклами"@ru ;
+        lang:spa-note          "Nota: La frontera de una superficie es el conjunto de curvas orientadas y cerradas que la delimita. Las superficies que son isomorfas a una esfera, o a un toro enesimal (esfera topológica con n asas) no tienen frontera. Esas superficies se denominan ciclos."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 曲面的边界是定义曲面界限的有向、闭合曲线的集合。与一个球面或n-圆环面（具有n个把柄的拓扑球面）同构的曲面没有边界，这样的曲面被称之为圈。"@zh ;
+        geolexica:hasInfo      info:Info437 ;
+        geolexica:hasLDAPI     ldapi:ldapi437-json , ldapi:ldapi437-rdfxml , ldapi:ldapi437-skosrdf , ldapi:ldapi437-jsonld ;
+        geolexica:hasLangCode  lang:kor , lang:deu , lang:nld , lang:zho , lang:ara , lang:spa , lang:swe , lang:fin , lang:pol , lang:fra , lang:rus , lang:msa , lang:jpn , lang:eng ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:jpnRegistry , lang:korRegistry , lang:engRegistry , lang:msaRegistry , lang:rusRegistry , lang:finRegistry , lang:fraRegistry , lang:polRegistry , lang:zhoRegistry , lang:spaRegistry , lang:deuRegistry , lang:araRegistry , lang:nldRegistry ;
+        geolexica:hasReview    reviews:Review437 .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info437 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19136-1-2020 ;
+         geolexica:clause "(E), 3.1.57" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review437 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-06-08"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Supersession of ISO 19107:2003 and publication of ISO 19136-1:2020"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19107:2003 to ISO 19136-1:2020(E), 3.1.57. Lineage source added as ISO 19107:2003"@en .
+
+############################################################
+
+sources:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi437-json
+ldapi:ldapi437-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/437.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi437-jsonld
+ldapi:ldapi437-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/437.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi437-rdfxml
+ldapi:ldapi437-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/437.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi437-skosrdf
+ldapi:ldapi437-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/437.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

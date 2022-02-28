@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/485/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/485/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "universal solid" ;
+        vann:preferredNamespacePrefix  "concept485" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/485/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/485> .
+
+###########################################################
+
+:universal_solid  a            skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "universal solid" ;
+        dcterms:identifier     485 ;
+        skos:definition        "三次元複体中の非有界位相立体。"@ja , "sólido topológico ilimitado en un complejo tridimensional"@es , "rajoittamaton topologinen kappale kolmiulotteisessa kompleksissa"@fi , "مجسم طوبولوجي غير محدود في مركَّب ثلاثي الأبعاد"@ar , "unbounded topological solid in a 3-dimensional complex"@sv , "unbounded topological solid in a 3-dimensional complex"@en , "경계가 없는 3차원 복합체 위상 입방체"@ko , "nieograniczona bryła topologiczna w 3-wymiarowym elemencie złożonym"@pl , "неограниченное тело в трехмерном комплексе"@ru , "solide topologique sans frontière dans un complexe tridimensionnel"@fr , "在三维复形中无界的拓扑体。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          485 ;
+        skos:prefLabel         "무한 입방체"@ko , "宇宙体"@zh , "bryła uniwersalna"@pl , "solide universel"@fr , "مجسم عام"@ar , "sólido universal"@es , "universal solid"@sv , "rajaton kappale"@fi , "universal solid"@en , "全域位相立体"@ja , "универсальное тело"@ru ;
+        lang:ara-note          "ملاحظة: المجسم العام هو النظير الثلاثي الأبعاد للواجهة العامة ، وهو أيضاً لا يكون في العادة جزءا من أي معلم."@ar ;
+        lang:eng-note          "Note to entry: The universal solid is the 3-dimensional counterpart of the universal face, and is also normally not part of any feature."@en ;
+        lang:fin-note          "HUOM.: Rajaton kappale on rajattoman tahkon kolmiulotteinen vastine, eikä se näin ollen normaalisti ole minkään kohteen osa."@fi ;
+        lang:fra-note          ""@fr ;
+        lang:jpn-note          "備考： 全域位相立体は，三次元において全域フェイスに相当するものであり，通常はどのような地物の一部でもない。"@ja ;
+        lang:kor-note          "비고: 무한 입방체는 무한 면의 3차원의 대응물이며, 또한 통상적으로 피처의 부분이 아니다."@ko ;
+        lang:pol-note          "UWAGA: Bryła uniwersalna jest 3-wymiarowym odpowiednikiem uniwersalnej ściany i zwykle również nie jest częścią żadnego obiektu."@pl ;
+        lang:rus-note          "Примечание: Универсальное тело – это трехмерный аналог универсальной грани, которое также не является частью какого-либо пространственного объекта"@ru ;
+        lang:spa-note          "Nota: El sólido universal es el equivalente tridimensional de la cara universal, y tampoco suele ser parte de ningún objeto geográfico."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 在三维中宇宙体与宇宙面相似，通常也不是任何要素的一个部分。"@zh ;
+        geolexica:hasInfo      info:Info485 ;
+        geolexica:hasLDAPI     ldapi:ldapi485-json , ldapi:ldapi485-skosrdf , ldapi:ldapi485-rdfxml , ldapi:ldapi485-jsonld ;
+        geolexica:hasLangCode  lang:msa , lang:fra , lang:pol , lang:deu , lang:ara , lang:spa , lang:kor , lang:fin , lang:nld , lang:eng , lang:jpn , lang:swe , lang:zho , lang:rus ;
+        geolexica:hasOrigin    lang:msaRegistry , lang:rusRegistry , lang:araRegistry , lang:nldRegistry , lang:engRegistry , lang:jpnRegistry , lang:sweRegistry , lang:finRegistry , lang:deuRegistry , lang:korRegistry , lang:polRegistry , lang:zhoRegistry , lang:spaRegistry , lang:fraRegistry ;
+        geolexica:hasReview    reviews:Review485 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info485 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
+        
+############################################################
+
+reviews:Review485 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry has been omitted from the superseding standard ISO 19107:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi485-json
+ldapi:ldapi485-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/485.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi485-jsonld
+ldapi:ldapi485-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/485.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi485-rdfxml
+ldapi:ldapi485-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/485.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi485-skosrdf
+ldapi:ldapi485-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/485.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/461/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/461/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "topological boundary" ;
+        vann:preferredNamespacePrefix  "concept461" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/461/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/461/> .
+
+###########################################################
+
+:topological_boundary
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "topological boundary" ;
+        dcterms:identifier     461 ;
+        skos:definition        "rajaus, jota kuvaa topologisen objektin laajuutta rajaava joukko suunnattuja alemman topologisen ulottuvuuden omaavia topologisia primitiivejä"@fi , "위상 객체의 범위를 한정하는 보다 작은 위상 차원의 방향성을 갖는 위상 원시 객체 집합을 통해 표현된 경계"@ko , "frontière représentée par un ensemble de primitives topologiques orientées de dimension topologique inférieure, délimitant l&#39;étendue d&#39;un objet topologique"@fr , "frontera representada por un conjunto de primitivas topológicas orientadas de dimensión topológica menor que limitan la extensión de un objeto topológico"@es , "位相オブジェクトの範囲を制限する，より低い位相次元の向きをもった位相プリミティブの集合で表される境界。"@ja , "boundary represented by a set of oriented topological primitives of smaller topological dimension that limits the extent of a topological object"@en , "granica reprezentowana przez zbiór zorientowanych prostych elementów topologicznych o mniejszym wymiarze topologicznym, który ogranicza zasięg obiektu topologicznego"@pl , "avgränsning för att begränsa utbredmingen hos ett topologiskt objekt och som representeras av en samling topologiska grundelement av lägre topologisk dimension än det topologika objektet"@sv , "حد تمثله مجموعة من العناصر الطوبولوجية البدائية الموجهة ذات الأبعاد الطوبولوجية الأصغر التي تحد امتداد الكائن الطوبولوجي"@ar , "граница, образованная множеством ориентированных топологических примитивов  меньшей топологической размерности, которая определяет пределы протяженности топологического объекта"@ru , "由限定拓扑对象范围的更低拓扑维的有向拓扑单形的集合所表达的边界。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          461 ;
+        skos:prefLabel         "topologinen rajaus"@fi , "拓扑边界"@zh , "topologisk avgränsning"@sv , "حد طوبولوجي"@ar , "位相境界"@ja , "topological boundary"@en , "frontière topologique"@fr , "frontera topológica"@es , "топологическая граница"@ru , "granica topologiczna"@pl , "위상 경계"@ko ;
+        lang:ara-note          "ملاحظة: الحد الخارجي لأي مركَّب طوبولوجي يكون مطابقاً للحد الخارجي للتمثيل الهندسي لذلك المركَّب الطوبولوجي."@ar ;
+        lang:eng-note          "Note to entry: The boundary of a topological complex corresponds to the boundary of the geometric realization of the topological complex."@en ;
+        lang:fin-note          "HUOM.: Topologisen kompleksin rajaus vastaa sen geometrisen ilmentymän rajausta."@fi ;
+        lang:jpn-note          "備考： 位相複体の境界は，この位相複体の幾何実現の境界と整合する。"@ja ;
+        lang:kor-note          "비고: 위상 복합체의 경계는 위상 복합체의 기하 실현의 경계와 일치한다. "@ko ;
+        lang:pol-note          "UWAGA: Granica złożonego elementu topologicznego odpowiada granicy jego realizacji geometrycznej."@pl ;
+        lang:rus-note          "Примечание: Граница топологического комплекса соответствует границе геометрической реализации топологического комплекса"@ru ;
+        lang:spa-note          "Nota: La frontera de un complejo topológico se corresponde con la frontera de la realización geométrica del complejo topológico."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 拓扑复形的边界对应于该拓扑复形的几何实现的边界。"@zh ;
+        geolexica:hasInfo      info:Info461 ;
+        geolexica:hasLDAPI     ldapi:ldapi461-rdfxml , ldapi:ldapi461-jsonld , ldapi:ldapi461-json , ldapi:ldapi461-skosrdf ;
+        geolexica:hasLangCode  lang:jpn , lang:fra , lang:ara , lang:zho , lang:spa , lang:rus , lang:fin , lang:pol , lang:eng , lang:msa , lang:kor , lang:swe , lang:nld , lang:deu ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:sweRegistry , lang:rusRegistry , lang:deuRegistry , lang:spaRegistry , lang:korRegistry , lang:araRegistry , lang:msaRegistry , lang:jpnRegistry , lang:finRegistry , lang:zhoRegistry , lang:polRegistry , lang:engRegistry , lang:nldRegistry ;
+        geolexica:hasReview    reviews:Review461 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info461 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19107-2003 ;
+         geolexica:date_accepted "2003-05-01"^^xsd:date ;
+         geolexica:date_amended "2019-12-02"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review461 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-12-02"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19107:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for topological boundary <geometry, topology> in ISO 19107:2019(E)"@en .
+        
+############################################################
+
+sources:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi461-json
+ldapi:ldapi461-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/461.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi461-jsonld
+ldapi:ldapi461-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/461.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi461-rdfxml
+ldapi:ldapi461-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/461.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi461-skosrdf
+ldapi:ldapi461-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/461.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

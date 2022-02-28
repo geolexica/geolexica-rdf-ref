@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/442/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/442/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "tagged value (XML)" ;
+        vann:preferredNamespacePrefix  "concept442" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/442/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/442/> .
+
+###########################################################
+
+:tagged_value_XML  a           owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "tagged value (XML)" ;
+        dcterms:identifier     442 ;
+        skos:altLabel          "태그 값"@ko ;
+        skos:definition        "用一组“名称-值”对特性的显式定义。"@zh , "явное определение свойства в виде пары  строк «имя-значение»"@ru , "이름-값쌍으로서 기술된 특성의 명시적 정의"@ko , "تعريف صريح لبضاعة يحتوي على كل من الثنائي الاسم والقيمة"@ar , "ominaisuuden ekplisiittinen määritys nimi-arvo-parin avulla"@fi , "definición explícita de una propiedad como una par nombre-valor"@es , "définition explicite d&#39;une propriété comme une paire nom - valeur"@fr , "explicit definition of a property as a name-value pair"@sv , "explicit definition of a property as a name-value pair"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          442 ;
+        skos:prefLabel         "قيمة موسمة"@ar , "标记值"@zh , "leima (UML)"@fi , "tagged value (UML)"@sv , "tagged value (UML)"@en , "valor etiquetado (UML)"@es , "именованное значение (UML)"@ru , "꼬리표값 (UML)"@ko , "valeur marquée (tagged value) (UML)"@fr ;
+        lang:ara-note          "ملاحظة: في القيمة الموضحة بالبطاقة البيانية يشار إلى الاسم كما في البطاقة البيانية. بعض البطاقات البيانية المعيَّنة يتم تعريفها مسبقاً في لغة UML ؛ بينما يتم تعريف بطاقات بيانية أخرى من قبل المستخدمين. القيم الموضحة بالبطاقة البيانة تمثل واحدة من ثلاث آليات للامتداد والتوسع في لغة UML. والآليتان الأخريان هما التقييد والنماذج النمطية الثابتة."@ar ;
+        lang:eng-note          "Note to entry: In a tagged value, the name is referred as the tag. Certain tags are predefined in the UML; others may be user defined. Tagged values are one of three extensibility mechanisms in UML. The others are constraint and stereotype."@en ;
+        lang:fin-note          "HUOM.: Leimassa nimeä kutsutaan tunnisteeksi (tag). UML:ssä on tiettyjä ennalta määriteltyjä tunnisteita, ja käyttäjä voi lisäksi määritellä muita. Leimat ovat yksi UML:n kolmesta laajennusmekanismista. Toiset kaksi ovat rajoite ja stereotyyppi."@fi ;
+        lang:kor-note          "비고: 꼬리표 값에서 이름은 꼬리표로 언급된다. 꼬리표는 UML에서 사전 규정되거나 또는 사용자가 규정할 수 있다. 꼬리표 값은 UML에서 세 가지 확장 가능한 메카니즘 중의 하나로 나머지 둘은 제약 조건과 스테레오타입이 있다. "@ko ;
+        lang:rus-note          "Примечание: В именованном значении тег предназначен для имени. Некоторые теги предопределены как стандартные элементы UML, другие могут быть определены пользователем. Теги являются одним из трех основных типов конструкций для расширения возможностей UML. Двумя другими являются ограничение и стереотип"@ru ;
+        lang:spa-note          "Nota: En un valor etiquetado, el nombre se referencia como la etiqueta. Ciertas etiquetas se predefinen en el UML; otras las puede definir el usuario. Los valores etiquetados son uno de los mecanismos de extensión de UML. Los otros son las restricciones y los estereotipos."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 在一个标记值中，名称指的是标记。某些标记在UML中预先定义，其他情况下可以用户定义。标记值是UML的三个扩展机制之一。另外两个是约束和构造型。"@zh ;
+        geolexica:hasInfo      info:Info442 ;
+        geolexica:hasLDAPI     ldapi:ldapi442-json , ldapi:ldapi442-skosrdf , ldapi:ldapi442-rdfxml , ldapi:ldapi442-jsonld ;
+        geolexica:hasLangCode  lang:kor , lang:jpn , lang:msa , lang:pol , lang:ara , lang:spa , lang:fin , lang:nld , lang:zho , lang:swe , lang:fra , lang:deu , lang:rus , lang:eng ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:engRegistry , lang:araRegistry , lang:spaRegistry , lang:finRegistry , lang:jpnRegistry , lang:msaRegistry , lang:fraRegistry , lang:polRegistry , lang:rusRegistry , lang:korRegistry , lang:nldRegistry , lang:deuRegistry , lang:zhoRegistry ;
+        geolexica:hasReview    reviews:Review442 .
+
+############################################################
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+############################################################
+
+info:Info442 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-IEC-19501 ;
+         geolexica:date_accepted "2005-07-15"^^xsd:date ;
+         geolexica:date_amended "2015-12-01"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review442 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2009-01-14"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19103:2015"@en ;
+           geolexica:review_decision_notes "The entry has been superseded. An entry with a revised definition has been published in ISO 19103:2015"@en .
+
+############################################################
+
+sources:ISO-IEC-19501 rdf:type owl:NamedIndividual ,
+                        geolexica:Source ;
+               dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+               dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+               rdfs:label "ISO/IEC 19501" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi442-json
+ldapi:ldapi442-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/442.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi442-jsonld
+ldapi:ldapi442-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/442.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi442-rdfxml
+ldapi:ldapi442-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/442.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi442-skosrdf
+ldapi:ldapi442-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/442.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
