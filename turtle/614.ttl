@@ -1,0 +1,205 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/614/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/614/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "height" ;
+        vann:preferredNamespacePrefix  "concept614" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/614/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/614> .
+
+###########################################################
+
+:height  a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label              "height" ;
+        dcterms:identifier      614 ;
+        skos:altLabel           "альтитуда"@ru ;
+        skos:definition         "مسافة نقطة من  سطح مرجعي مختار مُقاسةً إلى أعلى بامتداد خط متعامد على ذلك السطح"@ar , "某点向上沿一条垂直于参照测量面的垂线到该参照测量面的距离。"@zh , "1 keadaan atau hal tinggi. 2 tempat yg tinggi."@ms , "расстояние от отсчетной поверхности до выбранной точки по нормали к этой поверхности"@ru , "distancia a un punto desde una superficie de referencia elegida, medida a lo largo de una normal a esa superficie"@es , "Abstand eines Punktes von einer gewählten Bezugsfläche, nach oben längs einer senkrechten Linie zu dieser Bezugsfläche gemessen"@de , "distance d&#39;un point à une surface de référence choisie mesurée vers le haut le long d&#39;une ligne perpendiculaire à cette surface"@fr , "avstånd mätt vinkelrätt från en referensyta till en punkt som befinner sig ovanför denna"@sv , "pisteen etäisyys valitusta vertauspinnasta kyseistä pintaa vastaan kohtisuorassa olevaa viivaa pitkin ylöspäin mitattuna"@fi , "afstand van een punt tot een gekozen referentievlak gemeten naar boven langs een lijn die loodrecht staat op het referentievlak"@nl , "distance of a point from a chosen reference surface measured upward along a line perpendicular to that surface"@en , "선택된 기준면으로부터 기준면 위쪽에 위치한 한 점까지의 수직 거리"@ko , "odległość punktu od wybranej powierzchni odniesienia mierzona wzdłuż linii prostopadłej do tej powierzchni"@pl , "et punkts afstand fra en valgt referenceoverflade langs en linje, der er vinkelret på denne overflade"@da ;
+        skos:inScheme           geolexica:GeolexicaConceptScheme ;
+        skos:notation           614 ;
+        skos:prefLabel          "altura"@es , "высота"@ru , "wysokość h,H"@pl , "korkeus"@fi , "높이"@ko , "高度"@zh , "hoogte"@nl , "Höhe"@de , "height"@en , "ketinggian"@ms , "الارتفاع"@ar , "højde"@da , "höjd"@sv , "hauteur"@fr ;
+        lang:ara-note           "ملاحظة: الارتفاع الذي يكون أدنى من السطح المرجعي ستكون قيمته سالبة."@ar ;
+        lang:dan-note           "Bemærk 2 til posten: Højde af et punkt uden for overfladen regnes positiv; negativ højde kaldes også dybde."@da , "Bemærk 1 til posten: Se ellipsoidehøjde og tyngderelateret højde."@da ;
+        lang:deu-note           notes:NoteTransUnavail ;
+        lang:eng-note           "Note to entry: A height below the reference surface will have a negative value."@en ;
+        lang:kor-note           "비고: 기준면 아래의 높이(깊이)는 음의 값이다."@ko ;
+        lang:msa-note           notes:NoteTransUnavail ;
+        lang:nld-note           "OPMERKING: Een hoogte onder het referentievlak heeft een negatieve waarde. "@nl ;
+        lang:pol-note           "UWAGA: Wysokość poniżej powierzchni odniesienia ma wartośc ujemną."@pl ;
+        lang:rus-note           "Примечание: Высота точки, расположенная выше отсчетной поверхности, является положительной, а ниже нее - отрицательной Дополнительное примечание в ИСО 19148: Поверхность нормально используется для моделирования поверхности Земли"@ru ;
+        lang:spa-note           "Nota: Una altitud por debajo de la superficie de referencia tendrá valor negativo."@es ;
+        lang:swe-note           notes:NoteTransUnavail ;
+        lang:zho-note           "注： 低于参照面的高度为负值。"@zh ;
+        geolexica:abbreviation  "альтитуда"@ru , "ع"@ar , "h, H"@zh , "h, H"@sv , "h, H"@es , "h, H"@nl , "h, H"@pl , "h, H"@ko , "h, H"@fi , "h, H"@de , "h, H"@en , "h eller H"@da ;
+        geolexica:hasInfo       info:Info614 ;
+        geolexica:hasLDAPI      ldapi:ldapi614-jsonld , ldapi:ldapi614-json , ldapi:ldapi614-skosrdf , ldapi:ldapi614-rdfxml ;
+        geolexica:hasLangCode   lang:deu , lang:fin , lang:pol , lang:fra , lang:spa , lang:msa , lang:ara , lang:nld , lang:eng , lang:jpn , lang:zho , lang:swe , lang:rus , lang:kor ;
+        geolexica:hasOrigin     lang:fraRegistry , lang:sweRegistry , lang:zhoRegistry , lang:rusRegistry , lang:finRegistry , lang:jpnRegistry , lang:nldRegistry , lang:engRegistry , lang:deuRegistry , lang:araRegistry , lang:polRegistry , lang:spaRegistry , lang:korRegistry , lang:msaRegistry ;
+        geolexica:hasReview     reviews:Review614 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info614 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:date_amended "2019-01-31"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review614 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for height in ISO 19111:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi614-json
+ldapi:ldapi614-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/614.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi614-jsonld
+ldapi:ldapi614-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/614.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi614-rdfxml
+ldapi:ldapi614-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/614.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi614-skosrdf
+ldapi:ldapi614-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/614.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

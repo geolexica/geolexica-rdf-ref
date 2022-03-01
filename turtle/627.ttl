@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/627/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/627/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "unit" ;
+        vann:preferredNamespacePrefix  "concept627" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/627/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/627> .
+
+###########################################################
+
+:unit   a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "unit" ;
+        dcterms:identifier     627 ;
+        skos:altLabel          "mittayksikkö"@fi ;
+        skos:definition        "yksilösuure, jonka määritelmästä ja käytöstä on sovittu ja johon muita saman lajin suureita verrataan, jotta niiden suuruus voidaan esittää suhteessa tähän suureeseen"@fi , "zdefiniowana wielkość, za pomocą której wyrażamy mierzone parametry"@pl , "치수 매개 변수를 표현하는 정의된 양"@ko , "defined quantity in which dimensioned parameters are expressed."@en , "kadar yg digunakan utk mengukur atau utk menyukat sesuatu; satuan."@ms , "definierte Größe, durch die Parameter mit Dimensionen ausgedrückt werden"@de , "определенная величина, с помощью которой выражаются значения размерных параметров"@ru , "étalon dans laquelle les paramètres dimensionnés sont exprimés"@fr , "在该量纲化参数中，定义的量的表达。"@zh , "كمية محدده يعبر فيها بعوامل متغيره ذات أبعاد"@ar , "bepaalde hoeveelheid waarin een gemeten parameter wordt uitgedrukt"@nl , "cantidad definida en la que se expresan los parámetros dimensionados"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          627 ;
+        skos:prefLabel         "단위"@ko , "eenheid"@nl , "Maßeinheit"@de , "unité"@fr , "وحدة"@ar , "jednostka"@pl , "yksikkö"@fi , "unidad"@es , "единица"@ru , "单位"@zh , "unit"@ms , "unit"@en ;
+        lang:ara-note          "ملاحظة: في هذا المقياس الدولي الأنواع الفرعية للوحدات هي: الوحدات الطولية ، والوحدات الزاوية ، ووحدات الوقت ، ووحدات مقاييس الرسم ، ووحدات المسافات الفاصلة بين النقط الضوئية."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: In this International Standard, the subtypes of units are length units, angular units, time units, scale units and pixel spacing units."@en ;
+        lang:fin-note          "HUOM.: Tässä kansainvälisessä standardissa yksikön alatyyppejä ovat pituusyksiköt, kulmayksiköt, aikayksiköt, asteikkoyksiköt (scale units) ja pikseleiden väliseen etäisyyteen liittyvät yksiköt."@fi ;
+        lang:kor-note          "비고: KS X ISO 19111 표준에서 단위의 하위 유형은 길이 단위, 각 단위, 시간 단위, 척도 단위 및 픽셀 간격 단위이다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:nld-note          "OPMERKING: In deze Internationale Standaard zijn de subtypen van eenheden de lengte-eenheden, hoekeenheden, tijdeenheden, schaaleenheden en pixelafstandeenheden."@nl ;
+        lang:pol-note          "UWAGA: W niniejszej normie międzynarodowej podtypami jednostek są jednostki długości, jednostki kątowe, jednostki czasu, jednostki skali i jednostki będące wymiarami piksela."@pl ;
+        lang:rus-note          "Примечание: В ISO 19111 подтипами единиц являются единицы длины, угловые единицы, единицы времени, единицы шкалы и единицы пиксельного пространства"@ru ;
+        lang:spa-note          "Nota: En esta norma internacional, los subtipos de unidades son unidades de longitud, unidades angulares, unidades de tiempo, unidades de escala y unidades de espaciado del píxel."@es ;
+        lang:zho-note          "注： 在国际标准ISO 19111修订版中,单位的子类型包括长度单位、角度单位、时间单位、比例单位和像素间隔单位。"@zh ;
+        geolexica:hasInfo      info:Info627 ;
+        geolexica:hasLDAPI     ldapi:ldapi627-jsonld , ldapi:ldapi627-skosrdf , ldapi:ldapi627-json , ldapi:ldapi627-rdfxml ;
+        geolexica:hasLangCode  lang:zho , lang:eng , lang:rus , lang:msa , lang:fin , lang:jpn , lang:fra , lang:swe , lang:nld , lang:ara , lang:kor , lang:pol , lang:deu , lang:spa ;
+        geolexica:hasOrigin    lang:deuRegistry , lang:fraRegistry , lang:korRegistry , lang:nldRegistry , lang:jpnRegistry , lang:rusRegistry , lang:finRegistry , lang:zhoRegistry , lang:spaRegistry , lang:polRegistry , lang:sweRegistry , lang:engRegistry , lang:araRegistry , lang:msaRegistry ;
+        geolexica:hasReview    reviews:Review627 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info627 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2019 ;
+         geolexica:clause "(E), 3.1.69" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review627 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19111:2007 to ISO 19111:2019(E), 3.1.69. Lineage source added as ISO 19111:2007(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/74039.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi627-json
+ldapi:ldapi627-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/627.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi627-jsonld
+ldapi:ldapi627-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/627.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi627-rdfxml
+ldapi:ldapi627-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/627.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi627-skosrdf
+ldapi:ldapi627-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/627.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

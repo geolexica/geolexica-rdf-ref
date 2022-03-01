@@ -1,0 +1,196 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/687/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/687/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "target" ;
+        vann:preferredNamespacePrefix  "concept687" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/687/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/687> .
+
+###########################################################
+
+:target  a                     owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "target" ;
+        dcterms:identifier     687 ;
+        skos:definition        "被定位的对象或人。"@zh , "objet ou personne susceptible d&#39;être localisé"@fr , "objeto o persona susceptible de ser localizado"@es , "위치하고 있는 객체나 사람"@ko , "object or person subject to being located"@en , "объект или человек, местоположение которого следует определить"@ru , "(vid följning, spårning); objekt eller person som ska lokaliseras"@sv , "paikantamisen kohteena oleva objekti tai henkilö"@fi , "objek atau sesuatu yg disasar"@ms , "كائن أو شخص خاضع لتحديد مكان وجوده"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          687 ;
+        skos:prefLabel         "هدف"@ar , "target"@en , "paikannuskohde"@fi , "대상"@ko , "цель"@ru , "objetivo"@es , "目标"@zh , "sasaran"@ms , "cible"@fr , "mål"@sv ;
+        lang:ara-note          "ملاحظة: هناك فرق منطقي ضئيل بين \"متحرك\" و \"وهدف\" باستثناء أن الأول يستخدم عادة للإشارة إلى جسم أو كيان متنقل خاضع للمتابعة بينما يستخدم الثاني إما للإشارة إلى جسم غير متنقل أو جسم لا يُحتاج إلى تحديد موضعه سوى مرة واحدة فقط. إذن المتحرك يخضع لخدمة المتابعة , والهدف يخضع لخدمة تحديد الموضع أو المكان. وحيث أن هذا المقياس الدولي لا يسعى إلى التمييز بين البروتوكولات الخاصة بهاتين الخدمتين المتشابهتين منطقياً , ويحتاج في نفس الوقت إلى التفريق بين المفهومين المذكورين آنفاً ، فسيتم استخدام كلا المصطلحين بما يتناسب مع دلالات المعاني اللغوية التي تحكم الموقف. ونظرا لأن هذه المصطلحات تشير كلها إلى كيانات تمثلها أجسام معينة داخل النظام , فإنه يمكن دمجها أو ربطها بالصفات أو النعوت المحدَّدة للأجسام. إذن يمكن القول بأن الهدف الفعال (أي الهدف الذي يمثله جسم فعال) يمكن استخدامه لتمثيل جسم متنقل وذلك بذريعة أن عملية الحركة تؤدي إلى تعديل الحالة الداخلية للهدف وهي بالتالي تتسبب في ابتداء الأفعال."@ar ;
+        lang:eng-note          "Note to entry: There is little logical difference between traveller and target except that the former is normally used for a moving object which is being tracked, and the latter is used for either an object that is not moving, or an object for which a location is needed only once. A traveller is the subject of a tracking service; a target is the subject of a locating service. Since this International Standard does not make a distinction between the protocols for these logically similar services, but does need to differentiate between the two concepts, both terms will be used as appropriate to the underlying semantics of the situation. Since all of these terms refer to entities represented by objects within the system, they can be combined with adjectives defined for objects. So, an active target (a target represented by an active object) can be used to represent a moving object, since the act of motion is modifying the target's internal state and is therefore initiating actions."@en ;
+        lang:fin-note          "HUOM.: Englanninkielisten termien traveller ja target välillä on se käsitteellinen ero, että edellisellä viitataan liikkuvaan objektiin, jota seurataan, ja jälkimmäisellä joko liikkumattomaan objektiin tai objektiin, jonka sijainti tarvitaan vain kerran. Traveller on seurantapalvelun kohde, target taas paikannuspalvelun kohde. Tässä kansainvälisessä standardissa ei tehdä eroa näiden kahden logiikaltaan samanlaisen palvelun protokollien välille, mutta joudutaan erottamaan nämä käsitteet toisistaan, joten termejä käytetään tilanteen mukaan. Koska kumpikin termi viittaa yksilötyyppeihin, joita kuvataan järjestelmässä objekteilla, niihin voidaan yhdistää samoja adjektiiveja kuin objektien termeihin. Siten termiä active target (aktiivinen paikannuskohde eli paikannuskohde, jota vastaa aktiivinen objekti) voidaan käyttää viittaamaan liikkuvaan objektiin, sillä liike muuttaa paikannuskohteen sisäistä tilaa ja käynnistää siten toimintoja."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 보통 여행자는 흔적이 남는 움직이는 객체를 이용하고, 대상은 움직이지 않는 객체나 위치가 단 한번 필요한 객체에 사용된다. 이를 제외하고는 여행자와 대상은 논리적 차이가 거의 없다. 여행자는 추적 서비스를 목적으로 하는 반면 대상은 위치하고 있는 서비스를 주제로 한다. 본 표준에서는 논리적으로 유사한 서비스의 프로토콜 간에 큰 차별성이 없으므로, 두 개념 간에 별도의 구별이 필요하지 않으며, 이 두 용어는 상황의 의미론에 기초를 두는데 사용될 것이다. 이러한 용어들은 시스템 내에서 객체로 표현된 개체를 참조하기 때문에 객체를 정의하는 형용사로 결합될 수 있다. 따라서 활성 대상(활성 객체로 표현된 대상)은 움직이는 객체의 표현에 사용될 수 있다. 이동은 대상의 내부 상태를 변경하는 것이므로, 활동을 시작하게 되는 것이다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Имеется небольшая логическая разница между участником дорожного движения и целью помимо того, что первое понятие обычно используют для движущегося объекта, который подлежит отслеживанию, а второй – как для неподвижного объекта, так и для объекта, определение местоположения которого требуется только однократно. Участник дорожного движения является объектом сервиса слежения; цель – объектом сервиса определения местоположения. Оба термина будут применены в зависимости от ситуации, поскольку в ISO 19132 не делается различия между протоколами для этих логически сходных сервисов, но тем не менее существует необходимость дифференцировать эти два понятия. Ввиду того, что все эти термины относятся к сущностям, представляемым объектами в системе, их можно комбинировать с характеристиками, определенными для объектов. Таким образом, понятие «активная цель» (цель, представленная активным объектом) можно использовать для представления движущегося объекта, поскольку процесс движения изменяет внутреннее состояние цели и инициирует действия"@ru ;
+        lang:spa-note          "Nota: Hay poca diferencia lógica entre viajero (4.56) y objetivo, salvo que el primero se utiliza normalmente para un objeto en movimiento al que se está realizando un seguimiento, y el último se utiliza para un objeto que no está en movimiento, o para un objeto del que se necesita conocer su posición sólo una vez. Un viajero es objeto de un servicio de seguimiento; un objetivo es objeto de un servicio de localización. Es cierto que esta norma internacional no hace ninguna distinción entre los protocolos de estos servicios, lógicamente similares, pero es necesario diferenciar entre los dos conceptos, ambos términos se utilizarán según convenga a la semántica subyacente de la situación. Dado que todos estos términos se refieren a entidades representadas por objetos dentro del sistema, se pueden combinar con adjetivos definidos para objetos. Por lo tanto, un objetivo activo (un objetivo representado por un objeto activo) se puede usar para representar un objeto en movimiento, ya que el efecto del movimiento es modificar el estado interno del objetivo y por lo tanto la iniciación de acciones."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 出行者和目标间没有很大的逻辑差别，只有当出行者作为一个移动对象被跟踪,而目标用在一个静止的对象或需要一次性定位的对象时，才有细微差别。出行者是跟踪服务的主题，目标是定位服务的主题。由于ISO 19132标准对这些逻辑上的类似服务的协议没有区分,但确实需要对跟踪服务和定位服务这两个概念区分,而且需要对它们适用的语义场景进行区分。因为所有这些术语是指系统中对象所表示的实体,它们可以和定义对象的形容词组合。所以,主动目标(主动对象所表示的目标)可被用来表示一个移动物体, 因为运动的动作改变了对象的内部状态,并因此诱发动作。"@zh ;
+        geolexica:hasInfo      info:Info687 ;
+        geolexica:hasLDAPI     ldapi:ldapi687-rdfxml , ldapi:ldapi687-json , ldapi:ldapi687-jsonld , ldapi:ldapi687-skosrdf ;
+        geolexica:hasLangCode  lang:fin , lang:spa , lang:rus , lang:kor , lang:fra , lang:ara , lang:msa , lang:eng , lang:jpn , lang:zho , lang:swe , lang:nld , lang:deu , lang:pol ;
+        geolexica:hasOrigin    lang:korRegistry , lang:rusRegistry , lang:jpnRegistry , lang:polRegistry , lang:zhoRegistry , lang:finRegistry , lang:spaRegistry , lang:araRegistry , lang:sweRegistry , lang:nldRegistry , lang:deuRegistry , lang:msaRegistry , lang:engRegistry , lang:fraRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info687 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19132-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi687-json
+ldapi:ldapi687-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/687.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi687-jsonld
+ldapi:ldapi687-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/687.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi687-rdfxml
+ldapi:ldapi687-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/687.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi687-skosrdf
+ldapi:ldapi687-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/687.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,199 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/668/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/668/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "integration" ;
+        vann:preferredNamespacePrefix  "concept668" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/668/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/668> .
+
+###########################################################
+
+:integration  a                skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "integration" ;
+        dcterms:identifier     668 ;
+        skos:definition        "liaison de deux ou plusieurs systèmes logiciels par l&#39;utilisation de données communes et d&#39;une méthode de base"@fr , "linkage of two or more software systems by the use of a common data and method base"@en , "объединение двух или более программных систем за счет использования  общих данных и общей методической основы"@ru , "(mellan programsystem); samverkan  genom användande av gemensamma data och programkoder"@sv , "공통의 데이터 및 방법을 사용한 둘 이상의 시스템 연계(&#39;결합&#39; 참고)"@ko , "ربط نظامَيْ برمجة أو أكثر باستخدام بيانات مشتركة وطرق اساس"@ar , "1. Proses menggabungkan pelbagai jenis perkakasan atau perisian daripada pengeluar berlainan untuk membentuk sistem yang bersepadu supaya dapat berkongsi sumber dengan lebih cekap. 2. Proses menggabungkan komponen yang berlainan ke dalam sistem yang harmoni."@ms , "vinculación de dos o más sistemas software mediante el uso de una base común de datos y métodos"@es , "使用共同数据库和方法库的两个或多个软件系统的链接。"@zh , "kahden tai useamman ohjelmistojärjestelmän liittäminen toisiinsa käyttämällä yhteistä tieto- ja menetelmäperustaa"@fi ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          668 ;
+        skos:prefLabel         "integration"@en , "تكامل"@ar , "интеграция"@ru , "integrointi"@fi , "Integration"@de , "集成"@zh , "integrering"@sv , "penyepaduan"@ms , "integración"@es , "intégration"@fr , "통합"@ko ;
+        lang:ara-note          "ملاحظة: قارن \"الربط\". والتكامل والربط آليتان من الآليات الكبرى لأنظمة تفعيل التوافق المتبادل."@ar ;
+        lang:deu-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note to entry: cf. coupling. Integration and coupling are the two major mechanisms for the interoperation of systems."@en ;
+        lang:fin-note          "ملاحظة: قارن \"الربط\". والتكامل والربط آليتان من الآليات الكبرى لأنظمة تفعيل التوافق المتبادل."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 통합과 결합은 시스템의 상호 운용을 위한 2가지 주요 메커니즘이다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: См. для сравнения термин «соединение». Интеграция и соединение являются двумя важнейшими механизмами взаимодействия систем"@ru ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 集成与耦合是系统互操作的两种主要机制。"@zh ;
+        geolexica:hasInfo      info:Info668 ;
+        geolexica:hasLDAPI     ldapi:ldapi668-jsonld , ldapi:ldapi668-rdfxml , ldapi:ldapi668-skosrdf , ldapi:ldapi668-json ;
+        geolexica:hasLangCode  lang:rus , lang:ara , lang:zho , lang:eng , lang:fra , lang:kor , lang:fin , lang:pol , lang:nld , lang:deu , lang:spa , lang:swe , lang:jpn , lang:msa ;
+        geolexica:hasOrigin    lang:araRegistry , lang:fraRegistry , lang:sweRegistry , lang:spaRegistry , lang:msaRegistry , lang:jpnRegistry , lang:engRegistry , lang:nldRegistry , lang:rusRegistry , lang:finRegistry , lang:deuRegistry , lang:polRegistry , lang:zhoRegistry , lang:korRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info668 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19132-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi668-json
+ldapi:ldapi668-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/668.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi668-jsonld
+ldapi:ldapi668-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/668.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi668-rdfxml
+ldapi:ldapi668-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/668.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi668-skosrdf
+ldapi:ldapi668-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/668.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

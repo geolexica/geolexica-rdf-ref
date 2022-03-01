@@ -1,0 +1,199 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/639/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/639/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "resolution (of a sensor)" ;
+        vann:preferredNamespacePrefix  "concept639" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/639/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/639> .
+
+###########################################################
+
+:resolution_sensor  a          skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "resolution (of a sensor)" ;
+        dcterms:identifier     639 ;
+        skos:definition        "أصغر فرق بين مؤشرات جهاز استشعار يمكن تمييزها وذات فائدة"@ar , "minsta skillnad mellan sensorindikationer som är möjlig att uppfatta"@sv , "smallest difference between indications of a sensor that can be meaningfully distinguished"@en , "наименьшая разница между показаниями датчика,  которую можно значимо различить"@ru , "kleinster noch unterscheidbarer Unterschied zwischen zwei Messwerten eines Sensors"@de , "의미단위로 구별 가능한 센서의 징후들 간에 최소한의 차이"@ko , "diferencia más pequeña que puede distinguirse significativamente entre las indicaciones de un sensor"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          639 ;
+        skos:prefLabel         "الوضوح (لجهاز الاستشعار)"@ar , "해상도(센서의)"@ko , "resolution (of a sensor)"@en , "разрешение (датчика)"@ru , "Auflösung  (eines Sensors)"@de , "sensorupplösning"@sv , "resolución (de un sensor)"@es ;
+        lang:ara-note          "ملاحظة: بالنسبة للصور الفضائية ، فإن الوضوح يشمل الوضوح الإشعاعي ، والطيفي ، والمكاني ، والزماني."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: For imagery, resolution refers to radiometric, spectral, spatial and temporal resolutions."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Для изображений разрешение относится к радиометрическому, спектральному, пространственному и временному разрешениям"@ru ;
+        lang:spa-note          "Nota: Para las imágenes, la resolución se refiere a la resolución radiométrica, espectral, espacial y temporal"@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info639 ;
+        geolexica:hasLDAPI     ldapi:ldapi639-json , ldapi:ldapi639-skosrdf , ldapi:ldapi639-rdfxml , ldapi:ldapi639-jsonld ;
+        geolexica:hasLangCode  lang:nld , lang:msa , lang:fra , lang:swe , lang:ara , lang:zho , lang:spa , lang:deu , lang:jpn , lang:pol , lang:kor , lang:fin , lang:rus , lang:eng ;
+        geolexica:hasOrigin    lang:finRegistry , lang:sweRegistry , lang:fraRegistry , lang:araRegistry , lang:rusRegistry , lang:zhoRegistry , lang:spaRegistry , lang:engRegistry , lang:deuRegistry , lang:nldRegistry , lang:polRegistry , lang:msaRegistry , lang:korRegistry , lang:jpnRegistry ;
+        geolexica:hasReview    reviews:Review639 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info639 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19101-2-2018 ;
+         geolexica:clause "(E), 3.34" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2008-06-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review639 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-05-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19101-2:2018(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO/TS 19101-2:2008 to ISO 19101-2:2018(E), 3.34. Lineage source added as ISO/TS 19101-2:2008(E)"@en .
+
+############################################################
+
+sources:ISO-19101-2-2018 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 2: Imagery"@en ;
+                  dcterms:source "https://www.iso.org/standard/69325.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-2:2018" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi639-json
+ldapi:ldapi639-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/639.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi639-jsonld
+ldapi:ldapi639-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/639.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi639-rdfxml
+ldapi:ldapi639-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/639.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi639-skosrdf
+ldapi:ldapi639-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/639.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

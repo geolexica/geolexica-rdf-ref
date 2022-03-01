@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/623/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/623/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "semi-minor axis" ;
+        vann:preferredNamespacePrefix  "concept623" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/623/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/623> .
+
+###########################################################
+
+:semi_minor_axis  a             skos:Concept , owl:NamedIndividual ;
+        rdfs:label              "semi-minor axis" ;
+        dcterms:identifier      623 ;
+        skos:definition         "полярная ось эллипсоида"@ru , "połowa krótszej osi elipsoidy"@pl , "椭球的最短轴的半径。"@zh , "halva lillaxeln hos en ellips eller ellipsoid"@sv , "타원체의 최단 반지름"@ko , "Durchmesserhälfte der kürzesten Ellipsoidachse"@de , "demi-diamètre de l&#39;axe le plus court d&#39;un ellipsoïde"@fr , "semi-diameter of the shortest axis of an ellipsoid"@en , "نصف القطر لأقصر محور لمجسم قطع ناقص"@ar , "ellipsoidin lyhyimmän akselin puolikas"@fi , "halve diameter van de kortste as van een ellipsoïde"@nl , "semidiámetro del eje más corto de un elipsoide"@es ;
+        skos:inScheme           geolexica:GeolexicaConceptScheme ;
+        skos:notation           623 ;
+        skos:prefLabel          "semi-minor axis"@en , "pikkuakselin puolikas"@fi , "محور شبه أصغر"@ar , "малая полуось"@ru , "semieje menor"@es , "kleine Halbachse"@de , "단반경"@ko , "halva lillaxeln"@sv , "półoś mała b"@pl , "halve korte as"@nl , "axe semi-mineur"@fr , "短半轴"@zh ;
+        lang:ara-note           "ملاحظة: المحور الأقصر يتطابق مع محور دوران مجسم القطع الناقص وهو ، بالتالي، يحتوي على كلا القطبين."@ar ;
+        lang:deu-note           notes:NoteTransUnavail ;
+        lang:eng-note           "Note to entry: The shortest axis coincides with the rotation axis of the ellipsoid and therefore contains both poles. "@en ;
+        lang:fin-note           "HUOM.: Lyhyin akseli vastaa ellipsoidin pyörähdysakselia (etäisyys keskipisteestä molemmille navoille)."@fi ;
+        lang:kor-note           "비고: 지구 타원체의 단반경은 타원체의 중심으로부터 어느 한쪽 극까지의 거리이다."@ko ;
+        lang:nld-note           "OPMERKING: De kortste as is gelijk aan de omwentelingsas van de ellipsoïde en bevat daarmee beide polen."@nl ;
+        lang:pol-note           "UWAGA: Krótsza oś pokrywa się z osią obrotu elipsoidy i zawiera oba bieguny."@pl ;
+        lang:rus-note           "Примечание: Для эллипсоида, представляющего Землю, это расстояние от его центра до любого из полюсов"@ru ;
+        lang:spa-note           "Nota: El eje más corto coincide con el eje de rotación del elipsoide y por consiguiente contiene ambos polos."@es ;
+        lang:swe-note           notes:NoteTransUnavail ;
+        lang:zho-note           "注： 最短轴与椭球的旋转轴一致，因此最短轴包括两个极点。"@zh ;
+        geolexica:abbreviation  "b"@zh , "b"@sv , "b"@es , "b"@ru , "b"@pl , "b"@nl , "b"@ko , "b"@fi , "b"@de , "b"@en , "ب"@ar ;
+        geolexica:hasInfo       info:Info623 ;
+        geolexica:hasLDAPI      ldapi:ldapi623-skosrdf , ldapi:ldapi623-rdfxml , ldapi:ldapi623-json , ldapi:ldapi623-jsonld ;
+        geolexica:hasLangCode   lang:jpn , lang:zho , lang:deu , lang:rus , lang:fra , lang:msa , lang:eng , lang:fin , lang:spa , lang:kor , lang:nld , lang:pol , lang:swe , lang:ara ;
+        geolexica:hasOrigin     lang:spaRegistry , lang:korRegistry , lang:araRegistry , lang:sweRegistry , lang:nldRegistry , lang:zhoRegistry , lang:fraRegistry , lang:rusRegistry , lang:deuRegistry , lang:finRegistry , lang:msaRegistry , lang:engRegistry , lang:jpnRegistry , lang:polRegistry ;
+        geolexica:hasReview     reviews:Review623 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info623 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2019 ;
+         geolexica:clause "(E), 3.1.54" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review623 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19111:2007 to ISO 19111:2019(E), 3.1.54. Lineage source added as ISO 19111:2007(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/74039.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi623-json
+ldapi:ldapi623-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/623.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi623-jsonld
+ldapi:ldapi623-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/623.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi623-rdfxml
+ldapi:ldapi623-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/623.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi623-skosrdf
+ldapi:ldapi623-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/623.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

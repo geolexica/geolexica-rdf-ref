@@ -1,0 +1,194 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/617/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/617/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "linear coordinate system" ;
+        vann:preferredNamespacePrefix  "concept617" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/617/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/617> .
+
+###########################################################
+
+:linear_coord_system  a        skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "linear coordinate system" ;
+        dcterms:identifier     617 ;
+        skos:definition        "نظام إحداثيات أحادي البعد يتشكل محوره من معلم طولي"@ar , "one-dimensional coordinate system in which a linear feature forms the axis"@en , "以线性要素构成坐标轴的一维坐标系。"@zh , "système de coordonnées à une dimension dans lequel une entité linéaire forme l&#39;axe"@fr , "одномерная система координат, осью которой является линейный пространственный объект"@ru , "sistema de coordenadas unidimensional en el que un objeto geográfico lineal forma el eje"@es , "eendimensionaal coördinaatsysteem waarbij een lijnvormig geo-object de as vormt"@nl , "jednowymiarowy układ współrzędnych, w którym obiekty liniowe tworzą oś"@pl , "yksiulotteinen koordinaatisto, jonka akselin muodostaa lineaarinen kohde"@fi , "eindimensionales Koordinatensystem, dessen Achse durch ein lineares Feature beschrieben wird"@de , "축이 선형 피처로 이루어진 1차원 좌표 체계"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          617 ;
+        skos:prefLabel         "线性坐标系"@zh , "liniowy układ współrzędnych"@pl , "sistema de coordenadas lineal"@es , "نظام إحداثيات طولي"@ar , "lineair coördinaat systeem"@nl , "linear coordinate system"@en , "lineaarinen koordinaatisto"@fi , "lineares Koordinatensystem"@de , "système de coordonnées linéaire"@fr , "선형 좌표계"@ko , "линейная система координат"@ru ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        geolexica:examples     "Пример Расстояния вдоль нефтепровода; глубины вдоль наклонно-направленной нефтяной скважины"@ru , "PRZYKŁAD Odległości wzdłuż rurociągu, głębokość wzdłuż ukośnego odwiertu."@pl , "EJEMPLO S Distancias a lo largo de una tubería, profundidades en un pozo de perforación petrolífera."@es , "VOORBEELD Afstanden langs een pijpleiding, dieptes langs een niet vertikaal boorgat."@nl , "مثال أمثلة: المسافات الممتدة بطول خط للأنابيب , العمق الممتد عبر الثقب المنحرف لبئر نفطية منحرفة الحفر."@ar , "EXAMPLE Distances along a pipeline; depths down a deviated oil well bore."@en , "示例 沿管线的距离；偏离石油井钻的深度（向下）。"@zh , "ESIM. Johtolinjaa pitkin mitattu etäisyys; öljykaivoa pitkin mitattu syvyys."@fi ;
+        geolexica:hasInfo      info:Info617 ;
+        geolexica:hasLDAPI     ldapi:ldapi617-jsonld , ldapi:ldapi617-skosrdf , ldapi:ldapi617-rdfxml , ldapi:ldapi617-json ;
+        geolexica:hasLangCode  lang:rus , lang:pol , lang:spa , lang:ara , lang:kor , lang:eng , lang:jpn , lang:fin , lang:deu , lang:msa , lang:zho , lang:fra , lang:swe , lang:nld ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:araRegistry , lang:fraRegistry , lang:sweRegistry , lang:korRegistry , lang:nldRegistry , lang:finRegistry , lang:polRegistry , lang:spaRegistry , lang:msaRegistry , lang:deuRegistry , lang:zhoRegistry , lang:engRegistry , lang:jpnRegistry ;
+        geolexica:hasReview    reviews:Review617 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info617 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2019 ;
+         geolexica:clause "(E), 3.1.39" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review617 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19111:2007 to ISO 19111:2019(E), 3.1.39. Lineage source added as ISO 19111:2007(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/74039.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2019" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi617-json
+ldapi:ldapi617-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/617.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi617-jsonld
+ldapi:ldapi617-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/617.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi617-rdfxml
+ldapi:ldapi617-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/617.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi617-skosrdf
+ldapi:ldapi617-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/617.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/629/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/629/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "vertical datum" ;
+        vann:preferredNamespacePrefix  "concept629" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/629/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/629> .
+
+###########################################################
+
+:vertical_datum  a             owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "vertical datum" ;
+        dcterms:identifier     629 ;
+        skos:definition        "datum que describe la relación de las alturas o profundidades relacionadas con la gravedad con la Tierra"@es , "Datum, das  die Beziehung von Erdschwerefeld-basierten Höhen oder Tiefen zur Erde beschreibt"@de , "datum describing the relation of gravity-related heights or depths to the Earth"@en , "en uppsättning parametrar som beskriver relationen mellan tyngdkraftsrelaterad höjd eller djup och den fysiska jorden"@sv , "набор параметров, описывающих отнесение высот, связанных с гравитационным полем, к поверхности Земли"@ru , "描述重力高或深度与地球的关系的基准。"@zh , "datum welke de relatie tussen zwaartekracht gerelateerde hoogten of diepten ten opzichte van de aarde beschrijft"@nl , "układ odniesienia opisujący związki pomiędzy wysokością fizyczną a Ziemią"@pl , "مرجع إسناد يصف علاقة الارتفاعات أو الأعماق المرتبطة بالجاذبية بالكرة الأرضية"@ar , "référentiel décrivant la relation entre les hauteurs ou les profondeurs relatives à la gravité et la Terre"@fr , "datumi, joka määrittelee painovoimaan liittyvien korkeuksien tai syvyyksien suhteen Maahan"@fi , "지구와 중력 높이 또는 깊이와의 관계를 기술하는 데이텀"@ko , "sebarang permukaan aras sebenar, di mana kepadanya segalau kuran-ukuran tinggi bagi titik-titik di atas permukaan bumi boleh dirujuk."@ms ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          629 ;
+        skos:prefLabel         "مرجع إسناد رأسي"@ar , "korkeusdatumi"@fi , "高程基准"@zh , "datum vertical"@es , "vertical datum"@en , "vertikalt datum"@sv , "vertikales Datum (Syn.: Höhendatum)"@de , "datum tegak"@ms , "высотные [вертикальные] даты"@ru , "wysokościowy układ odniesienia"@pl , "수직 데이텀"@ko , "verticaal datum"@nl , "référentiel vertical"@fr ;
+        lang:ara-note          "ملاحظة: في معظم الحالات ، يكون مرجع الإسناد الرأسي متعلقاً بمتوسط مستوى سطح البحر. ارتفاعات مجسم القطع الناقص تعامل على أساس أنها متعلقة بنظام إحداثيات مجسم قطع ناقص منسوب إلى مرجع إسناد جيوديسي. مراجع الإسناد الرأسية تشمل مراجع الإسناد الخاصة بسبر الأعماق البحرية (التي تستخدم لأغراض المسح البحري) ، وفي هذه الحالة تكون الارتفاعات سالبة."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: In most cases, the vertical datum will be related to mean sea level. Ellipsoidal heights are treated as related to a three-dimensional ellipsoidal coordinate system referenced to a geodetic datum. Vertical datums include sounding datums (used for hydrographic purposes), in which case the heights may be negative heights or depths. "@en ;
+        lang:fin-note          "HUOM.: Useimmissa tapauksissa korkeusdatumi suhteutetaan keskimerenpintaan. Ellipsoidisia korkeuksia käsitellään suhteessa kolmiulotteiseen ellipsoidiseen koordinaatistoon, joka on kiinnitetty geodeettiseen datumiin. Korkeusdatumeja ovat muun muassa (hydrografiassa käytetyt) luotausdatumit, joissa korkeus voi olla negatiivinen (syvyys)."@fi ;
+        lang:kor-note          "비고: 대부분의 경우, 수직 데이텀은 평균 해수면과 관련된다. 타원체고는 측지 원점을 기준으로 하는 3차원 타원체 좌표계와 관련되는 것으로 간주된다. 수직 데이텀은 수심 데이텀(수로학적인 목적으로 사용됨)을 포함한다. 이 경우 높이는 음(-)의 높이 또는 깊이가 된다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:nld-note          "OPMERKING: In de meeste gevallen is het verticale datum gerelateerd aan het gemiddeldr zeeniveau. Ellipsoïde hoogten worden beschouwd als gerelateerd aan een driedimensionaal coördinaatsysteem wat gerefereerd is ten opzichte van een geodetisch datum. Onder verticale datums vallen bijvoorbeeld hydrografische datums waarbij de hoogten getoond kunen worden als negatieve hoogten of diepten."@nl ;
+        lang:pol-note          "UWAGA: W większości przypadków pionowy układ odniesienia jest powiązany ze średnim poziomem morza. Wysokości elipsoidalne są traktowane jako powiązane z trójwymiarowym elipsoidalnym układem współrzędnych związanym z układem odniesienia. Pojęcie pionowy układ odniesienia obejmuje także układ odniesienia używany w procesie sondowania dla celów hydrograficznych. W tym przypadku wysokości mogą być ujemne lub nazywane głębokościami."@pl ;
+        lang:rus-note          "Примечание: В большинстве случаев высотные даты будут отнесены к уровню моря. Геодезические высоты связаны с геодезическими датами. Высотные даты, использующие акустические данные ( в гидрографических задачах), имеют отрицательные высоты или положительные глубины"@ru ;
+        lang:spa-note          "Nota: En la mayoría de los casos el datum vertical está referido al nivel medio del mar. Las altitudes elipsoidales son tratadas como relativas a un sistema de coordenadas elipsoidales tridimensional referido a un datum geodésico. Los datums verticales incluyen datums de sondeos (usados para fines hidrográficos), en cuyo caso las altitudes pueden ser negativas o profundidades."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 在多数情况下，高程基准与平均海平面相关。椭球面高与参照大地基准的三维椭球面坐标系相关。高程基准包括测深（sounding)基准（用于水道测量目的），在这种情况下，高度可以为负高或深度。"@zh ;
+        geolexica:hasInfo      info:Info629 ;
+        geolexica:hasLDAPI     ldapi:ldapi629-skosrdf , ldapi:ldapi629-json , ldapi:ldapi629-jsonld , ldapi:ldapi629-rdfxml ;
+        geolexica:hasLangCode  lang:rus , lang:fra , lang:jpn , lang:ara , lang:pol , lang:spa , lang:zho , lang:fin , lang:eng , lang:nld , lang:swe , lang:kor , lang:deu , lang:msa ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:msaRegistry , lang:araRegistry , lang:korRegistry , lang:fraRegistry , lang:sweRegistry , lang:deuRegistry , lang:nldRegistry , lang:jpnRegistry , lang:polRegistry , lang:rusRegistry , lang:zhoRegistry , lang:finRegistry , lang:engRegistry ;
+        geolexica:hasReview    reviews:Review629 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info629 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:date_amended "2019-01-31"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review629 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for vertical datum in ISO 19111:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi629-json
+ldapi:ldapi629-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/629.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi629-jsonld
+ldapi:ldapi629-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/629.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi629-rdfxml
+ldapi:ldapi629-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/629.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi629-skosrdf
+ldapi:ldapi629-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/629.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

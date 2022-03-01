@@ -1,0 +1,206 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/605/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/605/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "depth" ;
+        vann:preferredNamespacePrefix  "concept605" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/605/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/605> .
+
+###########################################################
+
+:depth  a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "depth" ;
+        dcterms:identifier     605 ;
+        skos:definition        "선택된 기준면으로부터 직하 방향으로 측정된 한 점까지의 거리"@ko , "avstånd vinkelrätt från en referensyta till en punkt som befinner sig under denna"@sv , "distancia de un punto a una superficie de referencia dada medida hacia abajo a lo largo de la perpendicular a la superficie"@es , "distance d&#39;un point à une surface de référence choisie, mesurée de haut en bas le long d&#39;une ligne perpendiculaire à cette surface"@fr , "pisteen etäisyys valitusta vertauspinnasta kyseistä pintaa kohtisuoraan vastassa olevaa viivaa pitkin alaspäin mitattuna"@fi , "distance of a point from a chosen reference surface measured downward along a line perpendicular to that surface"@en , "расстояние точки от выбранной отсчетной поверхности, измеряемое вдоль нормали к этой поверхности вниз"@ru , "afstand van een punt tot een gekozen referentievlak neerwaarts gemeten langs een lijn welke loodrecht op dat referentievlak staat"@nl , "odległość punktu od wybranej powierzchni odniesienia w dół, wzdłuż linii prostopadłej do tej powierzchni"@pl , "Abstand eines Punktes von einer gewählten Bezugsfläche, längs einer senkrechten Linie zu dieser Bezugsfläche nach unten gemessen"@de , "某点从选定的参照面沿垂线向下量测的距离。"@zh , "المسافة بين نقطة ما وسطح مرجعي معين مُقاسةً إلى أسفل على امتداد خط متعامد مع ذلك السطح"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          605 ;
+        skos:prefLabel         "djup"@sv , "Tiefe"@de , "profondeur"@fr , "syvyys"@fi , "kedalaman"@ms , "العمق"@ar , "profundidad"@es , "głębokość"@pl , "depth"@en , "глубина"@ru , "깊이"@ko , "深度"@zh , "diepte"@nl ;
+        lang:ara-note          "ملاحظة: العمق الذي يكون أعلى من السطح المرجعي المعتمد تكون قيمته سالبة."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A depth above the reference surface will have a negative value"@en ;
+        lang:fin-note          "HUOM.: Vertauspinnasta ylöspäin mitatun syvyyden arvo on negatiivinen."@fi ;
+        lang:kor-note          "비고: 기준면보다 높이 위치한 지점의 깊이는 음의 값을 갖는다."@ko ;
+        lang:msa-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:nld-note          "OPMERKING: Een diepte boven het referentievlak heeft een negatieve waarde"@nl ;
+        lang:pol-note          "UWAGA: Głębokość powyżej powierzchni odniesienia ma wartość ujemną. "@pl ;
+        lang:rus-note          "Примечание: Глубина над выбранной отсчетной поверхностью будет иметь отрацательное значение"@ru ;
+        lang:spa-note          "Nota: Una profundidad por encima de la superficie de referencia tendrá un valor negativo."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 高于参照面的深度为负值。"@zh ;
+        geolexica:hasInfo      info:Info605 ;
+        geolexica:hasLDAPI     ldapi:ldapi605-rdfxml , ldapi:ldapi605-json , ldapi:ldapi605-jsonld , ldapi:ldapi605-skosrdf ;
+        geolexica:hasLangCode  lang:zho , lang:ara , lang:pol , lang:spa , lang:swe , lang:msa , lang:kor , lang:fin , lang:deu , lang:fra , lang:rus , lang:nld , lang:jpn , lang:eng ;
+        geolexica:hasOrigin    lang:nldRegistry , lang:msaRegistry , lang:spaRegistry , lang:zhoRegistry , lang:finRegistry , lang:araRegistry , lang:polRegistry , lang:sweRegistry , lang:korRegistry , lang:engRegistry , lang:jpnRegistry , lang:fraRegistry , lang:rusRegistry , lang:deuRegistry ;
+        geolexica:hasReview    reviews:Review605 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info605 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:date_amended "2019-01-31"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review605 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for depth in ISO 19111:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi605-json
+ldapi:ldapi605-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/605.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi605-jsonld
+ldapi:ldapi605-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/605.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi605-rdfxml
+ldapi:ldapi605-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/605.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi605-skosrdf
+ldapi:ldapi605-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/605.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/632/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/632/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "data quality basic measure" ;
+        vann:preferredNamespacePrefix  "concept632" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/632/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/632> .
+
+###########################################################
+
+:data_quality_basic_measure
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "data quality basic measure" ;
+        dcterms:identifier     632 ;
+        skos:definition        "데이터 품질 측정 값을 생성하는 데 기준으로 사용되는 일반적인 데이터 품질 척도"@ko , "typ som används som utgångspunkt för att definiera datakvalitetsmått"@sv , "generic data quality measure used as a basis for the creation of specific data quality measures"@en , "yleisluonteinen laatumittari, joka toimii pohjana erityisten laatumittareiden luomiselle"@fi , "allgemeines Maß der Datenqualität, das als Grundlage für die Erstellung spezieller Maße der Datenqualität verwendet wird"@de , "一般的数据质量度量，用作建立特定数据质量度量的基础。"@zh , "medida genérica de calidad de datos utilizada como base para la creación de medidas específicas de calidad de datos"@es , "mesure générique de qualité des données utilisée comme une base pour la création de mesures spécifiques de qualité de données"@fr , "общая мера качества данных, используемая как основа для создания специализированных мер качества данных"@ru , "قياس عام لجودة البيانات يستخدم كأساس لإيجاد قياسات محددة لجودة البيانات"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          632 ;
+        skos:prefLabel         "medida básica de calidad de datos"@es , "Basismaß der Datenqualität"@de , "数据质量基本度量"@zh , "데이터 품질 기본 척도"@ko , "قياس أساسي لجودة البيانات"@ar , "data quality basic measure"@en , "typ av datakvalitetsmått"@sv , "mesure de base de qualité de données"@fr , "основная мера качества данных"@ru , "peruslaatumittari"@fi ;
+        lang:ara-note          "ملاحظة: القياسات الأساسية لجودة البيانات هي عبارة عن أنواع بيانات مجردة. ولا يمكن استخدام هذه القياسات بشكل مباشر عند الإفادة عن جودة البيانات."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: Data quality basic measures are abstract data types. They cannot be used directly when reporting data quality."@en ;
+        lang:fin-note          "HUOM.: Tiedon peruslaatumittarit ovat abstrakteja tietotyyppejä, eikä niitä voi suoraan käyttää tiedon laadun raportointiin."@fi ;
+        lang:kor-note          "비고: 데이터 품질 기본척도는 추상 데이터 유형으로 데이터의 품질을 보고할 때 직접적으로 사용될 수 없다. "@ko ;
+        lang:rus-note          "Примечание: Основные меры качества данных представляют собой абстрактные типы данных. Их нельзя использовать для определения качества данных напрямую"@ru ;
+        lang:spa-note          "Nota: Las medidas básicas de calidad de datos son tipos de datos abstractos. No se pueden usar directamente cuando se reporta la calidad de los datos."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 数据质量基本度量是抽象的数据类型，在报告数据质量时不能直接使用。"@zh ;
+        geolexica:hasInfo      info:Info632 ;
+        geolexica:hasLDAPI     ldapi:ldapi632-skosrdf , ldapi:ldapi632-rdfxml , ldapi:ldapi632-jsonld , ldapi:ldapi632-json ;
+        geolexica:hasLangCode  lang:msa , lang:fin , lang:fra , lang:nld , lang:zho , lang:rus , lang:jpn , lang:kor , lang:spa , lang:eng , lang:swe , lang:deu , lang:pol , lang:ara ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:rusRegistry , lang:sweRegistry , lang:nldRegistry , lang:korRegistry , lang:finRegistry , lang:engRegistry , lang:fraRegistry , lang:araRegistry , lang:polRegistry , lang:jpnRegistry , lang:msaRegistry , lang:zhoRegistry , lang:deuRegistry ;
+        geolexica:hasReview    reviews:Review632 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info632 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19157-2013 ;
+         geolexica:clause "4.7" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2006-12-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review632 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2010-07-09"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19157:2013"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO 19138:2006 to ISO 19157:2013. Lineage source added as ISO 19138:2006."@en .
+
+############################################################
+
+sources:ISO-19157-2013 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Data quality"@en ;
+                dcterms:source "https://www.iso.org/standard/32575.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19157:2013" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi632-json
+ldapi:ldapi632-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/632.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi632-jsonld
+ldapi:ldapi632-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/632.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi632-rdfxml
+ldapi:ldapi632-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/632.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi632-skosrdf
+ldapi:ldapi632-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/632.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,200 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/658/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/658/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "basic service" ;
+        vann:preferredNamespacePrefix  "concept658" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/658/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/658> .
+
+###########################################################
+
+:basic_service  a              skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "basic service" ;
+        dcterms:identifier     658 ;
+        skos:definition        "servicio que proporciona una función básica a otros servicios o aplicaciones de un modo funcional"@es , "palvelu, joka tarjoaa muille palveluille tai sovelluksille niiden tarvitseman perustoiminnallisuuden funktiokutsun tapaan"@fi , "service providing a basic function to other services or applications in a functional manner"@en , "خدمة تقدِّم وظيفة أساسية لخدمات أو تطبيقات أخرى بطريقة فعّالة"@ar , "以函数方式为其他服务或应用提供基本功能的服务。"@zh , "tjänst som behövs för att andra tjänster ska kunna utföras"@sv , "service fournissant une fonction de base à d&#39;autres services ou applications de façon fonctionnelle"@fr , "сервис,  выполняющий базовую функцию для других сервISOв или других приложений"@ru , "서비스 또는 응용에 기본 함수를 제공하는 서비스"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          658 ;
+        skos:prefLabel         "grundtjänst"@sv , "기본 서비스"@ko , "service de base"@fr , "базовый  сервис"@ru , "servicio básico"@es , "peruspalvelu"@fi , "基本服务"@zh , "basic service"@en , "خدمة أساسية"@ar , "einfacher Dienst"@de ;
+        lang:ara-note          "ملاحظة: قارنها بتشغيل التوافق المتبادل . الخدمات الأساسية تفتقر إلى المعلومات الثابتة عن حالة الخدمة المخصصة لمستخدم محدد بين طلبات الدعم والمساعدة وهي ليست مفتوحة بحيث يدخل إليها المستخدمون بشكل مباشر. وحيث أن هذه الخدمات تعمل بطريقة وظيفية فإن من السهل استبدالها أثناء التشغيل بخدمات أخرى باستخدام نفس واجهات التبادل"@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: cf. interoperate. Basic services lack any persistent, user-specific state information between invocations and are not meant for direct access by users. Because they act in a functional manner, they are readily replaceable at runtime by other services using the same interfaces."@en ;
+        lang:fin-note          "HUOM.: Katso termi toimia yhteen. Peruspalveluilla ei kutsujen välillä ole pysyvää, käyttäjäkohtaista tilatietoa, eikä käyttäjien ole tarkoitus päästä niihin suoraan. Koska peruspalvelut toimivat funktiokutsun tapaan, ne voidaan suoritusvaiheessa helposti korvata muilla samoja rajapintoja käyttävillä palveluilla."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 기본 서비스는 사용자별 상태 정보와 호출 간의 지속성이 부족하다. 이는 사용자가 기본 서비스에 직접 접근하는 것을 의미하지는 않는다. 기본 서비스는 기능적으로 사용되며, 동일한 인터페이스를 따르는 다른 서비스로 실시간 교체가 가능하다."@ko ;
+        lang:rus-note          "Примечание: Для сравнения - термин «интероперировать». Базовые сервисы не содержат какую-либо постоянную, определенную пользователями информацию между вызовами, и не предназначены для использования пользователями напрямую. Поскольку они действуют функционально, в процессе работы их легко заменить другими сервисами с использованием одних и тех же интерфейсов"@ru ;
+        lang:spa-note          "Nota: compárese con interoperar (4.18).Los servicios básicos carecen tanto de cualquier persistencia como de información de estado específica del usuario entre las invocaciones, y no están pensados para que los usuarios accedan a ellos directamente. Debido a que actúan de una manera funcional, son fácilmente reemplazables en tiempo de ejecución por otros servicios que utilicen las mismas interfaces."@es ;
+        lang:spa-note          notes:NoteTransDiff ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 基本服务缺乏持久性，也缺乏具体用户间调用的状态信息,这意味着用户可直接访问。因为他们可能以函数的方式运行,他们在执行过程中随时可能被其他使用相同接口的服务所取代。"@zh ;
+        geolexica:hasInfo      info:Info658 ;
+        geolexica:hasLDAPI     ldapi:ldapi658-skosrdf , ldapi:ldapi658-jsonld , ldapi:ldapi658-rdfxml , ldapi:ldapi658-json ;
+        geolexica:hasLangCode  lang:deu , lang:rus , lang:kor , lang:jpn , lang:fra , lang:pol , lang:spa , lang:eng , lang:zho , lang:ara , lang:swe , lang:msa , lang:nld , lang:fin ;
+        geolexica:hasOrigin    lang:nldRegistry , lang:korRegistry , lang:engRegistry , lang:deuRegistry , lang:sweRegistry , lang:msaRegistry , lang:zhoRegistry , lang:finRegistry , lang:jpnRegistry , lang:spaRegistry , lang:polRegistry , lang:rusRegistry , lang:fraRegistry , lang:araRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info658 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19132-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi658-json
+ldapi:ldapi658-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/658.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi658-jsonld
+ldapi:ldapi658-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/658.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi658-rdfxml
+ldapi:ldapi658-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/658.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi658-skosrdf
+ldapi:ldapi658-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/658.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

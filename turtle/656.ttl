@@ -1,0 +1,199 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/656/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/656/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "active object" ;
+        vann:preferredNamespacePrefix  "concept656" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/656/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/656> .
+
+###########################################################
+
+:active_object  a              skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "active object" ;
+        dcterms:identifier     656 ;
+        skos:altLabel          "aktiivinen olio"@fi ;
+        skos:definition        "objeto que es capaz de realizar acciones independientes, y por lo tanto capaz de iniciar las interacciones entre él y otros objetos sin una estimulación externa inmediatamente anterior"@es , "objet capable d&#39;actions indépendantes, et par conséquent capable d&#39;initier des interactions entre lui-même et d&#39;autres objets sans stimulation externe préalable immédiate"@fr , "(i samband med programutveckling); objekt som exekverar av andra orsaker än genom anrop från andra objekt"@sv , "具有独立活动能力的对象，不需外部的直接刺激就能在其自身与其他对象间开始交互活动。"@zh , "объект, способный на независимые действия и в силу этого инициирующий взаимодействия между собой и другими объектами без внешней стимуляции"@ru , "object which is capable of independent actions, and therefore capable of initiating interactions between itself and other objects without immediate prior external stimulation"@en , "objekti, joka kykenee itsenäisiin toimintoihin ja siten käynnistämään itsensä ja muiden objektien välisiä vuorovaikutuksia ilman välittömästi edeltävää ulkoista ärsykettä"@fi , "독립적인 동작이 가능한 객체, 따라서 별도의 외부 자극 없이도 스스로 다른 객체와의 상호작용이 가능함"@ko , "كائن أو جسم قادر على الحركة الذاتية بإرادة مستقلة وهو قادر بالتالي على المبادرة والتفاعل بينه وبين الكيانات الأخرى دون حاجة إلى عامل تحفيز خارجي مباشر"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          656 ;
+        skos:prefLabel         "主动对象"@zh , "objeto activo"@es , "كائن نشط"@ar , "활성 객체"@ko , "aktiivinen objekti"@fi , "aktivt objekt"@sv , "agierendes Objekt"@de , "active object"@en , "активный объект"@ru , "objet actif"@fr ;
+        lang:ara-note          "ملاحظة: قارنه ب \"كيان أو معلم سالب\". الكيان النشط أو الفاعل قد يمثل مستخدما أو خدمة نشطة تعتمد على محفزات داخلية (وهي بالتالي غير مرئية) للبدء بالتحرك. قد تنطبق حالتا النشاط أو السكون (السلبية) على نفس الكيان أو الجسم ، وقد تتراوح مثل هذه الخدمة بين هاتين الحالتين إذ يعتمد ذلك على إنفاذ بروتوكول تشغيلي للتنشيط أو للإيقاف"@ar ;
+        lang:deu-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note to entry: cf. passive object. An active object can represent a user, or an active service that depends on internal (and therefore not visible) triggers to start actions. Active and passive states can exist for the same object, and such a service can transition between these two states depending on invocation of an activation or deactivation operation protocol."@en ;
+        lang:fin-note          "HUOM.: Vertaa käsitteeseen passiivinen objekti. Aktiivinen objekti voi edustaa käyttäjää tai aktiivista palvelua, jonka toimintojen aloittaminen riippuu sisäisistä (ja siten näkymättömistä) laukaisimista. Samalla objektilla voi olla aktiivisia ja passiivisia tiloja, ja palvelu voi siirtyä näiden kahden tilan välillä aktivointi- tai passivointikutsun mukaisesti."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 활성 객체는 사용자 또는 내부 트리거를 통해 활성화되는(따라서 눈으로 볼 수 없는) 활성 서비스를 나타낼 수 있다. 활성 및 수동 상태는 동일 객체에 대하여 존재할 수 있으며, 이러한 서비스는 활성화 또는 비활성화 연산 프로토콜의 호출을 통해 상태가 변한다."@ko ;
+        lang:rus-note          "Примечание: См. для сравнения термин «пассивный объект». Активным объектом может быть пользователь или сервис, зависящий от состояния своих внутренних триггеров, способных инициировать начало действия. Один и тот же объект может находиться и в активном, и в пассивном состояниях, и также, как и сервис может переходить от одного состояния к другому, основываясь на параметрах внешнего вызова"@ru ;
+        lang:spa-note          "Nota: cf.compárese con objeto pasivo (4.35).Un objeto activo puede representar un usuario o un servicio activo que depende de disparadores internos (y por tanto, no visibles) para iniciar acciones. Los estados activo y pasivo pueden existir para el mismo objeto, y un servicio puede hacer la transición entre estos dos estados en función de la invocación de un protocolo de operación de activación o desactivación."@es ;
+        lang:zho-note          "注： 主动对象可以代表用户或主动服务，该用户或主动服务依赖于内部(因此不可见)刺激而开始行动。对同一对象而言，主动和被动状态能同时存在,因这种服务能是在两种状态间的跳转,这取决于激活或未激活操作协议的调用。"@zh ;
+        geolexica:hasInfo      info:Info656 ;
+        geolexica:hasLDAPI     ldapi:ldapi656-json , ldapi:ldapi656-rdfxml , ldapi:ldapi656-skosrdf , ldapi:ldapi656-jsonld ;
+        geolexica:hasLangCode  lang:kor , lang:swe , lang:rus , lang:ara , lang:fin , lang:zho , lang:msa , lang:nld , lang:fra , lang:eng , lang:spa , lang:jpn , lang:deu , lang:pol ;
+        geolexica:hasOrigin    lang:nldRegistry , lang:rusRegistry , lang:msaRegistry , lang:zhoRegistry , lang:polRegistry , lang:korRegistry , lang:araRegistry , lang:spaRegistry , lang:jpnRegistry , lang:engRegistry , lang:deuRegistry , lang:fraRegistry , lang:sweRegistry , lang:finRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info656 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19132-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi656-json
+ldapi:ldapi656-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/656.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi656-jsonld
+ldapi:ldapi656-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/656.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi656-rdfxml
+ldapi:ldapi656-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/656.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi656-skosrdf
+ldapi:ldapi656-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/656.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

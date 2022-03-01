@@ -1,0 +1,195 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/684/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/684/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "service oriented architecture" ;
+        vann:preferredNamespacePrefix  "concept684" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/684/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/684> .
+
+###########################################################
+
+:service_oriented_architecture
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "service oriented architecture" ;
+        dcterms:identifier     684 ;
+        skos:definition        "архитектура программного обеспечения, образованная взаимосвязанными сервисами"@ru , "architecture logicielle constituée de services couplés"@fr , "هيكلة برامج تتكون من خدمات يقترن بعضها ببعض"@ar , "描述在服务器上可用的操作和地理信息的元数据。"@zh , "arquitectura desoftwareconsistente en servicios acoplados"@es , "programarkitektur som bygger på att de ingående programmen, som har en tydlig och avgränsad uppgift, lätt kan kopplas ihop"@sv , "kytketyistä palveluista koostuva ohjelmistoarkkitehtuuri"@fi , "결합된 서비스로 구성된 소프트웨어 구조"@ko , "software architecture consisting of coupled services"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          684 ;
+        skos:prefLabel         "서비스 지향 아키텍처"@ko , "tjänsteorienterad arkitektur"@sv , "palvelusuuntautunut arkkitehtuuri"@fi , "architecture orientée service"@fr , "сервисно - ориентированная архитектура"@ru , "service oriented architecture"@en , "arquitectura orientada a servicios"@es , "هيكلة ذات توجهات خدمية"@ar , "服务元数据"@zh ;
+        lang:ara-note          "ملاحظة: أكثر برمجيات البناء الهيكلي الموجه إلى الخدمة Service-oriented architectures SOAs رواجا وانتشارا في هذا الوقت هي خدمات الشبكة العنكبوتية الدولية (التي تستخدم فيها مواصفات بروتوكول SOAP لتبادل المعلومات المهيكلة عبر شبكات الحاسب، وخدمة السجل العالمي UDDI المبنية على لغة XML، ولغة وصف خدمات الشبكة العنكبوتية المعروفة اختصارا بالأحرفWSDL والمبنية أيضا على لغةXML) ومواصفة CORBAالتي تتيح إمكانية الجمع بين مكونات البرمجة المكتوبة بلغات حاسب مختلفة وتعمل على نظم حاسب مختلفة ، وتقنية شركة مايكروسوفت المعروفة اختصارا بالأحرف DCOM والمخصصة للتواصل بين مكونات البرمجيات الموزعة عبر أجهزة حاسب موصلة شبكيا."@ar ;
+        lang:eng-note          "Note to entry: The most common SOAs in use today are Web services (using SOAP, UDDI, and WSDL), CORBA and DCOM."@en ;
+        lang:fin-note          "HUOM.: Yleisimpiä nykyisin käytössä olevia palvelusuuntautuneita arkkitehtuureja ovat Web-palvelut (jotka käyttävät SOAP:ia, UDDIa ja WSDL:aa), CORBA ja DCOM."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 최근 가장 일반적인 SOA는 웹서비스(SOAP, UDDI 및 WSDL 사용)와 CORBA, DCOM 이다."@ko ;
+        lang:rus-note          "Примечание: Наиболее используемыми сервисно-ориентированными архитектурами в настоящее время являются Web-сервисы (использующие SOAP, UDDI и WSDL), CORBA и DCOM"@ru ;
+        lang:spa-note          "Nota: Las arquitecturas SOA más usadas hoy en día son los servicios web (utilizando SOAP, UDDI y WSDL), CORBA y DCOM."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info684 ;
+        geolexica:hasLDAPI     ldapi:ldapi684-rdfxml , ldapi:ldapi684-skosrdf , ldapi:ldapi684-json , ldapi:ldapi684-jsonld ;
+        geolexica:hasLangCode  lang:nld , lang:ara , lang:spa , lang:eng , lang:fin , lang:kor , lang:deu , lang:pol , lang:jpn , lang:rus , lang:fra , lang:msa , lang:swe , lang:zho ;
+        geolexica:hasOrigin    lang:msaRegistry , lang:polRegistry , lang:rusRegistry , lang:nldRegistry , lang:korRegistry , lang:finRegistry , lang:engRegistry , lang:araRegistry , lang:spaRegistry , lang:sweRegistry , lang:deuRegistry , lang:fraRegistry , lang:jpnRegistry , lang:zhoRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info684 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19132-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi684-json
+ldapi:ldapi684-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/684.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi684-jsonld
+ldapi:ldapi684-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/684.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi684-rdfxml
+ldapi:ldapi684-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/684.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi684-skosrdf
+ldapi:ldapi684-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/684.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
