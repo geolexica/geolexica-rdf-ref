@@ -1,0 +1,201 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/745/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/745/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "vehicle" ;
+        vann:preferredNamespacePrefix  "concept745" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/745/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/745> .
+
+###########################################################
+
+:vehicle  a                    owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "vehicle" ;
+        dcterms:identifier     745 ;
+        skos:altLabel          "участник дорожного движения"@ru , "kulkuneuvo"@fi , "traveller"@zh , "traveller"@sv , "traveller"@ms , "traveller"@fr , "traveller"@de , "traveller"@ar , "traveller"@en , "viajero"@es ;
+        skos:definition        "object subject to being navigated or tracked"@en , "объект, который может быть предметом навигации или слежения"@ru , "كائن معرض لأن يكون هدفا للملاحة أو المتابعة والرصد"@ar , "anordning avsedd för transport på marken"@sv , "objet soumis à la navigation ou au suivi"@fr , "navigoinnin tai seurannan kohteena oleva objekti"@fi , "mesin, biasanya dengan roda dan enjin, digunakan untuk mengangkut orang atau barangan di darat"@ms , "objeto sujeto a navegación o seguimiento"@es , "내비게이션 또는 추적될 수 있는 객체(여행자와 비교)"@ko , "被导航或跟踪的对象。"@zh ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          745 ;
+        skos:prefLabel         "véhicule"@fr , "vehículo"@es , "kenderaan"@ms , "zu navigierendes Fahrzeug"@de , "fordon"@sv , "مركبة"@ar , "vehicle"@en , "차량"@ko , "ajoneuvo"@fi , "транспортное средство"@ru , "车辆"@zh ;
+        lang:ara-note          "ملاحظة: يشمل المشاة ؛ أنظر المقياس آيزو 14825. في هذا المقياس الدولي ، يمكن استبدال مصطلح \"مركبة\" بمصطلح \"متنقل\" دون أن يؤدي ذلك إلى تغيير المعنى."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: Includes pedestrians. See ISO 14825. In this International Standard, vehicle can be replaced by traveller without any change of intent."@en ;
+        lang:fin-note          "HUOM.: Englanninkielinen termi vehicle viittaa käsitteeseen, johon sisältyvät myös jalankulkijat. Katso ISO 14825 -standardi. Tässä kansainvälisessä standardissa englanninkielisiä termejä vehicle ja traveller voidaan käyttää toistensa sijaan ilman, että merkitys muuttuu."@fi ;
+        lang:fra-note          notes:NoteTransDiff ;
+        lang:kor-note          "비고: 보행자를 포함한다. KS X ISO 14825를 참고하라. 본 표준에서는 어떠한 의도 변경 없이, 차량이 여행자로 대체될 수 있다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Включает в себя и пешеходов. См. ISO 14825. В данном международном стандарте понятие «транспортное средство» может быть заменено на понятие «пешеход» без искажения смысла"@ru ;
+        lang:spa-note          "Nota: Incluye a peatones. Véase la Norma ISO 14825. En esta norma internacional, vehículo se puede sustituir por viajero sin ningún cambio de sentido"@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 包括行人。参见ISO 14825.在该国际标准中，车辆可被出行者代替而不改变含义。"@zh ;
+        geolexica:hasInfo      info:Info745 ;
+        geolexica:hasLDAPI     ldapi:ldapi745-jsonld , ldapi:ldapi745-rdfxml , ldapi:ldapi745-json , ldapi:ldapi745-skosrdf ;
+        geolexica:hasLangCode  lang:jpn , lang:eng , lang:nld , lang:pol , lang:msa , lang:zho , lang:spa , lang:deu , lang:ara , lang:kor , lang:rus , lang:swe , lang:fra , lang:fin ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:korRegistry , lang:rusRegistry , lang:sweRegistry , lang:finRegistry , lang:zhoRegistry , lang:jpnRegistry , lang:araRegistry , lang:nldRegistry , lang:polRegistry , lang:msaRegistry , lang:spaRegistry , lang:deuRegistry , lang:engRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:NoteTransDiff rdf:type owl:NamedIndividual , geolexica:NoteSourceDiff ;
+    rdfs:label "This translated term may not be from the same source as the normative term."@en .
+############################################################
+
+info:Info745 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19133-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2005-10-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi745-json
+ldapi:ldapi745-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/745.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi745-jsonld
+ldapi:ldapi745-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/745.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi745-rdfxml
+ldapi:ldapi745-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/745.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi745-skosrdf
+ldapi:ldapi745-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/745.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

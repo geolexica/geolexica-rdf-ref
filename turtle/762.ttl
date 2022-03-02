@@ -1,0 +1,209 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/762/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/762/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "coordinate conversion" ;
+        vann:preferredNamespacePrefix  "concept762" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/762/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/762> .
+
+###########################################################
+
+:coordinate_conversion
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "coordinate conversion" ;
+        dcterms:identifier     762 ;
+        skos:definition        "基于同一基准的，从一个坐标参照系到另一个坐标参照系一一对应的坐标操作。"@zh , "coördinaatbewerking waarbij beide coördinaatreferentiesystemen op hetzelfde datum gebaseerd zijn."@nl , "koordinatomräkning där de  två koordinatbaserade referenssystemen har samma datum"@sv , "ændring af koordinater baseret på en 1 til 1-relation fra et koordinatsystem til et andet baseret på samme datum"@da , "операция с координатами пространственных объектов, основанная на математически строго определенной связи, при переходе из одной системы координат в другую, используя одни и и те же исходные геодезические даты"@ru , "operación de coordenadas en la que ambos sistemas de referencia de coordenadas están basados en el mismo datum"@es , "opération sur les coordonnées dans laquelle les deux systèmes de coordonnées de référence sont basés sur le même référentiel"@fr , "동일한 데이텀을 기준으로 하는 두 개의 좌표 참조 체계에서의 좌표 연산"@ko , "menetelmä, jolla muunnetaan koordinaatteja kahden samaan datumiin perustuvan koordinaattijärjestelmän välillä"@fi , "coordinate operation in which both coordinate reference systems are based on the same datum"@en , "عملية إحداثية يكون نظاما الإحداثيات المرجعية فيهما مبنيين على مرجع إسناد واحد (Datum)"@ar , "operacja na współrzędnych, gdy oba systemy odniesienia oparte są na tym samym układzie odniesienia"@pl , "Umrechnung von Koordinaten (Koordinatenkonversion), deren Koordinatenreferenzsysteme auf dem gleichen Datum basieren"@de ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          762 ;
+        skos:prefLabel         "перевычисление координат"@ru , "konwersja wspólrzędnych"@pl , "Koordinatenumwandlung"@de , "coordinate conversion"@en , "conversión de coordenadas"@es , "koordinaattikonversio"@fi , "conversion de coordonnées"@fr , "تحويل إحداثي"@ar , "Coördinaat conversie"@nl , "좌표 전환"@ko , "坐标转换"@zh , "koordinatkonvertering"@sv , "koordinatkonvertering"@da ;
+        lang:ara-note          "ملاحظة: التحويل الإحداثي يستخدم متغيِّرات ذات قيم محددة لا يتم تحديدها بالتجربة العملية."@ar ;
+        lang:dan-note          "Bemærk til posten: Ved en koordinatkonvertering anvendes parametre med konstante værdier."@da ;
+        lang:deu-note          ""@de ;
+        lang:deu-note          notes:ExTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note to entry: A coordinate conversion uses parameters which have specified values that are not determined empirically."@en ;
+        lang:fin-note          "HUOM.: Koordinaattikonversiossa käytetään parametreja, joilla on tietyt, ei kokemusperäisesti määritetyt arvot."@fi ;
+        lang:kor-note          "비고: 좌표 전환은 경험적으로 산출된 값이 아닌 특정 값을 매개 변수로 사용한다. "@ko ;
+        lang:nld-note          "VOPMERKING: Een coördinaat conversie gebruikt parameters die gespecificeerde waarden hebben die niet empirisch bepaald zijn."@nl ;
+        lang:pol-note          "UWAGA: W konwersji współrzędnych użyte parametry nie są określane w sposób empiryczny."@pl ;
+        lang:rus-note          "Примечание: При перевычислении координат используют параметры, являющиеся постоянными величинами"@ru ;
+        lang:spa-note          "Nota: Una conversión de coordenadas usa parámetros que tienen valores especificados que no son determinados empíricamente."@es ;
+        lang:swe-note          notes:DefnTransUnavail , notes:ExTransUnavail ;
+        lang:zho-note          "注： 坐标转换使用具有明确值的参数，这些值不是凭经验决定的。"@zh ;
+        geolexica:examples     "EXAMPLE Conversion from an ellipsoidal coordinate reference system based on the WGS84 datum to a Cartesian coordinate reference system also based on the WGS84 datum, or change of units such as from radians to degrees or feet to metres."@en , "Пример Перевычисление из геодезической системы координат, основанной на исходных данных WGS84, в прямоугольную систему координат, также основанную на исходных данных WGS84, или перевод единиц измерения из радиан в градусы или из футов в метры"@ru , "EJEMPLO Conversión de un sistema de referencia de coordenadas elipsoidales basado en el datum WGS84 a un sistema de referencia de coordenadas cartesianas también basado en el datum WGS84, o cambio de unidades tales como de radianes a grados o de pies a metros."@es , "مثال التحويل من نظام إحداثيات مرجعية كروية مبني على مرجع إسناد النظام الجيوديسي العالمي WGS84 إلى نظام إحداثيات مرجعي ديكارتي مبني أيضاً على مرجع إسناد نظام WGS84 , أو تغيير الوحدات مثلاً من زوايا نصف قطرية إلى درجات أو من أقدام إلى أمتار."@ar , "示例 大地坐标系和笛卡尔坐标系之间的改变，或大地坐标和投影坐标之间的改变，或度量单位的改变，如从弧度到度，或从英尺到米。 "@zh , "PRZYKŁAD Konwersja z elipsoidalnego układu współrzędnych bazującego na układzie odniesienia WGS 84 do kartezjańskiego układu współrzędnych, również bazującego na układzie odniesienia WGS 84, lub zamiana jednostek z radianów na stopnie lub stóp na metry."@pl , "VOORBEELD Conversie van een ellipsoidaal coördinaatreferentiesysteem op basis van het WGS84 datum naar een Cartesiaans coördinaatreferentiesysteem wat ook op het WGS84 datum is gebaseerd of een verandering in eenheden zoals van radialen naar graden of voeten naar meters."@nl , "ESIM. Konversio WGS84-datumiin perustuvasta ellipsoidisesta koordinaattijärjestelmästä karteesiseen, samaan datumiin perustuvaan koordinaattijärjestelmään tai yksikkömuunnos, kuten muunnos radiaaneista asteiksi tai jaloista metreiksi."@fi , "EKSEMPEL Mellem geodætiske og kartesiske koordinatsystemer, eller mellem geodætiske og projicerede koordinater, eller ændring af enheder fx fra radianer til grader eller fra fod til meter."@da , "보기 WGS84 데이텀 기준 타원체 좌표 참조 체계에서 WGS84 데이텀 기준 수직 좌표 참조 체계로의 변환, 또는 라디안에서 각도로, 또는 피트에서 미터로의 단위 변경"@ko ;
+        geolexica:hasInfo      info:Info762 ;
+        geolexica:hasLDAPI     ldapi:ldapi762-jsonld , ldapi:ldapi762-skosrdf , ldapi:ldapi762-rdfxml , ldapi:ldapi762-json ;
+        geolexica:hasLangCode  lang:rus , lang:kor , lang:msa , lang:fra , lang:swe , lang:spa , lang:nld , lang:ara , lang:deu , lang:eng , lang:fin , lang:zho , lang:jpn , lang:pol ;
+        geolexica:hasOrigin    lang:polRegistry , lang:deuRegistry , lang:engRegistry , lang:araRegistry , lang:finRegistry , lang:sweRegistry , lang:msaRegistry , lang:fraRegistry , lang:nldRegistry , lang:rusRegistry , lang:korRegistry , lang:jpnRegistry , lang:zhoRegistry , lang:spaRegistry ;
+        geolexica:hasReview    reviews:Review762 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+############################################################
+
+info:Info762 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:date_amended "2019-01-31"^^xsd:date ;
+         geolexica:entry_status "superseded "@en .
+
+############################################################
+
+reviews:Review762 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for coordinate conversion in ISO 19111:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi762-json
+ldapi:ldapi762-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/762.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi762-jsonld
+ldapi:ldapi762-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/762.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi762-rdfxml
+ldapi:ldapi762-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/762.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi762-skosrdf
+ldapi:ldapi762-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/762.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

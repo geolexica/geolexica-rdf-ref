@@ -1,0 +1,192 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/764/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/764/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "geoid" ;
+        vann:preferredNamespacePrefix  "concept764" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/764/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/764> .
+
+###########################################################
+
+:geoid  a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "geoid" ;
+        dcterms:identifier     764 ;
+        skos:definition        "equipotential surface of the Earth&#39;s gravity field which is everywhere perpendicular to the direction of gravity and which best fits mean sea level either locally or globally"@en , "سطح متساوي الجهد في مجال جاذبية الأرض متعامد مع اتجاه الجاذبية في كل مكان ويتطابق بشكل أمثل مع متوسط منسوب سطح البحر سواء محليا أو عالميا"@ar , "어디에서나 중력 방향에 수직이며, 국지적 또는 전지구적으로 평균 해수면에 가장 근접하는 지구 중력 등위 표면"@ko , "Maan painovoimakentän potentiaalin tasa-arvopinta, joka parhaiten kuvaa meren keskivedenpintaa joko globaalisti tai paikallisesti"@fi , "уровенная поверхность, наилучшим образом аппроксимирующая уровень моря как в локальном, так и в глобальном случаях"@ru , "plan overflade, der bedst passer til havenes middelvandstand enten lokalt eller globalt"@da , "powierzchnia ekwipotencjalna ziemskiego pola grawitacjnego, w każdym miejscu prostopadła do kierunku wektora siły ciężkości, najlepiej wpasowana do średniego poziomu morza zarówno lokalnie, jak i globalnie"@pl , "nivåyta i jordens tyngdkraftsfält, överallt vinkelrät mot lodlinjen, som bäst sammanfaller med havets medelvattenyta lokalt eller globalt"@sv , "surface équipotentielle du champ de gravité de la Terre partout perpendiculaire à la direction de gravité et qui correspond au mieux au niveau moyen local ou global de la mer"@fr , "equipotentiaal vlak van het zwaartekrachtveld van de aarde dat overal loodrecht staat op de richting van de zwaartekracht en dat het best aansluit bij het lokale of globale gemiddeld zeeniveau"@nl , "Jasad berbentuk bumi dianggap sama ada sebagai min permukaan aras laut yang diunjur berterusan merentasi benua atau sebagai sebuah permukaan tak selanjar lebih rendah daripada permukaan sferoid di bawah lautan tetapi lebih tinggi di bawah benua."@ms , "大地水准面是地球重力场的等势面（equipotential surface),它在任何地方都与重力方向垂直，并与局部或全球平均海平面最佳拟合的水准面。"@zh , "Äquipotentialfläche des Erdschwerefeldes, die überall senkrecht zur Richtung der Schwerkraft steht und die entweder lokal oder global am besten der mittleren Meereshöhe angepasst ist"@de , "superficie equipotencial del campo de gravedad de la Tierra, que es en todas partes perpendicular a la dirección del vector gravedad, y que mejor ajusta el nivel medio del mar tanto local como globalmente"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          764 ;
+        skos:prefLabel         "geoide"@es , "geoide"@nl , "geoide"@da , "геоид"@ru , "geoid"@ms , "geoid"@en , "geoidi"@fi , "大地水准面"@zh , "지오이드"@ko , "Geoid"@de , "geoida"@pl , "géoïde"@fr , "geoid(en)"@sv , "الجويد"@ar ;
+        lang:dan-note          "Bemærk til posten: \"Plan overflade\" betyder en ækvipotential flade i jordens tyngdefelt, der overalt er vinkelret på tyngdekraftens retning."@da ;
+        lang:rus-note          "Примечание: Уровенная поверхность является эквипотенциальной поверхностью земного гравитационного поля, которая везде перпендикулярна к направлению отвесной линии"@ru ;
+        geolexica:hasInfo      info:Info764 ;
+        geolexica:hasLDAPI     ldapi:ldapi764-json , ldapi:ldapi764-rdfxml , ldapi:ldapi764-jsonld , ldapi:ldapi764-skosrdf ;
+        geolexica:hasLangCode  lang:ara , lang:fin , lang:jpn , lang:eng , lang:deu , lang:zho , lang:nld , lang:spa , lang:kor , lang:msa , lang:swe , lang:rus , lang:fra , lang:pol ;
+        geolexica:hasOrigin    lang:finRegistry , lang:korRegistry , lang:fraRegistry , lang:spaRegistry , lang:jpnRegistry , lang:nldRegistry , lang:araRegistry , lang:zhoRegistry , lang:msaRegistry , lang:rusRegistry , lang:deuRegistry , lang:sweRegistry , lang:polRegistry , lang:engRegistry ;
+        geolexica:hasReview    reviews:Review764 .
+
+############################################################
+
+############################################################
+
+info:Info764 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:date_amended "2019-01-31"^^xsd:date ;
+         geolexica:entry_status "superseded "@en .
+
+############################################################
+
+reviews:Review764 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-01-31"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of document ISO 19111:2019(E)"@en ;
+           geolexica:review_decision_notes "This entry is superseded by the entry for geoid in ISO 19111:2019(E)"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi764-json
+ldapi:ldapi764-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/764.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi764-jsonld
+ldapi:ldapi764-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/764.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi764-rdfxml
+ldapi:ldapi764-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/764.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi764-skosrdf
+ldapi:ldapi764-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/764.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

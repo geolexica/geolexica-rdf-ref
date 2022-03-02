@@ -1,0 +1,193 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/708/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/708/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "geodetic datum" ;
+        vann:preferredNamespacePrefix  "concept708" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/708/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/708> .
+
+###########################################################
+
+:geodetic_datum  a             skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "geodetic datum" ;
+        dcterms:identifier     708 ;
+        skos:altLabel          "측지 데이텀"@ko ;
+        skos:definition        "układ odniesienia opisujący związek dwu lub trójwymiarowego układu współrzędnych z Ziemią"@pl , "datum describing the relationship of a two- or three-dimensional coordinate system to the Earth"@en , "描述地球二维或三维坐标系关系的基准。"@zh , "référentiel décrivant la relation entre un système de coordonnées à deux ou trois dimensions et la Terre"@fr , "набор параметров, описывающих связь координатной системы с Землей"@ru , "datum, der beskriver relationen mellem et koordinatsystem og jorden"@da , "Datum, das die Beziehung eines zwei- oder dreidimensionalen Koordinatensystems zur Erde beschreibt"@de , "datum que describe la relación de un sistema de coordenadas bi o tridimensional con la Tierra"@es , "en uppsättning parametrar som beskriver relationen mellan ett referenssystem och den fysiska jorden"@sv , "지구에 대한 2차원 또는 3차원 좌표 체계의 관계를 기술하는 데이텀"@ko , "datumi, joka kuvaa kaksi- tai kolmiulotteisen koordinaatiston suhdetta Maahan"@fi , "datum welke de relatie tussen een twee- of driedimensionaal coördinaatsysteem ten opzichte van de aarde beschrijft"@nl , "مرجع إسناد يصف علاقة نظام إحداثيات ثنائي الأبعاد أو ثلاثي الأبعاد بالأرض"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          708 ;
+        skos:prefLabel         "geodezyjny układ odniesienia"@pl , "geodetiskt datum"@sv , "geodeettinen datumi"@fi , "مرجع الإسناد الجيوديسي"@ar , "geodätisches Datum"@de , "大地基准"@zh , "référentiel géodésique"@fr , "datum geodésico"@es , "측지 원점"@ko , "geodætisk datum"@da , "geodetisch datum"@nl , "geodetic datum"@en , "геодезические даты"@ru ;
+        lang:dan-note          "Bemærk til posten: I de fleste tilfælde indeholder det geodætiske datum en ellipsoidedefinition. "@da ;
+        lang:kor-note          "지구에 대한 2차원 또는 3차원 좌표 체계의 관계를 기술하는 데이텀"@ko ;
+        lang:swe-note          "Anm. till termpost: I de flesta fall innehåller det geodetiska datumet även en definition av ellipsoiden I "@sv ;
+        geolexica:hasInfo      info:Info708 ;
+        geolexica:hasLDAPI     ldapi:ldapi708-jsonld , ldapi:ldapi708-rdfxml , ldapi:ldapi708-skosrdf , ldapi:ldapi708-json ;
+        geolexica:hasLangCode  lang:msa , lang:zho , lang:deu , lang:eng , lang:rus , lang:ara , lang:spa , lang:swe , lang:pol , lang:kor , lang:nld , lang:fin , lang:fra , lang:jpn ;
+        geolexica:hasOrigin    lang:deuRegistry , lang:nldRegistry , lang:araRegistry , lang:zhoRegistry , lang:sweRegistry , lang:fraRegistry , lang:finRegistry , lang:spaRegistry , lang:korRegistry , lang:jpnRegistry , lang:msaRegistry , lang:rusRegistry , lang:engRegistry , lang:polRegistry ;
+        geolexica:hasReview    reviews:Review708 .
+
+############################################################
+
+############################################################
+
+info:Info708 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19111-2007 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review708 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2017-06-28"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "pending"@en ;
+           geolexica:review_decision_event "Publication of ISO 19111:2007"@en .
+
+############################################################
+
+sources:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi708-json
+ldapi:ldapi708-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/708.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi708-jsonld
+ldapi:ldapi708-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/708.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi708-rdfxml
+ldapi:ldapi708-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/708.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi708-skosrdf
+ldapi:ldapi708-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/708.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

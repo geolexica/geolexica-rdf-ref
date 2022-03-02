@@ -1,0 +1,205 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/725/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/725/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "composition (UML)" ;
+        vann:preferredNamespacePrefix  "concept725" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/725/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/725> .
+
+###########################################################
+
+:compositionUML  a             skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "composition (UML)" ;
+        dcterms:identifier     725 ;
+        skos:altLabel          "kompositio (UML)"@fi ;
+        skos:definition        "forma de agregación que requiere que una instancia componente sea incluida como mucho en un compuesto al mismo tiempo y que el objeto compuesto sea responsable de la creación y destrucción de las partes"@es , "forme d&#39;agrégation exigeant qu&#39;une instance composante soit incluse dans au plus un composite à la fois, et que l&#39;objet composite soit responsable de la création et de la destruction des instances composantes"@fr , "一种聚合形式，要求其组成成分的实例最多在聚合中出现一次。组合对象负责其组成成分的构造和析构。"@zh , "form of aggregation which requires that a part instance be included in at most one composite at a time, and that the composite object is responsible for the creation and destruction of the parts"@sv , "form of aggregation which requires that a part instance be included in at most one composite at a time, and that the composite object is responsible for the creation and destruction of the parts"@en , "koosteen muoto, jossa osailmentymä voi sisältyä enintään yhteen komposiittiin kerrallaan ja jossa komposiittiobjekti on vastuussa osiensa luomisesta ja tuhoamisesta"@fi , "форма агрегации, при которой экземпляр – часть в любой момент входит не более, чем в один композит, причем, композит отвечает за создание и уничтожение этой части"@ru , "شكل من أشكال التجميع الذي يتطلب تضمين جزء مثيل في مركب واحد على الأكثر في وقت واحد وهذا الكائي المركب هو مسئولاً عن إنشاء وتدمير الأجزاء المكوِّنة له"@ar , "부분 인스턴스는 동시에 하나의 합성에 포함되며, 합성 객체가 부분들의 생성, 제거에 대한 책임을 갖는 집합 연관의 형태"@ko , "form for aggregering, der kræver, at en del indgår i højst én helhed ad gangen, og at helheden er ansvarlig for at delene skabes og/eller forsvinder. Med andre ord lever og dør delene sammen med helheden."@da ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          725 ;
+        skos:prefLabel         "Komposition (UML)"@de , "합성 (UML)"@ko , "组合(UML)"@zh , "vahva kooste (UML)"@fi , "sammensætning (UML)"@da , "composición (UML)"@es , "composition (UML)"@sv , "composition (UML)"@fr , "composition (UML)"@en , "تكوين (UML)"@ar , "композиция (UML)"@ru ;
+        lang:ara-note          "ملاحظة: يمكن إنشاء أجزاء متعددة تعددا غير ثابت على نمط المركَّب نفسه , ولكن ما أن يتم إنشاء هذه الأجزاء حتى ترتبط حياتها بالمركب الأصل (أي أن مدة حياتها وحياته تكون واحدة). ويمكن لهذه الأجزاء أن تزال بشكل واضح وصريح قبل أن يموت المركب. التركيب قد يكون قادراً على تكرار نفسه بشكل ذاتي. المرادف اللغوي: تجميع المركب."@ar ;
+        lang:dan-note          "Bemærk til posten: Dele med ikke-fast multiplicitet kan skabes efter selve helheden, men når de er skabt, lever og dør de med den (dvs. de har samme levetid). Sådanne dele kan også fjernes eksplicit, inden helheden dør. Sammensætning kan være rekursiv. Synonym: sammensat aggregering."@da ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: Parts with non-fixed multiplicity may be created after the composite itself, but once created they live and die with it (i.e., they share lifetimes). Such parts can also be explicitly removed before the death of the composite. Composition may be recursive. Synonym: composite aggregation."@en ;
+        lang:fin-note          "HUOM.: Osia, joiden kerrannaisuutta ei ole kiinnitetty, voidaan luoda komposiitin jälkeen, mutta sen jälkeen kun osat on luotu, ne elävät ja kuolevat komposiitin kanssa (osilla ja komposiitilla on sama elinikä). Edellämainitun kaltaisia osia voi myös eksplisiittisesti poistaa ennen komposiitin kuolemaa. Vahva kooste voi olla rekursiivinen. Englannin kielessä termin composition synonyymi on termi composite aggregation."@fi ;
+        lang:kor-note          "비고: 합성 이후 정해지지 않은 다중성이 추가 생성될 수 있지만, 한번 생성된 부분들은 합성과 생명 주기를 같이한다. 물론 이러한 부분들은 합성 연관이 해체되기 전, 명시적으로 제거할 수 있다. 합성은 순환적일 수 있다. 동의어: 합성 연관 "@ko ;
+        lang:rus-note          "Примечание: Части с нефиксированной множественностью могут быть созданы и после самого композита, однако, будучи созданными, живут и умирают вместе с ним (иными словами, имеют общий жизненный цикл). Такие части могут также быть удалены еще до смерти композиции. Композиция может быть рекурсивной. См. термины «агрегация», «композиция»"@ru ;
+        lang:spa-note          "Nota: Las partes que no tienen una multiplicidad fija deben crearse depués de la composición misma, pero una vez creadas viven y mueren con ella (es decir, comparten ciclos de vida). Dichas partes también pueden eliminarse explicitamente antes de la muerte del compuesto. La composición puede ser recursiva. Sinónimo: agregación composición."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 组合本身可以创建多重性的组成成分，但是一旦创建后，其组成成分随其存在和消失（也就是，他们共享生存期）。这样的组成成分在该聚合消失前，还可以显式地移走。聚合可以是递归的。同义词：聚合聚集。 "@zh ;
+        geolexica:hasInfo      info:Info725 ;
+        geolexica:hasLDAPI     ldapi:ldapi725-json , ldapi:ldapi725-jsonld , ldapi:ldapi725-rdfxml , ldapi:ldapi725-skosrdf ;
+        geolexica:hasLangCode  lang:jpn , lang:rus , lang:kor , lang:zho , lang:nld , lang:swe , lang:eng , lang:pol , lang:ara , lang:deu , lang:fra , lang:spa , lang:fin , lang:msa ;
+        geolexica:hasOrigin    lang:polRegistry , lang:fraRegistry , lang:sweRegistry , lang:engRegistry , lang:jpnRegistry , lang:zhoRegistry , lang:spaRegistry , lang:msaRegistry , lang:deuRegistry , lang:korRegistry , lang:finRegistry , lang:rusRegistry , lang:araRegistry , lang:nldRegistry ;
+        geolexica:hasReview    reviews:Review725 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info725 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-IEC-19501 ;
+         geolexica:date_accepted "2005-07-15"^^xsd:date ;
+         geolexica:date_amended "2015-12-01"^^xsd:date ;
+         geolexica:entry_status "superseded"@en .
+
+############################################################
+
+reviews:Review725 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2009-01-14"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19103:2015"@en ;
+           geolexica:review_decision_notes "The entry has been superseded. An entry with a revised definition has been published in ISO 19103:2015"@en .
+
+############################################################
+
+sources:ISO-IEC-19501 rdf:type owl:NamedIndividual ,
+                        geolexica:Source ;
+               dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+               dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+               rdfs:label "ISO/IEC 19501" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi725-json
+ldapi:ldapi725-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/725.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi725-jsonld
+ldapi:ldapi725-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/725.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi725-rdfxml
+ldapi:ldapi725-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/725.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi725-skosrdf
+ldapi:ldapi725-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/725.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
