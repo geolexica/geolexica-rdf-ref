@@ -1,0 +1,194 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/816/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/816/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "a priori classification" ;
+        vann:preferredNamespacePrefix  "concept816" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/816/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/816> .
+
+###########################################################
+
+:a_priori_classification
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "a priori classification" ;
+        dcterms:identifier     816 ;
+        skos:definition        "클래스들을 실제 발생하는 유형들로 추상적 개념화하기 위해 구조화된 클래스 분류의 체계"@ko , "klassificering där indelningsklasser och deras klassificeringsdefinitioner i förväg har skapats i form av abstraktioner av de företeelser som faktiskt förekommer"@sv , "مخطط تصنيف تتم هيكلته بحيث تكون فئات التصنيف فيه عبارة عن تصورات ذهنية محضة لأنواع قائمة على الطبيعة."@ar , "esquema de clasificación estructurada de forma que las clases son conceptualizaciones abstractas de los tipos que realmente se dan"@es , "схема классификации, структурированная таким образом, чтобы классы были абстрактными концептуализациями реально существующих типов"@ru , "classification scheme structured so that the classes are abstract conceptualizations of the types actually occurring"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          816 ;
+        skos:prefLabel         "a priori classification"@en , "a priori-klassificering"@sv , "clasificación a priori"@es , "تصنيف سابق"@ar , "연역적 분류"@ko , "a priori Klassifizierung"@de , "априорная классификация"@ru ;
+        lang:ara-note          "ملاحظة 3: أنظر الملحق (ب) لمواصفات الآيزو 1944-1 لفحص هذا التصنيف والتصنيف البَعْدي"@ar , "ملاحظة 2: طريقة المعالجة المتبعة هي وضع تعريفات نظرية لفئات التصنيف قبل لبقيام بأي نشاط فعلي لجمع البيانات."@ar , "ملاحظة 1: مأخوذ من نظام تصنيف الغطاء الأرضي لمنظمة الأغذية والزراعة العالمية ‘ الإصدارة (2) (أنظر الإشارة (2) في مواصفات الآيزو 1944-1)"@ar ;
+        lang:deu-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        lang:eng-note          "Note 2 to entry: The approach is based upon definition of classes before any data collection actually takes place"@en , "Note 1 to entry: Taken from FAO LCCS version 2 (see Reference [2] in ISO 19144-1)"@en , "Note 3 to entry: See Annex B [of ISO 19144-1] for an examination of this and a posteriori classification"@en ;
+        lang:kor-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание 3: См. Приложение B [ISO 19144-1] для рассмотрения данной и эмпирической классификации"@ru , "Примечание 1: Взято из материалов редакции 2 ФАО СКПЗ см. ссылку [2] в ISO 19144-1)"@ru , "Примечание 2: Этот подход основан на определении классов до фактического сбора данных"@ru ;
+        lang:spa-note          "Nota 2: El planteamiento se basa en la definición de las clases antes de que tenga realmente lugar la captura de los datos"@es , "Nota 3: Veáse Anexo B [de ISO 19144-1] para una revisión de esto y una clasificación a posteriori"@es , "Nota 1: Proviene de FAO LCCS versión 2 (veáse Referencia [2] en ISO 19144-1)"@es ;
+        lang:swe-note          notes:NoteTransUnavail , notes:DefnTransUnavail ;
+        geolexica:hasInfo      info:Info816 ;
+        geolexica:hasLDAPI     ldapi:ldapi816-skosrdf , ldapi:ldapi816-json , ldapi:ldapi816-rdfxml , ldapi:ldapi816-jsonld ;
+        geolexica:hasLangCode  lang:swe , lang:msa , lang:fin , lang:eng , lang:spa , lang:jpn , lang:kor , lang:deu , lang:zho , lang:pol , lang:nld , lang:ara , lang:rus , lang:fra ;
+        geolexica:hasOrigin    lang:korRegistry , lang:fraRegistry , lang:jpnRegistry , lang:deuRegistry , lang:sweRegistry , lang:polRegistry , lang:finRegistry , lang:msaRegistry , lang:zhoRegistry , lang:spaRegistry , lang:nldRegistry , lang:engRegistry , lang:araRegistry , lang:rusRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info816 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19144-1-2009 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2009-08-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19144-1-2009 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Classification systems — Part 1: Classification system structure"@en ;
+                  dcterms:source "https://www.iso.org/standard/32562.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19144-1:2009" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi816-json
+ldapi:ldapi816-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/816.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi816-jsonld
+ldapi:ldapi816-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/816.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi816-rdfxml
+ldapi:ldapi816-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/816.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi816-skosrdf
+ldapi:ldapi816-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/816.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,202 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/892/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/892/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "partitive relation" ;
+        vann:preferredNamespacePrefix  "concept892" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/892/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/892> .
+
+###########################################################
+
+:part_whole_relation  a        owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "part-whole relation" ;
+        dcterms:identifier     892 ;
+        skos:altLabel          "partitive relation"@sv , "partitive relation"@ko , "partitive relation"@de , "partitive relation"@ar , "partitive relation"@en , "частичное отношение"@ru , "relación partitiva"@es ;
+        skos:definition        "relación entre dos conceptos en la cual uno de los conceptos constituye el todo y el otro una parte de ese todo"@es , "개념들 중 하나가 전체를 구성하고 타 개념은 전체의 일부를 이루는 두 개념간의 관계"@ko , "связь между двумя понятиями, где одно из понятий составляет целое, а другое - часть этого целого"@ru , "relation between two concepts where one of the concepts constitutes the whole and the other concept a part of that whole"@sv , "relation between two concepts where one of the concepts constitutes the whole and the other concept a part of that whole"@en , "علاقة بين مفهومين أحدهما يشكل الكل والآخر  جزءا من ذلك الكل"@ar ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          892 ;
+        skos:prefLabel         "relación parte-todo"@es , "&quot;Teil-Ganzes&quot;-Beziehung"@de , "отношение часть-целое"@ru , "part-whole relation"@sv , "part-whole relation"@en , "علاقة جزء-كل"@ar , "부분-전체 관계"@ko ;
+        lang:ara-note          "ملاحظة: هناك علاقة تبعيض قائمة بين المفهومين \"اسبوع\" و \"يوم\" والمفهومين \"جزيء\" و \"ذرة\"."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: A partitive relation exists between the concepts \"week\" and \"day\", \"molecule\" and \"atom\"."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Частичное отношение существует между понятиями \"неделя\" и \"день\", \"молекула\" и \"атом\"."@ru ;
+        lang:spa-note          "Nota: Existe una relación partitiva entre los conceptos \"semana\" y \"día\", \"molécula\" y \"átomo\"."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info892 ;
+        geolexica:hasLDAPI     ldapi:ldapi892-jsonld , ldapi:ldapi892-skosrdf , ldapi:ldapi892-json , ldapi:ldapi892-rdfxml ;
+        geolexica:hasLangCode  lang:ara , lang:deu , lang:rus , lang:nld , lang:swe , lang:spa , lang:fin , lang:eng , lang:fra , lang:pol , lang:zho , lang:kor , lang:msa , lang:jpn ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:msaRegistry , lang:deuRegistry , lang:korRegistry , lang:nldRegistry , lang:araRegistry , lang:polRegistry , lang:zhoRegistry , lang:finRegistry , lang:jpnRegistry , lang:spaRegistry , lang:fraRegistry , lang:engRegistry , lang:sweRegistry ;
+        geolexica:hasReview    reviews:Review892 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info892 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-1087-1-2000 ;
+         geolexica:date_accepted "2010-11-01"^^xsd:date ;
+         geolexica:date_amended "2018-06-01"^^xsd:date ;
+         geolexica:entry_status "retired"@en .
+
+############################################################
+
+reviews:Review892 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-06-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19146:2018(E)"@en ;
+           geolexica:review_decision_notes "This entry has been omitted from the superseding standard ISO 19146:2018(E)"@en .
+
+############################################################
+
+sources:ISO-1087-1-2000 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Terminology work — Vocabulary — Part 1: Theory and application"@en ;
+                 dcterms:source "https://www.iso.org/standard/20057.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 1087-1:2000" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi892-json
+ldapi:ldapi892-json rdf:type owl:NamedIndividual ,
+                       geolexica:JSON ;
+              geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/892.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi892-jsonld
+ldapi:ldapi892-jsonld rdf:type owl:NamedIndividual ,
+                         geolexica:JSON-LD ;
+                geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/892.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi892-rdfxml
+ldapi:ldapi892-rdfxml rdf:type owl:NamedIndividual ,
+                         geolexica:RDF-XML ;
+                geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/892.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi892-skosrdf
+ldapi:ldapi892-skosrdf rdf:type owl:NamedIndividual ,
+                          geolexica:SKOS-RDF ;
+                 geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/892.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

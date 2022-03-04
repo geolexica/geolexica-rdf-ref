@@ -1,0 +1,200 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/860/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/860/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "imagery" ;
+        vann:preferredNamespacePrefix  "concept860" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/860/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/860> .
+
+###########################################################
+
+:imagery  a                    owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "imagery" ;
+        dcterms:identifier     860 ;
+        skos:definition        "perwakilan fenomena sebagai imej yang dihasilkan oleh teknik elektronik dan  atau optikal"@ms , "Darstellung von Gegebenheiten auf digitalen oder analogen Bildern"@de , "representation of phenomena as images produced by electronic and/or optical techniques"@en , "تمثيل لظاهره كصور منتجة بطرق إلكترونبة أو بصرية او كلاهما"@ar , "представление явлений в виде  изображений, выполненное электронными и/или оптическими методами"@ru , "representation av företeelser som bilder framställda med elektroniska och/eller optiska metoder"@sv , "전자 또는 광학 기술을 이용하여 생성된 이미지 현상을 표현한 것"@ko , "representación de fenómenos mediante imágenes producidas por técnicas electrónicas u ópticas"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          860 ;
+        skos:prefLabel         "화상"@ko , "imejan"@ms , "avbildning"@sv , "imagery"@en , "صور"@ar , "Bildwesen"@de , "изображения"@ru , "producción de imágenes"@es ;
+        lang:ara-note          "ملاحظة: في هذه المواصفة الفنية يفترض أن الظواهر المذكورة تم تحسسها أو الكشف عنها بواسطة جهاز واحد أو أكثر مثل الرادار ، وكاميرات التصوير ، والفوتومتر وأجهزة المسح الضوئي العاملة بالأشعة تحت الحمراء والمتعددة الأطياف."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: In this Technical Specification, it is assumed that the phenomena have been sensed or detected by one or more devices such as radar, cameras, photometers, and infrared and multispectral scanners"@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: In this Technical Specification, it is assumed that the phenomena have been sensed or detected by one or more devices such as radar, cameras, photometers, and infrared and multispectral scanners : в настоящей технической спецификации предполагается, что эти явления были обнаружены одним или несколькими устройствами, такими, как радар, камеры, фотометры и инфракрасные и мультиспектральные сканеры"@ru ;
+        lang:spa-note          "Nota: En esta especificación técnica, se supone que los fenómenos han sido percibidos o detectados por uno o más dispositivos, tales como radares, cámaras, fotómetros y escáneres de infrarrojos o multiespectrales."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info860 ;
+        geolexica:hasLDAPI     ldapi:ldapi860-jsonld , ldapi:ldapi860-json , ldapi:ldapi860-rdfxml , ldapi:ldapi860-skosrdf ;
+        geolexica:hasLangCode  lang:jpn , lang:kor , lang:nld , lang:ara , lang:fra , lang:fin , lang:deu , lang:rus , lang:eng , lang:spa , lang:zho , lang:swe , lang:pol , lang:msa ;
+        geolexica:hasOrigin    lang:korRegistry , lang:araRegistry , lang:polRegistry , lang:finRegistry , lang:nldRegistry , lang:jpnRegistry , lang:sweRegistry , lang:zhoRegistry , lang:fraRegistry , lang:rusRegistry , lang:engRegistry , lang:spaRegistry , lang:msaRegistry , lang:deuRegistry ;
+        geolexica:hasReview    reviews:Review860 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info860 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19101-2-2018 ;
+         geolexica:clause "(E), 3.14" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2008-06-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review860 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-05-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19101-2:2018(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO/TS 19101-2:2008 to ISO 19101-2:2018(E), 3.14. Lineage source added as ISO/TS 19101-2:2008(E)"@en .
+
+############################################################
+
+sources:ISO-19101-2-2018 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 2: Imagery"@en ;
+                  dcterms:source "https://www.iso.org/standard/69325.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-2:2018" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi860-json
+ldapi:ldapi860-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/860.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi860-jsonld
+ldapi:ldapi860-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/860.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi860-rdfxml
+ldapi:ldapi860-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/860.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi860-skosrdf
+ldapi:ldapi860-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/860.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

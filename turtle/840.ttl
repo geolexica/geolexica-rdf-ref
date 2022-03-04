@@ -1,0 +1,204 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/840/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/840/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "polymorphism" ;
+        vann:preferredNamespacePrefix  "concept840" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/840/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/840> .
+
+###########################################################
+
+:polymorphism  a               skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "polymorphism" ;
+        dcterms:identifier     840 ;
+        skos:definition        "خاصية القدرة على إضفاء معنى أواستخدام مختلف للشئ في سياقات مختلفة - وبالأخص السماح لكيان مثل متغير ، أو دالة أو كائن باتخاذ أكثر من شكل واحد"@ar , "Keupayaan wujud dalam berbagai-bagai bentuk."@ms , "characteristic of being able to assign a different meaning or usage to something in different contexts - specifically, to allow an entity such as a variable, a function, or an object to have more than one form"@en , "caractéristique consistant en la capacité à porter un sens ou un usage différent dans différents contextes - spécifiquement, pour permettre à une entité telle qu&#39;une variable, une fonction ou un objet d&#39;avoir plus d&#39;une forme"@fr , "característica de ser capaz de asignar un significado o aplicación diferente a algo en diferentes contextos, específicamente, permitir a una entidad, como una variable, una función o un objeto, tener más de una forma"@es , "다른 상황에서 다른 의미 또는 용도로 활용될 수 있는, 특히 변수, 함수 또는 객체 등의 개체와 같이 하나 이상의 형태를 가질 수 있는 특성"@ko , "возможность назначать чему-либо различный смысл или разные формы использования в разных контекстах, в частности позволять таким сущностям, как переменная, функция или объект, иметь более одной формы"@ru , "在不同上下文环境中可以对同一事物赋予不同含义或用途的特性，确切地说，某一实体如变量、函数或对象可以具有1个以上的形态的特性。"@zh , "sellaisen ominaisuus, joka kykenee liittämään johonkin eri merkityksen tai käytön erilaisissa yhteyksissä - erityisesti: sellaisen ominaisuus, joka kykenee antamaan tietokokonaisuudelle, esimerkiksi muuttujalle, funktiolle tai objektille, useamman kuin yhden muodon"@fi , "egenskap att, beroende på sammanhanget, kunna tilldela en annan betydelse eller användning till något"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          840 ;
+        skos:prefLabel         "Polymorphismus"@de , "polymorphism"@en , "polymorfism"@sv , "다형"@ko , "polymorphisme"@fr , "polimorfisme"@ms , "多态性"@zh , "polimorfismo"@es , "تعدد الاشكال"@ar , "monimuotoisuus"@fi , "полиморфизм"@ru ;
+        lang:ara-note          "ملاحظة: هناك عدة أنواع مختلفة لتعدد الشكل ."@ar ;
+        lang:deu-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: There are several different kinds of polymorphism"@en ;
+        lang:fin-note          "HUOM.: Monimuotoisuutta on useaa tyyppiä."@fi ;
+        lang:kor-note          "비고: 다양한 유형의 다형이 존재한다."@ko ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Сществует несколько различных видов полиморфизма"@ru ;
+        lang:spa-note          "Nota: Hay diferentes tipos de polimorfismo"@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        lang:zho-note          "注： 有多种不同类型的多态性。"@zh ;
+        geolexica:hasInfo      info:Info840 ;
+        geolexica:hasLDAPI     ldapi:ldapi840-skosrdf , ldapi:ldapi840-json , ldapi:ldapi840-jsonld , ldapi:ldapi840-rdfxml ;
+        geolexica:hasLangCode  lang:spa , lang:fra , lang:jpn , lang:rus , lang:pol , lang:swe , lang:fin , lang:msa , lang:zho , lang:nld , lang:deu , lang:kor , lang:ara , lang:eng ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:zhoRegistry , lang:finRegistry , lang:sweRegistry , lang:engRegistry , lang:fraRegistry , lang:deuRegistry , lang:korRegistry , lang:polRegistry , lang:araRegistry , lang:jpnRegistry , lang:msaRegistry , lang:rusRegistry , lang:nldRegistry ;
+        geolexica:hasReview    reviews:Review840 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info840 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:searchcio-techtarget ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2007-04-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review840 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2019-03-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO/TS 19139-1:2019(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from http://searchsmallbizit.techtarget.com to https://searchcio.techtarget.com/. Lineage source added as ISO/TS 19139:2007(E)"@en .
+
+############################################################
+
+sources:searchcio-techtarget rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      dcterms:source "https://searchcio.techtarget.com/"^^xsd:anyURI ;
+                      rdfs:label "https://searchcio.techtarget.com/" ;
+                      skos:prefLabel "https://searchcio.techtarget.com/"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi840-json
+ldapi:ldapi840-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/840.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi840-jsonld
+ldapi:ldapi840-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/840.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi840-rdfxml
+ldapi:ldapi840-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/840.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi840-skosrdf
+ldapi:ldapi840-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/840.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
