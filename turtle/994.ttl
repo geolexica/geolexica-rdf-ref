@@ -1,0 +1,203 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/994/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/994/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "fiducial mark" ;
+        vann:preferredNamespacePrefix  "concept994" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/994/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/994> .
+
+###########################################################
+
+:fiducial_mark  a              owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "fiducial mark" ;
+        dcterms:identifier     994 ;
+        skos:definition        "index marks, typically four or eight rigidly connected with the camera body, which form images on the film negative and define the image coordinate reference system"@en , "индексные метки, как правило, четыре или восемь,  жестко соединенные с корпусом камеры, которые формируют изображения на негативной пленке и определяют систему координат изображения"@ru , "علامات مفهرسه،  تكون عادة أربع أو ثمان علامات ، متصلة بشكل ثابت بجسم الكاميرا ، وهي التي تشكل الصور على الفيلم السالب وتحدد النظام المرجعي لإحداثيات الصورة."@ar , "anordning i en mätkamera som definierar bildens läge i förhållande till objektivet"@sv , "marcas de identificación, típicamente cuatro u ocho, conectadas rígidamente con el cuerpo de la cámara, que forman imágenes sobre el negativo de la película y definen el sistema de referencia de coordenadas de la imagen"@es , "mit dem Rand des Kamerakörpers von Filmkameras fest verbundene mechanische Zeichen, in der Regel vier oder acht, die bei der Aufnahme auf dem Film abgebildet werden und der Realisierung des Bildkoordinatenreferenzsystems dienen"@de , "영상 좌표 기준 체계를 정의하고 필름 네거티브의 영상을 형성하는 카메라 본체와 단단히 연결된 4개 또는 8개의 인덱스 마크"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          994 ;
+        skos:prefLabel         "marca fiducial"@es , "фидуциальная отметка"@ru , "tanda fidusial"@ms , "علامة إسناد"@ar , "Rahmenmarke"@de , "rammärke"@sv , "fiducial mark"@en , "화면 지표"@ko ;
+        lang:ara-note          "ملاحظة: عند معايرة الكاميرا تقاس المسافات بين علامات الإسناد قياسا دقيقا وتخصص لها إحداثيات تساعد في تصحيح التشوه الناتج عن الفيلم."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: When a camera is calibrated the distances between fiducial marks are precisely measured and assigned coordinates that assist in correcting for film distortion."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:msa-note          notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: при калибровке камеры точно измеряются расстояния между фидуциальными отметками и присваиваются координаты, которые помогают исправить искажение пленки."@ru ;
+        lang:spa-note          "Nota: Cuando una cámara está calibrada, las distancias entre las marcas fiduciales se miden de forma precisa y tienen asignadas unas coordenadas que se usan para la corrección por distorsión de la película."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info994 ;
+        geolexica:hasLDAPI     ldapi:ldapi994-jsonld , ldapi:ldapi994-json , ldapi:ldapi994-skosrdf , ldapi:ldapi994-rdfxml ;
+        geolexica:hasLangCode  lang:swe , lang:pol , lang:msa , lang:zho , lang:rus , lang:eng , lang:deu , lang:jpn , lang:spa , lang:ara , lang:nld , lang:fra , lang:kor , lang:fin ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:sweRegistry , lang:korRegistry , lang:engRegistry , lang:nldRegistry , lang:polRegistry , lang:deuRegistry , lang:araRegistry , lang:spaRegistry , lang:zhoRegistry , lang:jpnRegistry , lang:finRegistry , lang:msaRegistry , lang:fraRegistry ;
+        geolexica:hasReview    reviews:Review994 .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info994 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19130-1-2018 ;
+         geolexica:clause "(E), 3.27" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2010-06-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review994 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-09-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19130-1:2018(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO/TS 19130:2010 to ISO 19130-1:2018(E), 3.20. Lineage source added as ISO/TS 19130:2010(E)"@en .
+
+############################################################
+
+sources:ISO-19130-1-2018 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Imagery sensor models for geopositioning — Part 1: Fundamentals"@en ;
+                dcterms:source "https://www.iso.org/standard/66847.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19130-1-2018" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi994-json
+ldapi:ldapi994-json rdf:type owl:NamedIndividual ,
+                        geolexica:JSON ;
+               geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/994.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi994-jsonld
+ldapi:ldapi994-jsonld rdf:type owl:NamedIndividual ,
+                          geolexica:JSON-LD ;
+                 geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/994.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi994-rdfxml
+ldapi:ldapi994-rdfxml rdf:type owl:NamedIndividual ,
+                          geolexica:RDF-XML ;
+                 geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/994.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi994-skosrdf
+ldapi:ldapi994-skosrdf rdf:type owl:NamedIndividual ,
+                           geolexica:SKOS-RDF ;
+                  geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/994.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

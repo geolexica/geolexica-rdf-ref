@@ -1,0 +1,196 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1028/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1028/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "land use" ;
+        vann:preferredNamespacePrefix  "concept1028" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1028/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1028> .
+
+###########################################################
+
+:land_use  a                   skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "land use" ;
+        dcterms:identifier     1028 ;
+        skos:definition        "arrangemang, aktiviteter och insatser som människor deltar i för en viss typ av marktäcke, för att bibehålla eller åstadkomma förändring av typen av marktäcke"@sv , "gestiones, actividades y acciones que la gente desarrolla sobre un tipo concreto de cubierta terrestre para mantenerla o generar un cambio"@es , "меры, действия и мероприятия, корторые люди предпринимают в отношении некоторого типа земного покрова, чтобы сохранить его или произвести изменения"@ru , "arrangements, activities and inputs people undertake in a certain land cover type to maintain it or produce change"@en , "특정 토지 피복 유형에서 변화를 이끌어 내거나 유지하기 위해 사람들이 행하는 준비, 활동 또는 투입"@ko ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1028 ;
+        skos:prefLabel         "землепользование"@ru , "markanvändning"@sv , "land use"@en , "guna tanah"@ms , "uso del suelo"@es , "토지 이용"@ko ;
+        lang:eng-note          "Note to entry: The definition of land use in this way establishes a direct link between land cover and the actions of people in their environment. Multiple land uses can coexist at the same location (e.g. forestry and recreation), contrary to land cover classes that are mutually exclusive."@en ;
+        lang:kor-note          notes:NoteTransUnavail , notes:ExTransUnavail ;
+        lang:msa-note          notes:NoteTransUnavail , notes:ExTransUnavail , notes:DefnTransUnavail ;
+        lang:rus-note          "Примечание: Определение землепользования таким образом устанавливает прямую связь между земельным покровом и действиями людей в окружающей их среде. Несколько видов землепользования могут сосуществовать в одном и том же месте (например, лесное хозяйство и рекреация), в отличие от взаимоисключающих классов почвенно-растительного покрова."@ru ;
+        lang:spa-note          "Nota: La definición de uso del suelo en este sentido establece una conexión directa con la cubierta del suelo y las acciones que la gente desarrolla. Pueden coexistir multiples usos del suelo en el mismo emplazamiento (por ejemplo, forestal y recreativo), contrariamente a las clases de cubierta terrestre que son mutualmente exclusivas."@es ;
+        lang:swe-note          notes:ExTransUnavail , notes:NoteTransUnavail ;
+        geolexica:examples     "EXAMPLE “Recreation area” is a land use term that can be applicable to different land cover types, e.g. sandy surfaces such as a beach; a built-up area such as a pleasure park; woodlands etc."@en , "Пример \"зона отдыха\" -это термин землепользования, который может применяться к различным типам почвенно-растительного покрова, например песчаным поверхностям, таким как пляж; застроенной территории, такой как парк развлечений; лесам и т.д."@ru , "EJEMPLO \"Áreas recreativas\" es un término de uso del suelo que puede ser aplicado para diferenciar tipos de cubierta terrestre tales como playas sobre superficies de arena, parques recreativos sobre areas construidas o explotaciones madereras en bosques, etc."@es ;
+        geolexica:hasInfo      info:Info1028 ;
+        geolexica:hasLDAPI     ldapi:ldapi1028-json , ldapi:ldapi1028-jsonld , ldapi:ldapi1028-rdfxml , ldapi:ldapi1028-skosrdf ;
+        geolexica:hasLangCode  lang:eng , lang:zho , lang:fra , lang:jpn , lang:ara , lang:fin , lang:spa , lang:kor , lang:nld , lang:rus , lang:deu , lang:pol , lang:swe , lang:msa ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:araRegistry , lang:nldRegistry , lang:korRegistry , lang:zhoRegistry , lang:rusRegistry , lang:polRegistry , lang:fraRegistry , lang:engRegistry , lang:deuRegistry , lang:msaRegistry , lang:spaRegistry , lang:jpnRegistry , lang:finRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+############################################################
+
+info:Info1028 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:UNFAO-LCCS-2005 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2012-07-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:UNFAO-LCCS-2005 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "UNFAO LCCS 2:2005" ;
+                      skos:prefLabel "UNFAO LCCS 2:2005"@en .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1028-json
+ldapi:ldapi1028-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1028.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1028-jsonld
+ldapi:ldapi1028-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1028.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1028-rdfxml
+ldapi:ldapi1028-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1028.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1028-skosrdf
+ldapi:ldapi1028-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1028.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
