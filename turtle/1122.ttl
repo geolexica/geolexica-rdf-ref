@@ -1,0 +1,200 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1122/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1122/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "gimbal" ;
+        vann:preferredNamespacePrefix  "concept1122" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1122/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1122> .
+
+###########################################################
+
+:gimbal  a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "gimbal" ;
+        dcterms:identifier     1122 ;
+        skos:definition        "механическое устройство, состоящее из двух или более колец, соединенных таким образом, что каждое из них вращается свободно вокруг оси, которая представляет собой диаметр следующего кольца по направлению к самому внешнему кольцу набора"@ru , "mechanical device consisting of two or more rings connected in such a way that each rotates freely around an axis that is a diameter of the next ring toward the outermost ring of the set"@en , "أداة ميكانيكية تتكون من حلقتين او أكثر متصلة بطريقة تجعل كل واحدة منها تدور دورانا حرا حول محور هو قطر في الحلقة  الاخرى التي تليها  باتجاه الحلقة الخارجية الأخيرة من المجموعة."@ar , "링 집합의 가장 외각 부분의 링 직경에 있는 축을 중심으로 두 개 또는 그 이상의 링으로 자유롭게 움직이는 기계식 기기"@ko , "upphängningsanordning bestående av två koncentriska ringar diametralt och inbördes vinkelrätt lagrade medelst två motstående radiella tappar"@sv , "dispositivo mecánico que consiste en dos o más anillos conectados de tal manera que cada uno gira libremente sobre un eje que es el diámetro del siguiente anillo hacia el exterior del conjunto"@es , "Sensorhalterung, die über zwei oder drei ineinander geschachtelte Aufhängungen, die sich auf rechtwinklig zueinander liegenden Achsen frei drehen können, eine horizontale Lage der Sensorplattform bei größeren Neigungen des Flugzeuges ermöglicht"@de , "peranti mekanikal yang terdiri daripada dua atau lebih bulatan yang berkait sehingga masing-masing berputar dengan bebas di sekitar paksi yang merupakan diameter bulatan seterusnya  ke arah bulatan paling  luar set tersebut"@ms ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1122 ;
+        skos:prefLabel         "gimbal"@ms , "stabilisierte Plattform"@de , "gimbal"@en , "الجمبال (ذات المحاور)"@ar , "kardanupphängning"@sv , "карданный подвес"@ru , "짐벌"@ko , "cardán"@es ;
+        lang:ara-note          "ملاحظة: إذا كان الشيء مركَّبا على ذات محورين بها ثلاث حلقات فإنه يظل معلقا في وضع أفقي على سطح مستوٍ بين الحلقات بصرف النظر عن ثبات القاعدة."@ar ;
+        lang:deu-note          notes:NoteTransUnavail ;
+        lang:eng-note          "Note to entry: An object mounted on a three-ring gimbal will remain horizontally suspended on a plane between the rings regardless as to the stability of the base."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Объект, установленный на трехкольцевом карданном подвесе, будет оставаться горизонтально подвешенным на плоскости между кольцами независимо от устойчивости основания."@ru ;
+        lang:spa-note          "Nota: Un objeto montado en un cárdan de 3 anillos se mantendrá suspendido horizontalmente en un plano entre los anillos con independencia de la estabilidad de la base"@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info1122 ;
+        geolexica:hasLDAPI     ldapi:ldapi1122-json , ldapi:ldapi1122-jsonld , ldapi:ldapi1122-rdfxml , ldapi:ldapi1122-skosrdf ;
+        geolexica:hasLangCode  lang:spa , lang:rus , lang:fin , lang:kor , lang:pol , lang:eng , lang:zho , lang:deu , lang:jpn , lang:swe , lang:msa , lang:fra , lang:ara , lang:nld ;
+        geolexica:hasOrigin    lang:jpnRegistry , lang:korRegistry , lang:zhoRegistry , lang:rusRegistry , lang:finRegistry , lang:nldRegistry , lang:fraRegistry , lang:sweRegistry , lang:deuRegistry , lang:engRegistry , lang:araRegistry , lang:polRegistry , lang:msaRegistry , lang:spaRegistry ;
+        geolexica:hasReview    reviews:Review1122 .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1122 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19130-1-2018 ;
+         geolexica:clause "(E), 3.38" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2010-06-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+reviews:Review1122 rdf:type owl:NamedIndividual , geolexica:ConceptReview ;
+           geolexica:review_date "2018-09-01"^^xsd:date ;
+           geolexica:review_decision "accepted"@en ;
+           geolexica:review_status "final"@en ;
+           geolexica:review_decision_event "Publication of ISO 19130-1:2018(E)"@en ;
+           geolexica:review_decision_notes "Authoritative reference changed from ISO/TS 19130:2010 to ISO 19130-1:2018(E), 3.38. Lineage source added as ISO/TS 19130:2010(E)"@en .
+
+############################################################
+
+sources:ISO-19130-1-2018 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Imagery sensor models for geopositioning — Part 1: Fundamentals"@en ;
+                dcterms:source "https://www.iso.org/standard/66847.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19130-1-2018" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1122-json
+ldapi:ldapi1122-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1122.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1122-jsonld
+ldapi:ldapi1122-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1122.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1122-rdfxml
+ldapi:ldapi1122-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1122.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1122-skosrdf
+ldapi:ldapi1122-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1122.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
