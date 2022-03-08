@@ -1,0 +1,191 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1456/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1456/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "error of measurement" ;
+        vann:preferredNamespacePrefix  "concept1456" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1456/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1456/> .
+
+###########################################################
+
+:error_of_measurement
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "error of measurement" ;
+        dcterms:identifier     1456 ;
+        skos:altLabel          "measurement error"@sv , "measurement error"@ko , "measurement error"@en , "погрешность"@ru , "error"@sv , "error"@es , "error"@ko , "error"@en , "погрешность измерения"@ru ;
+        skos:definition        "측정량값에서 기준량값을 제한 것"@ko , "measured quantity value minus a reference quantity value"@en , "measured quantity value minus a reference quantity value uppmätt kvantitativt värde minus motsvarande referensvärde"@sv , "измеренное значение величины минус контрольное значение величины"@ru , "valor de la cantidad medida menos el valor de la cantidad de referencia"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1456 ;
+        skos:prefLabel         "측정 오류"@ko , "mätfel"@sv , "погрешность измерения"@ru , "error of measurement"@en , "error de medición"@es ;
+        lang:eng-note          "Note 2 to entry: Measurement error should not be confused with production error or mistake."@en , "Note 1 to entry: The concept of \"measurement error\" can be used both a) when there is a single reference quantity value to refer to, which occurs if a calibration is made by means of a measurement standard with a measured quantity value having a negligible measurement uncertainty or if a conventional quantity value is given, in which case the measurement error is known, and b) if a measurand is supposed to be represented by a unique true quantity value or a set of true quantity values of negligible range, in which case the measurement error is not known."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание 2: погрешность измерения не следует путать с производственной ошибкой или просто ошибкой."@ru , "Примечание 1: Понятие \"погрешность измерения\" может использоваться как а) при наличии одного эталонного значения величины, на которое следует ссылаться, что происходит, если калибровка производится с помощью эталона измерения с измеряемым значением величины, имеющим незначительную неопределенность измерения, или если задано обычное значение величины, и в этом случае погрешность измерения известна, так и b) если измеряемый показатель должен быть представлен единственным истинным значением величины или набором истинных значений величины незначительного диапазона, в этом случае погрешность измерения неизвестна."@ru ;
+        lang:swe-note          "Nota 2: El error de una medición no se debe confundir con un error de producción o fallo."@es , "Nota 1: El concepto de \" error de medición \" se puede utilizar tanto a) cuando hay un único valor de la cantidad de referencia al que referirse, que ocurre si la calibración se realiza por medio de un estándar de medición con un valor de la cantidad medida teniendo una incertidumbre insignificante, o cuando se da un valor convencional a una cantidad, en cuyo caso se conoce el error de medición, y b ) si se supone que el mesurando está representado por un valor verdadero único o un conjunto de valores de la magnitud verdaderos de escala insignificante, en cuyo caso no se conoce el error de medición."@es ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info1456 ;
+        geolexica:hasLDAPI     ldapi:ldapi1456-jsonld , ldapi:ldapi1456-skosrdf , ldapi:ldapi1456-json , ldapi:ldapi1456-rdfxml ;
+        geolexica:hasLangCode  lang:spa , lang:eng , lang:fra , lang:kor , lang:msa , lang:ara , lang:fin , lang:deu , lang:rus , lang:jpn , lang:swe , lang:zho , lang:nld , lang:pol ;
+        geolexica:hasOrigin    lang:finRegistry , lang:polRegistry , lang:engRegistry , lang:jpnRegistry , lang:fraRegistry , lang:zhoRegistry , lang:rusRegistry , lang:araRegistry , lang:deuRegistry , lang:nldRegistry , lang:msaRegistry , lang:spaRegistry , lang:korRegistry , lang:sweRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1456 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-Guide-99-2007 ;
+         geolexica:clause "2.16" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2014-07-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-Guide-99-2007 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "International vocabulary of metrology — Basic and general concepts and associated terms (VIM)"@en ;
+                   dcterms:source "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC Guide 99:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1456-json
+ldapi:ldapi1456-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1456.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1456-jsonld
+ldapi:ldapi1456-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1456.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1456-rdfxml
+ldapi:ldapi1456-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1456.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1456-skosrdf
+ldapi:ldapi1456-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1456.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

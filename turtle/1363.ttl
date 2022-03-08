@@ -1,0 +1,186 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1363/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1363/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "spatial unit" ;
+        vann:preferredNamespacePrefix  "concept1363" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1363/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1363/> .
+
+###########################################################
+
+:spatial_unit  a               skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "spatial unit" ;
+        dcterms:identifier     1363 ;
+        skos:definition        "single area (or multiple areas) of land and/or water, or a single volume (or multiple volumes) of space en eller flera samhörande delar av jordytan eller en eller flera samhörande volymer i förhållande till jordytan"@sv , "un área (o múltiples áreas) de terreno o agua, o un volumen (o múltiples volúmenes) de espacio"@es , "수륙,수중의 단일 혹은 다중 공간, 또는 단일 또는 다량의 공간"@ko , "single area (or multiple areas) of land and/or water, or a single volume (or multiple volumes) of space"@en , "отдельная  область (или несколько областей) земли и / или воды, или одного объема (или несколько объемов) пространства"@ru ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1363 ;
+        skos:prefLabel         "spatial unit"@en , "gränssatt område"@sv , "공간 단위"@ko , "unidad espacial"@es , "пространственная единица"@ru ;
+        lang:eng-note          "Note 1 to entry: A single area is the norm and multiple areas are the exception."@en , "Note 3 to entry: This International Standard [ISO 19152:2012] supports either 2-dimensional (2D), 3-dimensional (3D), or mixed (2D and 3D) representations of spatial units, which may be described in text (“from this tree to that river”), or based on a single point, or represented as a set of unstructured lines, or as a surface, or as a 3D volume."@en , "Note 2 to entry: Spatial units are structured in a way to support the creation and management of basic administrative units."@en , "Note 4 to entry: In addition to spatial units represented by a single point, text, or a set of unstructured lines, a spatial unit may have an area equal to zero for administrative reasons."@en ;
+        lang:rus-note          "Примечание 3: настоящий международный стандарт [ISO 19152:2012] поддерживает либо 2-мерные (2D), 3-мерные (3D), либо смешанные (2D и 3D) представления пространственных единиц, которые могут быть описаны в тексте (“от этого дерева до той реки”), либо основаны на одной точке, либо представлены в виде набора неструктурированных линий, либо в виде поверхности, либо в виде трехмерного объема."@ru , "Примечание 2: пространственные единицы структурированы таким образом, чтобы поддерживать создание базовых административных единиц и управление ими"@ru , "Примечание 4: в дополнение к пространственным единицам, представленным одной точкой, текстом или набором неструктурированных линий, пространственная единица может иметь площадь, равную нулю, по административным причинам."@ru , "Примечание 1: Отдельная область является нормой, а множественные области - исключением"@ru ;
+        lang:spa-note          "Nota 1: Un área es la norma y múltiples áreas son la excepción"@es , "Nota 3: Esta norma internacional permite la representación bidimensional (2D), tridimensional (3D) o mixta (2D y 3D) de unidades espaciales, que se pueden describir textualmente (\"desde este árbol hasta el río\"), a partir de un único punto, o a partir de un conjunto de líneas sin estructura, o como una superficie, o como un volumen 3D"@es , "Nota 2: Las unidades espaciales se estructuran de manera que permiten la creación y gestión de unidades básicas administrativas"@es , "Nota 4: Además de representar las unidades espaciales como un único punto, textualmente, o mediante un conjunto de líneas sin estructura, la unidad espacial puede tener un área igual a cero por razones administrativas"@es ;
+        geolexica:hasInfo      info:Info1363 ;
+        geolexica:hasLDAPI     ldapi:ldapi1363-rdfxml , ldapi:ldapi1363-skosrdf , ldapi:ldapi1363-jsonld , ldapi:ldapi1363-json ;
+        geolexica:hasLangCode  lang:eng , lang:spa , lang:ara , lang:fin , lang:zho , lang:nld , lang:swe , lang:jpn , lang:pol , lang:rus , lang:kor , lang:msa , lang:fra , lang:deu ;
+        geolexica:hasOrigin    lang:sweRegistry , lang:zhoRegistry , lang:rusRegistry , lang:jpnRegistry , lang:polRegistry , lang:araRegistry , lang:engRegistry , lang:finRegistry , lang:nldRegistry , lang:msaRegistry , lang:korRegistry , lang:spaRegistry , lang:deuRegistry , lang:fraRegistry .
+
+############################################################
+
+############################################################
+
+info:Info1363 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19152-2012 ;
+         geolexica:clause "4.1.23" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2012-12-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19152-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Land Administration Domain Model (LADM)"@en ;
+                dcterms:source "https://www.iso.org/standard/51206.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19152:2012" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1363-json
+ldapi:ldapi1363-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1363.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1363-jsonld
+ldapi:ldapi1363-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1363.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1363-rdfxml
+ldapi:ldapi1363-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1363.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1363-skosrdf
+ldapi:ldapi1363-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1363.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

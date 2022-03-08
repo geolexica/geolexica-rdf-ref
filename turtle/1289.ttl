@@ -1,0 +1,194 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1289/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1289/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "boundary face string" ;
+        vann:preferredNamespacePrefix  "concept1289" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1289/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1289/> .
+
+###########################################################
+
+:boundary_face_string
+        a                      owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "boundary face string" ;
+        dcterms:identifier     1289 ;
+        skos:definition        "frontera que forma parte del exterior de una unidad espacial"@es , "공간 단위의 외부 일부를 구성하는 경계"@ko , "boundary forming part of the outside of a spatial unit"@en , "граница, формирующая часть внешнего контура пространственной единицы"@ru , "yta som utgår från en tvådimensionell linje på jordellipsoiden och som har oändlig utsträckning vinkelrätt mot densamma"@sv ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1289 ;
+        skos:prefLabel         "boundary face string"@en , "uppspänd gränsyta"@sv , "경계면 스트링"@ko , "Полоса окаймляюшей грани"@ru , "cadena de caras frontera"@es ;
+        lang:eng-note          "Note to entry: Boundary face strings are used to represent the boundaries of spatial units by means of line strings in 2D. This 2D representation is a 2D boundary in a 2D land administration system. In a 3D land administration system it represents a series of vertical boundary faces where an unbounded volume is assumed, surrounded by boundary faces which intersect the Earth’s surface (such as traditionally depicted in the cadastral map)."@en ;
+        lang:kor-note          notes:ExTransUnavail ;
+        lang:rus-note          "Примечание: Полосы окаймляющих граней используются для представления границ пространственных единиц с помощью линейных полос в 2D. Это 2D-представление является 2D-границей в 2D-системе управления земельными ресурсами. В трехмерной системе управления земельными ресурсами он представляет собой ряд вертикальных окаймляющих граней, где предполагается неограниченный объем, окруженный окаймляющими гранями, которые пересекают поверхность Земли (например, традиционно изображенные на кадастровой карте)."@ru ;
+        lang:spa-note          "Nota: Las cadenas de caras lindero se utilizan para representar los linderos de las unidades espaciales por medio de cadenas de líneas en 2D. Esta representación 2D es un lindero 2D en un sistema 2D de administración del territorio. En un sistema de administración del territorio 3D, representa una serie de caras lindero verticales donde se supone un volumen no limitado, rodeado por caras lindero, que se interseca con la superficie de la Tierra (tal y como se representa tradicionalmente en los mapas catastrales)"@es ;
+        lang:swe-note          "Anm. 2 till termpost: Uppspända gränsytor avgränsar inte uppåt eller nedåt, vilket är det normala för reglering i 2D. För reglering i 3D ska gränssatta områden uppfattas som att rättigheter, skyldigheter och ansvar gäller utan begränsning i höjdled."@sv ;
+        lang:swe-note          notes:NoteTransUnavail ;
+        geolexica:hasInfo      info:Info1289 ;
+        geolexica:hasLDAPI     ldapi:ldapi1289-jsonld , ldapi:ldapi1289-skosrdf , ldapi:ldapi1289-rdfxml , ldapi:ldapi1289-json ;
+        geolexica:hasLangCode  lang:swe , lang:jpn , lang:eng , lang:ara , lang:zho , lang:msa , lang:rus , lang:kor , lang:nld , lang:fra , lang:spa , lang:pol , lang:deu , lang:fin ;
+        geolexica:hasOrigin    lang:msaRegistry , lang:sweRegistry , lang:deuRegistry , lang:engRegistry , lang:nldRegistry , lang:spaRegistry , lang:polRegistry , lang:finRegistry , lang:jpnRegistry , lang:fraRegistry , lang:zhoRegistry , lang:korRegistry , lang:araRegistry , lang:rusRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+############################################################
+
+info:Info1289 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19152-2012 ;
+         geolexica:clause "4.1.5" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2012-12-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19152-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Land Administration Domain Model (LADM)"@en ;
+                dcterms:source "https://www.iso.org/standard/51206.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19152:2012" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1289-json
+ldapi:ldapi1289-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1289.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1289-jsonld
+ldapi:ldapi1289-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1289.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1289-rdfxml
+ldapi:ldapi1289-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1289.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1289-skosrdf
+ldapi:ldapi1289-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1289.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
