@@ -1,0 +1,189 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1474/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1474/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "quantity" ;
+        vann:preferredNamespacePrefix  "concept1474" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1474/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1474/> .
+
+###########################################################
+
+:quantity  a                   owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "quantity" ;
+        dcterms:identifier     1474 ;
+        skos:definition        "propiedad de un fenómeno, cuerpo o sustancia, de tal manera que su magnitud  puede expresarse como un número o una referencia"@es , "Свойство явления, тела или вещества, где свойство имеет величину, которая может быть выражена как число и ссылка"@ru , "숫자와 참조로 표현될 수 있는 규모를 가진 현상, 본질 또는 물질의 속성"@ko , "sifat bagi fenomena, jasad, atau material, di mana sifat mempunyai magnitud yang boleh dinyatakan dalam bentuk nombor dan rujukan"@ms , "property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed as a number and a reference"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1474 ;
+        skos:prefLabel         "kuantiti"@ms , "величина"@ru , "수량"@ko , "cantidad"@es , "quantity"@en ;
+        lang:eng-note          "Note 2 to entry: Symbols for quantities are given in the ISO 80000 and IEC 80000 series Quantities and units. The symbols for quantities are written in italics. A given symbol can indicate different quantities."@en , "Note 3 to entry: A quantity as defined here is a scalar. However, a vector or a tensor, the components of which are quantities, is also considered to be a quantity."@en , "Note 1 to entry: A reference can be a measurement unit, a measurement procedure, a reference material, or a combination of such."@en , "Note 4 to entry: The concept \"quantity\" may be generically divided into, e.g. \"physical quantity\", \"chemical quantity\", and \"biological quantity\", or \"base quantity\" and \"derived quantity\"."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание 4: понятие \"величина \"можно условно разделить на, например,\" физическая величина\",\" химическая величина \"и\" биологическая величина\"или\" базовая величина\"и\"производная величина\"."@ru , "Примечание 1: эталоном может быть единица измерения, процедура измерения, эталонный материал или их комбинация.Z754"@ru , "Примечание 2: обозначения для величин приведены в серии ISO 80000 и IEC 80000 Величины и единицы. Обозначения величин выделены курсивом. Данный символ может указывать на различные величины."@ru , "Примечание 3: величина, как определено здесь является скаляром. Однако вектор или тензор, компонентами которого являются величины, также считается величиной."@ru ;
+        lang:spa-note          "Nota 4: El concepto de \"cantidad\" se puede dividir genéricamente en, por ejemplo, \" cantidad física \" , \"cantidad química \" y \"cantidad biológica \", o \" cantidad de base\" y \" cantidad derivada \"."@es , "Nota 1: La referencia puede ser una unidad de medida, un procedimiento de medida, un material de referencia o una combinación de los anteriores."@es , "Nota 2: Los símbolos de las cantidades se dan en las series de Normas ISO 80000 y IEC 80000 de Cantidades y unidades. Los símbolos de las cantidades se escriben en cursiva. Un símbolo puede indicar diferentes cantidades."@es , "Nota 3: una cantidad tal como se define aquí es un escalar. Sin embargo, un vector o un tensor, las componentes que son cantidades , también se consideran que son una cantidad."@es ;
+        geolexica:hasInfo      info:Info1474 ;
+        geolexica:hasLDAPI     ldapi:ldapi1474-json , ldapi:ldapi1474-jsonld , ldapi:ldapi1474-skosrdf , ldapi:ldapi1474-rdfxml ;
+        geolexica:hasLangCode  lang:fra , lang:deu , lang:swe , lang:zho , lang:nld , lang:jpn , lang:fin , lang:spa , lang:msa , lang:kor , lang:rus , lang:pol , lang:ara , lang:eng ;
+        geolexica:hasOrigin    lang:fraRegistry , lang:msaRegistry , lang:engRegistry , lang:nldRegistry , lang:sweRegistry , lang:jpnRegistry , lang:zhoRegistry , lang:rusRegistry , lang:araRegistry , lang:finRegistry , lang:polRegistry , lang:deuRegistry , lang:spaRegistry , lang:korRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1474 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-Guide-99-2007 ;
+         geolexica:clause "1.1, modified — The Notes have been changed." ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2014-07-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-Guide-99-2007 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "International vocabulary of metrology — Basic and general concepts and associated terms (VIM)"@en ;
+                   dcterms:source "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC Guide 99:2007" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1474-json
+ldapi:ldapi1474-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1474.json"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1474-jsonld
+ldapi:ldapi1474-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1474.jsonld"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1474-rdfxml
+ldapi:ldapi1474-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1474.rdf"^^xsd:anyURI .
+
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1474-skosrdf
+ldapi:ldapi1474-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1474.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

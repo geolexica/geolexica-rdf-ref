@@ -1,0 +1,193 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1570/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1570/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "basic administrative unit" ;
+        vann:preferredNamespacePrefix  "concept1570" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1570/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1570/> .
+
+###########################################################
+
+:basic_admin_unit  a            owl:NamedIndividual , skos:Concept ;
+        rdfs:label              "basic administrative unit" ;
+        dcterms:identifier      1570 ;
+        skos:definition         "entidad administrativa, sujeta a registro (por ley), o inscripción (por derecho no formalizado, o derecho consuetudinario u otra relación social de tenencia), consistente en cero o más unidades espaciales  a la que se asocia como entidad completa, (uno o más) derechos (por ejemplo, derecho de propiedad o derecho de uso del terreno), responsabilidades  o restricciones únicos y homogéneos, tal y como se incluye en el sistema de administración del territorio"@es , "административный орган,  субъект регистрации (по закону) или записи [по неформальному праву, или праву обычая,  или другому отношению социального владения], представляющий ноль или более территориальных единиц, в отношении которых (одной или нескольких) уникальные и однородные права (например, права собственности или права землепользования], обязательства или ограничения объединены в единое целое, включенное в систему управления земельными ресурсами"@ru , "토지 관리 시스템에 포함된 바와 같이, 전 객체와 연계된 책임 및 제약사항, 소유권이나  토지 사용권과 같은 (한 개 또는 그 이상의) 유일 및 동종 권리를 창출하기위해 0개 또는 그 이상의 공간 단위으로 구성된 관리 단위. 법적 등록 또는 비공식적 권한, 관습적 권한 또는 기타 유형의 사회적 테뉴어 관계 기록이 필요함."@ko , "administrative entity, subject to registration (by law), or recordation [by informal right , or customary right, or another social tenure relationship], consisting of zero or more spatial units against which (one or more) unique and homogeneous rights [e.g. ownership right or land  use right], responsibilities or restrictions are associated to the whole entity, as included in a land administration system"@en ;
+        skos:inScheme           geolexica:GeolexicaConceptScheme ;
+        skos:notation           1570 ;
+        skos:prefLabel          "기본 관리 단위"@ko , "markreglerat objekt"@sv , "Базовая административная единица"@ru , "basic administrative unit"@en , "unidad básica administrativa"@es ;
+        lang:eng-note           "Note 5 to entry: Restrictions and responsibilities can be associated with their own baunits, each with their own type of spatial unit."@en , "Note 4 to entry: A baunit can consist of zero spatial units, when a registry exists, and not a cadastre."@en , "Note 3 to entry: A baunit should get a unique identifier when registered, or recorded."@en , "Note 2 to entry: A basic administrative unit may play the role of party, e.g. when the right holder is a basic administrative unit (and not a person or organization)."@en , "Note 1 to entry: 'Unique' means that a right, restriction, or responsibility is held by one or more parties (e.g. owners or users) for the whole basic administrative unit. 'Homogeneous' means that a right, restriction or responsibility (e.g. ownership, use, social tenure, lease, or easement) affects the whole basic administrative unit. For a restriction, zero parties are a possibility."@en ;
+        lang:rus-note           "Примечание 4: базовая административная единица может состоять из нулевых пространственных единиц, если существует реестр, а не кадастр."@ru , "Примечание 3: базовая административная единица должна+AD509 получить уникальный идентификатор при регистрации или записи"@ru , "Примечание 5: ограничения и обязанности могут быть связаны с их собственными базовыми административными единицами, каждый со своим типом пространственной единицы."@ru , "Примечание 1: \"Уникальный\" означает, означает, что право, ограничение или ответственность принадлежать одной или более сторонам (например, собственники или пользователи) на целую базовую административную единицу. \"Гомогенный\" означает, что право, ограничение или ответственность (например, собственность, использование, общественное владение, аренда или право пользования) влияет на целую базовую административную единицу. Для ограничений возможно ноль сторон."@ru , "Примечание 2: основная административная единица может играть роль стороны, например, когда правообладателем является основная административная единица (а не лицо или организация)."@ru ;
+        lang:spa-note           "Nota 3: Una baunit debería tener un identificador único cuando se registra o almacena"@es , "Nota 2: Una unidad básica administrativa puede jugar el papel de parte, por ejemplo, cuando el titular del derecho es una unidad básica administrativa (y no una persona u organización)"@es , "Nota 5: Las restricciones y las responsabilidades se pueden asociar a sus propias baunits, cada una con su propio tipo de unidad espacial"@es , "Nota 1: \"Único\" significa que un derecho, restricción o responsabilidad se ostenta por una o más partes (por ejemplo, propietarios o usuarios) para toda la unidad básica administrativa. \"Homogéneo\" significa que un derecho, restricción o responsabilidad (por ejemplo, propiedad, uso, tenencia social, alquiler, o servidumbre) afecta a la unidad básica administrativa completa. Para las restricciones es posible que haya cero partes"@es , "Nota 4: Una baunit puede consistir en cero unidades espaciales, cuando existe un registro y no se ha catastrado el objeto"@es ;
+        lang:swe-note           notes:ExTransUnavail , notes:DefnTransUnavail , notes:NoteTransUnavail ;
+        geolexica:abbreviation  "baunit"@sv , "baunit"@es , "baunit"@ru , "baunit"@en ;
+        geolexica:examples      "EJEMPLO Una unidad de condominio que comprende dos unidades espaciales (por ejemplo, un apartamento y un garaje), una granja que comprende una unidad espacial (por ejemplo, una parcela de terreno), una servidumbre que comprenda una unidad espacial (por ejemplo, una carretera que representa el derecho de paso), un área de consolidación del terreno, o una unidad de derecho de uso con varios titulares del derecho y con objetos delimitados"@es , "Пример Единица кондоминимума, состоящая из двух пространственных единиц (например, аппартаменты и гараж), ферма, состоящая из одной пространственной единицы (например, участок земли), сервитут включающий одну пространственную единицу (например, дорогу , представляющую право прохода), область объединенных земель, или единица права пользования с несколькими держателями прав и ограниченными объектами."@ru , "EXAMPLE A condominium unit comprising two spatial units (e.g. an apartment and a garage), a farm lot comprising one spatial unit (e.g. parcel of land), a servitude comprising one spatial unit (e.g. the road representing the right-of-way), a land consolidation area, or a right-of-use unit with several right holders and restricted objects."@en ;
+        geolexica:hasInfo       info:Info1570 ;
+        geolexica:hasLDAPI      ldapi:ldapi1570-rdfxml , ldapi:ldapi1570-skosrdf , ldapi:ldapi1570-json , ldapi:ldapi1570-jsonld ;
+        geolexica:hasLangCode   lang:jpn , lang:zho , lang:msa , lang:rus , lang:fin , lang:pol , lang:ara , lang:nld , lang:kor , lang:eng , lang:spa , lang:swe , lang:deu , lang:fra ;
+        geolexica:hasOrigin     lang:jpnRegistry , lang:polRegistry , lang:rusRegistry , lang:nldRegistry , lang:deuRegistry , lang:araRegistry , lang:spaRegistry , lang:finRegistry , lang:zhoRegistry , lang:fraRegistry , lang:sweRegistry , lang:msaRegistry , lang:korRegistry , lang:engRegistry .
+
+############################################################
+notes:DefnTransUnavail rdf:type owl:NamedIndividual , geolexica:DefnUnavail ;
+    rdfs:label "Definition not provided in this language."@en .
+
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+
+notes:ExTransUnavail rdf:type owl:NamedIndividual , geolexica:ExampleUnavail ;
+    rdfs:label "This example has not been translated."@en .
+############################################################
+
+info:Info1570 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19152-2012 ;
+         geolexica:clause "4.1.2" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2012-12-01"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19152-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Land Administration Domain Model (LADM)"@en ;
+                dcterms:source "https://www.iso.org/standard/51206.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19152:2012" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1570-json
+ldapi:ldapi1570-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1570.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1570-jsonld
+ldapi:ldapi1570-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1570.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1570-rdfxml
+ldapi:ldapi1570-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1570.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1570-skosrdf
+ldapi:ldapi1570-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1570.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
