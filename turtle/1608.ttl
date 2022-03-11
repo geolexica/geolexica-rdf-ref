@@ -1,0 +1,185 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1608/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1608/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "spectral responsivity" ;
+        vann:preferredNamespacePrefix  "concept1608" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1608/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1608/> .
+
+###########################################################
+
+:spectral_responsivity
+        a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "spectral responsivity" ;
+        dcterms:identifier     1608 ;
+        skos:definition        "responsivity per unit wavelength interval at a given wavelength"@en , "파장내의 단위당 파장 간격당 감응도"@ko , "чувствительность на единицу интервала длин волн  при заданной длине волны"@ru , "capacidad de respuesta por unidad de intervalo de longitud de onda a una longitud de onda dada"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1608 ;
+        skos:prefLabel         "분광감도"@ko , "respuesta espectral"@es , "spectral responsivity"@en , "спектральная чувствительность"@ru ;
+        lang:eng-note          "Note 2 to entry: The definition is described mathematically in IEC 60050-845. The spectral responsivity is quotient of the detector output dY(λ) by the monochromatic detector input dXe(λ) = Xe, λ(λ) • dλ in the wavelength interval dλ as a function of the wavelength λ s(λ) = dY(λ) / dXc(λ)"@en , "Note 1 to entry: The spectral responsivity is the response of the sensor with respect to the wavelengths dependent radiance."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание 1: Спектральная чувствительность-это реакция датчика по отношению к излучению, зависящему от длин волн"@ru , "Примечание 2: определение описано математически в IEC 60050-845. Спектральная чувствительность-частное от выхода детектора dY (λ) по входу монохроматического детектора dXe (λ) = Xe, λ (λ) • dλ в интервале длин волн dλ в зависимости от длины волны λ s (λ) = dY (λ) / dXc (λ)"@ru ;
+        lang:spa-note          "Nota 2: La definición se describe matemáticamente en la Norma IEC 60050-845 . La respuesta espectral es el cociente de la salida del detector dY ( λ ) entre la entrada del detector monocromático dXe(λ) = Xe, λ(λ) • dλ en el intervalo dλ de la longitud de onda como función de la longitud de onda λ s ( λ ) = dY ( λ ) / DxC ( λ )"@es , "Nota 1: La respuesta espectral es la reacción del sensor con respecto a la longitud de onda dependiente de la radiancia"@es ;
+        geolexica:hasInfo      info:Info1608 ;
+        geolexica:hasLDAPI     ldapi:ldapi1608-skosrdf , ldapi:ldapi1608-rdfxml , ldapi:ldapi1608-json , ldapi:ldapi1608-jsonld ;
+        geolexica:hasLangCode  lang:nld , lang:pol , lang:kor , lang:spa , lang:zho , lang:deu , lang:fra , lang:jpn , lang:eng , lang:swe , lang:rus , lang:ara , lang:msa , lang:fin ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:fraRegistry , lang:araRegistry , lang:finRegistry , lang:rusRegistry , lang:zhoRegistry , lang:deuRegistry , lang:korRegistry , lang:nldRegistry , lang:polRegistry , lang:engRegistry , lang:sweRegistry , lang:jpnRegistry , lang:msaRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1608 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:IEC-60050-845 ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2014-07-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:IEC-60050-845 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "International Electrotechnical Vocabulary (IEV) - Part 845: Lighting"@en ;
+                  dcterms:source "https://webstore.iec.ch/publication/268"^^xsd:anyURI ;
+                  rdfs:label "IEC 60050-845:1987" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1608-json
+ldapi:ldapi1608-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1608.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1608-jsonld
+ldapi:ldapi1608-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1608.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1608-rdfxml
+ldapi:ldapi1608-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1608.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1608-skosrdf
+ldapi:ldapi1608-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1608.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

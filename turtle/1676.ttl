@@ -1,0 +1,187 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1676/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1676/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "lidar" ;
+        vann:preferredNamespacePrefix  "concept1676" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1676/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1676/> .
+
+###########################################################
+
+:lidar  a                      skos:Concept , owl:NamedIndividual ;
+        rdfs:label             "lidar" ;
+        dcterms:identifier     1676 ;
+        skos:altLabel          "Light Detection and Ranging"@es , "Light Detection and Ranging"@ru , "Light Detection and Ranging"@ms , "Light Detection and Ranging"@ko , "Light Detection and Ranging"@en ;
+        skos:definition        "система, состоящая из 1) источника фотонов (зачастую, но не обязательно, лазера), 2) системы обнаружения фотонов, 3) схемы синхронизации и 4) оптики, как для источника, так и для приемника, который использует излучаемый лазерный свет для измерения дальности и / или свойств твердых объектов, газов или частиц в атмосфере"@ru , "다음으로 구성된 시스템 1) 광자 광원(레이저일 경우가 많으나, 꼭 레이저일 필요는 없음) 2) 광자 탐지/검출 시스템 3) 시한 회로 4) 대기내 고형 객체, 가스, 미립자의 속성 및 레인지를 측정하기 위해 방출 레이저 빛을 사용하는 요소와 수신기의 광학"@ko , "system consisting of 1) a photon source (frequently, but not necessarily, a laser), 2) a photon detection system, 3) a timing circuit, and 4) optics for both the source and the receiver that uses emitted laser light to measure ranges to and/or properties of solid objects, gases, or particulates in the atmosphere"@en , "Peranti yang menggunakan cahaya untuk pengawasan, penjejakan dan pengesanan sasaran dalam atmosfera. Singkatan bagi light detection and ranging"@ms , "sistema que consiste en 1) una fuente de fotones (normalmente, aunque no siempre, un láser), 2) un sistema de detección de fotones, 3) un circuito de temporización y 4) un sistema óptico tanto para la fuente como para el receptor, que emite luz láser para medir rangos y/o propiedades de objetos sólidos, gases o partículas en la atmósfera"@es ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1676 ;
+        skos:prefLabel         "лидар"@ru , "lidar"@es , "lidar"@ms , "lidar"@en , "광선레이더"@ko ;
+        lang:eng-note          "Note to entry: Time of flight (TOF) LIDARs use short laser pulses and precisely record the time each laser pulse was emitted and the time each reflected return(s) is received in order to calculate the distance(s) to the scatterer(s) encountered by the emitted pulse. For topographic LIDAR, these time-of-flight measurements are then combined with precise platform location/attitude data along with pointing data to produce a three-dimensional product of the illuminated scene of interest."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:msa-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: лидары времени полета (TOF) используют короткие лазерные импульсы и точно записывают время, когда каждый лазерный импульс был испущен, и время, когда каждый отраженный возврат(ы) получен, чтобы вычислить расстояние(ы) до рассеивателя(ов), встреченного испущенным импульсом. Для топографического лидара эти измерения времени полета затем объединяются с точными данными о местоположении/ориентации платформы вместе с указывающими данными для получения трехмерного продукта освещенной сцены интереса."@ru ;
+        lang:spa-note          "Nota: Durante el tiempo de vuelo (TOF) el lidar usa pulsos cortos de láser y registra de manera precisa el tiempo al que cada pulso láser fue emitido y el tiempo en que es recibido tras la reflexión, para calcular la(s) distancia(s) entre los elementos del territorio y el sensor (al dispersor encontrado por el pulso). Para lidar topográfico, estas medidas de tiempo de vuelo están combinadas con un sistema de determinación precisa de la posición para reproducir un producto tridimensional del área de interés."@es ;
+        geolexica:hasInfo      info:Info1676 ;
+        geolexica:hasLDAPI     ldapi:ldapi1676-json , ldapi:ldapi1676-jsonld , ldapi:ldapi1676-skosrdf , ldapi:ldapi1676-rdfxml ;
+        geolexica:hasLangCode  lang:jpn , lang:msa , lang:spa , lang:nld , lang:pol , lang:ara , lang:zho , lang:kor , lang:fin , lang:eng , lang:deu , lang:rus , lang:swe , lang:fra ;
+        geolexica:hasOrigin    lang:spaRegistry , lang:engRegistry , lang:sweRegistry , lang:zhoRegistry , lang:nldRegistry , lang:jpnRegistry , lang:fraRegistry , lang:msaRegistry , lang:finRegistry , lang:polRegistry , lang:rusRegistry , lang:korRegistry , lang:araRegistry , lang:deuRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1676 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19130-2-2014 ;
+         geolexica:clause "4.40" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2014-01-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19130-2-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Imagery sensor models for geopositioning — Part 2: SAR, InSAR, lidar and sonar"@en ;
+                dcterms:source "https://www.iso.org/standard/56113.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19130-2:2014" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1676-json
+ldapi:ldapi1676-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1676.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1676-jsonld
+ldapi:ldapi1676-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1676.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1676-rdfxml
+ldapi:ldapi1676-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1676.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1676-skosrdf
+ldapi:ldapi1676-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1676.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .

@@ -1,0 +1,185 @@
+
+@prefix :      <https://isotc211.geolexica.org/concepts/1610/> .
+@prefix ldapi: <https://isotc211.geolexica.org/ldapi#> .
+@prefix notes: <https://isotc211.geolexica.org/notes#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews: <https://isotc211.geolexica.org/reviews#> .
+@prefix sources: <https://isotc211.geolexica.org/api/sources#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lang:  <https://isotc211.geolexica.org/api/language#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix geolexica: <https://isotc211.geolexica.org/geolexica#> .
+@prefix info:  <https://isotc211.geolexica.org/info#> .
+
+
+<https://isotc211.geolexica.org/concepts/1610/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-23"^^xsd:date ;
+        dcterms:title                  "smile distortion" ;
+        vann:preferredNamespacePrefix  "concept1610" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/concepts/1610/" ;
+        owl:imports                    <https://isotc211.geolexica.org/geolexica> ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/concepts/1610/> .
+
+###########################################################
+
+:smile_distortion  a           owl:NamedIndividual , skos:Concept ;
+        rdfs:label             "smile distortion" ;
+        dcterms:identifier     1610 ;
+        skos:definition        "смещение центральной длины волны спектральных каналов, вызванное оптическим искажением"@ru , "광학적 왜곡 현상으로 인한 스펙트럼 채널의 중심 파장 변화"@ko , "variación del centro de longitud de onda de canales espectrales causada por distorsión óptica"@es , "centre wavelength shift of spectral channels caused by optical distortion"@en ;
+        skos:inScheme          geolexica:GeolexicaConceptScheme ;
+        skos:notation          1610 ;
+        skos:prefLabel         "스마일 왜곡"@ko , "искажение в форме улыбки"@ru , "distorsión sonrisa"@es , "smile distortion"@en ;
+        lang:eng-note          "Note to entry: This distortion is often simply called smile."@en ;
+        lang:kor-note          notes:NoteTransUnavail ;
+        lang:rus-note          "Примечание: Это искажение часто просто называют \"улыбкой\""@ru ;
+        lang:spa-note          "Nota: Esta distorsión es en ocasiones llamada simplemente sonrisa"@es ;
+        geolexica:hasInfo      info:Info1610 ;
+        geolexica:hasLDAPI     ldapi:ldapi1610-skosrdf , ldapi:ldapi1610-jsonld , ldapi:ldapi1610-json , ldapi:ldapi1610-rdfxml ;
+        geolexica:hasLangCode  lang:deu , lang:pol , lang:rus , lang:nld , lang:jpn , lang:eng , lang:swe , lang:spa , lang:fin , lang:zho , lang:fra , lang:ara , lang:kor , lang:msa ;
+        geolexica:hasOrigin    lang:rusRegistry , lang:spaRegistry , lang:sweRegistry , lang:jpnRegistry , lang:msaRegistry , lang:fraRegistry , lang:araRegistry , lang:korRegistry , lang:deuRegistry , lang:finRegistry , lang:nldRegistry , lang:polRegistry , lang:zhoRegistry , lang:engRegistry .
+
+############################################################
+notes:NoteTransUnavail rdf:type owl:NamedIndividual , geolexica:NoteUnavail ;
+    rdfs:label "This note has not been translated."@en .
+############################################################
+
+info:Info1610 rdf:type owl:NamedIndividual ,
+                  geolexica:ConceptInfo ;
+         geolexica:hasSource sources:ISO-19159-2014 ;
+         geolexica:clause "4.33" ;
+         geolexica:classification "preferred"@en ;
+         geolexica:date_accepted "2014-07-15"^^xsd:date ;
+         geolexica:entry_status "valid"@en .
+
+############################################################
+
+############################################################
+
+sources:ISO-19159-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Calibration and validation of remote sensing imagery sensors and data — Part 1: Optical sensors"@en ;
+                dcterms:source "https://www.iso.org/standard/60080.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19159-1:2014" .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1610-json
+ldapi:ldapi1610-json rdf:type owl:NamedIndividual ,
+                         geolexica:JSON ;
+                geolexica:jsonURI "https://isotc211.geolexica.org/api/ldapi/1610.json"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1610-jsonld
+ldapi:ldapi1610-jsonld rdf:type owl:NamedIndividual ,
+                           geolexica:JSON-LD ;
+                  geolexica:jsonldURI "https://isotc211.geolexica.org/api/ldapi/1610.jsonld"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1610-rdfxml
+ldapi:ldapi1610-rdfxml rdf:type owl:NamedIndividual ,
+                           geolexica:RDF-XML ;
+                  geolexica:rdfxmlURI "https://isotc211.geolexica.org/api/ldapi/1610.rdf"^^xsd:anyURI .
+
+###  https://isotc211.geolexica.org/api/ldapi#ldapi1610-skosrdf
+ldapi:ldapi1610-skosrdf rdf:type owl:NamedIndividual ,
+                            geolexica:SKOS-RDF ;
+                   geolexica:skosrdfURI "https://isotc211.geolexica.org/api/ldapi/1610.ttl"^^xsd:anyURI .
+
+############################################################
+
+###  https://isotc211.geolexica.org/api/language#araRegistry
+lang:araRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-ara"^^xsd:anyURI ;
+             rdfs:label "Arabic Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#danRegistry
+lang:danRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-dan"^^xsd:anyURI ;
+             rdfs:label "Danish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#deuRegistry
+lang:deuRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-deu"^^xsd:anyURI ;
+             rdfs:label "German Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#engRegistry
+lang:engRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+             rdfs:label "English Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#finRegistry
+lang:finRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fin"^^xsd:anyURI ;
+             rdfs:label "Finnish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#fraRegistry
+lang:fraRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-fra"^^xsd:anyURI ;
+             rdfs:label "French Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#jpnRegistry
+lang:jpnRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-jpn"^^xsd:anyURI ;
+             rdfs:label "Japanese Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#korRegistry
+lang:korRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-kor"^^xsd:anyURI ;
+             rdfs:label "Korean Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#msaRegistry
+lang:msaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-msa"^^xsd:anyURI ;
+             rdfs:label "Malay Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#nldRegistry
+lang:nldRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-nld"^^xsd:anyURI ;
+             rdfs:label "Nederlands Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#polRegistry
+lang:polRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-pol"^^xsd:anyURI ;
+             rdfs:label "Polish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#rusRegistry
+lang:rusRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-rus"^^xsd:anyURI ;
+             rdfs:label "Russian Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#spaRegistry
+lang:spaRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-spa"^^xsd:anyURI ;
+             rdfs:label "Spanish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#sweRegistry
+lang:sweRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-swe"^^xsd:anyURI ;
+             rdfs:label "Swedish Registry"@en .
+
+###  https://isotc211.geolexica.org/api/language#zhoRegistry
+lang:zhoRegistry rdf:type owl:NamedIndividual ,
+                      geolexica:Origin ;
+             dcterms:source "https://isotc211.geolexica.org/registers/#language-zho"^^xsd:anyURI ;
+             rdfs:label "Chinese Registry"@en .
