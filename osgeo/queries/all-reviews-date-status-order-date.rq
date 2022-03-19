@@ -1,0 +1,12 @@
+## all reviews : date : status : order date
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+
+select ?review ?date ?status
+
+    where { ?review a osgeo:ConceptReview ; 
+                    osgeo:review_date ?date ;
+                    osgeo:review_status ?status .
+           } 
+           
+        ORDER BY ASC(?date)

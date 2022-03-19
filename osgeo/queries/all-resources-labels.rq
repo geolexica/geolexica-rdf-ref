@@ -1,0 +1,13 @@
+# all concepts (resources) : labels
+
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?resource ?label
+
+    where { 
+        { GRAPH <https://osgeo.geolexica.org/api/concepts#> 
+                {?resource rdfs:label ?label ; a skos:Concept .            
+        } }
+    } ORDER BY DESC(?label)

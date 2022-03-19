@@ -1,0 +1,11 @@
+# one concept : all triples : predicates and objects
+
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+
+select ?uri ?file
+
+    where { 
+        ?uri a osgeo:SKOS-RDF ; 
+               osgeo:skosrdfURI ?file .
+        }

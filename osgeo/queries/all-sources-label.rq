@@ -1,0 +1,12 @@
+## all sources : label : description
+
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+select ?source ?label ?descrip 
+
+where { ?source a osgeo:Source ; 
+            rdfs:label ?label .
+    } ORDER BY ?uri

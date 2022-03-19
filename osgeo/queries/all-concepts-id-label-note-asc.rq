@@ -1,0 +1,13 @@
+## all concepts : id : label : note : asc
+ 
+PREFIX geolexica: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX lang: <https://osgeo.geolexica.org/api/language#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?id ?label ?note  
+		where { 
+			?concept a skos:Concept ; lang:eng-note ?note ;
+                       dcterms:identifier ?id ; rdfs:label ?label .
+		} ORDER BY ?id

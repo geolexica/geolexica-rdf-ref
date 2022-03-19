@@ -1,0 +1,9 @@
+# all resources : review-status : final :@en
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+
+select ?review
+
+where { 
+    ?review osgeo:review_status "pending"@en .
+    }

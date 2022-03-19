@@ -1,0 +1,10 @@
+## Count total # of sources.
+ 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+
+SELECT (COUNT(?source) AS ?source_count)
+
+WHERE
+{ ?source a osgeo:Source .
+}
