@@ -1,9 +1,9 @@
-@prefix : <https://osgeo.geolexica.org/api/reviews#> .
+@prefix : <https://osgeo.geolexica.org/api/review#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix info: <https://osgeo.geolexica.org/api/info#> .
+@prefix nfo: <https://osgeo.geolexica.org/api/nfo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
@@ -11,7 +11,7 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix osgeo: <https://osgeo.geolexica.org/api/geolexica#> .
-@base <https://osgeo.geolexica.org/api/reviews#> .
+@base <https://osgeo.geolexica.org/api/review#> .
 
 <https://osgeo.geolexica.org/api/reviews#> rdf:type dctype:Dataset ;
         owl:versionIRI <https://osgeo.geolexica.org/api/reviews/v1.0> ;
@@ -21,13 +21,15 @@
         dcterms:created "2022-03-18"^^xsd:date ;
         dcterms:modified "2022-03-18"^^xsd:date ;
         dcterms:title "Concept Reviews RDF Dataset: OSGeo Glossary (Geolexica)"@en ;
-        vann:preferredNamespacePrefix "reviews" ;
-        vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/reviews#" ;
+        vann:preferredNamespacePrefix "review" ;
+        vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/review#" ;
         rdfs:label "Concept Reviews RDF Dataset: OSGeo Glossary (Geolexica)"@en .
 
 #################################################################
 #    Individuals
 #################################################################
+
+### Placeholder data:
 
 ###  https://osgeo.geolexica.org/api/reviews#Review10
 :Review10 rdf:type owl:NamedIndividual ,
