@@ -1,17 +1,17 @@
 
 ## Geolexica in SKOS/RDF
 
-This repository tracks the Geolexica Multi-lingual Glossary in RDF and SKOS, as an organizational framework. 
+This repository tracks the Geolexica Multi-lingual Glossary in RDF and SKOS, as an organizational framework.
 
-There are two directories, "mlgt", for the ISO/TC 211 Multilingual Glossary of Terms (https://isotc211.geolexica.org/concepts/), and "osgeo", for the OSGeo Glossary (Geolexica) (https://osgeo.geolexica.org/concepts/). 
+There are two directories, "mlgt", for the ISO/TC 211 Multilingual Glossary of Terms (https://isotc211.geolexica.org/concepts/), and "osgeo", for the OSGeo Glossary (Geolexica) (https://osgeo.geolexica.org/concepts/). Each directory contains a "queries" sub-folder with example SPARQL queries, and results in CSV format.
 
 ----------
 **ISO/TC 211 Multilingual Glossary of Terms**
 
-The MLGT Glossary of Terms is defined with a primary ontology, several extensions and supporting instance data. MLGT has its own namespace, prefixes and related administrative data. 
+The MLGT Glossary of Terms is defined with a primary ontology, several extensions and supporting instance data. MLGT has its own namespace, prefixes and related administrative data.
 
 Folder: **mlgt**
-| File | Description |
+| File/Folder | Description |
 |--|--|
 | geolexica-ontology.ttl | The MLGT Geolexica ontology, defining classes, object & data properties. |
 | mlgt-concepts.ttl | Serialization (dataset) of all MLGT concepts. |
@@ -24,6 +24,7 @@ Folder: **mlgt**
 | concept-6.ttl | Example of a single concept with all relevant metadata and values. |
 | concepts folder | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
 | api folder | Contains all JSON, JSON-LD, and RDF/XML files for the ontology, extensions, and supporting data. |
+| queries folder | Contains example SPARQL queries and results in CSV format. |
 ----------
 **OSGeo Glossary (Geolexica)**
 
@@ -31,7 +32,7 @@ Folder: **mlgt**
 The OSGeo Glossary is defined with the same ontology structure as MLGT, except it is within its own namespace, has updated prefixes and related administrative data.
 
 Folder: **osgeo**
-| File | Description |
+| File/Folder | Description |
 |--|--|
 | osgeo-ontology.ttl | The OSGEO Glossary (Geolexica) ontology, defining classes, object & data properties. |
 | osgeo-concepts.ttl | Serialization (dataset) of all OSGeo concepts. |
@@ -43,3 +44,4 @@ Folder: **osgeo**
 | osgeo-notes.ttl | Ontology extension of explanatory notes available for each resource (i.e., missing definitions, notes, translations, or examples for a given language).  |
 | concepts folder | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
 | api folder | Contains all JSON, JSON-LD, and RDF/XML files for the ontology, extensions, and supporting data. |
+| queries folder | Contains example SPARQL queries and results in CSV format. |
