@@ -15,7 +15,7 @@ Folder: **mlgt**
 |--|--|
 | geolexica-ontology.ttl | The MLGT Geolexica ontology, defining classes, object & data properties. |
 | mlgt-concepts.ttl | Serialization (dataset) of all MLGT concepts. |
-| concept-info.ttl | Serialization of term-related info for each resource (i.e., classification, clause, date accepted, entry status, & source). |
+| concept-info.ttl | Serialization of term-related info for each resource (i.e., classification, clause, date accepted, date amended, entry status, & source). |
 | concept-reviews.ttl | Serialization of review info for each resource (i.e., review date, decision, event, notes, & status). |
 | languages-data.ttl | Ontology extension for languages; references Registries, ISO 639-1 two-letter abbreviation, labels, & notes. |
 | linked-data-apis.ttl | Serialization of linked data representations for each resource (i.e., json, json-ld, rdf/xml, and ttl formats). |
@@ -36,7 +36,7 @@ Folder: **osgeo**
 |--|--|
 | osgeo-ontology.ttl | The OSGEO Glossary (Geolexica) ontology, defining classes, object & data properties. |
 | osgeo-concepts.ttl | Serialization (dataset) of all OSGeo concepts. |
-| osgeo-info.ttl | Serialization of term-related info for each resource (i.e., classification, clause, date accepted, entry status, & source). |
+| osgeo-info.ttl | Serialization of term-related info for each resource (i.e., classification, clause, date accepted, date amended, entry status, & source). |
 | osgeo-reviews.ttl | Serialization of review info for each resource (i.e., review date, decision, event, notes, & status). |
 | osgeo-lang-data.ttl | Ontology extension for languages; references Registries, ISO 639-1 two-letter abbreviation, labels, & notes. |
 | osgeo-ldapi.ttl | Serialization of linked data representations for each resource (i.e., json, json-ld, rdf/xml, and ttl formats). |
