@@ -13,7 +13,7 @@
 @prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
 @base <https://isotc211.geolexica.org/api/notes> .
 
-<https://isotc211.geolexica.org/api/notes> rdf:type dctype:Dataset ;
+<https://isotc211.geolexica.org/api/notes> rdf:type owl:Ontology ;
                                             owl:versionIRI <https://isotc211.geolexica.org/api/notes/v1.0/> ;
                                             rdfs:label "Notes RDF Dataset (MLGT)" ;
                                             dcterms:license "Copyright 2022 OSGeo" ;
@@ -47,6 +47,9 @@ geolexica:NoteUnavail rdf:type owl:Class .
 #    Individuals
 #################################################################
 
+###  https://isotc211.geolexica.org/api/notes#
+<https://isotc211.geolexica.org/api/notes#> rdf:type owl:NamedIndividual ,
+                                                    dctype:Dataset .
 
 ###  https://isotc211.geolexica.org/api/notes#DefnTransUnavail
 :DefnTransUnavail rdf:type owl:NamedIndividual ,

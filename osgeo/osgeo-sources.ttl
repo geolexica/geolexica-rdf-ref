@@ -1,4 +1,4 @@
-@prefix : <https://osgeo.geolexica.org/api/source#> .
+@prefix : <https://osgeo.geolexica.org/api/osgeo-source#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,10 +10,10 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix osgeo: <https://osgeo.geolexica.org/api/geolexica#> .
-@base <https://osgeo.geolexica.org/api/source#> .
+@base <https://osgeo.geolexica.org/api/osgeo-source#> .
 
-<https://osgeo.geolexica.org/api/source#> rdf:type dctype:Dataset ;
-        owl:versionIRI <https://osgeo.geolexica.org/api/source/v1.0/> ;
+<https://osgeo.geolexica.org/api/osgeo-source#> rdf:type owl:Ontology, dctype:Dataset ;
+        owl:versionIRI <https://osgeo.geolexica.org/api/osgeo-source/v1.0/> ;
         owl:imports <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
         dcterms:conformsTo <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
         dcterms:created "2022-03-18"^^xsd:date ;
@@ -21,8 +21,8 @@
         dcterms:license "Copyright 2022 OSGeo" ;
         dcterms:modified "2022-03-18"^^xsd:date ;
         dcterms:description "Sources RDF Dataset: OSGeo Glossary (Geolexica)"@en ;
-        vann:preferredNamespacePrefix "source" ;
-        vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/source#" ;
+        vann:preferredNamespacePrefix "osgeo-source" ;
+        vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/osgeo-source#" ;
         rdfs:label "Sources RDF Dataset: OSGeo Glossary (Geolexica)" .
 
 #################################################################
