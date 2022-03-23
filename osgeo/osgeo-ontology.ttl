@@ -262,6 +262,13 @@ dcterms:identifier a owl:DatatypeProperty ;
 	rdfs:domain :SKOS-RDF ;
 	rdfs:range xsd:anyURI ;
 	rdfs:label "osgeo:skosrdfURI property" .
+#
+# https://osgeo.geolexica.org/api/geolexica#skosrdfURI
+
+:termID a owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+	rdfs:range xsd:anyURI ;
+	rdfs:label "Term ID" .
 # 
 # https://osgeo.geolexica.org/api/geolexica#tbxisoxmlURI
 
