@@ -1,0 +1,1217 @@
+@prefix : <https://isotc211.geolexica.org/api/sources#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
+@base <https://isotc211.geolexica.org/api/sources#> .
+
+<https://isotc211.geolexica.org/api/sources#> rdf:type owl:Ontology ;
+        owl:versionIRI <https://isotc211.geolexica.org/api/sources/v1.0/> ;
+        owl:imports <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+        dcterms:conformsTo <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+        dcterms:created "2022-01-26"^^xsd:date ;
+    #   dcterms:issued " " ;
+        dcterms:license "Copyright 2022 OSGeo" ;
+        dcterms:modified "2022-02-12"^^xsd:date ;
+        dcterms:description "Sources RDF Dataset (MLGT)"@en ;
+        vann:preferredNamespacePrefix "sources" ;
+        vann:preferredNamespaceUri "https://isotc211.geolexica.org/api/sources#" ;
+        rdfs:label "Sources RDF Dataset (MLGT)" .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://isotc211.geolexica.org/api/sources#
+<https://isotc211.geolexica.org/api/sources#> rdf:type owl:NamedIndividual ,
+                                                    dctype:Dataset .
+                                                
+###  https://isotc211.geolexica.org/api/sources#Albota-2002
+:Albota-2002 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Albota 2002" ;
+                      skos:prefLabel "Albota 2002"@en .
+
+###  https://isotc211.geolexica.org/api/sources#ANSI-T1-523-2001
+:ANSI-T1-523-2001 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "ANSI T1.523-2001" ;
+                      skos:prefLabel "ANSI T1.523-2001"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Aull_et_al
+:Aull_et_al rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Aull et al. 2002" ;
+                      skos:prefLabel "Aull et al. 2002"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Booch_1999
+:Booch_1999 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Booch 1999" ;
+                      skos:prefLabel "Booch 1999"@en .
+
+###  https://isotc211.geolexica.org/api/sources#CEOS_WGCV
+:CEOS_WGCV rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "CEOS WGCV" ;
+                      skos:prefLabel "CEOS WGCV"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Dictionary_Computing
+:Dictionary_Computing rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Dictionary of Computing, Fourth Edition, Oxford University Press" ;
+                      skos:prefLabel "Dictionary of Computing, Fourth Edition, Oxford University Press"@en .
+
+###  https://isotc211.geolexica.org/api/sources#FindLaw
+:FindLaw rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "FindLaw" ;
+                      skos:prefLabel "FindLaw"@en .
+
+
+###  https://isotc211.geolexica.org/api/sources#Title-17-Sec-107
+:Title-17-Sec-107 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "U.S. legal term derived from Title 17 of the United States Code, Section 107" ;
+                      skos:prefLabel "U.S. legal term derived from Title 17 of the United States Code, Section 107"@en .
+
+###  https://isotc211.geolexica.org/api/sources#IAG_IUGG
+:IAG_IUGG rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "IAG and IUGG resolutions of 1991 and 2007" ;
+                      skos:prefLabel "IAG and IUGG resolutions of 1991 and 2007"@en .
+
+###  https://isotc211.geolexica.org/api/sources#IBM_Rational_System
+:IBM_Rational_System rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "IBM Rational System Developer" ;
+                      skos:prefLabel "IBM Rational System Developer"@en .
+
+###  https://isotc211.geolexica.org/api/sources#:IERS_Conv_2010
+:IERS_Conv_2010 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "IERS Conventions 2010" ;
+                      skos:prefLabel "IERS Conventions 2010"@en .
+
+###  https://isotc211.geolexica.org/api/sources#:IHO_Hydro_Dict
+:IHO_Hydro_Dict rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "IHO Hydrographic Dictionary" ;
+                      skos:prefLabel "IHO Hydrographic Dictionary"@en .
+
+
+###  https://isotc211.geolexica.org/api/sources#:Implem_Spec_St_Law
+:Implem_Spec_St_Law rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Implementation Specification — a Draught Information System for the St. Lawrence Seaway" ;
+                      skos:prefLabel "Implementation Specification — a Draught Information System for the St. Lawrence Seaway"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Jensen_1994
+:Jensen_1994 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Jensen et al., (1994)" ;
+                      skos:prefLabel "Jensen et al., (1994)"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Manual_Photogram
+:Manual_Photogram rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Manual of Photogrammetry" ;
+                      skos:prefLabel "Manual of Photogrammetry"@en .
+
+###  https://isotc211.geolexica.org/api/sources#New_Concepts_BASIS
+:New_Concepts_BASIS rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "New Concepts in BASIS Licensing" ;
+                      skos:prefLabel "New Concepts in BASIS Licensing"@en .
+
+###  https://isotc211.geolexica.org/api/sources#OWL
+:OWL rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "OWL Web Ontology Language Guide" ;
+                      skos:prefLabel "OWL Web Ontology Language Guide"@en .
+
+###  https://isotc211.geolexica.org/api/sources#RDF
+:RDF rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "RDF, Resource Description Framework" ;
+                      skos:prefLabel "RDF, Resource Description Framework"@en .
+
+###  https://isotc211.geolexica.org/api/sources#UPU_Standards_Glossary
+:UPU_Standards_Glossary rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "UPU Standards Glossary" ;
+                      skos:prefLabel "UPU Standards Glossary"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Palmer_Dodge_LLP
+:Palmer_Dodge_LLP rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "Derived from Palmer & Dodge, LLP" ;
+                      skos:prefLabel "Derived from Palmer & Dodge, LLP"@en .
+
+###  https://isotc211.geolexica.org/api/sources#NISTIR_7117
+:NISTIR_7117 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "NISTIR 7117" ;
+                      skos:prefLabel "NISTIR 7117"@en .
+
+###  https://isotc211.geolexica.org/api/sources#STM_E2544
+:ASTM_E2544 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "ASTM E2544" ;
+                      skos:prefLabel "ASTM E2544"@en .
+
+###  https://isotc211.geolexica.org/api/sources#OASIS-RAF
+:OASIS-RAF rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "OASIS RAF" ;
+                      skos:prefLabel "OASIS RAF"@en .
+
+###  https://isotc211.geolexica.org/api/sources#SOA-RAF
+:SOA-RAF rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "SOA-RAF" ;
+                      skos:prefLabel "SOA-RAF"@en .
+
+###  https://isotc211.geolexica.org/api/sources#STM_E2544
+:STM_E2544 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "STM E2544" ;
+                      skos:prefLabel "STM E2544"@en .
+
+###  https://isotc211.geolexica.org/api/sources#TR_Law_Dict
+:TR_Law_Dict rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      dcterms:source "http://dictionary.lp.findlaw.com/"^^xsd:anyURI ;
+                      rdfs:label "Thomson Reuters, “Law Dictionary,” FindLaw, for legal professionals, 2010, available at <http://dictionary.lp.findlaw.com/>" ;
+                      skos:prefLabel "Thomson Reuters, “Law Dictionary,” FindLaw, for legal professionals, 2010, available at <http://dictionary.lp.findlaw.com/>"@en .
+
+###  https://isotc211.geolexica.org/api/sources#searchcio-techtarget
+:searchcio-techtarget rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      dcterms:source "https://searchcio.techtarget.com/"^^xsd:anyURI ;
+                      rdfs:label "https://searchcio.techtarget.com/" ;
+                      skos:prefLabel "https://searchcio.techtarget.com/"@en .
+
+###  https://isotc211.geolexica.org/api/sources#XrML-2-spec
+:XrML-2-spec rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "XrML 2.0 specification" ;
+                      skos:prefLabel "XrML 2.0 specification"@en .
+
+###  https://isotc211.geolexica.org/api/sources#IEC-60050-845
+:IEC-60050-845 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "International Electrotechnical Vocabulary (IEV) - Part 845: Lighting"@en ;
+                  dcterms:source "https://webstore.iec.ch/publication/268"^^xsd:anyURI ;
+                  rdfs:label "IEC 60050-845:1987" .
+
+###  https://isotc211.geolexica.org/api/sources#IEC-88528-2004
+:IEC-88528-2004 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Reciprocating internal combustion engine driven alternating current generating sets - Part 11: Rotary uninterruptible power systems - Performance requirements and test methods"@en ;
+                  dcterms:source "https://webstore.iec.ch/publication/7512"^^xsd:anyURI ;
+                  rdfs:label "IEC 88528-11:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-31-2-1992
+:ISO-31-2-1992 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Quantities and units — Part 2: Periodic and related phenomena"@en ;
+                  dcterms:source "https://www.iso.org/standard/3626.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 31-2:1992" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-10241-2011
+:ISO-10241-2011 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Terminological entries in standards — Part 1: General requirements and examples of presentation"@en ;
+                  dcterms:source "https://www.iso.org/standard/40362.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 10241-1:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-10303-2005
+:ISO-10303-2005 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Industrial automation systems and integration — Product data representation and exchange — Part 227: Application protocol: Plant spatial configuration"@en ;
+                  dcterms:source "https://www.iso.org/standard/34006.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 10303-227:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-1996
+:ISO-10746-3-1996 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Information technology — Open Distributed Processing — Reference Model: Architecture"@en ;
+                  dcterms:source "https://www.iso.org/standard/20697.html"^^xsd:anyURI ;
+                  rdfs:label "ISO/IEC 10746-3:1996" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-1996
+:ISO-10746-2-2009 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Information technology — Open distributed processing — Reference model: Foundations — Part 2:"@en ;
+                  dcterms:source "https://www.iso.org/standard/55723.html"^^xsd:anyURI ;
+                  rdfs:label "ISO/IEC 10746-2:2009" .
+                
+###  https://isotc211.geolexica.org/api/sources#ISO-10746-3-2009
+:ISO-10746-3-2009 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Information technology — Open distributed processing — Reference model: Architecture — Part 3:"@en ;
+                  dcterms:source "https://www.iso.org/standard/55724.html"^^xsd:anyURI ;
+                  rdfs:label "ISO/IEC 10746-3:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19123-2018
+:ISO-19123-2018 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Schema for coverage geometry and functions — Part 2: Coverage implementation schema"@en ;
+                  dcterms:source "https://www.iso.org/standard/70948.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19123-2:2018" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-12620-1999
+:ISO-12620-1999 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Computer applications in terminology — Data categories"@en ;
+                  dcterms:source "https://www.iso.org/standard/2517.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 12620:1999" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-12718-2008
+:ISO-12718-2008 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Non-destructive testing — Eddy current testing — Vocabulary"@en ;
+                  dcterms:source "https://www.iso.org/standard/43738.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 12718:2008" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-14721-2012
+:ISO-14721-2012 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Space data and information transfer systems — Open archival information system (OAIS) — Reference model"@en ;
+                  dcterms:source "https://www.iso.org/standard/57284.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 14721:2012" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-1087-1-2000
+:ISO-1087-1-2000 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Terminology work — Vocabulary — Part 1: Theory and application"@en ;
+                 dcterms:source "https://www.iso.org/standard/20057.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 1087-1:2000" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19101-1-2014
+:ISO-19101-1-2014 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/59164.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-1:2014" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19101-2-2018
+:ISO-19101-2-2018 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Reference model — Part 2: Imagery"@en ;
+                  dcterms:source "https://www.iso.org/standard/69325.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19101-2:2018" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19101-2002
+:ISO-19101-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/26002.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19101:2002" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19103-2015
+:ISO-19103-2015 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Conceptual schema language"@en ;
+                dcterms:source "https://www.iso.org/standard/56734.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19103:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19103-2015
+:ISO-19104-2008 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Terminology"@en ;
+                dcterms:source "https://www.iso.org/standard/45020.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19104:2008" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19103-2015
+:ISO-19104-2016 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Terminology"@en ;
+                dcterms:source "https://www.iso.org/standard/63541.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19104:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19105-2000
+:ISO-19105-2000 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Conformance and testing"@en ;
+                dcterms:source "https://www.iso.org/standard/26010.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19105:2000" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19106-2004
+:ISO-19106-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19106:2004" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19107-2003
+:ISO-19107-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26012.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2003" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19107-2019
+:ISO-19107-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/66175.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19107:2019" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19108-2002
+:ISO-19108-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial schema"@en ;
+                dcterms:source "https://www.iso.org/standard/26013.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19108:2002" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19109-2005
+:ISO-19109-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                rdfs:label "ISO 19109:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19109-2015
+:ISO-19109-2015 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Rules for application schema"@en ;
+                dcterms:source "https://www.iso.org/standard/59193.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19109:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+:ISO-19110-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Methodology for feature cataloguing — Amendment 1"@en ;
+                dcterms:source "https://www.iso.org/standard/44459.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19110:2005/Amd 1:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+:ISO-19110-2016 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Methodology for feature cataloguing"@en ;
+                dcterms:source "https://www.iso.org/standard/57303.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19110:2016" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+:ISO-19111-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/41126.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2007" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2019
+:ISO-19111-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Referencing by coordinates"@en ;
+                dcterms:source "https://www.iso.org/standard/74039.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2-2009 
+:ISO-19111-2-2009 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by coordinates — Part 2: Extension for parametric values"@en ;
+                dcterms:source "https://www.iso.org/standard/44075.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19111-2:2009" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19112-2003
+:ISO-19112-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by geographic identifiers"@en ;
+                dcterms:source "https://www.iso.org/standard/26017.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19112:2003" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19112-2019
+:ISO-19112-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Spatial referencing by geographic identifiers"@en ;
+                dcterms:source "https://www.iso.org/standard/70742.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19112:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19113-2002
+:ISO-19113-2002 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Quality principles"@en ;
+                dcterms:source "https://www.iso.org/standard/26018.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19113:2002" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19114-2003
+:ISO-19114-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Quality evaluation procedures"@en ;
+                dcterms:source "https://www.iso.org/standard/26019.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19114:2003" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-1-2014
+:ISO-19115-1-2014 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Metadata — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/53798.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19115-1:2014" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-2-2009
+:ISO-19115-2-2009 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Metadata — Part 2: Extensions for imagery and gridded data"@en ;
+                  dcterms:source "https://www.iso.org/standard/39229.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19115-2:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-1-2014
+:ISO-19115-2-2019 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Metadata — Part 2: Extensions for acquisition and processing"@en ;
+                  dcterms:source "https://www.iso.org/standard/67039.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19115-2:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19115-2003
+:ISO-19115-2003 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Metadata"@en ;
+                dcterms:source "https://www.iso.org/standard/26020.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19115:2003" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19116-2004
+:ISO-19116-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/37805.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2004" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19116-2019
+:ISO-19116-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Positioning services"@en ;
+                dcterms:source "https://www.iso.org/standard/70882.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19116:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19117-2005
+:ISO-19117-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Portrayal"@en ;
+                dcterms:source "https://www.iso.org/standard/40395.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19117:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19117-2012
+:ISO-19117-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Portrayal"@en ;
+                dcterms:source "https://www.iso.org/standard/46226.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19117:2012" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19118-2005
+:ISO-19118-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Encoding"@en ;
+                dcterms:source "https://www.iso.org/standard/37796.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19118:2005" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19118-2011
+:ISO-19118-2011 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Encoding"@en ;
+                dcterms:source "https://www.iso.org/standard/44212.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19118:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19111-2007
+:ISO-19119-2016 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Services"@en ;
+                dcterms:source "https://www.iso.org/standard/59221.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19119:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19123-2005
+:ISO-19123-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Schema for coverage geometry and functions"@en ;
+                dcterms:source "https://www.iso.org/standard/40121.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19123:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19125-1-2004
+:ISO-19125-1-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Simple feature access — Part 1: Common architecture"@en ;
+                dcterms:source "https://www.iso.org/standard/40114.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19125-1:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19120-2001
+:ISO-19120-2001 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Functional standards"@en ;
+                dcterms:source "https://www.iso.org/standard/28928.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TR 19120:2001" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19125-2-2004
+:ISO-19125-2-2004 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Simple feature access — Part 2: SQL option"@en ;
+                dcterms:source "https://www.iso.org/standard/40115.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19125-2:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19126-2009
+:ISO-19126-2009 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Feature concept dictionaries and registers"@en ;
+                dcterms:source "https://www.iso.org/standard/44875.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19126:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19128-2005
+:ISO-19128-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Web map server interface"@en ;
+                dcterms:source "https://www.iso.org/standard/32546.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19128:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-TS-19129-2009
+:ISO-19129-2009 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Geographic information — Imagery, gridded and coverage data framework"@en ;
+                   dcterms:source "https://www.iso.org/standard/43041.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/TS 19129:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19130-2010
+:ISO-19130-2010 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information - Imagery sensor models for geopositioning"@en ;
+                dcterms:source "https://www.iso.org/standard/51789.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19130:2010" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19131-2007
+:ISO-19130-1-2018 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Imagery sensor models for geopositioning — Part 1: Fundamentals"@en ;
+                dcterms:source "https://www.iso.org/standard/66847.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19130-1-2018" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19130-2-2014
+:ISO-19130-2-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Imagery sensor models for geopositioning — Part 2: SAR, InSAR, lidar and sonar"@en ;
+                dcterms:source "https://www.iso.org/standard/56113.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19130-2:2014" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19131-2007
+:ISO-19131-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Data product specifications"@en ;
+                dcterms:source "https://www.iso.org/standard/36760.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19131:2007" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19132-2007
+:ISO-19132-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/40601.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19132:2007" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19133-2005
+:ISO-19133-2005 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Tracking and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32551.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19133:2005" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19133-2005
+:ISO-19134-2007 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Location-based services — Multimodal routing and navigation"@en ;
+                dcterms:source "https://www.iso.org/standard/32552.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19134:2007" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19135-1-2015
+:ISO-19135-2005 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Procedures for item registration"@en ;
+                  dcterms:source "https://www.iso.org/standard/32553.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19135:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19135-1-2015
+:ISO-19135-1-2015 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Procedures for item registration — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/54721.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19135-1:2015" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-2-2015
+:ISO-19136-2-2015 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 2: Extended schemas and encoding rules"@en ;
+                  dcterms:source "https://www.iso.org/standard/61585.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-2:2015" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-2007
+:ISO-19136-2007 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML)"@en ;
+                  dcterms:source "https://www.iso.org/standard/32554.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136:2007" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
+:ISO-19136-1-2020 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals"@en ;
+                  dcterms:source "https://www.iso.org/standard/75676.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19136-1:2020" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
+:ISO-19138-2006 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Data quality measures"@en ;
+                  dcterms:source "https://www.iso.org/standard/32556.html"^^xsd:anyURI ;
+                  rdfs:label "ISO/TS 19138:2006" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19136-1-2020
+:ISO-19141-2008 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Schema for moving features"@en ;
+                  dcterms:source "https://www.iso.org/standard/41445.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19141:2008" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19142-2010
+:ISO-19142-2010 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Web Feature Service"@en ;
+                  dcterms:source "https://www.iso.org/standard/42136.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19142:2010" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19143-2010
+:ISO-19143-2010 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Filter encoding"@en ;
+                  dcterms:source "https://www.iso.org/standard/42137.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19143:2010" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19144-1-2009
+:ISO-19144-1-2009 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Classification systems — Part 1: Classification system structure"@en ;
+                  dcterms:source "https://www.iso.org/standard/32562.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19144-1:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19144-2-2012
+:ISO-19144-2-2012 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information - Classification systems — Part 2: Land Cover Meta Language (LCML)"@en ;
+                  dcterms:source "https://www.iso.org/standard/44342.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19144-2:2012" .
+
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19145-2013
+:ISO-19145-2013 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Registry of representations of geographic point location"@en ;
+                  dcterms:source "https://www.iso.org/standard/32563.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19145:2013" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19146-2010
+:ISO-19146-2010 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Cross-domain vocabularies"@en ;
+                  dcterms:source "https://www.iso.org/standard/44873.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19146:2010" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19146-2018
+:ISO-19146-2018 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Cross-domain vocabularies"@en ;
+                  dcterms:source "https://www.iso.org/standard/72217.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19146:2018" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19147-2015
+:ISO-19147-2015 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Transfer Nodes"@en ;
+                  dcterms:source "https://www.iso.org/standard/44874.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19147:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-19148-2012
+:ISO-19148-2012 rdf:type owl:NamedIndividual ,
+                           geolexica:Source ;
+                  dcterms:description "Geographic information — Linear referencing"@en ;
+                  dcterms:source "https://www.iso.org/standard/32566.html"^^xsd:anyURI ;
+                  rdfs:label "ISO 19148:2012" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19150-2019
+:ISO-19150-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Ontology — Part 4: Service ontology"@en ;
+                dcterms:source "https://www.iso.org/standard/72177.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19150-4:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19150-2015
+:ISO-19150-2015 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Ontology — Part 2: Rules for developing ontologies in the Web Ontology Language (OWL)"@en ;
+                dcterms:source "https://www.iso.org/standard/57466.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19150-2:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19152-2012
+:ISO-19152-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Land Administration Domain Model (LADM)"@en ;
+                dcterms:source "https://www.iso.org/standard/51206.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19152:2012" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19153-2014
+:ISO-19153-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geospatial Digital Rights Management Reference Model (GeoDRM RM)"@en ;
+                dcterms:source "https://www.iso.org/standard/32571.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19153:2014" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19154-2014
+:ISO-19154-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Ubiquitous public access — Reference model"@en ;
+                dcterms:source "https://www.iso.org/standard/32572.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19154:2014" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19155-2012
+:ISO-19155-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Place Identifier (PI) architecture"@en ;
+                dcterms:source "https://www.iso.org/standard/32573.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19155:2012" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19155-2017
+:ISO-19155-2017 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Place Identifier (PI) architecture — Part 2: Place Identifier (PI) linking"@en ;
+                dcterms:source "https://www.iso.org/standard/63593.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19155-2:2017" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19157-2013
+:ISO-19156-2011 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Observations and measurements"@en ;
+                dcterms:source "https://www.iso.org/standard/32574.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19156:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19157-2013
+:ISO-19157-2013 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Data quality"@en ;
+                dcterms:source "https://www.iso.org/standard/32575.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19157:2013" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19158-2012
+:ISO-19158-2012 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Quality assurance of data supply"@en ;
+                dcterms:source "https://www.iso.org/standard/32576.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19158:2012" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19159-2014
+:ISO-19159-2014 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Calibration and validation of remote sensing imagery sensors and data — Part 1: Optical sensors"@en ;
+                dcterms:source "https://www.iso.org/standard/60080.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19159-1:2014" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19159-2018
+:ISO-19159-2018 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Calibration and validation of remote sensing imagery sensors and data — Part 3: SAR/InSAR"@en ;
+                dcterms:source "https://www.iso.org/standard/74032.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19159-3:2018" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19159-2016
+:ISO-19159-2016 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Calibration and validation of remote sensing imagery sensors and data — Part 2: Lidar"@en ;
+                dcterms:source "https://www.iso.org/standard/64768.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19159-2:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19160-2015
+:ISO-19160-2015 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Addressing — Part 1: Conceptual model"@en ;
+                dcterms:source "https://www.iso.org/standard/61710.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19160-1:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19161-2020
+:ISO-19161-2020 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                # dcterms:description " "@en ;
+                # dcterms:source " "^^xsd:anyURI ;
+                rdfs:label "ISO 19161-1:2020" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19160-2017
+:ISO-19160-2017 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Addressing — Part 4: International postal address components and template language"@en ;
+                dcterms:source "https://www.iso.org/standard/64242.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19160-4:2017" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19162-2015
+:ISO-19162-2015 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Well-known text representation of coordinate reference systems"@en ;
+                dcterms:source "https://www.iso.org/standard/63094.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19162:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19162-2019
+:ISO-19162-2019 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Well-known text representation of coordinate reference systems"@en ;
+                dcterms:source "https://www.iso.org/standard/76496.html"^^xsd:anyURI ;
+                rdfs:label "ISO 19162:2019" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-19163-2016
+:ISO-19163-2016 rdf:type owl:NamedIndividual ,
+                         geolexica:Source ;
+                dcterms:description "Geographic information — Content components and encoding rules for imagery and gridded data — Part 1: Content model"@en ;
+                dcterms:source "https://www.iso.org/standard/32581.html"^^xsd:anyURI ;
+                rdfs:label "ISO/TS 19163-1:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-2859-1
+:ISO-2859-1 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Sampling procedures for inspection by attributes — Part 1: Sampling schemes indexed by acceptance quality limit (AQL) for lot-by-lot inspection"@en ;
+                 dcterms:source "https://www.iso.org/standard/1141.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 2859-1" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-2859-5
+:ISO-2859-5 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Sampling procedures for inspection by attributes — Part 5: System of sequential sampling plans indexed by acceptance quality limit (AQL) for lot-by-lot inspection"@en ;
+                 dcterms:source "https://www.iso.org/standard/39295.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 2859-5:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-21000-5
+:ISO-21000-5 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Information technology — Multimedia framework (MPEG-21) — Part 5: Rights Expression Language"@en ;
+                 dcterms:source "https://www.iso.org/standard/36095.html"^^xsd:anyURI ;
+                 rdfs:label "ISO/IEC 21000-5:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-21000-1-2004
+:ISO-21000-1-2004 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Information technology — Multimedia framework (MPEG-21) — Part 1: Vision, Technologies and Strategy"@en ;
+                 dcterms:source "https://www.iso.org/standard/40611.html"^^xsd:anyURI ;
+                 rdfs:label "ISO/IEC TR 21000-1:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-22028-1-2016
+:ISO-22028-1-2016 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Photography and graphic technology — Extended colour encodings for digital image storage, manipulation and interchange — Part 1: Architecture and requirements"@en ;
+                 dcterms:source "https://www.iso.org/standard/68761.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 22028-1:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-24619-2011
+:ISO-24619-2011 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Language resource management — Persistent identification and sustainable access (PISA)"@en ;
+                 dcterms:source "https://www.iso.org/standard/37333.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 24619:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-22028-1-2016
+:ISO-27790-2009 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Health informatics — Document registry framework"@en ;
+                 dcterms:source "https://www.iso.org/standard/44316.html"^^xsd:anyURI ;
+                 rdfs:label "ISO/TS 27790:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-3534-1-1993
+:ISO-3534-1-1993 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Statistics — Vocabulary and symbols — Part 1: Probability and general statistical terms"@en ;
+                 dcterms:source "https://www.iso.org/standard/8919.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 3534-1:1993" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-3534-2-2006
+:ISO-3534-2-2006 rdf:type owl:NamedIndividual ,
+                          geolexica:Source ;
+                 dcterms:description "Statistics — Vocabulary and symbols — Part 2: Applied statistics"@en ;
+                 dcterms:source "https://www.iso.org/standard/40147.html"^^xsd:anyURI ;
+                 rdfs:label "ISO 3534-2:2006" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-5127-2001
+:ISO-5127-2001 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information and documentation — Vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/33636.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 5127:2001" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-6709-2008
+:ISO-6709-2008 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Standard representation of geographic point location by coordinates"@en ;
+                   dcterms:source "https://www.iso.org/standard/39242.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 6709:2008" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-860-2007
+:ISO-860-2007 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Terminology work — Harmonization of concepts and terms"@en ;
+                   dcterms:source "https://www.iso.org/standard/40130.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 860:2007" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-8601-2000
+:ISO-8601-2000 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Data elements and interchange formats — Information interchange — Representation of dates and times"@en ;
+                   dcterms:source "https://www.iso.org/standard/26780.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 8601:2000" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-8601-2000
+:ISO-80000-7-2008 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "ISO 80000-7:2008 Quantities and units — Part 7: Light"@en ;
+                   dcterms:source "https://www.iso.org/standard/31892.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 80000-7:2008" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-9000-2005
+:ISO-9000-2005 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Quality management systems — Fundamentals and vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/42180.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 9000:2005" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-9000-2015
+:ISO-9000-2015 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Quality management systems — Fundamentals and vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/45481.html"^^xsd:anyURI ;
+                   rdfs:label "ISO 9000:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-9075-2011
+:ISO-9075-2011 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Database languages — SQL — Part 2: Foundation (SQL/Foundation)"@en ;
+                   dcterms:source "https://www.iso.org/standard/53682.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 9075-2:2011" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-9075-2016
+:ISO-9075-2016 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Database languages — SQL — Part 2: Foundation (SQL/Foundation)"@en ;
+                   dcterms:source "https://www.iso.org/standard/63556.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 9075-2:2016" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501
+:ISO-IEC-19501 rdf:type owl:NamedIndividual ,
+                        geolexica:Source ;
+               dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+               dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+               rdfs:label "ISO/IEC 19501" .
+
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-10000-1-1998
+:ISO-10000-1-1998 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    dcterms:description "Information technology — Framework and taxonomy of International Standardized Profiles — Part 1: General principles and documentation framework"@en ;
+                    dcterms:source "https://www.iso.org/standard/30726.html"^^xsd:anyURI ;
+                    rdfs:label "ISO/IEC TR 10000-1:1998" .
+
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-IEC-10746-2009
+:ISO-IEC-10746-2009 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    dcterms:description "Information technology — Open distributed processing — Reference model: Foundations — Part 2:"@en ;
+                    dcterms:source "https://www.iso.org/standard/55723.html"^^xsd:anyURI ;
+                    rdfs:label "ISO/IEC 10746-2:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-IEC-10746-3-2009
+:ISO-IEC-10746-3-2009 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    dcterms:description "Information technology — Open distributed processing — Reference model: Architecture — Part 3:"@en ;
+                    dcterms:source "https://www.iso.org/standard/55724.html"^^xsd:anyURI ;
+                    rdfs:label "ISO/IEC 10746-3:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#:ISO-IEC-10746-3-2015
+:ISO-IEC-10746-2015 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    rdfs:label "ISO/IEC 10746-3:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-19501-2005
+:ISO-IEC-19501-2005 rdf:type owl:NamedIndividual ,
+                             geolexica:Source ;
+                    dcterms:description "Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2"@en ;
+                    dcterms:source "https://www.iso.org/standard/32620.html"^^xsd:anyURI ;
+                    rdfs:label "ISO/IEC 19501:2005" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-1-1993
+:ISO-IEC-2382-1993 rdf:type owl:NamedIndividual ,
+                              geolexica:Source ;
+                     dcterms:description "Information technology — Vocabulary"@en ;
+                     dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI ;
+                     rdfs:label "ISO/IEC 2382-1:1993" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-2015
+:ISO-IEC-2382-2009 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 2382:2009, 2121317" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-1999
+:ISO-IEC-2382-1999 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Vocabulary — Part 15: Programming languages"@en ;
+                   dcterms:source "https://www.iso.org/standard/7257.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 2382-15:1999" .
+
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-2382-2015
+:ISO-IEC-2382-2015 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/63598.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC 2382:2015" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-IEC-9945-2009
+:ISO-IEC-9945-2009 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Information technology — Portable Operating System Interface (POSIX®) Base Specifications, Issue 7"@en ;
+                   dcterms:source "https://www.iso.org/standard/50516.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC/IEEE 9945:2009" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-Guide-2-2004
+:ISO-Guide-2-2004 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "Standardization and related activities — General vocabulary"@en ;
+                   dcterms:source "https://www.iso.org/standard/39976.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC Guide 2:2004" .
+
+###  https://isotc211.geolexica.org/api/sources#ISO-Guide-99-2007
+:ISO-Guide-99-2007 rdf:type owl:NamedIndividual ,
+                            geolexica:Source ;
+                   dcterms:description "International vocabulary of metrology — Basic and general concepts and associated terms (VIM)"@en ;
+                   dcterms:source "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
+                   rdfs:label "ISO/IEC Guide 99:2007" .
+
+###  https://isotc211.geolexica.org/api/sources#ITU-R-686-1
+:ITU-R-686-1 rdf:type owl:NamedIndividual ,
+                      geolexica:Source ;
+             rdfs:comment "Need source URI"@en ;
+             rdfs:label "ITU-R Rec.TF.686-1 , (1997)" ;
+             skos:prefLabel "ITU-R Rec.TF.686-1 , (1997)"@en .
+
+###  https://isotc211.geolexica.org/api/sources#Dictionary_Computing
+:UML_Semantics rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "OMG/UML UML Semantics, version 1.3, 1997." ;
+                      skos:prefLabel "OMG/UML UML Semantics, version 1.3, 1997."@en .
+
+###  https://isotc211.geolexica.org/api/sources#UML-1x
+:UML-1x rdf:type owl:NamedIndividual ,
+                 geolexica:Source ;
+        dcterms:description "The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system."@en ;
+        dcterms:source "https://www.omg.org/spec/UML/1.1/"^^xsd:anyURI ;
+        rdfs:comment "Earliest 1.x version: https://www.omg.org/spec/UML/1.1/"@en ;
+        rdfs:label "Unified Modeling Language 1.x" ;
+        skos:prefLabel "UML 1"@en .
+
+###  https://isotc211.geolexica.org/api/sources#UML-2
+:UML-2 rdf:type owl:NamedIndividual ,
+                 geolexica:Source ;
+        dcterms:description "The Unified Modeling Language (UML) is a language for specifying, constructing, visualizing, and documenting the artifacts of a software-intensive system."@en ;
+        dcterms:source "https://www.omg.org/spec/UML/2.0/"^^xsd:anyURI ;
+        rdfs:label "Unified Modeling Language 2.0" ;
+        skos:prefLabel "UML 2.0"@en .
+
+###  https://isotc211.geolexica.org/api/sources#UNFAO-LCCS-2005
+:UNFAO-LCCS-2005 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "UNFAO LCCS 2:2005" ;
+                      skos:prefLabel "UNFAO LCCS 2:2005"@en .
+
+###  https://isotc211.geolexica.org/api/sources#UN-ECE-2004
+:UN-ECE-2004 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "UN/ECE, 2004" ;
+                      skos:prefLabel "UN/ECE, 2004"@en .
+
+###  https://isotc211.geolexica.org/api/sources#VIM_1993
+:VIM_1993 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "VIM:1993" ;
+                      skos:prefLabel "VIM:1993"@en .
+
+###  https://isotc211.geolexica.org/api/sources#VIM_Derived
+:VIM_Derived rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en , "See VIM:1993"@en ;
+                      rdfs:label "Derived from VIM" ;
+                      skos:prefLabel "Derived from VIM"@en .
+
+###  https://isotc211.geolexica.org/api/sources#W3C-XLink-2001
+:W3C-XLink-2001 rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "W3C XLink:2001" ;
+                      skos:prefLabel "W3C XLink:2001"@en .
+
+###  https://isotc211.geolexica.org/api/sources#W3C-XML
+:W3C-XML rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "W3C XML" ;
+                      skos:prefLabel "W3C XML"@en .
+
+###  https://isotc211.geolexica.org/api/sources#W3C-XML
+:W3C-Web-Srvc-Gloss rdf:type owl:NamedIndividual ,
+                               geolexica:Source ;
+                      rdfs:comment "Need source URI"@en ;
+                      rdfs:label "W3C, Web Services Glossary" ;
+                      skos:prefLabel "W3C, Web Services Glossary"@en .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
