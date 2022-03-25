@@ -1,4 +1,4 @@
-@prefix : <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix : <https://osgeo.geolexica.org/api/osgeo-lang/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,17 +11,18 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix osgeo: <https://osgeo.geolexica.org/api/geolexica#> .
-@base <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@base <https://osgeo.geolexica.org/api/osgeo-lang> .
 
-<https://osgeo.geolexica.org/api/osgeo-lang#> rdf:type owl:Ontology, dctype:Dataset ;
+<https://osgeo.geolexica.org/api/osgeo-lang/> rdf:type owl:Ontology, dctype:Dataset ;
                                                 owl:versionIRI <https://osgeo.geolexica.org/api/osgeo-lang/v1.0/> ;
+                                                owl:imports <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
                                                 dcterms:created "2022-03-18"^^xsd:date ;
                                                 # dcterms:issued " " ;
                                                 dcterms:license "Copyright 2022 OSGeo" ;
                                                 dcterms:modified "2022-03-18"^^xsd:date ;
                                                 dcterms:title "Language Reference RDF Dataset: OSGeo Glossary (Geolexica)"@en ;
                                                 vann:preferredNamespacePrefix "osgeo-lang" ;
-                                                vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/osgeo-lang#" ;
+                                                vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/osgeo-lang/" ;
                                                 rdfs:label "Language Reference RDF Dataset: OSGeo Glossary (Geolexica)" .
 
 

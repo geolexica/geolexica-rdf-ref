@@ -1,4 +1,4 @@
-@prefix : <https://osgeo.geolexica.org/api/osgeo-ldapi#> .
+@prefix : <https://osgeo.geolexica.org/api/osgeo-ldapi/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,9 +11,9 @@
 @prefix osgeo: <https://osgeo.geolexica.org/api/geolexica#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://osgeo.geolexica.org/api/osgeo-ldapi#> .
+@base <https://osgeo.geolexica.org/api/osgeo-ldapi> .
 
-<https://osgeo.geolexica.org/api/osgeo-ldapi#> rdf:type owl:Ontology, dctype:Dataset ;
+<https://osgeo.geolexica.org/api/osgeo-ldapi/> rdf:type owl:Ontology, dctype:Dataset ;
                                                 owl:versionIRI <https://osgeo.geolexica.org/api/osgeo-ldapi/v1.0> ;
                                                 owl:imports <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
                                                 dcterms:created "2022-03-18"^^xsd:date ;
@@ -21,16 +21,9 @@
                                                 dcterms:modified "2022-03-18"^^xsd:date ;
                                                 dcterms:title "Linked Data API Dataset: OSGeo Glossary (Geolexica)"@en ;
                                                 vann:preferredNamespacePrefix "osgeo-ldapi" ;
-                                                vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/osgeo-ldapi#" ;
+                                                vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/osgeo-ldapi/" ;
                                                 rdfs:label "Linked Data API Dataset: OSGeo Glossary (Geolexica)"@en .
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://purl.org/dc/dcmitype/Dataset
-dctype:Dataset rdf:type owl:Class .
-
+                                                
 
 #################################################################
 #    Individuals
