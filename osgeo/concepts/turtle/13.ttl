@@ -1,0 +1,52 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/13/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/13/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "Anti-Grain Geometry" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-13" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/13/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c13    a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "Anti-Grain Geometry" ;
+        dcterms:identifier    "13"^^xsd:integer ;
+        skos:definition       "graphic rendering engine, supporting sub-pixel anti-aliasing, for MapServer 5.0 or greater"@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "13"^^xsd:integer ;
+        skos:prefLabel        "Anti-Grain Geometry"@en ;
+        osgeo:abbreviation    "AGG" ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:hasInfo         osgeo-info:Info13 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi13-skosrdf , osgeo-ldapi:ldapi13-rdfxml , osgeo-ldapi:ldapi13-jsonld , osgeo-ldapi:ldapi13-json ;
+        osgeo:hasOrigin       "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI , osgeo-lang:engRegistry ;
+        osgeo:hasReview       osgeo-review:Review13 ;
+        osgeo:hasSource       "https://mapserver.org/glossary.html" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/13.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/13.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/13.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/13.ttl"^^xsd:anyURI .
+
+############################################################

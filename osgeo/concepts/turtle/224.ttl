@@ -1,5 +1,5 @@
 
-@prefix :  <https://osgeo.geolexica.org/concepts/2/> .
+@prefix :  <https://osgeo.geolexica.org/concepts/224/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -17,37 +17,37 @@
 @prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
 
 
-<https://osgeo.geolexica.org/concepts/2/>
+<https://osgeo.geolexica.org/concepts/224/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-03-25"^^xsd:date ;
-        dcterms:title                  "3D Information Management Domain Working Group" ;
-        vann:preferredNamespacePrefix  "osgeo-concept-2" ;
-        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/2/" ;
+        dcterms:title                  "Location Organizer Folder" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-224" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/224/" ;
         owl:imports                    <https://osgeo.geolexica.org/geolexica> .
 
 ############################################################
 
-:c2     a                     skos:Concept , owl:NamedIndividual ;
-        rdfs:label            "3D Information Management Domain Working Group" ;
-        dcterms:identifier    "2"^^xsd:integer ;
+:c224   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "Location Organizer Folder" ;
+        dcterms:identifier    "224"^^xsd:integer ;
         skos:definition       "Definition not provided in this language."@en ;
         skos:inScheme         osgeo:OSGeoConceptScheme ;
-        skos:notation         "2"^^xsd:integer ;
-        skos:prefLabel        "3D Information Management Domain Working Group"@en ;
-        osgeo:abbreviation    "3DIM DWG" ;
+        skos:notation         "224"^^xsd:integer ;
+        skos:prefLabel        "Location Organizer Folder"@en ;
+        osgeo:abbreviation    "LOS" ;
         osgeo:classification  "preferred"@en ;
-        osgeo:hasInfo         osgeo-info:Info2 ;
-        osgeo:hasLDAPI        osgeo-ldapi:ldapi2-jsonld , osgeo-ldapi:ldapi2-skosrdf , osgeo-ldapi:ldapi2-rdfxml , osgeo-ldapi:ldapi2-json ;
-        osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
-        osgeo:hasReview       osgeo-review:Review2 ;
+        osgeo:hasInfo         osgeo-info:Info224 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi224-json , osgeo-ldapi:ldapi224-skosrdf , osgeo-ldapi:ldapi224-jsonld , osgeo-ldapi:ldapi224-rdfxml ;
+        osgeo:hasOrigin       "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI , osgeo-lang:engRegistry ;
+        osgeo:hasReview       osgeo-review:Review224 ;
         osgeo:hasSource       "https://www.opengeospatial.org/acronyms" ;
-        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/2.json"^^xsd:anyURI ;
-        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/2.jsonld"^^xsd:anyURI ;
-        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/2.rdf"^^xsd:anyURI ;
-        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/2.ttl"^^xsd:anyURI ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/224.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/224.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/224.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/224.ttl"^^xsd:anyURI ;
         osgeo-lang:eng-note   osgeo-note:DefnTransUnavail .
 
 ############################################################

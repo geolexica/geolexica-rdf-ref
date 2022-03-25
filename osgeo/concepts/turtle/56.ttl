@@ -1,0 +1,53 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/56/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/56/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "Content Standard for Digital Geospatial Metadata" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-56" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/56/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c56    a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "Content Standard for Digital Geospatial Metadata" ;
+        dcterms:identifier    "56"^^xsd:integer ;
+        skos:definition       "determines metadata that exists in a geographical position and how to access to them"@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "56"^^xsd:integer ;
+        skos:prefLabel        "Content Standard for Digital Geospatial Metadata"@en ;
+        osgeo:abbreviation    "CSDGM" ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:hasInfo         osgeo-info:Info56 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi56-json , osgeo-ldapi:ldapi56-jsonld , osgeo-ldapi:ldapi56-skosrdf , osgeo-ldapi:ldapi56-rdfxml ;
+        osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+        osgeo:hasReview       osgeo-review:Review56 ;
+        osgeo:hasSource       "https://joinup.ec.europa.eu/sites/default/files/document/2011-12/gvsig-1_0-man-v1-en_01.pdf" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/56.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/56.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/56.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/56.ttl"^^xsd:anyURI ;
+        osgeo-lang:eng-note   "Note to entry:  Does not dictate how to organize the data in a computer nor which software to use."@en .
+
+############################################################

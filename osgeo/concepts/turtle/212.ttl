@@ -1,5 +1,5 @@
 
-@prefix :  <https://osgeo.geolexica.org/concepts/2/> .
+@prefix :  <https://osgeo.geolexica.org/concepts/212/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -17,37 +17,36 @@
 @prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
 
 
-<https://osgeo.geolexica.org/concepts/2/>
+<https://osgeo.geolexica.org/concepts/212/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-03-25"^^xsd:date ;
-        dcterms:title                  "3D Information Management Domain Working Group" ;
-        vann:preferredNamespacePrefix  "osgeo-concept-2" ;
-        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/2/" ;
+        dcterms:title                  "JavaServer Page Template Library" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-212" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/212/" ;
         owl:imports                    <https://osgeo.geolexica.org/geolexica> .
 
 ############################################################
 
-:c2     a                     skos:Concept , owl:NamedIndividual ;
-        rdfs:label            "3D Information Management Domain Working Group" ;
-        dcterms:identifier    "2"^^xsd:integer ;
-        skos:definition       "Definition not provided in this language."@en ;
+:c212   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "JavaServer Page Template Library" ;
+        dcterms:identifier    "212"^^xsd:integer ;
+        skos:definition       "JSP tag library that encapsulates many of the standard functions handled in JSP"@en ;
         skos:inScheme         osgeo:OSGeoConceptScheme ;
-        skos:notation         "2"^^xsd:integer ;
-        skos:prefLabel        "3D Information Management Domain Working Group"@en ;
-        osgeo:abbreviation    "3DIM DWG" ;
+        skos:notation         "212"^^xsd:integer ;
+        skos:prefLabel        "JavaServer Page Template Library"@en ;
+        osgeo:abbreviation    "JSTL" ;
         osgeo:classification  "preferred"@en ;
-        osgeo:hasInfo         osgeo-info:Info2 ;
-        osgeo:hasLDAPI        osgeo-ldapi:ldapi2-jsonld , osgeo-ldapi:ldapi2-skosrdf , osgeo-ldapi:ldapi2-rdfxml , osgeo-ldapi:ldapi2-json ;
+        osgeo:hasInfo         osgeo-info:Info212 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi212-jsonld , osgeo-ldapi:ldapi212-json , osgeo-ldapi:ldapi212-skosrdf , osgeo-ldapi:ldapi212-rdfxml ;
         osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
-        osgeo:hasReview       osgeo-review:Review2 ;
+        osgeo:hasReview       osgeo-review:Review212 ;
         osgeo:hasSource       "https://www.opengeospatial.org/acronyms" ;
-        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/2.json"^^xsd:anyURI ;
-        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/2.jsonld"^^xsd:anyURI ;
-        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/2.rdf"^^xsd:anyURI ;
-        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/2.ttl"^^xsd:anyURI ;
-        osgeo-lang:eng-note   osgeo-note:DefnTransUnavail .
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/212.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/212.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/212.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/212.ttl"^^xsd:anyURI .
 
 ############################################################

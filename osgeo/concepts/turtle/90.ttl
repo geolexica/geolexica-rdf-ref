@@ -1,5 +1,5 @@
 
-@prefix :  <https://osgeo.geolexica.org/concepts/2/> .
+@prefix :  <https://osgeo.geolexica.org/concepts/90/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -17,37 +17,35 @@
 @prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
 
 
-<https://osgeo.geolexica.org/concepts/2/>
+<https://osgeo.geolexica.org/concepts/90/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-03-25"^^xsd:date ;
-        dcterms:title                  "3D Information Management Domain Working Group" ;
-        vann:preferredNamespacePrefix  "osgeo-concept-2" ;
-        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/2/" ;
+        dcterms:title                  "DWG file" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-90" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/90/" ;
         owl:imports                    <https://osgeo.geolexica.org/geolexica> .
 
 ############################################################
 
-:c2     a                     skos:Concept , owl:NamedIndividual ;
-        rdfs:label            "3D Information Management Domain Working Group" ;
-        dcterms:identifier    "2"^^xsd:integer ;
-        skos:definition       "Definition not provided in this language."@en ;
+:c90    a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "DWG file" ;
+        dcterms:identifier    "90"^^xsd:integer ;
+        skos:definition       "binary file format used for containing 2D and 3D design data"@en ;
         skos:inScheme         osgeo:OSGeoConceptScheme ;
-        skos:notation         "2"^^xsd:integer ;
-        skos:prefLabel        "3D Information Management Domain Working Group"@en ;
-        osgeo:abbreviation    "3DIM DWG" ;
+        skos:notation         "90"^^xsd:integer ;
+        skos:prefLabel        "DWG file"@en ;
         osgeo:classification  "preferred"@en ;
-        osgeo:hasInfo         osgeo-info:Info2 ;
-        osgeo:hasLDAPI        osgeo-ldapi:ldapi2-jsonld , osgeo-ldapi:ldapi2-skosrdf , osgeo-ldapi:ldapi2-rdfxml , osgeo-ldapi:ldapi2-json ;
+        osgeo:hasInfo         osgeo-info:Info90 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi90-rdfxml , osgeo-ldapi:ldapi90-skosrdf , osgeo-ldapi:ldapi90-json , osgeo-ldapi:ldapi90-jsonld ;
         osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
-        osgeo:hasReview       osgeo-review:Review2 ;
-        osgeo:hasSource       "https://www.opengeospatial.org/acronyms" ;
-        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/2.json"^^xsd:anyURI ;
-        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/2.jsonld"^^xsd:anyURI ;
-        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/2.rdf"^^xsd:anyURI ;
-        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/2.ttl"^^xsd:anyURI ;
-        osgeo-lang:eng-note   osgeo-note:DefnTransUnavail .
+        osgeo:hasReview       osgeo-review:Review90 ;
+        osgeo:hasSource       "https://www.osgeo.org/initiatives/geo-for-all/geo-newsletters-archive/" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/90.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/90.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/90.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/90.ttl"^^xsd:anyURI .
 
 ############################################################

@@ -1,5 +1,5 @@
 
-@prefix :  <https://osgeo.geolexica.org/concepts/2/> .
+@prefix :  <https://osgeo.geolexica.org/concepts/50/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
@@ -17,37 +17,36 @@
 @prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
 
 
-<https://osgeo.geolexica.org/concepts/2/>
+<https://osgeo.geolexica.org/concepts/50/>
         a                              dctype:Dataset ;
         dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
         dcterms:created                "2022-01-20"^^xsd:date ;
         dcterms:license                "Copyright 2022 OSGeo" ;
         dcterms:modified               "2022-03-25"^^xsd:date ;
-        dcterms:title                  "3D Information Management Domain Working Group" ;
-        vann:preferredNamespacePrefix  "osgeo-concept-2" ;
-        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/2/" ;
+        dcterms:title                  "compression" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-50" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/50/" ;
         owl:imports                    <https://osgeo.geolexica.org/geolexica> .
 
 ############################################################
 
-:c2     a                     skos:Concept , owl:NamedIndividual ;
-        rdfs:label            "3D Information Management Domain Working Group" ;
-        dcterms:identifier    "2"^^xsd:integer ;
-        skos:definition       "Definition not provided in this language."@en ;
+:c50    a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "compression" ;
+        dcterms:identifier    "50"^^xsd:integer ;
+        skos:definition       "technique used to reduce the space used by data"@en ;
         skos:inScheme         osgeo:OSGeoConceptScheme ;
-        skos:notation         "2"^^xsd:integer ;
-        skos:prefLabel        "3D Information Management Domain Working Group"@en ;
-        osgeo:abbreviation    "3DIM DWG" ;
+        skos:notation         "50"^^xsd:integer ;
+        skos:prefLabel        "compression"@en ;
         osgeo:classification  "preferred"@en ;
-        osgeo:hasInfo         osgeo-info:Info2 ;
-        osgeo:hasLDAPI        osgeo-ldapi:ldapi2-jsonld , osgeo-ldapi:ldapi2-skosrdf , osgeo-ldapi:ldapi2-rdfxml , osgeo-ldapi:ldapi2-json ;
+        osgeo:example         "EXAMPLE: GIF and JPG for the digital images respectively."@en ;
+        osgeo:hasInfo         osgeo-info:Info50 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi50-jsonld , osgeo-ldapi:ldapi50-rdfxml , osgeo-ldapi:ldapi50-skosrdf , osgeo-ldapi:ldapi50-json ;
         osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
-        osgeo:hasReview       osgeo-review:Review2 ;
-        osgeo:hasSource       "https://www.opengeospatial.org/acronyms" ;
-        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/2.json"^^xsd:anyURI ;
-        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/2.jsonld"^^xsd:anyURI ;
-        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/2.rdf"^^xsd:anyURI ;
-        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/2.ttl"^^xsd:anyURI ;
-        osgeo-lang:eng-note   osgeo-note:DefnTransUnavail .
+        osgeo:hasReview       osgeo-review:Review50 ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/50.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/50.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/50.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/50.ttl"^^xsd:anyURI ;
+        osgeo-lang:eng-note   "Note to entry: The technique reduces the space used by data by reducing the amount of bits needed to store and transmit information. Alternatively, there are techniques for lossless or destructive compressions."@en .
 
 ############################################################
