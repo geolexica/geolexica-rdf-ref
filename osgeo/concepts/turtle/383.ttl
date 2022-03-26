@@ -1,0 +1,51 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/383/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/383/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "spherical mercator" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-383" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/383/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c383   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "spherical mercator" ;
+        dcterms:identifier    "383"^^xsd:integer ;
+        skos:definition       "term to describe the map projection used by commercial API providers."@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "383"^^xsd:integer ;
+        skos:prefLabel        "spherical mercator"@en ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:example         "EXAMPLE  Google maps, Microsoft Virtual Earth, Yahoo maps"@en ;
+        osgeo:hasInfo         osgeo-info:Info383 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi383-rdfxml , osgeo-ldapi:ldapi383-json , osgeo-ldapi:ldapi383-jsonld , osgeo-ldapi:ldapi383-skosrdf ;
+        osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+        osgeo:hasReview       osgeo-review:Review383 ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/383.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/383.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/383.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/383.ttl"^^xsd:anyURI .
+
+############################################################

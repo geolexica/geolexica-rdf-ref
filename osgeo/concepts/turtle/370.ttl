@@ -1,0 +1,53 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/370/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/370/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "Simple Knowledge Organisation Systems" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-370" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/370/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c370   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "Simple Knowledge Organisation Systems" ;
+        dcterms:identifier    "370"^^xsd:integer ;
+        skos:definition       "common data model for sharing and linking knowledge organization systems via the Web"@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "370"^^xsd:integer ;
+        skos:prefLabel        "Simple Knowledge Organisation Systems"@en ;
+        osgeo:abbreviation    "SKOS" ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:hasInfo         osgeo-info:Info370 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi370-skosrdf , osgeo-ldapi:ldapi370-rdfxml , osgeo-ldapi:ldapi370-jsonld , osgeo-ldapi:ldapi370-json ;
+        osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+        osgeo:hasReview       osgeo-review:Review370 ;
+        osgeo:hasSource       "https://www.w3.org/TR/skos-reference/" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/370.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/370.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/370.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/370.ttl"^^xsd:anyURI ;
+        osgeo-lang:eng-note   "Note to entry:  Many knowledge organization systems, such as thesauri, taxonomies, classification schemes and subject heading systems, share a similar structure, and are used in similar applications. SKOS captures much of this similarity and makes it explicit, to enable data and technology sharing across diverse applications."@en .
+
+############################################################

@@ -1,0 +1,52 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/412/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/412/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "United States Geospatial Intelligence Foundation" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-412" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/412/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c412   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "United States Geospatial Intelligence Foundation" ;
+        dcterms:identifier    "412"^^xsd:integer ;
+        skos:definition       "United States Geospatial Intelligence Foundation"@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "412"^^xsd:integer ;
+        skos:prefLabel        "United States Geospatial Intelligence Foundation"@en ;
+        osgeo:abbreviation    "USGIF" ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:hasInfo         osgeo-info:Info412 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi412-jsonld , osgeo-ldapi:ldapi412-json , osgeo-ldapi:ldapi412-rdfxml , osgeo-ldapi:ldapi412-skosrdf ;
+        osgeo:hasOrigin       osgeo-lang:engRegistry , "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI ;
+        osgeo:hasReview       osgeo-review:Review412 ;
+        osgeo:hasSource       "https://www.osgeo.org/initiatives/geo-for-all/geo-newsletters-archive/" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/412.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/412.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/412.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/412.ttl"^^xsd:anyURI .
+
+############################################################

@@ -1,0 +1,53 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/234/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/234/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "metadata element" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-234" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/234/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c234   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "metadata element" ;
+        dcterms:identifier    "234"^^xsd:integer ;
+        skos:definition       "discrete unit of metadata"@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "234"^^xsd:integer ;
+        skos:prefLabel        "metadata element"@en ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:clause          "4.11" ;
+        osgeo:hasInfo         osgeo-info:Info234 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi234-skosrdf , osgeo-ldapi:ldapi234-json , osgeo-ldapi:ldapi234-jsonld , osgeo-ldapi:ldapi234-rdfxml ;
+        osgeo:hasOrigin       "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI , osgeo-lang:engRegistry ;
+        osgeo:hasReview       osgeo-review:Review234 ;
+        osgeo:hasSource       osgeo-source:ISO-19115-1-2014 ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/234.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/234.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/234.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/234.ttl"^^xsd:anyURI ;
+        osgeo-lang:eng-note   "Note 2 to entry:  Equivalent to an attribute and/or an association in UML terminology."@en , "Note 1 to entry:  Metadata elements are unique within a metadata class."@en , "Note 3 to entry:  Class attributes and relationships are referred to collectively as metadata elements."@en .
+
+############################################################

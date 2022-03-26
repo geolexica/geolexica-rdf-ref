@@ -1,0 +1,53 @@
+
+@prefix :  <https://osgeo.geolexica.org/concepts/299/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix osgeo-lang:  <https://osgeo.geolexica.org/api/osgeo-lang#> .
+@prefix osgeo-ldapi: <https://osgeo.geolexica.org/osgeo-ldapi/> .
+@prefix osgeo-note: <https://osgeo.geolexica.org/osgeo-notes/> .
+@prefix osgeo-review: <https://osgeo.geolexica.org/osgeo-reviews/> .
+@prefix osgeo-source: <https://osgeo.geolexica.org/api/source/> .
+@prefix osgeo-info:  <https://osgeo.geolexica.org/osgeo-info/> .
+@prefix osgeo: <https://osgeo.geolexica.org/geolexica#> .
+
+
+<https://osgeo.geolexica.org/concepts/299/>
+        a                              dctype:Dataset ;
+        dcterms:conformsTo             <https://osgeo.geolexica.org/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-03-25"^^xsd:date ;
+        dcterms:title                  "OGC Transducer Markup Language Encoding Standard (retired)" ;
+        vann:preferredNamespacePrefix  "osgeo-concept-299" ;
+        vann:preferredNamespaceUri     "https://osgeo.geolexica.org/concepts/299/" ;
+        owl:imports                    <https://osgeo.geolexica.org/geolexica> .
+
+############################################################
+
+:c299   a                     skos:Concept , owl:NamedIndividual ;
+        rdfs:label            "OGC Transducer Markup Language Encoding Standard (retired)" ;
+        dcterms:identifier    "299"^^xsd:integer ;
+        skos:definition       "Definition not provided in this language."@en ;
+        skos:inScheme         osgeo:OSGeoConceptScheme ;
+        skos:notation         "299"^^xsd:integer ;
+        skos:prefLabel        "OGC Transducer Markup Language Encoding Standard (retired)"@en ;
+        osgeo:abbreviation    "TML" ;
+        osgeo:classification  "preferred"@en ;
+        osgeo:hasInfo         osgeo-info:Info299 ;
+        osgeo:hasLDAPI        osgeo-ldapi:ldapi299-jsonld , osgeo-ldapi:ldapi299-skosrdf , osgeo-ldapi:ldapi299-rdfxml , osgeo-ldapi:ldapi299-json ;
+        osgeo:hasOrigin       "https://osgeo.geolexica.org/registers/#language-eng"^^xsd:anyURI , osgeo-lang:engRegistry ;
+        osgeo:hasReview       osgeo-review:Review299 ;
+        osgeo:hasSource       "https://www.opengeospatial.org/acronyms" ;
+        osgeo:jsonURI         "https://osgeo.geolexica.org/api/ldapi/299.json"^^xsd:anyURI ;
+        osgeo:jsonldURI       "https://osgeo.geolexica.org/api/ldapi/299.jsonld"^^xsd:anyURI ;
+        osgeo:rdfxmlURI       "https://osgeo.geolexica.org/api/ldapi/299.rdf"^^xsd:anyURI ;
+        osgeo:skosrdfURI      "https://osgeo.geolexica.org/api/ldapi/299.ttl"^^xsd:anyURI ;
+        osgeo-lang:eng-note   osgeo-note:DefnTransUnavail .
+
+############################################################
