@@ -17,6 +17,23 @@
 @prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
 @prefix info:  <https://isotc211.geolexica.org/api/info#> .
 
+
+<https://isotc211.geolexica.org/api/concepts>
+        a                              owl:Ontology ;
+        rdfs:label                     "Concepts RDF Dataset: (MLGT)"@en ;
+        dcterms:conformsTo             <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
+        dcterms:created                "2022-01-20"^^xsd:date ;
+        dcterms:description            "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
+        dcterms:license                "Copyright 2022 OSGeo" ;
+        dcterms:modified               "2022-02-12"^^xsd:date ;
+        dcterms:title                  "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
+        vann:preferredNamespacePrefix  "mlgt-concepts" ;
+        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/api/concepts#" ;
+        owl:imports                    reviews: , ldapi: , sources: , geolexica: , info: , lang: ;
+        owl:versionIRI                 <https://isotc211.geolexica.org/api/concepts/v1.0> .
+
+############################################################
+
 :delivery_point_postal
         a                      owl:NamedIndividual , skos:Concept ;
         rdfs:label             "delivery point (postal)" ;
@@ -15033,20 +15050,6 @@ lang:lang-fra  a  owl:AnnotationProperty .
         geolexica:hasLangCode  lang:pol , lang:jpn , lang:eng , lang:rus , lang:fin , lang:fra , lang:spa , lang:kor , lang:ara , lang:swe , lang:deu , lang:zho , lang:msa , lang:nld ;
         geolexica:hasOrigin    lang:polRegistry , lang:jpnRegistry , lang:deuRegistry , lang:nldRegistry , lang:korRegistry , lang:spaRegistry , lang:araRegistry , lang:finRegistry , lang:msaRegistry , lang:zhoRegistry , lang:engRegistry , lang:fraRegistry , lang:sweRegistry , lang:rusRegistry ;
         geolexica:hasReview    reviews:Review1930 .
-
-<https://isotc211.geolexica.org/api/concepts>
-        a                              owl:Ontology ;
-        rdfs:label                     "Concepts RDF Dataset: (MLGT)"@en ;
-        dcterms:conformsTo             <https://isotc211.geolexica.org/api/geolexica/v1.0/> ;
-        dcterms:created                "2022-01-20"^^xsd:date ;
-        dcterms:description            "Concept serialization of ISO/TC 211 Multi-Lingual Glossary of Terms (MLGT)."@en ;
-        dcterms:license                "Copyright 2022 OSGeo" ;
-        dcterms:modified               "2022-02-12"^^xsd:date ;
-        dcterms:title                  "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
-        vann:preferredNamespacePrefix  "mlgt-concepts" ;
-        vann:preferredNamespaceUri     "https://isotc211.geolexica.org/api/concepts#" ;
-        owl:imports                    reviews: , ldapi: , sources: , geolexica: , info: , lang: ;
-        owl:versionIRI                 <https://isotc211.geolexica.org/api/concepts/v1.0> .
 
 :postal_address_component
         a                      owl:NamedIndividual , skos:Concept ;
