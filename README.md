@@ -1,4 +1,3 @@
-
 ## Geolexica in SKOS/RDF
 
 This repository contains the Geolexica Multi-lingual Glossary represented in  RDF and SKOS, for both the ISO/TC 211 glossary, and the OSGeo glosssary. The separate resources each form a knowledge graph through ontologies, extensions, and instance data. Data can be imported into a graph triplestore, and queried with SPARQL. Design of the graph is modular, using separate files and named graphs.
@@ -31,7 +30,7 @@ Directory: **mlgt**
 | /core/concept-6.ttl | Example of a single concept with all relevant metadata and values. |
 | /core/csv/ | Contains CSV representations of the ontology, extensions, and supporting data. |
 | /concepts/ | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
-
+| /queries/ | Example SPARQL queries and results. |
 ----------
 **OSGeo Glossary (Geolexica)**
 
@@ -53,4 +52,4 @@ Directory: **osgeo**
 | /core/osgeo-notes.ttl | Ontology extension of explanatory notes available for each resource (i.e., missing definitions, notes, translations, or examples for a given language). |
 | /core/csv/ | Contains CSV representations of the ontology, extensions, and supporting data. |
 | /concepts/ | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
-
+| /queries/ | Example SPARQL queries and results. |
