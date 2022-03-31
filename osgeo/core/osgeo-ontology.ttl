@@ -10,382 +10,433 @@
 @prefix void: <http://vocab.deri.ie/void#> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://osgeo.geolexica.org/api/geolexica> .
+@base <https://osgeo.geolexica.org/api/geolexica#> .
 
-<https://osgeo.geolexica.org/api/geolexica#> a owl:Ontology ;
-	owl:versionIRI <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
-	owl:imports <http://www.w3.org/2004/02/skos/core> ;
-	dcterms:created "2022-03-18"^^xsd:date ;
-	dcterms:license "Copyright 2022 OSGeo" ;
-	dcterms:modified "2022-03-18"^^xsd:date ;
-	dcterms:publisher <https://www.osgeo.org/> ;
-	dcterms:title "OSGeo Geolexica Ontology"@en ;
-	vann:preferredNamespacePrefix "osgeo" ;
-	vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/geolexica#" ;
-	owl:versionInfo "Version 1.0" ;
-	skos:note "Classes, properties, attributes, and axioms are subject to change."@en , "OSGeo Geolexxica Glossary in RDF is under development as of 2022-03-18."@en .
-# 
-# 
-# #################################################################
-# #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/terms/created
+<https://osgeo.geolexica.org/api/geolexica#> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://osgeo.geolexica.org/api/geolexica/v1.0/> ;
+                                              owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                              dcterms:created "2022-03-18"^^xsd:date ;
+                                              dcterms:license "Copyright 2022 OSGeo" ;
+                                              dcterms:modified "2022-03-18"^^xsd:date ;
+                                              dcterms:publisher <https://www.osgeo.org/> ;
+                                              dcterms:title "OSGeo Geolexica Ontology"@en ;
+                                              vann:preferredNamespacePrefix "osgeo" ;
+                                              vann:preferredNamespaceUri "https://osgeo.geolexica.org/api/geolexica#" ;
+                                              owl:versionInfo "Version 1.0" ;
+                                              skos:note "Classes, properties, attributes, and axioms are subject to change."@en ,
+                                                        "OSGeo Geolexxica Glossary in RDF is under development as of 2022-03-18."@en .
 
-dcterms:created a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/license
+#################################################################
+#    Annotation properties
+#################################################################
 
-dcterms:license a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/modified
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
 
-dcterms:modified a owl:AnnotationProperty .
-# 
-# http://purl.org/dc/terms/publisher
 
-dcterms:publisher a owl:AnnotationProperty .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
 
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
 
-vann:preferredNamespaceUri a owl:AnnotationProperty .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Datatypes
-# #
-# #################################################################
-# 
-# 
-# http://www.w3.org/2001/XMLSchema#date
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
 
-xsd:date a rdfs:Datatype .
-# 
-# http://www.w3.org/2001/XMLSchema#string
 
-xsd:string a rdfs:Datatype .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasInfo
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
 
-:hasInfo a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :ConceptInfo .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasLDAPI
 
-:hasLDAPI a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :LinkedDataAPI .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasLangCode
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
-:hasLangCode a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :LangCode .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasNote
 
-:hasNote a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :Note .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasOrigin
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
-:hasOrigin a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :Origin .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasReview
 
-:hasReview a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :ConceptReview .
-# 
-# https://osgeo.geolexica.org/api/geolexica#hasSource
+#################################################################
+#    Datatypes
+#################################################################
 
-:hasSource a owl:ObjectProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range :Source .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/terms/identifier
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
-dcterms:identifier a owl:DatatypeProperty ;
-	rdfs:domain skos:Concept ;
-	rdfs:range xsd:integer ;
-	rdfs:comment "Use for termIDs in the data." ;
-	rdfs:label "dcterms:identifier property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#abbreviation
 
-:abbreviation a owl:DatatypeProperty ;
-	rdfs:label "osgeo:abbreviation property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#classification
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
 
-:classification a owl:DatatypeProperty ;
-	rdfs:label "osgeo:classification property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#clause
 
-:clause a owl:DatatypeProperty ;
-	rdfs:label "osgeo:clause property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#date_accepted
+#################################################################
+#    Object Properties
+#################################################################
 
-:date_accepted a owl:DatatypeProperty ;
-	rdfs:range xsd:date ;
-	rdfs:label "osgeo:date_accepted property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#date_amended
+###  https://osgeo.geolexica.org/api/geolexica#hasInfo
+:hasInfo rdf:type owl:ObjectProperty ;
+         rdfs:domain skos:Concept ;
+         rdfs:range :ConceptInfo ;
+         rdfs:label "osgeo:hasLDAPI" ;
+         dcterms:description "For relating concept to concept info." .
 
-:date_amended a owl:DatatypeProperty ;
-	rdfs:range xsd:date ;
-	rdfs:label "osgeo:date_amended property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#entry_status
 
-:entry_status a owl:DatatypeProperty ;
-	rdfs:label "osgeo:entry_status property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#examples
+###  https://osgeo.geolexica.org/api/geolexica#hasLDAPI
+:hasLDAPI rdf:type owl:ObjectProperty ;
+          rdfs:domain skos:Concept ;
+          rdfs:range :LinkedDataAPI ;
+          rdfs:label "osgeo:hasLDAPI" ;
+          dcterms:description "For relating concept to linked data api." .
 
-:example a owl:DatatypeProperty ;
-	rdfs:label "osgeo:examples property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#jsonURI
 
-:jsonURI a owl:DatatypeProperty ;
-	rdfs:domain :JSON ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "osgeo:jsonURI property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#jsonldURI
+###  https://osgeo.geolexica.org/api/geolexica#hasLangCode
+:hasLangCode rdf:type owl:ObjectProperty ;
+             rdfs:domain skos:Concept ;
+             rdfs:range :LangCode ;
+             rdfs:label "osgeo:hasLangCode" ;
+             dcterms:description "For relating concept to language code." .
 
-:jsonldURI a owl:DatatypeProperty ;
-	rdfs:domain :JSON-LD ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "osgeo:jsonldURI property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#lineage_source
 
-:lineage_source a owl:DatatypeProperty ;
-	rdfs:label "osgeo:lineage_source property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#lineage_source_similarity
+###  https://osgeo.geolexica.org/api/geolexica#hasNote
+:hasNote rdf:type owl:ObjectProperty ;
+         rdfs:domain skos:Concept ;
+         rdfs:range :Note ;
+         rdfs:label "osgeo:hasNote" ;
+         dcterms:description "For relating concept to note." .
 
-:lineage_source_similarity a owl:DatatypeProperty ;
-	rdfs:label "osgeo:lineage_source_similarity property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#notes
 
-:notes a owl:DatatypeProperty ;
-	rdfs:label "osgeo:notes property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#rdfxmlURI
+###  https://osgeo.geolexica.org/api/geolexica#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :Origin ;
+           rdfs:label "osgeo:hasOrigin" ;
+           dcterms:description "For relating concept to origin." .
 
-:rdfxmlURI a owl:DatatypeProperty ;
-	rdfs:domain :RDF-XML ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "osgeo:rdfxmlURI property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#release
 
-:release a owl:DatatypeProperty ;
-	rdfs:label "osgeo:release property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_date
+###  https://osgeo.geolexica.org/api/geolexica#hasReview
+:hasReview rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :ConceptReview ;
+           rdfs:label "osgeo:hasReview" ;
+           dcterms:description "For relating concept to review." .
 
-:review_date a owl:DatatypeProperty ;
-	rdfs:range xsd:date ;
-	rdfs:label "osgeo:review_date property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_decision
 
-:review_decision a owl:DatatypeProperty ;
-	rdfs:label "osgeo:review_decision property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_decision_date
+###  https://osgeo.geolexica.org/api/geolexica#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:domain skos:Concept ;
+           rdfs:range :Source ;
+           rdfs:label "osgeo:hasSource" ;
+           dcterms:description "For relating concept to source." .
 
-:review_decision_date a owl:DatatypeProperty ;
-	rdfs:range xsd:date ;
-	rdfs:label "osgeo:review_decision_date property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_decision_event
 
-:review_decision_event a owl:DatatypeProperty ;
-	rdfs:label "osgeo:review_decision_event property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_decision_notes
+#################################################################
+#    Data properties
+#################################################################
 
-:review_decision_notes a owl:DatatypeProperty ;
-	rdfs:label "osgeo:review_decision_notes property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_indicator
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:domain skos:Concept ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "Use for termIDs." ;
+                   rdfs:label "dcterms:identifier property" .
 
-:review_indicator a owl:DatatypeProperty ;
-	rdfs:label "osgeo:review_indicator property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#review_status
 
-:review_status a owl:DatatypeProperty ;
-	rdfs:label "osgeo:review_status property" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#skosrdfURI
+###  https://osgeo.geolexica.org/api/geolexica#abbreviation
+:abbreviation rdf:type owl:DatatypeProperty ;
+              rdfs:label "osgeo:abbreviation property" ;
+              dcterms:description "For relating term abbreviations in different languages." .
 
-:skosrdfURI a owl:DatatypeProperty ;
-	rdfs:domain :SKOS-RDF ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "osgeo:skosrdfURI property" .
-#
-# https://osgeo.geolexica.org/api/geolexica#termID
 
-:termID a owl:DatatypeProperty ;
-    rdfs:domain owl:Thing ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "Term ID" .
-# 
-# https://osgeo.geolexica.org/api/geolexica#tbxisoxmlURI
+###  https://osgeo.geolexica.org/api/geolexica#classification
+:classification rdf:type owl:DatatypeProperty ;
+                rdfs:label "osgeo:classification property" ;
+              dcterms:description "For relating term info classification." .
 
-:tbxisoxmlURI a owl:DatatypeProperty ;
-	rdfs:domain :TBX-ISO-XML ;
-	rdfs:range xsd:anyURI ;
-	rdfs:label "osgeo:tbxisoxmlURI property" .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/dc/terms/MediaType
 
-dcterms:MediaType a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#ConceptInfo
+###  https://osgeo.geolexica.org/api/geolexica#clause
+:clause rdf:type owl:DatatypeProperty ;
+        rdfs:label "osgeo:clause property" ;
+        dcterms:description "For relating term info clauses." .
 
-:ConceptInfo a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#ConceptReview
 
-:ConceptReview a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#DefnUnavail
+###  https://osgeo.geolexica.org/api/geolexica#date_accepted
+:date_accepted rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:date ;
+               rdfs:label "osgeo:date_accepted property" ;
+               dcterms:description "For relating date accepted info values." .
 
-:DefnUnavail a owl:Class ;
-	rdfs:subClassOf :Note .
-# 
-# https://osgeo.geolexica.org/api/geolexica#ExampleUnavail
 
-:ExampleUnavail a owl:Class ;
-	rdfs:subClassOf :Note .
-# 
-# https://osgeo.geolexica.org/api/geolexica#JSON
+###  https://osgeo.geolexica.org/api/geolexica#date_amended
+:date_amended rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:date ;
+              rdfs:label "osgeo:date_amended property" ;
+              dcterms:description "For relating date amended info values." .
 
-:JSON a owl:Class ;
-	rdfs:subClassOf :LinkedDataAPI ;
-	owl:disjointWith :JSON-LD , :RDF-XML , :SKOS-RDF , :TBX-ISO-XML .
-# 
-# https://osgeo.geolexica.org/api/geolexica#JSON-LD
 
-:JSON-LD a owl:Class ;
-	rdfs:subClassOf :LinkedDataAPI ;
-	owl:disjointWith :RDF-XML , :SKOS-RDF , :TBX-ISO-XML .
-# 
-# https://osgeo.geolexica.org/api/geolexica#LangCode
+###  https://osgeo.geolexica.org/api/geolexica#entry_status
+:entry_status rdf:type owl:DatatypeProperty ;
+              rdfs:label "osgeo:entry_status property" ;
+              dcterms:description "For relating entry status info values." .
 
-:LangCode a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI
 
-:LinkedDataAPI a owl:Class ;
-	rdfs:subClassOf dcterms:MediaType .
-# 
-# https://osgeo.geolexica.org/api/geolexica#Note
+###  https://osgeo.geolexica.org/api/geolexica#example
+:example rdf:type owl:DatatypeProperty ;
+         rdfs:label "osgeo:examples property" ;
+         dcterms:description "For relating concept example values." .
 
-:Note a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#NoteSourceDiff
 
-:NoteSourceDiff a owl:Class ;
-	rdfs:subClassOf :Note .
-# 
-# https://osgeo.geolexica.org/api/geolexica#NoteUnavail
+###  https://osgeo.geolexica.org/api/geolexica#jsonURI
+:jsonURI rdf:type owl:DatatypeProperty ;
+         rdfs:domain :JSON ;
+         rdfs:range xsd:anyURI ;
+         rdfs:label "osgeo:jsonURI property" ;
+         dcterms:description "For relating jsonURI values." .
 
-:NoteUnavail a owl:Class ;
-	rdfs:subClassOf :Note .
-# 
-# https://osgeo.geolexica.org/api/geolexica#Origin
 
-:Origin a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#RDF-XML
+###  https://osgeo.geolexica.org/api/geolexica#jsonldURI
+:jsonldURI rdf:type owl:DatatypeProperty ;
+           rdfs:domain :JSON-LD ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "osgeo:jsonldURI property" ;
+           dcterms:description "For relating jsonldURI values." .
 
-:RDF-XML a owl:Class ;
-	rdfs:subClassOf :LinkedDataAPI ;
-	owl:disjointWith :SKOS-RDF , :TBX-ISO-XML .
-# 
-# https://osgeo.geolexica.org/api/geolexica#SKOS-RDF
 
-:SKOS-RDF a owl:Class ;
-	rdfs:subClassOf :LinkedDataAPI ;
-	owl:disjointWith :TBX-ISO-XML .
-# 
-# https://osgeo.geolexica.org/api/geolexica#Source
+###  https://osgeo.geolexica.org/api/geolexica#lineage_source
+:lineage_source rdf:type owl:DatatypeProperty ;
+                rdfs:label "osgeo:lineage_source property" ;
+                dcterms:description "For relating lineage source info values." .
 
-:Source a owl:Class .
-# 
-# https://osgeo.geolexica.org/api/geolexica#TBX-ISO-XML
 
-:TBX-ISO-XML a owl:Class ;
-	rdfs:subClassOf :LinkedDataAPI .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# https://osgeo.geolexica.org/api/geolexica#OSGeoConceptScheme
+###  https://osgeo.geolexica.org/api/geolexica#lineage_source_similarity
+:lineage_source_similarity rdf:type owl:DatatypeProperty ;
+                           rdfs:label "osgeo:lineage_source_similarity property" ;
+                           dcterms:description "For relating lineage source similarity info values." .
 
-:OSGeoConceptScheme a owl:NamedIndividual , skos:ConceptScheme ;
-	rdfs:label "OSGeo Concept Scheme (Geolexica)" ;
-	skos:prefLabel "OSGeo Concept Scheme (Geolexica)"@en .
-# 
-# https://osgeo.geolexica.org/api/geolexica#OSGeoGlossary
 
-:OSGeoGlossary a owl:NamedIndividual , skos:Collection .
-# 
-# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://osgeo.geolexica.org/api/geolexica#notes
+:notes rdf:type owl:DatatypeProperty ;
+       rdfs:label "osgeo:notes property" ;
+       dcterms:description "For relating concept translation note values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#rdfxmlURI
+:rdfxmlURI rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RDF-XML ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "osgeo:rdfxmlURI property" ;
+           dcterms:description "For relating rdfxmlURI values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#release
+:release rdf:type owl:DatatypeProperty ;
+         rdfs:label "osgeo:release property" ;
+         dcterms:description "For relating concept release values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_date
+:review_date rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:date ;
+             rdfs:label "osgeo:review_date property" ;
+             dcterms:description "For relating review date values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_decision
+:review_decision rdf:type owl:DatatypeProperty ;
+                 rdfs:label "osgeo:review_decision property" ;
+                 dcterms:description "For relating review decision values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_decision_date
+:review_decision_date rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:date ;
+                      rdfs:label "osgeo:review_decision_date property" ;
+                      dcterms:description "For relating review decision date values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_decision_event
+:review_decision_event rdf:type owl:DatatypeProperty ;
+                       rdfs:label "osgeo:review_decision_event property" ;
+                       dcterms:description "For relating review decision event values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_decision_notes
+:review_decision_notes rdf:type owl:DatatypeProperty ;
+                       rdfs:label "osgeo:review_decision_notes property" ;
+                       dcterms:description "For relating review decision note values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_indicator
+:review_indicator rdf:type owl:DatatypeProperty ;
+                  rdfs:label "osgeo:review_indicator property" ;
+                  dcterms:description "For relating review indicator values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#review_status
+:review_status rdf:type owl:DatatypeProperty ;
+               rdfs:label "osgeo:review_status property" ;
+               dcterms:description "For relating review status values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#skosrdfURI
+:skosrdfURI rdf:type owl:DatatypeProperty ;
+            rdfs:domain :SKOS-RDF ;
+            rdfs:range xsd:anyURI ;
+            rdfs:label "osgeo:skosrdfURI property" ;
+            dcterms:description "For relating skosrdfURI values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#tbxisoxmlURI
+:tbxisoxmlURI rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TBX-ISO-XML ;
+              rdfs:range xsd:anyURI ;
+              rdfs:label "osgeo:tbxisoxmlURI property" ;
+              dcterms:description "For relating tbxisoxmlURI values." .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#termID
+:termID rdf:type owl:DatatypeProperty ;
+        rdfs:domain owl:Thing ;
+        rdfs:range xsd:anyURI ;
+        rdfs:label "Term ID" ;
+        dcterms:description "For relating term ID values." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/MediaType
+dcterms:MediaType rdf:type owl:Class ;
+                  dcterms:description "Use of MediaType in this case is for classifying linked data file types."@en .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#ConceptInfo
+:ConceptInfo rdf:type owl:Class ;
+             dcterms:description "Information for each concept: authoritative source, clause, classification, date amended, date accepted, and entry status."@en ;
+             rdfs:label "Concept Info" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#ConceptReview
+:ConceptReview rdf:type owl:Class ;
+               dcterms:description "Review information for concepts: review date, decision, decision event, notes, and review status."@en ;
+               rdfs:label "Concept Review" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#DefnUnavail
+:DefnUnavail rdf:type owl:Class ;
+             rdfs:subClassOf :Note ;
+             dcterms:description "Class for noting missing definitions."@en ;
+             rdfs:label "Definition Unavailable in Language" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#ExampleUnavail
+:ExampleUnavail rdf:type owl:Class ;
+                rdfs:subClassOf :Note ;
+                dcterms:description "Class for noting missing examples."@en ;
+                rdfs:label "Example Unavailable in Language" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#JSON
+:JSON rdf:type owl:Class ;
+      rdfs:subClassOf :LinkedDataAPI ;
+      owl:disjointWith :JSON-LD ,
+                       :RDF-XML ,
+                       :SKOS-RDF ,
+                       :TBX-ISO-XML ;
+      dcterms:description "Class for JSON file types."@en ;
+      rdfs:label "JSON files" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#JSON-LD
+:JSON-LD rdf:type owl:Class ;
+         rdfs:subClassOf :LinkedDataAPI ;
+         owl:disjointWith :RDF-XML ,
+                          :SKOS-RDF ,
+                          :TBX-ISO-XML ;
+         dcterms:description "Class for JSON-LD file types."@en ;
+         rdfs:label "JSON-LD files" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#LangCode
+:LangCode rdf:type owl:Class ;
+          dcterms:description "ISO 639-1 two-letter language codes, three letter codes, and labels."@en ;
+          rdfs:label "Language Code" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#LinkedDataAPI
+:LinkedDataAPI rdf:type owl:Class ;
+               rdfs:subClassOf dcterms:MediaType ;
+               dcterms:description "Class of linked data file types."@en ;
+               rdfs:label "Linked Data APIs" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#Note
+:Note rdf:type owl:Class ;
+      dcterms:description "Notes attributed to term defintions, examples, and availability."@en ;
+      rdfs:label "Notes for Definitions, Examples, Availability" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#NoteSourceDiff
+:NoteSourceDiff rdf:type owl:Class ;
+                rdfs:subClassOf :Note ;
+                dcterms:description "Class for notes with different translations than normative term."@en ;
+                rdfs:label "Translation Different from Normative Term" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#NoteUnavail
+:NoteUnavail rdf:type owl:Class ;
+             rdfs:subClassOf :Note ;
+             dcterms:description "Class for notes not translated to a language."@en ;
+             rdfs:label "Note Not Translated to Language" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#Origin
+:Origin rdf:type owl:Class ;
+        dcterms:description "Class for referencing language registries."@en ;
+        rdfs:label "Origin of Language Registry" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#RDF-XML
+:RDF-XML rdf:type owl:Class ;
+         rdfs:subClassOf :LinkedDataAPI ;
+         owl:disjointWith :SKOS-RDF ,
+                          :TBX-ISO-XML ;
+         dcterms:description "Class for RDF/XML file types."@en ;
+         rdfs:label "RDF/XML files" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#SKOS-RDF
+:SKOS-RDF rdf:type owl:Class ;
+          rdfs:subClassOf :LinkedDataAPI ;
+          owl:disjointWith :TBX-ISO-XML ;
+          dcterms:description "Class for TTL file types."@en ;
+          rdfs:label "Turtle files (TTL)" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#Source
+:Source rdf:type owl:Class ;
+        dcterms:description "Class for referencing authoritative sources of term definitions."@en ;
+        rdfs:label "Source of Authority Documents" .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#TBX-ISO-XML
+:TBX-ISO-XML rdf:type owl:Class ;
+             rdfs:subClassOf :LinkedDataAPI ;
+             dcterms:description "Class for TBX-ISO-XML file types."@en ;
+             rdfs:label "TBX-ISO-XML files" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://osgeo.geolexica.org/api/geolexica#OSGeoConceptScheme
+:OSGeoConceptScheme rdf:type owl:NamedIndividual ,
+                             skos:ConceptScheme ;
+                    rdfs:label "OSGeo Concept Scheme (Geolexica)" ;
+                    skos:prefLabel "OSGeo Concept Scheme (Geolexica)"@en .
+
+
+###  https://osgeo.geolexica.org/api/geolexica#OSGeoGlossary
+:OSGeoGlossary rdf:type owl:NamedIndividual ,
+                        skos:Collection .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
