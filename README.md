@@ -43,7 +43,6 @@ Directory: **mlgt**
 | /core/linked-data-apis.ttl | Instance data of linked data representations for each resource (i.e., json, json-ld, rdf/xml, and ttl formats). |
 | /core/sources.ttl | Instance data of authoritative reference(s) for each resource (i.e., ISO documents) |
 | /core/notes.ttl | Ontology extension of explanatory notes available for each resource (i.e., missing definitions, notes, translations, or examples for a given language). |
-| /core/concept-6.ttl | Example of a single concept with all relevant metadata and values. |
 | /core/csv/ | Contains CSV representations of the ontology, extensions, and supporting data. |
 | /concepts/ | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
 | /queries/ | Example SPARQL queries and results. |
