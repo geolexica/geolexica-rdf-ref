@@ -16,6 +16,7 @@
 @prefix vann:  <http://purl.org/vocab/vann/> .
 @prefix geolexica: <https://isotc211.geolexica.org/api/geolexica#> .
 @prefix info:  <https://isotc211.geolexica.org/api/info#> .
+@base <https://isotc211.geolexica.org/api/concepts> .
 
 
 <https://isotc211.geolexica.org/api/concepts#>
@@ -29,7 +30,7 @@
         dcterms:title                  "Concepts RDF Dataset: ISO/TC211 Multi-lingual Glossary of Terms (MLGT)"@en ;
         vann:preferredNamespacePrefix  "mlgt-concepts" ;
         vann:preferredNamespaceUri     "https://isotc211.geolexica.org/api/concepts#" ;
-        owl:imports                    reviews: , ldapi: , sources: , geolexica: , info: , lang: ;
+        owl:imports                     geolexica: , reviews: , ldapi: , sources: , info: , lang: ;
         owl:versionIRI                 <https://isotc211.geolexica.org/api/concepts/v1.0> .
 
 ############################################################
@@ -1436,8 +1437,6 @@ lang:lang-deu  a  owl:AnnotationProperty .
         geolexica:hasOrigin    lang:korRegistry , lang:nldRegistry , lang:polRegistry , lang:finRegistry , lang:engRegistry , lang:rusRegistry , lang:spaRegistry , lang:fraRegistry , lang:sweRegistry , lang:jpnRegistry , lang:deuRegistry , lang:zhoRegistry , lang:araRegistry , lang:msaRegistry ;
         geolexica:hasReview    reviews:Review2404 ;
         lang:eng-note          "Note to entry: For the Earth the ellipsoid is bi-axial with rotation about the polar axis. This results in an oblate ellipsoid with the midpoint of the foci located at the nominal centre of the Earth."@en .
-
-reviews:Review493  a  owl:NamedIndividual .
 
 :topographic_LIDAR  a          owl:NamedIndividual , skos:Concept ;
         rdfs:label             "topographic LIDAR" ;
@@ -12910,8 +12909,6 @@ dcterms:license  a  owl:AnnotationProperty .
         lang:spa-note          "Nota: El status de los ítems retirados pasa de \"valid\" (\"válido\") a \"retired\" (\"retirado\"). Un ítem retirado se mantiene en el registro para ayudar en la interpretación de los datos producidos antes de su retirada."@es ;
         lang:swe-note          notes:NoteTransUnavail ;
         lang:zho-note          "注： 停用项目的状态从有效变为停用。停用项目保留在注册表中，以支持对在其停用前生产数据的解释。"@zh .
-
-reviews:Review861  a  owl:NamedIndividual .
 
 :flattening  a                 skos:Concept , owl:NamedIndividual ;
         rdfs:label             "flattening" ;

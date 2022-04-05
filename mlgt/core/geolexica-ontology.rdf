@@ -1,0 +1,356 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns="https://isotc211.geolexica.org/api/geolexica#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dctype="http://purl.org/dc/dcmitype/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:void="http://vocab.deri.ie/void#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#tbxisoxmlURI">
+    <dcterms:description>For relating tbxisoxmlURI values.</dcterms:description>
+    <rdfs:label>geolexica:tbxisoxmlURI property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#lineage_source_similarity">
+    <dcterms:description>For relating lineage source similarity info values.</dcterms:description>
+    <rdfs:label>geolexica:lineage_source_similarity property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#entry_status">
+    <dcterms:description>For relating entry status info values.</dcterms:description>
+    <rdfs:label>geolexica:entry_status property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_status">
+    <dcterms:description>For relating review status values.</dcterms:description>
+    <rdfs:label>geolexica:review_status property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#clause">
+    <dcterms:description>For relating term info clauses.</dcterms:description>
+    <rdfs:label>geolexica:clause property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasLangCode">
+    <dcterms:description>For relating concept to language code.</dcterms:description>
+    <rdfs:label>geolexica:hasLangCode</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#LangCode"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_decision">
+    <dcterms:description>For relating review decision values.</dcterms:description>
+    <rdfs:label>geolexica:review_decision property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#classification">
+    <dcterms:description>For relating term info classification.</dcterms:description>
+    <rdfs:label>geolexica:classification property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#notes">
+    <dcterms:description>For relating concept translation note values.</dcterms:description>
+    <rdfs:label>geolexica:notes property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#NoteUnavail">
+    <rdfs:label>Note Not Translated to Language</rdfs:label>
+    <dcterms:description xml:lang="en">Class for notes not translated to a language.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#skosrdfURI">
+    <dcterms:description>For relating skosrdfURI values.</dcterms:description>
+    <rdfs:label>geolexica:skosrdfURI property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://isotc211.geolexica.org/api/geolexica#SKOS-RDF"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#termID">
+    <dcterms:description>For relating term ID values.</dcterms:description>
+    <rdfs:label>Term ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#GeolexicaConceptScheme">
+    <skos:prefLabel xml:lang="en">Geolexica Concept Scheme</skos:prefLabel>
+    <rdfs:label>Geolexica Concept Scheme</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#ConceptReview">
+    <rdfs:label>Concept Review</rdfs:label>
+    <dcterms:description xml:lang="en">Review information for concepts: review date, decision, decision event, notes, and review status.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/MediaType">
+    <dcterms:description xml:lang="en">Use of MediaType in this case is for classifying linked data file types.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#SKOS-RDF">
+    <rdfs:label>Turtle files (TTL)</rdfs:label>
+    <dcterms:description xml:lang="en">Class for TTL file types.</dcterms:description>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML"/>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#lineage_source">
+    <dcterms:description>For relating lineage source info values.</dcterms:description>
+    <rdfs:label>geolexica:lineage_source property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#date_accepted">
+    <dcterms:description>For relating date accepted info values.</dcterms:description>
+    <rdfs:label>geolexica:date_accepted property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#jsonldURI">
+    <dcterms:description>For relating jsonldURI values.</dcterms:description>
+    <rdfs:label>geolexica:jsonldURI property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://isotc211.geolexica.org/api/geolexica#JSON-LD"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasOrigin">
+    <dcterms:description>For relating concept to origin.</dcterms:description>
+    <rdfs:label>geolexica:hasOrigin</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#Origin"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI">
+    <rdfs:label>Linked Data APIs</rdfs:label>
+    <dcterms:description xml:lang="en">Class of linked data file types.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <vann:preferredNamespaceUri>https://isotc211.geolexica.org/api/geolexica#</vann:preferredNamespaceUri>
+    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-12</dcterms:created>
+    <dcterms:publisher rdf:resource="https://www.osgeo.org/"/>
+    <dcterms:modified xml:lang="en">2022-03-31</dcterms:modified>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo>Version 1.0</owl:versionInfo>
+    <dcterms:title xml:lang="en">OSGeo Geolexica Ontology</dcterms:title>
+    <vann:preferredNamespacePrefix>geolexica</vann:preferredNamespacePrefix>
+    <owl:versionIRI rdf:resource="https://isotc211.geolexica.org/api/geolexica/v1.0/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#abbreviation">
+    <dcterms:description>For relating term abbreviations in different languages.</dcterms:description>
+    <rdfs:label>geolexica:abbreviation property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_decision_event">
+    <dcterms:description>For relating review decision event values.</dcterms:description>
+    <rdfs:label>geolexica:review_decision_event property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_decision_date">
+    <dcterms:description>For relating review decision date values.</dcterms:description>
+    <rdfs:label>geolexica:review_decision_date property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#date_amended">
+    <dcterms:description>For relating date amended info values.</dcterms:description>
+    <rdfs:label>geolexica:date_amended property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#release">
+    <dcterms:description>For relating concept release values.</dcterms:description>
+    <rdfs:label>geolexica:release property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#ConceptInfo">
+    <rdfs:label>Concept Info</rdfs:label>
+    <dcterms:description xml:lang="en">Information for each concept: authoritative source, clause, classification, date amended, date accepted, and entry status.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#Source">
+    <rdfs:label>Source of Authority Documents</rdfs:label>
+    <dcterms:description xml:lang="en">Class for referencing authoritative sources of term definitions.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#DefnUnavail">
+    <rdfs:label>Definition Unavailable in Language</rdfs:label>
+    <dcterms:description xml:lang="en">Class for noting missing definitions.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#examples">
+    <dcterms:description>For relating concept example values.</dcterms:description>
+    <rdfs:label>geolexica:examples property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#LangCode">
+    <rdfs:label>Language Code</rdfs:label>
+    <dcterms:description xml:lang="en">ISO 639-1 two-letter language codes, three letter codes, and labels.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#jsonURI">
+    <dcterms:description>For relating jsonURI values.</dcterms:description>
+    <rdfs:label>geolexica:jsonURI property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://isotc211.geolexica.org/api/geolexica#JSON"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasLDAPI">
+    <dcterms:description>For relating concept to linked data api.</dcterms:description>
+    <rdfs:label>geolexica:hasLDAPI</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_indicator">
+    <dcterms:description>For relating review indicator values.</dcterms:description>
+    <rdfs:label>geolexica:review_indicator property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasNote">
+    <dcterms:description>For relating concept to note.</dcterms:description>
+    <rdfs:label>geolexica:hasNote</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#Note"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_decision_notes">
+    <dcterms:description>For relating review decision note values.</dcterms:description>
+    <rdfs:label>geolexica:review_decision_notes property</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#Origin">
+    <rdfs:label>Origin of Language Registry</rdfs:label>
+    <dcterms:description xml:lang="en">Class for referencing language registries.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML">
+    <rdfs:label>TBX-ISO-XML files</rdfs:label>
+    <dcterms:description xml:lang="en">Class for TBX-ISO-XML file types.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#NoteSourceDiff">
+    <rdfs:label>Translation Different from Normative Term</rdfs:label>
+    <dcterms:description xml:lang="en">Class for notes with different translations than normative term.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#JSON">
+    <rdfs:label>JSON files</rdfs:label>
+    <dcterms:description xml:lang="en">Class for JSON file types.</dcterms:description>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#SKOS-RDF"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#RDF-XML"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#JSON-LD"/>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdfs:label>dcterms:identifier property</rdfs:label>
+    <rdfs:comment>Use for termIDs.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#JSON-LD">
+    <rdfs:label>JSON-LD files</rdfs:label>
+    <dcterms:description xml:lang="en">Class for JSON-LD file types.</dcterms:description>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#SKOS-RDF"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#RDF-XML"/>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#ExampleUnavail">
+    <rdfs:label>Example Unavailable in Language</rdfs:label>
+    <dcterms:description xml:lang="en">Class for noting missing examples.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#Note"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#MLGTGlossary">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasInfo">
+    <dcterms:description>For relating concept to concept info.</dcterms:description>
+    <rdfs:label>geolexica:hasLDAPI</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#ConceptInfo"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#Note">
+    <rdfs:label>Notes for Definitions, Examples, Availability</rdfs:label>
+    <dcterms:description xml:lang="en">Notes attributed to term defintions, examples, and availability.</dcterms:description>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasSource">
+    <dcterms:description>For relating concept to source.</dcterms:description>
+    <rdfs:label>geolexica:hasSource</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#Source"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#RDF-XML">
+    <rdfs:label>RDF/XML files</rdfs:label>
+    <dcterms:description xml:lang="en">Class for RDF/XML file types.</dcterms:description>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#TBX-ISO-XML"/>
+    <owl:disjointWith rdf:resource="https://isotc211.geolexica.org/api/geolexica#SKOS-RDF"/>
+    <rdfs:subClassOf rdf:resource="https://isotc211.geolexica.org/api/geolexica#LinkedDataAPI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#rdfxmlURI">
+    <dcterms:description>For relating rdfxmlURI values.</dcterms:description>
+    <rdfs:label>geolexica:rdfxmlURI property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="https://isotc211.geolexica.org/api/geolexica#RDF-XML"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#hasReview">
+    <dcterms:description>For relating concept to review.</dcterms:description>
+    <rdfs:label>geolexica:hasReview</rdfs:label>
+    <rdfs:range rdf:resource="https://isotc211.geolexica.org/api/geolexica#ConceptReview"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://isotc211.geolexica.org/api/geolexica#review_date">
+    <dcterms:description>For relating review date values.</dcterms:description>
+    <rdfs:label>geolexica:review_date property</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>
