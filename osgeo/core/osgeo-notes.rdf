@@ -1,0 +1,48 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dctype="http://purl.org/dc/dcmitype/"
+    xmlns:osgeo="https://osgeo.geolexica.org/api/geolexica#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:void="http://vocab.deri.ie/void#"
+    xmlns="https://osgeo.geolexica.org/api/osgeo-note/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/osgeo-note/">
+    <dcterms:title xml:lang="en">Notes RDF Dataset: OSGeo Glossary (Geolexica)</dcterms:title>
+    <dcterms:license>Copyright 2022 OSGeo</dcterms:license>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-18</dcterms:created>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <vann:preferredNamespacePrefix>osgeo-note</vann:preferredNamespacePrefix>
+    <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Dataset"/>
+    <owl:versionIRI rdf:resource="https://osgeo.geolexica.org/api/osgeo-note/v1.0/"/>
+    <owl:imports rdf:resource="https://osgeo.geolexica.org/api/geolexica/v1.0/"/>
+    <rdfs:label>Notes Reference RDF Dataset: OSGeo Glossary (Geolexica)</rdfs:label>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-18</dcterms:modified>
+    <vann:preferredNamespaceUri>https://osgeo.geolexica.org/api/osgeo-note/</vann:preferredNamespaceUri>
+    <rdfs:label>Notes RDF Dataset (OSGeo)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/osgeo-note/ExTransUnavail">
+    <rdfs:label xml:lang="en">This example has not been translated.</rdfs:label>
+    <rdf:type rdf:resource="https://osgeo.geolexica.org/api/geolexica#ExampleUnavail"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/osgeo-note/DefnTransUnavail">
+    <rdfs:label xml:lang="en">Definition not provided in this language.</rdfs:label>
+    <rdf:type rdf:resource="https://osgeo.geolexica.org/api/geolexica#DefnUnavail"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/osgeo-note/NoteTransDiff">
+    <rdfs:label xml:lang="en">This translated term may not be from the same source as the normative term.</rdfs:label>
+    <rdf:type rdf:resource="https://osgeo.geolexica.org/api/geolexica#NoteSourceDiff"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://osgeo.geolexica.org/api/osgeo-note/NoteTransUnavail">
+    <rdfs:label xml:lang="en">This note has not been translated.</rdfs:label>
+    <rdf:type rdf:resource="https://osgeo.geolexica.org/api/geolexica#NoteUnavail"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>
