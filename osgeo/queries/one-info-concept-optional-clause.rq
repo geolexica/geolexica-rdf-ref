@@ -1,0 +1,17 @@
+# all resources : review-status : final :@en
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX osgeo-info: <https://osgeo.geolexica.org/api/osgeo-info#>
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+select ?concept ?classification ?clause
+
+where { 
+    ?concept osgeo:hasInfo osgeo-info:Info442 ;
+
+#   for result with clause, substitute:
+#   ?concept osgeo:hasInfo osgeo-info:Info179 ;
+
+             osgeo:classification ?classification .
+    OPTIONAL { ?concept osgeo:clause ?clause }
+    } 

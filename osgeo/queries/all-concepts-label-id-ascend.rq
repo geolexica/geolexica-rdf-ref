@@ -11,3 +11,6 @@ SELECT ?label ?id ?term
         ?term a skos:Concept ; dcterms:identifier ?id ; rdfs:label ?label .
         
 } ORDER BY ASC(?id)
+
+# reverse order: 
+# ORDER BY DESC(?id)

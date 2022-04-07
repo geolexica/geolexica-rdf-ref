@@ -1,0 +1,13 @@
+# one concept : predicate : object : dcterms:identifier 414
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX osgeo-info: <https://osgeo.geolexica.org/api/osgeo-info#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+select ?predicate ?object
+
+    where { 
+        { GRAPH <https://osgeo.geolexica.org/api/osgeo-concept/> 
+                {?s ?predicate ?object ; dcterms:identifier 414.              
+        } }
+    }

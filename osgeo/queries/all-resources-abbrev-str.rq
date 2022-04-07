@@ -3,8 +3,9 @@
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
 
 select ?resource ?prefLabel
     where { 
-        ?resource a skos:Concept ; rdfs:label "abbreviation" ; skos:prefLabel ?prefLabel .
+        ?resource a skos:Concept ; osgeo:abbreviation "SOAP" ; skos:prefLabel ?prefLabel .
     }

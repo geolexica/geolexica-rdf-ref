@@ -1,0 +1,8 @@
+# all predicates : owl:ObjectProperty : label
+
+
+select *  
+		where { { GRAPH <https://osgeo.geolexica.org/concepts/1/> 
+                {?s ?p ?o .            
+        } } 
+    } ORDER BY ?s

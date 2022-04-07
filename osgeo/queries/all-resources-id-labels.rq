@@ -1,0 +1,13 @@
+# all concepts (resources) : labels
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+PREFIX osgeo-lang: <https://osgeo.geolexica.org/api/osgeo-lang/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select DISTINCT ?id ?concept ?label  
+		where { { GRAPH <https://osgeo.geolexica.org/api/osgeo-concept/> 
+                {?concept a skos:Concept ; rdfs:label ?label ; dcterms:identifier ?id .            
+        } } 
+    } ORDER BY ?id

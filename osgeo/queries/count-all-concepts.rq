@@ -1,9 +1,9 @@
-## Count total # of concepts.
+## Count total # of concepts in named graph.
  
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT (COUNT(?concept) AS ?concept_count)
 
-            WHERE
-            { ?concept a skos:Concept .
-            }
+where { { GRAPH <https://osgeo.geolexica.org/api/osgeo-concept/> 
+                {?concept a skos:Concept ;  .            
+        } } }

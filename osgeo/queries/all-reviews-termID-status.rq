@@ -1,0 +1,9 @@
+## all reviews : termID : status
+
+PREFIX osgeo: <https://osgeo.geolexica.org/api/geolexica#>
+
+select ?termID ?review ?status
+
+    where { ?review a osgeo:ConceptReview ; osgeo:review_status ?status ; osgeo:termID ?termID .
+           } 
+    ORDER BY ASC(?termID)
