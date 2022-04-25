@@ -44,6 +44,7 @@ Directory: **mlgt**
 | /core/sources.ttl | Instance data of authoritative reference(s) for each resource (i.e., ISO documents) |
 | /core/notes.ttl | Ontology extension of explanatory notes available for each resource (i.e., missing definitions, notes, translations, or examples for a given language). |
 | /core/csv/ | Contains CSV representations of the ontology, extensions, and supporting data. |
+| /core/mlgt-graph/ | Contains full graph representations of the ontology, extensions, and data. |
 | /concepts/ | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
 | /queries/ | Example SPARQL queries and results. |
 
@@ -74,5 +75,6 @@ Directory: **osgeo**
 | /core/osgeo-sources.ttl | Instance data of authoritative reference(s) for each resource (i.e., ISO documents) |
 | /core/osgeo-notes.ttl | Ontology extension of explanatory notes available for each resource (i.e., missing definitions, notes, translations, or examples for a given language). |
 | /core/csv/ | Contains CSV representations of the ontology, extensions, and supporting data. |
+| /core/osgeo-graph/ | Contains full graph representations of the ontology, extensions, and data. |
 | /concepts/ | Contains all JSON, JSON-LD, RDF/XML, and TTL files for each concept in the glossary. |
 | /queries/ | Example SPARQL queries and results. |
